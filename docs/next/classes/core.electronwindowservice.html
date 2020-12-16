@@ -94,10 +94,12 @@
 						<section class="tsd-index-section tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="core.electronwindowservice.html#closeonunload" class="tsd-kind-icon">close<wbr>OnUnload</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="core.electronwindowservice.html#contributions" class="tsd-kind-icon">contributions</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="core.electronwindowservice.html#corepreferences" class="tsd-kind-icon">core<wbr>Preferences</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="core.electronwindowservice.html#delegate" class="tsd-kind-icon">delegate</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="core.electronwindowservice.html#frontendapplication" class="tsd-kind-icon">frontend<wbr>Application</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="core.electronwindowservice.html#isunloading" class="tsd-kind-icon">is<wbr>Unloading</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="core.electronwindowservice.html#onunloademitter" class="tsd-kind-icon">on<wbr>Unload<wbr>Emitter</a></li>
 							</ul>
 						</section>
@@ -123,6 +125,21 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-private-protected">
 				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="closeonunload" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> close<wbr>OnUnload</h3>
+					<div class="tsd-signature tsd-kind-icon">close<wbr>OnUnload<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8385768da/packages/core/src/electron-browser/window/electron-window-service.ts#L34">packages/core/src/electron-browser/window/electron-window-service.ts:34</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Close the window right away when <code>true</code>, else check if we can unload.</p>
+						</div>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="contributions" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> contributions</h3>
@@ -130,7 +147,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="core.defaultwindowservice.html">DefaultWindowService</a>.<a href="core.defaultwindowservice.html#contributions">contributions</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/aa88fd762/packages/core/src/browser/window/default-window-service.ts#L39">packages/core/src/browser/window/default-window-service.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8385768da/packages/core/src/browser/window/default-window-service.ts#L39">packages/core/src/browser/window/default-window-service.ts:39</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -141,7 +158,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="core.defaultwindowservice.html">DefaultWindowService</a>.<a href="core.defaultwindowservice.html#corepreferences">corePreferences</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/aa88fd762/packages/core/src/browser/window/default-window-service.ts#L35">packages/core/src/browser/window/default-window-service.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8385768da/packages/core/src/browser/window/default-window-service.ts#L35">packages/core/src/browser/window/default-window-service.ts:35</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -151,7 +168,7 @@
 					<div class="tsd-signature tsd-kind-icon">delegate<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.electronmainwindowservice.html" class="tsd-signature-type">ElectronMainWindowService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/aa88fd762/packages/core/src/electron-browser/window/electron-window-service.ts#L27">packages/core/src/electron-browser/window/electron-window-service.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8385768da/packages/core/src/electron-browser/window/electron-window-service.ts#L37">packages/core/src/electron-browser/window/electron-window-service.ts:37</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -162,9 +179,24 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="core.defaultwindowservice.html">DefaultWindowService</a>.<a href="core.defaultwindowservice.html#frontendapplication">frontendApplication</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/aa88fd762/packages/core/src/browser/window/default-window-service.ts#L27">packages/core/src/browser/window/default-window-service.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8385768da/packages/core/src/browser/window/default-window-service.ts#L27">packages/core/src/browser/window/default-window-service.ts:27</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="isunloading" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> is<wbr>Unloading</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Unloading<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8385768da/packages/core/src/electron-browser/window/electron-window-service.ts#L29">packages/core/src/electron-browser/window/electron-window-service.ts:29</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Lock to prevent multiple parallel executions of the <code>beforeunload</code> listener.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="onunloademitter" class="tsd-anchor"></a>
@@ -173,7 +205,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="core.defaultwindowservice.html">DefaultWindowService</a>.<a href="core.defaultwindowservice.html#onunloademitter">onUnloadEmitter</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/aa88fd762/packages/core/src/browser/window/default-window-service.ts#L29">packages/core/src/browser/window/default-window-service.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8385768da/packages/core/src/browser/window/default-window-service.ts#L29">packages/core/src/browser/window/default-window-service.ts:29</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -191,7 +223,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="core.defaultwindowservice.html">DefaultWindowService</a>.<a href="core.defaultwindowservice.html#onunload">onUnload</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/aa88fd762/packages/core/src/browser/window/default-window-service.ts#L30">packages/core/src/browser/window/default-window-service.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8385768da/packages/core/src/browser/window/default-window-service.ts#L30">packages/core/src/browser/window/default-window-service.ts:30</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/core.event-1.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -213,7 +245,7 @@
 								<p>Implementation of <a href="../interfaces/core.windowservice.html">WindowService</a>.<a href="../interfaces/core.windowservice.html#canunload">canUnload</a></p>
 								<p>Inherited from <a href="core.defaultwindowservice.html">DefaultWindowService</a>.<a href="core.defaultwindowservice.html#canunload">canUnload</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/aa88fd762/packages/core/src/browser/window/default-window-service.ts#L51">packages/core/src/browser/window/default-window-service.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8385768da/packages/core/src/browser/window/default-window-service.ts#L51">packages/core/src/browser/window/default-window-service.ts:51</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -232,7 +264,7 @@
 								<p>Implementation of <a href="../interfaces/core.frontendapplicationcontribution-1.html">FrontendApplicationContribution</a>.<a href="../interfaces/core.frontendapplicationcontribution-1.html#onstart">onStart</a></p>
 								<p>Inherited from <a href="core.defaultwindowservice.html">DefaultWindowService</a>.<a href="core.defaultwindowservice.html#onstart">onStart</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/aa88fd762/packages/core/src/browser/window/default-window-service.ts#L41">packages/core/src/browser/window/default-window-service.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8385768da/packages/core/src/browser/window/default-window-service.ts#L41">packages/core/src/browser/window/default-window-service.ts:41</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -256,7 +288,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="core.defaultwindowservice.html">DefaultWindowService</a>.<a href="core.defaultwindowservice.html#opennewwindow">openNewWindow</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/aa88fd762/packages/core/src/electron-browser/window/electron-window-service.ts#L29">packages/core/src/electron-browser/window/electron-window-service.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8385768da/packages/core/src/electron-browser/window/electron-window-service.ts#L39">packages/core/src/electron-browser/window/electron-window-service.ts:39</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -288,13 +320,18 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="core.defaultwindowservice.html">DefaultWindowService</a>.<a href="core.defaultwindowservice.html#preventunload">preventUnload</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/aa88fd762/packages/core/src/browser/window/default-window-service.ts#L86">packages/core/src/browser/window/default-window-service.ts:86</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8385768da/packages/core/src/browser/window/default-window-service.ts#L91">packages/core/src/browser/window/default-window-service.ts:91</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Ask the user to confirm if they want to unload the window. Prevent it if they do not.</p>
+									<p>Notify the browser that we do not want to unload.</p>
 								</div>
+								<p>Notes:</p>
+								<ul>
+									<li>Shows a confirmation popup in browsers.</li>
+									<li>Prevents the window from closing without confirmation in electron.</li>
+								</ul>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -320,7 +357,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="core.defaultwindowservice.html">DefaultWindowService</a>.<a href="core.defaultwindowservice.html#registerunloadlisteners">registerUnloadListeners</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/aa88fd762/packages/core/src/electron-browser/window/electron-window-service.ts#L34">packages/core/src/electron-browser/window/electron-window-service.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8385768da/packages/core/src/electron-browser/window/electron-window-service.ts#L44">packages/core/src/electron-browser/window/electron-window-service.ts:44</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -337,14 +374,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/aa88fd762/packages/core/src/electron-browser/window/electron-window-service.ts#L52">packages/core/src/electron-browser/window/electron-window-service.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8385768da/packages/core/src/electron-browser/window/electron-window-service.ts#L77">packages/core/src/electron-browser/window/electron-window-service.ts:77</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>When preventing <code>beforeunload</code> on Electron, no popup is shown.
-									This method implements a modal to ask the user if he wants to quit the page.</p>
+									<p>When preventing <code>beforeunload</code> on Electron, no popup is shown.</p>
 								</div>
+								<p>This method implements a modal to ask the user if he wants to quit the page.</p>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
@@ -615,6 +652,9 @@
 					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="core.electronwindowservice.html" class="tsd-kind-icon">Electron<wbr>Window<wbr>Service</a>
 						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="core.electronwindowservice.html#closeonunload" class="tsd-kind-icon">close<wbr>OnUnload</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="core.electronwindowservice.html#contributions" class="tsd-kind-icon">contributions</a>
 							</li>
@@ -626,6 +666,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="core.electronwindowservice.html#frontendapplication" class="tsd-kind-icon">frontend<wbr>Application</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="core.electronwindowservice.html#isunloading" class="tsd-kind-icon">is<wbr>Unloading</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="core.electronwindowservice.html#onunloademitter" class="tsd-kind-icon">on<wbr>Unload<wbr>Emitter</a>
