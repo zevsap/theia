@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>NodeRow | Theia TypeDoc</title>
+	<title>PluginPackageViewWelcome | Theia TypeDoc</title>
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,34 +54,24 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/filesystem.html">filesystem</a>
+					<a href="../modules/plugin_ext.html">plugin-ext</a>
 				</li>
 				<li>
-					<a href="../classes/filesystem.filetreewidget-2.html">FileTreeWidget</a>
-				</li>
-				<li>
-					<a href="filesystem.filetreewidget-2.noderow.html">NodeRow</a>
+					<a href="plugin_ext.pluginpackageviewwelcome-1.html">PluginPackageViewWelcome</a>
 				</li>
 			</ul>
-			<h1>Interface NodeRow</h1>
+			<h1>Interface PluginPackageViewWelcome</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Representation of a tree node row.</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">NodeRow</span>
+						<span class="target">PluginPackageViewWelcome</span>
 					</li>
 				</ul>
 			</section>
@@ -92,9 +82,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="filesystem.filetreewidget-2.noderow.html#depth" class="tsd-kind-icon">depth</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="filesystem.filetreewidget-2.noderow.html#index" class="tsd-kind-icon">index</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="filesystem.filetreewidget-2.noderow.html#node" class="tsd-kind-icon">node</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="plugin_ext.pluginpackageviewwelcome-1.html#contents" class="tsd-kind-icon">contents</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="plugin_ext.pluginpackageviewwelcome-1.html#view" class="tsd-kind-icon">view</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="plugin_ext.pluginpackageviewwelcome-1.html#when" class="tsd-kind-icon">when</a></li>
 							</ul>
 						</section>
 					</div>
@@ -103,49 +93,34 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="depth" class="tsd-anchor"></a>
-					<h3>depth</h3>
-					<div class="tsd-signature tsd-kind-icon">depth<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="contents" class="tsd-anchor"></a>
+					<h3>contents</h3>
+					<div class="tsd-signature tsd-kind-icon">contents<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/504efadfc/packages/core/src/browser/tree/tree-widget.tsx#L1356">packages/core/src/browser/tree/tree-widget.tsx:1356</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e7a089e93/packages/plugin-ext/src/common/plugin-protocol.ts#L106">packages/plugin-ext/src/common/plugin-protocol.ts:106</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>A root relative number representing the hierarchical depth of the actual node. Root is <code>0</code>, its children have <code>1</code> and so on.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="index" class="tsd-anchor"></a>
-					<h3>index</h3>
-					<div class="tsd-signature tsd-kind-icon">index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="view" class="tsd-anchor"></a>
+					<h3>view</h3>
+					<div class="tsd-signature tsd-kind-icon">view<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/504efadfc/packages/core/src/browser/tree/tree-widget.tsx#L1348">packages/core/src/browser/tree/tree-widget.tsx:1348</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e7a089e93/packages/plugin-ext/src/common/plugin-protocol.ts#L105">packages/plugin-ext/src/common/plugin-protocol.ts:105</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The node row index.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="node" class="tsd-anchor"></a>
-					<h3>node</h3>
-					<div class="tsd-signature tsd-kind-icon">node<span class="tsd-signature-symbol">:</span> <a href="../modules/core.treenode-2.html" class="tsd-signature-type">TreeNode</a></div>
+					<a name="when" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> when</h3>
+					<div class="tsd-signature tsd-kind-icon">when<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/504efadfc/packages/core/src/browser/tree/tree-widget.tsx#L1352">packages/core/src/browser/tree/tree-widget.tsx:1352</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e7a089e93/packages/plugin-ext/src/common/plugin-protocol.ts#L107">packages/plugin-ext/src/common/plugin-protocol.ts:107</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The actual node.</p>
-						</div>
-					</div>
 				</section>
 			</section>
 		</div>
@@ -156,64 +131,94 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/filesystem.html">filesystem</a>
+						<a href="../modules/plugin_ext.html">plugin-<wbr>ext</a>
 						<ul>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/filesystem.basestat.html">Base<wbr>Stat</a>
+								<a href="../modules/plugin_ext.compositetreeviewnode.html">Composite<wbr>Tree<wbr>View<wbr>Node</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/filesystem.dirnode-2.html">Dir<wbr>Node</a>
+								<a href="../modules/plugin_ext.connectionclosederror.html">Connection<wbr>Closed<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/filesystem.fileaccess-1.html">File<wbr>Access</a>
+								<a href="../modules/plugin_ext.decorationrangebehavior.html">Decoration<wbr>Range<wbr>Behavior</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/filesystem.filechange-1.html">File<wbr>Change</a>
+								<a href="../modules/plugin_ext.decorationrenderoptions-1.html">Decoration<wbr>Render<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
+								<a href="../modules/plugin_ext.delta.html">Delta</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/filesystem.filechangeevent-1.html">File<wbr>Change<wbr>Event</a>
+								<a href="../modules/plugin_ext.documentlink.html">Document<wbr>Link</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/filesystem.filedownloadcommands.html">File<wbr>Download<wbr>Commands</a>
+								<a href="../modules/plugin_ext.knowncommands.html">Known<wbr>Commands</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/filesystem.filedownloaddata.html">File<wbr>Download<wbr>Data</a>
+								<a href="../modules/plugin_ext.notificationmain-1.html">Notification<wbr>Main</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/filesystem.filemoveevent-1.html">File<wbr>Move<wbr>Event</a>
+								<a href="../modules/plugin_ext.objectidentifier.html">Object<wbr>Identifier</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
+								<a href="../modules/plugin_ext.objectstransferrer.html">Objects<wbr>Transferrer</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/filesystem.filenode-2.html">File<wbr>Node</a>
+								<a href="../modules/plugin_ext.parameterinformation.html">Parameter<wbr>Information</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/filesystem.fileresourceversion-1.html">File<wbr>Resource<wbr>Version</a>
+								<a href="../modules/plugin_ext.pluginiconpath.html">Plugin<wbr>Icon<wbr>Path</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/filesystem.fileselection.html">File<wbr>Selection</a>
+								<a href="../modules/plugin_ext.pluginpackage-1.html">Plugin<wbr>Package</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/filesystem.filestat-1.html">File<wbr>Stat</a>
+								<a href="../modules/plugin_ext.pluginpaths.html">Plugin<wbr>Paths</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/filesystem.filestat-2.html">File<wbr>Stat</a>
+								<a href="../modules/plugin_ext.schemes.html">Schemes</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/filesystem.filestatnode-2.html">File<wbr>Stat<wbr>Node</a>
+								<a href="../modules/plugin_ext.scmcommandarg-1.html">Scm<wbr>Command<wbr>Arg</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/filesystem.filestatnodedata-2.html">File<wbr>Stat<wbr>Node<wbr>Data</a>
+								<a href="../modules/plugin_ext.selectionprovidercommands.html">Selection<wbr>Provider<wbr>Commands</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/filesystem.filesystemcommands.html">File<wbr>System<wbr>Commands</a>
+								<a href="../modules/plugin_ext.signaturehelp.html">Signature<wbr>Help</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/filesystem.filesystemerror-1.html">File<wbr>System<wbr>Error</a>
+								<a href="../modules/plugin_ext.signatureinformation.html">Signature<wbr>Information</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/filesystem.filesystemutils-1.html">File<wbr>System<wbr>Utils</a>
+								<a href="../modules/plugin_ext.symbolkind.html">Symbol<wbr>Kind</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/filesystem.electron.html">electron</a>
+								<a href="../modules/plugin_ext.symbolkindconverter.html">Symbol<wbr>Kind<wbr>Converter</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.themabledecorationattachmentrenderoptions.html">Themable<wbr>Decoration<wbr>Attachment<wbr>Render<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.themabledecorationrenderoptions.html">Themable<wbr>Decoration<wbr>Render<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.timelinecommandarg-1.html">Timeline<wbr>Command<wbr>Arg</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.treeviewnode.html">Tree<wbr>View<wbr>Node</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.treeviewselection-1.html">Tree<wbr>View<wbr>Selection</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.webviewexternalendpoint.html">Webview<wbr>External<wbr>Endpoint</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
+								<a href="../modules/plugin_ext.nls.html">nls</a>
 							</li>
 						</ul>
 					</li>
@@ -223,22 +228,17 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/filesystem.filetreewidget-2.html" class="tsd-kind-icon">File<wbr>Tree<wbr>Widget</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-module">
+						<a href="plugin_ext.pluginpackageviewwelcome-1.html" class="tsd-kind-icon">Plugin<wbr>Package<wbr>View<wbr>Welcome</a>
 						<ul>
-							<li class="current tsd-kind-interface tsd-parent-kind-class">
-								<a href="filesystem.filetreewidget-2.noderow.html" class="tsd-kind-icon">Node<wbr>Row</a>
-								<ul>
-									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="filesystem.filetreewidget-2.noderow.html#depth" class="tsd-kind-icon">depth</a>
-									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="filesystem.filetreewidget-2.noderow.html#index" class="tsd-kind-icon">index</a>
-									</li>
-									<li class=" tsd-kind-property tsd-parent-kind-interface">
-										<a href="filesystem.filetreewidget-2.noderow.html#node" class="tsd-kind-icon">node</a>
-									</li>
-								</ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="plugin_ext.pluginpackageviewwelcome-1.html#contents" class="tsd-kind-icon">contents</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="plugin_ext.pluginpackageviewwelcome-1.html#view" class="tsd-kind-icon">view</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="plugin_ext.pluginpackageviewwelcome-1.html#when" class="tsd-kind-icon">when</a>
 							</li>
 						</ul>
 					</li>
