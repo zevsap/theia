@@ -220,15 +220,6 @@ declare module '@theia/plugin' {
 
     }
 
-    export interface DecorationData {
-        letter?: string;
-        title?: string;
-        color?: ThemeColor;
-        priority?: number;
-        bubble?: boolean;
-        source?: string;
-    }
-
     export interface SourceControl {
 
         /**
@@ -246,11 +237,6 @@ declare module '@theia/plugin' {
         source?: string;
         letter?: string;
         color?: ThemeColor;
-    }
-
-    export interface DecorationProvider {
-        onDidChangeDecorations: Event<undefined | Uri | Uri[]>;
-        provideDecoration(uri: Uri, token: CancellationToken): ProviderResult<DecorationData>;
     }
 
     // #region LogLevel: https://github.com/microsoft/vscode/issues/85992
@@ -281,10 +267,6 @@ declare module '@theia/plugin' {
     }
 
     // #endregion
-
-    export namespace window {
-        export function registerDecorationProvider(provider: DecorationProvider): Disposable;
-    }
 
     // #region Tree View
     // copied from https://github.com/microsoft/vscode/blob/3ea5c9ddbebd8ec68e3b821f9c39c3ec785fde97/src/vs/vscode.proposed.d.ts#L1447-L1476

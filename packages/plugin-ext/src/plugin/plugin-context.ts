@@ -129,7 +129,8 @@ import {
     SemanticTokens,
     SemanticTokensEdits,
     SemanticTokensEdit,
-    ColorThemeKind
+    ColorThemeKind,
+    FileDecoration
 } from './types-impl';
 import { AuthenticationExtImpl } from './authentication-ext';
 import { SymbolKind } from '../common/plugin-api-rpc-model';
@@ -155,7 +156,7 @@ import { DebugExtImpl } from './node/debug/debug';
 import { FileSystemExtImpl } from './file-system-ext-impl';
 import { QuickPick, QuickPickItem, ResourceLabelFormatter } from '@theia/plugin';
 import { ScmExtImpl } from './scm';
-import { DecorationProvider, LineChange } from '@theia/plugin';
+import { LineChange } from '@theia/plugin';
 import { DecorationsExtImpl } from './decorations';
 import { TextEditorExt } from './text-editor';
 import { ClipboardExt } from './clipboard-ext';
@@ -420,8 +421,8 @@ export function createAPIFactory(
             ): PromiseLike<R> {
                 return notificationExt.withProgress(options, task);
             },
-            registerDecorationProvider(provider: DecorationProvider): theia.Disposable {
-                return decorationsExt.registerDecorationProvider(provider);
+            registerFileDecorationProvider(provider: theia.FileDecorationProvider): theia.Disposable {
+                return decorationsExt.registerFileDecorationProvider(provider, pluginToPluginInfo(plugin));
             },
             registerUriHandler(handler: theia.UriHandler): theia.Disposable {
                 // TODO ?
@@ -943,7 +944,8 @@ export function createAPIFactory(
             SemanticTokens,
             SemanticTokensEdits,
             SemanticTokensEdit,
-            ColorThemeKind
+            ColorThemeKind,
+            FileDecoration
         };
     };
 }
