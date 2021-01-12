@@ -96,7 +96,11 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="preferences.preferencesjsonschemacontribution.html#getfilematch" class="tsd-kind-icon">get<wbr>File<wbr>Match</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="preferences.preferencesjsonschemacontribution.html#registerschema" class="tsd-kind-icon">register<wbr>Schema</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="preferences.preferencesjsonschemacontribution.html#registerschemas" class="tsd-kind-icon">register<wbr>Schemas</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="preferences.preferencesjsonschemacontribution.html#serializeschema" class="tsd-kind-icon">serialize<wbr>Schema</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="preferences.preferencesjsonschemacontribution.html#updateinmemoryresources" class="tsd-kind-icon">update<wbr>InMemory<wbr>Resources</a></li>
 							</ul>
 						</section>
 					</div>
@@ -110,7 +114,7 @@
 					<div class="tsd-signature tsd-kind-icon">inmemory<wbr>Resources<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">InMemoryResources</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/335273bf9/packages/preferences/src/browser/preferences-json-schema-contribution.ts#L32">packages/preferences/src/browser/preferences-json-schema-contribution.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/preferences/src/browser/preferences-json-schema-contribution.ts#L36">packages/preferences/src/browser/preferences-json-schema-contribution.ts:36</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -120,7 +124,7 @@
 					<div class="tsd-signature tsd-kind-icon">preference<wbr>Configurations<span class="tsd-signature-symbol">:</span> <a href="core.preferenceconfigurations.html" class="tsd-signature-type">PreferenceConfigurations</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/335273bf9/packages/preferences/src/browser/preferences-json-schema-contribution.ts#L35">packages/preferences/src/browser/preferences-json-schema-contribution.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/preferences/src/browser/preferences-json-schema-contribution.ts#L39">packages/preferences/src/browser/preferences-json-schema-contribution.ts:39</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -130,13 +134,62 @@
 					<div class="tsd-signature tsd-kind-icon">schema<wbr>Provider<span class="tsd-signature-symbol">:</span> <a href="core.preferenceschemaprovider-2.html" class="tsd-signature-type">PreferenceSchemaProvider</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/335273bf9/packages/preferences/src/browser/preferences-json-schema-contribution.ts#L29">packages/preferences/src/browser/preferences-json-schema-contribution.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/preferences/src/browser/preferences-json-schema-contribution.ts#L33">packages/preferences/src/browser/preferences-json-schema-contribution.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="getfilematch" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>File<wbr>Match</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>File<wbr>Match<span class="tsd-signature-symbol">(</span>scope<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/preferences/src/browser/preferences-json-schema-contribution.ts#L73">packages/preferences/src/browser/preferences-json-schema-contribution.ts:73</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>scope: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="registerschema" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> register<wbr>Schema</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Schema<span class="tsd-signature-symbol">(</span>scope<span class="tsd-signature-symbol">: </span><a href="../enums/core.preferencescope-3.html" class="tsd-signature-type">PreferenceScope</a>, context<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.jsonschemaregistercontext.html" class="tsd-signature-type">JsonSchemaRegisterContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/preferences/src/browser/preferences-json-schema-contribution.ts#L50">packages/preferences/src/browser/preferences-json-schema-contribution.ts:50</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>scope: <a href="../enums/core.preferencescope-3.html" class="tsd-signature-type">PreferenceScope</a></h5>
+								</li>
+								<li>
+									<h5>context: <a href="../interfaces/core.jsonschemaregistercontext.html" class="tsd-signature-type">JsonSchemaRegisterContext</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="registerschemas" class="tsd-anchor"></a>
 					<h3>register<wbr>Schemas</h3>
@@ -148,7 +201,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/core.jsonschemacontribution.html">JsonSchemaContribution</a>.<a href="../interfaces/core.jsonschemacontribution.html#registerschemas">registerSchemas</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/335273bf9/packages/preferences/src/browser/preferences-json-schema-contribution.ts#L37">packages/preferences/src/browser/preferences-json-schema-contribution.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/preferences/src/browser/preferences-json-schema-contribution.ts#L41">packages/preferences/src/browser/preferences-json-schema-contribution.ts:41</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -157,6 +210,46 @@
 									<h5>context: <a href="../interfaces/core.jsonschemaregistercontext.html" class="tsd-signature-type">JsonSchemaRegisterContext</a></h5>
 								</li>
 							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="serializeschema" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> serialize<wbr>Schema</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">serialize<wbr>Schema<span class="tsd-signature-symbol">(</span>scope<span class="tsd-signature-symbol">: </span><a href="../enums/core.preferencescope-3.html" class="tsd-signature-type">PreferenceScope</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/preferences/src/browser/preferences-json-schema-contribution.ts#L30">packages/preferences/src/browser/preferences-json-schema-contribution.ts:30</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>scope: <a href="../enums/core.preferencescope-3.html" class="tsd-signature-type">PreferenceScope</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="updateinmemoryresources" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> update<wbr>InMemory<wbr>Resources</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>InMemory<wbr>Resources<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/preferences/src/browser/preferences-json-schema-contribution.ts#L62">packages/preferences/src/browser/preferences-json-schema-contribution.ts:62</a></li>
+								</ul>
+							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -201,8 +294,20 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="preferences.preferencesjsonschemacontribution.html#schemaprovider" class="tsd-kind-icon">schema<wbr>Provider</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="preferences.preferencesjsonschemacontribution.html#getfilematch" class="tsd-kind-icon">get<wbr>File<wbr>Match</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="preferences.preferencesjsonschemacontribution.html#registerschema" class="tsd-kind-icon">register<wbr>Schema</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="preferences.preferencesjsonschemacontribution.html#registerschemas" class="tsd-kind-icon">register<wbr>Schemas</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="preferences.preferencesjsonschemacontribution.html#serializeschema" class="tsd-kind-icon">serialize<wbr>Schema</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="preferences.preferencesjsonschemacontribution.html#updateinmemoryresources" class="tsd-kind-icon">update<wbr>InMemory<wbr>Resources</a>
 							</li>
 						</ul>
 					</li>
@@ -240,6 +345,9 @@
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
 			</ul>
 		</div>
 	</div>

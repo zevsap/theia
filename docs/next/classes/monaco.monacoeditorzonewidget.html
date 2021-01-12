@@ -106,10 +106,12 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="monaco.monacoeditorzonewidget.html#_options" class="tsd-kind-icon">_options</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="monaco.monacoeditorzonewidget.html#arrow" class="tsd-kind-icon">arrow</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="monaco.monacoeditorzonewidget.html#containernode" class="tsd-kind-icon">container<wbr>Node</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="monaco.monacoeditorzonewidget.html#editor" class="tsd-kind-icon">editor</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="monaco.monacoeditorzonewidget.html#ondidlayoutchange" class="tsd-kind-icon">on<wbr>Did<wbr>Layout<wbr>Change</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="monaco.monacoeditorzonewidget.html#ondidlayoutchangeemitter" class="tsd-kind-icon">on<wbr>Did<wbr>Layout<wbr>Change<wbr>Emitter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="monaco.monacoeditorzonewidget.html#showarrow" class="tsd-kind-icon">show<wbr>Arrow</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="monaco.monacoeditorzonewidget.html#todispose" class="tsd-kind-icon">to<wbr>Dispose</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="monaco.monacoeditorzonewidget.html#tohide" class="tsd-kind-icon">to<wbr>Hide</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="monaco.monacoeditorzonewidget.html#viewzone" class="tsd-kind-icon">view<wbr>Zone</a></li>
@@ -147,19 +149,22 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Monaco<wbr>Editor<wbr>Zone<wbr>Widget<span class="tsd-signature-symbol">(</span>editor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IStandaloneCodeEditor</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="monaco.monacoeditorzonewidget.html" class="tsd-signature-type">MonacoEditorZoneWidget</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Monaco<wbr>Editor<wbr>Zone<wbr>Widget<span class="tsd-signature-symbol">(</span>editor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IStandaloneCodeEditor</span>, showArrow<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="monaco.monacoeditorzonewidget.html" class="tsd-signature-type">MonacoEditorZoneWidget</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/335273bf9/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L42">packages/monaco/src/browser/monaco-editor-zone-widget.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L45">packages/monaco/src/browser/monaco-editor-zone-widget.ts:45</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>editor: <span class="tsd-signature-type">IStandaloneCodeEditor</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> showArrow: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="monaco.monacoeditorzonewidget.html" class="tsd-signature-type">MonacoEditorZoneWidget</a></h4>
@@ -175,7 +180,17 @@
 					<div class="tsd-signature tsd-kind-icon">_options<span class="tsd-signature-symbol">:</span> <a href="../interfaces/monaco.monacoeditorzonewidget.options.html" class="tsd-signature-type">Options</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/335273bf9/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L58">packages/monaco/src/browser/monaco-editor-zone-widget.ts:58</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L62">packages/monaco/src/browser/monaco-editor-zone-widget.ts:62</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="arrow" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> arrow</h3>
+					<div class="tsd-signature tsd-kind-icon">arrow<span class="tsd-signature-symbol">:</span> <a href="monaco.arrow.html" class="tsd-signature-type">Arrow</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L30">packages/monaco/src/browser/monaco-editor-zone-widget.ts:30</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -185,7 +200,7 @@
 					<div class="tsd-signature tsd-kind-icon">container<wbr>Node<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLDivElement</span><span class="tsd-signature-symbol"> = document.createElement(&#x27;div&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/335273bf9/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L30">packages/monaco/src/browser/monaco-editor-zone-widget.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L33">packages/monaco/src/browser/monaco-editor-zone-widget.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -195,7 +210,7 @@
 					<div class="tsd-signature tsd-kind-icon">editor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IStandaloneCodeEditor</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/335273bf9/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L45">packages/monaco/src/browser/monaco-editor-zone-widget.ts:45</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L48">packages/monaco/src/browser/monaco-editor-zone-widget.ts:48</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -205,7 +220,7 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Layout<wbr>Change<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IDimension</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = this.onDidLayoutChangeEmitter.event</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/335273bf9/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L33">packages/monaco/src/browser/monaco-editor-zone-widget.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L36">packages/monaco/src/browser/monaco-editor-zone-widget.ts:36</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -215,7 +230,17 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Layout<wbr>Change<wbr>Emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Emitter</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IDimension</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Emitter&lt;monaco.editor.IDimension&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/335273bf9/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L32">packages/monaco/src/browser/monaco-editor-zone-widget.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L35">packages/monaco/src/browser/monaco-editor-zone-widget.ts:35</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="showarrow" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> show<wbr>Arrow</h3>
+					<div class="tsd-signature tsd-kind-icon">show<wbr>Arrow<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L48">packages/monaco/src/browser/monaco-editor-zone-widget.ts:48</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -225,7 +250,7 @@
 					<div class="tsd-signature tsd-kind-icon">to<wbr>Dispose<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DisposableCollection</span><span class="tsd-signature-symbol"> = new DisposableCollection(this.onDidLayoutChangeEmitter,this.toHide)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/335273bf9/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L39">packages/monaco/src/browser/monaco-editor-zone-widget.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L42">packages/monaco/src/browser/monaco-editor-zone-widget.ts:42</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -235,7 +260,7 @@
 					<div class="tsd-signature tsd-kind-icon">to<wbr>Hide<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DisposableCollection</span><span class="tsd-signature-symbol"> = new DisposableCollection()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/335273bf9/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L37">packages/monaco/src/browser/monaco-editor-zone-widget.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L40">packages/monaco/src/browser/monaco-editor-zone-widget.ts:40</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -245,7 +270,7 @@
 					<div class="tsd-signature tsd-kind-icon">view<wbr>Zone<span class="tsd-signature-symbol">:</span> <a href="../interfaces/monaco.monacoeditorviewzone.html" class="tsd-signature-type">MonacoEditorViewZone</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/335273bf9/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L35">packages/monaco/src/browser/monaco-editor-zone-widget.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L38">packages/monaco/src/browser/monaco-editor-zone-widget.ts:38</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -255,7 +280,7 @@
 					<div class="tsd-signature tsd-kind-icon">zone<wbr>Node<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLDivElement</span><span class="tsd-signature-symbol"> = document.createElement(&#x27;div&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/335273bf9/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L29">packages/monaco/src/browser/monaco-editor-zone-widget.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L32">packages/monaco/src/browser/monaco-editor-zone-widget.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -272,7 +297,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/335273bf9/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L59">packages/monaco/src/browser/monaco-editor-zone-widget.ts:59</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L63">packages/monaco/src/browser/monaco-editor-zone-widget.ts:63</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/monaco.monacoeditorzonewidget.options.html" class="tsd-signature-type">Options</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
@@ -292,7 +317,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/335273bf9/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L139">packages/monaco/src/browser/monaco-editor-zone-widget.ts:139</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L150">packages/monaco/src/browser/monaco-editor-zone-widget.ts:150</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -323,7 +348,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/335273bf9/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L160">packages/monaco/src/browser/monaco-editor-zone-widget.ts:160</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L171">packages/monaco/src/browser/monaco-editor-zone-widget.ts:171</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -346,7 +371,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/335273bf9/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L157">packages/monaco/src/browser/monaco-editor-zone-widget.ts:157</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L168">packages/monaco/src/browser/monaco-editor-zone-widget.ts:168</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -369,7 +394,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/335273bf9/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L54">packages/monaco/src/browser/monaco-editor-zone-widget.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L57">packages/monaco/src/browser/monaco-editor-zone-widget.ts:57</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -386,7 +411,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/335273bf9/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L63">packages/monaco/src/browser/monaco-editor-zone-widget.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L67">packages/monaco/src/browser/monaco-editor-zone-widget.ts:67</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -403,7 +428,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/335273bf9/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L116">packages/monaco/src/browser/monaco-editor-zone-widget.ts:116</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L127">packages/monaco/src/browser/monaco-editor-zone-widget.ts:127</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -426,7 +451,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/335273bf9/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L67">packages/monaco/src/browser/monaco-editor-zone-widget.ts:67</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L71">packages/monaco/src/browser/monaco-editor-zone-widget.ts:71</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -449,7 +474,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/335273bf9/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L131">packages/monaco/src/browser/monaco-editor-zone-widget.ts:131</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L142">packages/monaco/src/browser/monaco-editor-zone-widget.ts:142</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -472,7 +497,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/335273bf9/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L127">packages/monaco/src/browser/monaco-editor-zone-widget.ts:127</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L138">packages/monaco/src/browser/monaco-editor-zone-widget.ts:138</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -495,7 +520,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/335273bf9/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L124">packages/monaco/src/browser/monaco-editor-zone-widget.ts:124</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L135">packages/monaco/src/browser/monaco-editor-zone-widget.ts:135</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -518,7 +543,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/335273bf9/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L152">packages/monaco/src/browser/monaco-editor-zone-widget.ts:152</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/2eb001e3b/packages/monaco/src/browser/monaco-editor-zone-widget.ts#L163">packages/monaco/src/browser/monaco-editor-zone-widget.ts:163</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -589,6 +614,9 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="monaco.monacoeditorzonewidget.html#_options" class="tsd-kind-icon">_options</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="monaco.monacoeditorzonewidget.html#arrow" class="tsd-kind-icon">arrow</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="monaco.monacoeditorzonewidget.html#containernode" class="tsd-kind-icon">container<wbr>Node</a>
 							</li>
@@ -600,6 +628,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="monaco.monacoeditorzonewidget.html#ondidlayoutchangeemitter" class="tsd-kind-icon">on<wbr>Did<wbr>Layout<wbr>Change<wbr>Emitter</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="monaco.monacoeditorzonewidget.html#showarrow" class="tsd-kind-icon">show<wbr>Arrow</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="monaco.monacoeditorzonewidget.html#todispose" class="tsd-kind-icon">to<wbr>Dispose</a>
@@ -688,6 +719,9 @@
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
 			</ul>
 		</div>
 	</div>
