@@ -1,5 +1,5 @@
 /********************************************************************************
- * Copyright (C) 2018 TypeFox and others.
+ * Copyright (C) 2020 Ericsson and others.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
@@ -14,7 +14,25 @@
  * SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
  ********************************************************************************/
 
-export * from './navigator-model';
-export * from './navigator-widget';
-export * from './navigator-widget-factory';
-export * from './navigator-decorator-service';
+import { inject, injectable } from 'inversify';
+import { VSXEnvironment } from '../common/vsx-environment';
+import { VSXApiVersionProvider } from '../common/vsx-api-version-provider';
+import { FrontendApplicationContribution, FrontendApplication } from '@theia/core/lib/browser';
+
+@injectable()
+export class VSXApiVersionProviderImpl implements VSXApiVersionProvider, FrontendApplicationContribution {
+
+    @inject(VSXEnvironment)
+    protected readonly vsxEnvironment: VSXEnvironment;
+
+    protected _apiVersion: string;
+
+    async onStart(_app: FrontendApplication): Promise<void> {
+        this._apiVersion = await this.vsxEnvironment.getVscodeApiVersion();
+    }
+
+    getApiVersion(): string {
+        return this._apiVersion;
+    }
+
+}

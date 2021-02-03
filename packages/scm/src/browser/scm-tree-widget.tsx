@@ -94,20 +94,25 @@ export class ScmTreeWidget extends TreeWidget {
         }
 
         const attributes = this.createNodeAttributes(node, props);
+        const label = this.labelProvider.getName(node);
+        const searchHighlights = this.searchHighlights?.get(node.id);
+        // The group nodes should not be subject to highlighting.
+        const caption = (searchHighlights && !ScmFileChangeGroupNode.is(node)) ? this.toReactNode(label, searchHighlights) : label;
 
         if (ScmFileChangeGroupNode.is(node)) {
             const content = <ScmResourceGroupElement
                 key={`${node.groupId}`}
                 model={this.model}
                 treeNode={node}
-                groupLabel={node.groupLabel}
                 renderExpansionToggle={() => this.renderExpansionToggle(node, props)}
                 contextMenuRenderer={this.contextMenuRenderer}
                 commands={this.commands}
                 menus={this.menus}
                 contextKeys={this.contextKeys}
                 labelProvider={this.labelProvider}
-                corePreferences={this.corePreferences} />;
+                corePreferences={this.corePreferences}
+                caption={caption}
+            />;
 
             return React.createElement('div', attributes, content);
 
@@ -117,7 +122,6 @@ export class ScmTreeWidget extends TreeWidget {
                 key={String(node.sourceUri)}
                 model={this.model}
                 treeNode={node}
-                path={node.path}
                 sourceUri={node.sourceUri}
                 renderExpansionToggle={() => this.renderExpansionToggle(node, props)}
                 contextMenuRenderer={this.contextMenuRenderer}
@@ -125,12 +129,13 @@ export class ScmTreeWidget extends TreeWidget {
                 menus={this.menus}
                 contextKeys={this.contextKeys}
                 labelProvider={this.labelProvider}
-                corePreferences={this.corePreferences} />;
+                corePreferences={this.corePreferences}
+                caption={caption}
+            />;
 
             return React.createElement('div', attributes, content);
         }
         if (ScmFileChangeNode.is(node)) {
-            const name = this.labelProvider.getName(new URI(node.sourceUri));
             const parentPath =
                 (node.parent && ScmFileChangeFolderNode.is(node.parent))
                     ? new URI(node.parent.sourceUri) : new URI(this.model.rootUri);
@@ -145,9 +150,9 @@ export class ScmTreeWidget extends TreeWidget {
                 contextKeys={this.contextKeys}
                 labelProvider={this.labelProvider}
                 corePreferences={this.corePreferences}
+                caption={caption}
                 {...{
                     ...this.props,
-                    name,
                     parentPath,
                     sourceUri: node.sourceUri,
                     decorations: this.decorationsService.getDecoration(new URI(node.sourceUri), true),
@@ -447,6 +452,7 @@ export namespace ScmTreeWidget {
         labelProvider: LabelProvider;
         contextMenuRenderer: ContextMenuRenderer;
         corePreferences?: CorePreferences;
+        caption: React.ReactNode;
     }
 }
 
@@ -514,7 +520,7 @@ export class ScmResourceComponent extends ScmElement<ScmResourceComponent.Props>
 
     render(): JSX.Element | undefined {
         const { hover } = this.state;
-        const { name, model, treeNode, colors, parentPath, sourceUri, decorations, labelProvider, commands, menus, contextKeys } = this.props;
+        const { model, treeNode, colors, parentPath, sourceUri, decorations, labelProvider, commands, menus, contextKeys, caption } = this.props;
         const resourceUri = new URI(sourceUri);
 
         const decoration = decorations[0];
@@ -536,7 +542,7 @@ export class ScmResourceComponent extends ScmElement<ScmResourceComponent.Props>
             <span className={icon + ' file-icon'} />
             {this.props.renderExpansionToggle()}
             <div className={`noWrapInfo ${TREE_NODE_SEGMENT_GROW_CLASS}`} >
-                <span className='name'>{name}</span>
+                <span className='name'>{caption}</span>
                 <span className='path'>{path}</span>
             </div>
             <ScmInlineActions {...{
@@ -614,7 +620,6 @@ export class ScmResourceComponent extends ScmElement<ScmResourceComponent.Props>
 export namespace ScmResourceComponent {
     export interface Props extends ScmElement.Props {
         treeNode: ScmFileChangeNode;
-        name: string;
         parentPath: URI;
         sourceUri: string;
         decorations: Decoration[];
@@ -626,14 +631,14 @@ export class ScmResourceGroupElement extends ScmElement<ScmResourceGroupComponen
 
     render(): JSX.Element {
         const { hover } = this.state;
-        const { model, treeNode, groupLabel, menus, commands, contextKeys } = this.props;
+        const { model, treeNode, menus, commands, contextKeys, caption } = this.props;
         return <div className={`theia-header scm-theia-header ${TREE_NODE_SEGMENT_GROW_CLASS}`}
             onContextMenu={this.renderContextMenu}
             onMouseEnter={this.showHover}
             onMouseLeave={this.hideHover}
             ref={this.detectHover}>
             {this.props.renderExpansionToggle()}
-            <div className={`noWrapInfo ${TREE_NODE_SEGMENT_GROW_CLASS}`}>{groupLabel}</div>
+            <div className={`noWrapInfo ${TREE_NODE_SEGMENT_GROW_CLASS}`}>{caption}</div>
             <ScmInlineActions {...{
                 hover,
                 args: this.contextMenuArgs,
@@ -669,7 +674,6 @@ export class ScmResourceGroupElement extends ScmElement<ScmResourceGroupComponen
 export namespace ScmResourceGroupComponent {
     export interface Props extends ScmElement.Props {
         treeNode: ScmFileChangeGroupNode;
-        groupLabel: string;
     }
 }
 
@@ -677,7 +681,7 @@ export class ScmResourceFolderElement extends ScmElement<ScmResourceFolderElemen
 
     render(): JSX.Element {
         const { hover } = this.state;
-        const { model, treeNode, sourceUri, path, labelProvider, commands, menus, contextKeys } = this.props;
+        const { model, treeNode, sourceUri, labelProvider, commands, menus, contextKeys, caption } = this.props;
         const sourceFileStat: FileStat = { uri: sourceUri, isDirectory: true, lastModification: 0 };
         const icon = labelProvider.getIcon(sourceFileStat);
 
@@ -691,7 +695,7 @@ export class ScmResourceFolderElement extends ScmElement<ScmResourceFolderElemen
             {this.props.renderExpansionToggle()}
             <span className={icon + ' file-icon'} />
             <div className={`noWrapInfo ${TREE_NODE_SEGMENT_GROW_CLASS}`} >
-                <span className='name'>{path}</span>
+                <span className='name'>{caption}</span>
             </div>
             <ScmInlineActions {...{
                 hover,
@@ -726,7 +730,6 @@ export namespace ScmResourceFolderElement {
     export interface Props extends ScmElement.Props {
         treeNode: ScmFileChangeFolderNode;
         sourceUri: string;
-        path: string;
     }
 }
 
