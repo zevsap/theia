@@ -38,3 +38,68 @@ export function isNonEmptyArray<T>(obj: T[] | readonly T[] | undefined | null): 
 export function flatten<T>(arr: T[][]): T[] {
     return (<T[]>[]).concat(...arr);
 }
+
+/**
+ * Diffs two *sorted* arrays and computes the splices which apply the diff.
+ */
+export function sortedDiff<T>(before: ReadonlyArray<T>, after: ReadonlyArray<T>, compare: (a: T, b: T) => number): Splice<T>[] {
+    const result: MutableSplice<T>[] = [];
+
+    function pushSplice(start: number, deleteCount: number, toInsert: T[]): void {
+        if (deleteCount === 0 && toInsert.length === 0) {
+            return;
+        }
+
+        const latest = result[result.length - 1];
+
+        if (latest && latest.start + latest.deleteCount === start) {
+            latest.deleteCount += deleteCount;
+            latest.toInsert.push(...toInsert);
+        } else {
+            result.push({ start, deleteCount, toInsert });
+        }
+    }
+
+    let beforeIdx = 0;
+    let afterIdx = 0;
+
+    while (true) {
+        if (beforeIdx === before.length) {
+            pushSplice(beforeIdx, 0, after.slice(afterIdx));
+            break;
+        }
+        if (afterIdx === after.length) {
+            pushSplice(beforeIdx, before.length - beforeIdx, []);
+            break;
+        }
+
+        const beforeElement = before[beforeIdx];
+        const afterElement = after[afterIdx];
+        const n = compare(beforeElement, afterElement);
+        if (n === 0) {
+            // equal
+            beforeIdx += 1;
+            afterIdx += 1;
+        } else if (n < 0) {
+            // beforeElement is smaller -> before element removed
+            pushSplice(beforeIdx, 1, []);
+            beforeIdx += 1;
+        } else if (n > 0) {
+            // beforeElement is greater -> after element added
+            pushSplice(beforeIdx, 0, [afterElement]);
+            afterIdx += 1;
+        }
+    }
+
+    return result;
+}
+
+interface MutableSplice<T> extends Splice<T> {
+    deleteCount: number;
+}
+
+export interface Splice<T> {
+    readonly start: number;
+    readonly deleteCount: number;
+    readonly toInsert: T[];
+}
