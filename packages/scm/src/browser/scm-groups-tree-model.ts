@@ -19,6 +19,7 @@ import { DisposableCollection } from '@theia/core/lib/common/disposable';
 import { ScmService } from './scm-service';
 import { ScmTreeModel } from './scm-tree-model';
 import { ScmResourceGroup, ScmProvider } from './scm-provider';
+import debounce = require('lodash.debounce');
 
 @injectable()
 export class ScmGroupsTreeModel extends ScmTreeModel {
@@ -50,9 +51,9 @@ export class ScmGroupsTreeModel extends ScmTreeModel {
         this.contextKeys.scmProvider.set(provider ? provider.id : undefined);
         this.provider = provider;
         if (provider) {
-            this.toDisposeOnRepositoryChange.push(provider.onDidChange(() => {
-                this.root = this.createTree();
-            }));
+            this.toDisposeOnRepositoryChange.push(provider.onDidChange(() =>
+                debounce(() => this.root = this.createTree(), 200)())
+            );
             this.root = this.createTree();
         }
     }
