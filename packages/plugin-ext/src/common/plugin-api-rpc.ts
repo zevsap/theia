@@ -1208,16 +1208,31 @@ export interface CodeActionDto {
     disabled?: string;
 }
 
+export interface WorkspaceEditMetadataDto {
+    needsConfirmation: boolean;
+    label: string;
+    description?: string;
+    iconPath?: {
+        id: string;
+    } | {
+        light: UriComponents;
+        dark: UriComponents;
+    };
+}
+
 export interface WorkspaceFileEditDto {
     oldUri?: UriComponents;
     newUri?: UriComponents;
     options?: FileOperationOptions;
+    metadata?: WorkspaceEditMetadataDto;
 }
 
 export interface WorkspaceTextEditDto {
     resource: UriComponents;
     modelVersionId?: number;
     edit: TextEdit;
+    metadata?: WorkspaceEditMetadataDto;
+
 }
 export namespace WorkspaceTextEditDto {
     export function is(arg: WorkspaceTextEditDto | WorkspaceFileEditDto): arg is WorkspaceTextEditDto {
@@ -1250,6 +1265,7 @@ export interface TaskDto {
     // Provide a more specific type when necessary (see ProblemMatcherContribution)
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     problemMatcher?: any;
+    group?: string;
     detail?: string;
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     [key: string]: any;

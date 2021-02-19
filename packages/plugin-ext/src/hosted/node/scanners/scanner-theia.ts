@@ -1,5 +1,5 @@
 /********************************************************************************
- * Copyright (C) 2015-2018 Red Hat, Inc.
+ * Copyright (C) 2015-2021 Red Hat, Inc.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
@@ -14,40 +14,42 @@
  * SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
  ********************************************************************************/
 
-import { injectable, inject } from 'inversify';
+import { inject, injectable } from 'inversify';
 import {
+    AutoClosingPair,
+    AutoClosingPairConditional,
+    buildFrontendModuleName,
+    DebuggerContribution,
+    IconThemeContribution,
+    IconUrl,
+    Keybinding,
+    LanguageConfiguration,
+    LanguageContribution,
+    Menu,
+    PluginCommand,
+    PluginContribution,
     PluginEngine,
+    PluginLifecycle,
     PluginModel,
     PluginPackage,
-    PluginScanner,
-    PluginLifecycle,
-    buildFrontendModuleName,
-    PluginContribution,
-    PluginPackageLanguageContribution,
-    LanguageContribution,
-    PluginPackageLanguageContributionConfiguration,
-    LanguageConfiguration,
-    PluginTaskDefinitionContribution,
-    AutoClosingPairConditional,
-    AutoClosingPair,
-    ViewContainer,
-    Keybinding,
-    PluginPackageKeybinding,
-    PluginPackageViewContainer,
-    View,
-    PluginPackageView,
-    ViewWelcome,
-    PluginPackageViewWelcome,
-    Menu,
-    PluginPackageMenu,
-    PluginPackageDebuggersContribution,
-    DebuggerContribution,
-    SnippetContribution,
     PluginPackageCommand,
-    PluginCommand,
-    IconUrl,
+    PluginPackageDebuggersContribution,
+    PluginPackageKeybinding,
+    PluginPackageLanguageContribution,
+    PluginPackageLanguageContributionConfiguration,
+    PluginPackageMenu,
+    PluginPackageSubmenu,
+    PluginPackageView,
+    PluginPackageViewContainer,
+    PluginPackageViewWelcome,
+    PluginScanner,
+    PluginTaskDefinitionContribution,
+    SnippetContribution,
+    Submenu,
     ThemeContribution,
-    IconThemeContribution
+    View,
+    ViewContainer,
+    ViewWelcome
 } from '../../../common/plugin-protocol';
 import * as fs from 'fs';
 import * as path from 'path';
@@ -57,12 +59,16 @@ import { CharacterPair } from '../../../common/plugin-api-rpc';
 import * as jsoncparser from 'jsonc-parser';
 import { IJSONSchema } from '@theia/core/lib/common/json-schema';
 import { deepClone } from '@theia/core/lib/common/objects';
-import { FileUri } from '@theia/core/lib/node/file-uri';
 import { PreferenceSchema, PreferenceSchemaProperties } from '@theia/core/lib/common/preferences/preference-schema';
 import { RecursivePartial } from '@theia/core/lib/common/types';
-import { ProblemMatcherContribution, ProblemPatternContribution, TaskDefinition } from '@theia/task/lib/common/task-protocol';
+import {
+    ProblemMatcherContribution,
+    ProblemPatternContribution,
+    TaskDefinition
+} from '@theia/task/lib/common/task-protocol';
 import { ColorDefinition } from '@theia/core/lib/browser/color-registry';
 import { ResourceLabelFormatter } from '@theia/core/lib/common/label-protocol';
+import { PluginUriFactory } from './plugin-uri-factory';
 
 namespace nls {
     export function localize(key: string, _default: string): string {
@@ -86,6 +92,9 @@ export class TheiaPluginScanner implements PluginScanner {
     @inject(GrammarsReader)
     private readonly grammarsReader: GrammarsReader;
 
+    @inject(PluginUriFactory)
+    protected readonly pluginUriFactory: PluginUriFactory;
+
     get apiType(): PluginEngine {
         return this._apiType;
     }
@@ -93,7 +102,7 @@ export class TheiaPluginScanner implements PluginScanner {
     getModel(plugin: PluginPackage): PluginModel {
         const result: PluginModel = {
             packagePath: plugin.packagePath,
-            packageUri: FileUri.create(plugin.packagePath).toString(),
+            packageUri: this.pluginUriFactory.createUri(plugin).toString(),
             // see id definition: https://github.com/microsoft/vscode/blob/15916055fe0cb9411a5f36119b3b012458fe0a1d/src/vs/platform/extensions/common/extensions.ts#L167-L169
             id: `${plugin.publisher.toLowerCase()}.${plugin.name.toLowerCase()}`,
             name: plugin.name,
@@ -166,6 +175,14 @@ export class TheiaPluginScanner implements PluginScanner {
             }
         } catch (err) {
             console.error(`Could not read '${rawPlugin.name}' contribution 'languages'.`, rawPlugin.contributes!.languages, err);
+        }
+
+        try {
+            if (rawPlugin.contributes!.submenus) {
+                contributions.submenus = this.readSubmenus(rawPlugin.contributes.submenus!);
+            }
+        } catch (err) {
+            console.error(`Could not read '${rawPlugin.name}' contribution 'submenus'.`, rawPlugin.contributes!.submenus, err);
         }
 
         try {
@@ -386,7 +403,7 @@ export class TheiaPluginScanner implements PluginScanner {
             if (contribution.path) {
                 result.push({
                     id: contribution.id,
-                    uri: FileUri.create(path.join(pck.packagePath, contribution.path)).toString(),
+                    uri: this.pluginUriFactory.createUri(pck, contribution.path).toString(),
                     description: contribution.description,
                     label: contribution.label,
                     uiTheme: contribution.uiTheme
@@ -412,7 +429,7 @@ export class TheiaPluginScanner implements PluginScanner {
             }
             result.push({
                 id: contribution.id,
-                uri: FileUri.create(path.join(pck.packagePath, contribution.path)).toString(),
+                uri: this.pluginUriFactory.createUri(pck, contribution.path).toString(),
                 description: contribution.description,
                 label: contribution.label,
                 uiTheme: contribution.uiTheme
@@ -431,7 +448,7 @@ export class TheiaPluginScanner implements PluginScanner {
                 result.push({
                     language: contribution.language,
                     source: pck.displayName || pck.name,
-                    uri: FileUri.create(path.join(pck.packagePath, contribution.path)).toString()
+                    uri: this.pluginUriFactory.createUri(pck, contribution.path).toString()
                 });
             }
         }
@@ -527,6 +544,7 @@ export class TheiaPluginScanner implements PluginScanner {
     private readMenu(rawMenu: PluginPackageMenu): Menu {
         const result: Menu = {
             command: rawMenu.command,
+            submenu: rawMenu.submenu,
             alt: rawMenu.alt,
             group: rawMenu.group,
             when: rawMenu.when
@@ -536,6 +554,18 @@ export class TheiaPluginScanner implements PluginScanner {
 
     private readLanguages(rawLanguages: PluginPackageLanguageContribution[], pluginPath: string): LanguageContribution[] {
         return rawLanguages.map(language => this.readLanguage(language, pluginPath));
+    }
+
+    private readSubmenus(rawSubmenus: PluginPackageSubmenu[]): Submenu[] {
+        return rawSubmenus.map(submenu => this.readSubmenu(submenu));
+    }
+
+    private readSubmenu(rawSubmenu: PluginPackageSubmenu): Submenu {
+        return {
+            id: rawSubmenu.id,
+            label: rawSubmenu.label
+        };
+
     }
 
     private readLanguage(rawLang: PluginPackageLanguageContribution, pluginPath: string): LanguageContribution {
