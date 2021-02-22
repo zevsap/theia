@@ -186,6 +186,12 @@ export class DecorationsServiceImpl implements DecorationsService {
 
     readonly onDidChangeDecorations = this.onDidChangeDecorationsEmitter.event;
 
+    constructor() {
+        this.onDidChangeDecorationsDelayedEmitter.event(uri => {
+            this.onDidChangeDecorationsEmitter.fire(FileDecorationChangeEvent.debouncer(undefined, uri));
+        });
+    }
+
     dispose(): void {
         this.onDidChangeDecorationsEmitter.dispose();
         this.onDidChangeDecorationsDelayedEmitter.dispose();
@@ -226,5 +232,31 @@ export class DecorationsServiceImpl implements DecorationsService {
             });
         }
         return data;
+    }
+}
+
+class FileDecorationChangeEvent implements ResourceDecorationChangeEvent {
+
+    private readonly _data = TernarySearchTree.forUris<true>(true); // events ignore all path casings
+
+    affectsResource(uri: URI): boolean {
+        return this._data.get(uri) ?? this._data.findSuperstr(uri) !== undefined;
+    }
+
+    static debouncer(last: FileDecorationChangeEvent | undefined, current: URI | URI[]): FileDecorationChangeEvent {
+        if (!last) {
+            last = new FileDecorationChangeEvent();
+        }
+        if (Array.isArray(current)) {
+            // many
+            for (const uri of current) {
+                last._data.set(uri, true);
+            }
+        } else {
+            // one
+            last._data.set(current, true);
+        }
+
+        return last;
     }
 }

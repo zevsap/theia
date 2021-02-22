@@ -33,7 +33,7 @@ export interface DecorationData {
 
 @injectable()
 export class ScmDecorationsService {
-    private readonly NavigatorDecorationsEmitter = new Emitter<Map<string, DecorationData>>();
+    private readonly navigatorDecorationsEmitter = new Emitter<Map<string, DecorationData>>();
     private readonly diffComputer: DiffComputer;
     private dirtyState: boolean = true;
 
@@ -87,10 +87,10 @@ export class ScmDecorationsService {
     }
 
     get onNavigatorDecorationsChanged(): Event<Map<string, DecorationData>> {
-        return this.NavigatorDecorationsEmitter.event;
+        return this.navigatorDecorationsEmitter.event;
     }
 
     fireNavigatorDecorationsChanged(data: Map<string, DecorationData>): void {
-        this.NavigatorDecorationsEmitter.fire(data);
+        this.navigatorDecorationsEmitter.fire(data);
     }
 }

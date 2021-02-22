@@ -21,9 +21,10 @@ import { Tree } from '@theia/core/lib/browser/tree/tree';
 import { TreeDecorator, TreeDecoration } from '@theia/core/lib/browser/tree/tree-decorator';
 import { DepthFirstTreeIterator } from '@theia/core/lib/browser';
 import { FileStatNode } from '@theia/filesystem/lib/browser';
-import { DecorationData, ScmDecorationsService } from './scm-decorations-service';
+import { DecorationData } from './scm-decorations-service';
 import URI from '@theia/core/lib/common/uri';
 import { ColorRegistry } from '@theia/core/lib/browser/color-registry';
+import { DecorationsService } from '@theia/core/lib/browser/decorations-service';
 
 @injectable()
 export class ScmNavigatorDecorator implements TreeDecorator {
@@ -36,9 +37,12 @@ export class ScmNavigatorDecorator implements TreeDecorator {
     @inject(ColorRegistry)
     protected readonly colors: ColorRegistry;
 
-    constructor(@inject(ScmDecorationsService) protected readonly decorationsService: ScmDecorationsService) {
-        this.decorationsService.onNavigatorDecorationsChanged(data => {
-            this.decorationsMap = data;
+    constructor(@inject(DecorationsService) protected readonly decorationsService: DecorationsService) {
+        // this.scmDecorationsService.onNavigatorDecorationsChanged(data => {
+        //     this.decorationsMap = data;
+        //     this.fireDidChangeDecorations((tree: Tree) => this.collectDecorators(tree));
+        // });
+        this.decorationsService.onDidChangeDecorations(e => {
             this.fireDidChangeDecorations((tree: Tree) => this.collectDecorators(tree));
         });
     }
