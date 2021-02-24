@@ -118,7 +118,7 @@ export abstract class ScmTreeModel extends TreeModelImpl {
 
     protected createTree(): ScmFileChangeRootNode {
         const root = {
-            id: 'file-change-tree-root',
+            id: 'file-change-tree-root_' + Date.now().toString(),
             parent: undefined,
             visible: false,
             rootUri: this.rootUri,
