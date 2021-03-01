@@ -44,7 +44,7 @@ export interface ResourceDecorationChangeEvent {
 export const DecorationsService = Symbol('DecorationsService');
 export interface DecorationsService {
 
-    readonly onDidChangeDecorations: Event<ResourceDecorationChangeEvent>;
+    readonly onDidChangeDecorations: Event<Map<string, Decoration>>;
 
     registerDecorationsProvider(provider: DecorationsProvider): Disposable;
 
@@ -64,9 +64,7 @@ class DecorationProviderWrapper {
     private readonly disposable: Disposable;
 
     constructor(
-        readonly provider: DecorationsProvider,
-        private readonly uriEmitter: Emitter<URI | URI[]>,
-        private readonly flushEmitter: Emitter<ResourceDecorationChangeEvent>
+        readonly provider: DecorationsProvider
     ) {
 
         this.data = TernarySearchTree.forUris<DecorationDataRequest | Decoration | undefined>(true);
@@ -75,7 +73,7 @@ class DecorationProviderWrapper {
             if (!uris) {
                 // flush event -> drop all data, can affect everything
                 this.data.clear();
-                this.flushEmitter.fire({ affectsResource(): boolean { return true; } });
+                // this.flushEmitter.fire({ affectsResource(): boolean { return true; } });
 
             } else {
                 // selective changes -> drop for resource, fetch again, send event
@@ -168,11 +166,7 @@ class DecorationProviderWrapper {
 
     private keepItem(uri: URI, data: Decoration | undefined): Decoration | undefined {
         const deco = data ? data : undefined;
-        const old = this.data.set(uri, deco);
-        if (deco || old) {
-            // only fire event when something changed
-            this.uriEmitter.fire(uri);
-        }
+        this.data.set(uri, deco);
         return deco;
     }
 }
@@ -181,41 +175,38 @@ class DecorationProviderWrapper {
 export class DecorationsServiceImpl implements DecorationsService {
 
     private readonly data: DecorationProviderWrapper[] = [];
-    private readonly onDidChangeDecorationsDelayedEmitter = new Emitter<URI | URI[]>();
-    private readonly onDidChangeDecorationsEmitter = new Emitter<ResourceDecorationChangeEvent>();
+    private readonly onDidChangeDecorationsEmitter = new Emitter<Map<string, Decoration>>();
 
     readonly onDidChangeDecorations = this.onDidChangeDecorationsEmitter.event;
 
-    constructor() {
-        this.onDidChangeDecorationsDelayedEmitter.event(uri => {
-            this.onDidChangeDecorationsEmitter.fire(FileDecorationChangeEvent.debouncer(undefined, uri));
-        });
-    }
-
     dispose(): void {
         this.onDidChangeDecorationsEmitter.dispose();
-        this.onDidChangeDecorationsDelayedEmitter.dispose();
     }
 
     registerDecorationsProvider(provider: DecorationsProvider): Disposable {
 
         const wrapper = new DecorationProviderWrapper(
-            provider,
-            this.onDidChangeDecorationsDelayedEmitter,
-            this.onDidChangeDecorationsEmitter
+            provider
         );
         this.data.push(wrapper);
 
-        this.onDidChangeDecorationsEmitter.fire({
-            // everything might have changed
-            affectsResource(): boolean { return true; }
+        provider.onDidChange(async uris => {
+            const data: Map<string, Decoration> = new Map();
+            if (uris) {
+                for (const uri of uris) {
+                    const decoration = await provider.provideDecorations(uri, CancellationToken.None);
+                    if (decoration) {
+                        data.set(uri.toString(), decoration);
+                    }
+                }
+                this.onDidChangeDecorationsEmitter.fire(data);
+            }
         });
 
         return Disposable.create(() => {
             // fire event that says 'yes' for any resource
             // known to this provider. then dispose and remove it.
             this.data.splice(this.data.indexOf(wrapper), 1);
-            this.onDidChangeDecorationsEmitter.fire({ affectsResource: uri => wrapper.knowsAbout(new URI(uri.toString())) });
             wrapper.dispose();
         });
     }
@@ -232,31 +223,5 @@ export class DecorationsServiceImpl implements DecorationsService {
             });
         }
         return data;
-    }
-}
-
-class FileDecorationChangeEvent implements ResourceDecorationChangeEvent {
-
-    private readonly _data = TernarySearchTree.forUris<true>(true); // events ignore all path casings
-
-    affectsResource(uri: URI): boolean {
-        return this._data.get(uri) ?? this._data.findSuperstr(uri) !== undefined;
-    }
-
-    static debouncer(last: FileDecorationChangeEvent | undefined, current: URI | URI[]): FileDecorationChangeEvent {
-        if (!last) {
-            last = new FileDecorationChangeEvent();
-        }
-        if (Array.isArray(current)) {
-            // many
-            for (const uri of current) {
-                last._data.set(uri, true);
-            }
-        } else {
-            // one
-            last._data.set(current, true);
-        }
-
-        return last;
     }
 }

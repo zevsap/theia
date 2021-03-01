@@ -2933,6 +2933,66 @@ declare module '@theia/plugin' {
 
 
     /**
+     * Provides information on a line in a terminal in order to provide links for it.
+     */
+    export interface TerminalLinkContext {
+        /**
+         * This is the text from the unwrapped line in the terminal.
+         */
+        line: string;
+
+        /**
+         * The terminal the link belongs to.
+         */
+        terminal: Terminal;
+    }
+
+    /**
+     * A provider that enables detection and handling of links within terminals.
+     */
+    export interface TerminalLinkProvider<T extends TerminalLink = TerminalLink> {
+        /**
+         * Provide terminal links for the given context. Note that this can be called multiple times
+         * even before previous calls resolve, make sure to not share global objects (eg. `RegExp`)
+         * that could have problems when asynchronous usage may overlap.
+         * @param context Information about what links are being provided for.
+         * @param token A cancellation token.
+         * @return A list of terminal links for the given line.
+         */
+        provideTerminalLinks(context: TerminalLinkContext, token: CancellationToken): ProviderResult<T[]>;
+
+        /**
+         * Handle an activated terminal link.
+         * @param link The link to handle.
+         */
+        handleTerminalLink(link: T): ProviderResult<void>;
+    }
+
+    /**
+     * A link on a terminal line.
+     */
+    export interface TerminalLink {
+        /**
+         * The start index of the link on [TerminalLinkContext.line](#TerminalLinkContext.line].
+         */
+        startIndex: number;
+
+        /**
+         * The length of the link on [TerminalLinkContext.line](#TerminalLinkContext.line]
+         */
+        length: number;
+
+        /**
+         * The tooltip text when you hover over this link.
+         *
+         * If a tooltip is provided, is will be displayed in a string that includes instructions on
+         * how to trigger the link, such as `{0} (ctrl + click)`. The specific instructions vary
+         * depending on OS, user settings, and localization.
+         */
+        tooltip?: string;
+    }
+
+    /*
      * A file decoration represents metadata that can be rendered with a file.
      */
     export class FileDecoration {
@@ -2995,6 +3055,66 @@ declare module '@theia/plugin' {
          * @returns A decoration or a thenable that resolves to such.
          */
         provideFileDecoration(uri: Uri, token: CancellationToken): ProviderResult<FileDecoration>;
+    }
+
+     /*
+     * Provides information on a line in a terminal in order to provide links for it.
+     */
+    export interface TerminalLinkContext {
+        /**
+         * This is the text from the unwrapped line in the terminal.
+         */
+        line: string;
+
+        /**
+         * The terminal the link belongs to.
+         */
+        terminal: Terminal;
+    }
+
+    /**
+     * A provider that enables detection and handling of links within terminals.
+     */
+    export interface TerminalLinkProvider<T extends TerminalLink = TerminalLink> {
+        /**
+         * Provide terminal links for the given context. Note that this can be called multiple times
+         * even before previous calls resolve, make sure to not share global objects (eg. `RegExp`)
+         * that could have problems when asynchronous usage may overlap.
+         * @param context Information about what links are being provided for.
+         * @param token A cancellation token.
+         * @return A list of terminal links for the given line.
+         */
+        provideTerminalLinks(context: TerminalLinkContext, token: CancellationToken): ProviderResult<T[]>;
+
+        /**
+         * Handle an activated terminal link.
+         * @param link The link to handle.
+         */
+        handleTerminalLink(link: T): ProviderResult<void>;
+    }
+
+    /**
+     * A link on a terminal line.
+     */
+    export interface TerminalLink {
+        /**
+         * The start index of the link on [TerminalLinkContext.line](#TerminalLinkContext.line].
+         */
+        startIndex: number;
+
+        /**
+         * The length of the link on [TerminalLinkContext.line](#TerminalLinkContext.line]
+         */
+        length: number;
+
+        /**
+         * The tooltip text when you hover over this link.
+         *
+         * If a tooltip is provided, is will be displayed in a string that includes instructions on
+         * how to trigger the link, such as `{0} (ctrl + click)`. The specific instructions vary
+         * depending on OS, user settings, and localization.
+         */
+        tooltip?: string;
     }
 
     /**
@@ -8587,6 +8707,26 @@ declare module '@theia/plugin' {
          * resource state.
          */
         readonly decorations?: SourceControlResourceDecorations;
+
+        /**
+         * Context value of the resource state. This can be used to contribute resource specific actions.
+         * For example, if a resource is given a context value as `diffable`. When contributing actions to `scm/resourceState/context`
+         * using `menus` extension point, you can specify context value for key `scmResourceState` in `when` expressions, like `scmResourceState == diffable`.
+         * ```
+         *	"contributes": {
+         *		"menus": {
+         *			"scm/resourceState/context": [
+         *				{
+         *					"command": "extension.diff",
+         *					"when": "scmResourceState == diffable"
+         *				}
+         *			]
+         *		}
+         *	}
+         * ```
+         * This will show action `extension.diff` only for resources with `contextValue` is `diffable`.
+         */
+        readonly contextValue?: string;
     }
 
     /**

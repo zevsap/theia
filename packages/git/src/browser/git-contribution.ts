@@ -15,9 +15,22 @@
  ********************************************************************************/
 import { inject, injectable } from 'inversify';
 import URI from '@theia/core/lib/common/uri';
-import { Command, CommandContribution, CommandRegistry, DisposableCollection, MenuContribution, MenuModelRegistry, Mutable, MenuAction } from '@theia/core';
+import {
+    Command,
+    CommandContribution,
+    CommandRegistry,
+    DisposableCollection,
+    MenuAction,
+    MenuContribution,
+    MenuModelRegistry,
+    Mutable
+} from '@theia/core';
 import { DiffUris, Widget } from '@theia/core/lib/browser';
-import { TabBarToolbarContribution, TabBarToolbarRegistry, TabBarToolbarItem } from '@theia/core/lib/browser/shell/tab-bar-toolbar';
+import {
+    TabBarToolbarContribution,
+    TabBarToolbarItem,
+    TabBarToolbarRegistry
+} from '@theia/core/lib/browser/shell/tab-bar-toolbar';
 import { EditorContextMenu, EditorManager, EditorOpenerOptions, EditorWidget } from '@theia/editor/lib/browser';
 import { Git, GitFileChange, GitFileStatus } from '../common';
 import { GitRepositoryTracker } from './git-repository-tracker';
@@ -28,11 +41,12 @@ import { GitRepositoryProvider } from './git-repository-provider';
 import { GitErrorHandler } from '../browser/git-error-handler';
 import { ScmWidget } from '@theia/scm/lib/browser/scm-widget';
 import { ScmTreeWidget } from '@theia/scm/lib/browser/scm-tree-widget';
-import { ScmResource, ScmCommand } from '@theia/scm/lib/browser/scm-provider';
+import { ScmCommand, ScmResource } from '@theia/scm/lib/browser/scm-provider';
 import { ProgressService } from '@theia/core/lib/common/progress-service';
 import { GitPreferences } from './git-preferences';
 import { ColorContribution } from '@theia/core/lib/browser/color-application-contribution';
 import { ColorRegistry } from '@theia/core/lib/browser/color-registry';
+import { ScmInputIssueType } from '@theia/scm/lib/browser/scm-input';
 import { DecorationsService } from '@theia/core/lib/browser/decorations-service';
 import { GitDecorationProvider } from './git-decoration-provider';
 
@@ -492,7 +506,7 @@ export class GitContribution implements CommandContribution, MenuContribution, T
                 const lastCommit = await scmRepository.provider.amendSupport.getLastCommit();
                 if (lastCommit === undefined) {
                     scmRepository.input.issue = {
-                        type: 'error',
+                        type: ScmInputIssueType.Error,
                         message: 'No previous commit to amend'
                     };
                     scmRepository.input.focus();
@@ -732,7 +746,7 @@ export class GitContribution implements CommandContribution, MenuContribution, T
         const message = options.message || scmRepository.input.value;
         if (!message.trim()) {
             scmRepository.input.issue = {
-                type: 'error',
+                type: ScmInputIssueType.Error,
                 message: 'Please provide a commit message'
             };
             scmRepository.input.focus();
@@ -740,7 +754,7 @@ export class GitContribution implements CommandContribution, MenuContribution, T
         }
         if (!scmRepository.provider.stagedChanges.length) {
             scmRepository.input.issue = {
-                type: 'error',
+                type: ScmInputIssueType.Error,
                 message: 'No changes added to commit'
             };
             scmRepository.input.focus();
@@ -781,7 +795,7 @@ export class GitContribution implements CommandContribution, MenuContribution, T
             scmRepository.input.focus();
         } catch (e) {
             scmRepository.input.issue = {
-                type: 'warning',
+                type: ScmInputIssueType.Warning,
                 message: 'Make sure you configure your \'user.name\' and \'user.email\' in git.'
             };
         }

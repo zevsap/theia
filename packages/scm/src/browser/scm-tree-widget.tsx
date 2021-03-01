@@ -155,7 +155,7 @@ export class ScmTreeWidget extends TreeWidget {
                     ...this.props,
                     parentPath,
                     sourceUri: node.sourceUri,
-                    decorations: this.decorationsService.getDecoration(new URI(node.sourceUri), true),
+                    decoration: this.decorationsService.getDecoration(new URI(node.sourceUri), true)[0],
                     colors: this.colors,
                     renderExpansionToggle: () => this.renderExpansionToggle(node, props),
                 }}
@@ -520,10 +520,8 @@ export class ScmResourceComponent extends ScmElement<ScmResourceComponent.Props>
 
     render(): JSX.Element | undefined {
         const { hover } = this.state;
-        const { model, treeNode, colors, parentPath, sourceUri, decorations, labelProvider, commands, menus, contextKeys, caption } = this.props;
+        const { model, treeNode, colors, parentPath, sourceUri, decoration, labelProvider, commands, menus, contextKeys, caption } = this.props;
         const resourceUri = new URI(sourceUri);
-
-        const decoration = decorations[0];
 
         const icon = labelProvider.getIcon(resourceUri);
         const color = decoration && decoration.colorId ? `var(${colors.toCssVariableName(decoration.colorId)})` : '';
@@ -622,7 +620,7 @@ export namespace ScmResourceComponent {
         treeNode: ScmFileChangeNode;
         parentPath: URI;
         sourceUri: string;
-        decorations: Decoration[];
+        decoration: Decoration | undefined;
         colors: ColorRegistry;
     }
 }

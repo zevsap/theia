@@ -130,6 +130,7 @@ import {
     SemanticTokensEdits,
     SemanticTokensEdit,
     ColorThemeKind,
+    SourceControlInputBoxValidationType,
     FileDecoration
 } from './types-impl';
 import { AuthenticationExtImpl } from './authentication-ext';
@@ -935,6 +936,7 @@ export function createAPIFactory(
             SemanticTokensEdits,
             SemanticTokensEdit,
             ColorThemeKind,
+            SourceControlInputBoxValidationType,
             FileDecoration
         };
     };
