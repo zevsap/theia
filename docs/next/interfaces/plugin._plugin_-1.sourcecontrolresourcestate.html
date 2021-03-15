@@ -94,6 +94,7 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="plugin._plugin_-1.sourcecontrolresourcestate.html#command" class="tsd-kind-icon">command</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="plugin._plugin_-1.sourcecontrolresourcestate.html#contextvalue" class="tsd-kind-icon">context<wbr>Value</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="plugin._plugin_-1.sourcecontrolresourcestate.html#decorations" class="tsd-kind-icon">decorations</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="plugin._plugin_-1.sourcecontrolresourcestate.html#resourceuri" class="tsd-kind-icon">resource<wbr>Uri</a></li>
 							</ul>
@@ -109,7 +110,7 @@
 					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <a href="plugin._plugin_-1.command.html" class="tsd-signature-type">Command</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6afae440e1/packages/plugin/src/theia.d.ts#L8876">packages/plugin/src/theia.d.ts:8876</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4e75591d31/packages/plugin/src/theia.d.ts#L8876">packages/plugin/src/theia.d.ts:8876</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -120,12 +121,39 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="contextvalue" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> context<wbr>Value</h3>
+					<div class="tsd-signature tsd-kind-icon">context<wbr>Value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4e75591d31/packages/plugin/src/theia.d.ts#L8902">packages/plugin/src/theia.d.ts:8902</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Context value of the resource state. This can be used to contribute resource specific actions.
+								For example, if a resource is given a context value as <code>diffable</code>. When contributing actions to <code>scm/resourceState/context</code>
+							using <code>menus</code> extension point, you can specify context value for key <code>scmResourceState</code> in <code>when</code> expressions, like <code>scmResourceState == diffable</code>.</p>
+							<pre><code>    <span class="hljs-string">&quot;contributes&quot;</span>: {
+        <span class="hljs-string">&quot;menus&quot;</span>: {
+            <span class="hljs-string">&quot;scm/resourceState/context&quot;</span>: [
+                {
+                    <span class="hljs-string">&quot;command&quot;</span>: <span class="hljs-string">&quot;extension.diff&quot;</span>,
+                    <span class="hljs-string">&quot;when&quot;</span>: <span class="hljs-string">&quot;scmResourceState == diffable&quot;</span>
+                }
+            ]
+        }
+    }</code></pre><p>This will show action <code>extension.diff</code> only for resources with <code>contextValue</code> is <code>diffable</code>.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="decorations" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> decorations</h3>
 					<div class="tsd-signature tsd-kind-icon">decorations<span class="tsd-signature-symbol">:</span> <a href="plugin._plugin_-1.sourcecontrolresourcedecorations.html" class="tsd-signature-type">SourceControlResourceDecorations</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6afae440e1/packages/plugin/src/theia.d.ts#L8882">packages/plugin/src/theia.d.ts:8882</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4e75591d31/packages/plugin/src/theia.d.ts#L8882">packages/plugin/src/theia.d.ts:8882</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -141,7 +169,7 @@
 					<div class="tsd-signature tsd-kind-icon">resource<wbr>Uri<span class="tsd-signature-symbol">:</span> <a href="../classes/plugin._plugin_-1.uri.html" class="tsd-signature-type">Uri</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6afae440e1/packages/plugin/src/theia.d.ts#L8870">packages/plugin/src/theia.d.ts:8870</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4e75591d31/packages/plugin/src/theia.d.ts#L8870">packages/plugin/src/theia.d.ts:8870</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -215,6 +243,9 @@
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="plugin._plugin_-1.sourcecontrolresourcestate.html#command" class="tsd-kind-icon">command</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="plugin._plugin_-1.sourcecontrolresourcestate.html#contextvalue" class="tsd-kind-icon">context<wbr>Value</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="plugin._plugin_-1.sourcecontrolresourcestate.html#decorations" class="tsd-kind-icon">decorations</a>

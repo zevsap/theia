@@ -89,9 +89,10 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="plugin_ext.scmext-1.html#_executeresourcecommand" class="tsd-kind-icon">$execute<wbr>Resource<wbr>Command</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="plugin_ext.scmext-1.html#_oninputboxvaluechange" class="tsd-kind-icon">$on<wbr>Input<wbr>Box<wbr>Value<wbr>Change</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="plugin_ext.scmext-1.html#_provideoriginalresource" class="tsd-kind-icon">$provide<wbr>Original<wbr>Resource</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="plugin_ext.scmext-1.html#_setsourcecontrolselection" class="tsd-kind-icon">$set<wbr>Source<wbr>Control<wbr>Selection</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="plugin_ext.scmext-1.html#_updateinputbox" class="tsd-kind-icon">$update<wbr>Input<wbr>Box</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="plugin_ext.scmext-1.html#_setselectedsourcecontrol" class="tsd-kind-icon">$set<wbr>Selected<wbr>Source<wbr>Control</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="plugin_ext.scmext-1.html#_validateinput" class="tsd-kind-icon">$validate<wbr>Input</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="plugin_ext.scmext-1.html#createsourcecontrol" class="tsd-kind-icon">create<wbr>Source<wbr>Control</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="plugin_ext.scmext-1.html#getlastinputbox" class="tsd-kind-icon">get<wbr>Last<wbr>Input<wbr>Box</a></li>
 							</ul>
@@ -111,7 +112,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6afae440e1/packages/plugin-ext/src/common/plugin-api-rpc.ts#L694">packages/plugin-ext/src/common/plugin-api-rpc.ts:694</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4e75591d31/packages/plugin-ext/src/common/plugin-api-rpc.ts#L694">packages/plugin-ext/src/common/plugin-api-rpc.ts:694</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -131,6 +132,32 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="_oninputboxvaluechange" class="tsd-anchor"></a>
+					<h3>$on<wbr>Input<wbr>Box<wbr>Value<wbr>Change</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">$on<wbr>Input<wbr>Box<wbr>Value<wbr>Change<span class="tsd-signature-symbol">(</span>sourceControlHandle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4e75591d31/packages/plugin-ext/src/common/plugin-api-rpc.ts#L693">packages/plugin-ext/src/common/plugin-api-rpc.ts:693</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sourceControlHandle: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>message: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="_provideoriginalresource" class="tsd-anchor"></a>
 					<h3>$provide<wbr>Original<wbr>Resource</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
@@ -140,7 +167,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6afae440e1/packages/plugin-ext/src/common/plugin-api-rpc.ts#L695">packages/plugin-ext/src/common/plugin-api-rpc.ts:695</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4e75591d31/packages/plugin-ext/src/common/plugin-api-rpc.ts#L697">packages/plugin-ext/src/common/plugin-api-rpc.ts:697</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -160,25 +187,22 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="_setsourcecontrolselection" class="tsd-anchor"></a>
-					<h3>$set<wbr>Source<wbr>Control<wbr>Selection</h3>
+					<a name="_setselectedsourcecontrol" class="tsd-anchor"></a>
+					<h3>$set<wbr>Selected<wbr>Source<wbr>Control</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$set<wbr>Source<wbr>Control<wbr>Selection<span class="tsd-signature-symbol">(</span>sourceControlHandle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, selected<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">$set<wbr>Selected<wbr>Source<wbr>Control<span class="tsd-signature-symbol">(</span>selectedSourceControlHandle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6afae440e1/packages/plugin-ext/src/common/plugin-api-rpc.ts#L696">packages/plugin-ext/src/common/plugin-api-rpc.ts:696</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4e75591d31/packages/plugin-ext/src/common/plugin-api-rpc.ts#L696">packages/plugin-ext/src/common/plugin-api-rpc.ts:696</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>sourceControlHandle: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5>selected: <span class="tsd-signature-type">boolean</span></h5>
+									<h5>selectedSourceControlHandle: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -186,16 +210,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="_updateinputbox" class="tsd-anchor"></a>
-					<h3>$update<wbr>Input<wbr>Box</h3>
+					<a name="_validateinput" class="tsd-anchor"></a>
+					<h3>$validate<wbr>Input</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$update<wbr>Input<wbr>Box<span class="tsd-signature-symbol">(</span>sourceControlHandle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">$validate<wbr>Input<span class="tsd-signature-symbol">(</span>sourceControlHandle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, cursorPosition<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6afae440e1/packages/plugin-ext/src/common/plugin-api-rpc.ts#L693">packages/plugin-ext/src/common/plugin-api-rpc.ts:693</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4e75591d31/packages/plugin-ext/src/common/plugin-api-rpc.ts#L695">packages/plugin-ext/src/common/plugin-api-rpc.ts:695</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -204,10 +228,13 @@
 									<h5>sourceControlHandle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>message: <span class="tsd-signature-type">string</span></h5>
+									<h5>value: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>cursorPosition: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -221,7 +248,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6afae440e1/packages/plugin-ext/src/common/plugin-api-rpc.ts#L691">packages/plugin-ext/src/common/plugin-api-rpc.ts:691</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4e75591d31/packages/plugin-ext/src/common/plugin-api-rpc.ts#L691">packages/plugin-ext/src/common/plugin-api-rpc.ts:691</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -247,13 +274,13 @@
 					<a name="getlastinputbox" class="tsd-anchor"></a>
 					<h3>get<wbr>Last<wbr>Input<wbr>Box</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Last<wbr>Input<wbr>Box<span class="tsd-signature-symbol">(</span>plugin<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugin-2.html" class="tsd-signature-type">Plugin</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin._plugin_-1.sourcecontrolinputbox.html" class="tsd-signature-type">SourceControlInputBox</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Last<wbr>Input<wbr>Box<span class="tsd-signature-symbol">(</span>plugin<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugin-2.html" class="tsd-signature-type">Plugin</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin._plugin_.sourcecontrolinputbox.html" class="tsd-signature-type">SourceControlInputBox</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6afae440e1/packages/plugin-ext/src/common/plugin-api-rpc.ts#L692">packages/plugin-ext/src/common/plugin-api-rpc.ts:692</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4e75591d31/packages/plugin-ext/src/common/plugin-api-rpc.ts#L692">packages/plugin-ext/src/common/plugin-api-rpc.ts:692</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -262,7 +289,7 @@
 									<h5>plugin: <a href="plugin_ext.plugin-2.html" class="tsd-signature-type">Plugin</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="plugin._plugin_-1.sourcecontrolinputbox.html" class="tsd-signature-type">SourceControlInputBox</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="plugin._plugin_.sourcecontrolinputbox.html" class="tsd-signature-type">SourceControlInputBox</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -388,13 +415,16 @@
 								<a href="plugin_ext.scmext-1.html#_executeresourcecommand" class="tsd-kind-icon">$execute<wbr>Resource<wbr>Command</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="plugin_ext.scmext-1.html#_oninputboxvaluechange" class="tsd-kind-icon">$on<wbr>Input<wbr>Box<wbr>Value<wbr>Change</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="plugin_ext.scmext-1.html#_provideoriginalresource" class="tsd-kind-icon">$provide<wbr>Original<wbr>Resource</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="plugin_ext.scmext-1.html#_setsourcecontrolselection" class="tsd-kind-icon">$set<wbr>Source<wbr>Control<wbr>Selection</a>
+								<a href="plugin_ext.scmext-1.html#_setselectedsourcecontrol" class="tsd-kind-icon">$set<wbr>Selected<wbr>Source<wbr>Control</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="plugin_ext.scmext-1.html#_updateinputbox" class="tsd-kind-icon">$update<wbr>Input<wbr>Box</a>
+								<a href="plugin_ext.scmext-1.html#_validateinput" class="tsd-kind-icon">$validate<wbr>Input</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="plugin_ext.scmext-1.html#createsourcecontrol" class="tsd-kind-icon">create<wbr>Source<wbr>Control</a>
