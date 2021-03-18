@@ -139,7 +139,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/37a0a2f0f3/packages/git/src/browser/git-repository-tracker.ts#L34">packages/git/src/browser/git-repository-tracker.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8538310c1/packages/git/src/browser/git-repository-tracker.ts#L34">packages/git/src/browser/git-repository-tracker.ts:34</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -167,7 +167,7 @@
 					<div class="tsd-signature tsd-kind-icon">git<span class="tsd-signature-symbol">:</span> <a href="../interfaces/git.git-3.html" class="tsd-signature-type">Git</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/37a0a2f0f3/packages/git/src/browser/git-repository-tracker.ts#L37">packages/git/src/browser/git-repository-tracker.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8538310c1/packages/git/src/browser/git-repository-tracker.ts#L37">packages/git/src/browser/git-repository-tracker.ts:37</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -177,7 +177,7 @@
 					<div class="tsd-signature tsd-kind-icon">git<wbr>Watcher<span class="tsd-signature-symbol">:</span> <a href="git.gitwatcher-1.html" class="tsd-signature-type">GitWatcher</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/37a0a2f0f3/packages/git/src/browser/git-repository-tracker.ts#L39">packages/git/src/browser/git-repository-tracker.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8538310c1/packages/git/src/browser/git-repository-tracker.ts#L39">packages/git/src/browser/git-repository-tracker.ts:39</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -187,7 +187,7 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Git<wbr>Event<wbr>Emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Emitter</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../modules/git.gitstatuschangeevent-1.html" class="tsd-signature-type">GitStatusChangeEvent</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Emitter&lt;GitStatusChangeEvent | undefined&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/37a0a2f0f3/packages/git/src/browser/git-repository-tracker.ts#L34">packages/git/src/browser/git-repository-tracker.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8538310c1/packages/git/src/browser/git-repository-tracker.ts#L34">packages/git/src/browser/git-repository-tracker.ts:34</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -197,7 +197,7 @@
 					<div class="tsd-signature tsd-kind-icon">repository<wbr>Provider<span class="tsd-signature-symbol">:</span> <a href="git.gitrepositoryprovider.html" class="tsd-signature-type">GitRepositoryProvider</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/37a0a2f0f3/packages/git/src/browser/git-repository-tracker.ts#L38">packages/git/src/browser/git-repository-tracker.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8538310c1/packages/git/src/browser/git-repository-tracker.ts#L38">packages/git/src/browser/git-repository-tracker.ts:38</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -207,7 +207,7 @@
 					<div class="tsd-signature tsd-kind-icon">to<wbr>Dispose<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DisposableCollection</span><span class="tsd-signature-symbol"> = new DisposableCollection()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/37a0a2f0f3/packages/git/src/browser/git-repository-tracker.ts#L32">packages/git/src/browser/git-repository-tracker.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8538310c1/packages/git/src/browser/git-repository-tracker.ts#L32">packages/git/src/browser/git-repository-tracker.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -217,7 +217,7 @@
 					<div class="tsd-signature tsd-kind-icon">update<wbr>Status<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DebouncedFunc</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = debounce(async (): Promise&lt;void&gt; &#x3D;&gt; {this.toDispose.dispose();const tokenSource &#x3D; new CancellationTokenSource();this.toDispose.push(Disposable.create(() &#x3D;&gt; tokenSource.cancel()));const token &#x3D; tokenSource.token;const source &#x3D; this.selectedRepository;if (source) {const status &#x3D; await this.git.status(source);this.setStatus({ source, status }, token);this.toDispose.push(this.gitWatcher.onGitEvent(event &#x3D;&gt; {if (event.source.localUri &#x3D;&#x3D;&#x3D; source.localUri) {this.setStatus(event, token);}}));this.toDispose.push(await this.gitWatcher.watchGitChanges(source));} else {this.setStatus(undefined, token);}}, 50)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/37a0a2f0f3/packages/git/src/browser/git-repository-tracker.ts#L48">packages/git/src/browser/git-repository-tracker.ts:48</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8538310c1/packages/git/src/browser/git-repository-tracker.ts#L48">packages/git/src/browser/git-repository-tracker.ts:48</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -227,7 +227,7 @@
 					<div class="tsd-signature tsd-kind-icon">working<wbr>Directory<wbr>Status<span class="tsd-signature-symbol">:</span> <a href="../modules/git.workingdirectorystatus-1.html" class="tsd-signature-type">WorkingDirectoryStatus</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/37a0a2f0f3/packages/git/src/browser/git-repository-tracker.ts#L33">packages/git/src/browser/git-repository-tracker.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8538310c1/packages/git/src/browser/git-repository-tracker.ts#L33">packages/git/src/browser/git-repository-tracker.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -244,7 +244,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/37a0a2f0f3/packages/git/src/browser/git-repository-tracker.ts#L88">packages/git/src/browser/git-repository-tracker.ts:88</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8538310c1/packages/git/src/browser/git-repository-tracker.ts#L88">packages/git/src/browser/git-repository-tracker.ts:88</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -266,7 +266,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/37a0a2f0f3/packages/git/src/browser/git-repository-tracker.ts#L102">packages/git/src/browser/git-repository-tracker.ts:102</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8538310c1/packages/git/src/browser/git-repository-tracker.ts#L102">packages/git/src/browser/git-repository-tracker.ts:102</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -288,7 +288,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/37a0a2f0f3/packages/git/src/browser/git-repository-tracker.ts#L109">packages/git/src/browser/git-repository-tracker.ts:109</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8538310c1/packages/git/src/browser/git-repository-tracker.ts#L109">packages/git/src/browser/git-repository-tracker.ts:109</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -310,7 +310,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/37a0a2f0f3/packages/git/src/browser/git-repository-tracker.ts#L124">packages/git/src/browser/git-repository-tracker.ts:124</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8538310c1/packages/git/src/browser/git-repository-tracker.ts#L124">packages/git/src/browser/git-repository-tracker.ts:124</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
@@ -327,7 +327,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/37a0a2f0f3/packages/git/src/browser/git-repository-tracker.ts#L81">packages/git/src/browser/git-repository-tracker.ts:81</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8538310c1/packages/git/src/browser/git-repository-tracker.ts#L81">packages/git/src/browser/git-repository-tracker.ts:81</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -349,7 +349,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/37a0a2f0f3/packages/git/src/browser/git-repository-tracker.ts#L95">packages/git/src/browser/git-repository-tracker.ts:95</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8538310c1/packages/git/src/browser/git-repository-tracker.ts#L95">packages/git/src/browser/git-repository-tracker.ts:95</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -374,7 +374,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/37a0a2f0f3/packages/git/src/browser/git-repository-tracker.ts#L113">packages/git/src/browser/git-repository-tracker.ts:113</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8538310c1/packages/git/src/browser/git-repository-tracker.ts#L113">packages/git/src/browser/git-repository-tracker.ts:113</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -397,7 +397,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/37a0a2f0f3/packages/git/src/browser/git-repository-tracker.ts#L119">packages/git/src/browser/git-repository-tracker.ts:119</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8538310c1/packages/git/src/browser/git-repository-tracker.ts#L119">packages/git/src/browser/git-repository-tracker.ts:119</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -420,7 +420,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/37a0a2f0f3/packages/git/src/browser/git-repository-tracker.ts#L43">packages/git/src/browser/git-repository-tracker.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8538310c1/packages/git/src/browser/git-repository-tracker.ts#L43">packages/git/src/browser/git-repository-tracker.ts:43</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -437,7 +437,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/37a0a2f0f3/packages/git/src/browser/git-repository-tracker.ts#L68">packages/git/src/browser/git-repository-tracker.ts:68</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8538310c1/packages/git/src/browser/git-repository-tracker.ts#L68">packages/git/src/browser/git-repository-tracker.ts:68</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
