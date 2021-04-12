@@ -104,6 +104,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="vsx_registry.vsxextensionscontribution.html#clipboardservice" class="tsd-kind-icon">clipboard<wbr>Service</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="vsx_registry.vsxextensionscontribution.html#commandregistry" class="tsd-kind-icon">command<wbr>Registry</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="vsx_registry.vsxextensionscontribution.html#filedialogservice" class="tsd-kind-icon">file<wbr>Dialog<wbr>Service</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="vsx_registry.vsxextensionscontribution.html#labelprovider" class="tsd-kind-icon">label<wbr>Provider</a></li>
@@ -130,13 +131,15 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="vsx_registry.vsxextensionscontribution.html#closeview" class="tsd-kind-icon">close<wbr>View</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="vsx_registry.vsxextensionscontribution.html#copy" class="tsd-kind-icon">copy</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="vsx_registry.vsxextensionscontribution.html#copyextensionid" class="tsd-kind-icon">copy<wbr>Extension<wbr>Id</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vsx_registry.vsxextensionscontribution.html#initializelayout" class="tsd-kind-icon">initialize<wbr>Layout</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="vsx_registry.vsxextensionscontribution.html#installfromvsix" class="tsd-kind-icon">install<wbr>FromVSIX</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="vsx_registry.vsxextensionscontribution.html#openview" class="tsd-kind-icon">open<wbr>View</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vsx_registry.vsxextensionscontribution.html#registercolors" class="tsd-kind-icon">register<wbr>Colors</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="vsx_registry.vsxextensionscontribution.html#registercommands" class="tsd-kind-icon">register<wbr>Commands</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="vsx_registry.vsxextensionscontribution.html#registerkeybindings" class="tsd-kind-icon">register<wbr>Keybindings</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="vsx_registry.vsxextensionscontribution.html#registermenus" class="tsd-kind-icon">register<wbr>Menus</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="vsx_registry.vsxextensionscontribution.html#registermenus" class="tsd-kind-icon">register<wbr>Menus</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vsx_registry.vsxextensionscontribution.html#registermoretoolbaritem" class="tsd-kind-icon">register<wbr>More<wbr>Toolbar<wbr>Item</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vsx_registry.vsxextensionscontribution.html#registertoolbaritems" class="tsd-kind-icon">register<wbr>Toolbar<wbr>Items</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="vsx_registry.vsxextensionscontribution.html#toggleview" class="tsd-kind-icon">toggle<wbr>View</a></li>
@@ -160,7 +163,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c59a346964/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L56">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:56</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L68">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:68</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="vsx_registry.vsxextensionscontribution.html" class="tsd-signature-type">VSXExtensionsContribution</a></h4>
@@ -171,12 +174,22 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="clipboardservice" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> clipboard<wbr>Service</h3>
+					<div class="tsd-signature tsd-kind-icon">clipboard<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.clipboardservice.html" class="tsd-signature-type">ClipboardService</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L68">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:68</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="commandregistry" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> command<wbr>Registry</h3>
 					<div class="tsd-signature tsd-kind-icon">command<wbr>Registry<span class="tsd-signature-symbol">:</span> <a href="core.commandregistry-1.html" class="tsd-signature-type">CommandRegistry</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c59a346964/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L52">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:52</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L63">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:63</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -186,7 +199,7 @@
 					<div class="tsd-signature tsd-kind-icon">file<wbr>Dialog<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="../interfaces/filesystem.filedialogservice-2.html" class="tsd-signature-type">FileDialogService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c59a346964/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L54">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L65">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:65</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -196,7 +209,7 @@
 					<div class="tsd-signature tsd-kind-icon">label<wbr>Provider<span class="tsd-signature-symbol">:</span> <a href="core.labelprovider-1.html" class="tsd-signature-type">LabelProvider</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c59a346964/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L56">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L67">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:67</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -206,7 +219,7 @@
 					<div class="tsd-signature tsd-kind-icon">message<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="core.messageservice-1.html" class="tsd-signature-type">MessageService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c59a346964/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L55">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:55</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L66">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:66</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -216,7 +229,7 @@
 					<div class="tsd-signature tsd-kind-icon">model<span class="tsd-signature-symbol">:</span> <a href="vsx_registry.vsxextensionsmodel.html" class="tsd-signature-type">VSXExtensionsModel</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c59a346964/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L51">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L62">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:62</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -227,7 +240,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#options">options</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c59a346964/packages/core/src/browser/shell/view-contribution.ts#L68">packages/core/src/browser/shell/view-contribution.ts:68</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/core/src/browser/shell/view-contribution.ts#L68">packages/core/src/browser/shell/view-contribution.ts:68</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -238,7 +251,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#quickview">quickView</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c59a346964/packages/core/src/browser/shell/view-contribution.ts#L63">packages/core/src/browser/shell/view-contribution.ts:63</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/core/src/browser/shell/view-contribution.ts#L63">packages/core/src/browser/shell/view-contribution.ts:63</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -249,7 +262,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#shell">shell</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c59a346964/packages/core/src/browser/shell/view-contribution.ts#L60">packages/core/src/browser/shell/view-contribution.ts:60</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/core/src/browser/shell/view-contribution.ts#L60">packages/core/src/browser/shell/view-contribution.ts:60</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -259,7 +272,7 @@
 					<div class="tsd-signature tsd-kind-icon">tabbar<wbr>Toolbar<wbr>Registry<span class="tsd-signature-symbol">:</span> <a href="core.tabbartoolbarregistry.html" class="tsd-signature-type">TabBarToolbarRegistry</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c59a346964/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L53">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L64">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:64</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -270,7 +283,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#togglecommand">toggleCommand</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c59a346964/packages/core/src/browser/shell/view-contribution.ts#L65">packages/core/src/browser/shell/view-contribution.ts:65</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/core/src/browser/shell/view-contribution.ts#L65">packages/core/src/browser/shell/view-contribution.ts:65</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -281,7 +294,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#widgetmanager">widgetManager</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c59a346964/packages/core/src/browser/shell/view-contribution.ts#L59">packages/core/src/browser/shell/view-contribution.ts:59</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/core/src/browser/shell/view-contribution.ts#L59">packages/core/src/browser/shell/view-contribution.ts:59</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -299,7 +312,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#defaultviewoptions">defaultViewOptions</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c59a346964/packages/core/src/browser/shell/view-contribution.ts#L86">packages/core/src/browser/shell/view-contribution.ts:86</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/core/src/browser/shell/view-contribution.ts#L86">packages/core/src/browser/shell/view-contribution.ts:86</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/core.applicationshell-2.widgetoptions.html" class="tsd-signature-type">WidgetOptions</a></h4>
@@ -317,7 +330,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#viewid">viewId</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c59a346964/packages/core/src/browser/shell/view-contribution.ts#L78">packages/core/src/browser/shell/view-contribution.ts:78</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/core/src/browser/shell/view-contribution.ts#L78">packages/core/src/browser/shell/view-contribution.ts:78</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -335,7 +348,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#viewlabel">viewLabel</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c59a346964/packages/core/src/browser/shell/view-contribution.ts#L82">packages/core/src/browser/shell/view-contribution.ts:82</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/core/src/browser/shell/view-contribution.ts#L82">packages/core/src/browser/shell/view-contribution.ts:82</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -353,7 +366,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#widget">widget</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c59a346964/packages/core/src/browser/shell/view-contribution.ts#L90">packages/core/src/browser/shell/view-contribution.ts:90</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/core/src/browser/shell/view-contribution.ts#L90">packages/core/src/browser/shell/view-contribution.ts:90</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="vsx_registry.vsxextensionsviewcontainer.html" class="tsd-signature-type">VSXExtensionsViewContainer</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -374,10 +387,56 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#closeview">closeView</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c59a346964/packages/core/src/browser/shell/view-contribution.ts#L149">packages/core/src/browser/shell/view-contribution.ts:149</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/core/src/browser/shell/view-contribution.ts#L149">packages/core/src/browser/shell/view-contribution.ts:149</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="vsx_registry.vsxextensionsviewcontainer.html" class="tsd-signature-type">VSXExtensionsViewContainer</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="copy" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> copy</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">copy<span class="tsd-signature-symbol">(</span>extension<span class="tsd-signature-symbol">: </span><a href="vsx_registry.vsxextension.html" class="tsd-signature-type">VSXExtension</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L218">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:218</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>extension: <a href="vsx_registry.vsxextension.html" class="tsd-signature-type">VSXExtension</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="copyextensionid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> copy<wbr>Extension<wbr>Id</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">copy<wbr>Extension<wbr>Id<span class="tsd-signature-symbol">(</span>extension<span class="tsd-signature-symbol">: </span><a href="vsx_registry.vsxextension.html" class="tsd-signature-type">VSXExtension</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L222">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:222</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>extension: <a href="vsx_registry.vsxextension.html" class="tsd-signature-type">VSXExtension</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -392,7 +451,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/core.frontendapplicationcontribution-1.html">FrontendApplicationContribution</a>.<a href="../interfaces/core.frontendapplicationcontribution-1.html#initializelayout">initializeLayout</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c59a346964/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L71">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:71</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L83">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:83</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -415,7 +474,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c59a346964/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L160">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:160</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L194">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:194</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -438,7 +497,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#openview">openView</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c59a346964/packages/core/src/browser/shell/view-contribution.ts#L98">packages/core/src/browser/shell/view-contribution.ts:98</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/core/src/browser/shell/view-contribution.ts#L98">packages/core/src/browser/shell/view-contribution.ts:98</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -462,7 +521,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/core.colorcontribution.html">ColorContribution</a>.<a href="../interfaces/core.colorcontribution.html#registercolors">registerColors</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c59a346964/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L126">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:126</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L160">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:160</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -487,7 +546,7 @@
 								<p>Implementation of <a href="../interfaces/core.commandcontribution-1.html">CommandContribution</a>.<a href="../interfaces/core.commandcontribution-1.html#registercommands">registerCommands</a></p>
 								<p>Overrides <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#registercommands">registerCommands</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c59a346964/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L75">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:75</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L87">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:87</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -512,7 +571,7 @@
 								<p>Implementation of <a href="../interfaces/core.keybindingcontribution-1.html">KeybindingContribution</a>.<a href="../interfaces/core.keybindingcontribution-1.html#registerkeybindings">registerKeybindings</a></p>
 								<p>Inherited from <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#registerkeybindings">registerKeybindings</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c59a346964/packages/core/src/browser/shell/view-contribution.ts#L170">packages/core/src/browser/shell/view-contribution.ts:170</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/core/src/browser/shell/view-contribution.ts#L170">packages/core/src/browser/shell/view-contribution.ts:170</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -525,19 +584,19 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="registermenus" class="tsd-anchor"></a>
 					<h3>register<wbr>Menus</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">register<wbr>Menus<span class="tsd-signature-symbol">(</span>menus<span class="tsd-signature-symbol">: </span><a href="core.menumodelregistry-1.html" class="tsd-signature-type">MenuModelRegistry</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/core.menucontribution-1.html">MenuContribution</a>.<a href="../interfaces/core.menucontribution-1.html#registermenus">registerMenus</a></p>
-								<p>Inherited from <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#registermenus">registerMenus</a></p>
+								<p>Overrides <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#registermenus">registerMenus</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c59a346964/packages/core/src/browser/shell/view-contribution.ts#L161">packages/core/src/browser/shell/view-contribution.ts:161</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L146">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:146</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -560,7 +619,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c59a346964/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L108">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:108</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L128">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:128</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -589,7 +648,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/core.tabbartoolbarcontribution.html">TabBarToolbarContribution</a>.<a href="../interfaces/core.tabbartoolbarcontribution.html#registertoolbaritems">registerToolbarItems</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c59a346964/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L88">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:88</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L108">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:108</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -613,7 +672,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#toggleview">toggleView</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c59a346964/packages/core/src/browser/shell/view-contribution.ts#L154">packages/core/src/browser/shell/view-contribution.ts:154</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/core/src/browser/shell/view-contribution.ts#L154">packages/core/src/browser/shell/view-contribution.ts:154</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="vsx_registry.vsxextensionsviewcontainer.html" class="tsd-signature-type">VSXExtensionsViewContainer</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -631,7 +690,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#trygetwidget">tryGetWidget</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c59a346964/packages/core/src/browser/shell/view-contribution.ts#L94">packages/core/src/browser/shell/view-contribution.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/core/src/browser/shell/view-contribution.ts#L94">packages/core/src/browser/shell/view-contribution.ts:94</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="vsx_registry.vsxextensionsviewcontainer.html" class="tsd-signature-type">VSXExtensionsViewContainer</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
@@ -648,7 +707,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c59a346964/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L150">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:150</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b722e4de16/packages/vsx-registry/src/browser/vsx-extensions-contribution.ts#L184">packages/vsx-registry/src/browser/vsx-extensions-contribution.ts:184</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -706,6 +765,9 @@
 								<a href="../modules/vsx_registry.vsxextensionscommands.html">VSXExtensions<wbr>Commands</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/vsx_registry.vsxextensionscontextmenu.html">VSXExtensions<wbr>Context<wbr>Menu</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/vsx_registry.vsxresponseerror.html">VSXResponse<wbr>Error</a>
 							</li>
 						</ul>
@@ -721,6 +783,9 @@
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 								<a href="vsx_registry.vsxextensionscontribution.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="vsx_registry.vsxextensionscontribution.html#clipboardservice" class="tsd-kind-icon">clipboard<wbr>Service</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="vsx_registry.vsxextensionscontribution.html#commandregistry" class="tsd-kind-icon">command<wbr>Registry</a>
@@ -770,6 +835,12 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="vsx_registry.vsxextensionscontribution.html#closeview" class="tsd-kind-icon">close<wbr>View</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="vsx_registry.vsxextensionscontribution.html#copy" class="tsd-kind-icon">copy</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="vsx_registry.vsxextensionscontribution.html#copyextensionid" class="tsd-kind-icon">copy<wbr>Extension<wbr>Id</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="vsx_registry.vsxextensionscontribution.html#initializelayout" class="tsd-kind-icon">initialize<wbr>Layout</a>
 							</li>
@@ -788,7 +859,7 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="vsx_registry.vsxextensionscontribution.html#registerkeybindings" class="tsd-kind-icon">register<wbr>Keybindings</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="vsx_registry.vsxextensionscontribution.html#registermenus" class="tsd-kind-icon">register<wbr>Menus</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
