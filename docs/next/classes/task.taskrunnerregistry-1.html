@@ -117,7 +117,7 @@
 					<div class="tsd-signature tsd-kind-icon">default<wbr>Runner<span class="tsd-signature-symbol">:</span> <a href="../interfaces/task.taskrunner-1.html" class="tsd-signature-type">TaskRunner</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8c9fb884b4/packages/task/src/node/task-runner.ts#L60">packages/task/src/node/task-runner.ts:60</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8b9fb43c76/packages/task/src/node/task-runner.ts#L60">packages/task/src/node/task-runner.ts:60</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -132,7 +132,7 @@
 					<div class="tsd-signature tsd-kind-icon">process<wbr>Task<wbr>Runner<span class="tsd-signature-symbol">:</span> <a href="task.processtaskrunner.html" class="tsd-signature-type">ProcessTaskRunner</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8c9fb884b4/packages/task/src/node/task-runner.ts#L63">packages/task/src/node/task-runner.ts:63</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8b9fb43c76/packages/task/src/node/task-runner.ts#L63">packages/task/src/node/task-runner.ts:63</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -142,7 +142,7 @@
 					<div class="tsd-signature tsd-kind-icon">runners<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/task.taskrunner-1.html" class="tsd-signature-type">TaskRunner</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8c9fb884b4/packages/task/src/node/task-runner.ts#L58">packages/task/src/node/task-runner.ts:58</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8b9fb43c76/packages/task/src/node/task-runner.ts#L58">packages/task/src/node/task-runner.ts:58</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -153,31 +153,32 @@
 					<a name="getrunner" class="tsd-anchor"></a>
 					<h3>get<wbr>Runner</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Runner<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskrunner-1.html" class="tsd-signature-type">TaskRunner</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Runner<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>types<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskrunner-1.html" class="tsd-signature-type">TaskRunner</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8c9fb884b4/packages/task/src/node/task-runner.ts#L92">packages/task/src/node/task-runner.ts:92</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8b9fb43c76/packages/task/src/node/task-runner.ts#L93">packages/task/src/node/task-runner.ts:93</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Retrieves the <a href="../modules/task.html#taskrunner">TaskRunner</a> registered for the specified Task type.</p>
+									<p>Looks for a registered <a href="../modules/task.html#taskrunner">TaskRunner</a> for each of the task types in sequence and returns the first that is found
+									If no task runner is registered for any of the types, the default runner is returned.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>type: <span class="tsd-signature-type">string</span></h5>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>types: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>the task type.</p>
+										<p>the task types.</p>
 									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/task.taskrunner-1.html" class="tsd-signature-type">TaskRunner</a></h4>
-							<p>the registered <a href="../modules/task.html#taskrunner">TaskRunner</a> or a default runner if none is registered for the specified type.</p>
+							<p>the registered <a href="../modules/task.html#taskrunner">TaskRunner</a> or a default runner if none is registered for the specified types.</p>
 						</li>
 					</ul>
 				</section>
@@ -191,7 +192,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8c9fb884b4/packages/task/src/node/task-runner.ts#L102">packages/task/src/node/task-runner.ts:102</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8b9fb43c76/packages/task/src/node/task-runner.ts#L108">packages/task/src/node/task-runner.ts:108</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -214,7 +215,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8c9fb884b4/packages/task/src/node/task-runner.ts#L66">packages/task/src/node/task-runner.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8b9fb43c76/packages/task/src/node/task-runner.ts#L66">packages/task/src/node/task-runner.ts:66</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -231,7 +232,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8c9fb884b4/packages/task/src/node/task-runner.ts#L79">packages/task/src/node/task-runner.ts:79</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8b9fb43c76/packages/task/src/node/task-runner.ts#L79">packages/task/src/node/task-runner.ts:79</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
