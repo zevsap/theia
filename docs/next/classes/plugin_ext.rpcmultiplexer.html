@@ -90,6 +90,7 @@
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
 					<li><a href="../modules/core.disposable-1.html" class="tsd-signature-type">Disposable</a></li>
+					<li><a href="../interfaces/plugin_ext.messageconnection.html" class="tsd-signature-type">MessageConnection</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -106,9 +107,16 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="plugin_ext.rpcmultiplexer.html#connection" class="tsd-kind-icon">connection</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="plugin_ext.rpcmultiplexer.html#messageemitter" class="tsd-kind-icon">message<wbr>Emitter</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="plugin_ext.rpcmultiplexer.html#messagestosend" class="tsd-kind-icon">messages<wbr>ToSend</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="plugin_ext.rpcmultiplexer.html#sendaccumulatedbound" class="tsd-kind-icon">send<wbr>Accumulated<wbr>Bound</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="plugin_ext.rpcmultiplexer.html#todispose" class="tsd-kind-icon">to<wbr>Dispose</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-not-exported"><a href="plugin_ext.rpcmultiplexer.html#onmessage" class="tsd-kind-icon">on<wbr>Message</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
@@ -128,43 +136,19 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">new RPCMultiplexer<span class="tsd-signature-symbol">(</span>connection<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.messageconnection.html" class="tsd-signature-type">MessageConnection</a>, onMessage<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, remoteHostId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.rpcmultiplexer.html" class="tsd-signature-type">RPCMultiplexer</a></li>
+						<li class="tsd-signature tsd-kind-icon">new RPCMultiplexer<span class="tsd-signature-symbol">(</span>connection<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.messageconnection.html" class="tsd-signature-type">MessageConnection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.rpcmultiplexer.html" class="tsd-signature-type">RPCMultiplexer</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a082473085/packages/plugin-ext/src/common/rpc-protocol.ts#L306">packages/plugin-ext/src/common/rpc-protocol.ts:306</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c5d440aba3/packages/plugin-ext/src/common/rpc-protocol.ts#L302">packages/plugin-ext/src/common/rpc-protocol.ts:302</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>connection: <a href="../interfaces/plugin_ext.messageconnection.html" class="tsd-signature-type">MessageConnection</a></h5>
-								</li>
-								<li>
-									<h5>onMessage: <span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-signature">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>msg: <span class="tsd-signature-type">string</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> remoteHostId: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.rpcmultiplexer.html" class="tsd-signature-type">RPCMultiplexer</a></h4>
@@ -180,7 +164,17 @@
 					<div class="tsd-signature tsd-kind-icon">connection<span class="tsd-signature-symbol">:</span> <a href="../interfaces/plugin_ext.messageconnection.html" class="tsd-signature-type">MessageConnection</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a082473085/packages/plugin-ext/src/common/rpc-protocol.ts#L301">packages/plugin-ext/src/common/rpc-protocol.ts:301</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c5d440aba3/packages/plugin-ext/src/common/rpc-protocol.ts#L296">packages/plugin-ext/src/common/rpc-protocol.ts:296</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+					<a name="messageemitter" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> message<wbr>Emitter</h3>
+					<div class="tsd-signature tsd-kind-icon">message<wbr>Emitter<span class="tsd-signature-symbol">:</span> <a href="core.emitter-1.html" class="tsd-signature-type">Emitter</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Emitter&lt;string&gt;()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c5d440aba3/packages/plugin-ext/src/common/rpc-protocol.ts#L301">packages/plugin-ext/src/common/rpc-protocol.ts:301</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -190,7 +184,7 @@
 					<div class="tsd-signature tsd-kind-icon">messages<wbr>ToSend<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a082473085/packages/plugin-ext/src/common/rpc-protocol.ts#L304">packages/plugin-ext/src/common/rpc-protocol.ts:304</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c5d440aba3/packages/plugin-ext/src/common/rpc-protocol.ts#L299">packages/plugin-ext/src/common/rpc-protocol.ts:299</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -200,7 +194,7 @@
 					<div class="tsd-signature tsd-kind-icon">send<wbr>Accumulated<wbr>Bound<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a082473085/packages/plugin-ext/src/common/rpc-protocol.ts#L302">packages/plugin-ext/src/common/rpc-protocol.ts:302</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c5d440aba3/packages/plugin-ext/src/common/rpc-protocol.ts#L297">packages/plugin-ext/src/common/rpc-protocol.ts:297</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -225,9 +219,29 @@
 					<div class="tsd-signature tsd-kind-icon">to<wbr>Dispose<span class="tsd-signature-symbol">:</span> <a href="core.disposablecollection-1.html" class="tsd-signature-type">DisposableCollection</a><span class="tsd-signature-symbol"> = new DisposableCollection()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a082473085/packages/plugin-ext/src/common/rpc-protocol.ts#L306">packages/plugin-ext/src/common/rpc-protocol.ts:306</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c5d440aba3/packages/plugin-ext/src/common/rpc-protocol.ts#L302">packages/plugin-ext/src/common/rpc-protocol.ts:302</a></li>
 						</ul>
 					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-not-exported">
+					<a name="onmessage" class="tsd-anchor"></a>
+					<h3>on<wbr>Message</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> onMessage<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/core.event-1.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c5d440aba3/packages/plugin-ext/src/common/rpc-protocol.ts#L324">packages/plugin-ext/src/common/rpc-protocol.ts:324</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/core.event-1.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
@@ -242,7 +256,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a082473085/packages/plugin-ext/src/common/rpc-protocol.ts#L326">packages/plugin-ext/src/common/rpc-protocol.ts:326</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c5d440aba3/packages/plugin-ext/src/common/rpc-protocol.ts#L320">packages/plugin-ext/src/common/rpc-protocol.ts:320</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -258,8 +272,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/plugin_ext.messageconnection.html">MessageConnection</a>.<a href="../interfaces/plugin_ext.messageconnection.html#send">send</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a082473085/packages/plugin-ext/src/common/rpc-protocol.ts#L336">packages/plugin-ext/src/common/rpc-protocol.ts:336</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c5d440aba3/packages/plugin-ext/src/common/rpc-protocol.ts#L334">packages/plugin-ext/src/common/rpc-protocol.ts:334</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -282,7 +297,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a082473085/packages/plugin-ext/src/common/rpc-protocol.ts#L330">packages/plugin-ext/src/common/rpc-protocol.ts:330</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/c5d440aba3/packages/plugin-ext/src/common/rpc-protocol.ts#L328">packages/plugin-ext/src/common/rpc-protocol.ts:328</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -414,6 +429,9 @@
 								<a href="plugin_ext.rpcmultiplexer.html#connection" class="tsd-kind-icon">connection</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+								<a href="plugin_ext.rpcmultiplexer.html#messageemitter" class="tsd-kind-icon">message<wbr>Emitter</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
 								<a href="plugin_ext.rpcmultiplexer.html#messagestosend" class="tsd-kind-icon">messages<wbr>ToSend</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
@@ -421,6 +439,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
 								<a href="plugin_ext.rpcmultiplexer.html#todispose" class="tsd-kind-icon">to<wbr>Dispose</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-not-exported">
+								<a href="plugin_ext.rpcmultiplexer.html#onmessage" class="tsd-kind-icon">on<wbr>Message</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="plugin_ext.rpcmultiplexer.html#dispose" class="tsd-kind-icon">dispose</a>
