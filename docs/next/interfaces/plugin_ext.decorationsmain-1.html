@@ -88,9 +88,9 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="plugin_ext.decorationsmain-1.html#_dispose" class="tsd-kind-icon">$dispose</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="plugin_ext.decorationsmain-1.html#_firedidchangedecorations" class="tsd-kind-icon">$fire<wbr>Did<wbr>Change<wbr>Decorations</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="plugin_ext.decorationsmain-1.html#_ondidchange" class="tsd-kind-icon">$on<wbr>Did<wbr>Change</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="plugin_ext.decorationsmain-1.html#_registerdecorationprovider" class="tsd-kind-icon">$register<wbr>Decoration<wbr>Provider</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="plugin_ext.decorationsmain-1.html#_unregisterdecorationprovider" class="tsd-kind-icon">$unregister<wbr>Decoration<wbr>Provider</a></li>
 							</ul>
 						</section>
 					</div>
@@ -99,51 +99,28 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="_dispose" class="tsd-anchor"></a>
-					<h3>$dispose</h3>
+					<a name="_ondidchange" class="tsd-anchor"></a>
+					<h3>$on<wbr>Did<wbr>Change</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$dispose<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">$on<wbr>Did<wbr>Change<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, resources<span class="tsd-signature-symbol">: </span><a href="plugin_ext.uricomponents.html" class="tsd-signature-type">UriComponents</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/76f74f1ed4/packages/plugin-ext/src/common/plugin-api-rpc.ts#L810">packages/plugin-ext/src/common/plugin-api-rpc.ts:810</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/42d2f3a944/packages/plugin-ext/src/common/plugin-api-rpc.ts#L818">packages/plugin-ext/src/common/plugin-api-rpc.ts:818</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>id: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="_firedidchangedecorations" class="tsd-anchor"></a>
-					<h3>$fire<wbr>Did<wbr>Change<wbr>Decorations</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$fire<wbr>Did<wbr>Change<wbr>Decorations<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, arg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/76f74f1ed4/packages/plugin-ext/src/common/plugin-api-rpc.ts#L809">packages/plugin-ext/src/common/plugin-api-rpc.ts:809</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>id: <span class="tsd-signature-type">number</span></h5>
+									<h5>handle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>arg: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>resources: <a href="plugin_ext.uricomponents.html" class="tsd-signature-type">UriComponents</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -151,25 +128,45 @@
 					<a name="_registerdecorationprovider" class="tsd-anchor"></a>
 					<h3>$register<wbr>Decoration<wbr>Provider</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$register<wbr>Decoration<wbr>Provider<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, provider<span class="tsd-signature-symbol">: </span><a href="plugin_ext.decorationprovider-1.html" class="tsd-signature-type">DecorationProvider</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">$register<wbr>Decoration<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/76f74f1ed4/packages/plugin-ext/src/common/plugin-api-rpc.ts#L808">packages/plugin-ext/src/common/plugin-api-rpc.ts:808</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/42d2f3a944/packages/plugin-ext/src/common/plugin-api-rpc.ts#L816">packages/plugin-ext/src/common/plugin-api-rpc.ts:816</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>id: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5>provider: <a href="plugin_ext.decorationprovider-1.html" class="tsd-signature-type">DecorationProvider</a></h5>
+									<h5>handle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="_unregisterdecorationprovider" class="tsd-anchor"></a>
+					<h3>$unregister<wbr>Decoration<wbr>Provider</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">$unregister<wbr>Decoration<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/42d2f3a944/packages/plugin-ext/src/common/plugin-api-rpc.ts#L817">packages/plugin-ext/src/common/plugin-api-rpc.ts:817</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>handle: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -292,13 +289,13 @@
 						<a href="plugin_ext.decorationsmain-1.html" class="tsd-kind-icon">Decorations<wbr>Main</a>
 						<ul>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="plugin_ext.decorationsmain-1.html#_dispose" class="tsd-kind-icon">$dispose</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="plugin_ext.decorationsmain-1.html#_firedidchangedecorations" class="tsd-kind-icon">$fire<wbr>Did<wbr>Change<wbr>Decorations</a>
+								<a href="plugin_ext.decorationsmain-1.html#_ondidchange" class="tsd-kind-icon">$on<wbr>Did<wbr>Change</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="plugin_ext.decorationsmain-1.html#_registerdecorationprovider" class="tsd-kind-icon">$register<wbr>Decoration<wbr>Provider</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="plugin_ext.decorationsmain-1.html#_unregisterdecorationprovider" class="tsd-kind-icon">$unregister<wbr>Decoration<wbr>Provider</a>
 							</li>
 						</ul>
 					</li>

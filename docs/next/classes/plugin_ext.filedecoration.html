@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DecorationData | Theia TypeDoc</title>
+	<title>FileDecoration | Theia TypeDoc</title>
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,10 +57,10 @@
 					<a href="../modules/plugin_ext.html">plugin-ext</a>
 				</li>
 				<li>
-					<a href="plugin_ext.decorationdata-1.html">DecorationData</a>
+					<a href="plugin_ext.filedecoration.html">FileDecoration</a>
 				</li>
 			</ul>
-			<h1>Interface DecorationData</h1>
+			<h1>Class FileDecoration</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +71,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">DecorationData</span>
+						<span class="target">FileDecoration</span>
 					</li>
 				</ul>
 			</section>
@@ -80,80 +80,139 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="plugin_ext.filedecoration.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="plugin_ext.decorationdata-1.html#bubble" class="tsd-kind-icon">bubble</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="plugin_ext.decorationdata-1.html#color" class="tsd-kind-icon">color</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="plugin_ext.decorationdata-1.html#letter" class="tsd-kind-icon">letter</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="plugin_ext.decorationdata-1.html#priority" class="tsd-kind-icon">priority</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="plugin_ext.decorationdata-1.html#source" class="tsd-kind-icon">source</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="plugin_ext.decorationdata-1.html#title" class="tsd-kind-icon">title</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.filedecoration.html#badge" class="tsd-kind-icon">badge</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.filedecoration.html#color" class="tsd-kind-icon">color</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.filedecoration.html#priority" class="tsd-kind-icon">priority</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.filedecoration.html#propagate" class="tsd-kind-icon">propagate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.filedecoration.html#tooltip" class="tsd-kind-icon">tooltip</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="plugin_ext.filedecoration.html#validate" class="tsd-kind-icon">validate</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>File<wbr>Decoration<span class="tsd-signature-symbol">(</span>badge<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, tooltip<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, color<span class="tsd-signature-symbol">?: </span><a href="../modules/plugin_ext.html#themecolor" class="tsd-signature-type">ThemeColor</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.filedecoration.html" class="tsd-signature-type">FileDecoration</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/42d2f3a944/packages/plugin-ext/src/plugin/types-impl.ts#L1464">packages/plugin-ext/src/plugin/types-impl.ts:1464</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> badge: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> tooltip: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> color: <a href="../modules/plugin_ext.html#themecolor" class="tsd-signature-type">ThemeColor</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.filedecoration.html" class="tsd-signature-type">FileDecoration</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="bubble" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> bubble</h3>
-					<div class="tsd-signature tsd-kind-icon">bubble<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="badge" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> badge</h3>
+					<div class="tsd-signature tsd-kind-icon">badge<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/76f74f1ed4/packages/plugin-ext/src/common/plugin-api-rpc.ts#L818">packages/plugin-ext/src/common/plugin-api-rpc.ts:818</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/42d2f3a944/packages/plugin-ext/src/plugin/types-impl.ts#L1460">packages/plugin-ext/src/plugin/types-impl.ts:1460</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="color" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> color</h3>
-					<div class="tsd-signature tsd-kind-icon">color<span class="tsd-signature-symbol">:</span> <a href="../modules/plugin_ext.html#themecolor" class="tsd-signature-type">ThemeColor</a></div>
+					<div class="tsd-signature tsd-kind-icon">color<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">theia.ThemeColor</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/76f74f1ed4/packages/plugin-ext/src/common/plugin-api-rpc.ts#L816">packages/plugin-ext/src/common/plugin-api-rpc.ts:816</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/42d2f3a944/packages/plugin-ext/src/plugin/types-impl.ts#L1462">packages/plugin-ext/src/plugin/types-impl.ts:1462</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="letter" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> letter</h3>
-					<div class="tsd-signature tsd-kind-icon">letter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/76f74f1ed4/packages/plugin-ext/src/common/plugin-api-rpc.ts#L814">packages/plugin-ext/src/common/plugin-api-rpc.ts:814</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="priority" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> priority</h3>
 					<div class="tsd-signature tsd-kind-icon">priority<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/76f74f1ed4/packages/plugin-ext/src/common/plugin-api-rpc.ts#L817">packages/plugin-ext/src/common/plugin-api-rpc.ts:817</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/42d2f3a944/packages/plugin-ext/src/plugin/types-impl.ts#L1463">packages/plugin-ext/src/plugin/types-impl.ts:1463</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="source" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> source</h3>
-					<div class="tsd-signature tsd-kind-icon">source<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="propagate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> propagate</h3>
+					<div class="tsd-signature tsd-kind-icon">propagate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/76f74f1ed4/packages/plugin-ext/src/common/plugin-api-rpc.ts#L819">packages/plugin-ext/src/common/plugin-api-rpc.ts:819</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/42d2f3a944/packages/plugin-ext/src/plugin/types-impl.ts#L1464">packages/plugin-ext/src/plugin/types-impl.ts:1464</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="title" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> title</h3>
-					<div class="tsd-signature tsd-kind-icon">title<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="tooltip" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> tooltip</h3>
+					<div class="tsd-signature tsd-kind-icon">tooltip<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/76f74f1ed4/packages/plugin-ext/src/common/plugin-api-rpc.ts#L815">packages/plugin-ext/src/common/plugin-api-rpc.ts:815</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/42d2f3a944/packages/plugin-ext/src/plugin/types-impl.ts#L1461">packages/plugin-ext/src/plugin/types-impl.ts:1461</a></li>
 						</ul>
 					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="validate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> validate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">validate<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><a href="plugin_ext.filedecoration.html" class="tsd-signature-type">FileDecoration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/42d2f3a944/packages/plugin-ext/src/plugin/types-impl.ts#L1451">packages/plugin-ext/src/plugin/types-impl.ts:1451</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>d: <a href="plugin_ext.filedecoration.html" class="tsd-signature-type">FileDecoration</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -270,26 +329,29 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="plugin_ext.decorationdata-1.html" class="tsd-kind-icon">Decoration<wbr>Data</a>
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="plugin_ext.filedecoration.html" class="tsd-kind-icon">File<wbr>Decoration</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="plugin_ext.decorationdata-1.html#bubble" class="tsd-kind-icon">bubble</a>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="plugin_ext.filedecoration.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="plugin_ext.decorationdata-1.html#color" class="tsd-kind-icon">color</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="plugin_ext.filedecoration.html#badge" class="tsd-kind-icon">badge</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="plugin_ext.decorationdata-1.html#letter" class="tsd-kind-icon">letter</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="plugin_ext.filedecoration.html#color" class="tsd-kind-icon">color</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="plugin_ext.decorationdata-1.html#priority" class="tsd-kind-icon">priority</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="plugin_ext.filedecoration.html#priority" class="tsd-kind-icon">priority</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="plugin_ext.decorationdata-1.html#source" class="tsd-kind-icon">source</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="plugin_ext.filedecoration.html#propagate" class="tsd-kind-icon">propagate</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="plugin_ext.decorationdata-1.html#title" class="tsd-kind-icon">title</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="plugin_ext.filedecoration.html#tooltip" class="tsd-kind-icon">tooltip</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="plugin_ext.filedecoration.html#validate" class="tsd-kind-icon">validate</a>
 							</li>
 						</ul>
 					</li>
@@ -314,16 +376,20 @@
 				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-			</ul>
-			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 			</ul>
 		</div>
 	</div>

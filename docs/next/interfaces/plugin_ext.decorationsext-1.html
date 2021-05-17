@@ -88,8 +88,8 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="plugin_ext.decorationsext-1.html#_providedecoration" class="tsd-kind-icon">$provide<wbr>Decoration</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="plugin_ext.decorationsext-1.html#registerdecorationprovider" class="tsd-kind-icon">register<wbr>Decoration<wbr>Provider</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="plugin_ext.decorationsext-1.html#_providedecorations" class="tsd-kind-icon">$provide<wbr>Decorations</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="plugin_ext.decorationsext-1.html#registerfiledecorationprovider" class="tsd-kind-icon">register<wbr>File<wbr>Decoration<wbr>Provider</a></li>
 							</ul>
 						</section>
 					</div>
@@ -98,48 +98,54 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="_providedecoration" class="tsd-anchor"></a>
-					<h3>$provide<wbr>Decoration</h3>
+					<a name="_providedecorations" class="tsd-anchor"></a>
+					<h3>$provide<wbr>Decorations</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$provide<wbr>Decoration<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="plugin_ext.decorationdata-1.html" class="tsd-signature-type">DecorationData</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">$provide<wbr>Decorations<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, requests<span class="tsd-signature-symbol">: </span><a href="plugin_ext.decorationrequest-1.html" class="tsd-signature-type">DecorationRequest</a><span class="tsd-signature-symbol">[]</span>, token<span class="tsd-signature-symbol">: </span><a href="plugin._plugin_-1.cancellationtoken.html" class="tsd-signature-type">CancellationToken</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="plugin_ext.decorationreply-1.html" class="tsd-signature-type">DecorationReply</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/76f74f1ed4/packages/plugin-ext/src/common/plugin-api-rpc.ts#L804">packages/plugin-ext/src/common/plugin-api-rpc.ts:804</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/42d2f3a944/packages/plugin-ext/src/common/plugin-api-rpc.ts#L812">packages/plugin-ext/src/common/plugin-api-rpc.ts:812</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>id: <span class="tsd-signature-type">number</span></h5>
+									<h5>handle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>uri: <span class="tsd-signature-type">string</span></h5>
+									<h5>requests: <a href="plugin_ext.decorationrequest-1.html" class="tsd-signature-type">DecorationRequest</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>token: <a href="plugin._plugin_-1.cancellationtoken.html" class="tsd-signature-type">CancellationToken</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="plugin_ext.decorationdata-1.html" class="tsd-signature-type">DecorationData</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="plugin_ext.decorationreply-1.html" class="tsd-signature-type">DecorationReply</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="registerdecorationprovider" class="tsd-anchor"></a>
-					<h3>register<wbr>Decoration<wbr>Provider</h3>
+					<a name="registerfiledecorationprovider" class="tsd-anchor"></a>
+					<h3>register<wbr>File<wbr>Decoration<wbr>Provider</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">register<wbr>Decoration<wbr>Provider<span class="tsd-signature-symbol">(</span>provider<span class="tsd-signature-symbol">: </span><a href="plugin._plugin_.decorationprovider.html" class="tsd-signature-type">DecorationProvider</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/plugin._plugin_-1.disposable.html" class="tsd-signature-type">Disposable</a></li>
+						<li class="tsd-signature tsd-kind-icon">register<wbr>File<wbr>Decoration<wbr>Provider<span class="tsd-signature-symbol">(</span>provider<span class="tsd-signature-symbol">: </span><a href="plugin._plugin_-1.filedecorationprovider.html" class="tsd-signature-type">FileDecorationProvider</a>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/plugin._plugin_-1.disposable.html" class="tsd-signature-type">Disposable</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/76f74f1ed4/packages/plugin-ext/src/common/plugin-api-rpc.ts#L803">packages/plugin-ext/src/common/plugin-api-rpc.ts:803</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/42d2f3a944/packages/plugin-ext/src/common/plugin-api-rpc.ts#L811">packages/plugin-ext/src/common/plugin-api-rpc.ts:811</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>provider: <a href="plugin._plugin_.decorationprovider.html" class="tsd-signature-type">DecorationProvider</a></h5>
+									<h5>provider: <a href="plugin._plugin_-1.filedecorationprovider.html" class="tsd-signature-type">FileDecorationProvider</a></h5>
+								</li>
+								<li>
+									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../classes/plugin._plugin_-1.disposable.html" class="tsd-signature-type">Disposable</a></h4>
@@ -265,10 +271,10 @@
 						<a href="plugin_ext.decorationsext-1.html" class="tsd-kind-icon">Decorations<wbr>Ext</a>
 						<ul>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="plugin_ext.decorationsext-1.html#_providedecoration" class="tsd-kind-icon">$provide<wbr>Decoration</a>
+								<a href="plugin_ext.decorationsext-1.html#_providedecorations" class="tsd-kind-icon">$provide<wbr>Decorations</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="plugin_ext.decorationsext-1.html#registerdecorationprovider" class="tsd-kind-icon">register<wbr>Decoration<wbr>Provider</a>
+								<a href="plugin_ext.decorationsext-1.html#registerfiledecorationprovider" class="tsd-kind-icon">register<wbr>File<wbr>Decoration<wbr>Provider</a>
 							</li>
 						</ul>
 					</li>

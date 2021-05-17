@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CancellationTokenImpl | Theia TypeDoc</title>
+	<title>ProviderData | Theia TypeDoc</title>
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,10 +57,10 @@
 					<a href="../modules/plugin_ext.html">plugin-ext</a>
 				</li>
 				<li>
-					<a href="plugin_ext.cancellationtokenimpl.html">CancellationTokenImpl</a>
+					<a href="plugin_ext.providerdata.html">ProviderData</a>
 				</li>
 			</ul>
-			<h1>Class CancellationTokenImpl</h1>
+			<h1>Interface ProviderData</h1>
 		</div>
 	</div>
 </header>
@@ -71,14 +71,8 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">CancellationTokenImpl</span>
+						<span class="target">ProviderData</span>
 					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implements</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/plugin._plugin_-1.cancellationtoken.html" class="tsd-signature-type">CancellationToken</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -88,8 +82,8 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="plugin_ext.cancellationtokenimpl.html#iscancellationrequested" class="tsd-kind-icon">is<wbr>Cancellation<wbr>Requested</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="plugin_ext.cancellationtokenimpl.html#oncancellationrequested" class="tsd-kind-icon">on<wbr>Cancellation<wbr>Requested</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="plugin_ext.providerdata.html#plugininfo" class="tsd-kind-icon">plugin<wbr>Info</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="plugin_ext.providerdata.html#provider" class="tsd-kind-icon">provider</a></li>
 							</ul>
 						</section>
 					</div>
@@ -97,25 +91,23 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
-					<a name="iscancellationrequested" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> is<wbr>Cancellation<wbr>Requested</h3>
-					<div class="tsd-signature tsd-kind-icon">is<wbr>Cancellation<wbr>Requested<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="plugininfo" class="tsd-anchor"></a>
+					<h3>plugin<wbr>Info</h3>
+					<div class="tsd-signature tsd-kind-icon">plugin<wbr>Info<span class="tsd-signature-symbol">:</span> <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/plugin._plugin_-1.cancellationtoken.html">CancellationToken</a>.<a href="../interfaces/plugin._plugin_-1.cancellationtoken.html#iscancellationrequested">isCancellationRequested</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/76f74f1ed4/packages/plugin-ext/src/plugin/decorations.ts#L89">packages/plugin-ext/src/plugin/decorations.ts:89</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/42d2f3a944/packages/plugin-ext/src/plugin/decorations.ts#L40">packages/plugin-ext/src/plugin/decorations.ts:40</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
-					<a name="oncancellationrequested" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Cancellation<wbr>Requested</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Cancellation<wbr>Requested<span class="tsd-signature-symbol">:</span> <a href="../modules/core.event-1.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="provider" class="tsd-anchor"></a>
+					<h3>provider</h3>
+					<div class="tsd-signature tsd-kind-icon">provider<span class="tsd-signature-symbol">:</span> <a href="plugin._plugin_-1.filedecorationprovider.html" class="tsd-signature-type">FileDecorationProvider</a></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/plugin._plugin_-1.cancellationtoken.html">CancellationToken</a>.<a href="../interfaces/plugin._plugin_-1.cancellationtoken.html#oncancellationrequested">onCancellationRequested</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/76f74f1ed4/packages/plugin-ext/src/plugin/decorations.ts#L90">packages/plugin-ext/src/plugin/decorations.ts:90</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/42d2f3a944/packages/plugin-ext/src/plugin/decorations.ts#L39">packages/plugin-ext/src/plugin/decorations.ts:39</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -234,14 +226,14 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
-						<a href="plugin_ext.cancellationtokenimpl.html" class="tsd-kind-icon">Cancellation<wbr>Token<wbr>Impl</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="plugin_ext.providerdata.html" class="tsd-kind-icon">Provider<wbr>Data</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
-								<a href="plugin_ext.cancellationtokenimpl.html#iscancellationrequested" class="tsd-kind-icon">is<wbr>Cancellation<wbr>Requested</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="plugin_ext.providerdata.html#plugininfo" class="tsd-kind-icon">plugin<wbr>Info</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
-								<a href="plugin_ext.cancellationtokenimpl.html#oncancellationrequested" class="tsd-kind-icon">on<wbr>Cancellation<wbr>Requested</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="plugin_ext.providerdata.html#provider" class="tsd-kind-icon">provider</a>
 							</li>
 						</ul>
 					</li>
@@ -266,13 +258,13 @@
 				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
-				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
-			</ul>
-			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
