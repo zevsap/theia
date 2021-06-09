@@ -85,12 +85,19 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="vsx_registry.vsxextensionssearchmodel.html#_query" class="tsd-kind-icon">_query</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="vsx_registry.vsxextensionssearchmodel.html#ondidchangequery" class="tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Query</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="vsx_registry.vsxextensionssearchmodel.html#ondidchangequeryemitter" class="tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Query<wbr>Emitter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="vsx_registry.vsxextensionssearchmodel.html#specialqueries" class="tsd-kind-icon">special<wbr>Queries</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="vsx_registry.vsxextensionssearchmodel.html#query" class="tsd-kind-icon">query</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vsx_registry.vsxextensionssearchmodel.html#getmodeforquery" class="tsd-kind-icon">get<wbr>Mode<wbr>For<wbr>Query</a></li>
 							</ul>
 						</section>
 					</div>
@@ -104,7 +111,7 @@
 					<div class="tsd-signature tsd-kind-icon">_query<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/f9c0311207/packages/vsx-registry/src/browser/vsx-extensions-search-model.ts#L26">packages/vsx-registry/src/browser/vsx-extensions-search-model.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d0aadd69e8/packages/vsx-registry/src/browser/vsx-extensions-search-model.ts#L38">packages/vsx-registry/src/browser/vsx-extensions-search-model.ts:38</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -114,7 +121,7 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Query<span class="tsd-signature-symbol">:</span> <a href="../modules/core.event-1.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = this.onDidChangeQueryEmitter.event</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/f9c0311207/packages/vsx-registry/src/browser/vsx-extensions-search-model.ts#L24">packages/vsx-registry/src/browser/vsx-extensions-search-model.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d0aadd69e8/packages/vsx-registry/src/browser/vsx-extensions-search-model.ts#L33">packages/vsx-registry/src/browser/vsx-extensions-search-model.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -124,7 +131,17 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Query<wbr>Emitter<span class="tsd-signature-symbol">:</span> <a href="core.emitter-1.html" class="tsd-signature-type">Emitter</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Emitter&lt;string&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/f9c0311207/packages/vsx-registry/src/browser/vsx-extensions-search-model.ts#L23">packages/vsx-registry/src/browser/vsx-extensions-search-model.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d0aadd69e8/packages/vsx-registry/src/browser/vsx-extensions-search-model.ts#L32">packages/vsx-registry/src/browser/vsx-extensions-search-model.ts:32</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="specialqueries" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> special<wbr>Queries</h3>
+					<div class="tsd-signature tsd-kind-icon">special<wbr>Queries<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../enums/vsx_registry.vsxsearchmode.html" class="tsd-signature-type">VSXSearchMode</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;string, VSXSearchMode&gt;([[RECOMMENDED_QUERY, VSXSearchMode.Recommended]])</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d0aadd69e8/packages/vsx-registry/src/browser/vsx-extensions-search-model.ts#L34">packages/vsx-registry/src/browser/vsx-extensions-search-model.ts:34</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -142,7 +159,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/f9c0311207/packages/vsx-registry/src/browser/vsx-extensions-search-model.ts#L34">packages/vsx-registry/src/browser/vsx-extensions-search-model.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d0aadd69e8/packages/vsx-registry/src/browser/vsx-extensions-search-model.ts#L46">packages/vsx-registry/src/browser/vsx-extensions-search-model.ts:46</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -150,7 +167,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/f9c0311207/packages/vsx-registry/src/browser/vsx-extensions-search-model.ts#L27">packages/vsx-registry/src/browser/vsx-extensions-search-model.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d0aadd69e8/packages/vsx-registry/src/browser/vsx-extensions-search-model.ts#L39">packages/vsx-registry/src/browser/vsx-extensions-search-model.ts:39</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -160,6 +177,26 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getmodeforquery" class="tsd-anchor"></a>
+					<h3>get<wbr>Mode<wbr>For<wbr>Query</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Mode<wbr>For<wbr>Query<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/vsx_registry.vsxsearchmode.html" class="tsd-signature-type">VSXSearchMode</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d0aadd69e8/packages/vsx-registry/src/browser/vsx-extensions-search-model.ts#L50">packages/vsx-registry/src/browser/vsx-extensions-search-model.ts:50</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../enums/vsx_registry.vsxsearchmode.html" class="tsd-signature-type">VSXSearchMode</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -209,8 +246,14 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="vsx_registry.vsxextensionssearchmodel.html#ondidchangequeryemitter" class="tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Query<wbr>Emitter</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="vsx_registry.vsxextensionssearchmodel.html#specialqueries" class="tsd-kind-icon">special<wbr>Queries</a>
+							</li>
 							<li class=" tsd-kind-accessor tsd-parent-kind-class">
 								<a href="vsx_registry.vsxextensionssearchmodel.html#query" class="tsd-kind-icon">query</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="vsx_registry.vsxextensionssearchmodel.html#getmodeforquery" class="tsd-kind-icon">get<wbr>Mode<wbr>For<wbr>Query</a>
 							</li>
 						</ul>
 					</li>
@@ -238,6 +281,7 @@
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
