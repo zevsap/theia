@@ -71,7 +71,12 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">EditorPreviewWidgetFactory</span>
+						<a href="editor.editorwidgetfactory.html" class="tsd-signature-type">EditorWidgetFactory</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">EditorPreviewWidgetFactory</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -88,19 +93,20 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="editor_preview.editorpreviewwidgetfactory.html#editormanager" class="tsd-kind-icon">editor<wbr>Manager</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="editor_preview.editorpreviewwidgetfactory.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="editor_preview.editorpreviewwidgetfactory.html#widgetmanager" class="tsd-kind-icon">widget<wbr>Manager</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="editor_preview.editorpreviewwidgetfactory.html#id-1" class="tsd-kind-icon">ID</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="editor_preview.editorpreviewwidgetfactory.html#sessionid" class="tsd-kind-icon">session<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="editor_preview.editorpreviewwidgetfactory.html#editorprovider" class="tsd-kind-icon">editor<wbr>Provider</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="editor_preview.editorpreviewwidgetfactory.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="editor_preview.editorpreviewwidgetfactory.html#labelprovider" class="tsd-kind-icon">label<wbr>Provider</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="editor_preview.editorpreviewwidgetfactory.html#selectionservice" class="tsd-kind-icon">selection<wbr>Service</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-static"><a href="editor_preview.editorpreviewwidgetfactory.html#id-1" class="tsd-kind-icon">ID</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="editor_preview.editorpreviewwidgetfactory.html#createwidget" class="tsd-kind-icon">create<wbr>Widget</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="editor_preview.editorpreviewwidgetfactory.html#docreate" class="tsd-kind-icon">do<wbr>Create</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="editor_preview.editorpreviewwidgetfactory.html#generateuniqueid" class="tsd-kind-icon">generate<wbr>Unique<wbr>Id</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="editor_preview.editorpreviewwidgetfactory.html#constructeditor" class="tsd-kind-icon">construct<wbr>Editor</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="editor_preview.editorpreviewwidgetfactory.html#createeditor" class="tsd-kind-icon">create<wbr>Editor</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="editor_preview.editorpreviewwidgetfactory.html#createwidget" class="tsd-kind-icon">create<wbr>Widget</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="editor_preview.editorpreviewwidgetfactory.html#createid" class="tsd-kind-icon">createID</a></li>
 							</ul>
 						</section>
 					</div>
@@ -108,119 +114,163 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-					<a name="editormanager" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> editor<wbr>Manager</h3>
-					<div class="tsd-signature tsd-kind-icon">editor<wbr>Manager<span class="tsd-signature-symbol">:</span> <a href="editor.editormanager-1.html" class="tsd-signature-type">EditorManager</a></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="editorprovider" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> editor<wbr>Provider</h3>
+					<div class="tsd-signature tsd-kind-icon">editor<wbr>Provider<span class="tsd-signature-symbol">:</span> <a href="../modules/editor.html#texteditorprovider-2" class="tsd-signature-type">TextEditorProvider</a></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="editor.editorwidgetfactory.html">EditorWidgetFactory</a>.<a href="editor.editorwidgetfactory.html#editorprovider">editorProvider</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d0aadd69e8/packages/editor-preview/src/browser/editor-preview-factory.ts#L48">packages/editor-preview/src/browser/editor-preview-factory.ts:48</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8e88b7667/packages/editor/src/browser/editor-widget-factory.ts#L41">packages/editor/src/browser/editor-widget-factory.ts:41</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 					<a name="id" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> id</h3>
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = EditorPreviewWidgetFactory.ID</span></div>
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/core.widgetfactory-1.html">WidgetFactory</a>.<a href="../interfaces/core.widgetfactory-1.html#id">id</a></p>
+						<p>Overrides <a href="editor.editorwidgetfactory.html">EditorWidgetFactory</a>.<a href="editor.editorwidgetfactory.html#id">id</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d0aadd69e8/packages/editor-preview/src/browser/editor-preview-factory.ts#L41">packages/editor-preview/src/browser/editor-preview-factory.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8e88b7667/packages/editor-preview/src/browser/editor-preview-widget-factory.ts#L30">packages/editor-preview/src/browser/editor-preview-widget-factory.ts:30</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-					<a name="widgetmanager" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> widget<wbr>Manager</h3>
-					<div class="tsd-signature tsd-kind-icon">widget<wbr>Manager<span class="tsd-signature-symbol">:</span> <a href="core.widgetmanager-1.html" class="tsd-signature-type">WidgetManager</a></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="labelprovider" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> label<wbr>Provider</h3>
+					<div class="tsd-signature tsd-kind-icon">label<wbr>Provider<span class="tsd-signature-symbol">:</span> <a href="core.labelprovider-1.html" class="tsd-signature-type">LabelProvider</a></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="editor.editorwidgetfactory.html">EditorWidgetFactory</a>.<a href="editor.editorwidgetfactory.html#labelprovider">labelProvider</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d0aadd69e8/packages/editor-preview/src/browser/editor-preview-factory.ts#L45">packages/editor-preview/src/browser/editor-preview-factory.ts:45</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8e88b7667/packages/editor/src/browser/editor-widget-factory.ts#L38">packages/editor/src/browser/editor-widget-factory.ts:38</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="selectionservice" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> selection<wbr>Service</h3>
+					<div class="tsd-signature tsd-kind-icon">selection<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="core.selectionservice-1.html" class="tsd-signature-type">SelectionService</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="editor.editorwidgetfactory.html">EditorWidgetFactory</a>.<a href="editor.editorwidgetfactory.html#selectionservice">selectionService</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8e88b7667/packages/editor/src/browser/editor-widget-factory.ts#L44">packages/editor/src/browser/editor-widget-factory.ts:44</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-static">
 					<a name="id-1" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> ID</h3>
 					<div class="tsd-signature tsd-kind-icon">ID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;editor-preview-widget&quot;</span></div>
 					<aside class="tsd-sources">
+						<p>Overrides <a href="editor.editorwidgetfactory.html">EditorWidgetFactory</a>.<a href="editor.editorwidgetfactory.html#id-1">ID</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d0aadd69e8/packages/editor-preview/src/browser/editor-preview-factory.ts#L35">packages/editor-preview/src/browser/editor-preview-factory.ts:35</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a name="sessionid" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> session<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">session<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = EditorPreviewWidgetFactory.generateUniqueId()</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d0aadd69e8/packages/editor-preview/src/browser/editor-preview-factory.ts#L42">packages/editor-preview/src/browser/editor-preview-factory.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8e88b7667/packages/editor-preview/src/browser/editor-preview-widget-factory.ts#L29">packages/editor-preview/src/browser/editor-preview-widget-factory.ts:29</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+					<a name="constructeditor" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> construct<wbr>Editor</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">construct<wbr>Editor<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="editor_preview.editorpreviewwidget.html" class="tsd-signature-type">EditorPreviewWidget</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="editor.editorwidgetfactory.html">EditorWidgetFactory</a>.<a href="editor.editorwidgetfactory.html#constructeditor">constructEditor</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8e88b7667/packages/editor-preview/src/browser/editor-preview-widget-factory.ts#L41">packages/editor-preview/src/browser/editor-preview-widget-factory.ts:41</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>uri: <a href="core.uri.html" class="tsd-signature-type">URI</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="editor_preview.editorpreviewwidget.html" class="tsd-signature-type">EditorPreviewWidget</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="createeditor" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> create<wbr>Editor</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Editor<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><a href="core.uri.html" class="tsd-signature-type">URI</a>, options<span class="tsd-signature-symbol">?: </span><a href="../modules/core.navigatablewidgetoptions-1.html" class="tsd-signature-type">NavigatableWidgetOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="editor.editorwidget-1.html" class="tsd-signature-type">EditorWidget</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="editor.editorwidgetfactory.html">EditorWidgetFactory</a>.<a href="editor.editorwidgetfactory.html#createeditor">createEditor</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8e88b7667/packages/editor/src/browser/editor-widget-factory.ts#L51">packages/editor/src/browser/editor-widget-factory.ts:51</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>uri: <a href="core.uri.html" class="tsd-signature-type">URI</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../modules/core.navigatablewidgetoptions-1.html" class="tsd-signature-type">NavigatableWidgetOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="editor.editorwidget-1.html" class="tsd-signature-type">EditorWidget</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="createwidget" class="tsd-anchor"></a>
 					<h3>create<wbr>Widget</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Widget<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/editor_preview.editorpreviewwidgetoptions.html" class="tsd-signature-type">EditorPreviewWidgetOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/core.html#maybepromise-1" class="tsd-signature-type">MaybePromise</a><span class="tsd-signature-symbol">&lt;</span><a href="editor_preview.editorpreviewwidget-1.html" class="tsd-signature-type">EditorPreviewWidget</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Widget<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/editor_preview.editorpreviewoptions.html" class="tsd-signature-type">EditorPreviewOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="editor_preview.editorpreviewwidget.html" class="tsd-signature-type">EditorPreviewWidget</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides <a href="editor.editorwidgetfactory.html">EditorWidgetFactory</a>.<a href="editor.editorwidgetfactory.html#createwidget">createWidget</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d0aadd69e8/packages/editor-preview/src/browser/editor-preview-factory.ts#L50">packages/editor-preview/src/browser/editor-preview-factory.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8e88b7667/packages/editor-preview/src/browser/editor-preview-widget-factory.ts#L32">packages/editor-preview/src/browser/editor-preview-widget-factory.ts:32</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>options: <a href="../interfaces/editor_preview.editorpreviewwidgetoptions.html" class="tsd-signature-type">EditorPreviewWidgetOptions</a></h5>
+									<h5>options: <a href="../interfaces/editor_preview.editorpreviewoptions.html" class="tsd-signature-type">EditorPreviewOptions</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/core.html#maybepromise-1" class="tsd-signature-type">MaybePromise</a><span class="tsd-signature-symbol">&lt;</span><a href="editor_preview.editorpreviewwidget-1.html" class="tsd-signature-type">EditorPreviewWidget</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="editor_preview.editorpreviewwidget.html" class="tsd-signature-type">EditorPreviewWidget</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-					<a name="docreate" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> do<wbr>Create</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">do<wbr>Create<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/editor_preview.editorpreviewwidgetoptions.html" class="tsd-signature-type">EditorPreviewWidgetOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="editor_preview.editorpreviewwidget-1.html" class="tsd-signature-type">EditorPreviewWidget</a><span class="tsd-signature-symbol">&gt;</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="createid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> createID</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">createID<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><a href="core.uri.html" class="tsd-signature-type">URI</a>, counter<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="editor.editorwidgetfactory.html">EditorWidgetFactory</a>.<a href="editor.editorwidgetfactory.html#createid">createID</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d0aadd69e8/packages/editor-preview/src/browser/editor-preview-factory.ts#L54">packages/editor-preview/src/browser/editor-preview-factory.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8e88b7667/packages/editor/src/browser/editor-widget-factory.ts#L27">packages/editor/src/browser/editor-widget-factory.ts:27</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>options: <a href="../interfaces/editor_preview.editorpreviewwidgetoptions.html" class="tsd-signature-type">EditorPreviewWidgetOptions</a></h5>
+									<h5>uri: <a href="core.uri.html" class="tsd-signature-type">URI</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> counter: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="editor_preview.editorpreviewwidget-1.html" class="tsd-signature-type">EditorPreviewWidget</a><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<a name="generateuniqueid" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> generate<wbr>Unique<wbr>Id</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">generate<wbr>Unique<wbr>Id<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d0aadd69e8/packages/editor-preview/src/browser/editor-preview-factory.ts#L37">packages/editor-preview/src/browser/editor-preview-factory.ts:37</a></li>
-								</ul>
-							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
@@ -235,60 +285,56 @@
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/editor_preview.html">editor-<wbr>preview</a>
+						<ul>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/editor_preview.editorpreviewcommands.html">Editor<wbr>Preview<wbr>Commands</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="../modules/editor_preview.html#editorpreviewmanager" class="tsd-kind-icon">Editor<wbr>Preview<wbr>Manager</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="../modules/editor_preview.html#editorpreviewwidget" class="tsd-kind-icon">Editor<wbr>Preview<wbr>Widget</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="../modules/editor_preview.html#previeweditoropeneroptions" class="tsd-kind-icon">Preview<wbr>Editor<wbr>Opener<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="../modules/editor_preview.html#previeweditorpinnedevent" class="tsd-kind-icon">Preview<wbr>Editor<wbr>Pinned<wbr>Event</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="../modules/editor_preview.html#previewviewstate" class="tsd-kind-icon">Preview<wbr>View<wbr>State</a>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="editor_preview.editorpreviewcontribution.html" class="tsd-kind-icon">Editor<wbr>Preview<wbr>Contribution</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="editor_preview.editorpreviewmanager-1.html" class="tsd-kind-icon">Editor<wbr>Preview<wbr>Manager</a>
+						<a href="editor_preview.editorpreviewmanager.html" class="tsd-kind-icon">Editor<wbr>Preview<wbr>Manager</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="editor_preview.editorpreviewwidget-1.html" class="tsd-kind-icon">Editor<wbr>Preview<wbr>Widget</a>
+						<a href="editor_preview.editorpreviewwidget.html" class="tsd-kind-icon">Editor<wbr>Preview<wbr>Widget</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="editor_preview.editorpreviewwidgetfactory.html" class="tsd-kind-icon">Editor<wbr>Preview<wbr>Widget<wbr>Factory</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-								<a href="editor_preview.editorpreviewwidgetfactory.html#editormanager" class="tsd-kind-icon">editor<wbr>Manager</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="editor_preview.editorpreviewwidgetfactory.html#editorprovider" class="tsd-kind-icon">editor<wbr>Provider</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 								<a href="editor_preview.editorpreviewwidgetfactory.html#id" class="tsd-kind-icon">id</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-								<a href="editor_preview.editorpreviewwidgetfactory.html#widgetmanager" class="tsd-kind-icon">widget<wbr>Manager</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="editor_preview.editorpreviewwidgetfactory.html#labelprovider" class="tsd-kind-icon">label<wbr>Provider</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="editor_preview.editorpreviewwidgetfactory.html#selectionservice" class="tsd-kind-icon">selection<wbr>Service</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-static">
 								<a href="editor_preview.editorpreviewwidgetfactory.html#id-1" class="tsd-kind-icon">ID</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-								<a href="editor_preview.editorpreviewwidgetfactory.html#sessionid" class="tsd-kind-icon">session<wbr>Id</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+								<a href="editor_preview.editorpreviewwidgetfactory.html#constructeditor" class="tsd-kind-icon">construct<wbr>Editor</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="editor_preview.editorpreviewwidgetfactory.html#createeditor" class="tsd-kind-icon">create<wbr>Editor</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="editor_preview.editorpreviewwidgetfactory.html#createwidget" class="tsd-kind-icon">create<wbr>Widget</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="editor_preview.editorpreviewwidgetfactory.html#docreate" class="tsd-kind-icon">do<wbr>Create</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
-								<a href="editor_preview.editorpreviewwidgetfactory.html#generateuniqueid" class="tsd-kind-icon">generate<wbr>Unique<wbr>Id</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="editor_preview.editorpreviewwidgetfactory.html#createid" class="tsd-kind-icon">createID</a>
 							</li>
 						</ul>
 					</li>
@@ -298,16 +344,7 @@
 						<a href="../interfaces/editor_preview.editorpreviewconfiguration.html" class="tsd-kind-icon">Editor<wbr>Preview<wbr>Configuration</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/editor_preview.editorpreviewwidgetoptions.html" class="tsd-kind-icon">Editor<wbr>Preview<wbr>Widget<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/editor_preview.previeweditoropeneroptions-1.html" class="tsd-kind-icon">Preview<wbr>Editor<wbr>Opener<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/editor_preview.previeweditorpinnedevent-1.html" class="tsd-kind-icon">Preview<wbr>Editor<wbr>Pinned<wbr>Event</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/editor_preview.previewviewstate-1.html" class="tsd-kind-icon">Preview<wbr>View<wbr>State</a>
+						<a href="../interfaces/editor_preview.editorpreviewoptions.html" class="tsd-kind-icon">Editor<wbr>Preview<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="../modules/editor_preview.html#editorpreviewpreferences" class="tsd-kind-icon">Editor<wbr>Preview<wbr>Preferences</a>
@@ -356,15 +393,13 @@
 				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 			</ul>
 		</div>
 	</div>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PreviewEditorOpenerOptions | Theia TypeDoc</title>
+	<title>EditorPreviewOptions | Theia TypeDoc</title>
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,31 +57,24 @@
 					<a href="../modules/editor_preview.html">editor-preview</a>
 				</li>
 				<li>
-					<a href="editor_preview.previeweditoropeneroptions-1.html">PreviewEditorOpenerOptions</a>
+					<a href="editor_preview.editorpreviewoptions.html">EditorPreviewOptions</a>
 				</li>
 			</ul>
-			<h1>Interface PreviewEditorOpenerOptions</h1>
+			<h1>Interface EditorPreviewOptions</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Opener options containing an optional preview flag.</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="editor.editoropeneroptions-1.html" class="tsd-signature-type">EditorOpenerOptions</a>
+						<a href="../modules/core.navigatablewidgetoptions-1.html" class="tsd-signature-type">NavigatableWidgetOptions</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">PreviewEditorOpenerOptions</span>
+								<span class="target">EditorPreviewOptions</span>
 							</li>
 						</ul>
 					</li>
@@ -94,11 +87,16 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="editor_preview.previeweditoropeneroptions-1.html#counter" class="tsd-kind-icon">counter</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="editor_preview.previeweditoropeneroptions-1.html#mode" class="tsd-kind-icon">mode</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite"><a href="editor_preview.previeweditoropeneroptions-1.html#preview" class="tsd-kind-icon">preview</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="editor_preview.previeweditoropeneroptions-1.html#selection" class="tsd-kind-icon">selection</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="editor_preview.previeweditoropeneroptions-1.html#widgetoptions" class="tsd-kind-icon">widget<wbr>Options</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="editor_preview.editorpreviewoptions.html#counter" class="tsd-kind-icon">counter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="editor_preview.editorpreviewoptions.html#kind" class="tsd-kind-icon">kind</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="editor_preview.editorpreviewoptions.html#preview" class="tsd-kind-icon">preview</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="editor_preview.editorpreviewoptions.html#uri" class="tsd-kind-icon">uri</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="editor_preview.editorpreviewoptions.html#is" class="tsd-kind-icon">is</a></li>
 							</ul>
 						</section>
 					</div>
@@ -111,67 +109,69 @@
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> counter</h3>
 					<div class="tsd-signature tsd-kind-icon">counter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="editor.editoropeneroptions-1.html">EditorOpenerOptions</a>.<a href="editor.editoropeneroptions-1.html#counter">counter</a></p>
+						<p>Inherited from <a href="../modules/core.navigatablewidgetoptions-1.html">NavigatableWidgetOptions</a>.<a href="../modules/core.navigatablewidgetoptions-1.html#counter">counter</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d0aadd69e8/packages/editor/src/browser/editor-manager.ts#L34">packages/editor/src/browser/editor-manager.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8e88b7667/packages/core/src/browser/navigatable.ts#L72">packages/core/src/browser/navigatable.ts:72</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="mode" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> mode</h3>
-					<div class="tsd-signature tsd-kind-icon">mode<span class="tsd-signature-symbol">:</span> <a href="../modules/core.html#widgetopenmode-1" class="tsd-signature-type">WidgetOpenMode</a></div>
+					<a name="kind" class="tsd-anchor"></a>
+					<h3>kind</h3>
+					<div class="tsd-signature tsd-kind-icon">kind<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"navigatable"</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.widgetopeneroptions-1.html">WidgetOpenerOptions</a>.<a href="core.widgetopeneroptions-1.html#mode">mode</a></p>
+						<p>Inherited from <a href="../modules/core.navigatablewidgetoptions-1.html">NavigatableWidgetOptions</a>.<a href="../modules/core.navigatablewidgetoptions-1.html#kind">kind</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d0aadd69e8/packages/core/src/browser/widget-open-handler.ts#L34">packages/core/src/browser/widget-open-handler.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8e88b7667/packages/core/src/browser/navigatable.ts#L70">packages/core/src/browser/navigatable.ts:70</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Determines whether the widget should be only opened, revealed or activated.
-							By default is <code>activate</code>.</p>
-						</div>
-					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="preview" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> preview</h3>
 					<div class="tsd-signature tsd-kind-icon">preview<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
 					<aside class="tsd-sources">
-						<p>Overrides <a href="editor.editoropeneroptions-1.html">EditorOpenerOptions</a>.<a href="editor.editoropeneroptions-1.html#preview">preview</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d0aadd69e8/packages/editor-preview/src/browser/editor-preview-manager.ts#L30">packages/editor-preview/src/browser/editor-preview-manager.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8e88b7667/packages/editor-preview/src/browser/editor-preview-widget-factory.ts#L24">packages/editor-preview/src/browser/editor-preview-widget-factory.ts:24</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="selection" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> selection</h3>
-					<div class="tsd-signature tsd-kind-icon">selection<span class="tsd-signature-symbol">:</span> <a href="../modules/core.html#recursivepartial-1" class="tsd-signature-type">RecursivePartial</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Range</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<a name="uri" class="tsd-anchor"></a>
+					<h3>uri</h3>
+					<div class="tsd-signature tsd-kind-icon">uri<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="editor.editoropeneroptions-1.html">EditorOpenerOptions</a>.<a href="editor.editoropeneroptions-1.html#selection">selection</a></p>
+						<p>Inherited from <a href="../modules/core.navigatablewidgetoptions-1.html">NavigatableWidgetOptions</a>.<a href="../modules/core.navigatablewidgetoptions-1.html#uri">uri</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d0aadd69e8/packages/editor/src/browser/editor-manager.ts#L32">packages/editor/src/browser/editor-manager.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8e88b7667/packages/core/src/browser/navigatable.ts#L71">packages/core/src/browser/navigatable.ts:71</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="widgetoptions" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> widget<wbr>Options</h3>
-					<div class="tsd-signature tsd-kind-icon">widget<wbr>Options<span class="tsd-signature-symbol">:</span> <a href="core.applicationshell-2.widgetoptions.html" class="tsd-signature-type">WidgetOptions</a></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.widgetopeneroptions-1.html">WidgetOpenerOptions</a>.<a href="core.widgetopeneroptions-1.html#widgetoptions">widgetOptions</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d0aadd69e8/packages/core/src/browser/widget-open-handler.ts#L39">packages/core/src/browser/widget-open-handler.ts:39</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Specify how an opened widget should be added to the shell.
-							By default to the main area.</p>
-						</div>
-					</div>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="is" class="tsd-anchor"></a>
+					<h3>is</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">is<span class="tsd-signature-symbol">(</span>arg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">NavigatableWidgetOptions</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/e8e88b7667/packages/core/src/browser/navigatable.ts#L75">packages/core/src/browser/navigatable.ts:75</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>arg: <span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">NavigatableWidgetOptions</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -183,31 +183,24 @@
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/editor_preview.html">editor-<wbr>preview</a>
+						<ul>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/editor_preview.editorpreviewcommands.html">Editor<wbr>Preview<wbr>Commands</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="../modules/editor_preview.html#editorpreviewmanager" class="tsd-kind-icon">Editor<wbr>Preview<wbr>Manager</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="../modules/editor_preview.html#editorpreviewwidget" class="tsd-kind-icon">Editor<wbr>Preview<wbr>Widget</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="../modules/editor_preview.html#previeweditoropeneroptions" class="tsd-kind-icon">Preview<wbr>Editor<wbr>Opener<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="../modules/editor_preview.html#previeweditorpinnedevent" class="tsd-kind-icon">Preview<wbr>Editor<wbr>Pinned<wbr>Event</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="../modules/editor_preview.html#previewviewstate" class="tsd-kind-icon">Preview<wbr>View<wbr>State</a>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/editor_preview.editorpreviewcontribution.html" class="tsd-kind-icon">Editor<wbr>Preview<wbr>Contribution</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/editor_preview.editorpreviewmanager-1.html" class="tsd-kind-icon">Editor<wbr>Preview<wbr>Manager</a>
+						<a href="../classes/editor_preview.editorpreviewmanager.html" class="tsd-kind-icon">Editor<wbr>Preview<wbr>Manager</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/editor_preview.editorpreviewwidget-1.html" class="tsd-kind-icon">Editor<wbr>Preview<wbr>Widget</a>
+						<a href="../classes/editor_preview.editorpreviewwidget.html" class="tsd-kind-icon">Editor<wbr>Preview<wbr>Widget</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/editor_preview.editorpreviewwidgetfactory.html" class="tsd-kind-icon">Editor<wbr>Preview<wbr>Widget<wbr>Factory</a>
@@ -215,39 +208,30 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="editor_preview.editorpreviewconfiguration.html" class="tsd-kind-icon">Editor<wbr>Preview<wbr>Configuration</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="editor_preview.editorpreviewwidgetoptions.html" class="tsd-kind-icon">Editor<wbr>Preview<wbr>Widget<wbr>Options</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="editor_preview.previeweditoropeneroptions-1.html" class="tsd-kind-icon">Preview<wbr>Editor<wbr>Opener<wbr>Options</a>
+						<a href="editor_preview.editorpreviewoptions.html" class="tsd-kind-icon">Editor<wbr>Preview<wbr>Options</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="editor_preview.previeweditoropeneroptions-1.html#counter" class="tsd-kind-icon">counter</a>
+								<a href="editor_preview.editorpreviewoptions.html#counter" class="tsd-kind-icon">counter</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="editor_preview.previeweditoropeneroptions-1.html#mode" class="tsd-kind-icon">mode</a>
+								<a href="editor_preview.editorpreviewoptions.html#kind" class="tsd-kind-icon">kind</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
-								<a href="editor_preview.previeweditoropeneroptions-1.html#preview" class="tsd-kind-icon">preview</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="editor_preview.previeweditoropeneroptions-1.html#selection" class="tsd-kind-icon">selection</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="editor_preview.editorpreviewoptions.html#preview" class="tsd-kind-icon">preview</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="editor_preview.previeweditoropeneroptions-1.html#widgetoptions" class="tsd-kind-icon">widget<wbr>Options</a>
+								<a href="editor_preview.editorpreviewoptions.html#uri" class="tsd-kind-icon">uri</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="editor_preview.editorpreviewoptions.html#is" class="tsd-kind-icon">is</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="editor_preview.previeweditorpinnedevent-1.html" class="tsd-kind-icon">Preview<wbr>Editor<wbr>Pinned<wbr>Event</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="editor_preview.previewviewstate-1.html" class="tsd-kind-icon">Preview<wbr>View<wbr>State</a>
-					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="../modules/editor_preview.html#editorpreviewpreferences" class="tsd-kind-icon">Editor<wbr>Preview<wbr>Preferences</a>
 					</li>
@@ -288,6 +272,7 @@
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
