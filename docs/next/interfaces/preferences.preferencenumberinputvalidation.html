@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PreferenceWithValueInAllScopes | Theia TypeDoc</title>
+	<title>PreferenceNumberInputValidation | Theia TypeDoc</title>
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,13 +57,10 @@
 					<a href="../modules/preferences.html">preferences</a>
 				</li>
 				<li>
-					<a href="../modules/preferences.preference.html">Preference</a>
-				</li>
-				<li>
-					<a href="preferences.preference.preferencewithvalueinallscopes.html">PreferenceWithValueInAllScopes</a>
+					<a href="preferences.preferencenumberinputvalidation.html">PreferenceNumberInputValidation</a>
 				</li>
 			</ul>
-			<h1>Interface PreferenceWithValueInAllScopes</h1>
+			<h1>Interface PreferenceNumberInputValidation</h1>
 		</div>
 	</div>
 </header>
@@ -74,7 +71,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">PreferenceWithValueInAllScopes</span>
+						<span class="target">PreferenceNumberInputValidation</span>
 					</li>
 				</ul>
 			</section>
@@ -82,37 +79,47 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="preferences.preference.preferencewithvalueinallscopes.html#data" class="tsd-kind-icon">data</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="preferences.preference.preferencewithvalueinallscopes.html#values" class="tsd-kind-icon">values</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="preferences.preferencenumberinputvalidation.html#message" class="tsd-kind-icon">message</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="preferences.preferencenumberinputvalidation.html#value" class="tsd-kind-icon">value</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="data" class="tsd-anchor"></a>
-					<h3>data</h3>
-					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <a href="../modules/core.preferencedataproperty-2.html" class="tsd-signature-type">PreferenceDataProperty</a></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="message" class="tsd-anchor"></a>
+					<h3>message</h3>
+					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/64e613fd31/packages/preferences/src/browser/util/preference-types.ts#L37">packages/preferences/src/browser/util/preference-types.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b86616b832/packages/preferences/src/browser/views/components/preference-number-input.ts#L28">packages/preferences/src/browser/views/components/preference-number-input.ts:28</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>the error message to display.</p>
+						</div>
+					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="values" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> values</h3>
-					<div class="tsd-signature tsd-kind-icon">values<span class="tsd-signature-symbol">:</span> <a href="preferences.preference.valuesinallscopes.html" class="tsd-signature-type">ValuesInAllScopes</a></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="value" class="tsd-anchor"></a>
+					<h3>value</h3>
+					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/64e613fd31/packages/preferences/src/browser/util/preference-types.ts#L36">packages/preferences/src/browser/util/preference-types.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/b86616b832/packages/preferences/src/browser/views/components/preference-number-input.ts#L24">packages/preferences/src/browser/views/components/preference-number-input.ts:24</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>the numeric value of the input. <code>NaN</code> if there is an error.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -125,13 +132,8 @@
 					<li class="current tsd-kind-module">
 						<a href="../modules/preferences.html">preferences</a>
 						<ul>
-							<li class="current tsd-kind-namespace tsd-parent-kind-module">
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/preferences.preference.html">Preference</a>
-								<ul>
-									<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
-										<a href="../modules/preferences.preference.editorcommandargs.html">Editor<wbr>Command<wbr>Args</a>
-									</li>
-								</ul>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/preferences.preferencemenus.html">Preference<wbr>Menus</a>
@@ -145,45 +147,21 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="preferences.preference.contextmenucallbacks.html" class="tsd-kind-icon">Context<wbr>Menu<wbr>Callbacks</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="preferences.preference.nodewithvalueinallscopes.html" class="tsd-kind-icon">Node<wbr>With<wbr>Value<wbr>InAll<wbr>Scopes</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="preferences.preference.nodewithvalueinsinglescope.html" class="tsd-kind-icon">Node<wbr>With<wbr>Value<wbr>InSingle<wbr>Scope</a>
-					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="preferences.preference.preferencewithvalueinallscopes.html" class="tsd-kind-icon">Preference<wbr>With<wbr>Value<wbr>InAll<wbr>Scopes</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="preferences.preferencenumberinputvalidation.html" class="tsd-kind-icon">Preference<wbr>Number<wbr>Input<wbr>Validation</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="preferences.preference.preferencewithvalueinallscopes.html#data" class="tsd-kind-icon">data</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="preferences.preferencenumberinputvalidation.html#message" class="tsd-kind-icon">message</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="preferences.preference.preferencewithvalueinallscopes.html#values" class="tsd-kind-icon">values</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="preferences.preferencenumberinputvalidation.html#value" class="tsd-kind-icon">value</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="preferences.preference.selectedscopedetails.html" class="tsd-kind-icon">Selected<wbr>Scope<wbr>Details</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="preferences.preference.valueinsinglescope.html" class="tsd-kind-icon">Value<wbr>InSingle<wbr>Scope</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="preferences.preference.valuesinallscopes.html" class="tsd-kind-icon">Values<wbr>InAll<wbr>Scopes</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-namespace">
-						<a href="../modules/preferences.preference.html#getvalueinscope" class="tsd-kind-icon">get<wbr>Value<wbr>InScope</a>
-					</li>
-					<li class=" tsd-kind-object-literal tsd-parent-kind-namespace">
-						<a href="../modules/preferences.preference.html#default_scope" class="tsd-kind-icon">DEFAULT_<wbr>SCOPE</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
