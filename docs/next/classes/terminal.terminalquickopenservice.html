@@ -78,27 +78,19 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/core.quickopenmodel-2.html" class="tsd-signature-type">QuickOpenModel</a></li>
-					<li><a href="../interfaces/core.quickopenhandler-2.html" class="tsd-signature-type">QuickOpenHandler</a></li>
+					<li><span class="tsd-signature-type">IQuickAccessDataService</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="terminal.terminalquickopenservice.html#commandservice" class="tsd-kind-icon">command<wbr>Service</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="terminal.terminalquickopenservice.html#prefix" class="tsd-kind-icon">prefix</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="terminal.terminalquickopenservice.html#prefixquickopenservice" class="tsd-kind-icon">prefix<wbr>Quick<wbr>Open<wbr>Service</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="terminal.terminalquickopenservice.html#quickinputservice" class="tsd-kind-icon">quick<wbr>Input<wbr>Service</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="terminal.terminalquickopenservice.html#terminalservice" class="tsd-kind-icon">terminal<wbr>Service</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Accessors</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="terminal.terminalquickopenservice.html#description" class="tsd-kind-icon">description</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -106,18 +98,16 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="terminal.terminalquickopenservice.html#compareitems" class="tsd-kind-icon">compare<wbr>Items</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="terminal.terminalquickopenservice.html#docreatenewterminal" class="tsd-kind-icon">do<wbr>Create<wbr>New<wbr>Terminal</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="terminal.terminalquickopenservice.html#getmodel" class="tsd-kind-icon">get<wbr>Model</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="terminal.terminalquickopenservice.html#getoptions" class="tsd-kind-icon">get<wbr>Options</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="terminal.terminalquickopenservice.html#getrunfunction" class="tsd-kind-icon">get<wbr>Run<wbr>Function</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="terminal.terminalquickopenservice.html#ontype" class="tsd-kind-icon">on<wbr>Type</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="terminal.terminalquickopenservice.html#getpicks" class="tsd-kind-icon">get<wbr>Picks</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="terminal.terminalquickopenservice.html#open" class="tsd-kind-icon">open</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="terminal.terminalquickopenservice.html#registerquickaccessprovider" class="tsd-kind-icon">register<wbr>Quick<wbr>Access<wbr>Provider</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="terminal.terminalquickopenservice.html#toitem" class="tsd-kind-icon">to<wbr>Item</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-private-protected">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="commandservice" class="tsd-anchor"></a>
@@ -125,28 +115,17 @@
 					<div class="tsd-signature tsd-kind-icon">command<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.commandservice-1.html" class="tsd-signature-type">CommandService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/terminal/src/browser/terminal-quick-open-service.ts#L36">packages/terminal/src/browser/terminal-quick-open-service.ts:36</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="prefix" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> prefix</h3>
-					<div class="tsd-signature tsd-kind-icon">prefix<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;term &quot;</span></div>
-					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/core.quickopenhandler-2.html">QuickOpenHandler</a>.<a href="../interfaces/core.quickopenhandler-2.html#prefix">prefix</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/terminal/src/browser/terminal-quick-open-service.ts#L41">packages/terminal/src/browser/terminal-quick-open-service.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/terminal/src/browser/terminal-quick-open-service.ts#L35">packages/terminal/src/browser/terminal-quick-open-service.ts:35</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-					<a name="prefixquickopenservice" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> prefix<wbr>Quick<wbr>Open<wbr>Service</h3>
-					<div class="tsd-signature tsd-kind-icon">prefix<wbr>Quick<wbr>Open<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="core.prefixquickopenservice-2.html" class="tsd-signature-type">PrefixQuickOpenService</a></div>
+					<a name="quickinputservice" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> quick<wbr>Input<wbr>Service</h3>
+					<div class="tsd-signature tsd-kind-icon">quick<wbr>Input<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="core.quickinputservice-2.html" class="tsd-signature-type">QuickInputService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/terminal/src/browser/terminal-quick-open-service.ts#L33">packages/terminal/src/browser/terminal-quick-open-service.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/terminal/src/browser/terminal-quick-open-service.ts#L32">packages/terminal/src/browser/terminal-quick-open-service.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -156,29 +135,9 @@
 					<div class="tsd-signature tsd-kind-icon">terminal<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="../interfaces/terminal.terminalservice.html" class="tsd-signature-type">TerminalService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/terminal/src/browser/terminal-quick-open-service.ts#L39">packages/terminal/src/browser/terminal-quick-open-service.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/terminal/src/browser/terminal-quick-open-service.ts#L38">packages/terminal/src/browser/terminal-quick-open-service.ts:38</a></li>
 						</ul>
 					</aside>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Accessors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
-					<a name="description" class="tsd-anchor"></a>
-					<h3>description</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> description<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/terminal/src/browser/terminal-quick-open-service.ts#L43">packages/terminal/src/browser/terminal-quick-open-service.ts:43</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-						</li>
-					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -193,7 +152,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/terminal/src/browser/terminal-quick-open-service.ts#L96">packages/terminal/src/browser/terminal-quick-open-service.ts:96</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/terminal/src/browser/terminal-quick-open-service.ts#L79">packages/terminal/src/browser/terminal-quick-open-service.ts:79</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -224,170 +183,42 @@
 					<a name="docreatenewterminal" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> do<wbr>Create<wbr>New<wbr>Terminal</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">do<wbr>Create<wbr>New<wbr>Terminal<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>mode<span class="tsd-signature-symbol">: </span><a href="../enums/core.quickopenmode-3.html" class="tsd-signature-type">QuickOpenMode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">do<wbr>Create<wbr>New<wbr>Terminal<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/terminal/src/browser/terminal-quick-open-service.ts#L111">packages/terminal/src/browser/terminal-quick-open-service.ts:111</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/terminal/src/browser/terminal-quick-open-service.ts#L89">packages/terminal/src/browser/terminal-quick-open-service.ts:89</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Get the function that can create a new terminal.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span>mode<span class="tsd-signature-symbol">: </span><a href="../enums/core.quickopenmode-3.html" class="tsd-signature-type">QuickOpenMode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h4>
-							<p>Function that would create a new terminal if mode === QuickOpenMode.OPEN.</p>
-							<ul class="tsd-parameters">
-								<li class="tsd-parameter-signature">
-									<ul class="tsd-signatures tsd-kind-type-literal">
-										<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>mode<span class="tsd-signature-symbol">: </span><a href="../enums/core.quickopenmode-3.html" class="tsd-signature-type">QuickOpenMode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-									</ul>
-									<ul class="tsd-descriptions">
-										<li class="tsd-description">
-											<h4 class="tsd-parameters-title">Parameters</h4>
-											<ul class="tsd-parameters">
-												<li>
-													<h5>mode: <a href="../enums/core.quickopenmode-3.html" class="tsd-signature-type">QuickOpenMode</a></h5>
-												</li>
-											</ul>
-											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-										</li>
-									</ul>
-								</li>
-							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getmodel" class="tsd-anchor"></a>
-					<h3>get<wbr>Model</h3>
+					<a name="getpicks" class="tsd-anchor"></a>
+					<h3>get<wbr>Picks</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Model<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/core.quickopenmodel-2.html" class="tsd-signature-type">QuickOpenModel</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/core.quickopenhandler-2.html">QuickOpenHandler</a>.<a href="../interfaces/core.quickopenhandler-2.html#getmodel">getModel</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/terminal/src/browser/terminal-quick-open-service.ts#L47">packages/terminal/src/browser/terminal-quick-open-service.ts:47</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/core.quickopenmodel-2.html" class="tsd-signature-type">QuickOpenModel</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getoptions" class="tsd-anchor"></a>
-					<h3>get<wbr>Options</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Options<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/core.quickopenoptions-3.html" class="tsd-signature-type">QuickOpenOptions</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/core.quickopenhandler-2.html">QuickOpenHandler</a>.<a href="../interfaces/core.quickopenhandler-2.html#getoptions">getOptions</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/terminal/src/browser/terminal-quick-open-service.ts#L51">packages/terminal/src/browser/terminal-quick-open-service.ts:51</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/core.quickopenoptions-3.html" class="tsd-signature-type">QuickOpenOptions</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-					<a name="getrunfunction" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Run<wbr>Function</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Run<wbr>Function<span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">: </span><a href="terminal.terminalwidget.html" class="tsd-signature-type">TerminalWidget</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>mode<span class="tsd-signature-symbol">: </span><a href="../enums/core.quickopenmode-3.html" class="tsd-signature-type">QuickOpenMode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Picks<span class="tsd-signature-symbol">(</span>filter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CancellationToken</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">monaco.quickInput.Picks</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IAnythingQuickPickItem</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/terminal/src/browser/terminal-quick-open-service.ts#L144">packages/terminal/src/browser/terminal-quick-open-service.ts:144</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Get the function that can open the editor file.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>widget: <a href="terminal.terminalwidget.html" class="tsd-signature-type">TerminalWidget</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>the terminal widget to be opened.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span>mode<span class="tsd-signature-symbol">: </span><a href="../enums/core.quickopenmode-3.html" class="tsd-signature-type">QuickOpenMode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h4>
-							<p>Function that would open the terminal if mode === QuickOpenMode.OPEN.</p>
-							<ul class="tsd-parameters">
-								<li class="tsd-parameter-signature">
-									<ul class="tsd-signatures tsd-kind-type-literal">
-										<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>mode<span class="tsd-signature-symbol">: </span><a href="../enums/core.quickopenmode-3.html" class="tsd-signature-type">QuickOpenMode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-									</ul>
-									<ul class="tsd-descriptions">
-										<li class="tsd-description">
-											<h4 class="tsd-parameters-title">Parameters</h4>
-											<ul class="tsd-parameters">
-												<li>
-													<h5>mode: <a href="../enums/core.quickopenmode-3.html" class="tsd-signature-type">QuickOpenMode</a></h5>
-												</li>
-											</ul>
-											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="ontype" class="tsd-anchor"></a>
-					<h3>on<wbr>Type</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Type<span class="tsd-signature-symbol">(</span>lookFor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, acceptor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>items<span class="tsd-signature-symbol">: </span><a href="core.quickopengroupitem-3.html" class="tsd-signature-type">QuickOpenGroupItem</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/terminal/src/browser/terminal-quick-open-service.ts#L66">packages/terminal/src/browser/terminal-quick-open-service.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/terminal/src/browser/terminal-quick-open-service.ts#L44">packages/terminal/src/browser/terminal-quick-open-service.ts:44</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>lookFor: <span class="tsd-signature-type">string</span></h5>
+									<h5>filter: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>acceptor: <span class="tsd-signature-symbol">(</span>items<span class="tsd-signature-symbol">: </span><a href="core.quickopengroupitem-3.html" class="tsd-signature-type">QuickOpenGroupItem</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-signature">
-											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>items<span class="tsd-signature-symbol">: </span><a href="core.quickopengroupitem-3.html" class="tsd-signature-type">QuickOpenGroupItem</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>items: <a href="core.quickopengroupitem-3.html" class="tsd-signature-type">QuickOpenGroupItem</a><span class="tsd-signature-symbol">[]</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
+									<h5>token: <span class="tsd-signature-type">CancellationToken</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">monaco.quickInput.Picks</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IAnythingQuickPickItem</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -401,7 +232,24 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/terminal/src/browser/terminal-quick-open-service.ts#L62">packages/terminal/src/browser/terminal-quick-open-service.ts:62</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/terminal/src/browser/terminal-quick-open-service.ts#L40">packages/terminal/src/browser/terminal-quick-open-service.ts:40</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="registerquickaccessprovider" class="tsd-anchor"></a>
+					<h3>register<wbr>Quick<wbr>Access<wbr>Provider</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Quick<wbr>Access<wbr>Provider<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/terminal/src/browser/terminal-quick-open-service.ts#L64">packages/terminal/src/browser/terminal-quick-open-service.ts:64</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -412,18 +260,18 @@
 					<a name="toitem" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> to<wbr>Item</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Item<span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">: </span><a href="terminal.terminalwidget.html" class="tsd-signature-type">TerminalWidget</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core.quickopengroupitem-3.html" class="tsd-signature-type">QuickOpenGroupItem</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/core.quickopenitemoptions-2.html" class="tsd-signature-type">QuickOpenItemOptions</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Item<span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">: </span><a href="terminal.terminalwidget.html" class="tsd-signature-type">TerminalWidget</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IAnythingQuickPickItem</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/terminal/src/browser/terminal-quick-open-service.ts#L126">packages/terminal/src/browser/terminal-quick-open-service.ts:126</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/terminal/src/browser/terminal-quick-open-service.ts#L98">packages/terminal/src/browser/terminal-quick-open-service.ts:98</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Convert the terminal widget to the quick open item.</p>
+									<p>Convert the terminal widget to the quick pick item.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -435,8 +283,8 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core.quickopengroupitem-3.html" class="tsd-signature-type">QuickOpenGroupItem</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/core.quickopenitemoptions-2.html" class="tsd-signature-type">QuickOpenItemOptions</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>The quick open group item.</p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IAnythingQuickPickItem</span></h4>
+							<p>quick pick item.</p>
 						</li>
 					</ul>
 				</section>
@@ -477,17 +325,11 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="terminal.terminalquickopenservice.html#commandservice" class="tsd-kind-icon">command<wbr>Service</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="terminal.terminalquickopenservice.html#prefix" class="tsd-kind-icon">prefix</a>
-							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-								<a href="terminal.terminalquickopenservice.html#prefixquickopenservice" class="tsd-kind-icon">prefix<wbr>Quick<wbr>Open<wbr>Service</a>
+								<a href="terminal.terminalquickopenservice.html#quickinputservice" class="tsd-kind-icon">quick<wbr>Input<wbr>Service</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="terminal.terminalquickopenservice.html#terminalservice" class="tsd-kind-icon">terminal<wbr>Service</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
-								<a href="terminal.terminalquickopenservice.html#description" class="tsd-kind-icon">description</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="terminal.terminalquickopenservice.html#compareitems" class="tsd-kind-icon">compare<wbr>Items</a>
@@ -496,19 +338,13 @@
 								<a href="terminal.terminalquickopenservice.html#docreatenewterminal" class="tsd-kind-icon">do<wbr>Create<wbr>New<wbr>Terminal</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="terminal.terminalquickopenservice.html#getmodel" class="tsd-kind-icon">get<wbr>Model</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="terminal.terminalquickopenservice.html#getoptions" class="tsd-kind-icon">get<wbr>Options</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="terminal.terminalquickopenservice.html#getrunfunction" class="tsd-kind-icon">get<wbr>Run<wbr>Function</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="terminal.terminalquickopenservice.html#ontype" class="tsd-kind-icon">on<wbr>Type</a>
+								<a href="terminal.terminalquickopenservice.html#getpicks" class="tsd-kind-icon">get<wbr>Picks</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="terminal.terminalquickopenservice.html#open" class="tsd-kind-icon">open</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="terminal.terminalquickopenservice.html#registerquickaccessprovider" class="tsd-kind-icon">register<wbr>Quick<wbr>Access<wbr>Provider</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="terminal.terminalquickopenservice.html#toitem" class="tsd-kind-icon">to<wbr>Item</a>
@@ -538,7 +374,6 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">

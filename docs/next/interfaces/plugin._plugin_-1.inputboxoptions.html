@@ -96,6 +96,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="plugin._plugin_-1.inputboxoptions.html#password" class="tsd-kind-icon">password</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="plugin._plugin_-1.inputboxoptions.html#placeholder" class="tsd-kind-icon">place<wbr>Holder</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="plugin._plugin_-1.inputboxoptions.html#prompt" class="tsd-kind-icon">prompt</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="plugin._plugin_-1.inputboxoptions.html#validateinput" class="tsd-kind-icon">validate<wbr>Input</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="plugin._plugin_-1.inputboxoptions.html#value" class="tsd-kind-icon">value</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="plugin._plugin_-1.inputboxoptions.html#valueselection" class="tsd-kind-icon">value<wbr>Selection</a></li>
 							</ul>
@@ -104,7 +105,6 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="plugin._plugin_-1.inputboxoptions.html#onaccept" class="tsd-kind-icon">on<wbr>Accept</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="plugin._plugin_-1.inputboxoptions.html#validateinput" class="tsd-kind-icon">validate<wbr>Input</a></li>
 							</ul>
 						</section>
 					</div>
@@ -118,7 +118,7 @@
 					<div class="tsd-signature tsd-kind-icon">ignore<wbr>Focus<wbr>Out<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/plugin/src/theia.d.ts#L2388">packages/plugin/src/theia.d.ts:2388</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/plugin/src/theia.d.ts#L2276">packages/plugin/src/theia.d.ts:2276</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -133,7 +133,7 @@
 					<div class="tsd-signature tsd-kind-icon">password<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/plugin/src/theia.d.ts#L2383">packages/plugin/src/theia.d.ts:2383</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/plugin/src/theia.d.ts#L2271">packages/plugin/src/theia.d.ts:2271</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -148,7 +148,7 @@
 					<div class="tsd-signature tsd-kind-icon">place<wbr>Holder<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/plugin/src/theia.d.ts#L2378">packages/plugin/src/theia.d.ts:2378</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/plugin/src/theia.d.ts#L2266">packages/plugin/src/theia.d.ts:2266</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -163,7 +163,7 @@
 					<div class="tsd-signature tsd-kind-icon">prompt<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/plugin/src/theia.d.ts#L2373">packages/plugin/src/theia.d.ts:2373</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/plugin/src/theia.d.ts#L2261">packages/plugin/src/theia.d.ts:2261</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -173,12 +173,37 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="validateinput" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> validate<wbr>Input</h3>
+					<div class="tsd-signature tsd-kind-icon">validate<wbr>Input<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/plugin/src/theia.d.ts#L2286">packages/plugin/src/theia.d.ts:2286</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An optional function that will be called to validate input and to give a hint
+							to the user.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The current value of the input box.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>A human readable string which is presented as diagnostic message.
+								Return <code>undefined</code>, or the empty string when &#39;value&#39; is valid.</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="value" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> value</h3>
 					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/plugin/src/theia.d.ts#L2360">packages/plugin/src/theia.d.ts:2360</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/plugin/src/theia.d.ts#L2248">packages/plugin/src/theia.d.ts:2248</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -193,7 +218,7 @@
 					<div class="tsd-signature tsd-kind-icon">value<wbr>Selection<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/plugin/src/theia.d.ts#L2368">packages/plugin/src/theia.d.ts:2368</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/plugin/src/theia.d.ts#L2256">packages/plugin/src/theia.d.ts:2256</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -218,7 +243,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/plugin/src/theia.d.ts#L2403">packages/plugin/src/theia.d.ts:2403</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/plugin/src/theia.d.ts#L2291">packages/plugin/src/theia.d.ts:2291</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -227,40 +252,6 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="validateinput" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> validate<wbr>Input</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">validate<wbr>Input<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/plugin/src/theia.d.ts#L2398">packages/plugin/src/theia.d.ts:2398</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>An optional function that will be called to validate input and to give a hint
-									to the user.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The current value of the input box.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>A human readable string which is presented as diagnostic message.
-							Return <code>undefined</code>, or the empty string when &#39;value&#39; is valid.</p>
 						</li>
 					</ul>
 				</section>
@@ -340,6 +331,9 @@
 								<a href="plugin._plugin_-1.inputboxoptions.html#prompt" class="tsd-kind-icon">prompt</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="plugin._plugin_-1.inputboxoptions.html#validateinput" class="tsd-kind-icon">validate<wbr>Input</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="plugin._plugin_-1.inputboxoptions.html#value" class="tsd-kind-icon">value</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -347,9 +341,6 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="plugin._plugin_-1.inputboxoptions.html#onaccept" class="tsd-kind-icon">on<wbr>Accept</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="plugin._plugin_-1.inputboxoptions.html#validateinput" class="tsd-kind-icon">validate<wbr>Input</a>
 							</li>
 						</ul>
 					</li>

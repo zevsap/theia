@@ -87,15 +87,20 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="monaco.mixstandalonetheme.html#label" class="tsd-kind-icon">label</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="monaco.mixstandalonetheme.html#semantichighlighting" class="tsd-kind-icon">semantic<wbr>Highlighting</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite"><a href="monaco.mixstandalonetheme.html#themedata" class="tsd-kind-icon">theme<wbr>Data</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="monaco.mixstandalonetheme.html#tokencolormap" class="tsd-kind-icon">token<wbr>Color<wbr>Map</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="monaco.mixstandalonetheme.html#tokentheme" class="tsd-kind-icon">token<wbr>Theme</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="monaco.mixstandalonetheme.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="monaco.mixstandalonetheme.html#getcolor" class="tsd-kind-icon">get<wbr>Color</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="monaco.mixstandalonetheme.html#gettokenstylemetadata" class="tsd-kind-icon">get<wbr>Token<wbr>Style<wbr>Metadata</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="monaco.mixstandalonetheme.html#defines" class="tsd-kind-icon">defines</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited"><a href="monaco.mixstandalonetheme.html#getcolor" class="tsd-kind-icon">get<wbr>Color</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited"><a href="monaco.mixstandalonetheme.html#gettokenstylemetadata" class="tsd-kind-icon">get<wbr>Token<wbr>Style<wbr>Metadata</a></li>
 							</ul>
 						</section>
 					</div>
@@ -103,6 +108,33 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="label" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> label</h3>
+					<div class="tsd-signature tsd-kind-icon">label<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="monaco.mixstandalonetheme.html">MixStandaloneTheme</a>.<a href="monaco.mixstandalonetheme.html#label">label</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/monaco/src/typings/monaco/index.d.ts#L1053">packages/monaco/src/typings/monaco/index.d.ts:1053</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="semantichighlighting" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> semantic<wbr>Highlighting</h3>
+					<div class="tsd-signature tsd-kind-icon">semantic<wbr>Highlighting<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="monaco.mixstandalonetheme.html">MixStandaloneTheme</a>.<a href="monaco.mixstandalonetheme.html#semantichighlighting">semanticHighlighting</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/monaco/src/typings/monaco/index.d.ts#L1082">packages/monaco/src/typings/monaco/index.d.ts:1082</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines whether semantic highlighting should be enabled for the theme.</p>
+						</div>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
 					<a name="themedata" class="tsd-anchor"></a>
 					<h3>theme<wbr>Data</h3>
@@ -110,9 +142,25 @@
 					<aside class="tsd-sources">
 						<p>Overrides IStandaloneTheme.themeData</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/monaco/src/browser/textmate/monaco-theme-registry.ts#L25">packages/monaco/src/browser/textmate/monaco-theme-registry.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/monaco/src/browser/textmate/monaco-theme-registry.ts#L25">packages/monaco/src/browser/textmate/monaco-theme-registry.ts:25</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="tokencolormap" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> token<wbr>Color<wbr>Map</h3>
+					<div class="tsd-signature tsd-kind-icon">token<wbr>Color<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="monaco.mixstandalonetheme.html">MixStandaloneTheme</a>.<a href="monaco.mixstandalonetheme.html#tokencolormap">tokenColorMap</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/monaco/src/typings/monaco/index.d.ts#L1077">packages/monaco/src/typings/monaco/index.d.ts:1077</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>List of all colors used with tokens. <code>getTokenStyleMetadata</code> references the colors by index into this list.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="tokentheme" class="tsd-anchor"></a>
@@ -121,7 +169,18 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="monaco.mixstandalonetheme.html">MixStandaloneTheme</a>.<a href="monaco.mixstandalonetheme.html#tokentheme">tokenTheme</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/monaco/src/typings/monaco/index.d.ts#L802">packages/monaco/src/typings/monaco/index.d.ts:802</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/monaco/src/typings/monaco/index.d.ts#L961">packages/monaco/src/typings/monaco/index.d.ts:961</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="type" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ColorScheme</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="monaco.mixstandalonetheme.html">MixStandaloneTheme</a>.<a href="monaco.mixstandalonetheme.html#type">type</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/monaco/src/typings/monaco/index.d.ts#L1051">packages/monaco/src/typings/monaco/index.d.ts:1051</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -129,17 +188,48 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+					<a name="defines" class="tsd-anchor"></a>
+					<h3>defines</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">defines<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ColorIdentifier</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="monaco.mixstandalonetheme.html">MixStandaloneTheme</a>.<a href="monaco.mixstandalonetheme.html#defines">defines</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/monaco/src/typings/monaco/index.d.ts#L1067">packages/monaco/src/typings/monaco/index.d.ts:1067</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns whether the theme defines a value for the color. If not, that means the
+									default color will be used.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>color: <span class="tsd-signature-type">ColorIdentifier</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited">
 					<a name="getcolor" class="tsd-anchor"></a>
 					<h3>get<wbr>Color</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">get<wbr>Color<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, useDefault<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Color</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="monaco.mixstandalonetheme.html">MixStandaloneTheme</a>.<a href="monaco.mixstandalonetheme.html#getcolor">getColor</a></p>
+								<p>Overrides IColorTheme.getColor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/monaco/src/typings/monaco/index.d.ts#L805">packages/monaco/src/typings/monaco/index.d.ts:805</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/monaco/src/typings/monaco/index.d.ts#L964">packages/monaco/src/typings/monaco/index.d.ts:964</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -155,18 +245,19 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited">
 					<a name="gettokenstylemetadata" class="tsd-anchor"></a>
 					<h3>get<wbr>Token<wbr>Style<wbr>Metadata</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">get<wbr>Token<wbr>Style<wbr>Metadata<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, modifiers<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, modelLanguage<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ITokenStyle</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="monaco.mixstandalonetheme.html">MixStandaloneTheme</a>.<a href="monaco.mixstandalonetheme.html#gettokenstylemetadata">getTokenStyleMetadata</a></p>
+								<p>Overrides IColorTheme.getTokenStyleMetadata</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/monaco/src/typings/monaco/index.d.ts#L807">packages/monaco/src/typings/monaco/index.d.ts:807</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/monaco/src/typings/monaco/index.d.ts#L966">packages/monaco/src/typings/monaco/index.d.ts:966</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -215,6 +306,12 @@
 								<a href="../modules/monaco.monacothemestate.html">Monaco<wbr>Theme<wbr>State</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.resourcefileedit.html">Resource<wbr>File<wbr>Edit</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.resourcetextedit.html">Resource<wbr>Text<wbr>Edit</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/monaco.tokenizeroption.html">Tokenizer<wbr>Option</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
@@ -234,16 +331,31 @@
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
 						<a href="monaco.mixstandalonetheme.html" class="tsd-kind-icon">Mix<wbr>Standalone<wbr>Theme</a>
 						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="monaco.mixstandalonetheme.html#label" class="tsd-kind-icon">label</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="monaco.mixstandalonetheme.html#semantichighlighting" class="tsd-kind-icon">semantic<wbr>Highlighting</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
 								<a href="monaco.mixstandalonetheme.html#themedata" class="tsd-kind-icon">theme<wbr>Data</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="monaco.mixstandalonetheme.html#tokencolormap" class="tsd-kind-icon">token<wbr>Color<wbr>Map</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="monaco.mixstandalonetheme.html#tokentheme" class="tsd-kind-icon">token<wbr>Theme</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="monaco.mixstandalonetheme.html#getcolor" class="tsd-kind-icon">get<wbr>Color</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="monaco.mixstandalonetheme.html#type" class="tsd-kind-icon">type</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+								<a href="monaco.mixstandalonetheme.html#defines" class="tsd-kind-icon">defines</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited">
+								<a href="monaco.mixstandalonetheme.html#getcolor" class="tsd-kind-icon">get<wbr>Color</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited">
 								<a href="monaco.mixstandalonetheme.html#gettokenstylemetadata" class="tsd-kind-icon">get<wbr>Token<wbr>Style<wbr>Metadata</a>
 							</li>
 						</ul>

@@ -75,23 +75,8 @@
 					<div class="lead">
 						<p>A light-weight user input UI that is initially not visible. After
 							configuring it through its properties the extension can make it
-							visible by calling <a href="#QuickInput.show">QuickInput.show</a>.
-							A light-weight user input UI that is initially not visible. After
-							configuring it through its properties the extension can make it
 						visible by calling <a href="#QuickInput.show">QuickInput.show</a>.</p>
 					</div>
-					<p>There are several reasons why this UI might have to be hidden and
-						the extension will be notified through <a href="#QuickInput.onDidHide">QuickInput.onDidHide</a>.
-						(Examples include: an explicit call to <a href="#QuickInput.hide">QuickInput.hide</a>,
-					the user pressing Esc, some other input UI opening, etc.)</p>
-					<p>A user pressing Enter or some other gesture implying acceptance
-						of the current state does not automatically hide this UI component.
-						It is up to the extension to decide whether to accept the user&#39;s input
-					and if the UI should indeed be hidden through a call to <a href="#QuickInput.hide">QuickInput.hide</a>.</p>
-					<p>When the extension no longer needs this input UI, it should
-						<a href="#QuickInput.dispose">QuickInput.dispose</a> it to allow for freeing up
-					any resources associated with it.</p>
-					<p>See <a href="#QuickPick">QuickPick</a> and <a href="#InputBox">InputBox</a> for concrete UIs.</p>
 					<p>There are several reasons why this UI might have to be hidden and
 						the extension will be notified through <a href="#QuickInput.onDidHide">QuickInput.onDidHide</a>.
 						(Examples include: an explicit call to <a href="#QuickInput.hide">QuickInput.hide</a>,
@@ -165,17 +150,13 @@
 					<div class="tsd-signature tsd-kind-icon">busy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/plugin/src/theia.d.ts#L2126">packages/plugin/src/theia.d.ts:2126</a></li>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/plugin/src/theia.d.ts#L4738">packages/plugin/src/theia.d.ts:4738</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/plugin/src/theia.d.ts#L4626">packages/plugin/src/theia.d.ts:4626</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>If the UI should show a progress indicator. Defaults to false.
-							If the UI should show a progress indicator. Defaults to false.</p>
+							<p>If the UI should show a progress indicator. Defaults to false.</p>
 						</div>
-						<p>Change this to true, e.g., while loading more data or validating
-						user input.</p>
 						<p>Change this to true, e.g., while loading more data or validating
 						user input.</p>
 					</div>
@@ -186,17 +167,13 @@
 					<div class="tsd-signature tsd-kind-icon">enabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/plugin/src/theia.d.ts#L2118">packages/plugin/src/theia.d.ts:2118</a></li>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/plugin/src/theia.d.ts#L4730">packages/plugin/src/theia.d.ts:4730</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/plugin/src/theia.d.ts#L4618">packages/plugin/src/theia.d.ts:4618</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>If the UI should allow for user input. Defaults to true.
-							If the UI should allow for user input. Defaults to true.</p>
+							<p>If the UI should allow for user input. Defaults to true.</p>
 						</div>
-						<p>Change this to false, e.g., while validating user input or
-						loading data for the next step in user input.</p>
 						<p>Change this to false, e.g., while validating user input or
 						loading data for the next step in user input.</p>
 					</div>
@@ -207,14 +184,12 @@
 					<div class="tsd-signature tsd-kind-icon">ignore<wbr>Focus<wbr>Out<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/plugin/src/theia.d.ts#L2131">packages/plugin/src/theia.d.ts:2131</a></li>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/plugin/src/theia.d.ts#L4743">packages/plugin/src/theia.d.ts:4743</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/plugin/src/theia.d.ts#L4631">packages/plugin/src/theia.d.ts:4631</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>If the UI should stay open even when loosing UI focus. Defaults to false.
-							If the UI should stay open even when loosing UI focus. Defaults to false.</p>
+							<p>If the UI should stay open even when loosing UI focus. Defaults to false.</p>
 						</div>
 					</div>
 				</section>
@@ -224,19 +199,13 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Hide<span class="tsd-signature-symbol">:</span> <a href="plugin._plugin_-1.event.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/plugin/src/theia.d.ts#L2153">packages/plugin/src/theia.d.ts:2153</a></li>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/plugin/src/theia.d.ts#L4765">packages/plugin/src/theia.d.ts:4765</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/plugin/src/theia.d.ts#L4653">packages/plugin/src/theia.d.ts:4653</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>An event signaling when this input UI is hidden.
-							An event signaling when this input UI is hidden.</p>
+							<p>An event signaling when this input UI is hidden.</p>
 						</div>
-						<p>There are several reasons why this UI might have to be hidden and
-							the extension will be notified through <a href="#QuickInput.onDidHide">QuickInput.onDidHide</a>.
-							(Examples include: an explicit call to <a href="#QuickInput.hide">QuickInput.hide</a>,
-						the user pressing Esc, some other input UI opening, etc.)</p>
 						<p>There are several reasons why this UI might have to be hidden and
 							the extension will be notified through <a href="#QuickInput.onDidHide">QuickInput.onDidHide</a>.
 							(Examples include: an explicit call to <a href="#QuickInput.hide">QuickInput.hide</a>,
@@ -249,14 +218,12 @@
 					<div class="tsd-signature tsd-kind-icon">step<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/plugin/src/theia.d.ts#L2105">packages/plugin/src/theia.d.ts:2105</a></li>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/plugin/src/theia.d.ts#L4717">packages/plugin/src/theia.d.ts:4717</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/plugin/src/theia.d.ts#L4605">packages/plugin/src/theia.d.ts:4605</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>An optional current step count.
-							An optional current step count.</p>
+							<p>An optional current step count.</p>
 						</div>
 					</div>
 				</section>
@@ -266,14 +233,12 @@
 					<div class="tsd-signature tsd-kind-icon">title<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/plugin/src/theia.d.ts#L2100">packages/plugin/src/theia.d.ts:2100</a></li>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/plugin/src/theia.d.ts#L4712">packages/plugin/src/theia.d.ts:4712</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/plugin/src/theia.d.ts#L4600">packages/plugin/src/theia.d.ts:4600</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>An optional title.
-							An optional title.</p>
+							<p>An optional title.</p>
 						</div>
 					</div>
 				</section>
@@ -283,14 +248,12 @@
 					<div class="tsd-signature tsd-kind-icon">total<wbr>Steps<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/plugin/src/theia.d.ts#L2110">packages/plugin/src/theia.d.ts:2110</a></li>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/plugin/src/theia.d.ts#L4722">packages/plugin/src/theia.d.ts:4722</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/plugin/src/theia.d.ts#L4610">packages/plugin/src/theia.d.ts:4610</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>An optional total step count.
-							An optional total step count.</p>
+							<p>An optional total step count.</p>
 						</div>
 					</div>
 				</section>
@@ -302,29 +265,12 @@
 					<h3>dispose</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
 						<li class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/plugin/src/theia.d.ts#L2161">packages/plugin/src/theia.d.ts:2161</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Dispose of this input UI and any associated resources. If it is still
-										visible, it is first hidden. After this call the input UI is no longer
-										functional and no additional methods or properties on it should be
-									accessed. Instead a new input UI should be created.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/plugin/src/theia.d.ts#L4773">packages/plugin/src/theia.d.ts:4773</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/plugin/src/theia.d.ts#L4661">packages/plugin/src/theia.d.ts:4661</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -344,27 +290,12 @@
 					<h3>hide</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
 						<li class="tsd-signature tsd-kind-icon">hide<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">hide<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/plugin/src/theia.d.ts#L2143">packages/plugin/src/theia.d.ts:2143</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Hides this input UI. This will also fire an <a href="#QuickInput.onDidHide">QuickInput.onDidHide</a>
-									event.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/plugin/src/theia.d.ts#L4755">packages/plugin/src/theia.d.ts:4755</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/plugin/src/theia.d.ts#L4643">packages/plugin/src/theia.d.ts:4643</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -382,27 +313,12 @@
 					<h3>show</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
 						<li class="tsd-signature tsd-kind-icon">show<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">show<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/plugin/src/theia.d.ts#L2137">packages/plugin/src/theia.d.ts:2137</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Makes the input UI visible in its current configuration. Any other input
-									UI will first fire an <a href="#QuickInput.onDidHide">QuickInput.onDidHide</a> event.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/87b5b526d4/packages/plugin/src/theia.d.ts#L4749">packages/plugin/src/theia.d.ts:4749</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/36b9092f2a/packages/plugin/src/theia.d.ts#L4637">packages/plugin/src/theia.d.ts:4637</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
