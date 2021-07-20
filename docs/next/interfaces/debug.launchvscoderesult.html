@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DebugConfiguration | Theia TypeDoc</title>
+	<title>LaunchVSCodeResult | Theia TypeDoc</title>
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,13 +54,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/plugin_dev.html">plugin-dev</a>
+					<a href="../modules/debug.html">debug</a>
 				</li>
 				<li>
-					<a href="plugin_dev.debugconfiguration-1.html">DebugConfiguration</a>
+					<a href="debug.launchvscoderesult.html">LaunchVSCodeResult</a>
 				</li>
 			</ul>
-			<h1>Interface DebugConfiguration</h1>
+			<h1>Interface LaunchVSCodeResult</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +71,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">DebugConfiguration</span>
+						<span class="target">LaunchVSCodeResult</span>
 					</li>
 				</ul>
 			</section>
@@ -82,8 +82,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="plugin_dev.debugconfiguration-1.html#debugmode" class="tsd-kind-icon">debug<wbr>Mode</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="plugin_dev.debugconfiguration-1.html#port" class="tsd-kind-icon">port</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="debug.launchvscoderesult.html#rendererdebugport" class="tsd-kind-icon">renderer<wbr>Debug<wbr>Port</a></li>
 							</ul>
 						</section>
 					</div>
@@ -92,22 +91,12 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="debugmode" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> debug<wbr>Mode</h3>
-					<div class="tsd-signature tsd-kind-icon">debug<wbr>Mode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<a name="rendererdebugport" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> renderer<wbr>Debug<wbr>Port</h3>
+					<div class="tsd-signature tsd-kind-icon">renderer<wbr>Debug<wbr>Port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7689b00241/packages/plugin-dev/src/common/plugin-dev-protocol.ts#L43">packages/plugin-dev/src/common/plugin-dev-protocol.ts:43</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="port" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> port</h3>
-					<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7689b00241/packages/plugin-dev/src/common/plugin-dev-protocol.ts#L42">packages/plugin-dev/src/common/plugin-dev-protocol.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/61f229e4b0/packages/debug/src/browser/debug-contribution.ts#L48">packages/debug/src/browser/debug-contribution.ts:48</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -120,10 +109,61 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/plugin_dev.html">plugin-<wbr>dev</a>
+						<a href="../modules/debug.html">debug</a>
 						<ul>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/plugin_dev.hostedplugincommands.html">Hosted<wbr>Plugin<wbr>Commands</a>
+								<a href="../modules/debug.breakpointmarker.html">Breakpoint<wbr>Marker</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/debug.debugbreakpointwidgetcommands.html">Debug<wbr>Breakpoint<wbr>Widget<wbr>Commands</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/debug.debugcommands.html">Debug<wbr>Commands</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/debug.debugconfiguration-1.html">Debug<wbr>Configuration</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/debug.debugconsolecommands.html">Debug<wbr>Console<wbr>Commands</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/debug.debugeditorcontextcommands.html">Debug<wbr>Editor<wbr>Context<wbr>Commands</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/debug.debugerror.html">Debug<wbr>Error</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/debug.debugkeybindingcontexts.html">Debug<wbr>Keybinding<wbr>Contexts</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/debug.debugmenus.html">Debug<wbr>Menus</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/debug.debugsessioncontextcommands.html">Debug<wbr>Session<wbr>Context<wbr>Commands</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/debug.debugthreadcontextcommands.html">Debug<wbr>Thread<wbr>Context<wbr>Commands</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/debug.exceptionbreakpoint.html">Exception<wbr>Breakpoint</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/debug.functionbreakpoint.html">Function<wbr>Breakpoint</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/debug.internaldebugsessionoptions.html">Internal<wbr>Debug<wbr>Session<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/debug.sourcebreakpoint.html">Source<wbr>Breakpoint</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/debug.vscodedebuggercontribution.html">VSCode<wbr>Debugger<wbr>Contribution</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/debug.virtualvariableitem.html">Virtual<wbr>Variable<wbr>Item</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
+								<a href="../modules/debug.nls.html">nls</a>
 							</li>
 						</ul>
 					</li>
@@ -134,13 +174,10 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="plugin_dev.debugconfiguration-1.html" class="tsd-kind-icon">Debug<wbr>Configuration</a>
+						<a href="debug.launchvscoderesult.html" class="tsd-kind-icon">LaunchVSCode<wbr>Result</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="plugin_dev.debugconfiguration-1.html#debugmode" class="tsd-kind-icon">debug<wbr>Mode</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="plugin_dev.debugconfiguration-1.html#port" class="tsd-kind-icon">port</a>
+								<a href="debug.launchvscoderesult.html#rendererdebugport" class="tsd-kind-icon">renderer<wbr>Debug<wbr>Port</a>
 							</li>
 						</ul>
 					</li>
