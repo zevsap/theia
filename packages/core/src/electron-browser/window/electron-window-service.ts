@@ -14,8 +14,8 @@
  * SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
  ********************************************************************************/
 
+import { remote } from '@theia/electron/shared/electron';
 import { injectable, inject, postConstruct } from 'inversify';
-import { remote } from '../../../shared/electron';
 import { NewWindowOptions } from '../../browser/window/window-service';
 import { DefaultWindowService } from '../../browser/window/default-window-service';
 import { ElectronMainWindowService } from '../../electron-common/electron-main-window-service';

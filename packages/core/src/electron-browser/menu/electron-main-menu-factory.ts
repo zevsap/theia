@@ -16,7 +16,7 @@
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import * as electron from '../../../shared/electron';
+import * as electron from '@theia/electron/shared/electron';
 import { inject, injectable } from 'inversify';
 import {
     CommandRegistry, isOSX, ActionMenuNode, CompositeMenuNode,
@@ -56,7 +56,7 @@ export type ElectronMenuItemRole = ('undo' | 'redo' | 'cut' | 'copy' | 'paste' |
 @injectable()
 export class ElectronMainMenuFactory {
 
-    protected _menu: Electron.Menu | undefined;
+    protected _menu?: Electron.Menu;
     protected _toggledCommands: Set<string> = new Set();
 
     @inject(ContextKeyService)
@@ -73,8 +73,11 @@ export class ElectronMainMenuFactory {
     ) {
         preferencesService.onPreferenceChanged(debounce(() => {
             if (this._menu) {
-                for (const item of this._toggledCommands) {
-                    this._menu.getMenuItemById(item).checked = this.commandRegistry.isToggled(item);
+                for (const itemId of this._toggledCommands) {
+                    const item = this._menu.getMenuItemById(itemId);
+                    if (item) {
+                        item.checked = this.commandRegistry.isToggled(itemId);
+                    }
                 }
                 electron.remote.getCurrentWindow().setMenu(this._menu);
             }
@@ -266,7 +269,10 @@ export class ElectronMainMenuFactory {
             if (this.commandRegistry.isEnabled(command, ...args)) {
                 await this.commandRegistry.executeCommand(command, ...args);
                 if (this._menu && this.commandRegistry.isVisible(command, ...args)) {
-                    this._menu.getMenuItemById(command).checked = this.commandRegistry.isToggled(command, ...args);
+                    const item = this._menu.getMenuItemById(command);
+                    if (item) {
+                        item.checked = this.commandRegistry.isToggled(command, ...args);
+                    }
                     electron.remote.getCurrentWindow().setMenu(this._menu);
                 }
             }

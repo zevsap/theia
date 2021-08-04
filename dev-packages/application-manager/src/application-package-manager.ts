@@ -23,6 +23,13 @@ import { ApplicationProcess } from './application-process';
 import { GeneratorOptions } from './generator/abstract-generator';
 import yargs = require('yargs');
 
+class AbortError extends Error {
+    constructor(...args: Parameters<ErrorConstructor>) {
+        super(...args);
+        Object.setPrototypeOf(this, AbortError.prototype);
+    }
+}
+
 export class ApplicationPackageManager {
 
     static defineGeneratorOptions<T>(cli: yargs.Argv<T>): yargs.Argv<T & {
@@ -67,7 +74,22 @@ export class ApplicationPackageManager {
         ]);
     }
 
+    async prepare(): Promise<void> {
+        if (this.pck.isElectron()) {
+            await this.prepareElectron();
+        }
+    }
+
     async generate(options: GeneratorOptions = {}): Promise<void> {
+        try {
+            await this.prepare();
+        } catch (error) {
+            if (error instanceof AbortError) {
+                console.warn(error.message);
+                process.exit(1);
+            }
+            throw error;
+        }
         await Promise.all([
             new WebpackGenerator(this.pck, options).generate(),
             new BackendGenerator(this.pck, options).generate(),
@@ -119,6 +141,40 @@ export class ApplicationPackageManager {
         // See https://nodejs.org/api/child_process.html#child_process_options_detached
         options.detached = process.platform !== 'win32';
         return this.__process.fork(this.pck.backend('main.js'), mainArgs, options);
+    }
+
+    /**
+     * Inject Theia's electron-specific dependencies into the application's package.json.
+     */
+    protected async prepareElectron(): Promise<void> {
+        let electronPackageJson;
+        try {
+            electronPackageJson = await import('@theia/electron/package.json');
+        } catch (error) {
+            if (error.code === 'ERR_MODULE_NOT_FOUND') {
+                throw new AbortError('Please install @theia/electron as part of your Theia Electron application');
+            }
+            throw error;
+        }
+        const electronVersion = electronPackageJson.peerDependencies.electron;
+        const packageJsonPath = this.pck.path('package.json');
+        const packageJson = await fs.readJSON(packageJsonPath);
+        if (!packageJson.devDependencies) {
+            packageJson.devDependencies = {};
+        }
+        if (packageJson.devDependencies['electron'] !== electronVersion) {
+            packageJson.devDependencies['electron'] = electronVersion;
+            await fs.writeJSON(packageJsonPath, packageJson, { spaces: 2 });
+            throw new AbortError('Updated dependencies, please run "yarn install" again');
+        }
+    }
+
+    protected sortObjectByKeys<T extends Record<string, unknown>>(object: T): T {
+        const sorted: Record<string, unknown> = {};
+        for (const key of Object.keys(object).sort()) {
+            sorted[key] = object[key];
+        }
+        return sorted as T;
     }
 
     private adjustArgs(args: string[], forkOptions: cp.ForkOptions = {}): Readonly<{ mainArgs: string[]; options: cp.ForkOptions }> {

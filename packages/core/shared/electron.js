@@ -1,1 +1,1 @@
-module.exports = require('@theia/electron');
+module.exports = require('electron');

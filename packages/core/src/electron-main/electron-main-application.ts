@@ -14,8 +14,8 @@
  * SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
  ********************************************************************************/
 
+import { screen, globalShortcut, app, BrowserWindow, BrowserWindowConstructorOptions, Event as ElectronEvent } from '@theia/electron/shared/electron';
 import { inject, injectable, named } from 'inversify';
-import { screen, globalShortcut, app, BrowserWindow, BrowserWindowConstructorOptions, Event as ElectronEvent } from '../../shared/electron';
 import * as path from 'path';
 import { Argv } from 'yargs';
 import { AddressInfo } from 'net';
@@ -173,7 +173,9 @@ export class ElectronMainApplication {
     @inject(ElectronSecurityToken)
     protected readonly electronSecurityToken: ElectronSecurityToken;
 
-    protected readonly electronStore = new Storage();
+    protected readonly electronStore = new Storage<{
+        windowstate?: TheiaBrowserWindowOptions
+    }>();
 
     protected readonly _backendPort = new Deferred<number>();
     readonly backendPort = this._backendPort.promise;
@@ -227,7 +229,7 @@ export class ElectronMainApplication {
     }
 
     async getLastWindowOptions(): Promise<TheiaBrowserWindowOptions> {
-        const windowState: TheiaBrowserWindowOptions | undefined = this.electronStore.get('windowstate') || this.getDefaultTheiaWindowOptions();
+        const windowState = this.electronStore.get('windowstate') || this.getDefaultTheiaWindowOptions();
         return {
             ...windowState,
             ...this.getDefaultOptions()
@@ -257,6 +259,10 @@ export class ElectronMainApplication {
             minWidth: 200,
             minHeight: 120,
             webPreferences: {
+                // `global` is undefined when `true`.
+                contextIsolation: false,
+                // We use the remote module.
+                enableRemoteModule: true,
                 // https://github.com/eclipse-theia/theia/issues/2018
                 nodeIntegration: true,
                 // Setting the following option to `true` causes some features to break, somehow.

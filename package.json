@@ -3,8 +3,8 @@
   "name": "@theia/monorepo",
   "version": "0.0.0",
   "engines": {
-    "yarn": ">=1.7.0 <2.x.x",
-    "node": ">=12.14.1 <13"
+    "yarn": ">=1.7.0 <2",
+    "node": ">=12"
   },
   "resolutions": {
     "**/@types/node": "12",
@@ -24,12 +24,12 @@
     "colors": "^1.4.0",
     "concurrently": "^3.5.0",
     "electron-mocha": "^8.2.0",
-    "eslint": "^7.14.0",
-    "eslint-plugin-deprecation": "^1.1.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-no-null": "^1.0.2",
-    "eslint-plugin-no-unsanitized": "^3.1.4",
-    "eslint-plugin-react": "^7.21.5",
+    "eslint": "7",
+    "eslint-plugin-deprecation": "latest",
+    "eslint-plugin-import": "latest",
+    "eslint-plugin-no-null": "latest",
+    "eslint-plugin-no-unsanitized": "latest",
+    "eslint-plugin-react": "latest",
     "if-env": "^1.0.4",
     "ignore-styles": "^5.0.1",
     "jsdom": "^11.5.1",
@@ -46,10 +46,10 @@
   },
   "scripts": {
     "preinstall": "node-gyp install",
-    "postinstall": "node scripts/post-install.js",
-    "prepare": "yarn prepare:references && yarn --cwd packages/core prepare && yarn prepare:build && yarn prepare:hoisting && yarn download:plugins",
+    "prepare": "yarn prepare:references && lerna run prepare && yarn prepare:build && yarn prepare:electron && yarn prepare:hoisting && yarn download:plugins",
     "prepare:references": "node scripts/compile-references.js",
     "prepare:build": "yarn build && run lint && run build \"@theia/example-*\" --stream --parallel",
+    "prepare:electron": "yarn --cwd examples/electron theia ffmpeg:replace && yarn --cwd examples/electron theia ffmpeg:check",
     "prepare:hoisting": "theia check:hoisted -s",
     "clean": "yarn lint:clean && node scripts/run-reverse-topo.js yarn clean",
     "build": "tsc -b configs/root-compilation.tsconfig.json",
@@ -80,8 +80,8 @@
   },
   "workspaces": [
     "dev-packages/*",
-    "packages/*",
-    "examples/*"
+    "examples/*",
+    "packages/*"
   ],
   "theiaPluginsDir": "plugins",
   "theiaPlugins": {

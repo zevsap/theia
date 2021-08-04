@@ -1,2 +1,2 @@
-import Electron = require('@theia/electron');
-export = Electron;
+import electron = require('electron');
+export = electron;
