@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>QuickPickItem | Theia TypeDoc</title>
+	<title>Match | Theia TypeDoc</title>
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,10 +57,10 @@
 					<a href="../modules/core.html">core</a>
 				</li>
 				<li>
-					<a href="core.quickpickitem-2.html">QuickPickItem</a>
+					<a href="core.match-2.html">Match</a>
 				</li>
 			</ul>
-			<h1>Interface QuickPickItem</h1>
+			<h1>Interface Match</h1>
 		</div>
 	</div>
 </header>
@@ -71,20 +71,8 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">QuickPickItem</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<a href="core.quickpickvalue-2.html" class="tsd-signature-type">QuickPickValue</a>
-							</li>
-						</ul>
+						<span class="target">Match</span>
 					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implemented by</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../classes/git.gitquickpickitem.html" class="tsd-signature-type">GitQuickPickItem</a></li>
-					<li><a href="../classes/task.runningtaskquickopenitem.html" class="tsd-signature-type">RunningTaskQuickOpenItem</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -94,16 +82,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.quickpickitem-2.html#arialabel" class="tsd-kind-icon">aria<wbr>Label</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.quickpickitem-2.html#description" class="tsd-kind-icon">description</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.quickpickitem-2.html#detail" class="tsd-kind-icon">detail</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.quickpickitem-2.html#execute" class="tsd-kind-icon">execute</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.quickpickitem-2.html#iconclasses" class="tsd-kind-icon">icon<wbr>Classes</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.quickpickitem-2.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.quickpickitem-2.html#label" class="tsd-kind-icon">label</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.quickpickitem-2.html#meta" class="tsd-kind-icon">meta</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.quickpickitem-2.html#resource" class="tsd-kind-icon">resource</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.quickpickitem-2.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.match-2.html#end" class="tsd-kind-icon">end</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.match-2.html#start" class="tsd-kind-icon">start</a></li>
 							</ul>
 						</section>
 					</div>
@@ -112,102 +92,22 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="arialabel" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> aria<wbr>Label</h3>
-					<div class="tsd-signature tsd-kind-icon">aria<wbr>Label<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<a name="end" class="tsd-anchor"></a>
+					<h3>end</h3>
+					<div class="tsd-signature tsd-kind-icon">end<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/core/src/browser/quick-input/quick-input-service.ts#L26">packages/core/src/browser/quick-input/quick-input-service.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/core/src/browser/quick-input/quick-input-service.ts#L23">packages/core/src/browser/quick-input/quick-input-service.ts:23</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="description" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> description</h3>
-					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<a name="start" class="tsd-anchor"></a>
+					<h3>start</h3>
+					<div class="tsd-signature tsd-kind-icon">start<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/core/src/browser/quick-input/quick-input-service.ts#L27">packages/core/src/browser/quick-input/quick-input-service.ts:27</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="detail" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> detail</h3>
-					<div class="tsd-signature tsd-kind-icon">detail<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/core/src/browser/quick-input/quick-input-service.ts#L28">packages/core/src/browser/quick-input/quick-input-service.ts:28</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="execute" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> execute</h3>
-					<div class="tsd-signature tsd-kind-icon">execute<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><a href="core.quickpickitem-2.html" class="tsd-signature-type">QuickPickItem</a>, lookFor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/core/src/browser/quick-input/quick-input-service.ts#L31">packages/core/src/browser/quick-input/quick-input-service.ts:31</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="iconclasses" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> icon<wbr>Classes</h3>
-					<div class="tsd-signature tsd-kind-icon">icon<wbr>Classes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/core/src/browser/quick-input/quick-input-service.ts#L30">packages/core/src/browser/quick-input/quick-input-service.ts:30</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="id" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> id</h3>
-					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/core/src/browser/quick-input/quick-input-service.ts#L23">packages/core/src/browser/quick-input/quick-input-service.ts:23</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="label" class="tsd-anchor"></a>
-					<h3>label</h3>
-					<div class="tsd-signature tsd-kind-icon">label<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/core/src/browser/quick-input/quick-input-service.ts#L24">packages/core/src/browser/quick-input/quick-input-service.ts:24</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="meta" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> meta</h3>
-					<div class="tsd-signature tsd-kind-icon">meta<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/core/src/browser/quick-input/quick-input-service.ts#L25">packages/core/src/browser/quick-input/quick-input-service.ts:25</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="resource" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> resource</h3>
-					<div class="tsd-signature tsd-kind-icon">resource<span class="tsd-signature-symbol">:</span> <a href="../classes/core.uri.html" class="tsd-signature-type">URI</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/core/src/browser/quick-input/quick-input-service.ts#L29">packages/core/src/browser/quick-input/quick-input-service.ts:29</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="type" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"item"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"separator"</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/core/src/browser/quick-input/quick-input-service.ts#L22">packages/core/src/browser/quick-input/quick-input-service.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/core/src/browser/quick-input/quick-input-service.ts#L22">packages/core/src/browser/quick-input/quick-input-service.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -384,6 +284,12 @@
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.progressmessage-1.html">Progress<wbr>Message</a>
 							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.quickpickitem-2.html">Quick<wbr>Pick<wbr>Item</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.quickpickseparator-2.html">Quick<wbr>Pick<wbr>Separator</a>
+							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-has-type-parameter">
 								<a href="../modules/core.readable.html">Readable</a>
 							</li>
@@ -474,37 +380,13 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="core.quickpickitem-2.html" class="tsd-kind-icon">Quick<wbr>Pick<wbr>Item</a>
+						<a href="core.match-2.html" class="tsd-kind-icon">Match</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="core.quickpickitem-2.html#arialabel" class="tsd-kind-icon">aria<wbr>Label</a>
+								<a href="core.match-2.html#end" class="tsd-kind-icon">end</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="core.quickpickitem-2.html#description" class="tsd-kind-icon">description</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="core.quickpickitem-2.html#detail" class="tsd-kind-icon">detail</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="core.quickpickitem-2.html#execute" class="tsd-kind-icon">execute</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="core.quickpickitem-2.html#iconclasses" class="tsd-kind-icon">icon<wbr>Classes</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="core.quickpickitem-2.html#id" class="tsd-kind-icon">id</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="core.quickpickitem-2.html#label" class="tsd-kind-icon">label</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="core.quickpickitem-2.html#meta" class="tsd-kind-icon">meta</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="core.quickpickitem-2.html#resource" class="tsd-kind-icon">resource</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="core.quickpickitem-2.html#type" class="tsd-kind-icon">type</a>
+								<a href="core.match-2.html#start" class="tsd-kind-icon">start</a>
 							</li>
 						</ul>
 					</li>

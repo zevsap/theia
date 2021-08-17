@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>QuickPickSeparator | Theia TypeDoc</title>
+	<title>PickOptions | Theia TypeDoc</title>
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,21 +57,29 @@
 					<a href="../modules/core.html">core</a>
 				</li>
 				<li>
-					<a href="core.quickpickseparator-2.html">QuickPickSeparator</a>
+					<a href="core.pickoptions-2.html">PickOptions</a>
 				</li>
 			</ul>
-			<h1>Interface QuickPickSeparator</h1>
+			<h1>Interface PickOptions&lt;T&gt;</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>T<span class="tsd-signature-symbol">: </span><a href="../modules/core.quickpickitem-2.html" class="tsd-signature-type">QuickPickItem</a></h4>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">QuickPickSeparator</span>
+						<span class="target">PickOptions</span>
 					</li>
 				</ul>
 			</section>
@@ -82,8 +90,16 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.quickpickseparator-2.html#label" class="tsd-kind-icon">label</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.quickpickseparator-2.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.pickoptions-2.html#activeitem" class="tsd-kind-icon">active<wbr>Item</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.pickoptions-2.html#autofocusonlist" class="tsd-kind-icon">auto<wbr>Focus<wbr>OnList</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.pickoptions-2.html#canpickmany" class="tsd-kind-icon">can<wbr>Pick<wbr>Many</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.pickoptions-2.html#contextkey" class="tsd-kind-icon">context<wbr>Key</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.pickoptions-2.html#ignorefocuslost" class="tsd-kind-icon">ignore<wbr>Focus<wbr>Lost</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.pickoptions-2.html#matchondescription" class="tsd-kind-icon">match<wbr>OnDescription</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.pickoptions-2.html#matchondetail" class="tsd-kind-icon">match<wbr>OnDetail</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.pickoptions-2.html#matchonlabel" class="tsd-kind-icon">match<wbr>OnLabel</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.pickoptions-2.html#ondidfocus" class="tsd-kind-icon">on<wbr>Did<wbr>Focus</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core.pickoptions-2.html#placeholder" class="tsd-kind-icon">place<wbr>Holder</a></li>
 							</ul>
 						</section>
 					</div>
@@ -92,22 +108,102 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="label" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> label</h3>
-					<div class="tsd-signature tsd-kind-icon">label<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<a name="activeitem" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> active<wbr>Item</h3>
+					<div class="tsd-signature tsd-kind-icon">active<wbr>Item<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/core/src/browser/quick-input/quick-input-service.ts#L36">packages/core/src/browser/quick-input/quick-input-service.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/core/src/browser/quick-input/quick-input-service.ts#L136">packages/core/src/browser/quick-input/quick-input-service.ts:136</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="type" class="tsd-anchor"></a>
-					<h3>type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"separator"</span></div>
+					<a name="autofocusonlist" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> auto<wbr>Focus<wbr>OnList</h3>
+					<div class="tsd-signature tsd-kind-icon">auto<wbr>Focus<wbr>OnList<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/core/src/browser/quick-input/quick-input-service.ts#L35">packages/core/src/browser/quick-input/quick-input-service.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/core/src/browser/quick-input/quick-input-service.ts#L132">packages/core/src/browser/quick-input/quick-input-service.ts:132</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="canpickmany" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> can<wbr>Pick<wbr>Many</h3>
+					<div class="tsd-signature tsd-kind-icon">can<wbr>Pick<wbr>Many<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/core/src/browser/quick-input/quick-input-service.ts#L134">packages/core/src/browser/quick-input/quick-input-service.ts:134</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="contextkey" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> context<wbr>Key</h3>
+					<div class="tsd-signature tsd-kind-icon">context<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/core/src/browser/quick-input/quick-input-service.ts#L135">packages/core/src/browser/quick-input/quick-input-service.ts:135</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="ignorefocuslost" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> ignore<wbr>Focus<wbr>Lost</h3>
+					<div class="tsd-signature tsd-kind-icon">ignore<wbr>Focus<wbr>Lost<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/core/src/browser/quick-input/quick-input-service.ts#L133">packages/core/src/browser/quick-input/quick-input-service.ts:133</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="matchondescription" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> match<wbr>OnDescription</h3>
+					<div class="tsd-signature tsd-kind-icon">match<wbr>OnDescription<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/core/src/browser/quick-input/quick-input-service.ts#L129">packages/core/src/browser/quick-input/quick-input-service.ts:129</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="matchondetail" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> match<wbr>OnDetail</h3>
+					<div class="tsd-signature tsd-kind-icon">match<wbr>OnDetail<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/core/src/browser/quick-input/quick-input-service.ts#L130">packages/core/src/browser/quick-input/quick-input-service.ts:130</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="matchonlabel" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> match<wbr>OnLabel</h3>
+					<div class="tsd-signature tsd-kind-icon">match<wbr>OnLabel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/core/src/browser/quick-input/quick-input-service.ts#L131">packages/core/src/browser/quick-input/quick-input-service.ts:131</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="ondidfocus" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Did<wbr>Focus</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Focus<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>entry<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/core/src/browser/quick-input/quick-input-service.ts#L137">packages/core/src/browser/quick-input/quick-input-service.ts:137</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="placeholder" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> place<wbr>Holder</h3>
+					<div class="tsd-signature tsd-kind-icon">place<wbr>Holder<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/core/src/browser/quick-input/quick-input-service.ts#L128">packages/core/src/browser/quick-input/quick-input-service.ts:128</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -284,6 +380,12 @@
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.progressmessage-1.html">Progress<wbr>Message</a>
 							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.quickpickitem-2.html">Quick<wbr>Pick<wbr>Item</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.quickpickseparator-2.html">Quick<wbr>Pick<wbr>Separator</a>
+							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-has-type-parameter">
 								<a href="../modules/core.readable.html">Readable</a>
 							</li>
@@ -373,14 +475,38 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="core.quickpickseparator-2.html" class="tsd-kind-icon">Quick<wbr>Pick<wbr>Separator</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="core.pickoptions-2.html" class="tsd-kind-icon">Pick<wbr>Options</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="core.quickpickseparator-2.html#label" class="tsd-kind-icon">label</a>
+								<a href="core.pickoptions-2.html#activeitem" class="tsd-kind-icon">active<wbr>Item</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="core.quickpickseparator-2.html#type" class="tsd-kind-icon">type</a>
+								<a href="core.pickoptions-2.html#autofocusonlist" class="tsd-kind-icon">auto<wbr>Focus<wbr>OnList</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="core.pickoptions-2.html#canpickmany" class="tsd-kind-icon">can<wbr>Pick<wbr>Many</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="core.pickoptions-2.html#contextkey" class="tsd-kind-icon">context<wbr>Key</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="core.pickoptions-2.html#ignorefocuslost" class="tsd-kind-icon">ignore<wbr>Focus<wbr>Lost</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="core.pickoptions-2.html#matchondescription" class="tsd-kind-icon">match<wbr>OnDescription</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="core.pickoptions-2.html#matchondetail" class="tsd-kind-icon">match<wbr>OnDetail</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="core.pickoptions-2.html#matchonlabel" class="tsd-kind-icon">match<wbr>OnLabel</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="core.pickoptions-2.html#ondidfocus" class="tsd-kind-icon">on<wbr>Did<wbr>Focus</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="core.pickoptions-2.html#placeholder" class="tsd-kind-icon">place<wbr>Holder</a>
 							</li>
 						</ul>
 					</li>

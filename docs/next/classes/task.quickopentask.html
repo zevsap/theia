@@ -78,7 +78,7 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><span class="tsd-signature-type">IQuickAccessDataService</span></li>
+					<li><a href="../interfaces/core.quickaccessprovider-2.html" class="tsd-signature-type">QuickAccessProvider</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -92,7 +92,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="task.quickopentask.html#items" class="tsd-kind-icon">items</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="task.quickopentask.html#labelprovider" class="tsd-kind-icon">label<wbr>Provider</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="task.quickopentask.html#preferences" class="tsd-kind-icon">preferences</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="task.quickopentask.html#prefix" class="tsd-kind-icon">prefix</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="task.quickopentask.html#quickaccessregistry" class="tsd-kind-icon">quick<wbr>Access<wbr>Registry</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="task.quickopentask.html#quickinputservice" class="tsd-kind-icon">quick<wbr>Input<wbr>Service</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="task.quickopentask.html#taskconfigurationmanager" class="tsd-kind-icon">task<wbr>Configuration<wbr>Manager</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="task.quickopentask.html#taskdefinitionregistry" class="tsd-kind-icon">task<wbr>Definition<wbr>Registry</a></li>
@@ -100,6 +100,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="task.quickopentask.html#taskservice" class="tsd-kind-icon">task<wbr>Service</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="task.quickopentask.html#tasksourceresolver" class="tsd-kind-icon">task<wbr>Source<wbr>Resolver</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="task.quickopentask.html#workspaceservice" class="tsd-kind-icon">workspace<wbr>Service</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="task.quickopentask.html#prefix" class="tsd-kind-icon">PREFIX</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -132,17 +133,17 @@
 					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;Run Task&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/task/src/browser/quick-open-task.ts#L39">packages/task/src/browser/quick-open-task.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/task/src/browser/quick-open-task.ts#L40">packages/task/src/browser/quick-open-task.ts:40</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="items" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> items</h3>
-					<div class="tsd-signature tsd-kind-icon">items<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/core.quickpickitem-2.html" class="tsd-signature-type">QuickPickItem</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = []</span></div>
+					<div class="tsd-signature tsd-kind-icon">items<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/core.quickpickitem-2.html" class="tsd-signature-type">QuickPickItem</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/task/src/browser/quick-open-task.ts#L40">packages/task/src/browser/quick-open-task.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/task/src/browser/quick-open-task.ts#L41">packages/task/src/browser/quick-open-task.ts:41</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -152,7 +153,7 @@
 					<div class="tsd-signature tsd-kind-icon">label<wbr>Provider<span class="tsd-signature-symbol">:</span> <a href="core.labelprovider-1.html" class="tsd-signature-type">LabelProvider</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/task/src/browser/quick-open-task.ts#L67">packages/task/src/browser/quick-open-task.ts:67</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/task/src/browser/quick-open-task.ts#L71">packages/task/src/browser/quick-open-task.ts:71</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -162,27 +163,27 @@
 					<div class="tsd-signature tsd-kind-icon">preferences<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.preferenceservice-2.html" class="tsd-signature-type">PreferenceService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/task/src/browser/quick-open-task.ts#L64">packages/task/src/browser/quick-open-task.ts:64</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/task/src/browser/quick-open-task.ts#L68">packages/task/src/browser/quick-open-task.ts:68</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="prefix" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> prefix</h3>
-					<div class="tsd-signature tsd-kind-icon">prefix<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;task &quot;</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="quickaccessregistry" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> quick<wbr>Access<wbr>Registry</h3>
+					<div class="tsd-signature tsd-kind-icon">quick<wbr>Access<wbr>Registry<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.quickaccessregistry-2.html" class="tsd-signature-type">QuickAccessRegistry</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/task/src/browser/quick-open-task.ts#L38">packages/task/src/browser/quick-open-task.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/task/src/browser/quick-open-task.ts#L50">packages/task/src/browser/quick-open-task.ts:50</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="quickinputservice" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> quick<wbr>Input<wbr>Service</h3>
-					<div class="tsd-signature tsd-kind-icon">quick<wbr>Input<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="core.quickinputservice-2.html" class="tsd-signature-type">QuickInputService</a></div>
+					<div class="tsd-signature tsd-kind-icon">quick<wbr>Input<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.quickinputservice-2.html" class="tsd-signature-type">QuickInputService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/task/src/browser/quick-open-task.ts#L46">packages/task/src/browser/quick-open-task.ts:46</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/task/src/browser/quick-open-task.ts#L47">packages/task/src/browser/quick-open-task.ts:47</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -192,7 +193,7 @@
 					<div class="tsd-signature tsd-kind-icon">task<wbr>Configuration<wbr>Manager<span class="tsd-signature-symbol">:</span> <a href="task.taskconfigurationmanager.html" class="tsd-signature-type">TaskConfigurationManager</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/task/src/browser/quick-open-task.ts#L61">packages/task/src/browser/quick-open-task.ts:61</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/task/src/browser/quick-open-task.ts#L65">packages/task/src/browser/quick-open-task.ts:65</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -202,7 +203,7 @@
 					<div class="tsd-signature tsd-kind-icon">task<wbr>Definition<wbr>Registry<span class="tsd-signature-symbol">:</span> <a href="task.taskdefinitionregistry-1.html" class="tsd-signature-type">TaskDefinitionRegistry</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/task/src/browser/quick-open-task.ts#L52">packages/task/src/browser/quick-open-task.ts:52</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/task/src/browser/quick-open-task.ts#L56">packages/task/src/browser/quick-open-task.ts:56</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -212,7 +213,7 @@
 					<div class="tsd-signature tsd-kind-icon">task<wbr>Name<wbr>Resolver<span class="tsd-signature-symbol">:</span> <a href="task.tasknameresolver.html" class="tsd-signature-type">TaskNameResolver</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/task/src/browser/quick-open-task.ts#L55">packages/task/src/browser/quick-open-task.ts:55</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/task/src/browser/quick-open-task.ts#L59">packages/task/src/browser/quick-open-task.ts:59</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -222,7 +223,7 @@
 					<div class="tsd-signature tsd-kind-icon">task<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="task.taskservice-1.html" class="tsd-signature-type">TaskService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/task/src/browser/quick-open-task.ts#L43">packages/task/src/browser/quick-open-task.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/task/src/browser/quick-open-task.ts#L44">packages/task/src/browser/quick-open-task.ts:44</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -232,7 +233,7 @@
 					<div class="tsd-signature tsd-kind-icon">task<wbr>Source<wbr>Resolver<span class="tsd-signature-symbol">:</span> <a href="task.tasksourceresolver.html" class="tsd-signature-type">TaskSourceResolver</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/task/src/browser/quick-open-task.ts#L58">packages/task/src/browser/quick-open-task.ts:58</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/task/src/browser/quick-open-task.ts#L62">packages/task/src/browser/quick-open-task.ts:62</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -242,7 +243,17 @@
 					<div class="tsd-signature tsd-kind-icon">workspace<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="workspace.workspaceservice-1.html" class="tsd-signature-type">WorkspaceService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/task/src/browser/quick-open-task.ts#L49">packages/task/src/browser/quick-open-task.ts:49</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/task/src/browser/quick-open-task.ts#L53">packages/task/src/browser/quick-open-task.ts:53</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="prefix" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> PREFIX</h3>
+					<div class="tsd-signature tsd-kind-icon">PREFIX<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"task "</span><span class="tsd-signature-symbol"> = &quot;task &quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/task/src/browser/quick-open-task.ts#L39">packages/task/src/browser/quick-open-task.ts:39</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -259,7 +270,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/task/src/browser/quick-open-task.ts#L114">packages/task/src/browser/quick-open-task.ts:114</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/task/src/browser/quick-open-task.ts#L118">packages/task/src/browser/quick-open-task.ts:118</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -276,7 +287,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/task/src/browser/quick-open-task.ts#L148">packages/task/src/browser/quick-open-task.ts:148</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/task/src/browser/quick-open-task.ts#L152">packages/task/src/browser/quick-open-task.ts:152</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -293,7 +304,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/task/src/browser/quick-open-task.ts#L73">packages/task/src/browser/quick-open-task.ts:73</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/task/src/browser/quick-open-task.ts#L77">packages/task/src/browser/quick-open-task.ts:77</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -316,7 +327,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/task/src/browser/quick-open-task.ts#L330">packages/task/src/browser/quick-open-task.ts:330</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/task/src/browser/quick-open-task.ts#L335">packages/task/src/browser/quick-open-task.ts:335</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -356,7 +367,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/task/src/browser/quick-open-task.ts#L363">packages/task/src/browser/quick-open-task.ts:363</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/task/src/browser/quick-open-task.ts#L368">packages/task/src/browser/quick-open-task.ts:368</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -373,13 +384,13 @@
 					<a name="getitems" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Items</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Items<span class="tsd-signature-symbol">(</span>tasks<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span>, groupLabel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, isMulti<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IAnythingQuickPickItem</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Items<span class="tsd-signature-symbol">(</span>tasks<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span>, groupLabel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, isMulti<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/core.quickpickitem-2.html" class="tsd-signature-type">QuickPickItem</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/task/src/browser/quick-open-task.ts#L314">packages/task/src/browser/quick-open-task.ts:314</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/task/src/browser/quick-open-task.ts#L319">packages/task/src/browser/quick-open-task.ts:319</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -397,7 +408,7 @@
 									<h5>isMulti: <span class="tsd-signature-type">boolean</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IAnythingQuickPickItem</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/core.quickpickitem-2.html" class="tsd-signature-type">QuickPickItem</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -405,13 +416,14 @@
 					<a name="getpicks" class="tsd-anchor"></a>
 					<h3>get<wbr>Picks</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Picks<span class="tsd-signature-symbol">(</span>filter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CancellationToken</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">monaco.quickInput.Picks</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IAnythingQuickPickItem</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Picks<span class="tsd-signature-symbol">(</span>filter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, token<span class="tsd-signature-symbol">: </span><a href="../modules/core.cancellationtoken-1.html" class="tsd-signature-type">CancellationToken</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/core.html#quickpicks-2" class="tsd-signature-type">QuickPicks</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/core.quickaccessprovider-2.html">QuickAccessProvider</a>.<a href="../interfaces/core.quickaccessprovider-2.html#getpicks">getPicks</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/task/src/browser/quick-open-task.ts#L295">packages/task/src/browser/quick-open-task.ts:295</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/task/src/browser/quick-open-task.ts#L299">packages/task/src/browser/quick-open-task.ts:299</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -420,10 +432,10 @@
 									<h5>filter: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>token: <span class="tsd-signature-type">CancellationToken</span></h5>
+									<h5>token: <a href="../modules/core.cancellationtoken-1.html" class="tsd-signature-type">CancellationToken</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">monaco.quickInput.Picks</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IAnythingQuickPickItem</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/core.html#quickpicks-2" class="tsd-signature-type">QuickPicks</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -437,7 +449,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/task/src/browser/quick-open-task.ts#L310">packages/task/src/browser/quick-open-task.ts:310</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/task/src/browser/quick-open-task.ts#L315">packages/task/src/browser/quick-open-task.ts:315</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -454,16 +466,16 @@
 					<a name="gettaskitems" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Task<wbr>Items</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Task<wbr>Items<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/core.quickpickitem-2.html" class="tsd-signature-type">QuickPickItem</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Task<wbr>Items<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/core.quickpickitem-2.html" class="tsd-signature-type">QuickPickItem</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/task/src/browser/quick-open-task.ts#L225">packages/task/src/browser/quick-open-task.ts:225</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/task/src/browser/quick-open-task.ts#L229">packages/task/src/browser/quick-open-task.ts:229</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/core.quickpickitem-2.html" class="tsd-signature-type">QuickPickItem</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/core.quickpickitem-2.html" class="tsd-signature-type">QuickPickItem</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -477,7 +489,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/task/src/browser/quick-open-task.ts#L69">packages/task/src/browser/quick-open-task.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/task/src/browser/quick-open-task.ts#L73">packages/task/src/browser/quick-open-task.ts:73</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -488,19 +500,19 @@
 					<a name="ondidtriggergearicon" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Did<wbr>Trigger<wbr>Gear<wbr>Icon</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Trigger<wbr>Gear<wbr>Icon<span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.quickpickitem-2.html" class="tsd-signature-type">QuickPickItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Trigger<wbr>Gear<wbr>Icon<span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><a href="../modules/core.quickpickitem-2.html" class="tsd-signature-type">QuickPickItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/task/src/browser/quick-open-task.ts#L93">packages/task/src/browser/quick-open-task.ts:93</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/task/src/browser/quick-open-task.ts#L97">packages/task/src/browser/quick-open-task.ts:97</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>item: <a href="../interfaces/core.quickpickitem-2.html" class="tsd-signature-type">QuickPickItem</a></h5>
+									<h5>item: <a href="../modules/core.quickpickitem-2.html" class="tsd-signature-type">QuickPickItem</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -517,7 +529,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/task/src/browser/quick-open-task.ts#L100">packages/task/src/browser/quick-open-task.ts:100</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/task/src/browser/quick-open-task.ts#L104">packages/task/src/browser/quick-open-task.ts:104</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -534,7 +546,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/task/src/browser/quick-open-task.ts#L300">packages/task/src/browser/quick-open-task.ts:300</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/task/src/browser/quick-open-task.ts#L306">packages/task/src/browser/quick-open-task.ts:306</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -551,7 +563,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/task/src/browser/quick-open-task.ts#L229">packages/task/src/browser/quick-open-task.ts:229</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/task/src/browser/quick-open-task.ts#L233">packages/task/src/browser/quick-open-task.ts:233</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -634,8 +646,8 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="task.quickopentask.html#preferences" class="tsd-kind-icon">preferences</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="task.quickopentask.html#prefix" class="tsd-kind-icon">prefix</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="task.quickopentask.html#quickaccessregistry" class="tsd-kind-icon">quick<wbr>Access<wbr>Registry</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="task.quickopentask.html#quickinputservice" class="tsd-kind-icon">quick<wbr>Input<wbr>Service</a>
@@ -657,6 +669,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="task.quickopentask.html#workspaceservice" class="tsd-kind-icon">workspace<wbr>Service</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="task.quickopentask.html#prefix" class="tsd-kind-icon">PREFIX</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="task.quickopentask.html#attach" class="tsd-kind-icon">attach</a>
@@ -741,6 +756,9 @@
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
 			</ul>
 		</div>
 	</div>

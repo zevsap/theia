@@ -77,7 +77,6 @@
 						<section class="tsd-index-section ">
 							<h3>Classes</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/file_search.anythingquickaccessprovider.html" class="tsd-kind-icon">Anything<wbr>Quick<wbr>Access<wbr>Provider</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/file_search.filesearchserviceimpl.html" class="tsd-kind-icon">File<wbr>Search<wbr>Service<wbr>Impl</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/file_search.quickfileopenfrontendcontribution.html" class="tsd-kind-icon">Quick<wbr>File<wbr>Open<wbr>Frontend<wbr>Contribution</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/file_search.quickfileopenservice.html" class="tsd-kind-icon">Quick<wbr>File<wbr>Open<wbr>Service</a></li>
@@ -91,11 +90,24 @@
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="file_search.html#filequickpickitem" class="tsd-kind-icon">File<wbr>Quick<wbr>Pick<wbr>Item</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="file_search.html#line_colon_pattern" class="tsd-kind-icon">LINE_<wbr>COLON_<wbr>PATTERN</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="file_search.html#whitespace_query_separator" class="tsd-kind-icon">WHITESPACE_<wbr>QUERY_<wbr>SEPARATOR</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="file_search.html#filesearchservicepath" class="tsd-kind-icon">file<wbr>Search<wbr>Service<wbr>Path</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported"><a href="file_search.html#comparewithdiscriminators" class="tsd-kind-icon">compare<wbr>With<wbr>Discriminators</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="file_search.html#normalize" class="tsd-kind-icon">normalize</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -108,6 +120,19 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="filequickpickitem" class="tsd-anchor"></a>
+					<h3>File<wbr>Quick<wbr>Pick<wbr>Item</h3>
+					<div class="tsd-signature tsd-kind-icon">File<wbr>Quick<wbr>Pick<wbr>Item<span class="tsd-signature-symbol">:</span> <a href="core.quickpickitem-2.html" class="tsd-signature-type">QuickPickItem</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>uri<span class="tsd-signature-symbol">: </span><a href="../classes/core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/file-search/src/browser/quick-file-open.ts#L44">packages/file-search/src/browser/quick-file-open.ts:44</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 					<a name="line_colon_pattern" class="tsd-anchor"></a>
@@ -115,7 +140,7 @@
 					<div class="tsd-signature tsd-kind-icon">LINE_<wbr>COLON_<wbr>PATTERN<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = /\s?[#:\(](?:line )?(\d*)(?:[#:,](\d*))?\)?\s*$/</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/file-search/src/browser/quick-file-open.ts#L44">packages/file-search/src/browser/quick-file-open.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/file-search/src/browser/quick-file-open.ts#L43">packages/file-search/src/browser/quick-file-open.ts:43</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -125,7 +150,7 @@
 					<div class="tsd-signature tsd-kind-icon">WHITESPACE_<wbr>QUERY_<wbr>SEPARATOR<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = /\s+/</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/file-search/src/common/file-search-service.ts#L58">packages/file-search/src/common/file-search-service.ts:58</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/file-search/src/common/file-search-service.ts#L58">packages/file-search/src/common/file-search-service.ts:58</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -135,9 +160,79 @@
 					<div class="tsd-signature tsd-kind-icon">file<wbr>Search<wbr>Service<wbr>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"/services/search"</span><span class="tsd-signature-symbol"> = &quot;/services/search&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/file-search/src/common/file-search-service.ts#L19">packages/file-search/src/common/file-search-service.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/file-search/src/common/file-search-service.ts#L19">packages/file-search/src/common/file-search-service.ts:19</a></li>
 						</ul>
 					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+					<a name="comparewithdiscriminators" class="tsd-anchor"></a>
+					<h3>compare<wbr>With<wbr>Discriminators</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">compare<wbr>With<wbr>Discriminators&lt;T&gt;<span class="tsd-signature-symbol">(</span>left<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, right<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, <span class="tsd-signature-symbol">...</span>discriminators<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>left<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, right<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/file-search/src/browser/quick-file-open.ts#L384">packages/file-search/src/browser/quick-file-open.ts:384</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>left: <span class="tsd-signature-type">T</span></h5>
+								</li>
+								<li>
+									<h5>right: <span class="tsd-signature-type">T</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>discriminators: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>left<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, right<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="normalize" class="tsd-anchor"></a>
+					<h3>normalize</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">normalize<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/file-search/src/browser/quick-file-open.ts#L380">packages/file-search/src/browser/quick-file-open.ts:380</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Normalize a given string.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>str: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the raw string value.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>the normalized string value.</p>
+						</li>
+					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -148,7 +243,7 @@
 					<div class="tsd-signature tsd-kind-icon">quick<wbr>File<wbr>Open<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/file-search/src/browser/quick-file-open.ts#L32">packages/file-search/src/browser/quick-file-open.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/file-search/src/browser/quick-file-open.ts#L32">packages/file-search/src/browser/quick-file-open.ts:32</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -157,7 +252,7 @@
 						<div class="tsd-signature tsd-kind-icon">category<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;File&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/file-search/src/browser/quick-file-open.ts#L34">packages/file-search/src/browser/quick-file-open.ts:34</a></li>
+								<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/file-search/src/browser/quick-file-open.ts#L34">packages/file-search/src/browser/quick-file-open.ts:34</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -167,7 +262,7 @@
 						<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;file-search.openFile&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/file-search/src/browser/quick-file-open.ts#L33">packages/file-search/src/browser/quick-file-open.ts:33</a></li>
+								<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/file-search/src/browser/quick-file-open.ts#L33">packages/file-search/src/browser/quick-file-open.ts:33</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -177,7 +272,7 @@
 						<div class="tsd-signature tsd-kind-icon">label<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;Open File...&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/84bca9b36a/packages/file-search/src/browser/quick-file-open.ts#L35">packages/file-search/src/browser/quick-file-open.ts:35</a></li>
+								<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7d637a175b/packages/file-search/src/browser/quick-file-open.ts#L35">packages/file-search/src/browser/quick-file-open.ts:35</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -203,9 +298,6 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/file_search.anythingquickaccessprovider.html" class="tsd-kind-icon">Anything<wbr>Quick<wbr>Access<wbr>Provider</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/file_search.filesearchserviceimpl.html" class="tsd-kind-icon">File<wbr>Search<wbr>Service<wbr>Impl</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
@@ -220,6 +312,9 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/file_search.filterandrange.html" class="tsd-kind-icon">Filter<wbr>And<wbr>Range</a>
 					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="file_search.html#filequickpickitem" class="tsd-kind-icon">File<wbr>Quick<wbr>Pick<wbr>Item</a>
+					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 						<a href="file_search.html#line_colon_pattern" class="tsd-kind-icon">LINE_<wbr>COLON_<wbr>PATTERN</a>
 					</li>
@@ -228,6 +323,12 @@
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="file_search.html#filesearchservicepath" class="tsd-kind-icon">file<wbr>Search<wbr>Service<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="file_search.html#comparewithdiscriminators" class="tsd-kind-icon">compare<wbr>With<wbr>Discriminators</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="file_search.html#normalize" class="tsd-kind-icon">normalize</a>
 					</li>
 					<li class=" tsd-kind-object-literal tsd-parent-kind-module">
 						<a href="file_search.html#quickfileopen" class="tsd-kind-icon">quick<wbr>File<wbr>Open</a>
