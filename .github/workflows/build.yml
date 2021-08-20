@@ -46,8 +46,6 @@ jobs:
         shell: bash
         run: |
           yarn --ignore-engines --skip-integrity-check --network-timeout 100000
-          npx electron-replace-ffmpeg
-          npx electron-codecs-test
           ./scripts/check_git_status.sh
         env:
           NODE_OPTIONS: --max_old_space_size=4096
