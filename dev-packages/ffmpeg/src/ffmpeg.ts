@@ -30,7 +30,7 @@ let _FFMPEG: FfmpegNativeAddon;
 try {
     _FFMPEG = require('../build/Release/ffmpeg.node');
 } catch (error) {
-    if (error.code === 'ENOENT') {
+    if (error.code === 'MODULE_NOT_FOUND') {
         _FFMPEG = require('../build/Debug/ffmpeg.node');
     } else {
         throw error;
