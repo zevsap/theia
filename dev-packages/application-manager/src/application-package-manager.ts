@@ -17,11 +17,17 @@
 import * as path from 'path';
 import * as fs from 'fs-extra';
 import * as cp from 'child_process';
+import * as semver from 'semver';
 import { ApplicationPackage, ApplicationPackageOptions } from '@theia/application-package';
 import { WebpackGenerator, FrontendGenerator, BackendGenerator } from './generator';
 import { ApplicationProcess } from './application-process';
 import { GeneratorOptions } from './generator/abstract-generator';
 import yargs = require('yargs');
+
+// Declare missing exports from `@types/semver@7`
+declare module 'semver' {
+    function minVersion(range: string): string;
+}
 
 class AbortError extends Error {
     constructor(...args: Parameters<ErrorConstructor>) {
@@ -144,7 +150,9 @@ export class ApplicationPackageManager {
     }
 
     /**
-     * Inject Theia's electron-specific dependencies into the application's package.json.
+     * Inject Theia's Electron-specific dependencies into the application's package.json.
+     *
+     * Only overwrite the Electron range if the current minimum supported version is lower than the recommended one.
      */
     protected async prepareElectron(): Promise<void> {
         let electronPackageJson;
@@ -156,16 +164,21 @@ export class ApplicationPackageManager {
             }
             throw error;
         }
-        const electronVersion = electronPackageJson.peerDependencies.electron;
+        const expectedRange: string = electronPackageJson.peerDependencies.electron;
         const packageJsonPath = this.pck.path('package.json');
         const packageJson = await fs.readJSON(packageJsonPath);
         if (!packageJson.devDependencies) {
             packageJson.devDependencies = {};
         }
-        if (packageJson.devDependencies['electron'] !== electronVersion) {
-            packageJson.devDependencies['electron'] = electronVersion;
+        const currentRange: string | undefined = packageJson.devDependencies['electron'];
+        if (!currentRange || semver.compare(semver.minVersion(currentRange), semver.minVersion(expectedRange)) < 0) {
+            // Update the range with the recommended one and write it on disk.
+            packageJson.devDependencies['electron'] = expectedRange;
             await fs.writeJSON(packageJsonPath, packageJson, { spaces: 2 });
-            throw new AbortError('Updated dependencies, please run "yarn install" again');
+            throw new AbortError('Updated dependencies, please run "install" again');
+            // eslint-disable-next-line import/no-extraneous-dependencies
+        } else if (!semver.satisfies(require('@theia/electron').electronVersion, currentRange)) {
+            throw new AbortError('Dependencies are out of sync, please run "install" again');
         }
     }
 
@@ -203,5 +216,4 @@ export class ApplicationPackageManager {
             }
         };
     }
-
 }

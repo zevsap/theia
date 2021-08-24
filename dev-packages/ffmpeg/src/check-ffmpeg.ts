@@ -16,21 +16,34 @@
 
 import * as ffmpeg from './ffmpeg';
 
+export interface CheckFfmpegResult {
+    free: ffmpeg.Codec[],
+    proprietary: ffmpeg.Codec[],
+}
+
+export const KNOWN_PROPRIETARY_CODECS = new Set(['h264', 'aac']);
+
 export function checkFfmpeg(options: ffmpeg.FfmpegOptions): void {
     const {
         ffmpegPath = ffmpeg.ffmpegAbsolutePath(options),
     } = options;
     const codecs = ffmpeg.getFfmpegCodecs(ffmpegPath);
-    const bad = new Set(['h264', 'aac']);
-    const found = [];
+    const free = [];
+    const proprietary = [];
     for (const codec of codecs) {
-        if (bad.has(codec.name.toLowerCase())) {
-            found.push(codec);
+        if (KNOWN_PROPRIETARY_CODECS.has(codec.name.toLowerCase())) {
+            proprietary.push(codec);
+        } else {
+            free.push(codec);
         }
     }
-    if (found.length > 0) {
-        throw new Error(`${found.length} bad / ${codecs.length} found\n${
-            found.map(codec => `> ${codec.name} detected (${codec.longName})`).join('\n')}`);
+    // Pretty format JSON on stdout.
+    console.log(JSON.stringify({ free, proprietary }, undefined, 2));
+    if (proprietary.length > 0) {
+        // Should be displayed on stderr to not pollute the JSON on stdout.
+        throw new Error(`${proprietary.length} proprietary codecs found\n${
+            proprietary.map(codec => `> ${codec.name} detected (${codec.longName})`).join('\n')}`);
     }
-    console.info(`"${ffmpegPath}" does not contain proprietary codecs (${codecs.length} found).`);
+    // Print to stderr to not pollute the JSON on stdout.
+    console.error(`"${ffmpegPath}" does not contain proprietary codecs (${codecs.length} found).`);
 }
