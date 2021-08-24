@@ -99,6 +99,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="plugin_ext.hostedpluginserverimpl.html#deployerhandler" class="tsd-kind-icon">deployer<wbr>Handler</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="plugin_ext.hostedpluginserverimpl.html#extpluginapicontributions" class="tsd-kind-icon">ext<wbr>PluginAPIContributions</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.hostedpluginserverimpl.html#hostedplugin" class="tsd-kind-icon">hosted<wbr>Plugin</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="plugin_ext.hostedpluginserverimpl.html#localizationprovider" class="tsd-kind-icon">localization<wbr>Provider</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="plugin_ext.hostedpluginserverimpl.html#logger" class="tsd-kind-icon">logger</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="plugin_ext.hostedpluginserverimpl.html#plugindeployer" class="tsd-kind-icon">plugin<wbr>Deployer</a></li>
 							</ul>
@@ -111,6 +112,8 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="plugin_ext.hostedpluginserverimpl.html#getdeployedplugins" class="tsd-kind-icon">get<wbr>Deployed<wbr>Plugins</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="plugin_ext.hostedpluginserverimpl.html#getextpluginapi" class="tsd-kind-icon">get<wbr>Ext<wbr>PluginAPI</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="plugin_ext.hostedpluginserverimpl.html#init" class="tsd-kind-icon">init</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="plugin_ext.hostedpluginserverimpl.html#localizeplugin" class="tsd-kind-icon">localize<wbr>Plugin</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="plugin_ext.hostedpluginserverimpl.html#mergecontributes" class="tsd-kind-icon">merge<wbr>Contributes</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="plugin_ext.hostedpluginserverimpl.html#onmessage" class="tsd-kind-icon">on<wbr>Message</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="plugin_ext.hostedpluginserverimpl.html#setclient" class="tsd-kind-icon">set<wbr>Client</a></li>
 							</ul>
@@ -130,7 +133,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/plugin-ext/src/hosted/node/plugin-service.ts#L42">packages/plugin-ext/src/hosted/node/plugin-service.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/plugin-ext/src/hosted/node/plugin-service.ts#L47">packages/plugin-ext/src/hosted/node/plugin-service.ts:47</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -152,7 +155,7 @@
 					<div class="tsd-signature tsd-kind-icon">client<span class="tsd-signature-symbol">:</span> <a href="../interfaces/plugin_ext.hostedpluginclient-1.html" class="tsd-signature-type">HostedPluginClient</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/plugin-ext/src/hosted/node/plugin-service.ts#L40">packages/plugin-ext/src/hosted/node/plugin-service.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/plugin-ext/src/hosted/node/plugin-service.ts#L45">packages/plugin-ext/src/hosted/node/plugin-service.ts:45</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -162,7 +165,7 @@
 					<div class="tsd-signature tsd-kind-icon">deployed<wbr>Listener<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Disposable</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/plugin-ext/src/hosted/node/plugin-service.ts#L42">packages/plugin-ext/src/hosted/node/plugin-service.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/plugin-ext/src/hosted/node/plugin-service.ts#L47">packages/plugin-ext/src/hosted/node/plugin-service.ts:47</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -172,7 +175,7 @@
 					<div class="tsd-signature tsd-kind-icon">deployer<wbr>Handler<span class="tsd-signature-symbol">:</span> <a href="plugin_ext.hostedplugindeployerhandler.html" class="tsd-signature-type">HostedPluginDeployerHandler</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/plugin-ext/src/hosted/node/plugin-service.ts#L31">packages/plugin-ext/src/hosted/node/plugin-service.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/plugin-ext/src/hosted/node/plugin-service.ts#L33">packages/plugin-ext/src/hosted/node/plugin-service.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -182,7 +185,7 @@
 					<div class="tsd-signature tsd-kind-icon">ext<wbr>PluginAPIContributions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ContributionProvider</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/plugin_ext.extpluginapiprovider-1.html" class="tsd-signature-type">ExtPluginApiProvider</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/plugin-ext/src/hosted/node/plugin-service.ts#L38">packages/plugin-ext/src/hosted/node/plugin-service.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/plugin-ext/src/hosted/node/plugin-service.ts#L43">packages/plugin-ext/src/hosted/node/plugin-service.ts:43</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -192,7 +195,17 @@
 					<div class="tsd-signature tsd-kind-icon">hosted<wbr>Plugin<span class="tsd-signature-symbol">:</span> <a href="plugin_ext.hostedpluginsupport.html" class="tsd-signature-type">HostedPluginSupport</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/plugin-ext/src/hosted/node/plugin-service.ts#L45">packages/plugin-ext/src/hosted/node/plugin-service.ts:45</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/plugin-ext/src/hosted/node/plugin-service.ts#L50">packages/plugin-ext/src/hosted/node/plugin-service.ts:50</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="localizationprovider" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> localization<wbr>Provider</h3>
+					<div class="tsd-signature tsd-kind-icon">localization<wbr>Provider<span class="tsd-signature-symbol">:</span> <a href="core.localizationprovider.html" class="tsd-signature-type">LocalizationProvider</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/plugin-ext/src/hosted/node/plugin-service.ts#L39">packages/plugin-ext/src/hosted/node/plugin-service.ts:39</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -202,7 +215,7 @@
 					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ILogger</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/plugin-ext/src/hosted/node/plugin-service.ts#L28">packages/plugin-ext/src/hosted/node/plugin-service.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/plugin-ext/src/hosted/node/plugin-service.ts#L30">packages/plugin-ext/src/hosted/node/plugin-service.ts:30</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -212,7 +225,7 @@
 					<div class="tsd-signature tsd-kind-icon">plugin<wbr>Deployer<span class="tsd-signature-symbol">:</span> <a href="plugin_ext.plugindeployerimpl.html" class="tsd-signature-type">PluginDeployerImpl</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/plugin-ext/src/hosted/node/plugin-service.ts#L34">packages/plugin-ext/src/hosted/node/plugin-service.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/plugin-ext/src/hosted/node/plugin-service.ts#L36">packages/plugin-ext/src/hosted/node/plugin-service.ts:36</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -230,7 +243,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/plugin_ext.hostedpluginserver-1.html">HostedPluginServer</a>.<a href="../interfaces/plugin_ext.hostedpluginserver-1.html#dispose">dispose</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/plugin-ext/src/hosted/node/plugin-service.ts#L57">packages/plugin-ext/src/hosted/node/plugin-service.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/plugin-ext/src/hosted/node/plugin-service.ts#L62">packages/plugin-ext/src/hosted/node/plugin-service.ts:62</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -248,7 +261,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/plugin_ext.hostedpluginserver-1.html">HostedPluginServer</a>.<a href="../interfaces/plugin_ext.hostedpluginserver-1.html#getdeployedpluginids">getDeployedPluginIds</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/plugin-ext/src/hosted/node/plugin-service.ts#L66">packages/plugin-ext/src/hosted/node/plugin-service.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/plugin-ext/src/hosted/node/plugin-service.ts#L71">packages/plugin-ext/src/hosted/node/plugin-service.ts:71</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -265,7 +278,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/plugin-ext/src/hosted/node/plugin-service.ts#L84">packages/plugin-ext/src/hosted/node/plugin-service.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/plugin-ext/src/hosted/node/plugin-service.ts#L89">packages/plugin-ext/src/hosted/node/plugin-service.ts:89</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -294,7 +307,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/plugin_ext.hostedpluginserver-1.html">HostedPluginServer</a>.<a href="../interfaces/plugin_ext.hostedpluginserver-1.html#getextpluginapi">getExtPluginAPI</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/plugin-ext/src/hosted/node/plugin-service.ts#L113">packages/plugin-ext/src/hosted/node/plugin-service.ts:113</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/plugin-ext/src/hosted/node/plugin-service.ts#L119">packages/plugin-ext/src/hosted/node/plugin-service.ts:119</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/plugin_ext.extpluginapi-1.html" class="tsd-signature-type">ExtPluginApi</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -311,9 +324,61 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/plugin-ext/src/hosted/node/plugin-service.ts#L49">packages/plugin-ext/src/hosted/node/plugin-service.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/plugin-ext/src/hosted/node/plugin-service.ts#L54">packages/plugin-ext/src/hosted/node/plugin-service.ts:54</a></li>
 								</ul>
 							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="localizeplugin" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> localize<wbr>Plugin</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">localize<wbr>Plugin<span class="tsd-signature-symbol">(</span>plugin<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.deployedplugin-1.html" class="tsd-signature-type">DeployedPlugin</a>, locale<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/plugin_ext.deployedplugin-1.html" class="tsd-signature-type">DeployedPlugin</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/plugin-ext/src/hosted/node/plugin-service.ts#L123">packages/plugin-ext/src/hosted/node/plugin-service.ts:123</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>plugin: <a href="../interfaces/plugin_ext.deployedplugin-1.html" class="tsd-signature-type">DeployedPlugin</a></h5>
+								</li>
+								<li>
+									<h5>locale: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/plugin_ext.deployedplugin-1.html" class="tsd-signature-type">DeployedPlugin</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="mergecontributes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> merge<wbr>Contributes</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">merge<wbr>Contributes<span class="tsd-signature-symbol">(</span>main<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, other<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/plugin-ext/src/hosted/node/plugin-service.ts#L131">packages/plugin-ext/src/hosted/node/plugin-service.ts:131</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>main: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>other: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -329,7 +394,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/plugin_ext.hostedpluginserver-1.html">HostedPluginServer</a>.<a href="../interfaces/plugin_ext.hostedpluginserver-1.html#onmessage">onMessage</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/plugin-ext/src/hosted/node/plugin-service.ts#L108">packages/plugin-ext/src/hosted/node/plugin-service.ts:108</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/plugin-ext/src/hosted/node/plugin-service.ts#L114">packages/plugin-ext/src/hosted/node/plugin-service.ts:114</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -355,7 +420,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/plugin-ext/src/hosted/node/plugin-service.ts#L61">packages/plugin-ext/src/hosted/node/plugin-service.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/plugin-ext/src/hosted/node/plugin-service.ts#L66">packages/plugin-ext/src/hosted/node/plugin-service.ts:66</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -508,6 +573,9 @@
 								<a href="plugin_ext.hostedpluginserverimpl.html#hostedplugin" class="tsd-kind-icon">hosted<wbr>Plugin</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="plugin_ext.hostedpluginserverimpl.html#localizationprovider" class="tsd-kind-icon">localization<wbr>Provider</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="plugin_ext.hostedpluginserverimpl.html#logger" class="tsd-kind-icon">logger</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
@@ -527,6 +595,12 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="plugin_ext.hostedpluginserverimpl.html#init" class="tsd-kind-icon">init</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="plugin_ext.hostedpluginserverimpl.html#localizeplugin" class="tsd-kind-icon">localize<wbr>Plugin</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="plugin_ext.hostedpluginserverimpl.html#mergecontributes" class="tsd-kind-icon">merge<wbr>Contributes</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="plugin_ext.hostedpluginserverimpl.html#onmessage" class="tsd-kind-icon">on<wbr>Message</a>

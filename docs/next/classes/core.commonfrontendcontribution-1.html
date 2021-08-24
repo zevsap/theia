@@ -106,6 +106,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="core.commonfrontendcontribution-1.html#encodingregistry" class="tsd-kind-icon">encoding<wbr>Registry</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="core.commonfrontendcontribution-1.html#environments" class="tsd-kind-icon">environments</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="core.commonfrontendcontribution-1.html#iconthemes" class="tsd-kind-icon">icon<wbr>Themes</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="core.commonfrontendcontribution-1.html#localizationprovider" class="tsd-kind-icon">localization<wbr>Provider</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="core.commonfrontendcontribution-1.html#messageservice" class="tsd-kind-icon">message<wbr>Service</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="core.commonfrontendcontribution-1.html#openerservice" class="tsd-kind-icon">opener<wbr>Service</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="core.commonfrontendcontribution-1.html#preferenceservice" class="tsd-kind-icon">preference<wbr>Service</a></li>
@@ -124,6 +125,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core.commonfrontendcontribution-1.html#cantogglemaximized" class="tsd-kind-icon">can<wbr>Toggle<wbr>Maximized</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="core.commonfrontendcontribution-1.html#configure" class="tsd-kind-icon">configure</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="core.commonfrontendcontribution-1.html#configuredisplaylanguage" class="tsd-kind-icon">configure<wbr>Display<wbr>Language</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core.commonfrontendcontribution-1.html#findtabarea" class="tsd-kind-icon">find<wbr>Tab<wbr>Area</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core.commonfrontendcontribution-1.html#findtitleindex" class="tsd-kind-icon">find<wbr>Title<wbr>Index</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="core.commonfrontendcontribution-1.html#initresourcecontextkeys" class="tsd-kind-icon">init<wbr>Resource<wbr>Context<wbr>Keys</a></li>
@@ -154,13 +156,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Common<wbr>Frontend<wbr>Contribution<span class="tsd-signature-symbol">(</span>shell<span class="tsd-signature-symbol">: </span><a href="core.applicationshell-2.html" class="tsd-signature-type">ApplicationShell</a>, selectionService<span class="tsd-signature-symbol">: </span><a href="core.selectionservice-1.html" class="tsd-signature-type">SelectionService</a>, messageService<span class="tsd-signature-symbol">: </span><a href="core.messageservice-1.html" class="tsd-signature-type">MessageService</a>, openerService<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.openerservice-1.html" class="tsd-signature-type">OpenerService</a>, aboutDialog<span class="tsd-signature-symbol">: </span><a href="core.aboutdialog.html" class="tsd-signature-type">AboutDialog</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.commonfrontendcontribution-1.html" class="tsd-signature-type">CommonFrontendContribution</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Common<wbr>Frontend<wbr>Contribution<span class="tsd-signature-symbol">(</span>shell<span class="tsd-signature-symbol">: </span><a href="core.applicationshell-2.html" class="tsd-signature-type">ApplicationShell</a>, selectionService<span class="tsd-signature-symbol">: </span><a href="core.selectionservice-1.html" class="tsd-signature-type">SelectionService</a>, messageService<span class="tsd-signature-symbol">: </span><a href="core.messageservice-1.html" class="tsd-signature-type">MessageService</a>, openerService<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.openerservice-1.html" class="tsd-signature-type">OpenerService</a>, aboutDialog<span class="tsd-signature-symbol">: </span><a href="core.aboutdialog.html" class="tsd-signature-type">AboutDialog</a>, localizationProvider<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.asynclocalizationprovider.html" class="tsd-signature-type">AsyncLocalizationProvider</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.commonfrontendcontribution-1.html" class="tsd-signature-type">CommonFrontendContribution</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L285">packages/core/src/browser/common-frontend-contribution.ts:285</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L292">packages/core/src/browser/common-frontend-contribution.ts:292</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -180,6 +182,9 @@
 								<li>
 									<h5>aboutDialog: <a href="core.aboutdialog.html" class="tsd-signature-type">AboutDialog</a></h5>
 								</li>
+								<li>
+									<h5>localizationProvider: <a href="../interfaces/core.asynclocalizationprovider.html" class="tsd-signature-type">AsyncLocalizationProvider</a></h5>
+								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="core.commonfrontendcontribution-1.html" class="tsd-signature-type">CommonFrontendContribution</a></h4>
 						</li>
@@ -194,7 +199,7 @@
 					<div class="tsd-signature tsd-kind-icon">about<wbr>Dialog<span class="tsd-signature-symbol">:</span> <a href="core.aboutdialog.html" class="tsd-signature-type">AboutDialog</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L292">packages/core/src/browser/common-frontend-contribution.ts:292</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L299">packages/core/src/browser/common-frontend-contribution.ts:299</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -204,7 +209,7 @@
 					<div class="tsd-signature tsd-kind-icon">authentication<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.authenticationservice.html" class="tsd-signature-type">AuthenticationService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L332">packages/core/src/browser/common-frontend-contribution.ts:332</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L340">packages/core/src/browser/common-frontend-contribution.ts:340</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -214,7 +219,7 @@
 					<div class="tsd-signature tsd-kind-icon">clipboard<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.clipboardservice.html" class="tsd-signature-type">ClipboardService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L323">packages/core/src/browser/common-frontend-contribution.ts:323</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L331">packages/core/src/browser/common-frontend-contribution.ts:331</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -224,7 +229,7 @@
 					<div class="tsd-signature tsd-kind-icon">command<wbr>Registry<span class="tsd-signature-symbol">:</span> <a href="core.commandregistry-1.html" class="tsd-signature-type">CommandRegistry</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L302">packages/core/src/browser/common-frontend-contribution.ts:302</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L310">packages/core/src/browser/common-frontend-contribution.ts:310</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -234,7 +239,7 @@
 					<div class="tsd-signature tsd-kind-icon">context<wbr>Key<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="core.contextkeyservice.html" class="tsd-signature-type">ContextKeyService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L296">packages/core/src/browser/common-frontend-contribution.ts:296</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L304">packages/core/src/browser/common-frontend-contribution.ts:304</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -244,7 +249,7 @@
 					<div class="tsd-signature tsd-kind-icon">encoding<wbr>Registry<span class="tsd-signature-symbol">:</span> <a href="core.encodingregistry.html" class="tsd-signature-type">EncodingRegistry</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L326">packages/core/src/browser/common-frontend-contribution.ts:326</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L334">packages/core/src/browser/common-frontend-contribution.ts:334</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -254,7 +259,7 @@
 					<div class="tsd-signature tsd-kind-icon">environments<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.envvariablesserver-1.html" class="tsd-signature-type">EnvVariablesServer</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L329">packages/core/src/browser/common-frontend-contribution.ts:329</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L337">packages/core/src/browser/common-frontend-contribution.ts:337</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -264,7 +269,17 @@
 					<div class="tsd-signature tsd-kind-icon">icon<wbr>Themes<span class="tsd-signature-symbol">:</span> <a href="core.iconthemeservice.html" class="tsd-signature-type">IconThemeService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L311">packages/core/src/browser/common-frontend-contribution.ts:311</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L319">packages/core/src/browser/common-frontend-contribution.ts:319</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="localizationprovider" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> localization<wbr>Provider</h3>
+					<div class="tsd-signature tsd-kind-icon">localization<wbr>Provider<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.asynclocalizationprovider.html" class="tsd-signature-type">AsyncLocalizationProvider</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L300">packages/core/src/browser/common-frontend-contribution.ts:300</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -274,7 +289,7 @@
 					<div class="tsd-signature tsd-kind-icon">message<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="core.messageservice-1.html" class="tsd-signature-type">MessageService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L290">packages/core/src/browser/common-frontend-contribution.ts:290</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L297">packages/core/src/browser/common-frontend-contribution.ts:297</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -284,7 +299,7 @@
 					<div class="tsd-signature tsd-kind-icon">opener<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.openerservice-1.html" class="tsd-signature-type">OpenerService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L291">packages/core/src/browser/common-frontend-contribution.ts:291</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L298">packages/core/src/browser/common-frontend-contribution.ts:298</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -294,7 +309,7 @@
 					<div class="tsd-signature tsd-kind-icon">preference<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.preferenceservice-2.html" class="tsd-signature-type">PreferenceService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L320">packages/core/src/browser/common-frontend-contribution.ts:320</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L328">packages/core/src/browser/common-frontend-contribution.ts:328</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -304,7 +319,7 @@
 					<div class="tsd-signature tsd-kind-icon">preferences<span class="tsd-signature-symbol">:</span> <a href="../modules/core.html#corepreferences" class="tsd-signature-type">CorePreferences</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L317">packages/core/src/browser/common-frontend-contribution.ts:317</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L325">packages/core/src/browser/common-frontend-contribution.ts:325</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -314,7 +329,7 @@
 					<div class="tsd-signature tsd-kind-icon">quick<wbr>Input<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.quickinputservice-2.html" class="tsd-signature-type">QuickInputService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L308">packages/core/src/browser/common-frontend-contribution.ts:308</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L316">packages/core/src/browser/common-frontend-contribution.ts:316</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -324,7 +339,7 @@
 					<div class="tsd-signature tsd-kind-icon">resource<wbr>Context<wbr>Key<span class="tsd-signature-symbol">:</span> <a href="core.resourcecontextkey.html" class="tsd-signature-type">ResourceContextKey</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L299">packages/core/src/browser/common-frontend-contribution.ts:299</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L307">packages/core/src/browser/common-frontend-contribution.ts:307</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -334,7 +349,7 @@
 					<div class="tsd-signature tsd-kind-icon">selection<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="core.selectionservice-1.html" class="tsd-signature-type">SelectionService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L289">packages/core/src/browser/common-frontend-contribution.ts:289</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L296">packages/core/src/browser/common-frontend-contribution.ts:296</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -344,7 +359,7 @@
 					<div class="tsd-signature tsd-kind-icon">shell<span class="tsd-signature-symbol">:</span> <a href="core.applicationshell-2.html" class="tsd-signature-type">ApplicationShell</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L288">packages/core/src/browser/common-frontend-contribution.ts:288</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L295">packages/core/src/browser/common-frontend-contribution.ts:295</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -354,7 +369,7 @@
 					<div class="tsd-signature tsd-kind-icon">should<wbr>Prevent<wbr>Close<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L951">packages/core/src/browser/common-frontend-contribution.ts:951</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L963">packages/core/src/browser/common-frontend-contribution.ts:963</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -364,7 +379,7 @@
 					<div class="tsd-signature tsd-kind-icon">storage<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.storageservice-1.html" class="tsd-signature-type">StorageService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L305">packages/core/src/browser/common-frontend-contribution.ts:305</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L313">packages/core/src/browser/common-frontend-contribution.ts:313</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -374,7 +389,7 @@
 					<div class="tsd-signature tsd-kind-icon">theme<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="core.themeservice.html" class="tsd-signature-type">ThemeService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L314">packages/core/src/browser/common-frontend-contribution.ts:314</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L322">packages/core/src/browser/common-frontend-contribution.ts:322</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -391,7 +406,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L794">packages/core/src/browser/common-frontend-contribution.ts:794</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L806">packages/core/src/browser/common-frontend-contribution.ts:806</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -415,7 +430,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/core.frontendapplicationcontribution-1.html">FrontendApplicationContribution</a>.<a href="../interfaces/core.frontendapplicationcontribution-1.html#configure">configure</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L334">packages/core/src/browser/common-frontend-contribution.ts:334</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L342">packages/core/src/browser/common-frontend-contribution.ts:342</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -424,6 +439,23 @@
 									<h5>app: <a href="core.frontendapplication-1.html" class="tsd-signature-type">FrontendApplication</a></h5>
 								</li>
 							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="configuredisplaylanguage" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> configure<wbr>Display<wbr>Language</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">configure<wbr>Display<wbr>Language<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L996">packages/core/src/browser/common-frontend-contribution.ts:996</a></li>
+								</ul>
+							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -438,7 +470,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L773">packages/core/src/browser/common-frontend-contribution.ts:773</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L785">packages/core/src/browser/common-frontend-contribution.ts:785</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -461,7 +493,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L786">packages/core/src/browser/common-frontend-contribution.ts:786</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L798">packages/core/src/browser/common-frontend-contribution.ts:798</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -493,7 +525,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L430">packages/core/src/browser/common-frontend-contribution.ts:430</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L438">packages/core/src/browser/common-frontend-contribution.ts:438</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -510,7 +542,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L830">packages/core/src/browser/common-frontend-contribution.ts:830</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L842">packages/core/src/browser/common-frontend-contribution.ts:842</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -527,7 +559,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L420">packages/core/src/browser/common-frontend-contribution.ts:420</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L428">packages/core/src/browser/common-frontend-contribution.ts:428</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -544,7 +576,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L425">packages/core/src/browser/common-frontend-contribution.ts:425</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L433">packages/core/src/browser/common-frontend-contribution.ts:433</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -561,7 +593,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L974">packages/core/src/browser/common-frontend-contribution.ts:974</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L986">packages/core/src/browser/common-frontend-contribution.ts:986</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
@@ -578,7 +610,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L947">packages/core/src/browser/common-frontend-contribution.ts:947</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L959">packages/core/src/browser/common-frontend-contribution.ts:959</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -596,7 +628,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/core.colorcontribution.html">ColorContribution</a>.<a href="../interfaces/core.colorcontribution.html#registercolors">registerColors</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L1063">packages/core/src/browser/common-frontend-contribution.ts:1063</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L1096">packages/core/src/browser/common-frontend-contribution.ts:1096</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -620,7 +652,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/core.commandcontribution-1.html">CommandContribution</a>.<a href="../interfaces/core.commandcontribution-1.html#registercommands">registerCommands</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L558">packages/core/src/browser/common-frontend-contribution.ts:558</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L566">packages/core/src/browser/common-frontend-contribution.ts:566</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -643,7 +675,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L960">packages/core/src/browser/common-frontend-contribution.ts:960</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L972">packages/core/src/browser/common-frontend-contribution.ts:972</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -670,7 +702,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/core.keybindingcontribution-1.html">KeybindingContribution</a>.<a href="../interfaces/core.keybindingcontribution-1.html#registerkeybindings">registerKeybindings</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L834">packages/core/src/browser/common-frontend-contribution.ts:834</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L846">packages/core/src/browser/common-frontend-contribution.ts:846</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -694,7 +726,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/core.menucontribution-1.html">MenuContribution</a>.<a href="../interfaces/core.menucontribution-1.html#registermenus">registerMenus</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L440">packages/core/src/browser/common-frontend-contribution.ts:440</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L448">packages/core/src/browser/common-frontend-contribution.ts:448</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -717,7 +749,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L1022">packages/core/src/browser/common-frontend-contribution.ts:1022</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L1055">packages/core/src/browser/common-frontend-contribution.ts:1055</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -734,7 +766,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L984">packages/core/src/browser/common-frontend-contribution.ts:984</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L1017">packages/core/src/browser/common-frontend-contribution.ts:1017</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -751,7 +783,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L808">packages/core/src/browser/common-frontend-contribution.ts:808</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L820">packages/core/src/browser/common-frontend-contribution.ts:820</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -782,7 +814,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L387">packages/core/src/browser/common-frontend-contribution.ts:387</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L395">packages/core/src/browser/common-frontend-contribution.ts:395</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -799,7 +831,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L406">packages/core/src/browser/common-frontend-contribution.ts:406</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L414">packages/core/src/browser/common-frontend-contribution.ts:414</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -822,7 +854,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5e5b0157fd/packages/core/src/browser/common-frontend-contribution.ts#L394">packages/core/src/browser/common-frontend-contribution.ts:394</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6cddd0198a/packages/core/src/browser/common-frontend-contribution.ts#L402">packages/core/src/browser/common-frontend-contribution.ts:402</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1098,6 +1130,9 @@
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.zoomlevel.html">Zoom<wbr>Level</a>
 							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.nls.html">nls</a>
+							</li>
 						</ul>
 					</li>
 				</ul>
@@ -1137,6 +1172,9 @@
 								<a href="core.commonfrontendcontribution-1.html#iconthemes" class="tsd-kind-icon">icon<wbr>Themes</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="core.commonfrontendcontribution-1.html#localizationprovider" class="tsd-kind-icon">localization<wbr>Provider</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="core.commonfrontendcontribution-1.html#messageservice" class="tsd-kind-icon">message<wbr>Service</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
@@ -1174,6 +1212,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="core.commonfrontendcontribution-1.html#configure" class="tsd-kind-icon">configure</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="core.commonfrontendcontribution-1.html#configuredisplaylanguage" class="tsd-kind-icon">configure<wbr>Display<wbr>Language</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="core.commonfrontendcontribution-1.html#findtabarea" class="tsd-kind-icon">find<wbr>Tab<wbr>Area</a>
