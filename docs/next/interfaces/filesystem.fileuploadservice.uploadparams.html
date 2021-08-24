@@ -102,7 +102,7 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Upload<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/471f10ae5b/packages/filesystem/src/browser/file-upload-service.ts#L376">packages/filesystem/src/browser/file-upload-service.ts:376</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d3c20cd61c/packages/filesystem/src/browser/file-upload-service.ts#L491">packages/filesystem/src/browser/file-upload-service.ts:491</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -112,7 +112,7 @@
 					<div class="tsd-signature tsd-kind-icon">progress<span class="tsd-signature-symbol">:</span> <a href="core.progress-1.html" class="tsd-signature-type">Progress</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/471f10ae5b/packages/filesystem/src/browser/file-upload-service.ts#L374">packages/filesystem/src/browser/file-upload-service.ts:374</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d3c20cd61c/packages/filesystem/src/browser/file-upload-service.ts#L489">packages/filesystem/src/browser/file-upload-service.ts:489</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -122,7 +122,7 @@
 					<div class="tsd-signature tsd-kind-icon">source<span class="tsd-signature-symbol">:</span> <a href="../classes/filesystem.fileuploadservice.html#source" class="tsd-signature-type">Source</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/471f10ae5b/packages/filesystem/src/browser/file-upload-service.ts#L373">packages/filesystem/src/browser/file-upload-service.ts:373</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d3c20cd61c/packages/filesystem/src/browser/file-upload-service.ts#L488">packages/filesystem/src/browser/file-upload-service.ts:488</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -132,7 +132,7 @@
 					<div class="tsd-signature tsd-kind-icon">token<span class="tsd-signature-symbol">:</span> <a href="../modules/core.cancellationtoken-1.html" class="tsd-signature-type">CancellationToken</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/471f10ae5b/packages/filesystem/src/browser/file-upload-service.ts#L375">packages/filesystem/src/browser/file-upload-service.ts:375</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d3c20cd61c/packages/filesystem/src/browser/file-upload-service.ts#L490">packages/filesystem/src/browser/file-upload-service.ts:490</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -248,6 +248,9 @@
 								<a href="../classes/filesystem.fileuploadservice.html#deferredupload" class="tsd-kind-icon">deferred<wbr>Upload</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="../classes/filesystem.fileuploadservice.html#filesystempreferences" class="tsd-kind-icon">file<wbr>System<wbr>Preferences</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="../classes/filesystem.fileuploadservice.html#messageservice" class="tsd-kind-icon">message<wbr>Service</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
@@ -259,11 +262,14 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
 								<a href="../classes/filesystem.fileuploadservice.html#upload" class="tsd-kind-icon">UPLOAD</a>
 							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="../classes/filesystem.fileuploadservice.html#maxconcurrentuploads" class="tsd-kind-icon">max<wbr>Concurrent<wbr>Uploads</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="../classes/filesystem.fileuploadservice.html#createuploadform" class="tsd-kind-icon">create<wbr>Upload<wbr>Form</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="../classes/filesystem.fileuploadservice.html#doupload" class="tsd-kind-icon">do<wbr>Upload</a>
+								<a href="../classes/filesystem.fileuploadservice.html#getuploadurl" class="tsd-kind-icon">get<wbr>Upload<wbr>Url</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="../classes/filesystem.fileuploadservice.html#index" class="tsd-kind-icon">index</a>
@@ -299,10 +305,16 @@
 								<a href="../classes/filesystem.fileuploadservice.html#init" class="tsd-kind-icon">init</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="../classes/filesystem.fileuploadservice.html#readfileslice" class="tsd-kind-icon">read<wbr>File<wbr>Slice</a>
+								<a href="../classes/filesystem.fileuploadservice.html#registerevents" class="tsd-kind-icon">register<wbr>Events</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="../classes/filesystem.fileuploadservice.html#upload-1" class="tsd-kind-icon">upload</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="../classes/filesystem.fileuploadservice.html#uploadall" class="tsd-kind-icon">upload<wbr>All</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="../classes/filesystem.fileuploadservice.html#uploadfile" class="tsd-kind-icon">upload<wbr>File</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-protected">
 								<a href="../classes/filesystem.fileuploadservice.html#withprogress" class="tsd-kind-icon">with<wbr>Progress</a>

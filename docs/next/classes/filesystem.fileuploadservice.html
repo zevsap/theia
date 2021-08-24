@@ -98,6 +98,7 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="filesystem.fileuploadservice.html#deferredupload" class="tsd-kind-icon">deferred<wbr>Upload</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="filesystem.fileuploadservice.html#filesystempreferences" class="tsd-kind-icon">file<wbr>System<wbr>Preferences</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="filesystem.fileuploadservice.html#messageservice" class="tsd-kind-icon">message<wbr>Service</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="filesystem.fileuploadservice.html#uploadform" class="tsd-kind-icon">upload<wbr>Form</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="filesystem.fileuploadservice.html#target" class="tsd-kind-icon">TARGET</a></li>
@@ -105,10 +106,16 @@
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="filesystem.fileuploadservice.html#maxconcurrentuploads" class="tsd-kind-icon">max<wbr>Concurrent<wbr>Uploads</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="filesystem.fileuploadservice.html#createuploadform" class="tsd-kind-icon">create<wbr>Upload<wbr>Form</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="filesystem.fileuploadservice.html#doupload" class="tsd-kind-icon">do<wbr>Upload</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="filesystem.fileuploadservice.html#getuploadurl" class="tsd-kind-icon">get<wbr>Upload<wbr>Url</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="filesystem.fileuploadservice.html#index" class="tsd-kind-icon">index</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="filesystem.fileuploadservice.html#indexdatatransfer" class="tsd-kind-icon">index<wbr>Data<wbr>Transfer</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="filesystem.fileuploadservice.html#indexdatatransferitemlist" class="tsd-kind-icon">index<wbr>Data<wbr>Transfer<wbr>Item<wbr>List</a></li>
@@ -120,8 +127,10 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="filesystem.fileuploadservice.html#indexfilelist" class="tsd-kind-icon">index<wbr>File<wbr>List</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="filesystem.fileuploadservice.html#indexformdata" class="tsd-kind-icon">index<wbr>Form<wbr>Data</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="filesystem.fileuploadservice.html#init" class="tsd-kind-icon">init</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="filesystem.fileuploadservice.html#readfileslice" class="tsd-kind-icon">read<wbr>File<wbr>Slice</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="filesystem.fileuploadservice.html#registerevents" class="tsd-kind-icon">register<wbr>Events</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="filesystem.fileuploadservice.html#upload-1" class="tsd-kind-icon">upload</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="filesystem.fileuploadservice.html#uploadall" class="tsd-kind-icon">upload<wbr>All</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="filesystem.fileuploadservice.html#uploadfile" class="tsd-kind-icon">upload<wbr>File</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-protected"><a href="filesystem.fileuploadservice.html#withprogress" class="tsd-kind-icon">with<wbr>Progress</a></li>
 							</ul>
 						</section>
@@ -136,7 +145,7 @@
 					<div class="tsd-signature tsd-kind-icon">Source<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">FormData</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">DataTransfer</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/471f10ae5b/packages/filesystem/src/browser/file-upload-service.ts#L356">packages/filesystem/src/browser/file-upload-service.ts:356</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d3c20cd61c/packages/filesystem/src/browser/file-upload-service.ts#L471">packages/filesystem/src/browser/file-upload-service.ts:471</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -145,11 +154,21 @@
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="deferredupload" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> deferred<wbr>Upload</h3>
-					<div class="tsd-signature tsd-kind-icon">deferred<wbr>Upload<span class="tsd-signature-symbol">:</span> <a href="core.deferred-1.html" class="tsd-signature-type">Deferred</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/filesystem.fileuploadresult.html" class="tsd-signature-type">FileUploadResult</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagOptional">Optional</span> deferred<wbr>Upload</h3>
+					<div class="tsd-signature tsd-kind-icon">deferred<wbr>Upload<span class="tsd-signature-symbol">:</span> <a href="../modules/core.html#deferred-2" class="tsd-signature-type">Deferred</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/filesystem.fileuploadresult.html" class="tsd-signature-type">FileUploadResult</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/471f10ae5b/packages/filesystem/src/browser/file-upload-service.ts#L97">packages/filesystem/src/browser/file-upload-service.ts:97</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d3c20cd61c/packages/filesystem/src/browser/file-upload-service.ts#L53">packages/filesystem/src/browser/file-upload-service.ts:53</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="filesystempreferences" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> file<wbr>System<wbr>Preferences</h3>
+					<div class="tsd-signature tsd-kind-icon">file<wbr>System<wbr>Preferences<span class="tsd-signature-symbol">:</span> <a href="../modules/filesystem.html#filesystempreferences" class="tsd-signature-type">FileSystemPreferences</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d3c20cd61c/packages/filesystem/src/browser/file-upload-service.ts#L59">packages/filesystem/src/browser/file-upload-service.ts:59</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -159,7 +178,7 @@
 					<div class="tsd-signature tsd-kind-icon">message<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="core.messageservice-1.html" class="tsd-signature-type">MessageService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/471f10ae5b/packages/filesystem/src/browser/file-upload-service.ts#L51">packages/filesystem/src/browser/file-upload-service.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d3c20cd61c/packages/filesystem/src/browser/file-upload-service.ts#L56">packages/filesystem/src/browser/file-upload-service.ts:56</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -169,7 +188,7 @@
 					<div class="tsd-signature tsd-kind-icon">upload<wbr>Form<span class="tsd-signature-symbol">:</span> <a href="../interfaces/filesystem.fileuploadservice.form.html" class="tsd-signature-type">Form</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/471f10ae5b/packages/filesystem/src/browser/file-upload-service.ts#L53">packages/filesystem/src/browser/file-upload-service.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d3c20cd61c/packages/filesystem/src/browser/file-upload-service.ts#L52">packages/filesystem/src/browser/file-upload-service.ts:52</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -179,7 +198,7 @@
 					<div class="tsd-signature tsd-kind-icon">TARGET<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;target&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/471f10ae5b/packages/filesystem/src/browser/file-upload-service.ts#L47">packages/filesystem/src/browser/file-upload-service.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d3c20cd61c/packages/filesystem/src/browser/file-upload-service.ts#L49">packages/filesystem/src/browser/file-upload-service.ts:49</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -189,9 +208,29 @@
 					<div class="tsd-signature tsd-kind-icon">UPLOAD<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;upload&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/471f10ae5b/packages/filesystem/src/browser/file-upload-service.ts#L48">packages/filesystem/src/browser/file-upload-service.ts:48</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d3c20cd61c/packages/filesystem/src/browser/file-upload-service.ts#L50">packages/filesystem/src/browser/file-upload-service.ts:50</a></li>
 						</ul>
 					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="maxconcurrentuploads" class="tsd-anchor"></a>
+					<h3>max<wbr>Concurrent<wbr>Uploads</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> maxConcurrentUploads<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d3c20cd61c/packages/filesystem/src/browser/file-upload-service.ts#L61">packages/filesystem/src/browser/file-upload-service.ts:61</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -206,7 +245,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/471f10ae5b/packages/filesystem/src/browser/file-upload-service.ts#L60">packages/filesystem/src/browser/file-upload-service.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d3c20cd61c/packages/filesystem/src/browser/file-upload-service.ts#L71">packages/filesystem/src/browser/file-upload-service.ts:71</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/filesystem.fileuploadservice.form.html" class="tsd-signature-type">Form</a></h4>
@@ -214,42 +253,19 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-					<a name="doupload" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> do<wbr>Upload</h3>
+					<a name="getuploadurl" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Upload<wbr>Url</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">do<wbr>Upload<span class="tsd-signature-symbol">(</span>targetUri<span class="tsd-signature-symbol">: </span><a href="core.uri.html" class="tsd-signature-type">URI</a>, __namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>onDidUpload<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">; </span>progress<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.progress-1.html" class="tsd-signature-type">Progress</a><span class="tsd-signature-symbol">; </span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FormData</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">DataTransfer</span><span class="tsd-signature-symbol">; </span>token<span class="tsd-signature-symbol">: </span><a href="../modules/core.cancellationtoken-1.html" class="tsd-signature-type">CancellationToken</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/filesystem.fileuploadresult.html" class="tsd-signature-type">FileUploadResult</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Upload<wbr>Url<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/471f10ae5b/packages/filesystem/src/browser/file-upload-service.ts#L113">packages/filesystem/src/browser/file-upload-service.ts:113</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d3c20cd61c/packages/filesystem/src/browser/file-upload-service.ts#L128">packages/filesystem/src/browser/file-upload-service.ts:128</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>targetUri: <a href="core.uri.html" class="tsd-signature-type">URI</a></h5>
-								</li>
-								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>onDidUpload<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">; </span>progress<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.progress-1.html" class="tsd-signature-type">Progress</a><span class="tsd-signature-symbol">; </span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FormData</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">DataTransfer</span><span class="tsd-signature-symbol">; </span>token<span class="tsd-signature-symbol">: </span><a href="../modules/core.cancellationtoken-1.html" class="tsd-signature-type">CancellationToken</a><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>on<wbr>Did<wbr>Upload<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5>progress<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.progress-1.html" class="tsd-signature-type">Progress</a></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FormData</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">DataTransfer</span></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5>token<span class="tsd-signature-symbol">: </span><a href="../modules/core.cancellationtoken-1.html" class="tsd-signature-type">CancellationToken</a></h5>
-										</li>
-									</ul>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/filesystem.fileuploadresult.html" class="tsd-signature-type">FileUploadResult</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -263,7 +279,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/471f10ae5b/packages/filesystem/src/browser/file-upload-service.ts#L244">packages/filesystem/src/browser/file-upload-service.ts:244</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d3c20cd61c/packages/filesystem/src/browser/file-upload-service.ts#L359">packages/filesystem/src/browser/file-upload-service.ts:359</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -292,7 +308,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/471f10ae5b/packages/filesystem/src/browser/file-upload-service.ts#L260">packages/filesystem/src/browser/file-upload-service.ts:260</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d3c20cd61c/packages/filesystem/src/browser/file-upload-service.ts#L375">packages/filesystem/src/browser/file-upload-service.ts:375</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -321,7 +337,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/471f10ae5b/packages/filesystem/src/browser/file-upload-service.ts#L285">packages/filesystem/src/browser/file-upload-service.ts:285</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d3c20cd61c/packages/filesystem/src/browser/file-upload-service.ts#L400">packages/filesystem/src/browser/file-upload-service.ts:400</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -350,7 +366,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/471f10ae5b/packages/filesystem/src/browser/file-upload-service.ts#L312">packages/filesystem/src/browser/file-upload-service.ts:312</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d3c20cd61c/packages/filesystem/src/browser/file-upload-service.ts#L427">packages/filesystem/src/browser/file-upload-service.ts:427</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -385,7 +401,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/471f10ae5b/packages/filesystem/src/browser/file-upload-service.ts#L333">packages/filesystem/src/browser/file-upload-service.ts:333</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d3c20cd61c/packages/filesystem/src/browser/file-upload-service.ts#L448">packages/filesystem/src/browser/file-upload-service.ts:448</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -414,7 +430,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/471f10ae5b/packages/filesystem/src/browser/file-upload-service.ts#L296">packages/filesystem/src/browser/file-upload-service.ts:296</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d3c20cd61c/packages/filesystem/src/browser/file-upload-service.ts#L411">packages/filesystem/src/browser/file-upload-service.ts:411</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -443,7 +459,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/471f10ae5b/packages/filesystem/src/browser/file-upload-service.ts#L278">packages/filesystem/src/browser/file-upload-service.ts:278</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d3c20cd61c/packages/filesystem/src/browser/file-upload-service.ts#L393">packages/filesystem/src/browser/file-upload-service.ts:393</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -472,7 +488,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/471f10ae5b/packages/filesystem/src/browser/file-upload-service.ts#L340">packages/filesystem/src/browser/file-upload-service.ts:340</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d3c20cd61c/packages/filesystem/src/browser/file-upload-service.ts#L455">packages/filesystem/src/browser/file-upload-service.ts:455</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -501,7 +517,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/471f10ae5b/packages/filesystem/src/browser/file-upload-service.ts#L269">packages/filesystem/src/browser/file-upload-service.ts:269</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d3c20cd61c/packages/filesystem/src/browser/file-upload-service.ts#L384">packages/filesystem/src/browser/file-upload-service.ts:384</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -530,7 +546,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/471f10ae5b/packages/filesystem/src/browser/file-upload-service.ts#L252">packages/filesystem/src/browser/file-upload-service.ts:252</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d3c20cd61c/packages/filesystem/src/browser/file-upload-service.ts#L367">packages/filesystem/src/browser/file-upload-service.ts:367</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -559,7 +575,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/471f10ae5b/packages/filesystem/src/browser/file-upload-service.ts#L56">packages/filesystem/src/browser/file-upload-service.ts:56</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d3c20cd61c/packages/filesystem/src/browser/file-upload-service.ts#L67">packages/filesystem/src/browser/file-upload-service.ts:67</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -567,28 +583,64 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-					<a name="readfileslice" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> read<wbr>File<wbr>Slice</h3>
+					<a name="registerevents" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> register<wbr>Events</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>File<wbr>Slice<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">File</span>, read<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ArrayBuffer</span><span class="tsd-signature-symbol">; </span>read<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Events<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventTarget</span>, register<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>unregister<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../modules/core.html#eventlisteneroreventlistenerobject-2" class="tsd-signature-type">EventListenerOrEventListenerObject</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/471f10ae5b/packages/filesystem/src/browser/file-upload-service.ts#L207">packages/filesystem/src/browser/file-upload-service.ts:207</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d3c20cd61c/packages/filesystem/src/browser/file-upload-service.ts#L328">packages/filesystem/src/browser/file-upload-service.ts:328</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Utility function to attach events and get a callback to unregister those.</p>
+								</div>
+								<p>You may not call <code>unregister</code> in the same tick as <code>register</code> is invoked.</p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>file: <span class="tsd-signature-type">File</span></h5>
+									<h5>target: <span class="tsd-signature-type">EventTarget</span></h5>
 								</li>
 								<li>
-									<h5>read: <span class="tsd-signature-type">number</span></h5>
+									<h5>register: <span class="tsd-signature-symbol">(</span>unregister<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../modules/core.html#eventlisteneroreventlistenerobject-2" class="tsd-signature-type">EventListenerOrEventListenerObject</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>unregister<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../modules/core.html#eventlisteneroreventlistenerobject-2" class="tsd-signature-type">EventListenerOrEventListenerObject</a><span class="tsd-signature-symbol">&gt;</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>unregister: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+															<ul class="tsd-parameters">
+																<li class="tsd-parameter-signature">
+																	<ul class="tsd-signatures tsd-kind-type-literal">
+																		<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+																	</ul>
+																	<ul class="tsd-descriptions">
+																		<li class="tsd-description">
+																			<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+																		</li>
+																	</ul>
+																</li>
+															</ul>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../modules/core.html#eventlisteneroreventlistenerobject-2" class="tsd-signature-type">EventListenerOrEventListenerObject</a><span class="tsd-signature-symbol">&gt;</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ArrayBuffer</span><span class="tsd-signature-symbol">; </span>read<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -602,7 +654,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/471f10ae5b/packages/filesystem/src/browser/file-upload-service.ts#L98">packages/filesystem/src/browser/file-upload-service.ts:98</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d3c20cd61c/packages/filesystem/src/browser/file-upload-service.ts#L109">packages/filesystem/src/browser/file-upload-service.ts:109</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -618,6 +670,109 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="uploadall" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> upload<wbr>All</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">upload<wbr>All<span class="tsd-signature-symbol">(</span>targetUri<span class="tsd-signature-symbol">: </span><a href="core.uri.html" class="tsd-signature-type">URI</a>, params<span class="tsd-signature-symbol">: </span><a href="../interfaces/filesystem.fileuploadservice.uploadparams.html" class="tsd-signature-type">UploadParams</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/filesystem.fileuploadresult.html" class="tsd-signature-type">FileUploadResult</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d3c20cd61c/packages/filesystem/src/browser/file-upload-service.ts#L132">packages/filesystem/src/browser/file-upload-service.ts:132</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>targetUri: <a href="core.uri.html" class="tsd-signature-type">URI</a></h5>
+								</li>
+								<li>
+									<h5>params: <a href="../interfaces/filesystem.fileuploadservice.uploadparams.html" class="tsd-signature-type">UploadParams</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/filesystem.fileuploadresult.html" class="tsd-signature-type">FileUploadResult</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="uploadfile" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> upload<wbr>File</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">upload<wbr>File<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">File</span>, targetUri<span class="tsd-signature-symbol">: </span><a href="core.uri.html" class="tsd-signature-type">URI</a>, token<span class="tsd-signature-symbol">: </span><a href="../modules/core.cancellationtoken-1.html" class="tsd-signature-type">CancellationToken</a>, onProgress<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>total<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, done<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>response<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>upload<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d3c20cd61c/packages/filesystem/src/browser/file-upload-service.ts#L236">packages/filesystem/src/browser/file-upload-service.ts:236</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>file: <span class="tsd-signature-type">File</span></h5>
+								</li>
+								<li>
+									<h5>targetUri: <a href="core.uri.html" class="tsd-signature-type">URI</a></h5>
+								</li>
+								<li>
+									<h5>token: <a href="../modules/core.cancellationtoken-1.html" class="tsd-signature-type">CancellationToken</a></h5>
+								</li>
+								<li>
+									<h5>onProgress: <span class="tsd-signature-symbol">(</span>total<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, done<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>total<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, done<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>total: <span class="tsd-signature-type">number</span></h5>
+														</li>
+														<li>
+															<h5>done: <span class="tsd-signature-type">number</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>response<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>upload<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter">
+									<h5>response<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Promise that resolves after the uploading step, once the server answers back.</p>
+										</div>
+										<p>Rejects on network error.
+											Rejects if status is not OK (200).
+										Rejects if cancelled.</p>
+									</div>
+								</li>
+								<li class="tsd-parameter">
+									<h5>upload<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Promise that resolves once the uploading is finished.</p>
+										</div>
+										<p>Rejects on network error.
+											Rejects if status is not OK (200).
+										Rejects if cancelled.</p>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-protected">
 					<a name="withprogress" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> with<wbr>Progress</h3>
@@ -628,7 +783,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/471f10ae5b/packages/filesystem/src/browser/file-upload-service.ts#L230">packages/filesystem/src/browser/file-upload-service.ts:230</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/d3c20cd61c/packages/filesystem/src/browser/file-upload-service.ts#L342">packages/filesystem/src/browser/file-upload-service.ts:342</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -664,7 +819,7 @@
 									</ul>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> __namedParameters: <span class="tsd-signature-symbol">{ </span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = { text: &#x27;Uploading Files...&#x27; }</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> __namedParameters: <span class="tsd-signature-symbol">{ </span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = { text: &#x27;Uploading Files&#x27; }</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter">
 											<h5>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
@@ -774,6 +929,9 @@
 								<a href="filesystem.fileuploadservice.html#deferredupload" class="tsd-kind-icon">deferred<wbr>Upload</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="filesystem.fileuploadservice.html#filesystempreferences" class="tsd-kind-icon">file<wbr>System<wbr>Preferences</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="filesystem.fileuploadservice.html#messageservice" class="tsd-kind-icon">message<wbr>Service</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
@@ -785,11 +943,14 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
 								<a href="filesystem.fileuploadservice.html#upload" class="tsd-kind-icon">UPLOAD</a>
 							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="filesystem.fileuploadservice.html#maxconcurrentuploads" class="tsd-kind-icon">max<wbr>Concurrent<wbr>Uploads</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="filesystem.fileuploadservice.html#createuploadform" class="tsd-kind-icon">create<wbr>Upload<wbr>Form</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="filesystem.fileuploadservice.html#doupload" class="tsd-kind-icon">do<wbr>Upload</a>
+								<a href="filesystem.fileuploadservice.html#getuploadurl" class="tsd-kind-icon">get<wbr>Upload<wbr>Url</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="filesystem.fileuploadservice.html#index" class="tsd-kind-icon">index</a>
@@ -825,10 +986,16 @@
 								<a href="filesystem.fileuploadservice.html#init" class="tsd-kind-icon">init</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="filesystem.fileuploadservice.html#readfileslice" class="tsd-kind-icon">read<wbr>File<wbr>Slice</a>
+								<a href="filesystem.fileuploadservice.html#registerevents" class="tsd-kind-icon">register<wbr>Events</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="filesystem.fileuploadservice.html#upload-1" class="tsd-kind-icon">upload</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="filesystem.fileuploadservice.html#uploadall" class="tsd-kind-icon">upload<wbr>All</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="filesystem.fileuploadservice.html#uploadfile" class="tsd-kind-icon">upload<wbr>File</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-protected">
 								<a href="filesystem.fileuploadservice.html#withprogress" class="tsd-kind-icon">with<wbr>Progress</a>
