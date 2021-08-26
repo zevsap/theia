@@ -99,12 +99,14 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="core.electronmenucontribution.html#factory" class="tsd-kind-icon">factory</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="core.electronmenucontribution.html#preferenceservice" class="tsd-kind-icon">preference<wbr>Service</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="core.electronmenucontribution.html#shell" class="tsd-kind-icon">shell</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="core.electronmenucontribution.html#stateservice" class="tsd-kind-icon">state<wbr>Service</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="core.electronmenucontribution.html#handletogglemaximized" class="tsd-kind-icon">handle<wbr>Toggle<wbr>Maximized</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="core.electronmenucontribution.html#hidetoppanel" class="tsd-kind-icon">hide<wbr>Top<wbr>Panel</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="core.electronmenucontribution.html#onstart" class="tsd-kind-icon">on<wbr>Start</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="core.electronmenucontribution.html#registercommands" class="tsd-kind-icon">register<wbr>Commands</a></li>
@@ -122,19 +124,22 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Electron<wbr>Menu<wbr>Contribution<span class="tsd-signature-symbol">(</span>factory<span class="tsd-signature-symbol">: </span><a href="core.electronmainmenufactory.html" class="tsd-signature-type">ElectronMainMenuFactory</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.electronmenucontribution.html" class="tsd-signature-type">ElectronMenuContribution</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Electron<wbr>Menu<wbr>Contribution<span class="tsd-signature-symbol">(</span>factory<span class="tsd-signature-symbol">: </span><a href="core.electronmainmenufactory.html" class="tsd-signature-type">ElectronMainMenuFactory</a>, shell<span class="tsd-signature-symbol">: </span><a href="core.applicationshell-2.html" class="tsd-signature-type">ApplicationShell</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.electronmenucontribution.html" class="tsd-signature-type">ElectronMenuContribution</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5cc8eaf467/packages/core/src/electron-browser/menu/electron-menu-contribution.ts#L81">packages/core/src/electron-browser/menu/electron-menu-contribution.ts:81</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6f80dc1aae/packages/core/src/electron-browser/menu/electron-menu-contribution.ts#L81">packages/core/src/electron-browser/menu/electron-menu-contribution.ts:81</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>factory: <a href="core.electronmainmenufactory.html" class="tsd-signature-type">ElectronMainMenuFactory</a></h5>
+								</li>
+								<li>
+									<h5>shell: <a href="core.applicationshell-2.html" class="tsd-signature-type">ApplicationShell</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="core.electronmenucontribution.html" class="tsd-signature-type">ElectronMenuContribution</a></h4>
@@ -150,7 +155,7 @@
 					<div class="tsd-signature tsd-kind-icon">factory<span class="tsd-signature-symbol">:</span> <a href="core.electronmainmenufactory.html" class="tsd-signature-type">ElectronMainMenuFactory</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5cc8eaf467/packages/core/src/electron-browser/menu/electron-menu-contribution.ts#L84">packages/core/src/electron-browser/menu/electron-menu-contribution.ts:84</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6f80dc1aae/packages/core/src/electron-browser/menu/electron-menu-contribution.ts#L84">packages/core/src/electron-browser/menu/electron-menu-contribution.ts:84</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -160,7 +165,17 @@
 					<div class="tsd-signature tsd-kind-icon">preference<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.preferenceservice-2.html" class="tsd-signature-type">PreferenceService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5cc8eaf467/packages/core/src/electron-browser/menu/electron-menu-contribution.ts#L81">packages/core/src/electron-browser/menu/electron-menu-contribution.ts:81</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6f80dc1aae/packages/core/src/electron-browser/menu/electron-menu-contribution.ts#L81">packages/core/src/electron-browser/menu/electron-menu-contribution.ts:81</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="shell" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> shell</h3>
+					<div class="tsd-signature tsd-kind-icon">shell<span class="tsd-signature-symbol">:</span> <a href="core.applicationshell-2.html" class="tsd-signature-type">ApplicationShell</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6f80dc1aae/packages/core/src/electron-browser/menu/electron-menu-contribution.ts#L85">packages/core/src/electron-browser/menu/electron-menu-contribution.ts:85</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -170,13 +185,30 @@
 					<div class="tsd-signature tsd-kind-icon">state<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="core.frontendapplicationstateservice.html" class="tsd-signature-type">FrontendApplicationStateService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5cc8eaf467/packages/core/src/electron-browser/menu/electron-menu-contribution.ts#L78">packages/core/src/electron-browser/menu/electron-menu-contribution.ts:78</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6f80dc1aae/packages/core/src/electron-browser/menu/electron-menu-contribution.ts#L78">packages/core/src/electron-browser/menu/electron-menu-contribution.ts:78</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="handletogglemaximized" class="tsd-anchor"></a>
+					<h3>handle<wbr>Toggle<wbr>Maximized</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">handle<wbr>Toggle<wbr>Maximized<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6f80dc1aae/packages/core/src/electron-browser/menu/electron-menu-contribution.ts#L122">packages/core/src/electron-browser/menu/electron-menu-contribution.ts:122</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 					<a name="hidetoppanel" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> hide<wbr>Top<wbr>Panel</h3>
@@ -187,7 +219,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5cc8eaf467/packages/core/src/electron-browser/menu/electron-menu-contribution.ts#L118">packages/core/src/electron-browser/menu/electron-menu-contribution.ts:118</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6f80dc1aae/packages/core/src/electron-browser/menu/electron-menu-contribution.ts#L135">packages/core/src/electron-browser/menu/electron-menu-contribution.ts:135</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -219,7 +251,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/core.frontendapplicationcontribution-1.html">FrontendApplicationContribution</a>.<a href="../interfaces/core.frontendapplicationcontribution-1.html#onstart">onStart</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5cc8eaf467/packages/core/src/electron-browser/menu/electron-menu-contribution.ts#L87">packages/core/src/electron-browser/menu/electron-menu-contribution.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6f80dc1aae/packages/core/src/electron-browser/menu/electron-menu-contribution.ts#L88">packages/core/src/electron-browser/menu/electron-menu-contribution.ts:88</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -243,7 +275,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/core.commandcontribution-1.html">CommandContribution</a>.<a href="../interfaces/core.commandcontribution-1.html#registercommands">registerCommands</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5cc8eaf467/packages/core/src/electron-browser/menu/electron-menu-contribution.ts#L141">packages/core/src/electron-browser/menu/electron-menu-contribution.ts:141</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6f80dc1aae/packages/core/src/electron-browser/menu/electron-menu-contribution.ts#L158">packages/core/src/electron-browser/menu/electron-menu-contribution.ts:158</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -267,7 +299,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/core.keybindingcontribution-1.html">KeybindingContribution</a>.<a href="../interfaces/core.keybindingcontribution-1.html#registerkeybindings">registerKeybindings</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5cc8eaf467/packages/core/src/electron-browser/menu/electron-menu-contribution.ts#L197">packages/core/src/electron-browser/menu/electron-menu-contribution.ts:197</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6f80dc1aae/packages/core/src/electron-browser/menu/electron-menu-contribution.ts#L214">packages/core/src/electron-browser/menu/electron-menu-contribution.ts:214</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -291,7 +323,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/core.menucontribution-1.html">MenuContribution</a>.<a href="../interfaces/core.menucontribution-1.html#registermenus">registerMenus</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5cc8eaf467/packages/core/src/electron-browser/menu/electron-menu-contribution.ts#L230">packages/core/src/electron-browser/menu/electron-menu-contribution.ts:230</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6f80dc1aae/packages/core/src/electron-browser/menu/electron-menu-contribution.ts#L247">packages/core/src/electron-browser/menu/electron-menu-contribution.ts:247</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -308,19 +340,19 @@
 					<a name="setmenu" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> set<wbr>Menu</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Menu<span class="tsd-signature-symbol">(</span>menu<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">electron.Menu</span>, electronWindow<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">electron.BrowserWindow</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Menu<span class="tsd-signature-symbol">(</span>menu<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">electron.Menu</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, electronWindow<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">electron.BrowserWindow</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5cc8eaf467/packages/core/src/electron-browser/menu/electron-menu-contribution.ts#L132">packages/core/src/electron-browser/menu/electron-menu-contribution.ts:132</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/6f80dc1aae/packages/core/src/electron-browser/menu/electron-menu-contribution.ts#L149">packages/core/src/electron-browser/menu/electron-menu-contribution.ts:149</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> menu: <span class="tsd-signature-type">electron.Menu</span><span class="tsd-signature-symbol"> = this.factory.createMenuBar()</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> menu: <span class="tsd-signature-type">electron.Menu</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> = this.factory.createMenuBar()</span></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> electronWindow: <span class="tsd-signature-type">electron.BrowserWindow</span><span class="tsd-signature-symbol"> = electron.remote.getCurrentWindow()</span></h5>
@@ -617,7 +649,13 @@
 								<a href="core.electronmenucontribution.html#preferenceservice" class="tsd-kind-icon">preference<wbr>Service</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="core.electronmenucontribution.html#shell" class="tsd-kind-icon">shell</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="core.electronmenucontribution.html#stateservice" class="tsd-kind-icon">state<wbr>Service</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="core.electronmenucontribution.html#handletogglemaximized" class="tsd-kind-icon">handle<wbr>Toggle<wbr>Maximized</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="core.electronmenucontribution.html#hidetoppanel" class="tsd-kind-icon">hide<wbr>Top<wbr>Panel</a>
