@@ -86,6 +86,7 @@
 					<li><span class="tsd-signature-type">IMessageHandler</span></li>
 					<li><span class="tsd-signature-type">IObservableDisposable</span></li>
 					<li><a href="../modules/core.statefulwidget-2.html" class="tsd-signature-type">StatefulWidget</a></li>
+					<li><a href="../modules/core.descriptionwidget-1.html" class="tsd-signature-type">DescriptionWidget</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -108,6 +109,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.pluginviewwidget.html#_description" class="tsd-kind-icon">_description</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.pluginviewwidget.html#_message" class="tsd-kind-icon">_message</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="plugin_ext.pluginviewwidget.html#_suppressupdateviewvisibility" class="tsd-kind-icon">_suppress<wbr>Update<wbr>View<wbr>Visibility</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="plugin_ext.pluginviewwidget.html#commands" class="tsd-kind-icon">commands</a></li>
@@ -122,6 +124,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="plugin_ext.pluginviewwidget.html#layout" class="tsd-kind-icon">layout</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="plugin_ext.pluginviewwidget.html#menus" class="tsd-kind-icon">menus</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="plugin_ext.pluginviewwidget.html#node" class="tsd-kind-icon">node</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.pluginviewwidget.html#ondidchangedescription" class="tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Description</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.pluginviewwidget.html#options" class="tsd-kind-icon">options</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="plugin_ext.pluginviewwidget.html#parent" class="tsd-kind-icon">parent</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="plugin_ext.pluginviewwidget.html#title" class="tsd-kind-icon">title</a></li>
@@ -132,6 +135,7 @@
 						<section class="tsd-index-section ">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="plugin_ext.pluginviewwidget.html#description" class="tsd-kind-icon">description</a></li>
 								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="plugin_ext.pluginviewwidget.html#message" class="tsd-kind-icon">message</a></li>
 								<li class="tsd-kind-set-signature tsd-parent-kind-class"><a href="plugin_ext.pluginviewwidget.html#suppressupdateviewvisibility" class="tsd-kind-icon">suppress<wbr>Update<wbr>View<wbr>Visibility</a></li>
 							</ul>
@@ -198,7 +202,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="preferences.preferenceswidget.html">PreferencesWidget</a>.<a href="preferences.preferenceswidget.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5abda1f04ac/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L45">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7442150b335/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L47">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:47</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.pluginviewwidget.html" class="tsd-signature-type">PluginViewWidget</a></h4>
@@ -209,12 +213,22 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_description" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _description</h3>
+					<div class="tsd-signature tsd-kind-icon">_description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7442150b335/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L119">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:119</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="_message" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _message</h3>
 					<div class="tsd-signature tsd-kind-icon">_message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5abda1f04ac/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L105">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:105</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7442150b335/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L109">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:109</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -224,7 +238,7 @@
 					<div class="tsd-signature tsd-kind-icon">_suppress<wbr>Update<wbr>View<wbr>Visibility<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5abda1f04ac/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L87">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:87</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7442150b335/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L91">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:91</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -234,7 +248,7 @@
 					<div class="tsd-signature tsd-kind-icon">commands<span class="tsd-signature-symbol">:</span> <a href="core.commandregistry-1.html" class="tsd-signature-type">CommandRegistry</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5abda1f04ac/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L39">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7442150b335/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L41">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:41</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -244,7 +258,7 @@
 					<div class="tsd-signature tsd-kind-icon">context<wbr>Keys<span class="tsd-signature-symbol">:</span> <a href="plugin_ext.viewcontextkeyservice.html" class="tsd-signature-type">ViewContextKeyService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5abda1f04ac/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L42">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7442150b335/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L44">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:44</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -393,7 +407,7 @@
 					<div class="tsd-signature tsd-kind-icon">menus<span class="tsd-signature-symbol">:</span> <a href="core.menumodelregistry-1.html" class="tsd-signature-type">MenuModelRegistry</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5abda1f04ac/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L36">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7442150b335/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L38">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:38</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -414,12 +428,22 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="ondidchangedescription" class="tsd-anchor"></a>
+					<h3>on<wbr>Did<wbr>Change<wbr>Description</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Description<span class="tsd-signature-symbol">:</span> <a href="core.emitter-1.html" class="tsd-signature-type">Emitter</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Emitter&lt;void&gt;()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7442150b335/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L55">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:55</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="options" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> options</h3>
 					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <a href="plugin_ext.pluginviewwidgetidentifier.html" class="tsd-signature-type">PluginViewWidgetIdentifier</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5abda1f04ac/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L45">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:45</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7442150b335/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L47">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:47</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -475,7 +499,7 @@
 					<div class="tsd-signature tsd-kind-icon">updating<wbr>View<wbr>Visibility<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5abda1f04ac/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L92">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:92</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7442150b335/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L96">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:96</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -499,6 +523,38 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Accessors</h2>
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
+					<a name="description" class="tsd-anchor"></a>
+					<h3>description</h3>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> description<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> description<span class="tsd-signature-symbol">(</span>description<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7442150b335/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L120">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:120</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7442150b335/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L124">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:124</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>description: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
 					<a name="message" class="tsd-anchor"></a>
 					<h3>message</h3>
 					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
@@ -509,7 +565,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5abda1f04ac/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L106">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:106</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7442150b335/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L110">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:110</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
@@ -517,7 +573,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5abda1f04ac/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L110">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:110</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7442150b335/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L114">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:114</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -540,7 +596,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5abda1f04ac/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L88">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:88</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7442150b335/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L92">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:92</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -631,7 +687,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="preferences.preferenceswidget.html">PreferencesWidget</a>.<a href="preferences.preferenceswidget.html#addwidget">addWidget</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5abda1f04ac/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L124">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:124</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7442150b335/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L138">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:138</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -892,7 +948,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5abda1f04ac/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L54">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7442150b335/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L58">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:58</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -910,7 +966,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="preferences.preferenceswidget.html">PreferencesWidget</a>.<a href="preferences.preferenceswidget.html#insertwidget">insertWidget</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5abda1f04ac/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L129">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:129</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7442150b335/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L143">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:143</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -974,7 +1030,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="core.basewidget-2.html">BaseWidget</a>.<a href="core.basewidget-2.html#onactivaterequest">onActivateRequest</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5abda1f04ac/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L58">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7442150b335/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L62">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:62</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1532,7 +1588,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5abda1f04ac/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L78">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:78</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7442150b335/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L82">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:82</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1652,7 +1708,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5abda1f04ac/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L69">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7442150b335/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L73">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:73</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.pluginviewwidget.state.html" class="tsd-signature-type">State</a></h4>
@@ -1774,7 +1830,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5abda1f04ac/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L93">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:93</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7442150b335/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L97">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:97</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1809,7 +1865,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5abda1f04ac/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L115">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:115</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7442150b335/packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts#L129">packages/plugin-ext/src/main/browser/view/plugin-view-widget.ts:129</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1947,6 +2003,9 @@
 								<a href="plugin_ext.pluginviewwidget.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="plugin_ext.pluginviewwidget.html#_description" class="tsd-kind-icon">_description</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="plugin_ext.pluginviewwidget.html#_message" class="tsd-kind-icon">_message</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
@@ -1989,6 +2048,9 @@
 								<a href="plugin_ext.pluginviewwidget.html#node" class="tsd-kind-icon">node</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="plugin_ext.pluginviewwidget.html#ondidchangedescription" class="tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Description</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="plugin_ext.pluginviewwidget.html#options" class="tsd-kind-icon">options</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
@@ -2002,6 +2064,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="plugin_ext.pluginviewwidget.html#widgets" class="tsd-kind-icon">widgets</a>
+							</li>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class">
+								<a href="plugin_ext.pluginviewwidget.html#description" class="tsd-kind-icon">description</a>
 							</li>
 							<li class=" tsd-kind-accessor tsd-parent-kind-class">
 								<a href="plugin_ext.pluginviewwidget.html#message" class="tsd-kind-icon">message</a>
