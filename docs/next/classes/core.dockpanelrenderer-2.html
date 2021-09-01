@@ -101,6 +101,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="core.dockpanelrenderer-2.html#breadcrumbsrendererfactory" class="tsd-kind-icon">breadcrumbs<wbr>Renderer<wbr>Factory</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="core.dockpanelrenderer-2.html#tabbarclasses" class="tsd-kind-icon">tab<wbr>Bar<wbr>Classes</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="core.dockpanelrenderer-2.html#tabbarrendererfactory" class="tsd-kind-icon">tab<wbr>Bar<wbr>Renderer<wbr>Factory</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="core.dockpanelrenderer-2.html#tabbartoolbarfactory" class="tsd-kind-icon">tab<wbr>Bar<wbr>Toolbar<wbr>Factory</a></li>
@@ -124,13 +125,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Dock<wbr>Panel<wbr>Renderer<span class="tsd-signature-symbol">(</span>tabBarRendererFactory<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="core.tabbarrenderer-2.html" class="tsd-signature-type">TabBarRenderer</a>, tabBarToolbarRegistry<span class="tsd-signature-symbol">: </span><a href="core.tabbartoolbarregistry.html" class="tsd-signature-type">TabBarToolbarRegistry</a>, tabBarToolbarFactory<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="core.tabbartoolbar.html" class="tsd-signature-type">TabBarToolbar</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.dockpanelrenderer-2.html" class="tsd-signature-type">DockPanelRenderer</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Dock<wbr>Panel<wbr>Renderer<span class="tsd-signature-symbol">(</span>tabBarRendererFactory<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="core.tabbarrenderer-2.html" class="tsd-signature-type">TabBarRenderer</a>, tabBarToolbarRegistry<span class="tsd-signature-symbol">: </span><a href="core.tabbartoolbarregistry.html" class="tsd-signature-type">TabBarToolbarRegistry</a>, tabBarToolbarFactory<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="core.tabbartoolbar.html" class="tsd-signature-type">TabBarToolbar</a>, breadcrumbsRendererFactory<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.breadcrumbsrendererfactory-2.html" class="tsd-signature-type">BreadcrumbsRendererFactory</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.dockpanelrenderer-2.html" class="tsd-signature-type">DockPanelRenderer</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8929f6eb593/packages/core/src/browser/shell/application-shell.ts#L78">packages/core/src/browser/shell/application-shell.ts:78</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/application-shell.ts#L79">packages/core/src/browser/shell/application-shell.ts:79</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -168,6 +169,9 @@
 										</li>
 									</ul>
 								</li>
+								<li>
+									<h5>breadcrumbsRendererFactory: <a href="../interfaces/core.breadcrumbsrendererfactory-2.html" class="tsd-signature-type">BreadcrumbsRendererFactory</a></h5>
+								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="core.dockpanelrenderer-2.html" class="tsd-signature-type">DockPanelRenderer</a></h4>
 						</li>
@@ -176,13 +180,23 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="breadcrumbsrendererfactory" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> breadcrumbs<wbr>Renderer<wbr>Factory</h3>
+					<div class="tsd-signature tsd-kind-icon">breadcrumbs<wbr>Renderer<wbr>Factory<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.breadcrumbsrendererfactory-2.html" class="tsd-signature-type">BreadcrumbsRendererFactory</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/application-shell.ts#L85">packages/core/src/browser/shell/application-shell.ts:85</a></li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="tabbarclasses" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> tab<wbr>Bar<wbr>Classes</h3>
 					<div class="tsd-signature tsd-kind-icon">tab<wbr>Bar<wbr>Classes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8929f6eb593/packages/core/src/browser/shell/application-shell.ts#L78">packages/core/src/browser/shell/application-shell.ts:78</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/application-shell.ts#L79">packages/core/src/browser/shell/application-shell.ts:79</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -192,7 +206,7 @@
 					<div class="tsd-signature tsd-kind-icon">tab<wbr>Bar<wbr>Renderer<wbr>Factory<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="core.tabbarrenderer-2.html" class="tsd-signature-type">TabBarRenderer</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8929f6eb593/packages/core/src/browser/shell/application-shell.ts#L81">packages/core/src/browser/shell/application-shell.ts:81</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/application-shell.ts#L82">packages/core/src/browser/shell/application-shell.ts:82</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -217,7 +231,7 @@
 					<div class="tsd-signature tsd-kind-icon">tab<wbr>Bar<wbr>Toolbar<wbr>Factory<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="core.tabbartoolbar.html" class="tsd-signature-type">TabBarToolbar</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8929f6eb593/packages/core/src/browser/shell/application-shell.ts#L83">packages/core/src/browser/shell/application-shell.ts:83</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/application-shell.ts#L84">packages/core/src/browser/shell/application-shell.ts:84</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -242,7 +256,7 @@
 					<div class="tsd-signature tsd-kind-icon">tab<wbr>Bar<wbr>Toolbar<wbr>Registry<span class="tsd-signature-symbol">:</span> <a href="core.tabbartoolbarregistry.html" class="tsd-signature-type">TabBarToolbarRegistry</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8929f6eb593/packages/core/src/browser/shell/application-shell.ts#L82">packages/core/src/browser/shell/application-shell.ts:82</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/application-shell.ts#L83">packages/core/src/browser/shell/application-shell.ts:83</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -259,7 +273,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8929f6eb593/packages/core/src/browser/shell/application-shell.ts#L104">packages/core/src/browser/shell/application-shell.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/application-shell.ts#L110">packages/core/src/browser/shell/application-shell.ts:110</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLDivElement</span></h4>
@@ -276,7 +290,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8929f6eb593/packages/core/src/browser/shell/application-shell.ts#L86">packages/core/src/browser/shell/application-shell.ts:86</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/application-shell.ts#L88">packages/core/src/browser/shell/application-shell.ts:88</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TabBar</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -293,7 +307,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8929f6eb593/packages/core/src/browser/shell/application-shell.ts#L108">packages/core/src/browser/shell/application-shell.ts:108</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/application-shell.ts#L114">packages/core/src/browser/shell/application-shell.ts:114</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -461,13 +475,13 @@
 								<a href="../modules/core.mocktreemodel.html">Mock<wbr>Tree<wbr>Model</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/core.navigatable-1.html">Navigatable</a>
+								<a href="../modules/core.navigatable-2.html">Navigatable</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/core.navigatablewidget-1.html">Navigatable<wbr>Widget</a>
+								<a href="../modules/core.navigatablewidget-2.html">Navigatable<wbr>Widget</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/core.navigatablewidgetoptions-1.html">Navigatable<wbr>Widget<wbr>Options</a>
+								<a href="../modules/core.navigatablewidgetoptions-2.html">Navigatable<wbr>Widget<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.os-1.html">OS</a>
@@ -536,6 +550,9 @@
 								<a href="../modules/core.statefulwidget-2.html">Stateful<wbr>Widget</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.styles-2.html">Styles</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.tabbardelegator.html">Tab<wbr>Bar<wbr>Delegator</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
@@ -602,6 +619,9 @@
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
 								<a href="core.dockpanelrenderer-2.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="core.dockpanelrenderer-2.html#breadcrumbsrendererfactory" class="tsd-kind-icon">breadcrumbs<wbr>Renderer<wbr>Factory</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="core.dockpanelrenderer-2.html#tabbarclasses" class="tsd-kind-icon">tab<wbr>Bar<wbr>Classes</a>

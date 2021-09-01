@@ -79,7 +79,7 @@
 					<p>There is a dedicated HTML element for toolbar which does <strong>not</strong> contained in the scrollable element.</p>
 					<p>+-------------------------+-----------------+
 						|[TAB_0][TAB_1][TAB_2][TAB|         Toolbar |
-					+-------------Scrollable--+-None-Scrollable-+</p>
+					+-------------Scrollable--+-Non-Scrollable-+</p>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -122,6 +122,9 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="core.toolbarawaretabbar-2.html#allowdeselect" class="tsd-kind-icon">allow<wbr>Deselect</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="core.toolbarawaretabbar-2.html#breadcrumbscontainer" class="tsd-kind-icon">breadcrumbs<wbr>Container</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="core.toolbarawaretabbar-2.html#breadcrumbsrenderer" class="tsd-kind-icon">breadcrumbs<wbr>Renderer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="core.toolbarawaretabbar-2.html#breadcrumbsrendererfactory" class="tsd-kind-icon">breadcrumbs<wbr>Renderer<wbr>Factory</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="core.toolbarawaretabbar-2.html#contentcontainer" class="tsd-kind-icon">content<wbr>Container</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="core.toolbarawaretabbar-2.html#currentchanged" class="tsd-kind-icon">current<wbr>Changed</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="core.toolbarawaretabbar-2.html#currentindex" class="tsd-kind-icon">current<wbr>Index</a></li>
@@ -153,6 +156,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="core.toolbarawaretabbar-2.html#titles" class="tsd-kind-icon">titles</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="core.toolbarawaretabbar-2.html#todispose" class="tsd-kind-icon">to<wbr>Dispose</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="core.toolbarawaretabbar-2.html#toolbar" class="tsd-kind-icon">toolbar</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="core.toolbarawaretabbar-2.html#toprow" class="tsd-kind-icon">top<wbr>Row</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -209,6 +213,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="core.toolbarawaretabbar-2.html#testflag" class="tsd-kind-icon">test<wbr>Flag</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="core.toolbarawaretabbar-2.html#toggleclass" class="tsd-kind-icon">toggle<wbr>Class</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="core.toolbarawaretabbar-2.html#update" class="tsd-kind-icon">update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="core.toolbarawaretabbar-2.html#updatebreadcrumbs" class="tsd-kind-icon">update<wbr>Breadcrumbs</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="core.toolbarawaretabbar-2.html#updatetoolbar" class="tsd-kind-icon">update<wbr>Toolbar</a></li>
 							</ul>
 						</section>
@@ -221,14 +226,14 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Toolbar<wbr>Aware<wbr>Tab<wbr>Bar<span class="tsd-signature-symbol">(</span>tabBarToolbarRegistry<span class="tsd-signature-symbol">: </span><a href="core.tabbartoolbarregistry.html" class="tsd-signature-type">TabBarToolbarRegistry</a>, tabBarToolbarFactory<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="core.tabbartoolbar.html" class="tsd-signature-type">TabBarToolbar</a>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/core.scrollabletabbar-2.ioptions.html" class="tsd-signature-type">IOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Options</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.toolbarawaretabbar-2.html" class="tsd-signature-type">ToolbarAwareTabBar</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Toolbar<wbr>Aware<wbr>Tab<wbr>Bar<span class="tsd-signature-symbol">(</span>tabBarToolbarRegistry<span class="tsd-signature-symbol">: </span><a href="core.tabbartoolbarregistry.html" class="tsd-signature-type">TabBarToolbarRegistry</a>, tabBarToolbarFactory<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="core.tabbartoolbar.html" class="tsd-signature-type">TabBarToolbar</a>, breadcrumbsRendererFactory<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.breadcrumbsrendererfactory-2.html" class="tsd-signature-type">BreadcrumbsRendererFactory</a>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/core.scrollabletabbar-2.ioptions.html" class="tsd-signature-type">IOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Options</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.toolbarawaretabbar-2.html" class="tsd-signature-type">ToolbarAwareTabBar</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides <a href="core.scrollabletabbar-2.html">ScrollableTabBar</a>.<a href="core.scrollabletabbar-2.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8929f6eb593/packages/core/src/browser/shell/tab-bars.ts#L585">packages/core/src/browser/shell/tab-bars.ts:585</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/tab-bars.ts#L590">packages/core/src/browser/shell/tab-bars.ts:590</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -250,6 +255,9 @@
 											</ul>
 										</li>
 									</ul>
+								</li>
+								<li>
+									<h5>breadcrumbsRendererFactory: <a href="../interfaces/core.breadcrumbsrendererfactory-2.html" class="tsd-signature-type">BreadcrumbsRendererFactory</a></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/core.scrollabletabbar-2.ioptions.html" class="tsd-signature-type">IOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Options</span></h5>
@@ -283,12 +291,42 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-					<a name="contentcontainer" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> content<wbr>Container</h3>
-					<div class="tsd-signature tsd-kind-icon">content<wbr>Container<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+					<a name="breadcrumbscontainer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> breadcrumbs<wbr>Container</h3>
+					<div class="tsd-signature tsd-kind-icon">breadcrumbs<wbr>Container<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8929f6eb593/packages/core/src/browser/shell/tab-bars.ts#L584">packages/core/src/browser/shell/tab-bars.ts:584</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/tab-bars.ts#L588">packages/core/src/browser/shell/tab-bars.ts:588</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="breadcrumbsrenderer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> breadcrumbs<wbr>Renderer</h3>
+					<div class="tsd-signature tsd-kind-icon">breadcrumbs<wbr>Renderer<span class="tsd-signature-symbol">:</span> <a href="core.breadcrumbsrenderer-2.html" class="tsd-signature-type">BreadcrumbsRenderer</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/tab-bars.ts#L589">packages/core/src/browser/shell/tab-bars.ts:589</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="breadcrumbsrendererfactory" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> breadcrumbs<wbr>Renderer<wbr>Factory</h3>
+					<div class="tsd-signature tsd-kind-icon">breadcrumbs<wbr>Renderer<wbr>Factory<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.breadcrumbsrendererfactory-2.html" class="tsd-signature-type">BreadcrumbsRendererFactory</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/tab-bars.ts#L595">packages/core/src/browser/shell/tab-bars.ts:595</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="contentcontainer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> content<wbr>Container</h3>
+					<div class="tsd-signature tsd-kind-icon">content<wbr>Container<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/tab-bars.ts#L586">packages/core/src/browser/shell/tab-bars.ts:586</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -533,7 +571,7 @@
 					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.scrollabletabbar-2.ioptions.html" class="tsd-signature-type">IOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Options</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8929f6eb593/packages/core/src/browser/shell/tab-bars.ts#L590">packages/core/src/browser/shell/tab-bars.ts:590</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/tab-bars.ts#L596">packages/core/src/browser/shell/tab-bars.ts:596</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -619,7 +657,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="core.scrollabletabbar-2.html">ScrollableTabBar</a>.<a href="core.scrollabletabbar-2.html#scrollbar">scrollBar</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8929f6eb593/packages/core/src/browser/shell/tab-bars.ts#L461">packages/core/src/browser/shell/tab-bars.ts:461</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/tab-bars.ts#L463">packages/core/src/browser/shell/tab-bars.ts:463</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -651,7 +689,7 @@
 					<div class="tsd-signature tsd-kind-icon">tab<wbr>Bar<wbr>Toolbar<wbr>Factory<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="core.tabbartoolbar.html" class="tsd-signature-type">TabBarToolbar</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8929f6eb593/packages/core/src/browser/shell/tab-bars.ts#L589">packages/core/src/browser/shell/tab-bars.ts:589</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/tab-bars.ts#L594">packages/core/src/browser/shell/tab-bars.ts:594</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -676,7 +714,7 @@
 					<div class="tsd-signature tsd-kind-icon">tab<wbr>Bar<wbr>Toolbar<wbr>Registry<span class="tsd-signature-symbol">:</span> <a href="core.tabbartoolbarregistry.html" class="tsd-signature-type">TabBarToolbarRegistry</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8929f6eb593/packages/core/src/browser/shell/tab-bars.ts#L588">packages/core/src/browser/shell/tab-bars.ts:588</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/tab-bars.ts#L593">packages/core/src/browser/shell/tab-bars.ts:593</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -811,7 +849,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="core.scrollabletabbar-2.html">ScrollableTabBar</a>.<a href="core.scrollabletabbar-2.html#todispose">toDispose</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8929f6eb593/packages/core/src/browser/shell/tab-bars.ts#L466">packages/core/src/browser/shell/tab-bars.ts:466</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/tab-bars.ts#L468">packages/core/src/browser/shell/tab-bars.ts:468</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -821,7 +859,17 @@
 					<div class="tsd-signature tsd-kind-icon">toolbar<span class="tsd-signature-symbol">:</span> <a href="core.tabbartoolbar.html" class="tsd-signature-type">TabBarToolbar</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8929f6eb593/packages/core/src/browser/shell/tab-bars.ts#L585">packages/core/src/browser/shell/tab-bars.ts:585</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/tab-bars.ts#L587">packages/core/src/browser/shell/tab-bars.ts:587</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="toprow" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> top<wbr>Row</h3>
+					<div class="tsd-signature tsd-kind-icon">top<wbr>Row<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/tab-bars.ts#L590">packages/core/src/browser/shell/tab-bars.ts:590</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -839,7 +887,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="core.scrollabletabbar-2.html">ScrollableTabBar</a>.<a href="core.scrollabletabbar-2.html#contentnode">contentNode</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8929f6eb593/packages/core/src/browser/shell/tab-bars.ts#L600">packages/core/src/browser/shell/tab-bars.ts:600</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/tab-bars.ts#L618">packages/core/src/browser/shell/tab-bars.ts:618</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -862,7 +910,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="core.scrollabletabbar-2.html">ScrollableTabBar</a>.<a href="core.scrollabletabbar-2.html#scrollbarhost">scrollbarHost</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8929f6eb593/packages/core/src/browser/shell/tab-bars.ts#L607">packages/core/src/browser/shell/tab-bars.ts:607</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/tab-bars.ts#L625">packages/core/src/browser/shell/tab-bars.ts:625</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -884,7 +932,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8929f6eb593/packages/core/src/browser/shell/tab-bars.ts#L611">packages/core/src/browser/shell/tab-bars.ts:611</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/tab-bars.ts#L629">packages/core/src/browser/shell/tab-bars.ts:629</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLElement</span></h4>
@@ -1153,7 +1201,7 @@
 								<p>Inherited from <a href="core.scrollabletabbar-2.html">ScrollableTabBar</a>.<a href="core.scrollabletabbar-2.html#dispose">dispose</a></p>
 								<p>Overrides TabBar.dispose</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8929f6eb593/packages/core/src/browser/shell/tab-bars.ts#L473">packages/core/src/browser/shell/tab-bars.ts:473</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/tab-bars.ts#L475">packages/core/src/browser/shell/tab-bars.ts:475</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1198,7 +1246,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="core.scrollabletabbar-2.html">ScrollableTabBar</a>.<a href="core.scrollabletabbar-2.html#handleevent">handleEvent</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8929f6eb593/packages/core/src/browser/shell/tab-bars.ts#L645">packages/core/src/browser/shell/tab-bars.ts:645</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/tab-bars.ts#L673">packages/core/src/browser/shell/tab-bars.ts:673</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1398,7 +1446,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="core.scrollabletabbar-2.html">ScrollableTabBar</a>.<a href="core.scrollabletabbar-2.html#onafterattach">onAfterAttach</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8929f6eb593/packages/core/src/browser/shell/tab-bars.ts#L615">packages/core/src/browser/shell/tab-bars.ts:615</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/tab-bars.ts#L639">packages/core/src/browser/shell/tab-bars.ts:639</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1548,7 +1596,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="core.scrollabletabbar-2.html">ScrollableTabBar</a>.<a href="core.scrollabletabbar-2.html#onbeforedetach">onBeforeDetach</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8929f6eb593/packages/core/src/browser/shell/tab-bars.ts#L625">packages/core/src/browser/shell/tab-bars.ts:625</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/tab-bars.ts#L653">packages/core/src/browser/shell/tab-bars.ts:653</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1771,7 +1819,7 @@
 								<p>Inherited from <a href="core.scrollabletabbar-2.html">ScrollableTabBar</a>.<a href="core.scrollabletabbar-2.html#onresize">onResize</a></p>
 								<p>Overrides <a href="core.basewidget-2.html">BaseWidget</a>.<a href="core.basewidget-2.html#onresize">onResize</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8929f6eb593/packages/core/src/browser/shell/tab-bars.ts#L503">packages/core/src/browser/shell/tab-bars.ts:503</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/tab-bars.ts#L505">packages/core/src/browser/shell/tab-bars.ts:505</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1795,7 +1843,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="core.scrollabletabbar-2.html">ScrollableTabBar</a>.<a href="core.scrollabletabbar-2.html#onupdaterequest">onUpdateRequest</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8929f6eb593/packages/core/src/browser/shell/tab-bars.ts#L632">packages/core/src/browser/shell/tab-bars.ts:632</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/tab-bars.ts#L660">packages/core/src/browser/shell/tab-bars.ts:660</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1992,7 +2040,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="core.scrollabletabbar-2.html">ScrollableTabBar</a>.<a href="core.scrollabletabbar-2.html#revealtab">revealTab</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8929f6eb593/packages/core/src/browser/shell/tab-bars.ts#L516">packages/core/src/browser/shell/tab-bars.ts:516</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/tab-bars.ts#L518">packages/core/src/browser/shell/tab-bars.ts:518</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2020,7 +2068,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8929f6eb593/packages/core/src/browser/shell/tab-bars.ts#L660">packages/core/src/browser/shell/tab-bars.ts:660</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/tab-bars.ts#L688">packages/core/src/browser/shell/tab-bars.ts:688</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2238,6 +2286,23 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="updatebreadcrumbs" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> update<wbr>Breadcrumbs</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Breadcrumbs<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/tab-bars.ts#L633">packages/core/src/browser/shell/tab-bars.ts:633</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 					<a name="updatetoolbar" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> update<wbr>Toolbar</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
@@ -2247,7 +2312,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8929f6eb593/packages/core/src/browser/shell/tab-bars.ts#L637">packages/core/src/browser/shell/tab-bars.ts:637</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/ce50d677453/packages/core/src/browser/shell/tab-bars.ts#L665">packages/core/src/browser/shell/tab-bars.ts:665</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -2401,13 +2466,13 @@
 								<a href="../modules/core.mocktreemodel.html">Mock<wbr>Tree<wbr>Model</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/core.navigatable-1.html">Navigatable</a>
+								<a href="../modules/core.navigatable-2.html">Navigatable</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/core.navigatablewidget-1.html">Navigatable<wbr>Widget</a>
+								<a href="../modules/core.navigatablewidget-2.html">Navigatable<wbr>Widget</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/core.navigatablewidgetoptions-1.html">Navigatable<wbr>Widget<wbr>Options</a>
+								<a href="../modules/core.navigatablewidgetoptions-2.html">Navigatable<wbr>Widget<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.os-1.html">OS</a>
@@ -2474,6 +2539,9 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.statefulwidget-2.html">Stateful<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.styles-2.html">Styles</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.tabbardelegator.html">Tab<wbr>Bar<wbr>Delegator</a>
@@ -2545,6 +2613,15 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="core.toolbarawaretabbar-2.html#allowdeselect" class="tsd-kind-icon">allow<wbr>Deselect</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="core.toolbarawaretabbar-2.html#breadcrumbscontainer" class="tsd-kind-icon">breadcrumbs<wbr>Container</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="core.toolbarawaretabbar-2.html#breadcrumbsrenderer" class="tsd-kind-icon">breadcrumbs<wbr>Renderer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="core.toolbarawaretabbar-2.html#breadcrumbsrendererfactory" class="tsd-kind-icon">breadcrumbs<wbr>Renderer<wbr>Factory</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="core.toolbarawaretabbar-2.html#contentcontainer" class="tsd-kind-icon">content<wbr>Container</a>
@@ -2638,6 +2715,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="core.toolbarawaretabbar-2.html#toolbar" class="tsd-kind-icon">toolbar</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="core.toolbarawaretabbar-2.html#toprow" class="tsd-kind-icon">top<wbr>Row</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-overwrite">
 								<a href="core.toolbarawaretabbar-2.html#contentnode" class="tsd-kind-icon">content<wbr>Node</a>
@@ -2776,6 +2856,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="core.toolbarawaretabbar-2.html#update" class="tsd-kind-icon">update</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="core.toolbarawaretabbar-2.html#updatebreadcrumbs" class="tsd-kind-icon">update<wbr>Breadcrumbs</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="core.toolbarawaretabbar-2.html#updatetoolbar" class="tsd-kind-icon">update<wbr>Toolbar</a>
