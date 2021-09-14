@@ -41,6 +41,7 @@ import { OUTPUT_WIDGET_KIND } from '@theia/output/lib/browser/output-widget';
 import { DebugConsoleContribution } from '@theia/debug/lib/browser/console/debug-console-contribution';
 import { TERMINAL_WIDGET_FACTORY_ID } from '@theia/terminal/lib/browser/terminal-widget-impl';
 import { TreeViewWidget } from './tree-view-widget';
+import { WelcomeWidget } from './welcome-view-widget';
 
 export const PLUGIN_VIEW_FACTORY_ID = 'plugin-view';
 export const PLUGIN_VIEW_CONTAINER_FACTORY_ID = 'plugin-view-container';
@@ -347,6 +348,13 @@ export class PluginViewRegistry implements FrontendApplicationContribution {
         const widget = await this.getTreeViewWelcomeWidget(viewId);
         if (widget) {
             widget.handleViewWelcomeContentChange(this.getViewWelcomes(viewId));
+        } else {
+           const view = await this.getView(viewId);
+           const welcomeWidget = await this.widgetManager.getOrCreateWidget<WelcomeWidget>(WelcomeWidget.ID);
+           if (view && welcomeWidget) {
+               welcomeWidget.handleViewWelcomeContentChange(this.getViewWelcomes(viewId));
+               view.addWidget(welcomeWidget);
+           }
         }
     }
 
@@ -355,7 +363,7 @@ export class PluginViewRegistry implements FrontendApplicationContribution {
             case 'explorer':
                 return this.widgetManager.getWidget<TreeViewWelcomeWidget>(FILE_NAVIGATOR_ID);
             default:
-                return this.widgetManager.getWidget<TreeViewWelcomeWidget>(PLUGIN_VIEW_DATA_FACTORY_ID, { id: viewId });
+                return this.widgetManager.getWidget<TreeViewWelcomeWidget>(WelcomeWidget.ID);
         }
     }
 

@@ -18,18 +18,32 @@ import '../../../src/main/style/status-bar.css';
 import '../../../src/main/browser/style/index.css';
 import '../../../src/main/browser/style/comments.css';
 
-import { ContainerModule } from '@theia/core/shared/inversify';
+import { Container, ContainerModule, interfaces } from '@theia/core/shared/inversify';
 import {
-    FrontendApplicationContribution, WidgetFactory, bindViewContribution,
-    ViewContainerIdentifier, ViewContainer, createTreeContainer, TreeImpl, TreeWidget, TreeModelImpl, LabelProviderContribution, TreeProps
+    bindViewContribution,
+    createTreeContainer,
+    FrontendApplicationContribution,
+    LabelProviderContribution,
+    TreeImpl,
+    TreeModelImpl,
+    TreeProps,
+    TreeWidget,
+    ViewContainer,
+    ViewContainerIdentifier,
+    WidgetFactory
 } from '@theia/core/lib/browser';
-import { MaybePromise, CommandContribution, ResourceResolver, bindContributionProvider } from '@theia/core/lib/common';
+import { bindContributionProvider, CommandContribution, MaybePromise, ResourceResolver } from '@theia/core/lib/common';
 import { WebSocketConnectionProvider } from '@theia/core/lib/browser/messaging';
 import { HostedPluginSupport } from '../../hosted/browser/hosted-plugin';
 import { HostedPluginWatcher } from '../../hosted/browser/hosted-plugin-watcher';
 import { OpenUriCommandHandler } from './commands';
 import { PluginApiFrontendContribution } from './plugin-frontend-contribution';
-import { HostedPluginServer, hostedServicePath, PluginServer, pluginServerJsonRpcPath } from '../../common/plugin-protocol';
+import {
+    HostedPluginServer,
+    hostedServicePath,
+    PluginServer,
+    pluginServerJsonRpcPath
+} from '../../common/plugin-protocol';
 import { ModalNotification } from './dialogs/modal-notification';
 import { PluginWidget } from './plugin-ext-widget';
 import { PluginFrontendViewContribution } from './plugin-frontend-view-contribution';
@@ -38,7 +52,12 @@ import { EditorModelService } from './text-editor-model-service';
 import { UntitledResourceResolver } from './editor/untitled-resource';
 import { CodeEditorWidgetUtil, MenusContributionPointHandler } from './menus/menus-contribution-handler';
 import { PluginContributionHandler } from './plugin-contribution-handler';
-import { PluginViewRegistry, PLUGIN_VIEW_CONTAINER_FACTORY_ID, PLUGIN_VIEW_FACTORY_ID, PLUGIN_VIEW_DATA_FACTORY_ID } from './view/plugin-view-registry';
+import {
+    PLUGIN_VIEW_CONTAINER_FACTORY_ID,
+    PLUGIN_VIEW_DATA_FACTORY_ID,
+    PLUGIN_VIEW_FACTORY_ID,
+    PluginViewRegistry
+} from './view/plugin-view-registry';
 import { TextContentResourceResolver } from './workspace-main';
 import { MainPluginApiProvider } from '../../common/plugin-ext-api-contribution';
 import { PluginPathsService, pluginPathsServicePath } from '../common/plugin-paths-protocol';
@@ -52,7 +71,13 @@ import { SelectionProviderCommandContribution } from './selection-provider-comma
 import { ViewColumnService } from './view-column-service';
 import { ViewContextKeyService } from './view/view-context-key-service';
 import { PluginViewWidget, PluginViewWidgetIdentifier } from './view/plugin-view-widget';
-import { TreeViewWidgetIdentifier, VIEW_ITEM_CONTEXT_MENU, PluginTree, TreeViewWidget, PluginTreeModel } from './view/tree-view-widget';
+import {
+    PluginTree,
+    PluginTreeModel,
+    TreeViewWidget,
+    TreeViewWidgetIdentifier,
+    VIEW_ITEM_CONTEXT_MENU
+} from './view/tree-view-widget';
 import { RPCProtocol } from '../../common/rpc-protocol';
 import { LanguagesMainFactory, OutputChannelRegistryFactory } from '../../common';
 import { LanguagesMainImpl } from './languages-main';
@@ -62,7 +87,12 @@ import { WebviewEnvironment } from './webview/webview-environment';
 import { WebviewThemeDataProvider } from './webview/webview-theme-data-provider';
 import { bindWebviewPreferences } from './webview/webview-preferences';
 import { WebviewResourceCache } from './webview/webview-resource-cache';
-import { PluginIconThemeService, PluginIconThemeFactory, PluginIconThemeDefinition, PluginIconTheme } from './plugin-icon-theme-service';
+import {
+    PluginIconTheme,
+    PluginIconThemeDefinition,
+    PluginIconThemeFactory,
+    PluginIconThemeService
+} from './plugin-icon-theme-service';
 import { PluginTreeViewNodeLabelProvider } from './view/plugin-tree-view-node-label-provider';
 import { WebviewWidgetFactory } from './webview/webview-widget-factory';
 import { CommentsService, PluginCommentService } from './comments/comments-service';
@@ -76,6 +106,7 @@ import { CustomEditorWidget } from './custom-editors/custom-editor-widget';
 import { CustomEditorService } from './custom-editors/custom-editor-service';
 import { UndoRedoService } from './custom-editors/undo-redo-service';
 import { WebviewFrontendSecurityWarnings } from './webview/webview-frontend-security-warnings';
+import { WelcomeWidget } from '../browser/view/welcome-view-widget';
 
 export default new ContainerModule((bind, unbind, isBound, rebind) => {
 
@@ -191,6 +222,15 @@ export default new ContainerModule((bind, unbind, isBound, rebind) => {
         }
     })).inSingletonScope();
 
+    bind(WelcomeWidget).toSelf();
+    bind(WidgetFactory).toDynamicValue(({ container }) => ({
+        id: WelcomeWidget.ID,
+        createWidget: () => {
+            const child = createWelcomeWidgetContainer(container);
+            return child.get(WelcomeWidget);
+        }
+    })).inSingletonScope();
+
     bind(WidgetFactory).toDynamicValue(({ container }) => ({
         id: PLUGIN_VIEW_CONTAINER_FACTORY_ID,
         createWidget: (identifier: ViewContainerIdentifier) =>
@@ -233,3 +273,16 @@ export default new ContainerModule((bind, unbind, isBound, rebind) => {
     bind(WebviewFrontendSecurityWarnings).toSelf().inSingletonScope();
     bind(FrontendApplicationContribution).toService(WebviewFrontendSecurityWarnings);
 });
+
+export function createWelcomeTreeContainer(parent: interfaces.Container): Container {
+    return createTreeContainer(parent, {
+        virtualized: true,
+        search: true,
+        multiSelect: true,
+    });
+}
+
+export function createWelcomeWidgetContainer(parent: interfaces.Container): Container {
+    return createWelcomeTreeContainer(parent);
+}
+
