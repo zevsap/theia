@@ -100,12 +100,13 @@
 								<li class="tsd-kind-enum tsd-parent-kind-interface"><a href="../enums/mini_browser.minibrowseropeneroptions.sandboxoptions.html" class="tsd-kind-icon">Sandbox<wbr>Options</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="mini_browser.minibrowseropeneroptions.html#iconclass" class="tsd-kind-icon">icon<wbr>Class</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="mini_browser.minibrowseropeneroptions.html#mode" class="tsd-kind-icon">mode</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="mini_browser.minibrowseropeneroptions.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="mini_browser.minibrowseropeneroptions.html#openfor" class="tsd-kind-icon">open<wbr>For</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="mini_browser.minibrowseropeneroptions.html#resetbackground" class="tsd-kind-icon">reset<wbr>Background</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="mini_browser.minibrowseropeneroptions.html#sandbox" class="tsd-kind-icon">sandbox</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="mini_browser.minibrowseropeneroptions.html#startpage" class="tsd-kind-icon">start<wbr>Page</a></li>
@@ -116,7 +117,7 @@
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="iconclass" class="tsd-anchor"></a>
@@ -125,7 +126,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../classes/mini_browser.minibrowserprops.html">MiniBrowserProps</a>.<a href="../classes/mini_browser.minibrowserprops.html#iconclass">iconClass</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/04e2816dfe2/packages/mini-browser/src/browser/mini-browser-content.ts#L61">packages/mini-browser/src/browser/mini-browser-content.ts:61</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/0221c6179f7/packages/mini-browser/src/browser/mini-browser-content.ts#L61">packages/mini-browser/src/browser/mini-browser-content.ts:61</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -141,7 +142,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="core.widgetopeneroptions-1.html">WidgetOpenerOptions</a>.<a href="core.widgetopeneroptions-1.html#mode">mode</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/04e2816dfe2/packages/core/src/browser/widget-open-handler.ts#L34">packages/core/src/browser/widget-open-handler.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/0221c6179f7/packages/core/src/browser/widget-open-handler.ts#L34">packages/core/src/browser/widget-open-handler.ts:34</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -158,12 +159,31 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../classes/mini_browser.minibrowserprops.html">MiniBrowserProps</a>.<a href="../classes/mini_browser.minibrowserprops.html#name">name</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/04e2816dfe2/packages/mini-browser/src/browser/mini-browser-content.ts#L66">packages/mini-browser/src/browser/mini-browser-content.ts:66</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/0221c6179f7/packages/mini-browser/src/browser/mini-browser-content.ts#L66">packages/mini-browser/src/browser/mini-browser-content.ts:66</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>The desired name of the widget.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="openfor" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> open<wbr>For</h3>
+					<div class="tsd-signature tsd-kind-icon">open<wbr>For<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"source"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"preview"</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/0221c6179f7/packages/mini-browser/src/browser/mini-browser-open-handler.ts#L61">packages/mini-browser/src/browser/mini-browser-open-handler.ts:61</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Controls how the mini-browser widget should be opened.</p>
+							<ul>
+								<li><code>source</code>: editable source.</li>
+								<li><code>preview</code>: rendered content of the source.</li>
+							</ul>
 						</div>
 					</div>
 				</section>
@@ -174,7 +194,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../classes/mini_browser.minibrowserprops.html">MiniBrowserProps</a>.<a href="../classes/mini_browser.minibrowserprops.html#resetbackground">resetBackground</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/04e2816dfe2/packages/mini-browser/src/browser/mini-browser-content.ts#L71">packages/mini-browser/src/browser/mini-browser-content.ts:71</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/0221c6179f7/packages/mini-browser/src/browser/mini-browser-content.ts#L71">packages/mini-browser/src/browser/mini-browser-content.ts:71</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -190,7 +210,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../classes/mini_browser.minibrowserprops.html">MiniBrowserProps</a>.<a href="../classes/mini_browser.minibrowserprops.html#sandbox">sandbox</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/04e2816dfe2/packages/mini-browser/src/browser/mini-browser-content.ts#L56">packages/mini-browser/src/browser/mini-browser-content.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/0221c6179f7/packages/mini-browser/src/browser/mini-browser-content.ts#L56">packages/mini-browser/src/browser/mini-browser-content.ts:56</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -206,7 +226,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../classes/mini_browser.minibrowserprops.html">MiniBrowserProps</a>.<a href="../classes/mini_browser.minibrowserprops.html#startpage">startPage</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/04e2816dfe2/packages/mini-browser/src/browser/mini-browser-content.ts#L51">packages/mini-browser/src/browser/mini-browser-content.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/0221c6179f7/packages/mini-browser/src/browser/mini-browser-content.ts#L51">packages/mini-browser/src/browser/mini-browser-content.ts:51</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -222,7 +242,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="../classes/mini_browser.minibrowserprops.html">MiniBrowserProps</a>.<a href="../classes/mini_browser.minibrowserprops.html#toolbar">toolbar</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/04e2816dfe2/packages/mini-browser/src/browser/mini-browser-content.ts#L46">packages/mini-browser/src/browser/mini-browser-content.ts:46</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/0221c6179f7/packages/mini-browser/src/browser/mini-browser-content.ts#L46">packages/mini-browser/src/browser/mini-browser-content.ts:46</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -238,7 +258,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="core.widgetopeneroptions-1.html">WidgetOpenerOptions</a>.<a href="core.widgetopeneroptions-1.html#widgetoptions">widgetOptions</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/04e2816dfe2/packages/core/src/browser/widget-open-handler.ts#L39">packages/core/src/browser/widget-open-handler.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/0221c6179f7/packages/core/src/browser/widget-open-handler.ts#L39">packages/core/src/browser/widget-open-handler.ts:39</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -294,6 +314,9 @@
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="mini_browser.minibrowseropeneroptions.html#name" class="tsd-kind-icon">name</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="mini_browser.minibrowseropeneroptions.html#openfor" class="tsd-kind-icon">open<wbr>For</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="mini_browser.minibrowseropeneroptions.html#resetbackground" class="tsd-kind-icon">reset<wbr>Background</a>
 							</li>
@@ -334,6 +357,7 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
