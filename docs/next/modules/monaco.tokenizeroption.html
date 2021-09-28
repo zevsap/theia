@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="monaco.html">monaco</a>
@@ -67,62 +66,28 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Options for the TextMate tokenizer.</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
+							<h3>Variables</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="monaco.tokenizeroption.html#linelimit" class="tsd-kind-icon">line<wbr>Limit</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Object literals</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-object-literal tsd-parent-kind-namespace"><a href="monaco.tokenizeroption.html#default" class="tsd-kind-icon">DEFAULT</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-namespace"><a href="monaco.tokenizeroption.html#default" class="tsd-kind-icon">DEFAULT</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-					<a name="linelimit" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> line<wbr>Limit</h3>
-					<div class="tsd-signature tsd-kind-icon">line<wbr>Limit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/textmate/textmate-tokenizer.ts#L47">packages/monaco/src/browser/textmate/textmate-tokenizer.ts:47</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Maximum line length that will be handled by the TextMate tokenizer. If the length of the actual line exceeds this
-							limit, the tokenizer terminates and the tokenization of any subsequent lines might be broken.</p>
-						</div>
-						<p>If the <code>lineLimit</code> is not defined, it means, there are no line length limits. Otherwise, it must be a positive
-						integer or an error will be thrown.</p>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Object literals</h2>
-				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-namespace">
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-namespace">
 					<a name="default" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> DEFAULT</h3>
-					<div class="tsd-signature tsd-kind-icon">DEFAULT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<div class="tsd-signature tsd-kind-icon">DEFAULT<span class="tsd-signature-symbol">:</span> <a href="../interfaces/monaco.tokenizeroption-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TokenizerOption</a><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/textmate/textmate-tokenizer.ts#L57">packages/monaco/src/browser/textmate/textmate-tokenizer.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/textmate/textmate-tokenizer.ts#L57">packages/monaco/src/browser/textmate/textmate-tokenizer.ts:57</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -135,24 +100,14 @@
 							</dd>
 						</dl>
 					</div>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-						<a name="default.linelimit-1" class="tsd-anchor"></a>
-						<h3>line<wbr>Limit</h3>
-						<div class="tsd-signature tsd-kind-icon">line<wbr>Limit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 400</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/textmate/textmate-tokenizer.ts#L58">packages/monaco/src/browser/textmate/textmate-tokenizer.ts:58</a></li>
-							</ul>
-						</aside>
-					</section>
 				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="monaco.html">monaco</a>
@@ -164,13 +119,31 @@
 								<a href="monaco.monacocommands.html">Monaco<wbr>Commands</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="monaco.monacodiffeditor.html">Monaco<wbr>Diff<wbr>Editor</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="monaco.monacoeditor.html">Monaco<wbr>Editor</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="monaco.monacoeditormodel.html">Monaco<wbr>Editor<wbr>Model</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="monaco.monacoeditorzonewidget.html">Monaco<wbr>Editor<wbr>Zone<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="monaco.monacomenus.html">Monaco<wbr>Menus</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="monaco.monacooutlinecontribution.html">Monaco<wbr>Outline<wbr>Contribution</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="monaco.monacooutlinesymbolinformationnode.html">Monaco<wbr>Outline<wbr>Symbol<wbr>Information<wbr>Node</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="monaco.monacorangereplace.html">Monaco<wbr>Range<wbr>Replace</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="monaco.monacothemeregistry.html">Monaco<wbr>Theme<wbr>Registry</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="monaco.monacothemestate.html">Monaco<wbr>Theme<wbr>State</a>
@@ -196,10 +169,7 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-property tsd-parent-kind-namespace">
-						<a href="monaco.tokenizeroption.html#linelimit" class="tsd-kind-icon">line<wbr>Limit</a>
-					</li>
-					<li class=" tsd-kind-object-literal tsd-parent-kind-namespace">
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace">
 						<a href="monaco.tokenizeroption.html#default" class="tsd-kind-icon">DEFAULT</a>
 					</li>
 				</ul>
@@ -213,7 +183,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/plugin_ext.html">plugin-ext</a>
@@ -78,7 +77,7 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/scm.scmprovider.html" class="tsd-signature-type">ScmProvider</a></li>
+					<li><span class="tsd-signature-type">ScmProvider</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -94,12 +93,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.pluginscmprovider.html#_contextvalue" class="tsd-kind-icon">_context<wbr>Value</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.pluginscmprovider.html#_handle" class="tsd-kind-icon">_handle</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.pluginscmprovider.html#_id" class="tsd-kind-icon">_id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.pluginscmprovider.html#_label" class="tsd-kind-icon">_label</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.pluginscmprovider.html#_rooturi" class="tsd-kind-icon">_root<wbr>Uri</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.pluginscmprovider.html#colors" class="tsd-kind-icon">colors</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.pluginscmprovider.html#features" class="tsd-kind-icon">features</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.pluginscmprovider.html#groups" class="tsd-kind-icon">groups</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.pluginscmprovider.html#groupsbyhandle" class="tsd-kind-icon">groups<wbr>ByHandle</a></li>
@@ -110,7 +104,6 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.pluginscmprovider.html#ondidchangeresources" class="tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Resources</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.pluginscmprovider.html#ondidchangeresourcesemitter" class="tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Resources<wbr>Emitter</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.pluginscmprovider.html#ondidchangestatusbarcommandsemitter" class="tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Status<wbr>Bar<wbr>Commands<wbr>Emitter</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.pluginscmprovider.html#proxy" class="tsd-kind-icon">proxy</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -149,22 +142,22 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Plugin<wbr>Scm<wbr>Provider<span class="tsd-signature-symbol">(</span>proxy<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.scmext-1.html" class="tsd-signature-type">ScmExt</a>, colors<span class="tsd-signature-symbol">: </span><a href="core.colorregistry.html" class="tsd-signature-type">ColorRegistry</a>, _handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, _contextValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, _label<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, _rootUri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscodeURI</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.pluginscmprovider.html" class="tsd-signature-type">PluginScmProvider</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Plugin<wbr>Scm<wbr>Provider<span class="tsd-signature-symbol">(</span>proxy<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.scmext-1.html" class="tsd-signature-type" data-tsd-kind="Interface">ScmExt</a>, colors<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ColorRegistry</span>, _handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, _contextValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, _label<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, _rootUri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">URI</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.pluginscmprovider.html" class="tsd-signature-type" data-tsd-kind="Class">PluginScmProvider</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L145">packages/plugin-ext/src/main/browser/scm-main.ts:145</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/scm-main.ts#L145">packages/plugin-ext/src/main/browser/scm-main.ts:145</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>proxy: <a href="../interfaces/plugin_ext.scmext-1.html" class="tsd-signature-type">ScmExt</a></h5>
+									<h5>proxy: <a href="../interfaces/plugin_ext.scmext-1.html" class="tsd-signature-type" data-tsd-kind="Interface">ScmExt</a></h5>
 								</li>
 								<li>
-									<h5>colors: <a href="core.colorregistry.html" class="tsd-signature-type">ColorRegistry</a></h5>
+									<h5>colors: <span class="tsd-signature-type">ColorRegistry</span></h5>
 								</li>
 								<li>
 									<h5>_handle: <span class="tsd-signature-type">number</span></h5>
@@ -176,10 +169,10 @@
 									<h5>_label: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>_rootUri: <span class="tsd-signature-type">vscodeURI</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>_rootUri: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">URI</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.pluginscmprovider.html" class="tsd-signature-type">PluginScmProvider</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.pluginscmprovider.html" class="tsd-signature-type" data-tsd-kind="Class">PluginScmProvider</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -187,100 +180,50 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="_contextvalue" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> _context<wbr>Value</h3>
-					<div class="tsd-signature tsd-kind-icon">_context<wbr>Value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L151">packages/plugin-ext/src/main/browser/scm-main.ts:151</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="_handle" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> _handle</h3>
-					<div class="tsd-signature tsd-kind-icon">_handle<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L150">packages/plugin-ext/src/main/browser/scm-main.ts:150</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="_id" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _id</h3>
-					<div class="tsd-signature tsd-kind-icon">_id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = this.contextValue</span></div>
+					<div class="tsd-signature tsd-kind-icon">_id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L103">packages/plugin-ext/src/main/browser/scm-main.ts:103</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="_label" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> _label</h3>
-					<div class="tsd-signature tsd-kind-icon">_label<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L152">packages/plugin-ext/src/main/browser/scm-main.ts:152</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="_rooturi" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> _root<wbr>Uri</h3>
-					<div class="tsd-signature tsd-kind-icon">_root<wbr>Uri<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscodeURI</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L153">packages/plugin-ext/src/main/browser/scm-main.ts:153</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="colors" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> colors</h3>
-					<div class="tsd-signature tsd-kind-icon">colors<span class="tsd-signature-symbol">:</span> <a href="core.colorregistry.html" class="tsd-signature-type">ColorRegistry</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L149">packages/plugin-ext/src/main/browser/scm-main.ts:149</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/scm-main.ts#L103">packages/plugin-ext/src/main/browser/scm-main.ts:103</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="features" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> features</h3>
-					<div class="tsd-signature tsd-kind-icon">features<span class="tsd-signature-symbol">:</span> <a href="../interfaces/plugin_ext.sourcecontrolproviderfeatures-1.html" class="tsd-signature-type">SourceControlProviderFeatures</a></div>
+					<div class="tsd-signature tsd-kind-icon">features<span class="tsd-signature-symbol">:</span> <a href="../interfaces/plugin_ext.sourcecontrolproviderfeatures-1.html" class="tsd-signature-type" data-tsd-kind="Interface">SourceControlProviderFeatures</a><span class="tsd-signature-symbol"> = {}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L112">packages/plugin-ext/src/main/browser/scm-main.ts:112</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/scm-main.ts#L112">packages/plugin-ext/src/main/browser/scm-main.ts:112</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="groups" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> groups</h3>
-					<div class="tsd-signature tsd-kind-icon">groups<span class="tsd-signature-symbol">:</span> <a href="plugin_ext.pluginscmresourcegroup.html" class="tsd-signature-type">PluginScmResourceGroup</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
+					<div class="tsd-signature tsd-kind-icon">groups<span class="tsd-signature-symbol">:</span> <a href="plugin_ext.pluginscmresourcegroup.html" class="tsd-signature-type" data-tsd-kind="Class">PluginScmResourceGroup</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/scm.scmprovider.html">ScmProvider</a>.<a href="../interfaces/scm.scmprovider.html#groups">groups</a></p>
+						<p>Implementation of ScmProvider.groups</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L106">packages/plugin-ext/src/main/browser/scm-main.ts:106</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/scm-main.ts#L106">packages/plugin-ext/src/main/browser/scm-main.ts:106</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="groupsbyhandle" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> groups<wbr>ByHandle</h3>
-					<div class="tsd-signature tsd-kind-icon">groups<wbr>ByHandle<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> = Object.create(null)</span></div>
+					<div class="tsd-signature tsd-kind-icon">groups<wbr>ByHandle<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L107">packages/plugin-ext/src/main/browser/scm-main.ts:107</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/scm-main.ts#L107">packages/plugin-ext/src/main/browser/scm-main.ts:107</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-index-signature">
-								<h5><span class="tsd-signature-symbol">[</span>handle: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]: </span><a href="plugin_ext.pluginscmresourcegroup.html" class="tsd-signature-type">PluginScmResourceGroup</a></h5>
+								<h5><span class="tsd-signature-symbol">[</span>handle: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]: </span><a href="plugin_ext.pluginscmresourcegroup.html" class="tsd-signature-type" data-tsd-kind="Class">PluginScmResourceGroup</a></h5>
 							</li>
 						</ul>
 					</div>
@@ -288,83 +231,73 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="ondidchange" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Did<wbr>Change</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<span class="tsd-signature-symbol">:</span> <a href="../modules/core.event-1.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = this.onDidChangeEmitter.event</span></div>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/scm.scmprovider.html">ScmProvider</a>.<a href="../interfaces/scm.scmprovider.html#ondidchange">onDidChange</a></p>
+						<p>Implementation of ScmProvider.onDidChange</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L145">packages/plugin-ext/src/main/browser/scm-main.ts:145</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/scm-main.ts#L145">packages/plugin-ext/src/main/browser/scm-main.ts:145</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="ondidchangecommittemplate" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Did<wbr>Change<wbr>Commit<wbr>Template</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Commit<wbr>Template<span class="tsd-signature-symbol">:</span> <a href="../modules/core.event-1.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = this.onDidChangeCommitTemplateEmitter.event</span></div>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Commit<wbr>Template<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/scm.scmprovider.html">ScmProvider</a>.<a href="../interfaces/scm.scmprovider.html#ondidchangecommittemplate">onDidChangeCommitTemplate</a></p>
+						<p>Implementation of ScmProvider.onDidChangeCommitTemplate</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L139">packages/plugin-ext/src/main/browser/scm-main.ts:139</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/scm-main.ts#L139">packages/plugin-ext/src/main/browser/scm-main.ts:139</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="ondidchangecommittemplateemitter" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Did<wbr>Change<wbr>Commit<wbr>Template<wbr>Emitter</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Commit<wbr>Template<wbr>Emitter<span class="tsd-signature-symbol">:</span> <a href="core.emitter-1.html" class="tsd-signature-type">Emitter</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Emitter&lt;string&gt;()</span></div>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Commit<wbr>Template<wbr>Emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Emitter</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L138">packages/plugin-ext/src/main/browser/scm-main.ts:138</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/scm-main.ts#L138">packages/plugin-ext/src/main/browser/scm-main.ts:138</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="ondidchangeemitter" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Did<wbr>Change<wbr>Emitter</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Emitter<span class="tsd-signature-symbol">:</span> <a href="core.emitter-1.html" class="tsd-signature-type">Emitter</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Emitter&lt;void&gt;()</span></div>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Emitter</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L144">packages/plugin-ext/src/main/browser/scm-main.ts:144</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/scm-main.ts#L144">packages/plugin-ext/src/main/browser/scm-main.ts:144</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="ondidchangeresources" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Did<wbr>Change<wbr>Resources</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Resources<span class="tsd-signature-symbol">:</span> <a href="../modules/core.event-1.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = this.onDidChangeResourcesEmitter.event</span></div>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Resources<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/scm.scmprovider.html">ScmProvider</a>.<a href="../interfaces/scm.scmprovider.html#ondidchangeresources">onDidChangeResources</a></p>
+						<p>Implementation of ScmProvider.onDidChangeResources</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L110">packages/plugin-ext/src/main/browser/scm-main.ts:110</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/scm-main.ts#L110">packages/plugin-ext/src/main/browser/scm-main.ts:110</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="ondidchangeresourcesemitter" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Did<wbr>Change<wbr>Resources<wbr>Emitter</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Resources<wbr>Emitter<span class="tsd-signature-symbol">:</span> <a href="core.emitter-1.html" class="tsd-signature-type">Emitter</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Emitter&lt;void&gt;()</span></div>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Resources<wbr>Emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Emitter</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L109">packages/plugin-ext/src/main/browser/scm-main.ts:109</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/scm-main.ts#L109">packages/plugin-ext/src/main/browser/scm-main.ts:109</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="ondidchangestatusbarcommandsemitter" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Did<wbr>Change<wbr>Status<wbr>Bar<wbr>Commands<wbr>Emitter</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Status<wbr>Bar<wbr>Commands<wbr>Emitter<span class="tsd-signature-symbol">:</span> <a href="core.emitter-1.html" class="tsd-signature-type">Emitter</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/scm.scmcommand.html" class="tsd-signature-type">ScmCommand</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Emitter&lt;ScmCommand[]&gt;()</span></div>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Status<wbr>Bar<wbr>Commands<wbr>Emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Emitter</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ScmCommand</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L141">packages/plugin-ext/src/main/browser/scm-main.ts:141</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="proxy" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> proxy</h3>
-					<div class="tsd-signature tsd-kind-icon">proxy<span class="tsd-signature-symbol">:</span> <a href="../interfaces/plugin_ext.scmext-1.html" class="tsd-signature-type">ScmExt</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L148">packages/plugin-ext/src/main/browser/scm-main.ts:148</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/scm-main.ts#L141">packages/plugin-ext/src/main/browser/scm-main.ts:141</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -375,16 +308,16 @@
 					<a name="acceptinputcommand" class="tsd-anchor"></a>
 					<h3>accept<wbr>Input<wbr>Command</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> acceptInputCommand<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/scm.scmcommand.html" class="tsd-signature-type">ScmCommand</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> acceptInputCommand<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ScmCommand</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L120">packages/plugin-ext/src/main/browser/scm-main.ts:120</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/scm-main.ts#L120">packages/plugin-ext/src/main/browser/scm-main.ts:120</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/scm.scmcommand.html" class="tsd-signature-type">ScmCommand</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ScmCommand</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -398,7 +331,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L119">packages/plugin-ext/src/main/browser/scm-main.ts:119</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/scm-main.ts#L119">packages/plugin-ext/src/main/browser/scm-main.ts:119</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -415,7 +348,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L117">packages/plugin-ext/src/main/browser/scm-main.ts:117</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/scm-main.ts#L117">packages/plugin-ext/src/main/browser/scm-main.ts:117</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -426,16 +359,16 @@
 					<a name="count" class="tsd-anchor"></a>
 					<h3>count</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> count<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> count<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L136">packages/plugin-ext/src/main/browser/scm-main.ts:136</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/scm-main.ts#L136">packages/plugin-ext/src/main/browser/scm-main.ts:136</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -449,7 +382,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L114">packages/plugin-ext/src/main/browser/scm-main.ts:114</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/scm-main.ts#L114">packages/plugin-ext/src/main/browser/scm-main.ts:114</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -466,7 +399,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L104">packages/plugin-ext/src/main/browser/scm-main.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/scm-main.ts#L104">packages/plugin-ext/src/main/browser/scm-main.ts:104</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -483,7 +416,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L115">packages/plugin-ext/src/main/browser/scm-main.ts:115</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/scm-main.ts#L115">packages/plugin-ext/src/main/browser/scm-main.ts:115</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -494,16 +427,16 @@
 					<a name="ondidchangestatusbarcommands" class="tsd-anchor"></a>
 					<h3>on<wbr>Did<wbr>Change<wbr>Status<wbr>Bar<wbr>Commands</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> onDidChangeStatusBarCommands<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/core.event-1.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/scm.scmcommand.html" class="tsd-signature-type">ScmCommand</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> onDidChangeStatusBarCommands<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ScmCommand</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L142">packages/plugin-ext/src/main/browser/scm-main.ts:142</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/scm-main.ts#L142">packages/plugin-ext/src/main/browser/scm-main.ts:142</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/core.event-1.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/scm.scmcommand.html" class="tsd-signature-type">ScmCommand</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ScmCommand</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -517,7 +450,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L116">packages/plugin-ext/src/main/browser/scm-main.ts:116</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/scm-main.ts#L116">packages/plugin-ext/src/main/browser/scm-main.ts:116</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -528,16 +461,16 @@
 					<a name="statusbarcommands" class="tsd-anchor"></a>
 					<h3>status<wbr>Bar<wbr>Commands</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> statusBarCommands<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/scm.scmcommand.html" class="tsd-signature-type">ScmCommand</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> statusBarCommands<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ScmCommand</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L128">packages/plugin-ext/src/main/browser/scm-main.ts:128</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/scm-main.ts#L128">packages/plugin-ext/src/main/browser/scm-main.ts:128</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/scm.scmcommand.html" class="tsd-signature-type">ScmCommand</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ScmCommand</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -553,9 +486,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/scm.scmprovider.html">ScmProvider</a>.<a href="../interfaces/scm.scmprovider.html#dispose">dispose</a></p>
+								<p>Implementation of ScmProvider.dispose</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L272">packages/plugin-ext/src/main/browser/scm-main.ts:272</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/scm-main.ts#L272">packages/plugin-ext/src/main/browser/scm-main.ts:272</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -566,19 +499,19 @@
 					<a name="registergroups" class="tsd-anchor"></a>
 					<h3>register<wbr>Groups</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">register<wbr>Groups<span class="tsd-signature-symbol">(</span>resourceGroups<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.scmrawresourcegroup-1.html" class="tsd-signature-type">ScmRawResourceGroup</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Groups<span class="tsd-signature-symbol">(</span>resourceGroups<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.scmrawresourcegroup-1.html" class="tsd-signature-type" data-tsd-kind="Interface">ScmRawResourceGroup</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L169">packages/plugin-ext/src/main/browser/scm-main.ts:169</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/scm-main.ts#L169">packages/plugin-ext/src/main/browser/scm-main.ts:169</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>resourceGroups: <a href="../interfaces/plugin_ext.scmrawresourcegroup-1.html" class="tsd-signature-type">ScmRawResourceGroup</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>resourceGroups: <a href="../interfaces/plugin_ext.scmrawresourcegroup-1.html" class="tsd-signature-type" data-tsd-kind="Interface">ScmRawResourceGroup</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -589,19 +522,19 @@
 					<a name="splicegroupresourcestates" class="tsd-anchor"></a>
 					<h3>splice<wbr>Group<wbr>Resource<wbr>States</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">splice<wbr>Group<wbr>Resource<wbr>States<span class="tsd-signature-symbol">(</span>splices<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.scmrawresourcesplices-1.html" class="tsd-signature-type">ScmRawResourceSplices</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">splice<wbr>Group<wbr>Resource<wbr>States<span class="tsd-signature-symbol">(</span>splices<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.scmrawresourcesplices-1.html" class="tsd-signature-type" data-tsd-kind="Interface">ScmRawResourceSplices</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L207">packages/plugin-ext/src/main/browser/scm-main.ts:207</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/scm-main.ts#L207">packages/plugin-ext/src/main/browser/scm-main.ts:207</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>splices: <a href="../interfaces/plugin_ext.scmrawresourcesplices-1.html" class="tsd-signature-type">ScmRawResourceSplices</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>splices: <a href="../interfaces/plugin_ext.scmrawresourcesplices-1.html" class="tsd-signature-type" data-tsd-kind="Interface">ScmRawResourceSplices</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -618,7 +551,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L261">packages/plugin-ext/src/main/browser/scm-main.ts:261</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/scm-main.ts#L261">packages/plugin-ext/src/main/browser/scm-main.ts:261</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -635,13 +568,13 @@
 					<a name="updategroup" class="tsd-anchor"></a>
 					<h3>update<wbr>Group</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>Group<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, features<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.sourcecontrolgroupfeatures-1.html" class="tsd-signature-type">SourceControlGroupFeatures</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Group<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, features<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.sourcecontrolgroupfeatures-1.html" class="tsd-signature-type" data-tsd-kind="Interface">SourceControlGroupFeatures</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L187">packages/plugin-ext/src/main/browser/scm-main.ts:187</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/scm-main.ts#L187">packages/plugin-ext/src/main/browser/scm-main.ts:187</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -650,7 +583,7 @@
 									<h5>handle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>features: <a href="../interfaces/plugin_ext.sourcecontrolgroupfeatures-1.html" class="tsd-signature-type">SourceControlGroupFeatures</a></h5>
+									<h5>features: <a href="../interfaces/plugin_ext.sourcecontrolgroupfeatures-1.html" class="tsd-signature-type" data-tsd-kind="Interface">SourceControlGroupFeatures</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -667,7 +600,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L197">packages/plugin-ext/src/main/browser/scm-main.ts:197</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/scm-main.ts#L197">packages/plugin-ext/src/main/browser/scm-main.ts:197</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -687,19 +620,19 @@
 					<a name="updatesourcecontrol" class="tsd-anchor"></a>
 					<h3>update<wbr>Source<wbr>Control</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>Source<wbr>Control<span class="tsd-signature-symbol">(</span>features<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.sourcecontrolproviderfeatures-1.html" class="tsd-signature-type">SourceControlProviderFeatures</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Source<wbr>Control<span class="tsd-signature-symbol">(</span>features<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.sourcecontrolproviderfeatures-1.html" class="tsd-signature-type" data-tsd-kind="Interface">SourceControlProviderFeatures</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L156">packages/plugin-ext/src/main/browser/scm-main.ts:156</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/scm-main.ts#L156">packages/plugin-ext/src/main/browser/scm-main.ts:156</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>features: <a href="../interfaces/plugin_ext.sourcecontrolproviderfeatures-1.html" class="tsd-signature-type">SourceControlProviderFeatures</a></h5>
+									<h5>features: <a href="../interfaces/plugin_ext.sourcecontrolproviderfeatures-1.html" class="tsd-signature-type" data-tsd-kind="Interface">SourceControlProviderFeatures</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -711,8 +644,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/plugin_ext.html">plugin-<wbr>ext</a>
@@ -733,13 +666,13 @@
 								<a href="../modules/plugin_ext.connectionclosederror.html">Connection<wbr>Closed<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.customeditorwidget.html">Custom<wbr>Editor<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrangebehavior.html">Decoration<wbr>Range<wbr>Behavior</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrenderoptions-1.html">Decoration<wbr>Render<wbr>Options</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.delta.html">Delta</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.documentlink.html">Document<wbr>Link</a>
@@ -760,6 +693,9 @@
 								<a href="../modules/plugin_ext.parameterinformation.html">Parameter<wbr>Information</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.plugincontributions.html">Plugin<wbr>Contributions</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginiconpath.html">Plugin<wbr>Icon<wbr>Path</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
@@ -767,6 +703,12 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginpaths.html">Plugin<wbr>Paths</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewregistry.html">Plugin<wbr>View<wbr>Registry</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewwidget.html">Plugin<wbr>View<wbr>Widget</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.schemes.html">Schemes</a>
@@ -793,10 +735,16 @@
 								<a href="../modules/plugin_ext.textdocumentshowoptions.html">Text<wbr>Document<wbr>Show<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.texteditorselectionchangekind.html">Text<wbr>Editor<wbr>Selection<wbr>Change<wbr>Kind</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationattachmentrenderoptions.html">Themable<wbr>Decoration<wbr>Attachment<wbr>Render<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationrenderoptions.html">Themable<wbr>Decoration<wbr>Render<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.themeicon.html">Theme<wbr>Icon</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.timelinecommandarg-1.html">Timeline<wbr>Command<wbr>Arg</a>
@@ -811,10 +759,10 @@
 								<a href="../modules/plugin_ext.webviewexternalendpoint.html">Webview<wbr>External<wbr>Endpoint</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
+								<a href="../modules/plugin_ext.webviewwidget.html">Webview<wbr>Widget</a>
 							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.nls.html">nls</a>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
 							</li>
 						</ul>
 					</li>
@@ -831,22 +779,7 @@
 								<a href="plugin_ext.pluginscmprovider.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="plugin_ext.pluginscmprovider.html#_contextvalue" class="tsd-kind-icon">_context<wbr>Value</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="plugin_ext.pluginscmprovider.html#_handle" class="tsd-kind-icon">_handle</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="plugin_ext.pluginscmprovider.html#_id" class="tsd-kind-icon">_id</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="plugin_ext.pluginscmprovider.html#_label" class="tsd-kind-icon">_label</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="plugin_ext.pluginscmprovider.html#_rooturi" class="tsd-kind-icon">_root<wbr>Uri</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="plugin_ext.pluginscmprovider.html#colors" class="tsd-kind-icon">colors</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="plugin_ext.pluginscmprovider.html#features" class="tsd-kind-icon">features</a>
@@ -877,9 +810,6 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="plugin_ext.pluginscmprovider.html#ondidchangestatusbarcommandsemitter" class="tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Status<wbr>Bar<wbr>Commands<wbr>Emitter</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="plugin_ext.pluginscmprovider.html#proxy" class="tsd-kind-icon">proxy</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="plugin_ext.pluginscmprovider.html#acceptinputcommand" class="tsd-kind-icon">accept<wbr>Input<wbr>Command</a>
@@ -947,7 +877,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

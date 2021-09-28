@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/plugin_ext.html">plugin-ext</a>
@@ -78,8 +77,7 @@
 			<section class="tsd-panel">
 				<h3>Implemented by</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../classes/plugin_ext.languagesmainimpl.html" class="tsd-signature-type">LanguagesMainImpl</a></li>
-					<li><a href="../classes/plugin_metrics.languagesmainpluginmetrics.html" class="tsd-signature-type">LanguagesMainPluginMetrics</a></li>
+					<li><a href="../classes/plugin_ext.languagesmainimpl.html" class="tsd-signature-type" data-tsd-kind="Class">LanguagesMainImpl</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -132,13 +130,13 @@
 					<a name="_changediagnostics" class="tsd-anchor"></a>
 					<h3>$change<wbr>Diagnostics</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$change<wbr>Diagnostics<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, delta<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="plugin_ext.markerdata.html" class="tsd-signature-type">MarkerData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">$change<wbr>Diagnostics<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, delta<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="plugin_ext.markerdata.html" class="tsd-signature-type" data-tsd-kind="Interface">MarkerData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1493">packages/plugin-ext/src/common/plugin-api-rpc.ts:1493</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1493">packages/plugin-ext/src/common/plugin-api-rpc.ts:1493</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -147,7 +145,7 @@
 									<h5>id: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>delta: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="plugin_ext.markerdata.html" class="tsd-signature-type">MarkerData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>delta: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="plugin_ext.markerdata.html" class="tsd-signature-type" data-tsd-kind="Interface">MarkerData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -158,19 +156,19 @@
 					<a name="_changelanguage" class="tsd-anchor"></a>
 					<h3>$change<wbr>Language</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$change<wbr>Language<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><a href="plugin_ext.uricomponents.html" class="tsd-signature-type">UriComponents</a>, languageId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">$change<wbr>Language<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><a href="plugin_ext.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a>, languageId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1478">packages/plugin-ext/src/common/plugin-api-rpc.ts:1478</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1478">packages/plugin-ext/src/common/plugin-api-rpc.ts:1478</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>resource: <a href="plugin_ext.uricomponents.html" class="tsd-signature-type">UriComponents</a></h5>
+									<h5>resource: <a href="plugin_ext.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a></h5>
 								</li>
 								<li>
 									<h5>languageId: <span class="tsd-signature-type">string</span></h5>
@@ -190,7 +188,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1492">packages/plugin-ext/src/common/plugin-api-rpc.ts:1492</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1492">packages/plugin-ext/src/common/plugin-api-rpc.ts:1492</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -213,7 +211,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1499">packages/plugin-ext/src/common/plugin-api-rpc.ts:1499</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1499">packages/plugin-ext/src/common/plugin-api-rpc.ts:1499</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -239,7 +237,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1508">packages/plugin-ext/src/common/plugin-api-rpc.ts:1508</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1508">packages/plugin-ext/src/common/plugin-api-rpc.ts:1508</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -262,7 +260,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1477">packages/plugin-ext/src/common/plugin-api-rpc.ts:1477</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1477">packages/plugin-ext/src/common/plugin-api-rpc.ts:1477</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -273,13 +271,13 @@
 					<a name="_registercallhierarchyprovider" class="tsd-anchor"></a>
 					<h3>$register<wbr>Call<wbr>Hierarchy<wbr>Provider</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$register<wbr>Call<wbr>Hierarchy<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">$register<wbr>Call<wbr>Hierarchy<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1510">packages/plugin-ext/src/common/plugin-api-rpc.ts:1510</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1510">packages/plugin-ext/src/common/plugin-api-rpc.ts:1510</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -288,7 +286,7 @@
 									<h5>handle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -299,13 +297,13 @@
 					<a name="_registercodelenssupport" class="tsd-anchor"></a>
 					<h3>$register<wbr>Code<wbr>Lens<wbr>Support</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$register<wbr>Code<wbr>Lens<wbr>Support<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span>, eventHandle<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">$register<wbr>Code<wbr>Lens<wbr>Support<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span>, eventHandle<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1498">packages/plugin-ext/src/common/plugin-api-rpc.ts:1498</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1498">packages/plugin-ext/src/common/plugin-api-rpc.ts:1498</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -314,13 +312,13 @@
 									<h5>handle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a></h5>
+									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a></h5>
 								</li>
 								<li>
-									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> eventHandle: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> eventHandle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -331,13 +329,13 @@
 					<a name="_registercompletionsupport" class="tsd-anchor"></a>
 					<h3>$register<wbr>Completion<wbr>Support</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$register<wbr>Completion<wbr>Support<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span>, triggerCharacters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, supportsResolveDetails<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">$register<wbr>Completion<wbr>Support<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span>, triggerCharacters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, supportsResolveDetails<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1481">packages/plugin-ext/src/common/plugin-api-rpc.ts:1481</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1481">packages/plugin-ext/src/common/plugin-api-rpc.ts:1481</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -346,10 +344,10 @@
 									<h5>handle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a></h5>
+									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a></h5>
 								</li>
 								<li>
-									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 								<li>
 									<h5>triggerCharacters: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
@@ -366,13 +364,13 @@
 					<a name="_registerdeclarationprovider" class="tsd-anchor"></a>
 					<h3>$register<wbr>Declaration<wbr>Provider</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$register<wbr>Declaration<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">$register<wbr>Declaration<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1486">packages/plugin-ext/src/common/plugin-api-rpc.ts:1486</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1486">packages/plugin-ext/src/common/plugin-api-rpc.ts:1486</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -381,10 +379,10 @@
 									<h5>handle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a></h5>
+									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a></h5>
 								</li>
 								<li>
-									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -395,13 +393,13 @@
 					<a name="_registerdefinitionprovider" class="tsd-anchor"></a>
 					<h3>$register<wbr>Definition<wbr>Provider</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$register<wbr>Definition<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">$register<wbr>Definition<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1485">packages/plugin-ext/src/common/plugin-api-rpc.ts:1485</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1485">packages/plugin-ext/src/common/plugin-api-rpc.ts:1485</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -410,10 +408,10 @@
 									<h5>handle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a></h5>
+									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a></h5>
 								</li>
 								<li>
-									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -424,13 +422,13 @@
 					<a name="_registerdocumentcolorprovider" class="tsd-anchor"></a>
 					<h3>$register<wbr>Document<wbr>Color<wbr>Provider</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$register<wbr>Document<wbr>Color<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">$register<wbr>Document<wbr>Color<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1504">packages/plugin-ext/src/common/plugin-api-rpc.ts:1504</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1504">packages/plugin-ext/src/common/plugin-api-rpc.ts:1504</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -439,10 +437,10 @@
 									<h5>handle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a></h5>
+									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a></h5>
 								</li>
 								<li>
-									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -453,13 +451,13 @@
 					<a name="_registerdocumentformattingsupport" class="tsd-anchor"></a>
 					<h3>$register<wbr>Document<wbr>Formatting<wbr>Support</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$register<wbr>Document<wbr>Formatting<wbr>Support<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">$register<wbr>Document<wbr>Formatting<wbr>Support<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1494">packages/plugin-ext/src/common/plugin-api-rpc.ts:1494</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1494">packages/plugin-ext/src/common/plugin-api-rpc.ts:1494</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -468,10 +466,10 @@
 									<h5>handle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a></h5>
+									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a></h5>
 								</li>
 								<li>
-									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -482,13 +480,13 @@
 					<a name="_registerdocumenthighlightprovider" class="tsd-anchor"></a>
 					<h3>$register<wbr>Document<wbr>Highlight<wbr>Provider</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$register<wbr>Document<wbr>Highlight<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">$register<wbr>Document<wbr>Highlight<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1490">packages/plugin-ext/src/common/plugin-api-rpc.ts:1490</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1490">packages/plugin-ext/src/common/plugin-api-rpc.ts:1490</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -497,10 +495,10 @@
 									<h5>handle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a></h5>
+									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a></h5>
 								</li>
 								<li>
-									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -511,13 +509,13 @@
 					<a name="_registerdocumentlinkprovider" class="tsd-anchor"></a>
 					<h3>$register<wbr>Document<wbr>Link<wbr>Provider</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$register<wbr>Document<wbr>Link<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">$register<wbr>Document<wbr>Link<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1497">packages/plugin-ext/src/common/plugin-api-rpc.ts:1497</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1497">packages/plugin-ext/src/common/plugin-api-rpc.ts:1497</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -526,10 +524,10 @@
 									<h5>handle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a></h5>
+									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a></h5>
 								</li>
 								<li>
-									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -540,13 +538,13 @@
 					<a name="_registerdocumentrangesemantictokensprovider" class="tsd-anchor"></a>
 					<h3>$register<wbr>Document<wbr>Range<wbr>Semantic<wbr>Tokens<wbr>Provider</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$register<wbr>Document<wbr>Range<wbr>Semantic<wbr>Tokens<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span>, legend<span class="tsd-signature-symbol">: </span><a href="../classes/plugin._plugin_-1.semantictokenslegend.html" class="tsd-signature-type">SemanticTokensLegend</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">$register<wbr>Document<wbr>Range<wbr>Semantic<wbr>Tokens<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span>, legend<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SemanticTokensLegend</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1509">packages/plugin-ext/src/common/plugin-api-rpc.ts:1509</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1509">packages/plugin-ext/src/common/plugin-api-rpc.ts:1509</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -555,13 +553,13 @@
 									<h5>handle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a></h5>
+									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a></h5>
 								</li>
 								<li>
-									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 								<li>
-									<h5>legend: <a href="../classes/plugin._plugin_-1.semantictokenslegend.html" class="tsd-signature-type">SemanticTokensLegend</a></h5>
+									<h5>legend: <span class="tsd-signature-type">SemanticTokensLegend</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -572,13 +570,13 @@
 					<a name="_registerdocumentsemantictokensprovider" class="tsd-anchor"></a>
 					<h3>$register<wbr>Document<wbr>Semantic<wbr>Tokens<wbr>Provider</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$register<wbr>Document<wbr>Semantic<wbr>Tokens<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span>, legend<span class="tsd-signature-symbol">: </span><a href="../classes/plugin._plugin_-1.semantictokenslegend.html" class="tsd-signature-type">SemanticTokensLegend</a>, eventHandle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">$register<wbr>Document<wbr>Semantic<wbr>Tokens<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span>, legend<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SemanticTokensLegend</span>, eventHandle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1506">packages/plugin-ext/src/common/plugin-api-rpc.ts:1506</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1506">packages/plugin-ext/src/common/plugin-api-rpc.ts:1506</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -587,16 +585,16 @@
 									<h5>handle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a></h5>
+									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a></h5>
 								</li>
 								<li>
-									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 								<li>
-									<h5>legend: <a href="../classes/plugin._plugin_-1.semantictokenslegend.html" class="tsd-signature-type">SemanticTokensLegend</a></h5>
+									<h5>legend: <span class="tsd-signature-type">SemanticTokensLegend</span></h5>
 								</li>
 								<li>
-									<h5>eventHandle: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>eventHandle: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -607,13 +605,13 @@
 					<a name="_registerfoldingrangeprovider" class="tsd-anchor"></a>
 					<h3>$register<wbr>Folding<wbr>Range<wbr>Provider</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$register<wbr>Folding<wbr>Range<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">$register<wbr>Folding<wbr>Range<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1502">packages/plugin-ext/src/common/plugin-api-rpc.ts:1502</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1502">packages/plugin-ext/src/common/plugin-api-rpc.ts:1502</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -622,10 +620,10 @@
 									<h5>handle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a></h5>
+									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a></h5>
 								</li>
 								<li>
-									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -636,13 +634,13 @@
 					<a name="_registerhoverprovider" class="tsd-anchor"></a>
 					<h3>$register<wbr>Hover<wbr>Provider</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$register<wbr>Hover<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">$register<wbr>Hover<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1489">packages/plugin-ext/src/common/plugin-api-rpc.ts:1489</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1489">packages/plugin-ext/src/common/plugin-api-rpc.ts:1489</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -651,10 +649,10 @@
 									<h5>handle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a></h5>
+									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a></h5>
 								</li>
 								<li>
-									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -665,13 +663,13 @@
 					<a name="_registerimplementationprovider" class="tsd-anchor"></a>
 					<h3>$register<wbr>Implementation<wbr>Provider</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$register<wbr>Implementation<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">$register<wbr>Implementation<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1483">packages/plugin-ext/src/common/plugin-api-rpc.ts:1483</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1483">packages/plugin-ext/src/common/plugin-api-rpc.ts:1483</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -680,10 +678,10 @@
 									<h5>handle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a></h5>
+									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a></h5>
 								</li>
 								<li>
-									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -694,13 +692,13 @@
 					<a name="_registerontypeformattingprovider" class="tsd-anchor"></a>
 					<h3>$register<wbr>OnType<wbr>Formatting<wbr>Provider</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$register<wbr>OnType<wbr>Formatting<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span>, autoFormatTriggerCharacters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">$register<wbr>OnType<wbr>Formatting<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span>, autoFormatTriggerCharacters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1496">packages/plugin-ext/src/common/plugin-api-rpc.ts:1496</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1496">packages/plugin-ext/src/common/plugin-api-rpc.ts:1496</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -709,10 +707,10 @@
 									<h5>handle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a></h5>
+									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a></h5>
 								</li>
 								<li>
-									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 								<li>
 									<h5>autoFormatTriggerCharacters: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
@@ -726,13 +724,13 @@
 					<a name="_registeroutlinesupport" class="tsd-anchor"></a>
 					<h3>$register<wbr>Outline<wbr>Support</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$register<wbr>Outline<wbr>Support<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">$register<wbr>Outline<wbr>Support<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1500">packages/plugin-ext/src/common/plugin-api-rpc.ts:1500</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1500">packages/plugin-ext/src/common/plugin-api-rpc.ts:1500</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -741,10 +739,10 @@
 									<h5>handle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a></h5>
+									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a></h5>
 								</li>
 								<li>
-									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -755,13 +753,13 @@
 					<a name="_registerquickfixprovider" class="tsd-anchor"></a>
 					<h3>$register<wbr>Quick<wbr>Fix<wbr>Provider</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$register<wbr>Quick<wbr>Fix<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span>, codeActionKinds<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">$register<wbr>Quick<wbr>Fix<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span>, codeActionKinds<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1491">packages/plugin-ext/src/common/plugin-api-rpc.ts:1491</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1491">packages/plugin-ext/src/common/plugin-api-rpc.ts:1491</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -770,10 +768,10 @@
 									<h5>handle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a></h5>
+									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a></h5>
 								</li>
 								<li>
-									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> codeActionKinds: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
@@ -787,13 +785,13 @@
 					<a name="_registerrangeformattingsupport" class="tsd-anchor"></a>
 					<h3>$register<wbr>Range<wbr>Formatting<wbr>Support</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$register<wbr>Range<wbr>Formatting<wbr>Support<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">$register<wbr>Range<wbr>Formatting<wbr>Support<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1495">packages/plugin-ext/src/common/plugin-api-rpc.ts:1495</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1495">packages/plugin-ext/src/common/plugin-api-rpc.ts:1495</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -802,10 +800,10 @@
 									<h5>handle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a></h5>
+									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a></h5>
 								</li>
 								<li>
-									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -816,13 +814,13 @@
 					<a name="_registerreferenceprovider" class="tsd-anchor"></a>
 					<h3>$register<wbr>Reference<wbr>Provider</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$register<wbr>Reference<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">$register<wbr>Reference<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1487">packages/plugin-ext/src/common/plugin-api-rpc.ts:1487</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1487">packages/plugin-ext/src/common/plugin-api-rpc.ts:1487</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -831,10 +829,10 @@
 									<h5>handle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a></h5>
+									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a></h5>
 								</li>
 								<li>
-									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -845,13 +843,13 @@
 					<a name="_registerrenameprovider" class="tsd-anchor"></a>
 					<h3>$register<wbr>Rename<wbr>Provider</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$register<wbr>Rename<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span>, supportsResolveInitialValues<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">$register<wbr>Rename<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span>, supportsResolveInitialValues<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1505">packages/plugin-ext/src/common/plugin-api-rpc.ts:1505</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1505">packages/plugin-ext/src/common/plugin-api-rpc.ts:1505</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -860,10 +858,10 @@
 									<h5>handle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a></h5>
+									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a></h5>
 								</li>
 								<li>
-									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 								<li>
 									<h5>supportsResolveInitialValues: <span class="tsd-signature-type">boolean</span></h5>
@@ -877,13 +875,13 @@
 					<a name="_registerselectionrangeprovider" class="tsd-anchor"></a>
 					<h3>$register<wbr>Selection<wbr>Range<wbr>Provider</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$register<wbr>Selection<wbr>Range<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">$register<wbr>Selection<wbr>Range<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1503">packages/plugin-ext/src/common/plugin-api-rpc.ts:1503</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1503">packages/plugin-ext/src/common/plugin-api-rpc.ts:1503</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -892,10 +890,10 @@
 									<h5>handle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a></h5>
+									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a></h5>
 								</li>
 								<li>
-									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -906,13 +904,13 @@
 					<a name="_registersignaturehelpprovider" class="tsd-anchor"></a>
 					<h3>$register<wbr>Signature<wbr>Help<wbr>Provider</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$register<wbr>Signature<wbr>Help<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span>, metadata<span class="tsd-signature-symbol">: </span><a href="plugin._plugin_-1.signaturehelpprovidermetadata.html" class="tsd-signature-type">SignatureHelpProviderMetadata</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">$register<wbr>Signature<wbr>Help<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span>, metadata<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SignatureHelpProviderMetadata</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1488">packages/plugin-ext/src/common/plugin-api-rpc.ts:1488</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1488">packages/plugin-ext/src/common/plugin-api-rpc.ts:1488</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -921,13 +919,13 @@
 									<h5>handle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a></h5>
+									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a></h5>
 								</li>
 								<li>
-									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 								<li>
-									<h5>metadata: <a href="plugin._plugin_-1.signaturehelpprovidermetadata.html" class="tsd-signature-type">SignatureHelpProviderMetadata</a></h5>
+									<h5>metadata: <span class="tsd-signature-type">SignatureHelpProviderMetadata</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -938,13 +936,13 @@
 					<a name="_registertypedefinitionprovider" class="tsd-anchor"></a>
 					<h3>$register<wbr>Type<wbr>Definition<wbr>Provider</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$register<wbr>Type<wbr>Definition<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">$register<wbr>Type<wbr>Definition<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a>, selector<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1484">packages/plugin-ext/src/common/plugin-api-rpc.ts:1484</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1484">packages/plugin-ext/src/common/plugin-api-rpc.ts:1484</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -953,10 +951,10 @@
 									<h5>handle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a></h5>
+									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a></h5>
 								</li>
 								<li>
-									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>selector: <a href="plugin_ext.serializeddocumentfilter.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedDocumentFilter</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -967,13 +965,13 @@
 					<a name="_registerworkspacesymbolprovider" class="tsd-anchor"></a>
 					<h3>$register<wbr>Workspace<wbr>Symbol<wbr>Provider</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$register<wbr>Workspace<wbr>Symbol<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">$register<wbr>Workspace<wbr>Symbol<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1501">packages/plugin-ext/src/common/plugin-api-rpc.ts:1501</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1501">packages/plugin-ext/src/common/plugin-api-rpc.ts:1501</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -982,7 +980,7 @@
 									<h5>handle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a></h5>
+									<h5>pluginInfo: <a href="plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -993,13 +991,13 @@
 					<a name="_setlanguageconfiguration" class="tsd-anchor"></a>
 					<h3>$set<wbr>Language<wbr>Configuration</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$set<wbr>Language<wbr>Configuration<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, languageId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, configuration<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializedlanguageconfiguration-1.html" class="tsd-signature-type">SerializedLanguageConfiguration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">$set<wbr>Language<wbr>Configuration<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, languageId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, configuration<span class="tsd-signature-symbol">: </span><a href="plugin_ext.serializedlanguageconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedLanguageConfiguration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1479">packages/plugin-ext/src/common/plugin-api-rpc.ts:1479</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1479">packages/plugin-ext/src/common/plugin-api-rpc.ts:1479</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1011,7 +1009,7 @@
 									<h5>languageId: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>configuration: <a href="plugin_ext.serializedlanguageconfiguration-1.html" class="tsd-signature-type">SerializedLanguageConfiguration</a></h5>
+									<h5>configuration: <a href="plugin_ext.serializedlanguageconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">SerializedLanguageConfiguration</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1028,7 +1026,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1480">packages/plugin-ext/src/common/plugin-api-rpc.ts:1480</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1480">packages/plugin-ext/src/common/plugin-api-rpc.ts:1480</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1046,8 +1044,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/plugin_ext.html">plugin-<wbr>ext</a>
@@ -1068,13 +1066,13 @@
 								<a href="../modules/plugin_ext.connectionclosederror.html">Connection<wbr>Closed<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.customeditorwidget.html">Custom<wbr>Editor<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrangebehavior.html">Decoration<wbr>Range<wbr>Behavior</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrenderoptions-1.html">Decoration<wbr>Render<wbr>Options</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.delta.html">Delta</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.documentlink.html">Document<wbr>Link</a>
@@ -1095,6 +1093,9 @@
 								<a href="../modules/plugin_ext.parameterinformation.html">Parameter<wbr>Information</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.plugincontributions.html">Plugin<wbr>Contributions</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginiconpath.html">Plugin<wbr>Icon<wbr>Path</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
@@ -1102,6 +1103,12 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginpaths.html">Plugin<wbr>Paths</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewregistry.html">Plugin<wbr>View<wbr>Registry</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewwidget.html">Plugin<wbr>View<wbr>Widget</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.schemes.html">Schemes</a>
@@ -1128,10 +1135,16 @@
 								<a href="../modules/plugin_ext.textdocumentshowoptions.html">Text<wbr>Document<wbr>Show<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.texteditorselectionchangekind.html">Text<wbr>Editor<wbr>Selection<wbr>Change<wbr>Kind</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationattachmentrenderoptions.html">Themable<wbr>Decoration<wbr>Attachment<wbr>Render<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationrenderoptions.html">Themable<wbr>Decoration<wbr>Render<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.themeicon.html">Theme<wbr>Icon</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.timelinecommandarg-1.html">Timeline<wbr>Command<wbr>Arg</a>
@@ -1146,10 +1159,10 @@
 								<a href="../modules/plugin_ext.webviewexternalendpoint.html">Webview<wbr>External<wbr>Endpoint</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
+								<a href="../modules/plugin_ext.webviewwidget.html">Webview<wbr>Widget</a>
 							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.nls.html">nls</a>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
 							</li>
 						</ul>
 					</li>
@@ -1273,7 +1286,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/preview.html">preview</a>
@@ -71,7 +70,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="core.widgetopeneroptions-1.html" class="tsd-signature-type">WidgetOpenerOptions</a>
+						<span class="tsd-signature-type">WidgetOpenerOptions</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">PreviewOpenerOptions</span>
@@ -100,11 +99,11 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="mode" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> mode</h3>
-					<div class="tsd-signature tsd-kind-icon">mode<span class="tsd-signature-symbol">:</span> <a href="../modules/core.html#widgetopenmode-1" class="tsd-signature-type">WidgetOpenMode</a></div>
+					<div class="tsd-signature tsd-kind-icon">mode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;open&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;reveal&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;activate&quot;</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.widgetopeneroptions-1.html">WidgetOpenerOptions</a>.<a href="core.widgetopeneroptions-1.html#mode">mode</a></p>
+						<p>Inherited from WidgetOpenerOptions.mode</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/widget-open-handler.ts#L34">packages/core/src/browser/widget-open-handler.ts:34</a></li>
+							<li>Defined in packages/core/lib/browser/widget-open-handler.d.ts:31</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -117,21 +116,21 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="originuri" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> origin<wbr>Uri</h3>
-					<div class="tsd-signature tsd-kind-icon">origin<wbr>Uri<span class="tsd-signature-symbol">:</span> <a href="../classes/core.uri.html" class="tsd-signature-type">URI</a></div>
+					<div class="tsd-signature tsd-kind-icon">origin<wbr>Uri<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">default</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/preview/src/browser/preview-contribution.ts#L49">packages/preview/src/browser/preview-contribution.ts:49</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/preview/src/browser/preview-contribution.ts#L49">packages/preview/src/browser/preview-contribution.ts:49</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="widgetoptions" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> widget<wbr>Options</h3>
-					<div class="tsd-signature tsd-kind-icon">widget<wbr>Options<span class="tsd-signature-symbol">:</span> <a href="core.applicationshell-2.widgetoptions.html" class="tsd-signature-type">WidgetOptions</a></div>
+					<div class="tsd-signature tsd-kind-icon">widget<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">WidgetOptions</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.widgetopeneroptions-1.html">WidgetOpenerOptions</a>.<a href="core.widgetopeneroptions-1.html#widgetoptions">widgetOptions</a></p>
+						<p>Inherited from WidgetOpenerOptions.widgetOptions</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/widget-open-handler.ts#L39">packages/core/src/browser/widget-open-handler.ts:39</a></li>
+							<li>Defined in packages/core/lib/browser/widget-open-handler.d.ts:36</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -146,8 +145,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/preview.html">preview</a>
@@ -227,14 +226,20 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="preview.previewwidgetoptions.html" class="tsd-kind-icon">Preview<wbr>Widget<wbr>Options</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="preview.rendercontentparams-2.html" class="tsd-kind-icon">Render<wbr>Content<wbr>Params</a>
+					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="../modules/preview.html#previewpreferences" class="tsd-kind-icon">Preview<wbr>Preferences</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/preview.html#default_icon" class="tsd-kind-icon">DEFAULT_<wbr>ICON</a>
+					<li class=" tsd-kind-property tsd-parent-kind-module">
+						<a href="../modules/preview.html#default" class="tsd-kind-icon">default</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="../modules/preview.html#preview_widget_class" class="tsd-kind-icon">PREVIEW_<wbr>WIDGET_<wbr>CLASS</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/preview.html#previewconfigschema" class="tsd-kind-icon">Preview<wbr>Config<wbr>Schema</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="../modules/preview.html#previewhandler-2" class="tsd-kind-icon">Preview<wbr>Handler</a>
@@ -248,23 +253,11 @@
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="../modules/preview.html#previewwidgetoptions-1" class="tsd-kind-icon">Preview<wbr>Widget<wbr>Options</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/preview.html#debounce" class="tsd-kind-icon">debounce</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/preview.html#throttle" class="tsd-kind-icon">throttle</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/preview.html#widgetcounter" class="tsd-kind-icon">widget<wbr>Counter</a>
-					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="../modules/preview.html#bindpreviewpreferences" class="tsd-kind-icon">bind<wbr>Preview<wbr>Preferences</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="../modules/preview.html#createpreviewpreferences" class="tsd-kind-icon">create<wbr>Preview<wbr>Preferences</a>
-					</li>
-					<li class=" tsd-kind-object-literal tsd-parent-kind-module">
-						<a href="../modules/preview.html#previewconfigschema" class="tsd-kind-icon">Preview<wbr>Config<wbr>Schema</a>
 					</li>
 				</ul>
 			</nav>
@@ -277,7 +270,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/filesystem.html">filesystem</a>
@@ -71,7 +70,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="../modules/core.disposable-1.html" class="tsd-signature-type">Disposable</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>getClient<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>setClient<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span>
+						<span class="tsd-signature-type">JsonRpcServer</span><span class="tsd-signature-symbol">&lt;</span><a href="filesystem.remotefilesystemclient.html" class="tsd-signature-type" data-tsd-kind="Interface">RemoteFileSystemClient</a><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">RemoteFileSystemServer</span>
@@ -80,35 +79,21 @@
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel">
-				<h3>Implemented by</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../classes/filesystem.filesystemproviderserver.html" class="tsd-signature-type">FileSystemProviderServer</a></li>
-				</ul>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="filesystem.remotefilesystemserver.html#null" class="tsd-kind-icon">NULL</a></li>
-							</ul>
-						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="filesystem.remotefilesystemserver.html#access" class="tsd-kind-icon">access</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="filesystem.remotefilesystemserver.html#close" class="tsd-kind-icon">close</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="filesystem.remotefilesystemserver.html#copy" class="tsd-kind-icon">copy</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="filesystem.remotefilesystemserver.html#create" class="tsd-kind-icon">create</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="filesystem.remotefilesystemserver.html#delete" class="tsd-kind-icon">delete</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="filesystem.remotefilesystemserver.html#dispose" class="tsd-kind-icon">dispose</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="filesystem.remotefilesystemserver.html#fspath" class="tsd-kind-icon">fs<wbr>Path</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="filesystem.remotefilesystemserver.html#getcapabilities" class="tsd-kind-icon">get<wbr>Capabilities</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="filesystem.remotefilesystemserver.html#getclient" class="tsd-kind-icon">get<wbr>Client</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="filesystem.remotefilesystemserver.html#is" class="tsd-kind-icon">is</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="filesystem.remotefilesystemserver.html#mkdir" class="tsd-kind-icon">mkdir</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="filesystem.remotefilesystemserver.html#open" class="tsd-kind-icon">open</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="filesystem.remotefilesystemserver.html#read" class="tsd-kind-icon">read</a></li>
@@ -129,31 +114,18 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="null" class="tsd-anchor"></a>
-					<h3>NULL</h3>
-					<div class="tsd-signature tsd-kind-icon">NULL<span class="tsd-signature-symbol">:</span> <a href="../modules/core.disposable-1.html" class="tsd-signature-type">Disposable</a><span class="tsd-signature-symbol"> = create(() &#x3D;&gt; { })</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/common/disposable.ts#L35">packages/core/src/common/disposable.ts:35</a></li>
-						</ul>
-					</aside>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="access" class="tsd-anchor"></a>
 					<h3>access</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">access<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, mode<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">access<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, mode<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/common/remote-file-system-provider.ts#L41">packages/filesystem/src/common/remote-file-system-provider.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/common/remote-file-system-provider.ts#L41">packages/filesystem/src/common/remote-file-system-provider.ts:41</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -162,7 +134,7 @@
 									<h5>resource: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> mode: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> mode: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -179,7 +151,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/common/remote-file-system-provider.ts#L44">packages/filesystem/src/common/remote-file-system-provider.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/common/remote-file-system-provider.ts#L44">packages/filesystem/src/common/remote-file-system-provider.ts:44</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -196,13 +168,13 @@
 					<a name="copy" class="tsd-anchor"></a>
 					<h3>copy</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">copy<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, opts<span class="tsd-signature-symbol">: </span><a href="filesystem.fileoverwriteoptions.html" class="tsd-signature-type">FileOverwriteOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">copy<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, opts<span class="tsd-signature-symbol">: </span><a href="filesystem.fileoverwriteoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">FileOverwriteOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/common/remote-file-system-provider.ts#L54">packages/filesystem/src/common/remote-file-system-provider.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/common/remote-file-system-provider.ts#L54">packages/filesystem/src/common/remote-file-system-provider.ts:54</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -214,7 +186,7 @@
 									<h5>target: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>opts: <a href="filesystem.fileoverwriteoptions.html" class="tsd-signature-type">FileOverwriteOptions</a></h5>
+									<h5>opts: <a href="filesystem.fileoverwriteoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">FileOverwriteOptions</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -222,51 +194,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="create" class="tsd-anchor"></a>
-					<h3>create</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">create<span class="tsd-signature-symbol">(</span>func<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/core.disposable-1.html" class="tsd-signature-type">Disposable</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/common/disposable.ts#L30">packages/core/src/common/disposable.ts:30</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>func: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-signature">
-											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/core.disposable-1.html" class="tsd-signature-type">Disposable</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="delete" class="tsd-anchor"></a>
 					<h3>delete</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">delete<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, opts<span class="tsd-signature-symbol">: </span><a href="filesystem.filedeleteoptions-1.html" class="tsd-signature-type">FileDeleteOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">delete<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, opts<span class="tsd-signature-symbol">: </span><a href="filesystem.filedeleteoptions-1.html" class="tsd-signature-type" data-tsd-kind="Interface">FileDeleteOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/common/remote-file-system-provider.ts#L50">packages/filesystem/src/common/remote-file-system-provider.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/common/remote-file-system-provider.ts#L50">packages/filesystem/src/common/remote-file-system-provider.ts:50</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -275,7 +212,7 @@
 									<h5>resource: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>opts: <a href="filesystem.filedeleteoptions-1.html" class="tsd-signature-type">FileDeleteOptions</a></h5>
+									<h5>opts: <a href="filesystem.filedeleteoptions-1.html" class="tsd-signature-type" data-tsd-kind="Interface">FileDeleteOptions</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -291,9 +228,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="../modules/core.disposable-1.html">Disposable</a>.<a href="../modules/core.disposable-1.html#dispose">dispose</a></p>
+								<p>Inherited from JsonRpcServer.dispose</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/common/disposable.ts#L22">packages/core/src/common/disposable.ts:22</a></li>
+									<li>Defined in packages/core/lib/common/disposable.d.ts:21</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -315,7 +252,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/common/remote-file-system-provider.ts#L42">packages/filesystem/src/common/remote-file-system-provider.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/common/remote-file-system-provider.ts#L42">packages/filesystem/src/common/remote-file-system-provider.ts:42</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -332,16 +269,16 @@
 					<a name="getcapabilities" class="tsd-anchor"></a>
 					<h3>get<wbr>Capabilities</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Capabilities<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../enums/filesystem.filesystemprovidercapabilities.html" class="tsd-signature-type">FileSystemProviderCapabilities</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Capabilities<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../enums/filesystem.filesystemprovidercapabilities.html" class="tsd-signature-type" data-tsd-kind="Enumeration">FileSystemProviderCapabilities</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/common/remote-file-system-provider.ts#L39">packages/filesystem/src/common/remote-file-system-provider.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/common/remote-file-system-provider.ts#L39">packages/filesystem/src/common/remote-file-system-provider.ts:39</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../enums/filesystem.filesystemprovidercapabilities.html" class="tsd-signature-type">FileSystemProviderCapabilities</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../enums/filesystem.filesystemprovidercapabilities.html" class="tsd-signature-type" data-tsd-kind="Enumeration">FileSystemProviderCapabilities</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -349,40 +286,17 @@
 					<a name="getclient" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> get<wbr>Client</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Client<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Client</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Client<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="filesystem.remotefilesystemclient.html" class="tsd-signature-type" data-tsd-kind="Interface">RemoteFileSystemClient</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from __type.getClient</p>
+								<p>Inherited from JsonRpcServer.getClient</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/common/messaging/proxy-factory.ts#L32">packages/core/src/common/messaging/proxy-factory.ts:32</a></li>
+									<li>Defined in packages/core/lib/common/messaging/proxy-factory.d.ts:27</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Client</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="is" class="tsd-anchor"></a>
-					<h3>is</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">is<span class="tsd-signature-symbol">(</span>arg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Disposable</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/common/disposable.ts#L27">packages/core/src/common/disposable.ts:27</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>arg: <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Disposable</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="filesystem.remotefilesystemclient.html" class="tsd-signature-type" data-tsd-kind="Interface">RemoteFileSystemClient</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -396,7 +310,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/common/remote-file-system-provider.ts#L51">packages/filesystem/src/common/remote-file-system-provider.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/common/remote-file-system-provider.ts#L51">packages/filesystem/src/common/remote-file-system-provider.ts:51</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -413,13 +327,13 @@
 					<a name="open" class="tsd-anchor"></a>
 					<h3>open</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">open<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, opts<span class="tsd-signature-symbol">: </span><a href="filesystem.fileopenoptions.html" class="tsd-signature-type">FileOpenOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">open<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, opts<span class="tsd-signature-symbol">: </span><a href="filesystem.fileopenoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">FileOpenOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/common/remote-file-system-provider.ts#L43">packages/filesystem/src/common/remote-file-system-provider.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/common/remote-file-system-provider.ts#L43">packages/filesystem/src/common/remote-file-system-provider.ts:43</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -428,7 +342,7 @@
 									<h5>resource: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>opts: <a href="filesystem.fileopenoptions.html" class="tsd-signature-type">FileOpenOptions</a></h5>
+									<h5>opts: <a href="filesystem.fileopenoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">FileOpenOptions</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -445,7 +359,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/common/remote-file-system-provider.ts#L45">packages/filesystem/src/common/remote-file-system-provider.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/common/remote-file-system-provider.ts#L45">packages/filesystem/src/common/remote-file-system-provider.ts:45</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -474,7 +388,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/common/remote-file-system-provider.ts#L47">packages/filesystem/src/common/remote-file-system-provider.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/common/remote-file-system-provider.ts#L47">packages/filesystem/src/common/remote-file-system-provider.ts:47</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -491,13 +405,13 @@
 					<a name="readfilestream" class="tsd-anchor"></a>
 					<h3>read<wbr>File<wbr>Stream</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>File<wbr>Stream<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, opts<span class="tsd-signature-symbol">: </span><a href="filesystem.filereadstreamoptions.html" class="tsd-signature-type">FileReadStreamOptions</a>, token<span class="tsd-signature-symbol">: </span><a href="../modules/core.cancellationtoken-1.html" class="tsd-signature-type">CancellationToken</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>File<wbr>Stream<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, opts<span class="tsd-signature-symbol">: </span><a href="filesystem.filereadstreamoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">FileReadStreamOptions</a>, token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CancellationToken</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/common/remote-file-system-provider.ts#L46">packages/filesystem/src/common/remote-file-system-provider.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/common/remote-file-system-provider.ts#L46">packages/filesystem/src/common/remote-file-system-provider.ts:46</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -506,10 +420,10 @@
 									<h5>resource: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>opts: <a href="filesystem.filereadstreamoptions.html" class="tsd-signature-type">FileReadStreamOptions</a></h5>
+									<h5>opts: <a href="filesystem.filereadstreamoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">FileReadStreamOptions</a></h5>
 								</li>
 								<li>
-									<h5>token: <a href="../modules/core.cancellationtoken-1.html" class="tsd-signature-type">CancellationToken</a></h5>
+									<h5>token: <span class="tsd-signature-type">CancellationToken</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -520,13 +434,13 @@
 					<a name="readdir" class="tsd-anchor"></a>
 					<h3>readdir</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">readdir<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../enums/filesystem.filetype.html" class="tsd-signature-type">FileType</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">readdir<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../enums/filesystem.filetype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">FileType</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/common/remote-file-system-provider.ts#L52">packages/filesystem/src/common/remote-file-system-provider.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/common/remote-file-system-provider.ts#L52">packages/filesystem/src/common/remote-file-system-provider.ts:52</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -535,7 +449,7 @@
 									<h5>resource: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../enums/filesystem.filetype.html" class="tsd-signature-type">FileType</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../enums/filesystem.filetype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">FileType</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -543,13 +457,13 @@
 					<a name="rename" class="tsd-anchor"></a>
 					<h3>rename</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">rename<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, opts<span class="tsd-signature-symbol">: </span><a href="filesystem.fileoverwriteoptions.html" class="tsd-signature-type">FileOverwriteOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">rename<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, opts<span class="tsd-signature-symbol">: </span><a href="filesystem.fileoverwriteoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">FileOverwriteOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/common/remote-file-system-provider.ts#L53">packages/filesystem/src/common/remote-file-system-provider.ts:53</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/common/remote-file-system-provider.ts#L53">packages/filesystem/src/common/remote-file-system-provider.ts:53</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -561,7 +475,7 @@
 									<h5>target: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>opts: <a href="filesystem.fileoverwriteoptions.html" class="tsd-signature-type">FileOverwriteOptions</a></h5>
+									<h5>opts: <a href="filesystem.fileoverwriteoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">FileOverwriteOptions</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -572,14 +486,14 @@
 					<a name="setclient" class="tsd-anchor"></a>
 					<h3>set<wbr>Client</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Client<span class="tsd-signature-symbol">(</span>client<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Client</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Client<span class="tsd-signature-symbol">(</span>client<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="filesystem.remotefilesystemclient.html" class="tsd-signature-type" data-tsd-kind="Interface">RemoteFileSystemClient</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from __type.setClient</p>
+								<p>Inherited from JsonRpcServer.setClient</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/common/messaging/proxy-factory.ts#L31">packages/core/src/common/messaging/proxy-factory.ts:31</a></li>
+									<li>Defined in packages/core/lib/common/messaging/proxy-factory.d.ts:26</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -592,7 +506,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>client: <span class="tsd-signature-type">Client</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>client: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="filesystem.remotefilesystemclient.html" class="tsd-signature-type" data-tsd-kind="Interface">RemoteFileSystemClient</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -603,13 +517,13 @@
 					<a name="stat" class="tsd-anchor"></a>
 					<h3>stat</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">stat<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="filesystem.stat.html" class="tsd-signature-type">Stat</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">stat<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="filesystem.stat.html" class="tsd-signature-type" data-tsd-kind="Interface">Stat</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/common/remote-file-system-provider.ts#L40">packages/filesystem/src/common/remote-file-system-provider.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/common/remote-file-system-provider.ts#L40">packages/filesystem/src/common/remote-file-system-provider.ts:40</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -618,7 +532,7 @@
 									<h5>resource: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="filesystem.stat.html" class="tsd-signature-type">Stat</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="filesystem.stat.html" class="tsd-signature-type" data-tsd-kind="Interface">Stat</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -632,7 +546,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/common/remote-file-system-provider.ts#L56">packages/filesystem/src/common/remote-file-system-provider.ts:56</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/common/remote-file-system-provider.ts#L56">packages/filesystem/src/common/remote-file-system-provider.ts:56</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -649,13 +563,13 @@
 					<a name="updatefile" class="tsd-anchor"></a>
 					<h3>update<wbr>File</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>File<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, changes<span class="tsd-signature-symbol">: </span><a href="plugin._plugin_-1.textdocumentcontentchangeevent.html" class="tsd-signature-type">TextDocumentContentChangeEvent</a><span class="tsd-signature-symbol">[]</span>, opts<span class="tsd-signature-symbol">: </span><a href="filesystem.fileupdateoptions.html" class="tsd-signature-type">FileUpdateOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="filesystem.fileupdateresult.html" class="tsd-signature-type">FileUpdateResult</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">update<wbr>File<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, changes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TextDocumentContentChangeEvent</span><span class="tsd-signature-symbol">[]</span>, opts<span class="tsd-signature-symbol">: </span><a href="filesystem.fileupdateoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">FileUpdateOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="filesystem.fileupdateresult.html" class="tsd-signature-type" data-tsd-kind="Interface">FileUpdateResult</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/common/remote-file-system-provider.ts#L57">packages/filesystem/src/common/remote-file-system-provider.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/common/remote-file-system-provider.ts#L57">packages/filesystem/src/common/remote-file-system-provider.ts:57</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -664,13 +578,13 @@
 									<h5>resource: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>changes: <a href="plugin._plugin_-1.textdocumentcontentchangeevent.html" class="tsd-signature-type">TextDocumentContentChangeEvent</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>changes: <span class="tsd-signature-type">TextDocumentContentChangeEvent</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 								<li>
-									<h5>opts: <a href="filesystem.fileupdateoptions.html" class="tsd-signature-type">FileUpdateOptions</a></h5>
+									<h5>opts: <a href="filesystem.fileupdateoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">FileUpdateOptions</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="filesystem.fileupdateresult.html" class="tsd-signature-type">FileUpdateResult</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="filesystem.fileupdateresult.html" class="tsd-signature-type" data-tsd-kind="Interface">FileUpdateResult</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -678,13 +592,13 @@
 					<a name="watch" class="tsd-anchor"></a>
 					<h3>watch</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">watch<span class="tsd-signature-symbol">(</span>watcher<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, resource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, opts<span class="tsd-signature-symbol">: </span><a href="filesystem.watchoptions.html" class="tsd-signature-type">WatchOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">watch<span class="tsd-signature-symbol">(</span>watcher<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, resource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, opts<span class="tsd-signature-symbol">: </span><a href="filesystem.watchoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">WatchOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/common/remote-file-system-provider.ts#L55">packages/filesystem/src/common/remote-file-system-provider.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/common/remote-file-system-provider.ts#L55">packages/filesystem/src/common/remote-file-system-provider.ts:55</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -696,7 +610,7 @@
 									<h5>resource: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>opts: <a href="filesystem.watchoptions.html" class="tsd-signature-type">WatchOptions</a></h5>
+									<h5>opts: <a href="filesystem.watchoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">WatchOptions</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -713,7 +627,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/common/remote-file-system-provider.ts#L48">packages/filesystem/src/common/remote-file-system-provider.ts:48</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/common/remote-file-system-provider.ts#L48">packages/filesystem/src/common/remote-file-system-provider.ts:48</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -742,13 +656,13 @@
 					<a name="writefile" class="tsd-anchor"></a>
 					<h3>write<wbr>File</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">write<wbr>File<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, opts<span class="tsd-signature-symbol">: </span><a href="filesystem.filewriteoptions.html" class="tsd-signature-type">FileWriteOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">write<wbr>File<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, opts<span class="tsd-signature-symbol">: </span><a href="filesystem.filewriteoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">FileWriteOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/common/remote-file-system-provider.ts#L49">packages/filesystem/src/common/remote-file-system-provider.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/common/remote-file-system-provider.ts#L49">packages/filesystem/src/common/remote-file-system-provider.ts:49</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -760,7 +674,7 @@
 									<h5>content: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 								<li>
-									<h5>opts: <a href="filesystem.filewriteoptions.html" class="tsd-signature-type">FileWriteOptions</a></h5>
+									<h5>opts: <a href="filesystem.filewriteoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">FileWriteOptions</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -772,8 +686,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/filesystem.html">filesystem</a>
@@ -782,7 +696,13 @@
 								<a href="../modules/filesystem.basestat.html">Base<wbr>Stat</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.delegatingfilesystemprovider.html">Delegating<wbr>File<wbr>System<wbr>Provider</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/filesystem.dirnode-2.html">Dir<wbr>Node</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.diskfilesystemprovider.html">Disk<wbr>File<wbr>System<wbr>Provider</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/filesystem.fileaccess-1.html">File<wbr>Access</a>
@@ -798,6 +718,12 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/filesystem.filedownloaddata.html">File<wbr>Download<wbr>Data</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.filedownloadhandler.html">File<wbr>Download<wbr>Handler</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.filedownloadservice.html">File<wbr>Download<wbr>Service</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/filesystem.filemoveevent-1.html">File<wbr>Move<wbr>Event</a>
@@ -833,7 +759,22 @@
 								<a href="../modules/filesystem.filesystemutils-1.html">File<wbr>System<wbr>Utils</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.fileuploadservice.html">File<wbr>Upload<wbr>Service</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.filepathbreadcrumb.html">Filepath<wbr>Breadcrumb</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.locationlistrenderer-2.html">Location<wbr>List<wbr>Renderer</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/filesystem.electron.html">electron</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.export_.html">export&#61;</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.export_-1.html">export&#61;</a>
 							</li>
 						</ul>
 					</li>
@@ -846,9 +787,6 @@
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
 						<a href="filesystem.remotefilesystemserver.html" class="tsd-kind-icon">Remote<wbr>File<wbr>System<wbr>Server</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="filesystem.remotefilesystemserver.html#null" class="tsd-kind-icon">NULL</a>
-							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="filesystem.remotefilesystemserver.html#access" class="tsd-kind-icon">access</a>
 							</li>
@@ -857,9 +795,6 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="filesystem.remotefilesystemserver.html#copy" class="tsd-kind-icon">copy</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="filesystem.remotefilesystemserver.html#create" class="tsd-kind-icon">create</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="filesystem.remotefilesystemserver.html#delete" class="tsd-kind-icon">delete</a>
@@ -875,9 +810,6 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
 								<a href="filesystem.remotefilesystemserver.html#getclient" class="tsd-kind-icon">get<wbr>Client</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="filesystem.remotefilesystemserver.html#is" class="tsd-kind-icon">is</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="filesystem.remotefilesystemserver.html#mkdir" class="tsd-kind-icon">mkdir</a>
@@ -936,7 +868,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
@@ -946,7 +877,6 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">

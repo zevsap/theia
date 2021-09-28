@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/plugin_ext.html">plugin-ext</a>
@@ -72,24 +71,25 @@
 				<ul class="tsd-hierarchy">
 					<li>
 						<span class="target">OutputChannelRegistryMainImpl</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<a href="plugin_metrics.pluginmetricsoutputchannelregistry.html" class="tsd-signature-type">PluginMetricsOutputChannelRegistry</a>
-							</li>
-						</ul>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/plugin_ext.outputchannelregistrymain-1.html" class="tsd-signature-type">OutputChannelRegistryMain</a></li>
+					<li><a href="../interfaces/plugin_ext.outputchannelregistrymain-1.html" class="tsd-signature-type" data-tsd-kind="Interface">OutputChannelRegistryMain</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="plugin_ext.outputchannelregistrymainimpl.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
@@ -109,15 +109,32 @@
 					</div>
 				</section>
 			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Output<wbr>Channel<wbr>Registry<wbr>Main<wbr>Impl<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.outputchannelregistrymainimpl.html" class="tsd-signature-type" data-tsd-kind="Class">OutputChannelRegistryMainImpl</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.outputchannelregistrymainimpl.html" class="tsd-signature-type" data-tsd-kind="Class">OutputChannelRegistryMainImpl</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-private-protected">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="commandservice" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> command<wbr>Service</h3>
-					<div class="tsd-signature tsd-kind-icon">command<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.commandservice-1.html" class="tsd-signature-type">CommandService</a></div>
+					<div class="tsd-signature tsd-kind-icon">command<wbr>Service<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CommandService</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/output-channel-registry-main.ts#L26">packages/plugin-ext/src/main/browser/output-channel-registry-main.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/output-channel-registry-main.ts#L26">packages/plugin-ext/src/main/browser/output-channel-registry-main.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -128,14 +145,14 @@
 					<a name="_append" class="tsd-anchor"></a>
 					<h3>$append</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">$append<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">$append<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, pluginInfo<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/plugin_ext.outputchannelregistrymain-1.html">OutputChannelRegistryMain</a>.<a href="../interfaces/plugin_ext.outputchannelregistrymain-1.html#_append">$append</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/output-channel-registry-main.ts#L28">packages/plugin-ext/src/main/browser/output-channel-registry-main.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/output-channel-registry-main.ts#L28">packages/plugin-ext/src/main/browser/output-channel-registry-main.ts:28</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -147,7 +164,7 @@
 									<h5>text: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>pluginInfo: <a href="../interfaces/plugin_ext.plugininfo-1.html" class="tsd-signature-type">PluginInfo</a></h5>
+									<h5>pluginInfo: <a href="../interfaces/plugin_ext.plugininfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginInfo</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -165,7 +182,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/plugin_ext.outputchannelregistrymain-1.html">OutputChannelRegistryMain</a>.<a href="../interfaces/plugin_ext.outputchannelregistrymain-1.html#_clear">$clear</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/output-channel-registry-main.ts#L33">packages/plugin-ext/src/main/browser/output-channel-registry-main.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/output-channel-registry-main.ts#L33">packages/plugin-ext/src/main/browser/output-channel-registry-main.ts:33</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -189,7 +206,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/plugin_ext.outputchannelregistrymain-1.html">OutputChannelRegistryMain</a>.<a href="../interfaces/plugin_ext.outputchannelregistrymain-1.html#_close">$close</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/output-channel-registry-main.ts#L48">packages/plugin-ext/src/main/browser/output-channel-registry-main.ts:48</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/output-channel-registry-main.ts#L48">packages/plugin-ext/src/main/browser/output-channel-registry-main.ts:48</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -213,7 +230,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/plugin_ext.outputchannelregistrymain-1.html">OutputChannelRegistryMain</a>.<a href="../interfaces/plugin_ext.outputchannelregistrymain-1.html#_dispose">$dispose</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/output-channel-registry-main.ts#L38">packages/plugin-ext/src/main/browser/output-channel-registry-main.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/output-channel-registry-main.ts#L38">packages/plugin-ext/src/main/browser/output-channel-registry-main.ts:38</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -237,7 +254,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/plugin_ext.outputchannelregistrymain-1.html">OutputChannelRegistryMain</a>.<a href="../interfaces/plugin_ext.outputchannelregistrymain-1.html#_reveal">$reveal</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/output-channel-registry-main.ts#L43">packages/plugin-ext/src/main/browser/output-channel-registry-main.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/output-channel-registry-main.ts#L43">packages/plugin-ext/src/main/browser/output-channel-registry-main.ts:43</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -258,8 +275,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/plugin_ext.html">plugin-<wbr>ext</a>
@@ -280,13 +297,13 @@
 								<a href="../modules/plugin_ext.connectionclosederror.html">Connection<wbr>Closed<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.customeditorwidget.html">Custom<wbr>Editor<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrangebehavior.html">Decoration<wbr>Range<wbr>Behavior</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrenderoptions-1.html">Decoration<wbr>Render<wbr>Options</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.delta.html">Delta</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.documentlink.html">Document<wbr>Link</a>
@@ -307,6 +324,9 @@
 								<a href="../modules/plugin_ext.parameterinformation.html">Parameter<wbr>Information</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.plugincontributions.html">Plugin<wbr>Contributions</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginiconpath.html">Plugin<wbr>Icon<wbr>Path</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
@@ -314,6 +334,12 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginpaths.html">Plugin<wbr>Paths</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewregistry.html">Plugin<wbr>View<wbr>Registry</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewwidget.html">Plugin<wbr>View<wbr>Widget</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.schemes.html">Schemes</a>
@@ -340,10 +366,16 @@
 								<a href="../modules/plugin_ext.textdocumentshowoptions.html">Text<wbr>Document<wbr>Show<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.texteditorselectionchangekind.html">Text<wbr>Editor<wbr>Selection<wbr>Change<wbr>Kind</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationattachmentrenderoptions.html">Themable<wbr>Decoration<wbr>Attachment<wbr>Render<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationrenderoptions.html">Themable<wbr>Decoration<wbr>Render<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.themeicon.html">Theme<wbr>Icon</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.timelinecommandarg-1.html">Timeline<wbr>Command<wbr>Arg</a>
@@ -358,10 +390,10 @@
 								<a href="../modules/plugin_ext.webviewexternalendpoint.html">Webview<wbr>External<wbr>Endpoint</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
+								<a href="../modules/plugin_ext.webviewwidget.html">Webview<wbr>Widget</a>
 							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.nls.html">nls</a>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
 							</li>
 						</ul>
 					</li>
@@ -374,6 +406,9 @@
 					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="plugin_ext.outputchannelregistrymainimpl.html" class="tsd-kind-icon">Output<wbr>Channel<wbr>Registry<wbr>Main<wbr>Impl</a>
 						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="plugin_ext.outputchannelregistrymainimpl.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="plugin_ext.outputchannelregistrymainimpl.html#commandservice" class="tsd-kind-icon">command<wbr>Service</a>
 							</li>
@@ -407,7 +442,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
@@ -417,6 +451,7 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">

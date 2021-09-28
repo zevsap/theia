@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="git.html">git</a>
@@ -78,12 +77,6 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-not-exported">
-							<h3>Variables</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-namespace tsd-is-not-exported"><a href="git.gitutils-1.html#repositorydoesnotexisterrorcode" class="tsd-kind-icon">Repository<wbr>Does<wbr>Not<wbr>Exist<wbr>Error<wbr>Code</a></li>
-							</ul>
-						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
@@ -101,37 +94,19 @@
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
-				<h2>Variables</h2>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-namespace tsd-is-not-exported">
-					<a name="repositorydoesnotexisterrorcode" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> Repository<wbr>Does<wbr>Not<wbr>Exist<wbr>Error<wbr>Code</h3>
-					<div class="tsd-signature tsd-kind-icon">Repository<wbr>Does<wbr>Not<wbr>Exist<wbr>Error<wbr>Code<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"repository-does-not-exist-error"</span><span class="tsd-signature-symbol"> = &quot;repository-does-not-exist-error&quot;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L904">packages/git/src/common/git.ts:904</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The error code for when the path to a repository doesn&#39;t exist.</p>
-						</div>
-					</div>
-				</section>
-			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
 					<a name="isbranchcheckout" class="tsd-anchor"></a>
 					<h3>is<wbr>Branch<wbr>Checkout</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Branch<wbr>Checkout<span class="tsd-signature-symbol">(</span>arg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">CheckoutBranch</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Branch<wbr>Checkout<span class="tsd-signature-symbol">(</span>arg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><a href="../interfaces/git.git-2.options.checkout.checkoutbranch.html" class="tsd-signature-type" data-tsd-kind="Interface">CheckoutBranch</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L889">packages/git/src/common/git.ts:889</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L889">packages/git/src/common/git.ts:889</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -145,7 +120,7 @@
 									<h5>arg: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">CheckoutBranch</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><a href="../interfaces/git.git-2.options.checkout.checkoutbranch.html" class="tsd-signature-type" data-tsd-kind="Interface">CheckoutBranch</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -153,13 +128,13 @@
 					<a name="isbranchcreate" class="tsd-anchor"></a>
 					<h3>is<wbr>Branch<wbr>Create</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Branch<wbr>Create<span class="tsd-signature-symbol">(</span>arg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Create</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Branch<wbr>Create<span class="tsd-signature-symbol">(</span>arg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><a href="../interfaces/git.git-2.options.branchcommand.create.html" class="tsd-signature-type" data-tsd-kind="Interface">Create</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L873">packages/git/src/common/git.ts:873</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L873">packages/git/src/common/git.ts:873</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -173,7 +148,7 @@
 									<h5>arg: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Create</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><a href="../interfaces/git.git-2.options.branchcommand.create.html" class="tsd-signature-type" data-tsd-kind="Interface">Create</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -181,13 +156,13 @@
 					<a name="isbranchdelete" class="tsd-anchor"></a>
 					<h3>is<wbr>Branch<wbr>Delete</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Branch<wbr>Delete<span class="tsd-signature-symbol">(</span>arg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Delete</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Branch<wbr>Delete<span class="tsd-signature-symbol">(</span>arg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><a href="../interfaces/git.git-2.options.branchcommand.delete.html" class="tsd-signature-type" data-tsd-kind="Interface">Delete</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L865">packages/git/src/common/git.ts:865</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L865">packages/git/src/common/git.ts:865</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -201,7 +176,7 @@
 									<h5>arg: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Delete</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><a href="../interfaces/git.git-2.options.branchcommand.delete.html" class="tsd-signature-type" data-tsd-kind="Interface">Delete</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -209,13 +184,13 @@
 					<a name="isbranchlist" class="tsd-anchor"></a>
 					<h3>is<wbr>Branch<wbr>List</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Branch<wbr>List<span class="tsd-signature-symbol">(</span>arg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">List</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Branch<wbr>List<span class="tsd-signature-symbol">(</span>arg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><a href="../interfaces/git.git-2.options.branchcommand.list.html" class="tsd-signature-type" data-tsd-kind="Interface">List</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L881">packages/git/src/common/git.ts:881</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L881">packages/git/src/common/git.ts:881</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -229,7 +204,7 @@
 									<h5>arg: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">List</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><a href="../interfaces/git.git-2.options.branchcommand.list.html" class="tsd-signature-type" data-tsd-kind="Interface">List</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -237,13 +212,13 @@
 					<a name="isbranchrename" class="tsd-anchor"></a>
 					<h3>is<wbr>Branch<wbr>Rename</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Branch<wbr>Rename<span class="tsd-signature-symbol">(</span>arg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Rename</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Branch<wbr>Rename<span class="tsd-signature-symbol">(</span>arg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><a href="../interfaces/git.git-2.options.branchcommand.rename.html" class="tsd-signature-type" data-tsd-kind="Interface">Rename</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L857">packages/git/src/common/git.ts:857</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L857">packages/git/src/common/git.ts:857</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -257,7 +232,7 @@
 									<h5>arg: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Rename</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><a href="../interfaces/git.git-2.options.branchcommand.rename.html" class="tsd-signature-type" data-tsd-kind="Interface">Rename</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -271,7 +246,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L911">packages/git/src/common/git.ts:911</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L911">packages/git/src/common/git.ts:911</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -300,7 +275,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L959">packages/git/src/common/git.ts:959</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L959">packages/git/src/common/git.ts:959</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -322,13 +297,13 @@
 					<a name="isworkingtreefilecheckout" class="tsd-anchor"></a>
 					<h3>is<wbr>Working<wbr>Tree<wbr>File<wbr>Checkout</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Working<wbr>Tree<wbr>File<wbr>Checkout<span class="tsd-signature-symbol">(</span>arg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">WorkingTreeFile</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Working<wbr>Tree<wbr>File<wbr>Checkout<span class="tsd-signature-symbol">(</span>arg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><a href="../interfaces/git.git-2.options.checkout.workingtreefile.html" class="tsd-signature-type" data-tsd-kind="Interface">WorkingTreeFile</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L897">packages/git/src/common/git.ts:897</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L897">packages/git/src/common/git.ts:897</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -342,7 +317,7 @@
 									<h5>arg: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">WorkingTreeFile</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><a href="../interfaces/git.git-2.options.checkout.workingtreefile.html" class="tsd-signature-type" data-tsd-kind="Interface">WorkingTreeFile</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -350,13 +325,13 @@
 					<a name="mapstatus" class="tsd-anchor"></a>
 					<h3>map<wbr>Status</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">map<wbr>Status<span class="tsd-signature-symbol">(</span>rawStatus<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/git.gitfilestatus-1.html" class="tsd-signature-type">GitFileStatus</a></li>
+						<li class="tsd-signature tsd-kind-icon">map<wbr>Status<span class="tsd-signature-symbol">(</span>rawStatus<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/git.gitfilestatus-2.html" class="tsd-signature-type" data-tsd-kind="Enumeration">GitFileStatus</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L924">packages/git/src/common/git.ts:924</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L924">packages/git/src/common/git.ts:924</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -370,7 +345,7 @@
 									<h5>rawStatus: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../enums/git.gitfilestatus-1.html" class="tsd-signature-type">GitFileStatus</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../enums/git.gitfilestatus-2.html" class="tsd-signature-type" data-tsd-kind="Enumeration">GitFileStatus</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -379,14 +354,23 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="git.html">git</a>
 						<ul>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="git.blameannotationskeybindingcontext.html">Blame<wbr>Annotations<wbr>Keybinding<wbr>Context</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="git.blamecommands.html">Blame<wbr>Commands</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="git.blamedecorator.html">Blame<wbr>Decorator</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="git.dirtydiffmodel.html">Dirty<wbr>Diff<wbr>Model</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="git.git_commands.html">GIT_<wbr>COMMANDS</a>
@@ -401,16 +385,37 @@
 								<a href="git.gitbindingoptions.html">Git<wbr>Binding<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="git.gitblameparser.html">Git<wbr>Blame<wbr>Parser</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="git.gitcommitdetailuri.html">Git<wbr>Commit<wbr>Detail<wbr>Uri</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="git.gitcommitmessagevalidator.html">Git<wbr>Commit<wbr>Message<wbr>Validator</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="git.gitdiffcommands.html">Git<wbr>Diff<wbr>Commands</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="git.gitdifftreemodel.html">Git<wbr>Diff<wbr>Tree<wbr>Model</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="git.gitfilestatus-1.html">Git<wbr>File<wbr>Status</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="git.gitprompt.html">Git<wbr>Prompt</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="git.gitscmprovider.html">Git<wbr>Scm<wbr>Provider</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="git.gitscmrepository.html">Git<wbr>Scm<wbr>Repository</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="git.gitstatuschangeevent-1.html">Git<wbr>Status<wbr>Change<wbr>Event</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="git.gitsyncservice.html">Git<wbr>Sync<wbr>Service</a>
 							</li>
 							<li class="current tsd-kind-namespace tsd-parent-kind-module">
 								<a href="git.gitutils-1.html">Git<wbr>Utils</a>
@@ -430,9 +435,6 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-variable tsd-parent-kind-namespace tsd-is-not-exported">
-						<a href="git.gitutils-1.html#repositorydoesnotexisterrorcode" class="tsd-kind-icon">Repository<wbr>Does<wbr>Not<wbr>Exist<wbr>Error<wbr>Code</a>
-					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-namespace">
 						<a href="git.gitutils-1.html#isbranchcheckout" class="tsd-kind-icon">is<wbr>Branch<wbr>Checkout</a>
 					</li>
@@ -471,7 +473,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

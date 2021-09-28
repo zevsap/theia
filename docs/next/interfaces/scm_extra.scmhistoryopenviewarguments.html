@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/scm_extra.html">scm-extra</a>
@@ -71,7 +70,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="core.openviewarguments-2.html" class="tsd-signature-type">OpenViewArguments</a>
+						<span class="tsd-signature-type">OpenViewArguments</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">ScmHistoryOpenViewArguments</span>
@@ -105,22 +104,22 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="activate" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> activate</h3>
-					<div class="tsd-signature tsd-kind-icon">activate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
+					<div class="tsd-signature tsd-kind-icon">activate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.openviewarguments-2.html">OpenViewArguments</a>.<a href="core.openviewarguments-2.html#activate">activate</a></p>
+						<p>Inherited from OpenViewArguments.activate</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/shell/view-contribution.ts#L31">packages/core/src/browser/shell/view-contribution.ts:31</a></li>
+							<li>Defined in packages/core/lib/browser/shell/view-contribution.d.ts:25</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="area" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> area</h3>
-					<div class="tsd-signature tsd-kind-icon">area<span class="tsd-signature-symbol">:</span> <a href="../classes/core.applicationshell-2.html#area" class="tsd-signature-type">Area</a></div>
+					<div class="tsd-signature tsd-kind-icon">area<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;main&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;top&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;left&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;right&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;bottom&quot;</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.applicationshell-2.widgetoptions.html">WidgetOptions</a>.<a href="core.applicationshell-2.widgetoptions.html#area">area</a></p>
+						<p>Inherited from OpenViewArguments.area</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/shell/application-shell.ts#L1924">packages/core/src/browser/shell/application-shell.ts:1924</a></li>
+							<li>Defined in packages/core/lib/browser/shell/application-shell.d.ts:477</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -132,11 +131,11 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="mode" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> mode</h3>
-					<div class="tsd-signature tsd-kind-icon">mode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DockLayout.InsertMode</span><span class="tsd-signature-symbol"> | </span><a href="../classes/core.applicationshell-2.html#opentosidemode" class="tsd-signature-type">OpenToSideMode</a></div>
+					<div class="tsd-signature tsd-kind-icon">mode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;split-top&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;split-left&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;split-right&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;split-bottom&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;tab-before&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;tab-after&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;open-to-left&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;open-to-right&quot;</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.applicationshell-2.widgetoptions.html">WidgetOptions</a>.<a href="core.applicationshell-2.widgetoptions.html#mode">mode</a></p>
+						<p>Inherited from OpenViewArguments.mode</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/shell/application-shell.ts#L1930">packages/core/src/browser/shell/application-shell.ts:1930</a></li>
+							<li>Defined in packages/core/lib/browser/shell/application-shell.d.ts:483</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -149,11 +148,11 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="rank" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> rank</h3>
-					<div class="tsd-signature tsd-kind-icon">rank<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<div class="tsd-signature tsd-kind-icon">rank<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.sidepanel-2.widgetoptions.html">WidgetOptions</a>.<a href="core.sidepanel-2.widgetoptions.html#rank">rank</a></p>
+						<p>Inherited from OpenViewArguments.rank</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/shell/side-panel-handler.ts#L697">packages/core/src/browser/shell/side-panel-handler.ts:697</a></li>
+							<li>Defined in packages/core/lib/browser/shell/side-panel-handler.d.ts:238</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -167,9 +166,9 @@
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> ref</h3>
 					<div class="tsd-signature tsd-kind-icon">ref<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Widget</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.applicationshell-2.widgetoptions.html">WidgetOptions</a>.<a href="core.applicationshell-2.widgetoptions.html#ref">ref</a></p>
+						<p>Inherited from OpenViewArguments.ref</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/shell/application-shell.ts#L1936">packages/core/src/browser/shell/application-shell.ts:1936</a></li>
+							<li>Defined in packages/core/lib/browser/shell/application-shell.d.ts:489</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -182,32 +181,32 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="reveal" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> reveal</h3>
-					<div class="tsd-signature tsd-kind-icon">reveal<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
+					<div class="tsd-signature tsd-kind-icon">reveal<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.openviewarguments-2.html">OpenViewArguments</a>.<a href="core.openviewarguments-2.html#reveal">reveal</a></p>
+						<p>Inherited from OpenViewArguments.reveal</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/shell/view-contribution.ts#L32">packages/core/src/browser/shell/view-contribution.ts:32</a></li>
+							<li>Defined in packages/core/lib/browser/shell/view-contribution.d.ts:26</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="toggle" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> toggle</h3>
-					<div class="tsd-signature tsd-kind-icon">toggle<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
+					<div class="tsd-signature tsd-kind-icon">toggle<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.openviewarguments-2.html">OpenViewArguments</a>.<a href="core.openviewarguments-2.html#toggle">toggle</a></p>
+						<p>Inherited from OpenViewArguments.toggle</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/shell/view-contribution.ts#L30">packages/core/src/browser/shell/view-contribution.ts:30</a></li>
+							<li>Defined in packages/core/lib/browser/shell/view-contribution.d.ts:24</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="uri" class="tsd-anchor"></a>
 					<h3>uri</h3>
-					<div class="tsd-signature tsd-kind-icon">uri<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+					<div class="tsd-signature tsd-kind-icon">uri<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/scm-extra/src/browser/history/scm-history-contribution.ts#L43">packages/scm-extra/src/browser/history/scm-history-contribution.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/scm-extra/src/browser/history/scm-history-contribution.ts#L43">packages/scm-extra/src/browser/history/scm-history-contribution.ts:43</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -216,8 +215,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/scm_extra.html">scm-<wbr>extra</a>
@@ -232,7 +231,13 @@
 								<a href="../modules/scm_extra.scmhistorycommands.html">Scm<wbr>History<wbr>Commands</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/scm_extra.scmhistorylist.html">Scm<wbr>History<wbr>List</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/scm_extra.scmhistoryprovider.html">Scm<wbr>History<wbr>Provider</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/scm_extra.scmitemcomponent.html">Scm<wbr>Item<wbr>Component</a>
 							</li>
 						</ul>
 					</li>
@@ -240,6 +245,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="../modules/scm_extra.html#scmhistorysupport" class="tsd-kind-icon">Scm<wbr>History<wbr>Support</a>
+					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/scm_extra.scmextralayoutversion4migration.html" class="tsd-kind-icon">Scm<wbr>Extra<wbr>Layout<wbr>Version4<wbr>Migration</a>
 					</li>
@@ -249,14 +257,14 @@
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/scm_extra.scmhistorycontribution.html" class="tsd-kind-icon">Scm<wbr>History<wbr>Contribution</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="../classes/scm_extra.scmhistorylist.html" class="tsd-kind-icon">Scm<wbr>History<wbr>List</a>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/scm_extra.scmhistorylist-1.html" class="tsd-kind-icon">Scm<wbr>History<wbr>List</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/scm_extra.scmhistorywidget.html" class="tsd-kind-icon">Scm<wbr>History<wbr>Widget</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="../classes/scm_extra.scmitemcomponent.html" class="tsd-kind-icon">Scm<wbr>Item<wbr>Component</a>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/scm_extra.scmitemcomponent-1.html" class="tsd-kind-icon">Scm<wbr>Item<wbr>Component</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="../classes/scm_extra.scmnavigablelistwidget.html" class="tsd-kind-icon">Scm<wbr>Navigable<wbr>List<wbr>Widget</a>
@@ -265,7 +273,13 @@
 						<a href="scm_extra.historywidgetoptions.html" class="tsd-kind-icon">History<wbr>Widget<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="scm_extra.scmcommitnode-1.html" class="tsd-kind-icon">Scm<wbr>Commit<wbr>Node</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="scm_extra.scmfilechange.html" class="tsd-kind-icon">Scm<wbr>File<wbr>Change</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="scm_extra.scmfilechangenode-1.html" class="tsd-kind-icon">Scm<wbr>File<wbr>Change<wbr>Node</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="scm_extra.scmhistorycommit.html" class="tsd-kind-icon">Scm<wbr>History<wbr>Commit</a>
@@ -304,10 +318,16 @@
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="scm_extra.scmhistorysupport.html" class="tsd-kind-icon">Scm<wbr>History<wbr>Support</a>
+						<a href="scm_extra.scmhistoryprovider-1.html" class="tsd-kind-icon">Scm<wbr>History<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="scm_extra.scmhistorysupport-1.html" class="tsd-kind-icon">Scm<wbr>History<wbr>Support</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="../modules/scm_extra.html#scmhistorylistnode" class="tsd-kind-icon">Scm<wbr>History<wbr>List<wbr>Node</a>
+					</li>
+					<li class=" tsd-kind-property tsd-parent-kind-module">
+						<a href="../modules/scm_extra.html#default" class="tsd-kind-icon">default</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="../modules/scm_extra.html#editor_context_menu_scm" class="tsd-kind-icon">EDITOR_<wbr>CONTEXT_<wbr>MENU_<wbr>SCM</a>
@@ -325,7 +345,7 @@
 						<a href="../modules/scm_extra.html#scm_history_toggle_keybinding" class="tsd-kind-icon">SCM_<wbr>HISTORY_<wbr>TOGGLE_<wbr>KEYBINDING</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/scm_extra.html#scmhistorysupport-1" class="tsd-kind-icon">Scm<wbr>History<wbr>Support</a>
+						<a href="../modules/scm_extra.html#scmhistorysupport-2" class="tsd-kind-icon">Scm<wbr>History<wbr>Support</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="../modules/scm_extra.html#bindscmhistorymodule" class="tsd-kind-icon">bind<wbr>Scm<wbr>History<wbr>Module</a>
@@ -341,7 +361,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

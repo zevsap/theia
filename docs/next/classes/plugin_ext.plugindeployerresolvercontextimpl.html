@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/plugin_ext.html">plugin-ext</a>
@@ -86,7 +85,7 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/plugin_ext.plugindeployerresolvercontext-1.html" class="tsd-signature-type">PluginDeployerResolverContext</a></li>
+					<li><a href="../interfaces/plugin_ext.plugindeployerresolvercontext-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginDeployerResolverContext</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -96,7 +95,7 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="plugin_ext.plugindeployerresolvercontextimpl.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter"><a href="plugin_ext.plugindeployerresolvercontextimpl.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
@@ -104,7 +103,6 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.plugindeployerresolvercontextimpl.html#pluginentries" class="tsd-kind-icon">plugin<wbr>Entries</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.plugindeployerresolvercontextimpl.html#resolvername" class="tsd-kind-icon">resolver<wbr>Name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.plugindeployerresolvercontextimpl.html#sourceid" class="tsd-kind-icon">source<wbr>Id</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -120,19 +118,25 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Plugin<wbr>Deployer<wbr>Resolver<wbr>Context<wbr>Impl<span class="tsd-signature-symbol">(</span>resolver<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, sourceId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugindeployerresolvercontextimpl.html" class="tsd-signature-type">PluginDeployerResolverContextImpl</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Plugin<wbr>Deployer<wbr>Resolver<wbr>Context<wbr>Impl&lt;T&gt;<span class="tsd-signature-symbol">(</span>resolver<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, sourceId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugindeployerresolvercontextimpl.html" class="tsd-signature-type" data-tsd-kind="Class">PluginDeployerResolverContextImpl</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/node/plugin-deployer-resolver-context-impl.ts#L28">packages/plugin-ext/src/main/node/plugin-deployer-resolver-context-impl.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/node/plugin-deployer-resolver-context-impl.ts#L28">packages/plugin-ext/src/main/node/plugin-deployer-resolver-context-impl.ts:28</a></li>
 								</ul>
 							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -142,7 +146,7 @@
 									<h5>sourceId: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.plugindeployerresolvercontextimpl.html" class="tsd-signature-type">PluginDeployerResolverContextImpl</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.plugindeployerresolvercontextimpl.html" class="tsd-signature-type" data-tsd-kind="Class">PluginDeployerResolverContextImpl</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -152,10 +156,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="pluginentries" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> plugin<wbr>Entries</h3>
-					<div class="tsd-signature tsd-kind-icon">plugin<wbr>Entries<span class="tsd-signature-symbol">:</span> <a href="../interfaces/plugin_ext.plugindeployerentry-1.html" class="tsd-signature-type">PluginDeployerEntry</a><span class="tsd-signature-symbol">[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">plugin<wbr>Entries<span class="tsd-signature-symbol">:</span> <a href="../interfaces/plugin_ext.plugindeployerentry-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginDeployerEntry</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/node/plugin-deployer-resolver-context-impl.ts#L28">packages/plugin-ext/src/main/node/plugin-deployer-resolver-context-impl.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/node/plugin-deployer-resolver-context-impl.ts#L28">packages/plugin-ext/src/main/node/plugin-deployer-resolver-context-impl.ts:28</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -165,7 +169,7 @@
 					<div class="tsd-signature tsd-kind-icon">resolver<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/node/plugin-deployer-resolver-context-impl.ts#L26">packages/plugin-ext/src/main/node/plugin-deployer-resolver-context-impl.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/node/plugin-deployer-resolver-context-impl.ts#L26">packages/plugin-ext/src/main/node/plugin-deployer-resolver-context-impl.ts:26</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -173,16 +177,6 @@
 							<p>Name of the resolver for this context</p>
 						</div>
 					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="sourceid" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> source<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">source<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/node/plugin-deployer-resolver-context-impl.ts#L30">packages/plugin-ext/src/main/node/plugin-deployer-resolver-context-impl.ts:30</a></li>
-						</ul>
-					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -198,7 +192,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/plugin_ext.plugindeployerresolvercontext-1.html">PluginDeployerResolverContext</a>.<a href="../interfaces/plugin_ext.plugindeployerresolvercontext-1.html#addplugin">addPlugin</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/node/plugin-deployer-resolver-context-impl.ts#L37">packages/plugin-ext/src/main/node/plugin-deployer-resolver-context-impl.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/node/plugin-deployer-resolver-context-impl.ts#L37">packages/plugin-ext/src/main/node/plugin-deployer-resolver-context-impl.ts:37</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -225,7 +219,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/plugin_ext.plugindeployerresolvercontext-1.html">PluginDeployerResolverContext</a>.<a href="../interfaces/plugin_ext.plugindeployerresolvercontext-1.html#getoriginid">getOriginId</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/node/plugin-deployer-resolver-context-impl.ts#L47">packages/plugin-ext/src/main/node/plugin-deployer-resolver-context-impl.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/node/plugin-deployer-resolver-context-impl.ts#L47">packages/plugin-ext/src/main/node/plugin-deployer-resolver-context-impl.ts:47</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -236,17 +230,17 @@
 					<a name="getplugins" class="tsd-anchor"></a>
 					<h3>get<wbr>Plugins</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Plugins<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.plugindeployerentry-1.html" class="tsd-signature-type">PluginDeployerEntry</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Plugins<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.plugindeployerentry-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginDeployerEntry</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/plugin_ext.plugindeployerresolvercontext-1.html">PluginDeployerResolverContext</a>.<a href="../interfaces/plugin_ext.plugindeployerresolvercontext-1.html#getplugins">getPlugins</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/node/plugin-deployer-resolver-context-impl.ts#L43">packages/plugin-ext/src/main/node/plugin-deployer-resolver-context-impl.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/node/plugin-deployer-resolver-context-impl.ts#L43">packages/plugin-ext/src/main/node/plugin-deployer-resolver-context-impl.ts:43</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.plugindeployerentry-1.html" class="tsd-signature-type">PluginDeployerEntry</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.plugindeployerentry-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginDeployerEntry</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -255,8 +249,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/plugin_ext.html">plugin-<wbr>ext</a>
@@ -277,13 +271,13 @@
 								<a href="../modules/plugin_ext.connectionclosederror.html">Connection<wbr>Closed<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.customeditorwidget.html">Custom<wbr>Editor<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrangebehavior.html">Decoration<wbr>Range<wbr>Behavior</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrenderoptions-1.html">Decoration<wbr>Render<wbr>Options</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.delta.html">Delta</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.documentlink.html">Document<wbr>Link</a>
@@ -304,6 +298,9 @@
 								<a href="../modules/plugin_ext.parameterinformation.html">Parameter<wbr>Information</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.plugincontributions.html">Plugin<wbr>Contributions</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginiconpath.html">Plugin<wbr>Icon<wbr>Path</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
@@ -311,6 +308,12 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginpaths.html">Plugin<wbr>Paths</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewregistry.html">Plugin<wbr>View<wbr>Registry</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewwidget.html">Plugin<wbr>View<wbr>Widget</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.schemes.html">Schemes</a>
@@ -337,10 +340,16 @@
 								<a href="../modules/plugin_ext.textdocumentshowoptions.html">Text<wbr>Document<wbr>Show<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.texteditorselectionchangekind.html">Text<wbr>Editor<wbr>Selection<wbr>Change<wbr>Kind</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationattachmentrenderoptions.html">Themable<wbr>Decoration<wbr>Attachment<wbr>Render<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationrenderoptions.html">Themable<wbr>Decoration<wbr>Render<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.themeicon.html">Theme<wbr>Icon</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.timelinecommandarg-1.html">Timeline<wbr>Command<wbr>Arg</a>
@@ -355,10 +364,10 @@
 								<a href="../modules/plugin_ext.webviewexternalendpoint.html">Webview<wbr>External<wbr>Endpoint</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
+								<a href="../modules/plugin_ext.webviewwidget.html">Webview<wbr>Widget</a>
 							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.nls.html">nls</a>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
 							</li>
 						</ul>
 					</li>
@@ -371,7 +380,7 @@
 					<li class="current tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="plugin_ext.plugindeployerresolvercontextimpl.html" class="tsd-kind-icon">Plugin<wbr>Deployer<wbr>Resolver<wbr>Context<wbr>Impl</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter">
 								<a href="plugin_ext.plugindeployerresolvercontextimpl.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
@@ -379,9 +388,6 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="plugin_ext.plugindeployerresolvercontextimpl.html#resolvername" class="tsd-kind-icon">resolver<wbr>Name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="plugin_ext.plugindeployerresolvercontextimpl.html#sourceid" class="tsd-kind-icon">source<wbr>Id</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="plugin_ext.plugindeployerresolvercontextimpl.html#addplugin" class="tsd-kind-icon">add<wbr>Plugin</a>
@@ -407,7 +413,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
@@ -417,7 +422,6 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
-				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">

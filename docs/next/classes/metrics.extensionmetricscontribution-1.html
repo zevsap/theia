@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/metrics.html">metrics</a>
@@ -78,13 +77,19 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/metrics.metricscontribution-1.html" class="tsd-signature-type">MetricsContribution</a></li>
+					<li><a href="../modules/metrics.html#metricscontribution-2" class="tsd-signature-type" data-tsd-kind="Variable">MetricsContribution</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="metrics.extensionmetricscontribution-1.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
@@ -102,6 +107,23 @@
 					</div>
 				</section>
 			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Extension<wbr>Metrics<wbr>Contribution<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="metrics.extensionmetricscontribution-1.html" class="tsd-signature-type" data-tsd-kind="Class">ExtensionMetricsContribution</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="metrics.extensionmetricscontribution-1.html" class="tsd-signature-type" data-tsd-kind="Class">ExtensionMetricsContribution</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-private-protected">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
@@ -110,17 +132,17 @@
 					<div class="tsd-signature tsd-kind-icon">application<wbr>Package<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ApplicationPackage</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/metrics/src/node/extensions-metrics-contribution.ts#L28">packages/metrics/src/node/extensions-metrics-contribution.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/metrics/src/node/extensions-metrics-contribution.ts#L28">packages/metrics/src/node/extensions-metrics-contribution.ts:28</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="metrics" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> metrics</h3>
-					<div class="tsd-signature tsd-kind-icon">metrics<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">metrics<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#x27;&#x27;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/metrics/src/node/extensions-metrics-contribution.ts#L25">packages/metrics/src/node/extensions-metrics-contribution.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/metrics/src/node/extensions-metrics-contribution.ts#L25">packages/metrics/src/node/extensions-metrics-contribution.ts:25</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -136,9 +158,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/metrics.metricscontribution-1.html">MetricsContribution</a>.<a href="../interfaces/metrics.metricscontribution-1.html#getmetrics">getMetrics</a></p>
+								<p>Implementation of MetricsContribution.getMetrics</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/metrics/src/node/extensions-metrics-contribution.ts#L30">packages/metrics/src/node/extensions-metrics-contribution.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/metrics/src/node/extensions-metrics-contribution.ts#L30">packages/metrics/src/node/extensions-metrics-contribution.ts:30</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -154,9 +176,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/metrics.metricscontribution-1.html">MetricsContribution</a>.<a href="../interfaces/metrics.metricscontribution-1.html#startcollecting">startCollecting</a></p>
+								<p>Implementation of MetricsContribution.startCollecting</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/metrics/src/node/extensions-metrics-contribution.ts#L34">packages/metrics/src/node/extensions-metrics-contribution.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/metrics/src/node/extensions-metrics-contribution.ts#L34">packages/metrics/src/node/extensions-metrics-contribution.ts:34</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -168,8 +190,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/metrics.html">metrics</a>
@@ -201,6 +223,9 @@
 					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="metrics.extensionmetricscontribution-1.html" class="tsd-kind-icon">Extension<wbr>Metrics<wbr>Contribution</a>
 						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="metrics.extensionmetricscontribution-1.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="metrics.extensionmetricscontribution-1.html#applicationpackage" class="tsd-kind-icon">application<wbr>Package</a>
 							</li>
@@ -226,14 +251,14 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/metrics.metricscontribution-1.html" class="tsd-kind-icon">Metrics<wbr>Contribution</a>
 					</li>
+					<li class=" tsd-kind-property tsd-parent-kind-module">
+						<a href="../modules/metrics.html#default" class="tsd-kind-icon">default</a>
+					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="../modules/metrics.html#metricscontribution-2" class="tsd-kind-icon">Metrics<wbr>Contribution</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="../modules/metrics.html#prometheus_regexp-1" class="tsd-kind-icon">PROMETHEUS_<wbr>REGEXP</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/metrics.html#metricsname" class="tsd-kind-icon">metrics<wbr>Name</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="../modules/metrics.html#toprometheusvalidname-1" class="tsd-kind-icon">to<wbr>Prometheus<wbr>Valid<wbr>Name</a>
@@ -249,7 +274,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
@@ -259,6 +283,7 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">

@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="debug.html">debug</a>
@@ -72,14 +71,6 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-namespace tsd-is-inherited"><a href="debug.internaldebugsessionoptions.html#configuration" class="tsd-kind-icon">configuration</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="debug.internaldebugsessionoptions.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-namespace tsd-is-inherited"><a href="debug.internaldebugsessionoptions.html#workspacefolderuri" class="tsd-kind-icon">workspace<wbr>Folder<wbr>Uri</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="debug.internaldebugsessionoptions.html#is" class="tsd-kind-icon">is</a></li>
@@ -89,62 +80,27 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace tsd-is-inherited">
-					<a name="configuration" class="tsd-anchor"></a>
-					<h3>configuration</h3>
-					<div class="tsd-signature tsd-kind-icon">configuration<span class="tsd-signature-symbol">:</span> <a href="debug.debugconfiguration-1.html" class="tsd-signature-type">DebugConfiguration</a></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="../interfaces/debug.debugsessionoptions-2.html">DebugSessionOptions</a>.<a href="../interfaces/debug.debugsessionoptions-2.html#configuration">configuration</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/debug-session-options.ts#L20">packages/debug/src/browser/debug-session-options.ts:20</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-					<a name="id" class="tsd-anchor"></a>
-					<h3>id</h3>
-					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/debug-session-options.ts#L24">packages/debug/src/browser/debug-session-options.ts:24</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace tsd-is-inherited">
-					<a name="workspacefolderuri" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> workspace<wbr>Folder<wbr>Uri</h3>
-					<div class="tsd-signature tsd-kind-icon">workspace<wbr>Folder<wbr>Uri<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="../interfaces/debug.debugsessionoptions-2.html">DebugSessionOptions</a>.<a href="../interfaces/debug.debugsessionoptions-2.html#workspacefolderuri">workspaceFolderUri</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/debug-session-options.ts#L21">packages/debug/src/browser/debug-session-options.ts:21</a></li>
-						</ul>
-					</aside>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
 					<a name="is" class="tsd-anchor"></a>
 					<h3>is</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">is<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/debug.debugsessionoptions-2.html" class="tsd-signature-type">DebugSessionOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">options</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">InternalDebugSessionOptions</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/debug.debugsessionoptions-1.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugSessionOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">options</span><span class="tsd-signature-symbol"> is </span><a href="../interfaces/debug.internaldebugsessionoptions-1.html" class="tsd-signature-type" data-tsd-kind="Interface">InternalDebugSessionOptions</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/debug-session-options.ts#L27">packages/debug/src/browser/debug-session-options.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/debug-session-options.ts#L27">packages/debug/src/browser/debug-session-options.ts:27</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>options: <a href="../interfaces/debug.debugsessionoptions-2.html" class="tsd-signature-type">DebugSessionOptions</a></h5>
+									<h5>options: <a href="../interfaces/debug.debugsessionoptions-1.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugSessionOptions</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">options</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">InternalDebugSessionOptions</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">options</span><span class="tsd-signature-symbol"> is </span><a href="../interfaces/debug.internaldebugsessionoptions-1.html" class="tsd-signature-type" data-tsd-kind="Interface">InternalDebugSessionOptions</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -153,14 +109,23 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="debug.html">debug</a>
 						<ul>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="debug.breakpointmanager.html">Breakpoint<wbr>Manager</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="debug.breakpointmarker.html">Breakpoint<wbr>Marker</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="debug.debugaction.html">Debug<wbr>Action</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="debug.debugbreakpointwidget.html">Debug<wbr>Breakpoint<wbr>Widget</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="debug.debugbreakpointwidgetcommands.html">Debug<wbr>Breakpoint<wbr>Widget<wbr>Commands</a>
@@ -170,6 +135,12 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="debug.debugconfiguration-1.html">Debug<wbr>Configuration</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="debug.debugconfigurationmanager.html">Debug<wbr>Configuration<wbr>Manager</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="debug.debugconfigurationmodel.html">Debug<wbr>Configuration<wbr>Model</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="debug.debugconsolecommands.html">Debug<wbr>Console<wbr>Commands</a>
@@ -196,6 +167,9 @@
 								<a href="debug.exceptionbreakpoint.html">Exception<wbr>Breakpoint</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="debug.expressioncontainer.html">Expression<wbr>Container</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="debug.functionbreakpoint.html">Function<wbr>Breakpoint</a>
 							</li>
 							<li class="current tsd-kind-namespace tsd-parent-kind-module">
@@ -210,24 +184,12 @@
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="debug.virtualvariableitem.html">Virtual<wbr>Variable<wbr>Item</a>
 							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="debug.nls.html">nls</a>
-							</li>
 						</ul>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-property tsd-parent-kind-namespace tsd-is-inherited">
-						<a href="debug.internaldebugsessionoptions.html#configuration" class="tsd-kind-icon">configuration</a>
-					</li>
-					<li class=" tsd-kind-property tsd-parent-kind-namespace">
-						<a href="debug.internaldebugsessionoptions.html#id" class="tsd-kind-icon">id</a>
-					</li>
-					<li class=" tsd-kind-property tsd-parent-kind-namespace tsd-is-inherited">
-						<a href="debug.internaldebugsessionoptions.html#workspacefolderuri" class="tsd-kind-icon">workspace<wbr>Folder<wbr>Uri</a>
-					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-namespace">
 						<a href="debug.internaldebugsessionoptions.html#is" class="tsd-kind-icon">is</a>
 					</li>
@@ -242,7 +204,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

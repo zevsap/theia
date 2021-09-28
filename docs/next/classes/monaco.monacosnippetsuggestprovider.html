@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/monaco.html">monaco</a>
@@ -85,6 +84,12 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="monaco.monacosnippetsuggestprovider.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
@@ -111,35 +116,52 @@
 					</div>
 				</section>
 			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Monaco<wbr>Snippet<wbr>Suggest<wbr>Provider<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="monaco.monacosnippetsuggestprovider.html" class="tsd-signature-type" data-tsd-kind="Class">MonacoSnippetSuggestProvider</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="monaco.monacosnippetsuggestprovider.html" class="tsd-signature-type" data-tsd-kind="Class">MonacoSnippetSuggestProvider</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-private-protected">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="fileservice" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> file<wbr>Service</h3>
-					<div class="tsd-signature tsd-kind-icon">file<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="filesystem.fileservice.html" class="tsd-signature-type">FileService</a></div>
+					<div class="tsd-signature tsd-kind-icon">file<wbr>Service<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">FileService</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-snippet-suggest-provider.ts#L34">packages/monaco/src/browser/monaco-snippet-suggest-provider.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-snippet-suggest-provider.ts#L34">packages/monaco/src/browser/monaco-snippet-suggest-provider.ts:34</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="pendingsnippets" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> pending<wbr>Snippets</h3>
-					<div class="tsd-signature tsd-kind-icon">pending<wbr>Snippets<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;string, Promise&lt;void&gt;[]&gt;()</span></div>
+					<div class="tsd-signature tsd-kind-icon">pending<wbr>Snippets<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-snippet-suggest-provider.ts#L37">packages/monaco/src/browser/monaco-snippet-suggest-provider.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-snippet-suggest-provider.ts#L37">packages/monaco/src/browser/monaco-snippet-suggest-provider.ts:37</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="snippets" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> snippets</h3>
-					<div class="tsd-signature tsd-kind-icon">snippets<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/monaco.snippet.html" class="tsd-signature-type">Snippet</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;string, Snippet[]&gt;()</span></div>
+					<div class="tsd-signature tsd-kind-icon">snippets<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/monaco.snippet.html" class="tsd-signature-type" data-tsd-kind="Interface">Snippet</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-snippet-suggest-provider.ts#L36">packages/monaco/src/browser/monaco-snippet-suggest-provider.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-snippet-suggest-provider.ts#L36">packages/monaco/src/browser/monaco-snippet-suggest-provider.ts:36</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -149,7 +171,7 @@
 					<div class="tsd-signature tsd-kind-icon">_max<wbr>Prefix<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">10000</span><span class="tsd-signature-symbol"> = 10000</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-snippet-suggest-provider.ts#L31">packages/monaco/src/browser/monaco-snippet-suggest-provider.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-snippet-suggest-provider.ts#L31">packages/monaco/src/browser/monaco-snippet-suggest-provider.ts:31</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -160,33 +182,25 @@
 					<a name="fromjson" class="tsd-anchor"></a>
 					<h3>fromJSON</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">fromJSON<span class="tsd-signature-symbol">(</span>snippets<span class="tsd-signature-symbol">: </span><a href="../interfaces/monaco.jsonserializedsnippets.html" class="tsd-signature-type">JsonSerializedSnippets</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, __namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>language<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/core.disposable-1.html" class="tsd-signature-type">Disposable</a></li>
+						<li class="tsd-signature tsd-kind-icon">fromJSON<span class="tsd-signature-symbol">(</span>snippets<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/monaco.jsonserializedsnippets.html" class="tsd-signature-type" data-tsd-kind="Interface">JsonSerializedSnippets</a>, __namedParameters<span class="tsd-signature-symbol">: </span><a href="../interfaces/monaco.snippetloadoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">SnippetLoadOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Disposable</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-snippet-suggest-provider.ts#L155">packages/monaco/src/browser/monaco-snippet-suggest-provider.ts:155</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-snippet-suggest-provider.ts#L155">packages/monaco/src/browser/monaco-snippet-suggest-provider.ts:155</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>snippets: <a href="../interfaces/monaco.jsonserializedsnippets.html" class="tsd-signature-type">JsonSerializedSnippets</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>snippets: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/monaco.jsonserializedsnippets.html" class="tsd-signature-type" data-tsd-kind="Interface">JsonSerializedSnippets</a></h5>
 								</li>
 								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>language<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>language<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-										</li>
-									</ul>
+									<h5>__namedParameters: <a href="../interfaces/monaco.snippetloadoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">SnippetLoadOptions</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/core.disposable-1.html" class="tsd-signature-type">Disposable</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Disposable</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -194,25 +208,25 @@
 					<a name="fromuri" class="tsd-anchor"></a>
 					<h3>fromURI</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">fromURI<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="core.uri.html" class="tsd-signature-type">URI</a>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/monaco.snippetloadoptions.html" class="tsd-signature-type">SnippetLoadOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/core.disposable-1.html" class="tsd-signature-type">Disposable</a></li>
+						<li class="tsd-signature tsd-kind-icon">fromURI<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">default</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/monaco.snippetloadoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">SnippetLoadOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Disposable</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-snippet-suggest-provider.ts#L117">packages/monaco/src/browser/monaco-snippet-suggest-provider.ts:117</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-snippet-suggest-provider.ts#L117">packages/monaco/src/browser/monaco-snippet-suggest-provider.ts:117</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>uri: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="core.uri.html" class="tsd-signature-type">URI</a></h5>
+									<h5>uri: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">default</span></h5>
 								</li>
 								<li>
-									<h5>options: <a href="../interfaces/monaco.snippetloadoptions.html" class="tsd-signature-type">SnippetLoadOptions</a></h5>
+									<h5>options: <a href="../interfaces/monaco.snippetloadoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">SnippetLoadOptions</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/core.disposable-1.html" class="tsd-signature-type">Disposable</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Disposable</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -226,7 +240,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-snippet-suggest-provider.ts#L223">packages/monaco/src/browser/monaco-snippet-suggest-provider.ts:223</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-snippet-suggest-provider.ts#L223">packages/monaco/src/browser/monaco-snippet-suggest-provider.ts:223</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -264,7 +278,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-snippet-suggest-provider.ts#L108">packages/monaco/src/browser/monaco-snippet-suggest-provider.ts:108</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-snippet-suggest-provider.ts#L108">packages/monaco/src/browser/monaco-snippet-suggest-provider.ts:108</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -281,13 +295,13 @@
 					<a name="loaduri" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> loadURI</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">loadURI<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="core.uri.html" class="tsd-signature-type">URI</a>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/monaco.snippetloadoptions.html" class="tsd-signature-type">SnippetLoadOptions</a>, toDispose<span class="tsd-signature-symbol">: </span><a href="core.disposablecollection-1.html" class="tsd-signature-type">DisposableCollection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">loadURI<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">default</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/monaco.snippetloadoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">SnippetLoadOptions</a>, toDispose<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DisposableCollection</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-snippet-suggest-provider.ts#L139">packages/monaco/src/browser/monaco-snippet-suggest-provider.ts:139</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-snippet-suggest-provider.ts#L139">packages/monaco/src/browser/monaco-snippet-suggest-provider.ts:139</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -298,13 +312,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>uri: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="core.uri.html" class="tsd-signature-type">URI</a></h5>
+									<h5>uri: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">default</span></h5>
 								</li>
 								<li>
-									<h5>options: <a href="../interfaces/monaco.snippetloadoptions.html" class="tsd-signature-type">SnippetLoadOptions</a></h5>
+									<h5>options: <a href="../interfaces/monaco.snippetloadoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">SnippetLoadOptions</a></h5>
 								</li>
 								<li>
-									<h5>toDispose: <a href="core.disposablecollection-1.html" class="tsd-signature-type">DisposableCollection</a></h5>
+									<h5>toDispose: <span class="tsd-signature-type">DisposableCollection</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -315,26 +329,26 @@
 					<a name="parsesnippets" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> parse<wbr>Snippets</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">parse<wbr>Snippets<span class="tsd-signature-symbol">(</span>snippets<span class="tsd-signature-symbol">: </span><a href="../interfaces/monaco.jsonserializedsnippets.html" class="tsd-signature-type">JsonSerializedSnippets</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, accept<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, snippet<span class="tsd-signature-symbol">: </span><a href="../modules/monaco.jsonserializedsnippet.html" class="tsd-signature-type">JsonSerializedSnippet</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">parse<wbr>Snippets<span class="tsd-signature-symbol">(</span>snippets<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/monaco.jsonserializedsnippets.html" class="tsd-signature-type" data-tsd-kind="Interface">JsonSerializedSnippets</a>, accept<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, snippet<span class="tsd-signature-symbol">: </span><a href="../interfaces/monaco.jsonserializedsnippet-1.html" class="tsd-signature-type" data-tsd-kind="Interface">JsonSerializedSnippet</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-snippet-suggest-provider.ts#L191">packages/monaco/src/browser/monaco-snippet-suggest-provider.ts:191</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-snippet-suggest-provider.ts#L191">packages/monaco/src/browser/monaco-snippet-suggest-provider.ts:191</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>snippets: <a href="../interfaces/monaco.jsonserializedsnippets.html" class="tsd-signature-type">JsonSerializedSnippets</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>snippets: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/monaco.jsonserializedsnippets.html" class="tsd-signature-type" data-tsd-kind="Interface">JsonSerializedSnippets</a></h5>
 								</li>
 								<li>
-									<h5>accept: <span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, snippet<span class="tsd-signature-symbol">: </span><a href="../modules/monaco.jsonserializedsnippet.html" class="tsd-signature-type">JsonSerializedSnippet</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<h5>accept: <span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, snippet<span class="tsd-signature-symbol">: </span><a href="../interfaces/monaco.jsonserializedsnippet-1.html" class="tsd-signature-type" data-tsd-kind="Interface">JsonSerializedSnippet</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, snippet<span class="tsd-signature-symbol">: </span><a href="../modules/monaco.jsonserializedsnippet.html" class="tsd-signature-type">JsonSerializedSnippet</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, snippet<span class="tsd-signature-symbol">: </span><a href="../interfaces/monaco.jsonserializedsnippet-1.html" class="tsd-signature-type" data-tsd-kind="Interface">JsonSerializedSnippet</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
@@ -344,7 +358,7 @@
 															<h5>name: <span class="tsd-signature-type">string</span></h5>
 														</li>
 														<li>
-															<h5>snippet: <a href="../modules/monaco.jsonserializedsnippet.html" class="tsd-signature-type">JsonSerializedSnippet</a></h5>
+															<h5>snippet: <a href="../interfaces/monaco.jsonserializedsnippet-1.html" class="tsd-signature-type" data-tsd-kind="Interface">JsonSerializedSnippet</a></h5>
 														</li>
 													</ul>
 													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -362,13 +376,14 @@
 					<a name="providecompletionitems" class="tsd-anchor"></a>
 					<h3>provide<wbr>Completion<wbr>Items</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">provide<wbr>Completion<wbr>Items<span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ITextModel</span>, position<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Position</span>, context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CompletionContext</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">CompletionList</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">provide<wbr>Completion<wbr>Items<span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ITextModel</span>, position<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Position</span>, context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CompletionContext</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">CompletionList</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of monaco.languages.CompletionItemProvider.provideCompletionItems</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-snippet-suggest-provider.ts#L39">packages/monaco/src/browser/monaco-snippet-suggest-provider.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-snippet-suggest-provider.ts#L39">packages/monaco/src/browser/monaco-snippet-suggest-provider.ts:39</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -383,7 +398,7 @@
 									<h5>context: <span class="tsd-signature-type">CompletionContext</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">CompletionList</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">CompletionList</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -391,22 +406,22 @@
 					<a name="push" class="tsd-anchor"></a>
 					<h3>push</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">push<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>snippets<span class="tsd-signature-symbol">: </span><a href="../interfaces/monaco.snippet.html" class="tsd-signature-type">Snippet</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/core.disposable-1.html" class="tsd-signature-type">Disposable</a></li>
+						<li class="tsd-signature tsd-kind-icon">push<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>snippets<span class="tsd-signature-symbol">: </span><a href="../interfaces/monaco.snippet.html" class="tsd-signature-type" data-tsd-kind="Interface">Snippet</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Disposable</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-snippet-suggest-provider.ts#L205">packages/monaco/src/browser/monaco-snippet-suggest-provider.ts:205</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-snippet-suggest-provider.ts#L205">packages/monaco/src/browser/monaco-snippet-suggest-provider.ts:205</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>snippets: <a href="../interfaces/monaco.snippet.html" class="tsd-signature-type">Snippet</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>snippets: <a href="../interfaces/monaco.snippet.html" class="tsd-signature-type" data-tsd-kind="Interface">Snippet</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/core.disposable-1.html" class="tsd-signature-type">Disposable</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Disposable</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -419,8 +434,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of monaco.languages.CompletionItemProvider.resolveCompletionItem</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-snippet-suggest-provider.ts#L104">packages/monaco/src/browser/monaco-snippet-suggest-provider.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-snippet-suggest-provider.ts#L104">packages/monaco/src/browser/monaco-snippet-suggest-provider.ts:104</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -441,8 +457,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/monaco.html">monaco</a>
@@ -454,13 +470,31 @@
 								<a href="../modules/monaco.monacocommands.html">Monaco<wbr>Commands</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.monacodiffeditor.html">Monaco<wbr>Diff<wbr>Editor</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.monacoeditor.html">Monaco<wbr>Editor</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.monacoeditormodel.html">Monaco<wbr>Editor<wbr>Model</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.monacoeditorzonewidget.html">Monaco<wbr>Editor<wbr>Zone<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/monaco.monacomenus.html">Monaco<wbr>Menus</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.monacooutlinecontribution.html">Monaco<wbr>Outline<wbr>Contribution</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/monaco.monacooutlinesymbolinformationnode.html">Monaco<wbr>Outline<wbr>Symbol<wbr>Information<wbr>Node</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/monaco.monacorangereplace.html">Monaco<wbr>Range<wbr>Replace</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.monacothemeregistry.html">Monaco<wbr>Theme<wbr>Registry</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/monaco.monacothemestate.html">Monaco<wbr>Theme<wbr>State</a>
@@ -491,6 +525,9 @@
 					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="monaco.monacosnippetsuggestprovider.html" class="tsd-kind-icon">Monaco<wbr>Snippet<wbr>Suggest<wbr>Provider</a>
 						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="monaco.monacosnippetsuggestprovider.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="monaco.monacosnippetsuggestprovider.html#fileservice" class="tsd-kind-icon">file<wbr>Service</a>
 							</li>
@@ -545,7 +582,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
@@ -555,6 +591,7 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">

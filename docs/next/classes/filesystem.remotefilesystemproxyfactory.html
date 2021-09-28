@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/filesystem.html">filesystem</a>
@@ -79,19 +78,13 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="core.jsonrpcproxyfactory-2.html" class="tsd-signature-type">JsonRpcProxyFactory</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>
+						<span class="tsd-signature-type">JsonRpcProxyFactory</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">RemoteFileSystemProxyFactory</span>
 							</li>
 						</ul>
 					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implements</h3>
-				<ul class="tsd-hierarchy">
-					<li><span class="tsd-signature-type">ProxyHandler</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -101,7 +94,7 @@
 						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><a href="filesystem.remotefilesystemproxyfactory.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="filesystem.remotefilesystemproxyfactory.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-inherited">
@@ -133,18 +126,18 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Remote<wbr>File<wbr>System<wbr>Proxy<wbr>Factory<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="filesystem.remotefilesystemproxyfactory.html" class="tsd-signature-type">RemoteFileSystemProxyFactory</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Remote<wbr>File<wbr>System<wbr>Proxy<wbr>Factory&lt;T&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="filesystem.remotefilesystemproxyfactory.html" class="tsd-signature-type" data-tsd-kind="Class">RemoteFileSystemProxyFactory</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="core.jsonrpcproxyfactory-2.html">JsonRpcProxyFactory</a>.<a href="core.jsonrpcproxyfactory-2.html#constructor">constructor</a></p>
+								<p>Inherited from JsonRpcProxyFactory&lt;T&gt;.constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/common/messaging/proxy-factory.ts#L104">packages/core/src/common/messaging/proxy-factory.ts:104</a></li>
+									<li>Defined in packages/core/lib/common/messaging/proxy-factory.d.ts:88</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -152,19 +145,23 @@
 									<p>Build a new JsonRpcProxyFactory.</p>
 								</div>
 							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></h4>
+								</li>
+							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> target: <span class="tsd-signature-type">any</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The object to expose to JSON-RPC methods calls.  If this
-											is omitted, the proxy won&#39;t be able to handle requests, only send them.</p>
-										</div>
+										<p>The object to expose to JSON-RPC methods calls.  If this
+										is omitted, the proxy won&#39;t be able to handle requests, only send them.</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="filesystem.remotefilesystemproxyfactory.html" class="tsd-signature-type">RemoteFileSystemProxyFactory</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="filesystem.remotefilesystemproxyfactory.html" class="tsd-signature-type" data-tsd-kind="Class">RemoteFileSystemProxyFactory</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -176,9 +173,9 @@
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> connection<wbr>Promise</h3>
 					<div class="tsd-signature tsd-kind-icon">connection<wbr>Promise<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">MessageConnection</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.jsonrpcproxyfactory-2.html">JsonRpcProxyFactory</a>.<a href="core.jsonrpcproxyfactory-2.html#connectionpromise">connectionPromise</a></p>
+						<p>Inherited from JsonRpcProxyFactory.connectionPromise</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/common/messaging/proxy-factory.ts#L104">packages/core/src/common/messaging/proxy-factory.ts:104</a></li>
+							<li>Defined in packages/core/lib/common/messaging/proxy-factory.d.ts:88</li>
 						</ul>
 					</aside>
 				</section>
@@ -187,16 +184,16 @@
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> connection<wbr>Promise<wbr>Resolve</h3>
 					<div class="tsd-signature tsd-kind-icon">connection<wbr>Promise<wbr>Resolve<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>connection<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MessageConnection</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.jsonrpcproxyfactory-2.html">JsonRpcProxyFactory</a>.<a href="core.jsonrpcproxyfactory-2.html#connectionpromiseresolve">connectionPromiseResolve</a></p>
+						<p>Inherited from JsonRpcProxyFactory.connectionPromiseResolve</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/common/messaging/proxy-factory.ts#L103">packages/core/src/common/messaging/proxy-factory.ts:103</a></li>
+							<li>Defined in packages/core/lib/common/messaging/proxy-factory.d.ts:87</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-class">
 									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>connection<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MessageConnection</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
@@ -217,22 +214,22 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="ondidcloseconnectionemitter" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Did<wbr>Close<wbr>Connection<wbr>Emitter</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Close<wbr>Connection<wbr>Emitter<span class="tsd-signature-symbol">:</span> <a href="core.emitter-1.html" class="tsd-signature-type">Emitter</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Emitter&lt;void&gt;()</span></div>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Close<wbr>Connection<wbr>Emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Emitter</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.jsonrpcproxyfactory-2.html">JsonRpcProxyFactory</a>.<a href="core.jsonrpcproxyfactory-2.html#ondidcloseconnectionemitter">onDidCloseConnectionEmitter</a></p>
+						<p>Inherited from JsonRpcProxyFactory.onDidCloseConnectionEmitter</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/common/messaging/proxy-factory.ts#L101">packages/core/src/common/messaging/proxy-factory.ts:101</a></li>
+							<li>Defined in packages/core/lib/common/messaging/proxy-factory.d.ts:86</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="ondidopenconnectionemitter" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Did<wbr>Open<wbr>Connection<wbr>Emitter</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Open<wbr>Connection<wbr>Emitter<span class="tsd-signature-symbol">:</span> <a href="core.emitter-1.html" class="tsd-signature-type">Emitter</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Emitter&lt;void&gt;()</span></div>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Open<wbr>Connection<wbr>Emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Emitter</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.jsonrpcproxyfactory-2.html">JsonRpcProxyFactory</a>.<a href="core.jsonrpcproxyfactory-2.html#ondidopenconnectionemitter">onDidOpenConnectionEmitter</a></p>
+						<p>Inherited from JsonRpcProxyFactory.onDidOpenConnectionEmitter</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/common/messaging/proxy-factory.ts#L100">packages/core/src/common/messaging/proxy-factory.ts:100</a></li>
+							<li>Defined in packages/core/lib/common/messaging/proxy-factory.d.ts:85</li>
 						</ul>
 					</aside>
 				</section>
@@ -241,17 +238,11 @@
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> target</h3>
 					<div class="tsd-signature tsd-kind-icon">target<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.jsonrpcproxyfactory-2.html">JsonRpcProxyFactory</a>.<a href="core.jsonrpcproxyfactory-2.html#target">target</a></p>
+						<p>Inherited from JsonRpcProxyFactory.target</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/common/messaging/proxy-factory.ts#L112">packages/core/src/common/messaging/proxy-factory.ts:112</a></li>
+							<li>Defined in packages/core/lib/common/messaging/proxy-factory.d.ts:84</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The object to expose to JSON-RPC methods calls.  If this
-							is omitted, the proxy won&#39;t be able to handle requests, only send them.</p>
-						</div>
-					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -260,14 +251,14 @@
 					<a name="createproxy" class="tsd-anchor"></a>
 					<h3>create<wbr>Proxy</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Proxy<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/core.html#jsonrpcproxy-2" class="tsd-signature-type">JsonRpcProxy</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Proxy<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JsonRpcProxy</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="core.jsonrpcproxyfactory-2.html">JsonRpcProxyFactory</a>.<a href="core.jsonrpcproxyfactory-2.html#createproxy">createProxy</a></p>
+								<p>Inherited from JsonRpcProxyFactory.createProxy</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/common/messaging/proxy-factory.ts#L192">packages/core/src/common/messaging/proxy-factory.ts:192</a></li>
+									<li>Defined in packages/core/lib/common/messaging/proxy-factory.d.ts:131</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -278,7 +269,7 @@
 								</div>
 								<p>If <code>T</code> implements <code>JsonRpcServer</code> then a client is used as a target object for a remote target object.</p>
 							</div>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/core.html#jsonrpcproxy-2" class="tsd-signature-type">JsonRpcProxy</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">JsonRpcProxy</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -286,20 +277,20 @@
 					<a name="deserializeerror" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> deserialize<wbr>Error</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">deserialize<wbr>Error<span class="tsd-signature-symbol">(</span>capturedError<span class="tsd-signature-symbol">: </span><a href="../modules/core.applicationerror-1.html#error" class="tsd-signature-type">Error</a>, e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">deserialize<wbr>Error<span class="tsd-signature-symbol">(</span>capturedError<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Error</span>, e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="core.jsonrpcproxyfactory-2.html">JsonRpcProxyFactory</a>.<a href="core.jsonrpcproxyfactory-2.html#deserializeerror">deserializeError</a></p>
+								<p>Overrides JsonRpcProxyFactory.deserializeError</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/common/remote-file-system-provider.ts#L94">packages/filesystem/src/common/remote-file-system-provider.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/common/remote-file-system-provider.ts#L94">packages/filesystem/src/common/remote-file-system-provider.ts:94</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>capturedError: <a href="../modules/core.applicationerror-1.html#error" class="tsd-signature-type">Error</a></h5>
+									<h5>capturedError: <span class="tsd-signature-type">Error</span></h5>
 								</li>
 								<li>
 									<h5>e: <span class="tsd-signature-type">any</span></h5>
@@ -313,14 +304,14 @@
 					<a name="get" class="tsd-anchor"></a>
 					<h3>get</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, p<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PropertyKey</span>, receiver<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, p<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span>, receiver<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="core.jsonrpcproxyfactory-2.html">JsonRpcProxyFactory</a>.<a href="core.jsonrpcproxyfactory-2.html#get">get</a></p>
+								<p>Inherited from JsonRpcProxyFactory.get</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/common/messaging/proxy-factory.ts#L219">packages/core/src/common/messaging/proxy-factory.ts:219</a></li>
+									<li>Defined in packages/core/lib/common/messaging/proxy-factory.d.ts:154</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -332,8 +323,10 @@
 									method to be called.  The callable takes a variable number of arguments,
 								which are passed in the JSON-RPC method call.</p>
 								<p>For example, if you have a Proxy object:</p>
-								<pre><code><span class="hljs-keyword">let</span> <span class="hljs-attr">fooProxyFactory</span> = JsonRpcProxyFactory&lt;Foo&gt;(&#x27;/foo&#x27;)
-<span class="hljs-keyword">let</span> <span class="hljs-attr">fooProxy</span> = fooProxyFactory.createProxy()</code></pre><p>accessing <code>fooProxy.bar</code> will return a callable that, when called,
+								<pre><code><span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">fooProxyFactory</span><span style="color: #000000"> = </span><span style="color: #795E26">JsonRpcProxyFactory</span><span style="color: #000000">&lt;</span><span style="color: #267F99">Foo</span><span style="color: #000000">&gt;(</span><span style="color: #A31515">&#039;/foo&#039;</span><span style="color: #000000">)</span>
+<span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">fooProxy</span><span style="color: #000000"> = </span><span style="color: #001080">fooProxyFactory</span><span style="color: #000000">.</span><span style="color: #795E26">createProxy</span><span style="color: #000000">()</span>
+</code></pre>
+								<p>accessing <code>fooProxy.bar</code> will return a callable that, when called,
 									executes a JSON-RPC method call to method <code>bar</code>.  Therefore, doing
 								<code>fooProxy.bar()</code> will call the <code>bar</code> method on the remote Foo object.</p>
 							</div>
@@ -346,7 +339,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>p: <span class="tsd-signature-type">PropertyKey</span></h5>
+									<h5>p: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The property accessed on the Proxy object.</p>
 									</div>
@@ -367,14 +360,14 @@
 					<a name="isnotification" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> is<wbr>Notification</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Notification<span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PropertyKey</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Notification<span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="core.jsonrpcproxyfactory-2.html">JsonRpcProxyFactory</a>.<a href="core.jsonrpcproxyfactory-2.html#isnotification">isNotification</a></p>
+								<p>Inherited from JsonRpcProxyFactory.isNotification</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/common/messaging/proxy-factory.ts#L267">packages/core/src/common/messaging/proxy-factory.ts:267</a></li>
+									<li>Defined in packages/core/lib/common/messaging/proxy-factory.d.ts:164</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -387,7 +380,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>p: <span class="tsd-signature-type">PropertyKey</span></h5>
+									<h5>p: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The property being called on the proxy.</p>
 									</div>
@@ -407,9 +400,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="core.jsonrpcproxyfactory-2.html">JsonRpcProxyFactory</a>.<a href="core.jsonrpcproxyfactory-2.html#listen">listen</a></p>
+								<p>Inherited from JsonRpcProxyFactory.listen</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/common/messaging/proxy-factory.ts#L134">packages/core/src/common/messaging/proxy-factory.ts:134</a></li>
+									<li>Defined in packages/core/lib/common/messaging/proxy-factory.d.ts:103</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -438,9 +431,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="core.jsonrpcproxyfactory-2.html">JsonRpcProxyFactory</a>.<a href="core.jsonrpcproxyfactory-2.html#onnotification">onNotification</a></p>
+								<p>Inherited from JsonRpcProxyFactory.onNotification</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/common/messaging/proxy-factory.ts#L179">packages/core/src/common/messaging/proxy-factory.ts:179</a></li>
+									<li>Defined in packages/core/lib/common/messaging/proxy-factory.d.ts:123</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -472,9 +465,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="core.jsonrpcproxyfactory-2.html">JsonRpcProxyFactory</a>.<a href="core.jsonrpcproxyfactory-2.html#onrequest">onRequest</a></p>
+								<p>Inherited from JsonRpcProxyFactory.onRequest</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/common/messaging/proxy-factory.ts#L154">packages/core/src/common/messaging/proxy-factory.ts:154</a></li>
+									<li>Defined in packages/core/lib/common/messaging/proxy-factory.d.ts:116</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -510,9 +503,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="core.jsonrpcproxyfactory-2.html">JsonRpcProxyFactory</a>.<a href="core.jsonrpcproxyfactory-2.html#serializeerror">serializeError</a></p>
+								<p>Overrides JsonRpcProxyFactory.serializeError</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/common/remote-file-system-provider.ts#L85">packages/filesystem/src/common/remote-file-system-provider.ts:85</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/common/remote-file-system-provider.ts#L85">packages/filesystem/src/common/remote-file-system-provider.ts:85</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -534,9 +527,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="core.jsonrpcproxyfactory-2.html">JsonRpcProxyFactory</a>.<a href="core.jsonrpcproxyfactory-2.html#waitforconnection">waitForConnection</a></p>
+								<p>Inherited from JsonRpcProxyFactory.waitForConnection</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/common/messaging/proxy-factory.ts#L116">packages/core/src/common/messaging/proxy-factory.ts:116</a></li>
+									<li>Defined in packages/core/lib/common/messaging/proxy-factory.d.ts:96</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -548,8 +541,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/filesystem.html">filesystem</a>
@@ -558,7 +551,13 @@
 								<a href="../modules/filesystem.basestat.html">Base<wbr>Stat</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.delegatingfilesystemprovider.html">Delegating<wbr>File<wbr>System<wbr>Provider</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/filesystem.dirnode-2.html">Dir<wbr>Node</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.diskfilesystemprovider.html">Disk<wbr>File<wbr>System<wbr>Provider</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/filesystem.fileaccess-1.html">File<wbr>Access</a>
@@ -574,6 +573,12 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/filesystem.filedownloaddata.html">File<wbr>Download<wbr>Data</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.filedownloadhandler.html">File<wbr>Download<wbr>Handler</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.filedownloadservice.html">File<wbr>Download<wbr>Service</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/filesystem.filemoveevent-1.html">File<wbr>Move<wbr>Event</a>
@@ -609,7 +614,22 @@
 								<a href="../modules/filesystem.filesystemutils-1.html">File<wbr>System<wbr>Utils</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.fileuploadservice.html">File<wbr>Upload<wbr>Service</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.filepathbreadcrumb.html">Filepath<wbr>Breadcrumb</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.locationlistrenderer-2.html">Location<wbr>List<wbr>Renderer</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/filesystem.electron.html">electron</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.export_.html">export&#61;</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.export_-1.html">export&#61;</a>
 							</li>
 						</ul>
 					</li>
@@ -622,7 +642,7 @@
 					<li class="current tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="filesystem.remotefilesystemproxyfactory.html" class="tsd-kind-icon">Remote<wbr>File<wbr>System<wbr>Proxy<wbr>Factory</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
 								<a href="filesystem.remotefilesystemproxyfactory.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
@@ -682,17 +702,11 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
@@ -701,6 +715,10 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>

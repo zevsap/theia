@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="git.html">git</a>
@@ -67,25 +66,10 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>An event representing a <code>Git</code> status change in one of the watched local working directory.</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="git.gitstatuschangeevent-1.html#oldstatus" class="tsd-kind-icon">old<wbr>Status</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="git.gitstatuschangeevent-1.html#source" class="tsd-kind-icon">source</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="git.gitstatuschangeevent-1.html#status" class="tsd-kind-icon">status</a></li>
-							</ul>
-						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
@@ -96,66 +80,18 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-					<a name="oldstatus" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> old<wbr>Status</h3>
-					<div class="tsd-signature tsd-kind-icon">old<wbr>Status<span class="tsd-signature-symbol">:</span> <a href="git.html#workingdirectorystatus" class="tsd-signature-type">WorkingDirectoryStatus</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git-watcher.ts#L40">packages/git/src/common/git-watcher.ts:40</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The previous working directory state, if any.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-					<a name="source" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> source</h3>
-					<div class="tsd-signature tsd-kind-icon">source<span class="tsd-signature-symbol">:</span> <a href="git.repository-1.html" class="tsd-signature-type">Repository</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git-watcher.ts#L30">packages/git/src/common/git-watcher.ts:30</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The source <code>Git</code> repository where the event belongs to.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-					<a name="status" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> status</h3>
-					<div class="tsd-signature tsd-kind-icon">status<span class="tsd-signature-symbol">:</span> <a href="git.workingdirectorystatus-1.html" class="tsd-signature-type">WorkingDirectoryStatus</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git-watcher.ts#L35">packages/git/src/common/git-watcher.ts:35</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The new working directory state.</p>
-						</div>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
 					<a name="is" class="tsd-anchor"></a>
 					<h3>is</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">is<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">event</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">GitStatusChangeEvent</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">event</span><span class="tsd-signature-symbol"> is </span><a href="../interfaces/git.gitstatuschangeevent-2.html" class="tsd-signature-type" data-tsd-kind="Interface">GitStatusChangeEvent</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git-watcher.ts#L51">packages/git/src/common/git-watcher.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git-watcher.ts#L51">packages/git/src/common/git-watcher.ts:51</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -172,7 +108,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">event</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">GitStatusChangeEvent</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">event</span><span class="tsd-signature-symbol"> is </span><a href="../interfaces/git.gitstatuschangeevent-2.html" class="tsd-signature-type" data-tsd-kind="Interface">GitStatusChangeEvent</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -181,14 +117,23 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="git.html">git</a>
 						<ul>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="git.blameannotationskeybindingcontext.html">Blame<wbr>Annotations<wbr>Keybinding<wbr>Context</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="git.blamecommands.html">Blame<wbr>Commands</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="git.blamedecorator.html">Blame<wbr>Decorator</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="git.dirtydiffmodel.html">Dirty<wbr>Diff<wbr>Model</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="git.git_commands.html">GIT_<wbr>COMMANDS</a>
@@ -203,16 +148,37 @@
 								<a href="git.gitbindingoptions.html">Git<wbr>Binding<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="git.gitblameparser.html">Git<wbr>Blame<wbr>Parser</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="git.gitcommitdetailuri.html">Git<wbr>Commit<wbr>Detail<wbr>Uri</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="git.gitcommitmessagevalidator.html">Git<wbr>Commit<wbr>Message<wbr>Validator</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="git.gitdiffcommands.html">Git<wbr>Diff<wbr>Commands</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="git.gitdifftreemodel.html">Git<wbr>Diff<wbr>Tree<wbr>Model</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="git.gitfilestatus-1.html">Git<wbr>File<wbr>Status</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="git.gitprompt.html">Git<wbr>Prompt</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="git.gitscmprovider.html">Git<wbr>Scm<wbr>Provider</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="git.gitscmrepository.html">Git<wbr>Scm<wbr>Repository</a>
 							</li>
 							<li class="current tsd-kind-namespace tsd-parent-kind-module">
 								<a href="git.gitstatuschangeevent-1.html">Git<wbr>Status<wbr>Change<wbr>Event</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="git.gitsyncservice.html">Git<wbr>Sync<wbr>Service</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="git.gitutils-1.html">Git<wbr>Utils</a>
@@ -232,15 +198,6 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-property tsd-parent-kind-namespace">
-						<a href="git.gitstatuschangeevent-1.html#oldstatus" class="tsd-kind-icon">old<wbr>Status</a>
-					</li>
-					<li class=" tsd-kind-property tsd-parent-kind-namespace">
-						<a href="git.gitstatuschangeevent-1.html#source" class="tsd-kind-icon">source</a>
-					</li>
-					<li class=" tsd-kind-property tsd-parent-kind-namespace">
-						<a href="git.gitstatuschangeevent-1.html#status" class="tsd-kind-icon">status</a>
-					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-namespace">
 						<a href="git.gitstatuschangeevent-1.html#is" class="tsd-kind-icon">is</a>
 					</li>
@@ -255,7 +212,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

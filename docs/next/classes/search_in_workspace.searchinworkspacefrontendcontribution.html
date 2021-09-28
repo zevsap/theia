@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/search_in_workspace.html">search-in-workspace</a>
@@ -71,7 +70,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="core.abstractviewcontribution-2.html" class="tsd-signature-type">AbstractViewContribution</a><span class="tsd-signature-symbol">&lt;</span><a href="search_in_workspace.searchinworkspacewidget.html" class="tsd-signature-type">SearchInWorkspaceWidget</a><span class="tsd-signature-symbol">&gt;</span>
+						<span class="tsd-signature-type">AbstractViewContribution</span><span class="tsd-signature-symbol">&lt;</span><a href="search_in_workspace.searchinworkspacewidget.html" class="tsd-signature-type" data-tsd-kind="Class">SearchInWorkspaceWidget</a><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">SearchInWorkspaceFrontendContribution</span>
@@ -83,11 +82,8 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/core.commandcontribution-1.html" class="tsd-signature-type">CommandContribution</a></li>
-					<li><a href="../interfaces/core.menucontribution-1.html" class="tsd-signature-type">MenuContribution</a></li>
-					<li><a href="../interfaces/core.keybindingcontribution-1.html" class="tsd-signature-type">KeybindingContribution</a></li>
-					<li><a href="../interfaces/core.frontendapplicationcontribution-1.html" class="tsd-signature-type">FrontendApplicationContribution</a></li>
-					<li><a href="../interfaces/core.tabbartoolbarcontribution.html" class="tsd-signature-type">TabBarToolbarContribution</a></li>
+					<li><span class="tsd-signature-type">FrontendApplicationContribution</span></li>
+					<li><span class="tsd-signature-type">TabBarToolbarContribution</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -116,13 +112,13 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="search_in_workspace.searchinworkspacefrontendcontribution.html#workspaceservice" class="tsd-kind-icon">workspace<wbr>Service</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="search_in_workspace.searchinworkspacefrontendcontribution.html#defaultviewoptions" class="tsd-kind-icon">default<wbr>View<wbr>Options</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="search_in_workspace.searchinworkspacefrontendcontribution.html#viewid" class="tsd-kind-icon">view<wbr>Id</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="search_in_workspace.searchinworkspacefrontendcontribution.html#viewlabel" class="tsd-kind-icon">view<wbr>Label</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="search_in_workspace.searchinworkspacefrontendcontribution.html#widget" class="tsd-kind-icon">widget</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="search_in_workspace.searchinworkspacefrontendcontribution.html#defaultviewoptions" class="tsd-kind-icon">default<wbr>View<wbr>Options</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="search_in_workspace.searchinworkspacefrontendcontribution.html#viewid" class="tsd-kind-icon">view<wbr>Id</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="search_in_workspace.searchinworkspacefrontendcontribution.html#viewlabel" class="tsd-kind-icon">view<wbr>Label</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="search_in_workspace.searchinworkspacefrontendcontribution.html#widget" class="tsd-kind-icon">widget</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -153,17 +149,17 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Search<wbr>InWorkspace<wbr>Frontend<wbr>Contribution<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="search_in_workspace.searchinworkspacefrontendcontribution.html" class="tsd-signature-type">SearchInWorkspaceFrontendContribution</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Search<wbr>InWorkspace<wbr>Frontend<wbr>Contribution<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="search_in_workspace.searchinworkspacefrontendcontribution.html" class="tsd-signature-type" data-tsd-kind="Class">SearchInWorkspaceFrontendContribution</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#constructor">constructor</a></p>
+								<p>Overrides AbstractViewContribution&lt;SearchInWorkspaceWidget&gt;.constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L90">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:90</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L90">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:90</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="search_in_workspace.searchinworkspacefrontendcontribution.html" class="tsd-signature-type">SearchInWorkspaceFrontendContribution</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="search_in_workspace.searchinworkspacefrontendcontribution.html" class="tsd-signature-type" data-tsd-kind="Class">SearchInWorkspaceFrontendContribution</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -173,62 +169,62 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="contextkeyservice" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> context<wbr>Key<wbr>Service</h3>
-					<div class="tsd-signature tsd-kind-icon">context<wbr>Key<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="search_in_workspace.searchinworkspacecontextkeyservice.html" class="tsd-signature-type">SearchInWorkspaceContextKeyService</a></div>
+					<div class="tsd-signature tsd-kind-icon">context<wbr>Key<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="search_in_workspace.searchinworkspacecontextkeyservice.html" class="tsd-signature-type" data-tsd-kind="Class">SearchInWorkspaceContextKeyService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L90">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:90</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L90">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:90</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="editormanager" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> editor<wbr>Manager</h3>
-					<div class="tsd-signature tsd-kind-icon">editor<wbr>Manager<span class="tsd-signature-symbol">:</span> <a href="editor.editormanager-1.html" class="tsd-signature-type">EditorManager</a></div>
+					<div class="tsd-signature tsd-kind-icon">editor<wbr>Manager<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EditorManager</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L87">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:87</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L87">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:87</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="fileservice" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> file<wbr>Service</h3>
-					<div class="tsd-signature tsd-kind-icon">file<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="filesystem.fileservice.html" class="tsd-signature-type">FileService</a></div>
+					<div class="tsd-signature tsd-kind-icon">file<wbr>Service<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">FileService</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L86">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:86</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L86">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:86</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="labelprovider" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> label<wbr>Provider</h3>
-					<div class="tsd-signature tsd-kind-icon">label<wbr>Provider<span class="tsd-signature-symbol">:</span> <a href="core.labelprovider-1.html" class="tsd-signature-type">LabelProvider</a></div>
+					<div class="tsd-signature tsd-kind-icon">label<wbr>Provider<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">LabelProvider</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L84">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:84</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L84">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:84</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="options" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> options</h3>
-					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.viewcontributionoptions-2.html" class="tsd-signature-type">ViewContributionOptions</a></div>
+					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ViewContributionOptions</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#options">options</a></p>
+						<p>Inherited from AbstractViewContribution.options</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/shell/view-contribution.ts#L68">packages/core/src/browser/shell/view-contribution.ts:68</a></li>
+							<li>Defined in packages/core/lib/browser/shell/view-contribution.d.ts:41</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="quickview" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> quick<wbr>View</h3>
-					<div class="tsd-signature tsd-kind-icon">quick<wbr>View<span class="tsd-signature-symbol">:</span> <a href="core.quickviewservice-2.html" class="tsd-signature-type">QuickViewService</a></div>
+					<div class="tsd-signature tsd-kind-icon">quick<wbr>View<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">QuickViewService</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#quickview">quickView</a></p>
+						<p>Inherited from AbstractViewContribution.quickView</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/shell/view-contribution.ts#L63">packages/core/src/browser/shell/view-contribution.ts:63</a></li>
+							<li>Defined in packages/core/lib/browser/shell/view-contribution.d.ts:44</li>
 						</ul>
 					</aside>
 				</section>
@@ -238,125 +234,121 @@
 					<div class="tsd-signature tsd-kind-icon">selection<wbr>Service<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">SelectionService</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L83">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:83</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L83">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:83</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="shell" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> shell</h3>
-					<div class="tsd-signature tsd-kind-icon">shell<span class="tsd-signature-symbol">:</span> <a href="core.applicationshell-2.html" class="tsd-signature-type">ApplicationShell</a></div>
+					<div class="tsd-signature tsd-kind-icon">shell<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ApplicationShell</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#shell">shell</a></p>
+						<p>Inherited from AbstractViewContribution.shell</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/shell/view-contribution.ts#L60">packages/core/src/browser/shell/view-contribution.ts:60</a></li>
+							<li>Defined in packages/core/lib/browser/shell/view-contribution.d.ts:43</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="togglecommand" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> toggle<wbr>Command</h3>
-					<div class="tsd-signature tsd-kind-icon">toggle<wbr>Command<span class="tsd-signature-symbol">:</span> <a href="../modules/core.command-1.html" class="tsd-signature-type">Command</a></div>
+					<div class="tsd-signature tsd-kind-icon">toggle<wbr>Command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Command</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#togglecommand">toggleCommand</a></p>
+						<p>Inherited from AbstractViewContribution.toggleCommand</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/shell/view-contribution.ts#L65">packages/core/src/browser/shell/view-contribution.ts:65</a></li>
+							<li>Defined in packages/core/lib/browser/shell/view-contribution.d.ts:45</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="widgetmanager" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> widget<wbr>Manager</h3>
-					<div class="tsd-signature tsd-kind-icon">widget<wbr>Manager<span class="tsd-signature-symbol">:</span> <a href="core.widgetmanager-1.html" class="tsd-signature-type">WidgetManager</a></div>
+					<div class="tsd-signature tsd-kind-icon">widget<wbr>Manager<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">WidgetManager</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#widgetmanager">widgetManager</a></p>
+						<p>Inherited from AbstractViewContribution.widgetManager</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/shell/view-contribution.ts#L59">packages/core/src/browser/shell/view-contribution.ts:59</a></li>
+							<li>Defined in packages/core/lib/browser/shell/view-contribution.d.ts:42</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="workspaceservice" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> workspace<wbr>Service</h3>
-					<div class="tsd-signature tsd-kind-icon">workspace<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="workspace.workspaceservice-1.html" class="tsd-signature-type">WorkspaceService</a></div>
+					<div class="tsd-signature tsd-kind-icon">workspace<wbr>Service<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">WorkspaceService</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L85">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:85</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L85">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:85</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Accessors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
 					<a name="defaultviewoptions" class="tsd-anchor"></a>
 					<h3>default<wbr>View<wbr>Options</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> defaultViewOptions<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/core.applicationshell-2.widgetoptions.html" class="tsd-signature-type">WidgetOptions</a></li>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> defaultViewOptions<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WidgetOptions</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#defaultviewoptions">defaultViewOptions</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/shell/view-contribution.ts#L86">packages/core/src/browser/shell/view-contribution.ts:86</a></li>
+									<li>Defined in packages/core/lib/browser/shell/view-contribution.d.ts:49</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/core.applicationshell-2.widgetoptions.html" class="tsd-signature-type">WidgetOptions</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">WidgetOptions</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
 					<a name="viewid" class="tsd-anchor"></a>
 					<h3>view<wbr>Id</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> viewId<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#viewid">viewId</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/shell/view-contribution.ts#L78">packages/core/src/browser/shell/view-contribution.ts:78</a></li>
+									<li>Defined in packages/core/lib/browser/shell/view-contribution.d.ts:47</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
 					<a name="viewlabel" class="tsd-anchor"></a>
 					<h3>view<wbr>Label</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> viewLabel<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#viewlabel">viewLabel</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/shell/view-contribution.ts#L82">packages/core/src/browser/shell/view-contribution.ts:82</a></li>
+									<li>Defined in packages/core/lib/browser/shell/view-contribution.d.ts:48</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
 					<a name="widget" class="tsd-anchor"></a>
 					<h3>widget</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> widget<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="search_in_workspace.searchinworkspacewidget.html" class="tsd-signature-type">SearchInWorkspaceWidget</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> widget<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#widget">widget</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/shell/view-contribution.ts#L90">packages/core/src/browser/shell/view-contribution.ts:90</a></li>
+									<li>Defined in packages/core/lib/browser/shell/view-contribution.d.ts:50</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="search_in_workspace.searchinworkspacewidget.html" class="tsd-signature-type">SearchInWorkspaceWidget</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -367,17 +359,17 @@
 					<a name="closeview" class="tsd-anchor"></a>
 					<h3>close<wbr>View</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">close<wbr>View<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="search_in_workspace.searchinworkspacewidget.html" class="tsd-signature-type">SearchInWorkspaceWidget</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">close<wbr>View<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="search_in_workspace.searchinworkspacewidget.html" class="tsd-signature-type" data-tsd-kind="Class">SearchInWorkspaceWidget</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#closeview">closeView</a></p>
+								<p>Inherited from AbstractViewContribution.closeView</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/shell/view-contribution.ts#L149">packages/core/src/browser/shell/view-contribution.ts:149</a></li>
+									<li>Defined in packages/core/lib/browser/shell/view-contribution.d.ts:54</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="search_in_workspace.searchinworkspacewidget.html" class="tsd-signature-type">SearchInWorkspaceWidget</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="search_in_workspace.searchinworkspacewidget.html" class="tsd-signature-type" data-tsd-kind="Class">SearchInWorkspaceWidget</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -391,7 +383,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L182">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:182</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L182">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:182</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -414,7 +406,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L105">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:105</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L105">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:105</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -425,20 +417,20 @@
 					<a name="initializelayout" class="tsd-anchor"></a>
 					<h3>initialize<wbr>Layout</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">initialize<wbr>Layout<span class="tsd-signature-symbol">(</span>app<span class="tsd-signature-symbol">: </span><a href="core.frontendapplication-1.html" class="tsd-signature-type">FrontendApplication</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">initialize<wbr>Layout<span class="tsd-signature-symbol">(</span>app<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FrontendApplication</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/core.frontendapplicationcontribution-1.html">FrontendApplicationContribution</a>.<a href="../interfaces/core.frontendapplicationcontribution-1.html#initializelayout">initializeLayout</a></p>
+								<p>Implementation of FrontendApplicationContribution.initializeLayout</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L112">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:112</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L112">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:112</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>app: <a href="core.frontendapplication-1.html" class="tsd-signature-type">FrontendApplication</a></h5>
+									<h5>app: <span class="tsd-signature-type">FrontendApplication</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -449,22 +441,22 @@
 					<a name="newmultiuriawarecommandhandler" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> new<wbr>Multi<wbr>Uri<wbr>Aware<wbr>Command<wbr>Handler</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">new<wbr>Multi<wbr>Uri<wbr>Aware<wbr>Command<wbr>Handler<span class="tsd-signature-symbol">(</span>handler<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.uricommandhandler.html" class="tsd-signature-type">UriCommandHandler</a><span class="tsd-signature-symbol">&lt;</span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.uriawarecommandhandler.html" class="tsd-signature-type">UriAwareCommandHandler</a><span class="tsd-signature-symbol">&lt;</span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">new<wbr>Multi<wbr>Uri<wbr>Aware<wbr>Command<wbr>Handler<span class="tsd-signature-symbol">(</span>handler<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">UriCommandHandler</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">UriAwareCommandHandler</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L263">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:263</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L263">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:263</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>handler: <a href="../interfaces/core.uricommandhandler.html" class="tsd-signature-type">UriCommandHandler</a><span class="tsd-signature-symbol">&lt;</span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>handler: <span class="tsd-signature-type">UriCommandHandler</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="core.uriawarecommandhandler.html" class="tsd-signature-type">UriAwareCommandHandler</a><span class="tsd-signature-symbol">&lt;</span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">UriAwareCommandHandler</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -472,22 +464,22 @@
 					<a name="newuriawarecommandhandler" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> new<wbr>Uri<wbr>Aware<wbr>Command<wbr>Handler</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">new<wbr>Uri<wbr>Aware<wbr>Command<wbr>Handler<span class="tsd-signature-symbol">(</span>handler<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.uricommandhandler.html" class="tsd-signature-type">UriCommandHandler</a><span class="tsd-signature-symbol">&lt;</span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.uriawarecommandhandler.html" class="tsd-signature-type">UriAwareCommandHandler</a><span class="tsd-signature-symbol">&lt;</span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">new<wbr>Uri<wbr>Aware<wbr>Command<wbr>Handler<span class="tsd-signature-symbol">(</span>handler<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">UriCommandHandler</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">UriAwareCommandHandler</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L259">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:259</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L259">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:259</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>handler: <a href="../interfaces/core.uricommandhandler.html" class="tsd-signature-type">UriCommandHandler</a><span class="tsd-signature-symbol">&lt;</span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>handler: <span class="tsd-signature-type">UriCommandHandler</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="core.uriawarecommandhandler.html" class="tsd-signature-type">UriAwareCommandHandler</a><span class="tsd-signature-symbol">&lt;</span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">UriAwareCommandHandler</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -495,23 +487,23 @@
 					<a name="openview" class="tsd-anchor"></a>
 					<h3>open<wbr>View</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">open<wbr>View<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/core.openviewarguments-2.html" class="tsd-signature-type">OpenViewArguments</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="search_in_workspace.searchinworkspacewidget.html" class="tsd-signature-type">SearchInWorkspaceWidget</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">open<wbr>View<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">OpenViewArguments</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="search_in_workspace.searchinworkspacewidget.html" class="tsd-signature-type" data-tsd-kind="Class">SearchInWorkspaceWidget</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#openview">openView</a></p>
+								<p>Inherited from AbstractViewContribution.openView</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/shell/view-contribution.ts#L98">packages/core/src/browser/shell/view-contribution.ts:98</a></li>
+									<li>Defined in packages/core/lib/browser/shell/view-contribution.d.ts:52</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> args: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/core.openviewarguments-2.html" class="tsd-signature-type">OpenViewArguments</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = {}</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> args: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">OpenViewArguments</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="search_in_workspace.searchinworkspacewidget.html" class="tsd-signature-type">SearchInWorkspaceWidget</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="search_in_workspace.searchinworkspacewidget.html" class="tsd-signature-type" data-tsd-kind="Class">SearchInWorkspaceWidget</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -524,9 +516,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#registercommands">registerCommands</a></p>
+								<p>Overrides AbstractViewContribution.registerCommands</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L116">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:116</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L116">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:116</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -543,21 +535,20 @@
 					<a name="registerkeybindings" class="tsd-anchor"></a>
 					<h3>register<wbr>Keybindings</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">register<wbr>Keybindings<span class="tsd-signature-symbol">(</span>keybindings<span class="tsd-signature-symbol">: </span><a href="core.keybindingregistry-1.html" class="tsd-signature-type">KeybindingRegistry</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Keybindings<span class="tsd-signature-symbol">(</span>keybindings<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">KeybindingRegistry</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/core.keybindingcontribution-1.html">KeybindingContribution</a>.<a href="../interfaces/core.keybindingcontribution-1.html#registerkeybindings">registerKeybindings</a></p>
-								<p>Overrides <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#registerkeybindings">registerKeybindings</a></p>
+								<p>Overrides AbstractViewContribution.registerKeybindings</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L201">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:201</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L201">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:201</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>keybindings: <a href="core.keybindingregistry-1.html" class="tsd-signature-type">KeybindingRegistry</a></h5>
+									<h5>keybindings: <span class="tsd-signature-type">KeybindingRegistry</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -573,9 +564,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#registermenus">registerMenus</a></p>
+								<p>Overrides AbstractViewContribution.registerMenus</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L209">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:209</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L209">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:209</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -592,20 +583,20 @@
 					<a name="registertoolbaritems" class="tsd-anchor"></a>
 					<h3>register<wbr>Toolbar<wbr>Items</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">register<wbr>Toolbar<wbr>Items<span class="tsd-signature-symbol">(</span>toolbarRegistry<span class="tsd-signature-symbol">: </span><a href="core.tabbartoolbarregistry.html" class="tsd-signature-type">TabBarToolbarRegistry</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Toolbar<wbr>Items<span class="tsd-signature-symbol">(</span>toolbarRegistry<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TabBarToolbarRegistry</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/core.tabbartoolbarcontribution.html">TabBarToolbarContribution</a>.<a href="../interfaces/core.tabbartoolbarcontribution.html#registertoolbaritems">registerToolbarItems</a></p>
+								<p>Implementation of TabBarToolbarContribution.registerToolbarItems</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L219">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:219</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L219">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:219</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>toolbarRegistry: <a href="core.tabbartoolbarregistry.html" class="tsd-signature-type">TabBarToolbarRegistry</a></h5>
+									<h5>toolbarRegistry: <span class="tsd-signature-type">TabBarToolbarRegistry</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -616,17 +607,17 @@
 					<a name="toggleview" class="tsd-anchor"></a>
 					<h3>toggle<wbr>View</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">toggle<wbr>View<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="search_in_workspace.searchinworkspacewidget.html" class="tsd-signature-type">SearchInWorkspaceWidget</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">toggle<wbr>View<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="search_in_workspace.searchinworkspacewidget.html" class="tsd-signature-type" data-tsd-kind="Class">SearchInWorkspaceWidget</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#toggleview">toggleView</a></p>
+								<p>Inherited from AbstractViewContribution.toggleView</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/shell/view-contribution.ts#L154">packages/core/src/browser/shell/view-contribution.ts:154</a></li>
+									<li>Defined in packages/core/lib/browser/shell/view-contribution.d.ts:55</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="search_in_workspace.searchinworkspacewidget.html" class="tsd-signature-type">SearchInWorkspaceWidget</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="search_in_workspace.searchinworkspacewidget.html" class="tsd-signature-type" data-tsd-kind="Class">SearchInWorkspaceWidget</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -634,17 +625,17 @@
 					<a name="trygetwidget" class="tsd-anchor"></a>
 					<h3>try<wbr>Get<wbr>Widget</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">try<wbr>Get<wbr>Widget<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="search_in_workspace.searchinworkspacewidget.html" class="tsd-signature-type">SearchInWorkspaceWidget</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">try<wbr>Get<wbr>Widget<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="search_in_workspace.searchinworkspacewidget.html" class="tsd-signature-type" data-tsd-kind="Class">SearchInWorkspaceWidget</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="core.abstractviewcontribution-2.html">AbstractViewContribution</a>.<a href="core.abstractviewcontribution-2.html#trygetwidget">tryGetWidget</a></p>
+								<p>Inherited from AbstractViewContribution.tryGetWidget</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/shell/view-contribution.ts#L94">packages/core/src/browser/shell/view-contribution.ts:94</a></li>
+									<li>Defined in packages/core/lib/browser/shell/view-contribution.d.ts:51</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="search_in_workspace.searchinworkspacewidget.html" class="tsd-signature-type">SearchInWorkspaceWidget</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="search_in_workspace.searchinworkspacewidget.html" class="tsd-signature-type" data-tsd-kind="Class">SearchInWorkspaceWidget</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -652,13 +643,13 @@
 					<a name="withwidget" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> with<wbr>Widget</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">with<wbr>Widget&lt;T&gt;<span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">: </span><a href="search_in_workspace.searchinworkspacewidget.html" class="tsd-signature-type">SearchInWorkspaceWidget</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span></li>
+						<li class="tsd-signature tsd-kind-icon">with<wbr>Widget&lt;T&gt;<span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Widget</span>, fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">: </span><a href="search_in_workspace.searchinworkspacewidget.html" class="tsd-signature-type" data-tsd-kind="Class">SearchInWorkspaceWidget</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L171">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:171</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts#L171">packages/search-in-workspace/src/browser/search-in-workspace-frontend-contribution.ts:171</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -670,21 +661,21 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> widget: <span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> = this.tryGetWidget()</span></h5>
+									<h5>widget: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol"> = ...</span></h5>
 								</li>
 								<li>
-									<h5>fn: <span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">: </span><a href="search_in_workspace.searchinworkspacewidget.html" class="tsd-signature-type">SearchInWorkspaceWidget</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span></h5>
+									<h5>fn: <span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">: </span><a href="search_in_workspace.searchinworkspacewidget.html" class="tsd-signature-type" data-tsd-kind="Class">SearchInWorkspaceWidget</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">: </span><a href="search_in_workspace.searchinworkspacewidget.html" class="tsd-signature-type">SearchInWorkspaceWidget</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">: </span><a href="search_in_workspace.searchinworkspacewidget.html" class="tsd-signature-type" data-tsd-kind="Class">SearchInWorkspaceWidget</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
 													<h4 class="tsd-parameters-title">Parameters</h4>
 													<ul class="tsd-parameters">
 														<li>
-															<h5>widget: <a href="search_in_workspace.searchinworkspacewidget.html" class="tsd-signature-type">SearchInWorkspaceWidget</a></h5>
+															<h5>widget: <a href="search_in_workspace.searchinworkspacewidget.html" class="tsd-signature-type" data-tsd-kind="Class">SearchInWorkspaceWidget</a></h5>
 														</li>
 													</ul>
 													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
@@ -694,7 +685,7 @@
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -703,8 +694,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/search_in_workspace.html">search-<wbr>in-<wbr>workspace</a>
@@ -774,16 +765,16 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="search_in_workspace.searchinworkspacefrontendcontribution.html#workspaceservice" class="tsd-kind-icon">workspace<wbr>Service</a>
 							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="search_in_workspace.searchinworkspacefrontendcontribution.html#defaultviewoptions" class="tsd-kind-icon">default<wbr>View<wbr>Options</a>
 							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="search_in_workspace.searchinworkspacefrontendcontribution.html#viewid" class="tsd-kind-icon">view<wbr>Id</a>
 							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="search_in_workspace.searchinworkspacefrontendcontribution.html#viewlabel" class="tsd-kind-icon">view<wbr>Label</a>
 							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="search_in_workspace.searchinworkspacefrontendcontribution.html#widget" class="tsd-kind-icon">widget</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
@@ -843,7 +834,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

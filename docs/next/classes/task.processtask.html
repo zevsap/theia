@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/task.html">task</a>
@@ -78,19 +77,13 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="task.task-2.html" class="tsd-signature-type">Task</a>
+						<a href="task.task-2.html" class="tsd-signature-type" data-tsd-kind="Class">Task</a>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">ProcessTask</span>
 							</li>
 						</ul>
 					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implements</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../modules/core.disposable-1.html" class="tsd-signature-type">Disposable</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -108,11 +101,11 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="task.processtask.html#command" class="tsd-kind-icon">command</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="task.processtask.html#exitemitter" class="tsd-kind-icon">exit<wbr>Emitter</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="task.processtask.html#logger" class="tsd-kind-icon">logger</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="task.processtask.html#options" class="tsd-kind-icon">options</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="task.processtask.html#logger" class="tsd-kind-icon">logger</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="task.processtask.html#options" class="tsd-kind-icon">options</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="task.processtask.html#outputemitter" class="tsd-kind-icon">output<wbr>Emitter</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="task.processtask.html#taskid" class="tsd-kind-icon">task<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="task.processtask.html#taskmanager" class="tsd-kind-icon">task<wbr>Manager</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="task.processtask.html#taskmanager" class="tsd-kind-icon">task<wbr>Manager</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="task.processtask.html#todispose" class="tsd-kind-icon">to<wbr>Dispose</a></li>
 							</ul>
 						</section>
@@ -148,29 +141,29 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Process<wbr>Task<span class="tsd-signature-symbol">(</span>taskManager<span class="tsd-signature-symbol">: </span><a href="task.taskmanager-1.html" class="tsd-signature-type">TaskManager</a>, logger<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.ilogger-1.html" class="tsd-signature-type">ILogger</a>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskprocessoptions.html" class="tsd-signature-type">TaskProcessOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="task.processtask.html" class="tsd-signature-type">ProcessTask</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Process<wbr>Task<span class="tsd-signature-symbol">(</span>taskManager<span class="tsd-signature-symbol">: </span><a href="task.taskmanager-1.html" class="tsd-signature-type" data-tsd-kind="Class">TaskManager</a>, logger<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ILogger</span>, options<span class="tsd-signature-symbol">: </span><a href="../modules/task.html#taskprocessoptions-1" class="tsd-signature-type" data-tsd-kind="Variable">TaskProcessOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="task.processtask.html" class="tsd-signature-type" data-tsd-kind="Class">ProcessTask</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides <a href="task.task-2.html">Task</a>.<a href="task.task-2.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/node/process/process-task.ts#L61">packages/task/src/node/process/process-task.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/node/process/process-task.ts#L61">packages/task/src/node/process/process-task.ts:61</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>taskManager: <a href="task.taskmanager-1.html" class="tsd-signature-type">TaskManager</a></h5>
+									<h5>taskManager: <a href="task.taskmanager-1.html" class="tsd-signature-type" data-tsd-kind="Class">TaskManager</a></h5>
 								</li>
 								<li>
-									<h5>logger: <a href="../interfaces/core.ilogger-1.html" class="tsd-signature-type">ILogger</a></h5>
+									<h5>logger: <span class="tsd-signature-type">ILogger</span></h5>
 								</li>
 								<li>
-									<h5>options: <a href="../interfaces/task.taskprocessoptions.html" class="tsd-signature-type">TaskProcessOptions</a></h5>
+									<h5>options: <a href="../modules/task.html#taskprocessoptions-1" class="tsd-signature-type" data-tsd-kind="Variable">TaskProcessOptions</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="task.processtask.html" class="tsd-signature-type">ProcessTask</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="task.processtask.html" class="tsd-signature-type" data-tsd-kind="Class">ProcessTask</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -180,54 +173,48 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="command" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> command</h3>
-					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/node/process/process-task.ts#L61">packages/task/src/node/process/process-task.ts:61</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/node/process/process-task.ts#L61">packages/task/src/node/process/process-task.ts:61</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="exitemitter" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> exit<wbr>Emitter</h3>
-					<div class="tsd-signature tsd-kind-icon">exit<wbr>Emitter<span class="tsd-signature-symbol">:</span> <a href="core.emitter-1.html" class="tsd-signature-type">Emitter</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskexitedevent-1.html" class="tsd-signature-type">TaskExitedEvent</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">exit<wbr>Emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Emitter</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskexitedevent-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskExitedEvent</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="task.task-2.html">Task</a>.<a href="task.task-2.html#exitemitter">exitEmitter</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/node/task.ts#L43">packages/task/src/node/task.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/node/task.ts#L43">packages/task/src/node/task.ts:43</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="logger" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> logger</h3>
-					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.ilogger-1.html" class="tsd-signature-type">ILogger</a></div>
+					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ILogger</span></div>
 					<aside class="tsd-sources">
-						<p>Overrides <a href="task.task-2.html">Task</a>.<a href="task.task-2.html#logger">logger</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/node/process/process-task.ts#L65">packages/task/src/node/process/process-task.ts:65</a></li>
-						</ul>
+						<p>Inherited from <a href="task.task-2.html">Task</a>.<a href="task.task-2.html#logger">logger</a></p>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="options" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> options</h3>
-					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <a href="../interfaces/task.taskprocessoptions.html" class="tsd-signature-type">TaskProcessOptions</a></div>
+					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <a href="../modules/task.html#taskprocessoptions-1" class="tsd-signature-type" data-tsd-kind="Variable">TaskProcessOptions</a></div>
 					<aside class="tsd-sources">
-						<p>Overrides <a href="task.task-2.html">Task</a>.<a href="task.task-2.html#options">options</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/node/process/process-task.ts#L66">packages/task/src/node/process/process-task.ts:66</a></li>
-						</ul>
+						<p>Inherited from <a href="task.task-2.html">Task</a>.<a href="task.task-2.html#options">options</a></p>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="outputemitter" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> output<wbr>Emitter</h3>
-					<div class="tsd-signature tsd-kind-icon">output<wbr>Emitter<span class="tsd-signature-symbol">:</span> <a href="core.emitter-1.html" class="tsd-signature-type">Emitter</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskoutputevent-1.html" class="tsd-signature-type">TaskOutputEvent</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">output<wbr>Emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Emitter</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskoutputevent-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskOutputEvent</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="task.task-2.html">Task</a>.<a href="task.task-2.html#outputemitter">outputEmitter</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/node/task.ts#L44">packages/task/src/node/task.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/node/task.ts#L44">packages/task/src/node/task.ts:44</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -238,29 +225,26 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="task.task-2.html">Task</a>.<a href="task.task-2.html#taskid">taskId</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/node/task.ts#L41">packages/task/src/node/task.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/node/task.ts#L41">packages/task/src/node/task.ts:41</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="taskmanager" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> task<wbr>Manager</h3>
-					<div class="tsd-signature tsd-kind-icon">task<wbr>Manager<span class="tsd-signature-symbol">:</span> <a href="task.taskmanager-1.html" class="tsd-signature-type">TaskManager</a></div>
+					<div class="tsd-signature tsd-kind-icon">task<wbr>Manager<span class="tsd-signature-symbol">:</span> <a href="task.taskmanager-1.html" class="tsd-signature-type" data-tsd-kind="Class">TaskManager</a></div>
 					<aside class="tsd-sources">
-						<p>Overrides <a href="task.task-2.html">Task</a>.<a href="task.task-2.html#taskmanager">taskManager</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/node/process/process-task.ts#L64">packages/task/src/node/process/process-task.ts:64</a></li>
-						</ul>
+						<p>Inherited from <a href="task.task-2.html">Task</a>.<a href="task.task-2.html#taskmanager">taskManager</a></p>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="todispose" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> to<wbr>Dispose</h3>
-					<div class="tsd-signature tsd-kind-icon">to<wbr>Dispose<span class="tsd-signature-symbol">:</span> <a href="core.disposablecollection-1.html" class="tsd-signature-type">DisposableCollection</a><span class="tsd-signature-symbol"> = new DisposableCollection()</span></div>
+					<div class="tsd-signature tsd-kind-icon">to<wbr>Dispose<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DisposableCollection</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="task.task-2.html">Task</a>.<a href="task.task-2.html#todispose">toDispose</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/node/task.ts#L42">packages/task/src/node/task.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/node/task.ts#L42">packages/task/src/node/task.ts:42</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -271,17 +255,16 @@
 					<a name="context" class="tsd-anchor"></a>
 					<h3>context</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> context<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> context<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="task.task-2.html">Task</a>.<a href="task.task-2.html#context">context</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/node/task.ts#L93">packages/task/src/node/task.ts:93</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/node/task.ts#L93">packages/task/src/node/task.ts:93</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -294,9 +277,8 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="task.task-2.html">Task</a>.<a href="task.task-2.html#id">id</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/node/task.ts#L89">packages/task/src/node/task.ts:89</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/node/task.ts#L89">packages/task/src/node/task.ts:89</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -312,9 +294,8 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="task.task-2.html">Task</a>.<a href="task.task-2.html#label">label</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/node/task.ts#L97">packages/task/src/node/task.ts:97</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/node/task.ts#L97">packages/task/src/node/task.ts:97</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -325,17 +306,16 @@
 					<a name="onexit" class="tsd-anchor"></a>
 					<h3>on<wbr>Exit</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> onExit<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/core.event-1.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskexitedevent-1.html" class="tsd-signature-type">TaskExitedEvent</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> onExit<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskexitedevent-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskExitedEvent</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="task.task-2.html">Task</a>.<a href="task.task-2.html#onexit">onExit</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/node/task.ts#L65">packages/task/src/node/task.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/node/task.ts#L65">packages/task/src/node/task.ts:65</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/core.event-1.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskexitedevent-1.html" class="tsd-signature-type">TaskExitedEvent</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskexitedevent-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskExitedEvent</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -343,17 +323,16 @@
 					<a name="onoutput" class="tsd-anchor"></a>
 					<h3>on<wbr>Output</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> onOutput<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/core.event-1.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskoutputevent-1.html" class="tsd-signature-type">TaskOutputEvent</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> onOutput<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskoutputevent-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskOutputEvent</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="task.task-2.html">Task</a>.<a href="task.task-2.html#onoutput">onOutput</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/node/task.ts#L69">packages/task/src/node/task.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/node/task.ts#L69">packages/task/src/node/task.ts:69</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/core.event-1.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskoutputevent-1.html" class="tsd-signature-type">TaskOutputEvent</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskoutputevent-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskOutputEvent</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -361,16 +340,16 @@
 					<a name="process" class="tsd-anchor"></a>
 					<h3>process</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> process<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="process.process-2.html" class="tsd-signature-type">Process</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> process<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Process</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/node/process/process-task.ts#L140">packages/task/src/node/process/process-task.ts:140</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/node/process/process-task.ts#L140">packages/task/src/node/process/process-task.ts:140</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="process.process-2.html" class="tsd-signature-type">Process</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Process</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -378,16 +357,16 @@
 					<a name="processtype" class="tsd-anchor"></a>
 					<h3>process<wbr>Type</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> processType<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/task.html#processtype" class="tsd-signature-type">ProcessType</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> processType<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/task.html#processtype" class="tsd-signature-type" data-tsd-kind="Type alias">ProcessType</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/node/process/process-task.ts#L144">packages/task/src/node/process/process-task.ts:144</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/node/process/process-task.ts#L144">packages/task/src/node/process/process-task.ts:144</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/task.html#processtype" class="tsd-signature-type">ProcessType</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/task.html#processtype" class="tsd-signature-type" data-tsd-kind="Type alias">ProcessType</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -405,7 +384,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="task.task-2.html">Task</a>.<a href="task.task-2.html#dispose">dispose</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/node/task.ts#L101">packages/task/src/node/task.ts:101</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/node/task.ts#L101">packages/task/src/node/task.ts:101</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -416,20 +395,20 @@
 					<a name="fireoutputline" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> fire<wbr>Output<wbr>Line</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">fire<wbr>Output<wbr>Line<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskoutputevent-1.html" class="tsd-signature-type">TaskOutputEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">fire<wbr>Output<wbr>Line<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskoutputevent-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskOutputEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="task.task-2.html">Task</a>.<a href="task.task-2.html#fireoutputline">fireOutputLine</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/node/task.ts#L78">packages/task/src/node/task.ts:78</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/node/task.ts#L78">packages/task/src/node/task.ts:78</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>event: <a href="../interfaces/task.taskoutputevent-1.html" class="tsd-signature-type">TaskOutputEvent</a></h5>
+									<h5>event: <a href="../interfaces/task.taskoutputevent-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskOutputEvent</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -440,14 +419,14 @@
 					<a name="firetaskexited" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> fire<wbr>Task<wbr>Exited</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">fire<wbr>Task<wbr>Exited<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskexitedevent-1.html" class="tsd-signature-type">TaskExitedEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">fire<wbr>Task<wbr>Exited<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskexitedevent-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskExitedEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="task.task-2.html">Task</a>.<a href="task.task-2.html#firetaskexited">fireTaskExited</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/node/task.ts#L74">packages/task/src/node/task.ts:74</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/node/task.ts#L74">packages/task/src/node/task.ts:74</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -458,7 +437,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>event: <a href="../interfaces/task.taskexitedevent-1.html" class="tsd-signature-type">TaskExitedEvent</a></h5>
+									<h5>event: <a href="../interfaces/task.taskexitedevent-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskExitedEvent</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -469,17 +448,17 @@
 					<a name="getruntimeinfo" class="tsd-anchor"></a>
 					<h3>get<wbr>Runtime<wbr>Info</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Runtime<wbr>Info<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/task.processtaskinfo.html" class="tsd-signature-type">ProcessTaskInfo</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Runtime<wbr>Info<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/task.processtaskinfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">ProcessTaskInfo</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides <a href="task.task-2.html">Task</a>.<a href="task.task-2.html#getruntimeinfo">getRuntimeInfo</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/node/process/process-task.ts#L129">packages/task/src/node/process/process-task.ts:129</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/node/process/process-task.ts#L129">packages/task/src/node/process/process-task.ts:129</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/task.processtaskinfo.html" class="tsd-signature-type">ProcessTaskInfo</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/task.processtaskinfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">ProcessTaskInfo</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -487,22 +466,22 @@
 					<a name="gettaskexitedevent" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Task<wbr>Exited<wbr>Event</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Task<wbr>Exited<wbr>Event<span class="tsd-signature-symbol">(</span>evt<span class="tsd-signature-symbol">: </span><a href="../interfaces/process.iprocessexitevent-1.html" class="tsd-signature-type">IProcessExitEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskexitedevent-1.html" class="tsd-signature-type">TaskExitedEvent</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Task<wbr>Exited<wbr>Event<span class="tsd-signature-symbol">(</span>evt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IProcessExitEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskexitedevent-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskExitedEvent</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/node/process/process-task.ts#L117">packages/task/src/node/process/process-task.ts:117</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/node/process/process-task.ts#L117">packages/task/src/node/process/process-task.ts:117</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>evt: <a href="../interfaces/process.iprocessexitevent-1.html" class="tsd-signature-type">IProcessExitEvent</a></h5>
+									<h5>evt: <span class="tsd-signature-type">IProcessExitEvent</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskexitedevent-1.html" class="tsd-signature-type">TaskExitedEvent</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskexitedevent-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskExitedEvent</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -517,7 +496,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="task.task-2.html">Task</a>.<a href="task.task-2.html#kill">kill</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/node/process/process-task.ts#L103">packages/task/src/node/process/process-task.ts:103</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/node/process/process-task.ts#L103">packages/task/src/node/process/process-task.ts:103</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -529,14 +508,23 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/task.html">task</a>
 						<ul>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/task.applytokind-1.html">Apply<wbr>ToKind</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/task.configuretaskaction.html">Configure<wbr>Task<wbr>Action</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/task.filelocationkind-1.html">File<wbr>Location<wbr>Kind</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/task.problemlocationkind-1.html">Problem<wbr>Location<wbr>Kind</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/task.problemmatchdata-1.html">Problem<wbr>Match<wbr>Data</a>
@@ -555,6 +543,12 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/task.taskcommands.html">Task<wbr>Commands</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/task.taskconfigurationmanager.html">Task<wbr>Configuration<wbr>Manager</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/task.taskconfigurationmodel.html">Task<wbr>Configuration<wbr>Model</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/task.taskcustomization-1.html">Task<wbr>Customization</a>
@@ -591,10 +585,10 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="task.processtask.html#exitemitter" class="tsd-kind-icon">exit<wbr>Emitter</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="task.processtask.html#logger" class="tsd-kind-icon">logger</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="task.processtask.html#options" class="tsd-kind-icon">options</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
@@ -603,7 +597,7 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="task.processtask.html#taskid" class="tsd-kind-icon">task<wbr>Id</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="task.processtask.html#taskmanager" class="tsd-kind-icon">task<wbr>Manager</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
@@ -663,7 +657,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

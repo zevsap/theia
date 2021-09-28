@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/core.html">core</a>
@@ -79,6 +78,12 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="core.electronmainapplication.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
@@ -133,94 +138,111 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Electron<wbr>Main<wbr>Application<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.electronmainapplication.html" class="tsd-signature-type" data-tsd-kind="Class">ElectronMainApplication</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="core.electronmainapplication.html" class="tsd-signature-type" data-tsd-kind="Class">ElectronMainApplication</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="_backendport" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> _backend<wbr>Port</h3>
-					<div class="tsd-signature tsd-kind-icon">_backend<wbr>Port<span class="tsd-signature-symbol">:</span> <a href="core.deferred-1.html" class="tsd-signature-type">Deferred</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Deferred&lt;number&gt;()</span></div>
+					<div class="tsd-signature tsd-kind-icon">_backend<wbr>Port<span class="tsd-signature-symbol">:</span> <a href="core.deferred-1.html" class="tsd-signature-type" data-tsd-kind="Class">Deferred</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L181">packages/core/src/electron-main/electron-main-application.ts:181</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L181">packages/core/src/electron-main/electron-main-application.ts:181</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="_config" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _config</h3>
-					<div class="tsd-signature tsd-kind-icon">_config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">FrontendApplicationConfig</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+					<div class="tsd-signature tsd-kind-icon">_config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RequiredRecursive</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L184">packages/core/src/electron-main/electron-main-application.ts:184</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L184">packages/core/src/electron-main/electron-main-application.ts:184</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="backendport" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> backend<wbr>Port</h3>
-					<div class="tsd-signature tsd-kind-icon">backend<wbr>Port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = this._backendPort.promise</span></div>
+					<div class="tsd-signature tsd-kind-icon">backend<wbr>Port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L182">packages/core/src/electron-main/electron-main-application.ts:182</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L182">packages/core/src/electron-main/electron-main-application.ts:182</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="contributions" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> contributions</h3>
-					<div class="tsd-signature tsd-kind-icon">contributions<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.contributionprovider-1.html" class="tsd-signature-type">ContributionProvider</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/core.electronmainapplicationcontribution.html" class="tsd-signature-type">ElectronMainApplicationContribution</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">contributions<span class="tsd-signature-symbol">:</span> <a href="../modules/core.html#contributionprovider-2" class="tsd-signature-type" data-tsd-kind="Variable">ContributionProvider</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/core.html#electronmainapplicationcontribution-1" class="tsd-signature-type" data-tsd-kind="Variable">ElectronMainApplicationContribution</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L165">packages/core/src/electron-main/electron-main-application.ts:165</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L165">packages/core/src/electron-main/electron-main-application.ts:165</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="electronsecuritytoken" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> electron<wbr>Security<wbr>Token</h3>
-					<div class="tsd-signature tsd-kind-icon">electron<wbr>Security<wbr>Token<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.electronsecuritytoken.html" class="tsd-signature-type">ElectronSecurityToken</a></div>
+					<div class="tsd-signature tsd-kind-icon">electron<wbr>Security<wbr>Token<span class="tsd-signature-symbol">:</span> <a href="../modules/core.html#electronsecuritytoken-1" class="tsd-signature-type" data-tsd-kind="Variable">ElectronSecurityToken</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L177">packages/core/src/electron-main/electron-main-application.ts:177</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L177">packages/core/src/electron-main/electron-main-application.ts:177</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="electronsecuritytokenservice" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> electron<wbr>Security<wbr>Token<wbr>Service</h3>
-					<div class="tsd-signature tsd-kind-icon">electron<wbr>Security<wbr>Token<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="core.electronsecuritytokenservice.html" class="tsd-signature-type">ElectronSecurityTokenService</a></div>
+					<div class="tsd-signature tsd-kind-icon">electron<wbr>Security<wbr>Token<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="core.electronsecuritytokenservice.html" class="tsd-signature-type" data-tsd-kind="Class">ElectronSecurityTokenService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L174">packages/core/src/electron-main/electron-main-application.ts:174</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L174">packages/core/src/electron-main/electron-main-application.ts:174</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="electronstore" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> electron<wbr>Store</h3>
-					<div class="tsd-signature tsd-kind-icon">electron<wbr>Store<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ElectronStore</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Storage()</span></div>
+					<div class="tsd-signature tsd-kind-icon">electron<wbr>Store<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ElectronStore</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L179">packages/core/src/electron-main/electron-main-application.ts:179</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L179">packages/core/src/electron-main/electron-main-application.ts:179</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="globals" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> globals</h3>
-					<div class="tsd-signature tsd-kind-icon">globals<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.electronmainapplicationglobals.html" class="tsd-signature-type">ElectronMainApplicationGlobals</a></div>
+					<div class="tsd-signature tsd-kind-icon">globals<span class="tsd-signature-symbol">:</span> <a href="../modules/core.html#electronmainapplicationglobals-1" class="tsd-signature-type" data-tsd-kind="Variable">ElectronMainApplicationGlobals</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L168">packages/core/src/electron-main/electron-main-application.ts:168</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L168">packages/core/src/electron-main/electron-main-application.ts:168</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="processargv" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> process<wbr>Argv</h3>
-					<div class="tsd-signature tsd-kind-icon">process<wbr>Argv<span class="tsd-signature-symbol">:</span> <a href="core.electronmainprocessargv.html" class="tsd-signature-type">ElectronMainProcessArgv</a></div>
+					<div class="tsd-signature tsd-kind-icon">process<wbr>Argv<span class="tsd-signature-symbol">:</span> <a href="core.electronmainprocessargv-1.html" class="tsd-signature-type" data-tsd-kind="Class">ElectronMainProcessArgv</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L171">packages/core/src/electron-main/electron-main-application.ts:171</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L171">packages/core/src/electron-main/electron-main-application.ts:171</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -231,16 +253,16 @@
 					<a name="config" class="tsd-anchor"></a>
 					<h3>config</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> config<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FrontendApplicationConfig</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> config<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RequiredRecursive</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L185">packages/core/src/electron-main/electron-main-application.ts:185</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L185">packages/core/src/electron-main/electron-main-application.ts:185</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">FrontendApplicationConfig</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">RequiredRecursive</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -257,7 +279,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L472">packages/core/src/electron-main/electron-main-application.ts:472</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L472">packages/core/src/electron-main/electron-main-application.ts:472</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -280,7 +302,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L381">packages/core/src/electron-main/electron-main-application.ts:381</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L381">packages/core/src/electron-main/electron-main-application.ts:381</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -308,7 +330,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L343">packages/core/src/electron-main/electron-main-application.ts:343</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L343">packages/core/src/electron-main/electron-main-application.ts:343</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -336,7 +358,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L350">packages/core/src/electron-main/electron-main-application.ts:350</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L350">packages/core/src/electron-main/electron-main-application.ts:350</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -358,22 +380,22 @@
 					<a name="avoidoverlap" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> avoid<wbr>Overlap</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">avoid<wbr>Overlap<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.theiabrowserwindowoptions.html" class="tsd-signature-type">TheiaBrowserWindowOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/core.theiabrowserwindowoptions.html" class="tsd-signature-type">TheiaBrowserWindowOptions</a></li>
+						<li class="tsd-signature tsd-kind-icon">avoid<wbr>Overlap<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.theiabrowserwindowoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TheiaBrowserWindowOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/core.theiabrowserwindowoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TheiaBrowserWindowOptions</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L241">packages/core/src/electron-main/electron-main-application.ts:241</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L241">packages/core/src/electron-main/electron-main-application.ts:241</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>options: <a href="../interfaces/core.theiabrowserwindowoptions.html" class="tsd-signature-type">TheiaBrowserWindowOptions</a></h5>
+									<h5>options: <a href="../interfaces/core.theiabrowserwindowoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TheiaBrowserWindowOptions</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/core.theiabrowserwindowoptions.html" class="tsd-signature-type">TheiaBrowserWindowOptions</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/core.theiabrowserwindowoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TheiaBrowserWindowOptions</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -381,13 +403,13 @@
 					<a name="createwindow" class="tsd-anchor"></a>
 					<h3>create<wbr>Window</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Window<span class="tsd-signature-symbol">(</span>asyncOptions<span class="tsd-signature-symbol">?: </span><a href="../modules/core.html#maybepromise" class="tsd-signature-type">MaybePromise</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/core.theiabrowserwindowoptions.html" class="tsd-signature-type">TheiaBrowserWindowOptions</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BrowserWindow</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Window<span class="tsd-signature-symbol">(</span>asyncOptions<span class="tsd-signature-symbol">?: </span><a href="../modules/core.html#maybepromise-1" class="tsd-signature-type" data-tsd-kind="Type alias">MaybePromise</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/core.theiabrowserwindowoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TheiaBrowserWindowOptions</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BrowserWindow</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L221">packages/core/src/electron-main/electron-main-application.ts:221</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L221">packages/core/src/electron-main/electron-main-application.ts:221</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -398,7 +420,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> asyncOptions: <a href="../modules/core.html#maybepromise" class="tsd-signature-type">MaybePromise</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/core.theiabrowserwindowoptions.html" class="tsd-signature-type">TheiaBrowserWindowOptions</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = this.getDefaultTheiaWindowOptions()</span></h5>
+									<h5>asyncOptions: <a href="../modules/core.html#maybepromise-1" class="tsd-signature-type" data-tsd-kind="Type alias">MaybePromise</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/core.theiabrowserwindowoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TheiaBrowserWindowOptions</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BrowserWindow</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -409,16 +431,16 @@
 					<a name="createwindowuri" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> create<wbr>Window<wbr>Uri</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Window<wbr>Uri<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Window<wbr>Uri<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core.default-1.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L314">packages/core/src/electron-main/electron-main-application.ts:314</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L314">packages/core/src/electron-main/electron-main-application.ts:314</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core.default-1.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -426,16 +448,16 @@
 					<a name="getdefaultoptions" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Default<wbr>Options</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Default<wbr>Options<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/core.theiabrowserwindowoptions.html" class="tsd-signature-type">TheiaBrowserWindowOptions</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Default<wbr>Options<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/core.theiabrowserwindowoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TheiaBrowserWindowOptions</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L257">packages/core/src/electron-main/electron-main-application.ts:257</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L257">packages/core/src/electron-main/electron-main-application.ts:257</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/core.theiabrowserwindowoptions.html" class="tsd-signature-type">TheiaBrowserWindowOptions</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/core.theiabrowserwindowoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TheiaBrowserWindowOptions</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -443,16 +465,16 @@
 					<a name="getdefaulttheiawindowoptions" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Default<wbr>Theia<wbr>Window<wbr>Options</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Default<wbr>Theia<wbr>Window<wbr>Options<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/core.theiabrowserwindowoptions.html" class="tsd-signature-type">TheiaBrowserWindowOptions</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Default<wbr>Theia<wbr>Window<wbr>Options<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/core.theiabrowserwindowoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TheiaBrowserWindowOptions</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L319">packages/core/src/electron-main/electron-main-application.ts:319</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L319">packages/core/src/electron-main/electron-main-application.ts:319</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/core.theiabrowserwindowoptions.html" class="tsd-signature-type">TheiaBrowserWindowOptions</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/core.theiabrowserwindowoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TheiaBrowserWindowOptions</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -466,7 +488,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L460">packages/core/src/electron-main/electron-main-application.ts:460</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L460">packages/core/src/electron-main/electron-main-application.ts:460</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ForkOptions</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -477,16 +499,16 @@
 					<a name="getlastwindowoptions" class="tsd-anchor"></a>
 					<h3>get<wbr>Last<wbr>Window<wbr>Options</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Last<wbr>Window<wbr>Options<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/core.theiabrowserwindowoptions.html" class="tsd-signature-type">TheiaBrowserWindowOptions</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Last<wbr>Window<wbr>Options<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/core.theiabrowserwindowoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TheiaBrowserWindowOptions</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L233">packages/core/src/electron-main/electron-main-application.ts:233</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L233">packages/core/src/electron-main/electron-main-application.ts:233</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/core.theiabrowserwindowoptions.html" class="tsd-signature-type">TheiaBrowserWindowOptions</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/core.theiabrowserwindowoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TheiaBrowserWindowOptions</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -494,22 +516,22 @@
 					<a name="handlemaincommand" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> handle<wbr>Main<wbr>Command</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">handle<wbr>Main<wbr>Command<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.electronmainexecutionparams.html" class="tsd-signature-type">ElectronMainExecutionParams</a>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.electronmaincommandoptions.html" class="tsd-signature-type">ElectronMainCommandOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">handle<wbr>Main<wbr>Command<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.electronmainexecutionparams.html" class="tsd-signature-type" data-tsd-kind="Interface">ElectronMainExecutionParams</a>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.electronmaincommandoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ElectronMainCommandOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L294">packages/core/src/electron-main/electron-main-application.ts:294</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L294">packages/core/src/electron-main/electron-main-application.ts:294</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>params: <a href="../interfaces/core.electronmainexecutionparams.html" class="tsd-signature-type">ElectronMainExecutionParams</a></h5>
+									<h5>params: <a href="../interfaces/core.electronmainexecutionparams.html" class="tsd-signature-type" data-tsd-kind="Interface">ElectronMainExecutionParams</a></h5>
 								</li>
 								<li>
-									<h5>options: <a href="../interfaces/core.electronmaincommandoptions.html" class="tsd-signature-type">ElectronMainCommandOptions</a></h5>
+									<h5>options: <a href="../interfaces/core.electronmaincommandoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ElectronMainCommandOptions</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -526,7 +548,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L476">packages/core/src/electron-main/electron-main-application.ts:476</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L476">packages/core/src/electron-main/electron-main-application.ts:476</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -537,19 +559,19 @@
 					<a name="launch" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> launch</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">launch<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.electronmainexecutionparams.html" class="tsd-signature-type">ElectronMainExecutionParams</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">launch<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.electronmainexecutionparams.html" class="tsd-signature-type" data-tsd-kind="Interface">ElectronMainExecutionParams</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L207">packages/core/src/electron-main/electron-main-application.ts:207</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L207">packages/core/src/electron-main/electron-main-application.ts:207</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>params: <a href="../interfaces/core.electronmainexecutionparams.html" class="tsd-signature-type">ElectronMainExecutionParams</a></h5>
+									<h5>params: <a href="../interfaces/core.electronmainexecutionparams.html" class="tsd-signature-type" data-tsd-kind="Interface">ElectronMainExecutionParams</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -560,19 +582,19 @@
 					<a name="onsecondinstance" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Second<wbr>Instance</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Second<wbr>Instance<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ElectronEvent</span>, argv<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, cwd<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Second<wbr>Instance<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Event</span>, argv<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, cwd<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L486">packages/core/src/electron-main/electron-main-application.ts:486</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L486">packages/core/src/electron-main/electron-main-application.ts:486</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>event: <span class="tsd-signature-type">ElectronEvent</span></h5>
+									<h5>event: <span class="tsd-signature-type">Event</span></h5>
 								</li>
 								<li>
 									<h5>argv: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
@@ -589,19 +611,19 @@
 					<a name="onwillquit" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Will<wbr>Quit</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Will<wbr>Quit<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ElectronEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Will<wbr>Quit<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L482">packages/core/src/electron-main/electron-main-application.ts:482</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L482">packages/core/src/electron-main/electron-main-application.ts:482</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>event: <span class="tsd-signature-type">ElectronEvent</span></h5>
+									<h5>event: <span class="tsd-signature-type">Event</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -612,19 +634,19 @@
 					<a name="onwindowallclosed" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Window<wbr>All<wbr>Closed</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Window<wbr>All<wbr>Closed<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ElectronEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Window<wbr>All<wbr>Closed<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L497">packages/core/src/electron-main/electron-main-application.ts:497</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L497">packages/core/src/electron-main/electron-main-application.ts:497</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>event: <span class="tsd-signature-type">ElectronEvent</span></h5>
+									<h5>event: <span class="tsd-signature-type">Event</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -641,7 +663,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L274">packages/core/src/electron-main/electron-main-application.ts:274</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L274">packages/core/src/electron-main/electron-main-application.ts:274</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BrowserWindow</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -658,7 +680,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L280">packages/core/src/electron-main/electron-main-application.ts:280</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L280">packages/core/src/electron-main/electron-main-application.ts:280</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -681,7 +703,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L290">packages/core/src/electron-main/electron-main-application.ts:290</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L290">packages/core/src/electron-main/electron-main-application.ts:290</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -697,13 +719,13 @@
 					<a name="restoremaximizedstate" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> restore<wbr>Maximized<wbr>State</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">restore<wbr>Maximized<wbr>State<span class="tsd-signature-symbol">(</span>electronWindow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BrowserWindow</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.theiabrowserwindowoptions.html" class="tsd-signature-type">TheiaBrowserWindowOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">restore<wbr>Maximized<wbr>State<span class="tsd-signature-symbol">(</span>electronWindow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BrowserWindow</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.theiabrowserwindowoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TheiaBrowserWindowOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L397">packages/core/src/electron-main/electron-main-application.ts:397</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L397">packages/core/src/electron-main/electron-main-application.ts:397</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -712,7 +734,7 @@
 									<h5>electronWindow: <span class="tsd-signature-type">BrowserWindow</span></h5>
 								</li>
 								<li>
-									<h5>options: <a href="../interfaces/core.theiabrowserwindowoptions.html" class="tsd-signature-type">TheiaBrowserWindowOptions</a></h5>
+									<h5>options: <a href="../interfaces/core.theiabrowserwindowoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TheiaBrowserWindowOptions</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -723,19 +745,19 @@
 					<a name="start" class="tsd-anchor"></a>
 					<h3>start</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">start<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FrontendApplicationConfig</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">start<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RequiredRecursive</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L192">packages/core/src/electron-main/electron-main-application.ts:192</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L192">packages/core/src/electron-main/electron-main-application.ts:192</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <span class="tsd-signature-type">FrontendApplicationConfig</span></h5>
+									<h5>config: <span class="tsd-signature-type">RequiredRecursive</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -752,7 +774,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L410">packages/core/src/electron-main/electron-main-application.ts:410</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L410">packages/core/src/electron-main/electron-main-application.ts:410</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -775,7 +797,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L501">packages/core/src/electron-main/electron-main-application.ts:501</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L501">packages/core/src/electron-main/electron-main-application.ts:501</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -792,7 +814,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/electron-main/electron-main-application.ts#L511">packages/core/src/electron-main/electron-main-application.ts:511</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/electron-main/electron-main-application.ts#L511">packages/core/src/electron-main/electron-main-application.ts:511</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -804,20 +826,29 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/core.html">core</a>
 						<ul>
-							<li class=" tsd-kind-module tsd-parent-kind-module">
-								<a href="../modules/core._file_icons_js_.html">&quot;file-<wbr>icons-<wbr>js&quot;</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-has-type-parameter">
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.applicationerror-1.html">Application<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.applicationprops.html">Application<wbr>Props</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.applicationshell-2.html">Application<wbr>Shell</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.applicationshelllayoutmigrationerror-2.html">Application<wbr>Shell<wbr>Layout<wbr>Migration<wbr>Error</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.applicationshellmousetracker.html">Application<wbr>Shell<wbr>Mouse<wbr>Tracker</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.backendapplicationconfig.html">Backend<wbr>Application<wbr>Config</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.binarybufferreadable.html">Binary<wbr>Buffer<wbr>Readable</a>
@@ -861,11 +892,14 @@
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.consolelogger.html">Console<wbr>Logger</a>
 							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-has-type-parameter">
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.contextkey.html">Context<wbr>Key</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.decoratedtreenode-2.html">Decorated<wbr>Tree<wbr>Node</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.defaultjsonschemacontribution.html">Default<wbr>Json<wbr>Schema<wbr>Contribution</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.descriptionwidget-1.html">Description<wbr>Widget</a>
@@ -883,6 +917,12 @@
 								<a href="../modules/core.electroncommands.html">Electron<wbr>Commands</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.electronfrontendapplicationconfig.html">Electron<wbr>Frontend<wbr>Application<wbr>Config</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.electronmainprocessargv.html">Electron<wbr>Main<wbr>Process<wbr>Argv</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.electronmenus.html">Electron<wbr>Menus</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
@@ -891,10 +931,13 @@
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.electrontextinputcontextmenu.html">Electron<wbr>Text<wbr>Input<wbr>Context<wbr>Menu</a>
 							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-has-type-parameter">
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.endpoint-1.html">Endpoint</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.event-1.html">Event</a>
 							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-has-type-parameter">
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.eventlistenerobject-2.html">Event<wbr>Listener<wbr>Object</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
@@ -907,7 +950,16 @@
 								<a href="../modules/core.focusabletreeselection.html">Focusable<wbr>Tree<wbr>Selection</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.frontendapplicationconfig.html">Frontend<wbr>Application<wbr>Config</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.frontendapplicationpreferenceconfig-2.html">Frontend<wbr>Application<wbr>Preference<wbr>Config</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.fuzzysearch.html">Fuzzy<wbr>Search</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.generatorconfig.html">Generator<wbr>Config</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.ipcentrypoint.html">IPCEntry<wbr>Point</a>
@@ -916,10 +968,16 @@
 								<a href="../modules/core.iterators-2.html">Iterators</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/core.key-2.html">Key</a>
+								<a href="../modules/core.key-3.html">Key</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/core.keysequence-2.html">Key<wbr>Sequence</a>
+								<a href="../modules/core.keycode-3.html">Key<wbr>Code</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.keymodifier-3.html">Key<wbr>Modifier</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.keysequence-3.html">Key<wbr>Sequence</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.keybinding-1.html">Keybinding</a>
@@ -928,16 +986,28 @@
 								<a href="../modules/core.keybindingcontexts-1.html">Keybinding<wbr>Contexts</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.keybindingregistry-1.html">Keybinding<wbr>Registry</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.keybindingscope-1.html">Keybinding<wbr>Scope</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.keyboardcommands-2.html">Keyboard<wbr>Commands</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/core.keysorkeycodes-2.html">Keys<wbr>OrKey<wbr>Codes</a>
+								<a href="../modules/core.keysorkeycodes-3.html">Keys<wbr>OrKey<wbr>Codes</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.labelicon.html">Label<wbr>Icon</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.loglevel-2.html">Log<wbr>Level</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.menuaction-1.html">Menu<wbr>Action</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.messagingcontribution.html">Messaging<wbr>Contribution</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.messagingservice-2.html">Messaging<wbr>Service</a>
@@ -955,28 +1025,37 @@
 								<a href="../modules/core.navigatablewidgetoptions-2.html">Navigatable<wbr>Widget<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.npmregistryprops.html">Npm<wbr>Registry<wbr>Props</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.os-1.html">OS</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.overridepreferencename-2.html">Override<wbr>Preference<wbr>Name</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/core.preferencedataproperty-2.html">Preference<wbr>Data<wbr>Property</a>
+								<a href="../modules/core.preferencedataproperty-3.html">Preference<wbr>Data<wbr>Property</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.preferenceproviderdatachange-2.html">Preference<wbr>Provider<wbr>Data<wbr>Change</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/core.preferenceschema-2.html">Preference<wbr>Schema</a>
+								<a href="../modules/core.preferenceschema-3.html">Preference<wbr>Schema</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/core.preferenceschemaproperties-2.html">Preference<wbr>Schema<wbr>Properties</a>
+								<a href="../modules/core.preferenceschemaproperties-3.html">Preference<wbr>Schema<wbr>Properties</a>
 							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-has-type-parameter">
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.preferencescope-4.html">Preference<wbr>Scope</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.prioritizeable-1.html">Prioritizeable</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.progressmessage-1.html">Progress<wbr>Message</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.publishednodepackage.html">Published<wbr>Node<wbr>Package</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.quickpickitem-2.html">Quick<wbr>Pick<wbr>Item</a>
@@ -984,7 +1063,10 @@
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.quickpickseparator-2.html">Quick<wbr>Pick<wbr>Separator</a>
 							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-has-type-parameter">
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.rawextensionpackage.html">Raw<wbr>Extension<wbr>Package</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.readable.html">Readable</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
@@ -1003,6 +1085,9 @@
 								<a href="../modules/core.saveablewidget-1.html">Saveable<wbr>Widget</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.searchbox.html">Search<wbr>Box</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.searchboxdebounceoptions.html">Search<wbr>Box<wbr>Debounce<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
@@ -1012,10 +1097,19 @@
 								<a href="../modules/core.selectabletreenode-2.html">Selectable<wbr>Tree<wbr>Node</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.selectioncommandhandler.html">Selection<wbr>Command<wbr>Handler</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.severity.html">Severity</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.shelllayoutrestorer-2.html">Shell<wbr>Layout<wbr>Restorer</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.sidepanel-2.html">Side<wbr>Panel</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/core.specialcases-2.html">Special<wbr>Cases</a>
+								<a href="../modules/core.specialcases-3.html">Special<wbr>Cases</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.statefulwidget-2.html">Stateful<wbr>Widget</a>
@@ -1027,16 +1121,25 @@
 								<a href="../modules/core.tabbardelegator.html">Tab<wbr>Bar<wbr>Delegator</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.tabbartoolbar.html">Tab<wbr>Bar<wbr>Toolbar</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.tabbartoolbaritem.html">Tab<wbr>Bar<wbr>Toolbar<wbr>Item</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.textdocumentcontentchangedelta-1.html">Text<wbr>Document<wbr>Content<wbr>Change<wbr>Delta</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.toolbarawaretabbar-2.html">Toolbar<wbr>Aware<wbr>Tab<wbr>Bar</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.treeelementnode-1.html">Tree<wbr>Element<wbr>Node</a>
 							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-has-type-parameter">
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.treeiterator-2.html">Tree<wbr>Iterator</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.treemodelimpl-2.html">Tree<wbr>Model<wbr>Impl</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.treenode-2.html">Tree<wbr>Node</a>
@@ -1045,7 +1148,13 @@
 								<a href="../modules/core.treeselection-2.html">Tree<wbr>Selection</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.treeselectionserviceimpl.html">Tree<wbr>Selection<wbr>Service<wbr>Impl</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.treesourcenode-1.html">Tree<wbr>Source<wbr>Node</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.treewidget-2.html">Tree<wbr>Widget</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.treewidgetselection.html">Tree<wbr>Widget<wbr>Selection</a>
@@ -1057,10 +1166,25 @@
 								<a href="../modules/core.unsafewidgetutilities-2.html">Unsafe<wbr>Widget<wbr>Utilities</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.uriawarecommandhandler.html">Uri<wbr>Aware<wbr>Command<wbr>Handler</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.uriselection-1.html">Uri<wbr>Selection</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.viewcontainer-1.html">View<wbr>Container</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.viewcontainerlayout-1.html">View<wbr>Container<wbr>Layout</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.viewcontainerpart-1.html">View<wbr>Container<wbr>Part</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.waituntilevent-1.html">Wait<wbr>Until<wbr>Event</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/core.websocketchannel.html">Web<wbr>Socket<wbr>Channel</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/core.websocketchannelconnection-2.html">Web<wbr>Socket<wbr>Channel<wbr>Connection</a>
@@ -1088,6 +1212,9 @@
 					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="core.electronmainapplication.html" class="tsd-kind-icon">Electron<wbr>Main<wbr>Application</a>
 						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="core.electronmainapplication.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="core.electronmainapplication.html#_backendport" class="tsd-kind-icon">_backend<wbr>Port</a>
 							</li>
@@ -1208,7 +1335,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
@@ -1218,6 +1344,7 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>

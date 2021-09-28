@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/preferences.html">preferences</a>
@@ -71,19 +70,13 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="core.preferenceprovider-2.html" class="tsd-signature-type">PreferenceProvider</a>
+						<a href="preferences.preferenceprovider.html" class="tsd-signature-type" data-tsd-kind="Class">PreferenceProvider</a>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">WorkspacePreferenceProvider</span>
 							</li>
 						</ul>
 					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implements</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../modules/core.disposable-1.html" class="tsd-signature-type">Disposable</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -153,17 +146,17 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Workspace<wbr>Preference<wbr>Provider<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="preferences.workspacepreferenceprovider-1.html" class="tsd-signature-type">WorkspacePreferenceProvider</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Workspace<wbr>Preference<wbr>Provider<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="preferences.workspacepreferenceprovider-1.html" class="tsd-signature-type" data-tsd-kind="Class">WorkspacePreferenceProvider</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="core.preferenceprovider-2.html">PreferenceProvider</a>.<a href="core.preferenceprovider-2.html#constructor">constructor</a></p>
+								<p>Inherited from <a href="preferences.preferenceprovider.html">PreferenceProvider</a>.<a href="preferences.preferenceprovider.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/preferences/preference-provider.ts#L67">packages/core/src/browser/preferences/preference-provider.ts:67</a></li>
+									<li>Defined in packages/core/lib/browser/preferences/preference-provider.d.ts:49</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="preferences.workspacepreferenceprovider-1.html" class="tsd-signature-type">WorkspacePreferenceProvider</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="preferences.workspacepreferenceprovider-1.html" class="tsd-signature-type" data-tsd-kind="Class">WorkspacePreferenceProvider</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -173,72 +166,66 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="_delegate" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _delegate</h3>
-					<div class="tsd-signature tsd-kind-icon">_delegate<span class="tsd-signature-symbol">:</span> <a href="core.preferenceprovider-2.html" class="tsd-signature-type">PreferenceProvider</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+					<div class="tsd-signature tsd-kind-icon">_delegate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="preferences.preferenceprovider.html" class="tsd-signature-type" data-tsd-kind="Class">PreferenceProvider</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/preferences/src/browser/workspace-preference-provider.ts#L61">packages/preferences/src/browser/workspace-preference-provider.ts:61</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/preferences/src/browser/workspace-preference-provider.ts#L61">packages/preferences/src/browser/workspace-preference-provider.ts:61</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="_pendingchanges" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _pending<wbr>Changes</h3>
-					<div class="tsd-signature tsd-kind-icon">_pending<wbr>Changes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = Promise.resolve(false)</span></div>
+					<div class="tsd-signature tsd-kind-icon">_pending<wbr>Changes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.preferenceprovider-2.html">PreferenceProvider</a>.<a href="core.preferenceprovider-2.html#_pendingchanges">_pendingChanges</a></p>
+						<p>Inherited from <a href="preferences.preferenceprovider.html">PreferenceProvider</a>.<a href="preferences.preferenceprovider.html#_pendingchanges">_pendingChanges</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/preferences/preference-provider.ts#L78">packages/core/src/browser/preferences/preference-provider.ts:78</a></li>
+							<li>Defined in packages/core/lib/browser/preferences/preference-provider.d.ts:53</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="_ready" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> _ready</h3>
-					<div class="tsd-signature tsd-kind-icon">_ready<span class="tsd-signature-symbol">:</span> <a href="core.deferred-1.html" class="tsd-signature-type">Deferred</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Deferred&lt;void&gt;()</span></div>
+					<div class="tsd-signature tsd-kind-icon">_ready<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Deferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.preferenceprovider-2.html">PreferenceProvider</a>.<a href="core.preferenceprovider-2.html#_ready">_ready</a></p>
+						<p>Inherited from <a href="preferences.preferenceprovider.html">PreferenceProvider</a>.<a href="preferences.preferenceprovider.html#_ready">_ready</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/preferences/preference-provider.ts#L67">packages/core/src/browser/preferences/preference-provider.ts:67</a></li>
+							<li>Defined in packages/core/lib/browser/preferences/preference-provider.d.ts:49</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="deferredchanges" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> deferred<wbr>Changes</h3>
-					<div class="tsd-signature tsd-kind-icon">deferred<wbr>Changes<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.preferenceproviderdatachanges-2.html" class="tsd-signature-type">PreferenceProviderDataChanges</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+					<div class="tsd-signature tsd-kind-icon">deferred<wbr>Changes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/preferences.preferenceproviderdatachanges.html" class="tsd-signature-type" data-tsd-kind="Interface">PreferenceProviderDataChanges</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.preferenceprovider-2.html">PreferenceProvider</a>.<a href="core.preferenceprovider-2.html#deferredchanges">deferredChanges</a></p>
+						<p>Inherited from <a href="preferences.preferenceprovider.html">PreferenceProvider</a>.<a href="preferences.preferenceprovider.html#deferredchanges">deferredChanges</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/preferences/preference-provider.ts#L77">packages/core/src/browser/preferences/preference-provider.ts:77</a></li>
+							<li>Defined in packages/core/lib/browser/preferences/preference-provider.d.ts:52</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="firedidpreferenceschanged" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> fire<wbr>Did<wbr>Preferences<wbr>Changed</h3>
-					<div class="tsd-signature tsd-kind-icon">fire<wbr>Did<wbr>Preferences<wbr>Changed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>arguments<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ArgumentsType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ReturnType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = debounce(() &#x3D;&gt; {const changes &#x3D; this.deferredChanges;this.deferredChanges &#x3D; undefined;if (changes &amp;&amp; Object.keys(changes).length) {this.onDidPreferencesChangedEmitter.fire(changes);return true;}return false;}, 0)</span></div>
+					<div class="tsd-signature tsd-kind-icon">fire<wbr>Did<wbr>Preferences<wbr>Changed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.preferenceprovider-2.html">PreferenceProvider</a>.<a href="core.preferenceprovider-2.html#firedidpreferenceschanged">fireDidPreferencesChanged</a></p>
+						<p>Inherited from <a href="preferences.preferenceprovider.html">PreferenceProvider</a>.<a href="preferences.preferenceprovider.html#firedidpreferenceschanged">fireDidPreferencesChanged</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/preferences/preference-provider.ts#L118">packages/core/src/browser/preferences/preference-provider.ts:118</a></li>
+							<li>Defined in packages/core/lib/browser/preferences/preference-provider.d.ts:61</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>arguments<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ArgumentsType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ReturnType</span><span class="tsd-signature-symbol">&gt;</span></li>
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-class">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>arguments: <span class="tsd-signature-type">ArgumentsType</span></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ReturnType</span><span class="tsd-signature-symbol">&gt;</span></h4>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
 									</li>
 								</ul>
 							</li>
@@ -248,84 +235,84 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="folderpreferenceprovider" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> folder<wbr>Preference<wbr>Provider</h3>
-					<div class="tsd-signature tsd-kind-icon">folder<wbr>Preference<wbr>Provider<span class="tsd-signature-symbol">:</span> <a href="core.preferenceprovider-2.html" class="tsd-signature-type">PreferenceProvider</a></div>
+					<div class="tsd-signature tsd-kind-icon">folder<wbr>Preference<wbr>Provider<span class="tsd-signature-symbol">:</span> <a href="preferences.preferenceprovider.html" class="tsd-signature-type" data-tsd-kind="Class">PreferenceProvider</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/preferences/src/browser/workspace-preference-provider.ts#L36">packages/preferences/src/browser/workspace-preference-provider.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/preferences/src/browser/workspace-preference-provider.ts#L36">packages/preferences/src/browser/workspace-preference-provider.ts:36</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="ondidpreferenceschanged" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Did<wbr>Preferences<wbr>Changed</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Preferences<wbr>Changed<span class="tsd-signature-symbol">:</span> <a href="../modules/core.event-1.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/core.preferenceproviderdatachanges-2.html" class="tsd-signature-type">PreferenceProviderDataChanges</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = this.onDidPreferencesChangedEmitter.event</span></div>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Preferences<wbr>Changed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/preferences.preferenceproviderdatachanges.html" class="tsd-signature-type" data-tsd-kind="Interface">PreferenceProviderDataChanges</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.preferenceprovider-2.html">PreferenceProvider</a>.<a href="core.preferenceprovider-2.html#ondidpreferenceschanged">onDidPreferencesChanged</a></p>
+						<p>Inherited from <a href="preferences.preferenceprovider.html">PreferenceProvider</a>.<a href="preferences.preferenceprovider.html#ondidpreferenceschanged">onDidPreferencesChanged</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/preferences/preference-provider.ts#L63">packages/core/src/browser/preferences/preference-provider.ts:63</a></li>
+							<li>Defined in packages/core/lib/browser/preferences/preference-provider.d.ts:47</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="ondidpreferenceschangedemitter" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Did<wbr>Preferences<wbr>Changed<wbr>Emitter</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Preferences<wbr>Changed<wbr>Emitter<span class="tsd-signature-symbol">:</span> <a href="core.emitter-1.html" class="tsd-signature-type">Emitter</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/core.preferenceproviderdatachanges-2.html" class="tsd-signature-type">PreferenceProviderDataChanges</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Emitter&lt;PreferenceProviderDataChanges&gt;()</span></div>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Preferences<wbr>Changed<wbr>Emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Emitter</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/preferences.preferenceproviderdatachanges.html" class="tsd-signature-type" data-tsd-kind="Interface">PreferenceProviderDataChanges</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.preferenceprovider-2.html">PreferenceProvider</a>.<a href="core.preferenceprovider-2.html#ondidpreferenceschangedemitter">onDidPreferencesChangedEmitter</a></p>
+						<p>Inherited from <a href="preferences.preferenceprovider.html">PreferenceProvider</a>.<a href="preferences.preferenceprovider.html#ondidpreferenceschangedemitter">onDidPreferencesChangedEmitter</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/preferences/preference-provider.ts#L62">packages/core/src/browser/preferences/preference-provider.ts:62</a></li>
+							<li>Defined in packages/core/lib/browser/preferences/preference-provider.d.ts:46</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="preferenceoverrideservice" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> preference<wbr>Override<wbr>Service</h3>
-					<div class="tsd-signature tsd-kind-icon">preference<wbr>Override<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="core.preferencelanguageoverrideservice-2.html" class="tsd-signature-type">PreferenceLanguageOverrideService</a></div>
+					<div class="tsd-signature tsd-kind-icon">preference<wbr>Override<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="preferences.preferencelanguageoverrideservice.html" class="tsd-signature-type" data-tsd-kind="Class">PreferenceLanguageOverrideService</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.preferenceprovider-2.html">PreferenceProvider</a>.<a href="core.preferenceprovider-2.html#preferenceoverrideservice">preferenceOverrideService</a></p>
+						<p>Inherited from <a href="preferences.preferenceprovider.html">PreferenceProvider</a>.<a href="preferences.preferenceprovider.html#preferenceoverrideservice">preferenceOverrideService</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/preferences/preference-provider.ts#L60">packages/core/src/browser/preferences/preference-provider.ts:60</a></li>
+							<li>Defined in packages/core/lib/browser/preferences/preference-provider.d.ts:45</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="todispose" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> to<wbr>Dispose</h3>
-					<div class="tsd-signature tsd-kind-icon">to<wbr>Dispose<span class="tsd-signature-symbol">:</span> <a href="core.disposablecollection-1.html" class="tsd-signature-type">DisposableCollection</a><span class="tsd-signature-symbol"> = new DisposableCollection()</span></div>
+					<div class="tsd-signature tsd-kind-icon">to<wbr>Dispose<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DisposableCollection</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.preferenceprovider-2.html">PreferenceProvider</a>.<a href="core.preferenceprovider-2.html#todispose">toDispose</a></p>
+						<p>Inherited from <a href="preferences.preferenceprovider.html">PreferenceProvider</a>.<a href="preferences.preferenceprovider.html#todispose">toDispose</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/preferences/preference-provider.ts#L65">packages/core/src/browser/preferences/preference-provider.ts:65</a></li>
+							<li>Defined in packages/core/lib/browser/preferences/preference-provider.d.ts:48</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="todisposeonensuredelegateuptodate" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> to<wbr>Dispose<wbr>OnEnsure<wbr>Delegate<wbr>UpTo<wbr>Date</h3>
-					<div class="tsd-signature tsd-kind-icon">to<wbr>Dispose<wbr>OnEnsure<wbr>Delegate<wbr>UpTo<wbr>Date<span class="tsd-signature-symbol">:</span> <a href="core.disposablecollection-1.html" class="tsd-signature-type">DisposableCollection</a><span class="tsd-signature-symbol"> = new DisposableCollection()</span></div>
+					<div class="tsd-signature tsd-kind-icon">to<wbr>Dispose<wbr>OnEnsure<wbr>Delegate<wbr>UpTo<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DisposableCollection</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/preferences/src/browser/workspace-preference-provider.ts#L38">packages/preferences/src/browser/workspace-preference-provider.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/preferences/src/browser/workspace-preference-provider.ts#L38">packages/preferences/src/browser/workspace-preference-provider.ts:38</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="workspacefileproviderfactory" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> workspace<wbr>File<wbr>Provider<wbr>Factory</h3>
-					<div class="tsd-signature tsd-kind-icon">workspace<wbr>File<wbr>Provider<wbr>Factory<span class="tsd-signature-symbol">:</span> <a href="../modules/preferences.html#workspacefilepreferenceproviderfactory" class="tsd-signature-type">WorkspaceFilePreferenceProviderFactory</a></div>
+					<div class="tsd-signature tsd-kind-icon">workspace<wbr>File<wbr>Provider<wbr>Factory<span class="tsd-signature-symbol">:</span> <a href="../modules/preferences.html#workspacefilepreferenceproviderfactory-1" class="tsd-signature-type" data-tsd-kind="Variable">WorkspaceFilePreferenceProviderFactory</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/preferences/src/browser/workspace-preference-provider.ts#L33">packages/preferences/src/browser/workspace-preference-provider.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/preferences/src/browser/workspace-preference-provider.ts#L33">packages/preferences/src/browser/workspace-preference-provider.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="workspaceservice" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> workspace<wbr>Service</h3>
-					<div class="tsd-signature tsd-kind-icon">workspace<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="workspace.workspaceservice-1.html" class="tsd-signature-type">WorkspaceService</a></div>
+					<div class="tsd-signature tsd-kind-icon">workspace<wbr>Service<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">WorkspaceService</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/preferences/src/browser/workspace-preference-provider.ts#L30">packages/preferences/src/browser/workspace-preference-provider.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/preferences/src/browser/workspace-preference-provider.ts#L30">packages/preferences/src/browser/workspace-preference-provider.ts:30</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -336,16 +323,16 @@
 					<a name="delegate" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> delegate</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> delegate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.preferenceprovider-2.html" class="tsd-signature-type">PreferenceProvider</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> delegate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="preferences.preferenceprovider.html" class="tsd-signature-type" data-tsd-kind="Class">PreferenceProvider</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/preferences/src/browser/workspace-preference-provider.ts#L62">packages/preferences/src/browser/workspace-preference-provider.ts:62</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/preferences/src/browser/workspace-preference-provider.ts#L62">packages/preferences/src/browser/workspace-preference-provider.ts:62</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="core.preferenceprovider-2.html" class="tsd-signature-type">PreferenceProvider</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="preferences.preferenceprovider.html" class="tsd-signature-type" data-tsd-kind="Class">PreferenceProvider</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -358,9 +345,8 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="core.preferenceprovider-2.html">PreferenceProvider</a>.<a href="core.preferenceprovider-2.html#pendingchanges">pendingChanges</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/preferences/preference-provider.ts#L79">packages/core/src/browser/preferences/preference-provider.ts:79</a></li>
+									<li>Defined in packages/core/lib/browser/preferences/preference-provider.d.ts:54</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -376,9 +362,8 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="core.preferenceprovider-2.html">PreferenceProvider</a>.<a href="core.preferenceprovider-2.html#ready">ready</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/preferences/preference-provider.ts#L181">packages/core/src/browser/preferences/preference-provider.ts:181</a></li>
+									<li>Defined in packages/core/lib/browser/preferences/preference-provider.d.ts:102</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -398,16 +383,16 @@
 					<a name="createdelegate" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> create<wbr>Delegate</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Delegate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.preferenceprovider-2.html" class="tsd-signature-type">PreferenceProvider</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Delegate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="preferences.preferenceprovider.html" class="tsd-signature-type" data-tsd-kind="Class">PreferenceProvider</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/preferences/src/browser/workspace-preference-provider.ts#L88">packages/preferences/src/browser/workspace-preference-provider.ts:88</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/preferences/src/browser/workspace-preference-provider.ts#L88">packages/preferences/src/browser/workspace-preference-provider.ts:88</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="core.preferenceprovider-2.html" class="tsd-signature-type">PreferenceProvider</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="preferences.preferenceprovider.html" class="tsd-signature-type" data-tsd-kind="Class">PreferenceProvider</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -420,9 +405,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="core.preferenceprovider-2.html">PreferenceProvider</a>.<a href="core.preferenceprovider-2.html#dispose">dispose</a></p>
+								<p>Inherited from <a href="preferences.preferenceprovider.html">PreferenceProvider</a>.<a href="preferences.preferenceprovider.html#dispose">dispose</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/preferences/preference-provider.ts#L73">packages/core/src/browser/preferences/preference-provider.ts:73</a></li>
+									<li>Defined in packages/core/lib/browser/preferences/preference-provider.d.ts:51</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -433,14 +418,14 @@
 					<a name="emitpreferenceschangedevent" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> emit<wbr>Preferences<wbr>Changed<wbr>Event</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">emit<wbr>Preferences<wbr>Changed<wbr>Event<span class="tsd-signature-symbol">(</span>changes<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.preferenceproviderdatachanges-2.html" class="tsd-signature-type">PreferenceProviderDataChanges</a><span class="tsd-signature-symbol"> | </span><a href="../modules/core.preferenceproviderdatachange-2.html" class="tsd-signature-type">PreferenceProviderDataChange</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">emit<wbr>Preferences<wbr>Changed<wbr>Event<span class="tsd-signature-symbol">(</span>changes<span class="tsd-signature-symbol">: </span><a href="../interfaces/preferences.preferenceproviderdatachanges.html" class="tsd-signature-type" data-tsd-kind="Interface">PreferenceProviderDataChanges</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/preferences.preferenceproviderdatachange-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PreferenceProviderDataChange</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="core.preferenceprovider-2.html">PreferenceProvider</a>.<a href="core.preferenceprovider-2.html#emitpreferenceschangedevent">emitPreferencesChangedEvent</a></p>
+								<p>Inherited from <a href="preferences.preferenceprovider.html">PreferenceProvider</a>.<a href="preferences.preferenceprovider.html#emitpreferenceschangedevent">emitPreferencesChangedEvent</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/preferences/preference-provider.ts#L87">packages/core/src/browser/preferences/preference-provider.ts:87</a></li>
+									<li>Defined in packages/core/lib/browser/preferences/preference-provider.d.ts:59</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -452,7 +437,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>changes: <a href="../interfaces/core.preferenceproviderdatachanges-2.html" class="tsd-signature-type">PreferenceProviderDataChanges</a><span class="tsd-signature-symbol"> | </span><a href="../modules/core.preferenceproviderdatachange-2.html" class="tsd-signature-type">PreferenceProviderDataChange</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>changes: <a href="../interfaces/preferences.preferenceproviderdatachanges.html" class="tsd-signature-type" data-tsd-kind="Interface">PreferenceProviderDataChanges</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/preferences.preferenceproviderdatachange-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PreferenceProviderDataChange</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -469,7 +454,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/preferences/src/browser/workspace-preference-provider.ts#L66">packages/preferences/src/browser/workspace-preference-provider.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/preferences/src/browser/workspace-preference-provider.ts#L66">packages/preferences/src/browser/workspace-preference-provider.ts:66</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -480,16 +465,16 @@
 					<a name="ensureresourceuri" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> ensure<wbr>Resource<wbr>Uri</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">ensure<wbr>Resource<wbr>Uri<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">ensure<wbr>Resource<wbr>Uri<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/preferences/src/browser/workspace-preference-provider.ts#L127">packages/preferences/src/browser/workspace-preference-provider.ts:127</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/preferences/src/browser/workspace-preference-provider.ts#L127">packages/preferences/src/browser/workspace-preference-provider.ts:127</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -497,14 +482,14 @@
 					<a name="get" class="tsd-anchor"></a>
 					<h3>get</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">get&lt;T&gt;<span class="tsd-signature-symbol">(</span>preferenceName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, resourceUri<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">get&lt;T&gt;<span class="tsd-signature-symbol">(</span>preferenceName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, resourceUri<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="core.preferenceprovider-2.html">PreferenceProvider</a>.<a href="core.preferenceprovider-2.html#get">get</a></p>
+								<p>Overrides <a href="preferences.preferenceprovider.html">PreferenceProvider</a>.<a href="preferences.preferenceprovider.html#get">get</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/preferences/src/browser/workspace-preference-provider.ts#L104">packages/preferences/src/browser/workspace-preference-provider.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/preferences/src/browser/workspace-preference-provider.ts#L104">packages/preferences/src/browser/workspace-preference-provider.ts:104</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -519,10 +504,10 @@
 									<h5>preferenceName: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> resourceUri: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> = this.ensureResourceUri()</span></h5>
+									<h5>resourceUri: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = ...</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -530,26 +515,26 @@
 					<a name="getconfiguri" class="tsd-anchor"></a>
 					<h3>get<wbr>Config<wbr>Uri</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Config<wbr>Uri<span class="tsd-signature-symbol">(</span>resourceUri<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, sectionName<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Config<wbr>Uri<span class="tsd-signature-symbol">(</span>resourceUri<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, sectionName<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">default</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="core.preferenceprovider-2.html">PreferenceProvider</a>.<a href="core.preferenceprovider-2.html#getconfiguri">getConfigUri</a></p>
+								<p>Overrides <a href="preferences.preferenceprovider.html">PreferenceProvider</a>.<a href="preferences.preferenceprovider.html#getconfiguri">getConfigUri</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/preferences/src/browser/workspace-preference-provider.ts#L53">packages/preferences/src/browser/workspace-preference-provider.ts:53</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/preferences/src/browser/workspace-preference-provider.ts#L53">packages/preferences/src/browser/workspace-preference-provider.ts:53</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> resourceUri: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> = this.ensureResourceUri()</span></h5>
+									<h5>resourceUri: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = ...</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> sectionName: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> sectionName: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">default</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -557,26 +542,26 @@
 					<a name="getcontainingconfiguri" class="tsd-anchor"></a>
 					<h3>get<wbr>Containing<wbr>Config<wbr>Uri</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Containing<wbr>Config<wbr>Uri<span class="tsd-signature-symbol">(</span>resourceUri<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, sectionName<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Containing<wbr>Config<wbr>Uri<span class="tsd-signature-symbol">(</span>resourceUri<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, sectionName<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">default</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="core.preferenceprovider-2.html">PreferenceProvider</a>.<a href="core.preferenceprovider-2.html#getcontainingconfiguri">getContainingConfigUri</a></p>
+								<p>Overrides <a href="preferences.preferenceprovider.html">PreferenceProvider</a>.<a href="preferences.preferenceprovider.html#getcontainingconfiguri">getContainingConfigUri</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/preferences/src/browser/workspace-preference-provider.ts#L57">packages/preferences/src/browser/workspace-preference-provider.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/preferences/src/browser/workspace-preference-provider.ts#L57">packages/preferences/src/browser/workspace-preference-provider.ts:57</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> resourceUri: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> = this.ensureResourceUri()</span></h5>
+									<h5>resourceUri: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = ...</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> sectionName: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> sectionName: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">default</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -584,14 +569,14 @@
 					<a name="getdomain" class="tsd-anchor"></a>
 					<h3>get<wbr>Domain</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Domain<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Domain<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="core.preferenceprovider-2.html">PreferenceProvider</a>.<a href="core.preferenceprovider-2.html#getdomain">getDomain</a></p>
+								<p>Inherited from <a href="preferences.preferenceprovider.html">PreferenceProvider</a>.<a href="preferences.preferenceprovider.html#getdomain">getDomain</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/preferences/preference-provider.ts#L190">packages/core/src/browser/preferences/preference-provider.ts:190</a></li>
+									<li>Defined in packages/core/lib/browser/preferences/preference-provider.d.ts:108</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -599,7 +584,7 @@
 									<p>Retrieve the domain for this provider.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
 							<p>the domain or <code>undefined</code> if this provider is suitable for all domains.</p>
 						</li>
 					</ul>
@@ -613,9 +598,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="core.preferenceprovider-2.html">PreferenceProvider</a>.<a href="core.preferenceprovider-2.html#getparsedcontent">getParsedContent</a></p>
+								<p>Inherited from <a href="preferences.preferenceprovider.html">PreferenceProvider</a>.<a href="preferences.preferenceprovider.html#getparsedcontent">getParsedContent</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/preferences/preference-provider.ts#L243">packages/core/src/browser/preferences/preference-provider.ts:243</a></li>
+									<li>Defined in packages/core/lib/browser/preferences/preference-provider.d.ts:130</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -637,20 +622,20 @@
 					<a name="getpreferences" class="tsd-anchor"></a>
 					<h3>get<wbr>Preferences</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Preferences<span class="tsd-signature-symbol">(</span>resourceUri<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Preferences<span class="tsd-signature-symbol">(</span>resourceUri<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="core.preferenceprovider-2.html">PreferenceProvider</a>.<a href="core.preferenceprovider-2.html#getpreferences">getPreferences</a></p>
+								<p>Overrides <a href="preferences.preferenceprovider.html">PreferenceProvider</a>.<a href="preferences.preferenceprovider.html#getpreferences">getPreferences</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/preferences/src/browser/workspace-preference-provider.ts#L114">packages/preferences/src/browser/workspace-preference-provider.ts:114</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/preferences/src/browser/workspace-preference-provider.ts#L114">packages/preferences/src/browser/workspace-preference-provider.ts:114</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> resourceUri: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> = this.ensureResourceUri()</span></h5>
+									<h5>resourceUri: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = ...</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{}</span></h4>
@@ -672,7 +657,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/preferences/src/browser/workspace-preference-provider.ts#L41">packages/preferences/src/browser/workspace-preference-provider.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/preferences/src/browser/workspace-preference-provider.ts#L41">packages/preferences/src/browser/workspace-preference-provider.ts:41</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -683,20 +668,20 @@
 					<a name="mergepreferenceproviderdatachange" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> merge<wbr>Preference<wbr>Provider<wbr>Data<wbr>Change</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">merge<wbr>Preference<wbr>Provider<wbr>Data<wbr>Change<span class="tsd-signature-symbol">(</span>change<span class="tsd-signature-symbol">: </span><a href="../modules/core.preferenceproviderdatachange-2.html" class="tsd-signature-type">PreferenceProviderDataChange</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">merge<wbr>Preference<wbr>Provider<wbr>Data<wbr>Change<span class="tsd-signature-symbol">(</span>change<span class="tsd-signature-symbol">: </span><a href="../interfaces/preferences.preferenceproviderdatachange-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PreferenceProviderDataChange</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="core.preferenceprovider-2.html">PreferenceProvider</a>.<a href="core.preferenceprovider-2.html#mergepreferenceproviderdatachange">mergePreferenceProviderDataChange</a></p>
+								<p>Inherited from <a href="preferences.preferenceprovider.html">PreferenceProvider</a>.<a href="preferences.preferenceprovider.html#mergepreferenceproviderdatachange">mergePreferenceProviderDataChange</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/preferences/preference-provider.ts#L100">packages/core/src/browser/preferences/preference-provider.ts:100</a></li>
+									<li>Defined in packages/core/lib/browser/preferences/preference-provider.d.ts:60</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>change: <a href="../modules/core.preferenceproviderdatachange-2.html" class="tsd-signature-type">PreferenceProviderDataChange</a></h5>
+									<h5>change: <a href="../interfaces/preferences.preferenceproviderdatachange-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PreferenceProviderDataChange</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -707,14 +692,14 @@
 					<a name="resolve" class="tsd-anchor"></a>
 					<h3>resolve</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">resolve&lt;T&gt;<span class="tsd-signature-symbol">(</span>preferenceName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, resourceUri<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>configUri<span class="tsd-signature-symbol">?: </span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">T</a><span class="tsd-signature-symbol"> }</span></li>
+						<li class="tsd-signature tsd-kind-icon">resolve&lt;T&gt;<span class="tsd-signature-symbol">(</span>preferenceName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, resourceUri<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>configUri<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> }</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="core.preferenceprovider-2.html">PreferenceProvider</a>.<a href="core.preferenceprovider-2.html#resolve">resolve</a></p>
+								<p>Overrides <a href="preferences.preferenceprovider.html">PreferenceProvider</a>.<a href="preferences.preferenceprovider.html#resolve">resolve</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/preferences/src/browser/workspace-preference-provider.ts#L109">packages/preferences/src/browser/workspace-preference-provider.ts:109</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/preferences/src/browser/workspace-preference-provider.ts#L109">packages/preferences/src/browser/workspace-preference-provider.ts:109</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -729,16 +714,16 @@
 									<h5>preferenceName: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> resourceUri: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> = this.ensureResourceUri()</span></h5>
+									<h5>resourceUri: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = ...</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>configUri<span class="tsd-signature-symbol">?: </span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">T</a><span class="tsd-signature-symbol"> }</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>configUri<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> }</span></h4>
 							<ul class="tsd-parameters">
 								<li class="tsd-parameter">
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> config<wbr>Uri<span class="tsd-signature-symbol">?: </span><a href="core.uri.html" class="tsd-signature-type">URI</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> config<wbr>Uri<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">default</span></h5>
 								</li>
 								<li class="tsd-parameter">
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> value<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">T</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span></h5>
 								</li>
 							</ul>
 						</li>
@@ -748,14 +733,14 @@
 					<a name="setpreference" class="tsd-anchor"></a>
 					<h3>set<wbr>Preference</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Preference<span class="tsd-signature-symbol">(</span>preferenceName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, resourceUri<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Preference<span class="tsd-signature-symbol">(</span>preferenceName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, resourceUri<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="core.preferenceprovider-2.html">PreferenceProvider</a>.<a href="core.preferenceprovider-2.html#setpreference">setPreference</a></p>
+								<p>Overrides <a href="preferences.preferenceprovider.html">PreferenceProvider</a>.<a href="preferences.preferenceprovider.html#setpreference">setPreference</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/preferences/src/browser/workspace-preference-provider.ts#L119">packages/preferences/src/browser/workspace-preference-provider.ts:119</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/preferences/src/browser/workspace-preference-provider.ts#L119">packages/preferences/src/browser/workspace-preference-provider.ts:119</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -767,7 +752,7 @@
 									<h5>value: <span class="tsd-signature-type">any</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> resourceUri: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> = this.ensureResourceUri()</span></h5>
+									<h5>resourceUri: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = ...</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -778,14 +763,14 @@
 					<a name="deepequal" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> deep<wbr>Equal</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">deep<wbr>Equal<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JSONValue</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JSONValue</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">deep<wbr>Equal<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">JSONObject</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">JSONArray</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">JSONObject</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">JSONArray</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="core.preferenceprovider-2.html">PreferenceProvider</a>.<a href="core.preferenceprovider-2.html#deepequal">deepEqual</a></p>
+								<p>Inherited from <a href="preferences.preferenceprovider.html">PreferenceProvider</a>.<a href="preferences.preferenceprovider.html#deepequal">deepEqual</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/preferences/preference-provider.ts#L237">packages/core/src/browser/preferences/preference-provider.ts:237</a></li>
+									<li>Defined in packages/core/lib/browser/preferences/preference-provider.d.ts:129</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -796,10 +781,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>a: <span class="tsd-signature-type">JSONValue</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>a: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">JSONObject</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">JSONArray</span></h5>
 								</li>
 								<li>
-									<h5>b: <span class="tsd-signature-type">JSONValue</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>b: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">JSONObject</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">JSONArray</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -810,20 +795,20 @@
 					<a name="merge" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> merge</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">merge<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JSONValue</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JSONValue</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JSONValue</span></li>
+						<li class="tsd-signature tsd-kind-icon">merge<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">JSONObject</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">JSONArray</span>, target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JSONValue</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">JSONValue</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="core.preferenceprovider-2.html">PreferenceProvider</a>.<a href="core.preferenceprovider-2.html#merge">merge</a></p>
+								<p>Inherited from <a href="preferences.preferenceprovider.html">PreferenceProvider</a>.<a href="preferences.preferenceprovider.html#merge">merge</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/preferences/preference-provider.ts#L214">packages/core/src/browser/preferences/preference-provider.ts:214</a></li>
+									<li>Defined in packages/core/lib/browser/preferences/preference-provider.d.ts:125</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>source: <span class="tsd-signature-type">JSONValue</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>source: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">JSONObject</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">JSONArray</span></h5>
 								</li>
 								<li>
 									<h5>target: <span class="tsd-signature-type">JSONValue</span></h5>
@@ -838,17 +823,38 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/preferences.html">preferences</a>
 						<ul>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/preferences.frontendapplicationpreferenceconfig.html">Frontend<wbr>Application<wbr>Preference<wbr>Config</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/preferences.overridepreferencename.html">Override<wbr>Preference<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/preferences.preference.html">Preference</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/preferences.preferencedataproperty.html">Preference<wbr>Data<wbr>Property</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/preferences.preferencemenus.html">Preference<wbr>Menus</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/preferences.preferenceproviderdatachange.html">Preference<wbr>Provider<wbr>Data<wbr>Change</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/preferences.preferenceschema.html">Preference<wbr>Schema</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/preferences.preferenceschemaproperties.html">Preference<wbr>Schema<wbr>Properties</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/preferences.preferencescope.html">Preference<wbr>Scope</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/preferences.preferencescommands.html">Preferences<wbr>Commands</a>
@@ -981,7 +987,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

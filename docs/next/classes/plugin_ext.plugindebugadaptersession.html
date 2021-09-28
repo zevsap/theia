@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/plugin_ext.html">plugin-ext</a>
@@ -78,7 +77,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="debug.debugadaptersessionimpl.html" class="tsd-signature-type">DebugAdapterSessionImpl</a>
+						<span class="tsd-signature-type">DebugAdapterSessionImpl</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">PluginDebugAdapterSession</span>
@@ -90,8 +89,7 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/debug.debugadaptersession.html" class="tsd-signature-type">DebugAdapterSession</a></li>
-					<li><a href="../interfaces/plugin._plugin_-1.debugsession.html" class="tsd-signature-type">DebugSession</a></li>
+					<li><span class="tsd-signature-type">DebugSession</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -107,7 +105,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="plugin_ext.plugindebugadaptersession.html#communicationprovider" class="tsd-kind-icon">communication<wbr>Provider</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="plugin_ext.plugindebugadaptersession.html#communicationprovider" class="tsd-kind-icon">communication<wbr>Provider</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.plugindebugadaptersession.html#configuration" class="tsd-kind-icon">configuration</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="plugin_ext.plugindebugadaptersession.html#id" class="tsd-kind-icon">id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.plugindebugadaptersession.html#name" class="tsd-kind-icon">name</a></li>
@@ -138,54 +136,51 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Plugin<wbr>Debug<wbr>Adapter<wbr>Session<span class="tsd-signature-symbol">(</span>communicationProvider<span class="tsd-signature-symbol">: </span><a href="../interfaces/debug.communicationprovider.html" class="tsd-signature-type">CommunicationProvider</a>, tracker<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin._plugin_-1.debugadaptertracker.html" class="tsd-signature-type">DebugAdapterTracker</a>, theiaSession<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin._plugin_-1.debugsession.html" class="tsd-signature-type">DebugSession</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugindebugadaptersession.html" class="tsd-signature-type">PluginDebugAdapterSession</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Plugin<wbr>Debug<wbr>Adapter<wbr>Session<span class="tsd-signature-symbol">(</span>communicationProvider<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CommunicationProvider</span>, tracker<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DebugAdapterTracker</span>, theiaSession<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DebugSession</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugindebugadaptersession.html" class="tsd-signature-type" data-tsd-kind="Class">PluginDebugAdapterSession</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="debug.debugadaptersessionimpl.html">DebugAdapterSessionImpl</a>.<a href="debug.debugadaptersessionimpl.html#constructor">constructor</a></p>
+								<p>Overrides DebugAdapterSessionImpl.constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts#L30">packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts#L30">packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts:30</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>communicationProvider: <a href="../interfaces/debug.communicationprovider.html" class="tsd-signature-type">CommunicationProvider</a></h5>
+									<h5>communicationProvider: <span class="tsd-signature-type">CommunicationProvider</span></h5>
 								</li>
 								<li>
-									<h5>tracker: <a href="../interfaces/plugin._plugin_-1.debugadaptertracker.html" class="tsd-signature-type">DebugAdapterTracker</a></h5>
+									<h5>tracker: <span class="tsd-signature-type">DebugAdapterTracker</span></h5>
 								</li>
 								<li>
-									<h5>theiaSession: <a href="../interfaces/plugin._plugin_-1.debugsession.html" class="tsd-signature-type">DebugSession</a></h5>
+									<h5>theiaSession: <span class="tsd-signature-type">DebugSession</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.plugindebugadaptersession.html" class="tsd-signature-type">PluginDebugAdapterSession</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.plugindebugadaptersession.html" class="tsd-signature-type" data-tsd-kind="Class">PluginDebugAdapterSession</a></h4>
 						</li>
 					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="communicationprovider" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> communication<wbr>Provider</h3>
-					<div class="tsd-signature tsd-kind-icon">communication<wbr>Provider<span class="tsd-signature-symbol">:</span> <a href="../interfaces/debug.communicationprovider.html" class="tsd-signature-type">CommunicationProvider</a></div>
+					<div class="tsd-signature tsd-kind-icon">communication<wbr>Provider<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CommunicationProvider</span></div>
 					<aside class="tsd-sources">
-						<p>Overrides <a href="debug.debugadaptersessionimpl.html">DebugAdapterSessionImpl</a>.<a href="debug.debugadaptersessionimpl.html#communicationprovider">communicationProvider</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts#L33">packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts:33</a></li>
-						</ul>
+						<p>Inherited from DebugAdapterSessionImpl.communicationProvider</p>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="configuration" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> configuration</h3>
-					<div class="tsd-signature tsd-kind-icon">configuration<span class="tsd-signature-symbol">:</span> <a href="../interfaces/plugin._plugin_-1.debugconfiguration.html" class="tsd-signature-type">DebugConfiguration</a></div>
+					<div class="tsd-signature tsd-kind-icon">configuration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DebugConfiguration</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/plugin._plugin_-1.debugsession.html">DebugSession</a>.<a href="../interfaces/plugin._plugin_-1.debugsession.html#configuration">configuration</a></p>
+						<p>Implementation of theia.DebugSession.configuration</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts#L30">packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts#L30">packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts:30</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -194,10 +189,10 @@
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> id</h3>
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/plugin._plugin_-1.debugsession.html">DebugSession</a>.<a href="../interfaces/plugin._plugin_-1.debugsession.html#id">id</a></p>
-						<p>Inherited from <a href="debug.debugadaptersessionimpl.html">DebugAdapterSessionImpl</a>.<a href="debug.debugadaptersessionimpl.html#id">id</a></p>
+						<p>Implementation of theia.DebugSession.id</p>
+						<p>Inherited from DebugAdapterSessionImpl.id</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/node/debug-adapter-session.ts#L46">packages/debug/src/node/debug-adapter-session.ts:46</a></li>
+							<li>Defined in packages/debug/lib/node/debug-adapter-session.d.ts:23</li>
 						</ul>
 					</aside>
 				</section>
@@ -206,30 +201,24 @@
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> name</h3>
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/plugin._plugin_-1.debugsession.html">DebugSession</a>.<a href="../interfaces/plugin._plugin_-1.debugsession.html#name">name</a></p>
+						<p>Implementation of theia.DebugSession.name</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts#L29">packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts#L29">packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts:29</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="theiasession" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> theia<wbr>Session</h3>
-					<div class="tsd-signature tsd-kind-icon">theia<wbr>Session<span class="tsd-signature-symbol">:</span> <a href="../interfaces/plugin._plugin_-1.debugsession.html" class="tsd-signature-type">DebugSession</a></div>
+					<div class="tsd-signature tsd-kind-icon">theia<wbr>Session<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DebugSession</span></div>
 					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts#L35">packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts:35</a></li>
-						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="tracker" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> tracker</h3>
-					<div class="tsd-signature tsd-kind-icon">tracker<span class="tsd-signature-symbol">:</span> <a href="../interfaces/plugin._plugin_-1.debugadaptertracker.html" class="tsd-signature-type">DebugAdapterTracker</a></div>
+					<div class="tsd-signature tsd-kind-icon">tracker<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DebugAdapterTracker</span></div>
 					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts#L34">packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts:34</a></li>
-						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
@@ -237,9 +226,9 @@
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> type</h3>
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/plugin._plugin_-1.debugsession.html">DebugSession</a>.<a href="../interfaces/plugin._plugin_-1.debugsession.html#type">type</a></p>
+						<p>Implementation of theia.DebugSession.type</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts#L28">packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts#L28">packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts:28</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -255,9 +244,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/plugin._plugin_-1.debugsession.html">DebugSession</a>.<a href="../interfaces/plugin._plugin_-1.debugsession.html#customrequest">customRequest</a></p>
+								<p>Implementation of theia.DebugSession.customRequest</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts#L58">packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts#L58">packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts:58</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -282,9 +271,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="debug.debugadaptersessionimpl.html">DebugAdapterSessionImpl</a>.<a href="debug.debugadaptersessionimpl.html#handledata">handleData</a></p>
+								<p>Inherited from DebugAdapterSessionImpl.handleData</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/node/debug-adapter-session.ts#L94">packages/debug/src/node/debug-adapter-session.ts:94</a></li>
+									<li>Defined in packages/debug/lib/node/debug-adapter-session.d.ts:35</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -301,20 +290,20 @@
 					<a name="ondebugadaptererror" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Debug<wbr>Adapter<wbr>Error</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Debug<wbr>Adapter<wbr>Error<span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><a href="../modules/core.applicationerror-1.html#error" class="tsd-signature-type">Error</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Debug<wbr>Adapter<wbr>Error<span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="debug.debugadaptersessionimpl.html">DebugAdapterSessionImpl</a>.<a href="debug.debugadaptersessionimpl.html#ondebugadaptererror">onDebugAdapterError</a></p>
+								<p>Overrides DebugAdapterSessionImpl.onDebugAdapterError</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts#L62">packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts:62</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts#L62">packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts:62</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>error: <a href="../modules/core.applicationerror-1.html#error" class="tsd-signature-type">Error</a></h5>
+									<h5>error: <span class="tsd-signature-type">Error</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -325,14 +314,14 @@
 					<a name="ondebugadapterexit" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Debug<wbr>Adapter<wbr>Exit</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Debug<wbr>Adapter<wbr>Exit<span class="tsd-signature-symbol">(</span>exitCode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, signal<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Debug<wbr>Adapter<wbr>Exit<span class="tsd-signature-symbol">(</span>exitCode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, signal<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="debug.debugadaptersessionimpl.html">DebugAdapterSessionImpl</a>.<a href="debug.debugadaptersessionimpl.html#ondebugadapterexit">onDebugAdapterExit</a></p>
+								<p>Overrides DebugAdapterSessionImpl.onDebugAdapterExit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts#L86">packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts:86</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts#L86">packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts:86</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -341,7 +330,7 @@
 									<h5>exitCode: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>signal: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>signal: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -357,9 +346,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="debug.debugadaptersessionimpl.html">DebugAdapterSessionImpl</a>.<a href="debug.debugadaptersessionimpl.html#send">send</a></p>
+								<p>Overrides DebugAdapterSessionImpl.send</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts#L69">packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts#L69">packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts:69</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -381,9 +370,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="debug.debugadaptersessionimpl.html">DebugAdapterSessionImpl</a>.<a href="debug.debugadaptersessionimpl.html#start">start</a></p>
+								<p>Overrides DebugAdapterSessionImpl.start</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts#L44">packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts#L44">packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts:44</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -405,10 +394,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/debug.debugadaptersession.html">DebugAdapterSession</a>.<a href="../interfaces/debug.debugadaptersession.html#stop">stop</a></p>
-								<p>Overrides <a href="debug.debugadaptersessionimpl.html">DebugAdapterSessionImpl</a>.<a href="debug.debugadaptersessionimpl.html#stop">stop</a></p>
+								<p>Overrides DebugAdapterSessionImpl.stop</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts#L51">packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts#L51">packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts:51</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -424,9 +412,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="debug.debugadaptersessionimpl.html">DebugAdapterSessionImpl</a>.<a href="debug.debugadaptersessionimpl.html#write">write</a></p>
+								<p>Overrides DebugAdapterSessionImpl.write</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts#L79">packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts:79</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts#L79">packages/plugin-ext/src/plugin/node/debug/plugin-debug-adapter-session.ts:79</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -444,8 +432,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/plugin_ext.html">plugin-<wbr>ext</a>
@@ -466,13 +454,13 @@
 								<a href="../modules/plugin_ext.connectionclosederror.html">Connection<wbr>Closed<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.customeditorwidget.html">Custom<wbr>Editor<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrangebehavior.html">Decoration<wbr>Range<wbr>Behavior</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrenderoptions-1.html">Decoration<wbr>Render<wbr>Options</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.delta.html">Delta</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.documentlink.html">Document<wbr>Link</a>
@@ -493,6 +481,9 @@
 								<a href="../modules/plugin_ext.parameterinformation.html">Parameter<wbr>Information</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.plugincontributions.html">Plugin<wbr>Contributions</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginiconpath.html">Plugin<wbr>Icon<wbr>Path</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
@@ -500,6 +491,12 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginpaths.html">Plugin<wbr>Paths</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewregistry.html">Plugin<wbr>View<wbr>Registry</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewwidget.html">Plugin<wbr>View<wbr>Widget</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.schemes.html">Schemes</a>
@@ -526,10 +523,16 @@
 								<a href="../modules/plugin_ext.textdocumentshowoptions.html">Text<wbr>Document<wbr>Show<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.texteditorselectionchangekind.html">Text<wbr>Editor<wbr>Selection<wbr>Change<wbr>Kind</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationattachmentrenderoptions.html">Themable<wbr>Decoration<wbr>Attachment<wbr>Render<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationrenderoptions.html">Themable<wbr>Decoration<wbr>Render<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.themeicon.html">Theme<wbr>Icon</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.timelinecommandarg-1.html">Timeline<wbr>Command<wbr>Arg</a>
@@ -544,10 +547,10 @@
 								<a href="../modules/plugin_ext.webviewexternalendpoint.html">Webview<wbr>External<wbr>Endpoint</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
+								<a href="../modules/plugin_ext.webviewwidget.html">Webview<wbr>Widget</a>
 							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.nls.html">nls</a>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
 							</li>
 						</ul>
 					</li>
@@ -563,7 +566,7 @@
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 								<a href="plugin_ext.plugindebugadaptersession.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="plugin_ext.plugindebugadaptersession.html#communicationprovider" class="tsd-kind-icon">communication<wbr>Provider</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -623,7 +626,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

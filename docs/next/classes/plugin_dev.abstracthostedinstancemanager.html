@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/plugin_dev.html">plugin-dev</a>
@@ -74,10 +73,10 @@
 						<span class="target">AbstractHostedInstanceManager</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<a href="plugin_dev.nodehostedpluginrunner.html" class="tsd-signature-type">NodeHostedPluginRunner</a>
+								<a href="plugin_dev.nodehostedpluginrunner.html" class="tsd-signature-type" data-tsd-kind="Class">NodeHostedPluginRunner</a>
 							</li>
 							<li>
-								<a href="plugin_dev.electronnodehostedpluginrunner.html" class="tsd-signature-type">ElectronNodeHostedPluginRunner</a>
+								<a href="plugin_dev.electronnodehostedpluginrunner.html" class="tsd-signature-type" data-tsd-kind="Class">ElectronNodeHostedPluginRunner</a>
 							</li>
 						</ul>
 					</li>
@@ -86,13 +85,19 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/plugin_dev.hostedinstancemanager.html" class="tsd-signature-type">HostedInstanceManager</a></li>
+					<li><a href="../modules/plugin_dev.html#hostedinstancemanager-1" class="tsd-signature-type" data-tsd-kind="Variable">HostedInstanceManager</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="plugin_dev.abstracthostedinstancemanager.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
@@ -131,6 +136,23 @@
 					</div>
 				</section>
 			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Abstract<wbr>Hosted<wbr>Instance<wbr>Manager<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_dev.abstracthostedinstancemanager.html" class="tsd-signature-type" data-tsd-kind="Class">AbstractHostedInstanceManager</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="plugin_dev.abstracthostedinstancemanager.html" class="tsd-signature-type" data-tsd-kind="Class">AbstractHostedInstanceManager</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-private-protected">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
@@ -139,27 +161,27 @@
 					<div class="tsd-signature tsd-kind-icon">hosted<wbr>Instance<wbr>Process<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ChildProcess</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-dev/src/node/hosted-instance-manager.ts#L101">packages/plugin-dev/src/node/hosted-instance-manager.ts:101</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-dev/src/node/hosted-instance-manager.ts#L101">packages/plugin-dev/src/node/hosted-instance-manager.ts:101</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="hostedpluginprocess" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> hosted<wbr>Plugin<wbr>Process</h3>
-					<div class="tsd-signature tsd-kind-icon">hosted<wbr>Plugin<wbr>Process<span class="tsd-signature-symbol">:</span> <a href="plugin_ext.hostedpluginprocess.html" class="tsd-signature-type">HostedPluginProcess</a></div>
+					<div class="tsd-signature tsd-kind-icon">hosted<wbr>Plugin<wbr>Process<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HostedPluginProcess</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-dev/src/node/hosted-instance-manager.ts#L114">packages/plugin-dev/src/node/hosted-instance-manager.ts:114</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-dev/src/node/hosted-instance-manager.ts#L114">packages/plugin-dev/src/node/hosted-instance-manager.ts:114</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="hostedpluginsupport" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> hosted<wbr>Plugin<wbr>Support</h3>
-					<div class="tsd-signature tsd-kind-icon">hosted<wbr>Plugin<wbr>Support<span class="tsd-signature-symbol">:</span> <a href="plugin_ext.hostedpluginsupport.html" class="tsd-signature-type">HostedPluginSupport</a></div>
+					<div class="tsd-signature tsd-kind-icon">hosted<wbr>Plugin<wbr>Support<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HostedPluginSupport</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-dev/src/node/hosted-instance-manager.ts#L108">packages/plugin-dev/src/node/hosted-instance-manager.ts:108</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-dev/src/node/hosted-instance-manager.ts#L108">packages/plugin-dev/src/node/hosted-instance-manager.ts:108</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -169,17 +191,17 @@
 					<div class="tsd-signature tsd-kind-icon">instance<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-dev/src/node/hosted-instance-manager.ts#L105">packages/plugin-dev/src/node/hosted-instance-manager.ts:105</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-dev/src/node/hosted-instance-manager.ts#L105">packages/plugin-dev/src/node/hosted-instance-manager.ts:105</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="instanceuri" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> instance<wbr>Uri</h3>
-					<div class="tsd-signature tsd-kind-icon">instance<wbr>Uri<span class="tsd-signature-symbol">:</span> <a href="core.uri.html" class="tsd-signature-type">URI</a></div>
+					<div class="tsd-signature tsd-kind-icon">instance<wbr>Uri<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">default</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-dev/src/node/hosted-instance-manager.ts#L103">packages/plugin-dev/src/node/hosted-instance-manager.ts:103</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-dev/src/node/hosted-instance-manager.ts#L103">packages/plugin-dev/src/node/hosted-instance-manager.ts:103</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -189,27 +211,27 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Plugin<wbr>Running<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-dev/src/node/hosted-instance-manager.ts#L102">packages/plugin-dev/src/node/hosted-instance-manager.ts:102</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-dev/src/node/hosted-instance-manager.ts#L102">packages/plugin-dev/src/node/hosted-instance-manager.ts:102</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="metadata" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> metadata</h3>
-					<div class="tsd-signature tsd-kind-icon">metadata<span class="tsd-signature-symbol">:</span> <a href="plugin_ext.metadatascanner.html" class="tsd-signature-type">MetadataScanner</a></div>
+					<div class="tsd-signature tsd-kind-icon">metadata<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">MetadataScanner</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-dev/src/node/hosted-instance-manager.ts#L111">packages/plugin-dev/src/node/hosted-instance-manager.ts:111</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-dev/src/node/hosted-instance-manager.ts#L111">packages/plugin-dev/src/node/hosted-instance-manager.ts:111</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="pluginuri" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> plugin<wbr>Uri</h3>
-					<div class="tsd-signature tsd-kind-icon">plugin<wbr>Uri<span class="tsd-signature-symbol">:</span> <a href="core.uri.html" class="tsd-signature-type">URI</a></div>
+					<div class="tsd-signature tsd-kind-icon">plugin<wbr>Uri<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">default</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-dev/src/node/hosted-instance-manager.ts#L104">packages/plugin-dev/src/node/hosted-instance-manager.ts:104</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-dev/src/node/hosted-instance-manager.ts#L104">packages/plugin-dev/src/node/hosted-instance-manager.ts:104</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -226,7 +248,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-dev/src/node/hosted-instance-manager.ts#L187">packages/plugin-dev/src/node/hosted-instance-manager.ts:187</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-dev/src/node/hosted-instance-manager.ts#L187">packages/plugin-dev/src/node/hosted-instance-manager.ts:187</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -242,26 +264,26 @@
 					<a name="debug" class="tsd-anchor"></a>
 					<h3>debug</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">debug<span class="tsd-signature-symbol">(</span>pluginUri<span class="tsd-signature-symbol">: </span><a href="core.uri.html" class="tsd-signature-type">URI</a>, debugConfig<span class="tsd-signature-symbol">: </span><a href="../interfaces/debug.debugpluginconfiguration.html" class="tsd-signature-type">DebugPluginConfiguration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">debug<span class="tsd-signature-symbol">(</span>pluginUri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default</span>, debugConfig<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DebugPluginConfiguration</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/plugin_dev.hostedinstancemanager.html">HostedInstanceManager</a>.<a href="../interfaces/plugin_dev.hostedinstancemanager.html#debug">debug</a></p>
+								<p>Implementation of HostedInstanceManager.debug</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-dev/src/node/hosted-instance-manager.ts#L124">packages/plugin-dev/src/node/hosted-instance-manager.ts:124</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-dev/src/node/hosted-instance-manager.ts#L124">packages/plugin-dev/src/node/hosted-instance-manager.ts:124</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>pluginUri: <a href="core.uri.html" class="tsd-signature-type">URI</a></h5>
+									<h5>pluginUri: <span class="tsd-signature-type">default</span></h5>
 								</li>
 								<li>
-									<h5>debugConfig: <a href="../interfaces/debug.debugpluginconfiguration.html" class="tsd-signature-type">DebugPluginConfiguration</a></h5>
+									<h5>debugConfig: <span class="tsd-signature-type">DebugPluginConfiguration</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -269,28 +291,28 @@
 					<a name="dorun" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> do<wbr>Run</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">do<wbr>Run<span class="tsd-signature-symbol">(</span>pluginUri<span class="tsd-signature-symbol">: </span><a href="core.uri.html" class="tsd-signature-type">URI</a>, port<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, debugConfig<span class="tsd-signature-symbol">?: </span><a href="../interfaces/debug.debugpluginconfiguration.html" class="tsd-signature-type">DebugPluginConfiguration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">do<wbr>Run<span class="tsd-signature-symbol">(</span>pluginUri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default</span>, port<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, debugConfig<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">DebugPluginConfiguration</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-dev/src/node/hosted-instance-manager.ts#L128">packages/plugin-dev/src/node/hosted-instance-manager.ts:128</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-dev/src/node/hosted-instance-manager.ts#L128">packages/plugin-dev/src/node/hosted-instance-manager.ts:128</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>pluginUri: <a href="core.uri.html" class="tsd-signature-type">URI</a></h5>
+									<h5>pluginUri: <span class="tsd-signature-type">default</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> port: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> port: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> debugConfig: <a href="../interfaces/debug.debugpluginconfiguration.html" class="tsd-signature-type">DebugPluginConfiguration</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> debugConfig: <span class="tsd-signature-type">DebugPluginConfiguration</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -298,17 +320,17 @@
 					<a name="getinstanceuri" class="tsd-anchor"></a>
 					<h3>get<wbr>InstanceURI</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>InstanceURI<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.uri.html" class="tsd-signature-type">URI</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>InstanceURI<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/plugin_dev.hostedinstancemanager.html">HostedInstanceManager</a>.<a href="../interfaces/plugin_dev.hostedinstancemanager.html#getinstanceuri">getInstanceURI</a></p>
+								<p>Implementation of HostedInstanceManager.getInstanceURI</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-dev/src/node/hosted-instance-manager.ts#L170">packages/plugin-dev/src/node/hosted-instance-manager.ts:170</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-dev/src/node/hosted-instance-manager.ts#L170">packages/plugin-dev/src/node/hosted-instance-manager.ts:170</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="core.uri.html" class="tsd-signature-type">URI</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">default</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -316,17 +338,17 @@
 					<a name="getpluginuri" class="tsd-anchor"></a>
 					<h3>get<wbr>PluginURI</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>PluginURI<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.uri.html" class="tsd-signature-type">URI</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>PluginURI<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/plugin_dev.hostedinstancemanager.html">HostedInstanceManager</a>.<a href="../interfaces/plugin_dev.hostedinstancemanager.html#getpluginuri">getPluginURI</a></p>
+								<p>Implementation of HostedInstanceManager.getPluginURI</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-dev/src/node/hosted-instance-manager.ts#L177">packages/plugin-dev/src/node/hosted-instance-manager.ts:177</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-dev/src/node/hosted-instance-manager.ts#L177">packages/plugin-dev/src/node/hosted-instance-manager.ts:177</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="core.uri.html" class="tsd-signature-type">URI</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">default</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -334,22 +356,22 @@
 					<a name="getstartcommand" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Start<wbr>Command</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Start<wbr>Command<span class="tsd-signature-symbol">(</span>port<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, debugConfig<span class="tsd-signature-symbol">?: </span><a href="../interfaces/debug.debugpluginconfiguration.html" class="tsd-signature-type">DebugPluginConfiguration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Start<wbr>Command<span class="tsd-signature-symbol">(</span>port<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, debugConfig<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">DebugPluginConfiguration</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-dev/src/node/hosted-instance-manager.ts#L242">packages/plugin-dev/src/node/hosted-instance-manager.ts:242</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-dev/src/node/hosted-instance-manager.ts#L242">packages/plugin-dev/src/node/hosted-instance-manager.ts:242</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> port: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> port: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> debugConfig: <a href="../interfaces/debug.debugpluginconfiguration.html" class="tsd-signature-type">DebugPluginConfiguration</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> debugConfig: <span class="tsd-signature-type">DebugPluginConfiguration</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -360,20 +382,20 @@
 					<a name="ispluginvalid" class="tsd-anchor"></a>
 					<h3>is<wbr>Plugin<wbr>Valid</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Plugin<wbr>Valid<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Plugin<wbr>Valid<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/plugin_dev.hostedinstancemanager.html">HostedInstanceManager</a>.<a href="../interfaces/plugin_dev.hostedinstancemanager.html#ispluginvalid">isPluginValid</a></p>
+								<p>Implementation of HostedInstanceManager.isPluginValid</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-dev/src/node/hosted-instance-manager.ts#L227">packages/plugin-dev/src/node/hosted-instance-manager.ts:227</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-dev/src/node/hosted-instance-manager.ts#L227">packages/plugin-dev/src/node/hosted-instance-manager.ts:227</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>uri: <a href="core.uri.html" class="tsd-signature-type">URI</a></h5>
+									<h5>uri: <span class="tsd-signature-type">default</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -390,7 +412,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-dev/src/node/hosted-instance-manager.ts#L328">packages/plugin-dev/src/node/hosted-instance-manager.ts:328</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-dev/src/node/hosted-instance-manager.ts#L328">packages/plugin-dev/src/node/hosted-instance-manager.ts:328</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -412,9 +434,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/plugin_dev.hostedinstancemanager.html">HostedInstanceManager</a>.<a href="../interfaces/plugin_dev.hostedinstancemanager.html#isrunning">isRunning</a></p>
+								<p>Implementation of HostedInstanceManager.isRunning</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-dev/src/node/hosted-instance-manager.ts#L116">packages/plugin-dev/src/node/hosted-instance-manager.ts:116</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-dev/src/node/hosted-instance-manager.ts#L116">packages/plugin-dev/src/node/hosted-instance-manager.ts:116</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -431,7 +453,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-dev/src/node/hosted-instance-manager.ts#L215">packages/plugin-dev/src/node/hosted-instance-manager.ts:215</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-dev/src/node/hosted-instance-manager.ts#L215">packages/plugin-dev/src/node/hosted-instance-manager.ts:215</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -447,13 +469,13 @@
 					<a name="pingloop" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> ping<wbr>Loop</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">ping<wbr>Loop<span class="tsd-signature-symbol">(</span>remainingCount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, resolve<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../modules/core.applicationerror-1.html#error" class="tsd-signature-type">Error</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, reject<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../modules/core.applicationerror-1.html#error" class="tsd-signature-type">Error</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">ping<wbr>Loop<span class="tsd-signature-symbol">(</span>remainingCount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, resolve<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, reject<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-dev/src/node/hosted-instance-manager.ts#L197">packages/plugin-dev/src/node/hosted-instance-manager.ts:197</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-dev/src/node/hosted-instance-manager.ts#L197">packages/plugin-dev/src/node/hosted-instance-manager.ts:197</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -470,21 +492,21 @@
 									</div>
 								</li>
 								<li>
-									<h5>resolve: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../modules/core.applicationerror-1.html#error" class="tsd-signature-type">Error</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<h5>resolve: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>resolve function if ok</p>
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../modules/core.applicationerror-1.html#error" class="tsd-signature-type">Error</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
 													<h4 class="tsd-parameters-title">Parameters</h4>
 													<ul class="tsd-parameters">
 														<li>
-															<h5><span class="tsd-flag ts-flagOptional">Optional</span> value: <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../modules/core.applicationerror-1.html#error" class="tsd-signature-type">Error</a></h5>
+															<h5><span class="tsd-flag ts-flagOptional">Optional</span> value: <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Error</span></h5>
 														</li>
 													</ul>
 													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -494,21 +516,21 @@
 									</ul>
 								</li>
 								<li>
-									<h5>reject: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../modules/core.applicationerror-1.html#error" class="tsd-signature-type">Error</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<h5>reject: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>reject function if error</p>
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../modules/core.applicationerror-1.html#error" class="tsd-signature-type">Error</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
 													<h4 class="tsd-parameters-title">Parameters</h4>
 													<ul class="tsd-parameters">
 														<li>
-															<h5><span class="tsd-flag ts-flagOptional">Optional</span> value: <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../modules/core.applicationerror-1.html#error" class="tsd-signature-type">Error</a></h5>
+															<h5><span class="tsd-flag ts-flagOptional">Optional</span> value: <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Error</span></h5>
 														</li>
 													</ul>
 													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -532,7 +554,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-dev/src/node/hosted-instance-manager.ts#L278">packages/plugin-dev/src/node/hosted-instance-manager.ts:278</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-dev/src/node/hosted-instance-manager.ts#L278">packages/plugin-dev/src/node/hosted-instance-manager.ts:278</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -549,22 +571,22 @@
 					<a name="postprocessinstanceuri" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> post<wbr>Process<wbr>Instance<wbr>Uri</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">post<wbr>Process<wbr>Instance<wbr>Uri<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">post<wbr>Process<wbr>Instance<wbr>Uri<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-dev/src/node/hosted-instance-manager.ts#L274">packages/plugin-dev/src/node/hosted-instance-manager.ts:274</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-dev/src/node/hosted-instance-manager.ts#L274">packages/plugin-dev/src/node/hosted-instance-manager.ts:274</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>uri: <a href="core.uri.html" class="tsd-signature-type">URI</a></h5>
+									<h5>uri: <span class="tsd-signature-type">default</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -572,26 +594,26 @@
 					<a name="run" class="tsd-anchor"></a>
 					<h3>run</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">run<span class="tsd-signature-symbol">(</span>pluginUri<span class="tsd-signature-symbol">: </span><a href="core.uri.html" class="tsd-signature-type">URI</a>, port<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">run<span class="tsd-signature-symbol">(</span>pluginUri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default</span>, port<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/plugin_dev.hostedinstancemanager.html">HostedInstanceManager</a>.<a href="../interfaces/plugin_dev.hostedinstancemanager.html#run">run</a></p>
+								<p>Implementation of HostedInstanceManager.run</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-dev/src/node/hosted-instance-manager.ts#L120">packages/plugin-dev/src/node/hosted-instance-manager.ts:120</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-dev/src/node/hosted-instance-manager.ts#L120">packages/plugin-dev/src/node/hosted-instance-manager.ts:120</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>pluginUri: <a href="core.uri.html" class="tsd-signature-type">URI</a></h5>
+									<h5>pluginUri: <span class="tsd-signature-type">default</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> port: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> port: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -599,13 +621,13 @@
 					<a name="runhostedplugintheiainstance" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> run<wbr>Hosted<wbr>Plugin<wbr>Theia<wbr>Instance</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">run<wbr>Hosted<wbr>Plugin<wbr>Theia<wbr>Instance<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SpawnOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">run<wbr>Hosted<wbr>Plugin<wbr>Theia<wbr>Instance<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SpawnOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-dev/src/node/hosted-instance-manager.ts#L282">packages/plugin-dev/src/node/hosted-instance-manager.ts:282</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-dev/src/node/hosted-instance-manager.ts#L282">packages/plugin-dev/src/node/hosted-instance-manager.ts:282</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -617,7 +639,7 @@
 									<h5>options: <span class="tsd-signature-type">SpawnOptions</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -630,9 +652,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/plugin_dev.hostedinstancemanager.html">HostedInstanceManager</a>.<a href="../interfaces/plugin_dev.hostedinstancemanager.html#terminate">terminate</a></p>
+								<p>Implementation of HostedInstanceManager.terminate</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-dev/src/node/hosted-instance-manager.ts#L160">packages/plugin-dev/src/node/hosted-instance-manager.ts:160</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-dev/src/node/hosted-instance-manager.ts#L160">packages/plugin-dev/src/node/hosted-instance-manager.ts:160</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -649,7 +671,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-dev/src/node/hosted-instance-manager.ts#L318">packages/plugin-dev/src/node/hosted-instance-manager.ts:318</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-dev/src/node/hosted-instance-manager.ts#L318">packages/plugin-dev/src/node/hosted-instance-manager.ts:318</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -667,8 +689,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/plugin_dev.html">plugin-<wbr>dev</a>
@@ -682,11 +704,32 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="../modules/plugin_dev.html#hostedpluginclient" class="tsd-kind-icon">Hosted<wbr>Plugin<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="../modules/plugin_dev.html#hostedpluginserver" class="tsd-kind-icon">Hosted<wbr>Plugin<wbr>Server</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="../modules/plugin_dev.html#hostedpluginuripostprocessor" class="tsd-kind-icon">Hosted<wbr>Plugin<wbr>Uri<wbr>Post<wbr>Processor</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="../modules/plugin_dev.html#hostedpluginuripostprocessorsymbolname" class="tsd-kind-icon">Hosted<wbr>Plugin<wbr>Uri<wbr>Post<wbr>Processor<wbr>Symbol<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="../modules/plugin_dev.html#hostedservicepath" class="tsd-kind-icon">hosted<wbr>Service<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-module">
+						<a href="../enums/plugin_dev.hostedinstancestate.html" class="tsd-kind-icon">Hosted<wbr>Instance<wbr>State</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="plugin_dev.abstracthostedinstancemanager.html" class="tsd-kind-icon">Abstract<wbr>Hosted<wbr>Instance<wbr>Manager</a>
 						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="plugin_dev.abstracthostedinstancemanager.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="plugin_dev.abstracthostedinstancemanager.html#hostedinstanceprocess" class="tsd-kind-icon">hosted<wbr>Instance<wbr>Process</a>
 							</li>
@@ -766,6 +809,102 @@
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="plugin_dev.electronnodehostedpluginrunner.html" class="tsd-kind-icon">Electron<wbr>Node<wbr>Hosted<wbr>Plugin<wbr>Runner</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="plugin_dev.hostedplugincontroller.html" class="tsd-kind-icon">Hosted<wbr>Plugin<wbr>Controller</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="plugin_dev.hostedpluginfrontendcontribution.html" class="tsd-kind-icon">Hosted<wbr>Plugin<wbr>Frontend<wbr>Contribution</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="plugin_dev.hostedplugininformer.html" class="tsd-kind-icon">Hosted<wbr>Plugin<wbr>Informer</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="plugin_dev.hostedpluginlogviewer.html" class="tsd-kind-icon">Hosted<wbr>Plugin<wbr>Log<wbr>Viewer</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="plugin_dev.hostedpluginmanagerclient.html" class="tsd-kind-icon">Hosted<wbr>Plugin<wbr>Manager<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="plugin_dev.hostedpluginreader.html" class="tsd-kind-icon">Hosted<wbr>Plugin<wbr>Reader</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="plugin_dev.hostedpluginserverimpl.html" class="tsd-kind-icon">Hosted<wbr>Plugin<wbr>Server<wbr>Impl</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="plugin_dev.hostedpluginsmanagerimpl.html" class="tsd-kind-icon">Hosted<wbr>Plugins<wbr>Manager<wbr>Impl</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="plugin_dev.nodehostedpluginrunner.html" class="tsd-kind-icon">Node<wbr>Hosted<wbr>Plugin<wbr>Runner</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/plugin_dev.hostedinstancedata.html" class="tsd-kind-icon">Hosted<wbr>Instance<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/plugin_dev.hostedinstancemanager.html" class="tsd-kind-icon">Hosted<wbr>Instance<wbr>Manager</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/plugin_dev.hostedpluginclient-1.html" class="tsd-kind-icon">Hosted<wbr>Plugin<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/plugin_dev.hostedpluginconfiguration.html" class="tsd-kind-icon">Hosted<wbr>Plugin<wbr>Configuration</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/plugin_dev.hostedpluginserver-1.html" class="tsd-kind-icon">Hosted<wbr>Plugin<wbr>Server</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/plugin_dev.hostedpluginuripostprocessor-1.html" class="tsd-kind-icon">Hosted<wbr>Plugin<wbr>Uri<wbr>Post<wbr>Processor</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/plugin_dev.hostedpluginsmanager.html" class="tsd-kind-icon">Hosted<wbr>Plugins<wbr>Manager</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/plugin_dev.html#hostedpluginpreferences" class="tsd-kind-icon">Hosted<wbr>Plugin<wbr>Preferences</a>
+					</li>
+					<li class=" tsd-kind-property tsd-parent-kind-module">
+						<a href="../modules/plugin_dev.html#default" class="tsd-kind-icon">default</a>
+					</li>
+					<li class=" tsd-kind-property tsd-parent-kind-module">
+						<a href="../modules/plugin_dev.html#default-1" class="tsd-kind-icon">default</a>
+					</li>
+					<li class=" tsd-kind-property tsd-parent-kind-module">
+						<a href="../modules/plugin_dev.html#default-2" class="tsd-kind-icon">default</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/plugin_dev.html#hostedinstancemanager-1" class="tsd-kind-icon">Hosted<wbr>Instance<wbr>Manager</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/plugin_dev.html#hostedpluginconfigschema" class="tsd-kind-icon">Hosted<wbr>Plugin<wbr>Config<wbr>Schema</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/plugin_dev.html#hostedpluginpreferencecontribution" class="tsd-kind-icon">Hosted<wbr>Plugin<wbr>Preference<wbr>Contribution</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/plugin_dev.html#hostedpluginpreferences-1" class="tsd-kind-icon">Hosted<wbr>Plugin<wbr>Preferences</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/plugin_dev.html#hostedpluginserver-2" class="tsd-kind-icon">Hosted<wbr>Plugin<wbr>Server</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/plugin_dev.html#hostedpluginuripostprocessorsymbolname-1" class="tsd-kind-icon">Hosted<wbr>Plugin<wbr>Uri<wbr>Post<wbr>Processor<wbr>Symbol<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/plugin_dev.html#hostedpluginsmanager-1" class="tsd-kind-icon">Hosted<wbr>Plugins<wbr>Manager</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/plugin_dev.html#hostedservicepath-1" class="tsd-kind-icon">hosted<wbr>Service<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/plugin_dev.html#bindcommonhostedbackend" class="tsd-kind-icon">bind<wbr>Common<wbr>Hosted<wbr>Backend</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/plugin_dev.html#bindhostedpluginpreferences" class="tsd-kind-icon">bind<wbr>Hosted<wbr>Plugin<wbr>Preferences</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/plugin_dev.html#createnavigatorpreferences" class="tsd-kind-icon">create<wbr>Navigator<wbr>Preferences</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -777,7 +916,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
@@ -787,6 +925,7 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">

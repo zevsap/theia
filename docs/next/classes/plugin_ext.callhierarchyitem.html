@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/plugin_ext.html">plugin-ext</a>
@@ -95,6 +94,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.callhierarchyitem.html#name" class="tsd-kind-icon">name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.callhierarchyitem.html#range" class="tsd-kind-icon">range</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.callhierarchyitem.html#selectionrange" class="tsd-kind-icon">selection<wbr>Range</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.callhierarchyitem.html#tags" class="tsd-kind-icon">tags</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.callhierarchyitem.html#uri" class="tsd-kind-icon">uri</a></li>
 							</ul>
 						</section>
@@ -113,19 +113,19 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Call<wbr>Hierarchy<wbr>Item<span class="tsd-signature-symbol">(</span>kind<span class="tsd-signature-symbol">: </span><a href="../enums/plugin_ext.symbolkind-1.html" class="tsd-signature-type">SymbolKind</a>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, detail<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, uri<span class="tsd-signature-symbol">: </span><a href="plugin_ext.uri.html" class="tsd-signature-type">URI</a>, range<span class="tsd-signature-symbol">: </span><a href="plugin_ext.range.html" class="tsd-signature-type">Range</a>, selectionRange<span class="tsd-signature-symbol">: </span><a href="plugin_ext.range.html" class="tsd-signature-type">Range</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.callhierarchyitem.html" class="tsd-signature-type">CallHierarchyItem</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Call<wbr>Hierarchy<wbr>Item<span class="tsd-signature-symbol">(</span>kind<span class="tsd-signature-symbol">: </span><a href="../enums/plugin_ext.symbolkind-1.html" class="tsd-signature-type" data-tsd-kind="Enumeration">SymbolKind</a>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, detail<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, uri<span class="tsd-signature-symbol">: </span><a href="plugin_ext.uri.html" class="tsd-signature-type" data-tsd-kind="Class">URI</a>, range<span class="tsd-signature-symbol">: </span><a href="plugin_ext.range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a>, selectionRange<span class="tsd-signature-symbol">: </span><a href="plugin_ext.range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.callhierarchyitem.html" class="tsd-signature-type" data-tsd-kind="Class">CallHierarchyItem</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L2348">packages/plugin-ext/src/plugin/types-impl.ts:2348</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L2349">packages/plugin-ext/src/plugin/types-impl.ts:2349</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>kind: <a href="../enums/plugin_ext.symbolkind-1.html" class="tsd-signature-type">SymbolKind</a></h5>
+									<h5>kind: <a href="../enums/plugin_ext.symbolkind-1.html" class="tsd-signature-type" data-tsd-kind="Enumeration">SymbolKind</a></h5>
 								</li>
 								<li>
 									<h5>name: <span class="tsd-signature-type">string</span></h5>
@@ -134,16 +134,16 @@
 									<h5>detail: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>uri: <a href="plugin_ext.uri.html" class="tsd-signature-type">URI</a></h5>
+									<h5>uri: <a href="plugin_ext.uri.html" class="tsd-signature-type" data-tsd-kind="Class">URI</a></h5>
 								</li>
 								<li>
-									<h5>range: <a href="plugin_ext.range.html" class="tsd-signature-type">Range</a></h5>
+									<h5>range: <a href="plugin_ext.range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h5>
 								</li>
 								<li>
-									<h5>selectionRange: <a href="plugin_ext.range.html" class="tsd-signature-type">Range</a></h5>
+									<h5>selectionRange: <a href="plugin_ext.range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.callhierarchyitem.html" class="tsd-signature-type">CallHierarchyItem</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.callhierarchyitem.html" class="tsd-signature-type" data-tsd-kind="Class">CallHierarchyItem</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -153,40 +153,40 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="_itemid" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> _item<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">_item<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<div class="tsd-signature tsd-kind-icon">_item<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L2341">packages/plugin-ext/src/plugin/types-impl.ts:2341</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L2341">packages/plugin-ext/src/plugin/types-impl.ts:2341</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="_sessionid" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> _session<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">_session<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<div class="tsd-signature tsd-kind-icon">_session<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L2340">packages/plugin-ext/src/plugin/types-impl.ts:2340</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L2340">packages/plugin-ext/src/plugin/types-impl.ts:2340</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="detail" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> detail</h3>
-					<div class="tsd-signature tsd-kind-icon">detail<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<div class="tsd-signature tsd-kind-icon">detail<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L2345">packages/plugin-ext/src/plugin/types-impl.ts:2345</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L2345">packages/plugin-ext/src/plugin/types-impl.ts:2345</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="kind" class="tsd-anchor"></a>
 					<h3>kind</h3>
-					<div class="tsd-signature tsd-kind-icon">kind<span class="tsd-signature-symbol">:</span> <a href="../enums/plugin_ext.symbolkind-1.html" class="tsd-signature-type">SymbolKind</a></div>
+					<div class="tsd-signature tsd-kind-icon">kind<span class="tsd-signature-symbol">:</span> <a href="../enums/plugin_ext.symbolkind-1.html" class="tsd-signature-type" data-tsd-kind="Enumeration">SymbolKind</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L2343">packages/plugin-ext/src/plugin/types-impl.ts:2343</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L2343">packages/plugin-ext/src/plugin/types-impl.ts:2343</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -196,37 +196,47 @@
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L2344">packages/plugin-ext/src/plugin/types-impl.ts:2344</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L2344">packages/plugin-ext/src/plugin/types-impl.ts:2344</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="range" class="tsd-anchor"></a>
 					<h3>range</h3>
-					<div class="tsd-signature tsd-kind-icon">range<span class="tsd-signature-symbol">:</span> <a href="plugin_ext.range.html" class="tsd-signature-type">Range</a></div>
+					<div class="tsd-signature tsd-kind-icon">range<span class="tsd-signature-symbol">:</span> <a href="plugin_ext.range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L2347">packages/plugin-ext/src/plugin/types-impl.ts:2347</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L2347">packages/plugin-ext/src/plugin/types-impl.ts:2347</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="selectionrange" class="tsd-anchor"></a>
 					<h3>selection<wbr>Range</h3>
-					<div class="tsd-signature tsd-kind-icon">selection<wbr>Range<span class="tsd-signature-symbol">:</span> <a href="plugin_ext.range.html" class="tsd-signature-type">Range</a></div>
+					<div class="tsd-signature tsd-kind-icon">selection<wbr>Range<span class="tsd-signature-symbol">:</span> <a href="plugin_ext.range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L2348">packages/plugin-ext/src/plugin/types-impl.ts:2348</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L2348">packages/plugin-ext/src/plugin/types-impl.ts:2348</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="tags" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> tags</h3>
+					<div class="tsd-signature tsd-kind-icon">tags<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><a href="../enums/plugin_ext.symboltag-1.html#deprecated" class="tsd-signature-type" data-tsd-kind="Enumeration member">Deprecated</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L2349">packages/plugin-ext/src/plugin/types-impl.ts:2349</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="uri" class="tsd-anchor"></a>
 					<h3>uri</h3>
-					<div class="tsd-signature tsd-kind-icon">uri<span class="tsd-signature-symbol">:</span> <a href="plugin_ext.uri.html" class="tsd-signature-type">URI</a></div>
+					<div class="tsd-signature tsd-kind-icon">uri<span class="tsd-signature-symbol">:</span> <a href="plugin_ext.uri.html" class="tsd-signature-type" data-tsd-kind="Class">URI</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L2346">packages/plugin-ext/src/plugin/types-impl.ts:2346</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L2346">packages/plugin-ext/src/plugin/types-impl.ts:2346</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -243,7 +253,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L2359">packages/plugin-ext/src/plugin/types-impl.ts:2359</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L2360">packages/plugin-ext/src/plugin/types-impl.ts:2360</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -263,8 +273,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/plugin_ext.html">plugin-<wbr>ext</a>
@@ -285,13 +295,13 @@
 								<a href="../modules/plugin_ext.connectionclosederror.html">Connection<wbr>Closed<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.customeditorwidget.html">Custom<wbr>Editor<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrangebehavior.html">Decoration<wbr>Range<wbr>Behavior</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrenderoptions-1.html">Decoration<wbr>Render<wbr>Options</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.delta.html">Delta</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.documentlink.html">Document<wbr>Link</a>
@@ -312,6 +322,9 @@
 								<a href="../modules/plugin_ext.parameterinformation.html">Parameter<wbr>Information</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.plugincontributions.html">Plugin<wbr>Contributions</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginiconpath.html">Plugin<wbr>Icon<wbr>Path</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
@@ -319,6 +332,12 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginpaths.html">Plugin<wbr>Paths</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewregistry.html">Plugin<wbr>View<wbr>Registry</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewwidget.html">Plugin<wbr>View<wbr>Widget</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.schemes.html">Schemes</a>
@@ -345,10 +364,16 @@
 								<a href="../modules/plugin_ext.textdocumentshowoptions.html">Text<wbr>Document<wbr>Show<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.texteditorselectionchangekind.html">Text<wbr>Editor<wbr>Selection<wbr>Change<wbr>Kind</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationattachmentrenderoptions.html">Themable<wbr>Decoration<wbr>Attachment<wbr>Render<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationrenderoptions.html">Themable<wbr>Decoration<wbr>Render<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.themeicon.html">Theme<wbr>Icon</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.timelinecommandarg-1.html">Timeline<wbr>Command<wbr>Arg</a>
@@ -363,10 +388,10 @@
 								<a href="../modules/plugin_ext.webviewexternalendpoint.html">Webview<wbr>External<wbr>Endpoint</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
+								<a href="../modules/plugin_ext.webviewwidget.html">Webview<wbr>Widget</a>
 							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.nls.html">nls</a>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
 							</li>
 						</ul>
 					</li>
@@ -404,6 +429,9 @@
 								<a href="plugin_ext.callhierarchyitem.html#selectionrange" class="tsd-kind-icon">selection<wbr>Range</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="plugin_ext.callhierarchyitem.html#tags" class="tsd-kind-icon">tags</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="plugin_ext.callhierarchyitem.html#uri" class="tsd-kind-icon">uri</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
@@ -424,7 +452,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

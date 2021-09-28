@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/plugin_ext.html">plugin-ext</a>
@@ -78,7 +77,7 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/scm.scmresource.html" class="tsd-signature-type">ScmResource</a></li>
+					<li><span class="tsd-signature-type">ScmResource</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -98,10 +97,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.pluginscmresource.html#contextvalue" class="tsd-kind-icon">context<wbr>Value</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.pluginscmresource.html#decorations" class="tsd-kind-icon">decorations</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.pluginscmresource.html#group" class="tsd-kind-icon">group</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.pluginscmresource.html#grouphandle" class="tsd-kind-icon">group<wbr>Handle</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.pluginscmresource.html#handle" class="tsd-kind-icon">handle</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.pluginscmresource.html#proxy" class="tsd-kind-icon">proxy</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.pluginscmresource.html#sourcecontrolhandle" class="tsd-kind-icon">source<wbr>Control<wbr>Handle</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.pluginscmresource.html#sourceuri" class="tsd-kind-icon">source<wbr>Uri</a></li>
 							</ul>
 						</section>
@@ -120,19 +116,19 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Plugin<wbr>Scm<wbr>Resource<span class="tsd-signature-symbol">(</span>proxy<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.scmext-1.html" class="tsd-signature-type">ScmExt</a>, sourceControlHandle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, groupHandle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, sourceUri<span class="tsd-signature-symbol">: </span><a href="core.uri.html" class="tsd-signature-type">URI</a>, group<span class="tsd-signature-symbol">: </span><a href="plugin_ext.pluginscmresourcegroup.html" class="tsd-signature-type">PluginScmResourceGroup</a>, decorations<span class="tsd-signature-symbol">: </span><a href="../interfaces/scm.scmresourcedecorations.html" class="tsd-signature-type">ScmResourceDecorations</a>, contextValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, command<span class="tsd-signature-symbol">: </span><a href="../interfaces/scm.scmcommand.html" class="tsd-signature-type">ScmCommand</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.pluginscmresource.html" class="tsd-signature-type">PluginScmResource</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Plugin<wbr>Scm<wbr>Resource<span class="tsd-signature-symbol">(</span>proxy<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.scmext-1.html" class="tsd-signature-type" data-tsd-kind="Interface">ScmExt</a>, sourceControlHandle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, groupHandle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, sourceUri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default</span>, group<span class="tsd-signature-symbol">: </span><a href="plugin_ext.pluginscmresourcegroup.html" class="tsd-signature-type" data-tsd-kind="Class">PluginScmResourceGroup</a>, decorations<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ScmResourceDecorations</span>, contextValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ScmCommand</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.pluginscmresource.html" class="tsd-signature-type" data-tsd-kind="Class">PluginScmResource</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L82">packages/plugin-ext/src/main/browser/scm-main.ts:82</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/scm-main.ts#L82">packages/plugin-ext/src/main/browser/scm-main.ts:82</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>proxy: <a href="../interfaces/plugin_ext.scmext-1.html" class="tsd-signature-type">ScmExt</a></h5>
+									<h5>proxy: <a href="../interfaces/plugin_ext.scmext-1.html" class="tsd-signature-type" data-tsd-kind="Interface">ScmExt</a></h5>
 								</li>
 								<li>
 									<h5>sourceControlHandle: <span class="tsd-signature-type">number</span></h5>
@@ -144,22 +140,22 @@
 									<h5>handle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>sourceUri: <a href="core.uri.html" class="tsd-signature-type">URI</a></h5>
+									<h5>sourceUri: <span class="tsd-signature-type">default</span></h5>
 								</li>
 								<li>
-									<h5>group: <a href="plugin_ext.pluginscmresourcegroup.html" class="tsd-signature-type">PluginScmResourceGroup</a></h5>
+									<h5>group: <a href="plugin_ext.pluginscmresourcegroup.html" class="tsd-signature-type" data-tsd-kind="Class">PluginScmResourceGroup</a></h5>
 								</li>
 								<li>
-									<h5>decorations: <a href="../interfaces/scm.scmresourcedecorations.html" class="tsd-signature-type">ScmResourceDecorations</a></h5>
+									<h5>decorations: <span class="tsd-signature-type">ScmResourceDecorations</span></h5>
 								</li>
 								<li>
-									<h5>contextValue: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>contextValue: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>command: <a href="../interfaces/scm.scmcommand.html" class="tsd-signature-type">ScmCommand</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>command: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ScmCommand</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.pluginscmresource.html" class="tsd-signature-type">PluginScmResource</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.pluginscmresource.html" class="tsd-signature-type" data-tsd-kind="Class">PluginScmResource</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -169,53 +165,31 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="command" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> command</h3>
-					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <a href="../interfaces/scm.scmcommand.html" class="tsd-signature-type">ScmCommand</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ScmCommand</span></div>
 					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L93">packages/plugin-ext/src/main/browser/scm-main.ts:93</a></li>
-						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="contextvalue" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> context<wbr>Value</h3>
-					<div class="tsd-signature tsd-kind-icon">context<wbr>Value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+					<div class="tsd-signature tsd-kind-icon">context<wbr>Value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L92">packages/plugin-ext/src/main/browser/scm-main.ts:92</a></li>
-						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="decorations" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> decorations</h3>
-					<div class="tsd-signature tsd-kind-icon">decorations<span class="tsd-signature-symbol">:</span> <a href="../interfaces/scm.scmresourcedecorations.html" class="tsd-signature-type">ScmResourceDecorations</a></div>
+					<div class="tsd-signature tsd-kind-icon">decorations<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ScmResourceDecorations</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/scm.scmresource.html">ScmResource</a>.<a href="../interfaces/scm.scmresource.html#decorations">decorations</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L91">packages/plugin-ext/src/main/browser/scm-main.ts:91</a></li>
-						</ul>
+						<p>Implementation of ScmResource.decorations</p>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="group" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> group</h3>
-					<div class="tsd-signature tsd-kind-icon">group<span class="tsd-signature-symbol">:</span> <a href="plugin_ext.pluginscmresourcegroup.html" class="tsd-signature-type">PluginScmResourceGroup</a></div>
+					<div class="tsd-signature tsd-kind-icon">group<span class="tsd-signature-symbol">:</span> <a href="plugin_ext.pluginscmresourcegroup.html" class="tsd-signature-type" data-tsd-kind="Class">PluginScmResourceGroup</a></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/scm.scmresource.html">ScmResource</a>.<a href="../interfaces/scm.scmresource.html#group">group</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L90">packages/plugin-ext/src/main/browser/scm-main.ts:90</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="grouphandle" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> group<wbr>Handle</h3>
-					<div class="tsd-signature tsd-kind-icon">group<wbr>Handle<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L87">packages/plugin-ext/src/main/browser/scm-main.ts:87</a></li>
-						</ul>
+						<p>Implementation of ScmResource.group</p>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
@@ -223,40 +197,14 @@
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> handle</h3>
 					<div class="tsd-signature tsd-kind-icon">handle<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L88">packages/plugin-ext/src/main/browser/scm-main.ts:88</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="proxy" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> proxy</h3>
-					<div class="tsd-signature tsd-kind-icon">proxy<span class="tsd-signature-symbol">:</span> <a href="../interfaces/plugin_ext.scmext-1.html" class="tsd-signature-type">ScmExt</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L85">packages/plugin-ext/src/main/browser/scm-main.ts:85</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="sourcecontrolhandle" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> source<wbr>Control<wbr>Handle</h3>
-					<div class="tsd-signature tsd-kind-icon">source<wbr>Control<wbr>Handle<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L86">packages/plugin-ext/src/main/browser/scm-main.ts:86</a></li>
-						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="sourceuri" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> source<wbr>Uri</h3>
-					<div class="tsd-signature tsd-kind-icon">source<wbr>Uri<span class="tsd-signature-symbol">:</span> <a href="core.uri.html" class="tsd-signature-type">URI</a></div>
+					<div class="tsd-signature tsd-kind-icon">source<wbr>Uri<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">default</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/scm.scmresource.html">ScmResource</a>.<a href="../interfaces/scm.scmresource.html#sourceuri">sourceUri</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L89">packages/plugin-ext/src/main/browser/scm-main.ts:89</a></li>
-						</ul>
+						<p>Implementation of ScmResource.sourceUri</p>
 					</aside>
 				</section>
 			</section>
@@ -271,9 +219,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/scm.scmresource.html">ScmResource</a>.<a href="../interfaces/scm.scmresource.html#open">open</a></p>
+								<p>Implementation of ScmResource.open</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/scm-main.ts#L96">packages/plugin-ext/src/main/browser/scm-main.ts:96</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/scm-main.ts#L96">packages/plugin-ext/src/main/browser/scm-main.ts:96</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -285,8 +233,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/plugin_ext.html">plugin-<wbr>ext</a>
@@ -307,13 +255,13 @@
 								<a href="../modules/plugin_ext.connectionclosederror.html">Connection<wbr>Closed<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.customeditorwidget.html">Custom<wbr>Editor<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrangebehavior.html">Decoration<wbr>Range<wbr>Behavior</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrenderoptions-1.html">Decoration<wbr>Render<wbr>Options</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.delta.html">Delta</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.documentlink.html">Document<wbr>Link</a>
@@ -334,6 +282,9 @@
 								<a href="../modules/plugin_ext.parameterinformation.html">Parameter<wbr>Information</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.plugincontributions.html">Plugin<wbr>Contributions</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginiconpath.html">Plugin<wbr>Icon<wbr>Path</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
@@ -341,6 +292,12 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginpaths.html">Plugin<wbr>Paths</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewregistry.html">Plugin<wbr>View<wbr>Registry</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewwidget.html">Plugin<wbr>View<wbr>Widget</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.schemes.html">Schemes</a>
@@ -367,10 +324,16 @@
 								<a href="../modules/plugin_ext.textdocumentshowoptions.html">Text<wbr>Document<wbr>Show<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.texteditorselectionchangekind.html">Text<wbr>Editor<wbr>Selection<wbr>Change<wbr>Kind</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationattachmentrenderoptions.html">Themable<wbr>Decoration<wbr>Attachment<wbr>Render<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationrenderoptions.html">Themable<wbr>Decoration<wbr>Render<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.themeicon.html">Theme<wbr>Icon</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.timelinecommandarg-1.html">Timeline<wbr>Command<wbr>Arg</a>
@@ -385,10 +348,10 @@
 								<a href="../modules/plugin_ext.webviewexternalendpoint.html">Webview<wbr>External<wbr>Endpoint</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
+								<a href="../modules/plugin_ext.webviewwidget.html">Webview<wbr>Widget</a>
 							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.nls.html">nls</a>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
 							</li>
 						</ul>
 					</li>
@@ -416,17 +379,8 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="plugin_ext.pluginscmresource.html#group" class="tsd-kind-icon">group</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="plugin_ext.pluginscmresource.html#grouphandle" class="tsd-kind-icon">group<wbr>Handle</a>
-							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="plugin_ext.pluginscmresource.html#handle" class="tsd-kind-icon">handle</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="plugin_ext.pluginscmresource.html#proxy" class="tsd-kind-icon">proxy</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="plugin_ext.pluginscmresource.html#sourcecontrolhandle" class="tsd-kind-icon">source<wbr>Control<wbr>Handle</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="plugin_ext.pluginscmresource.html#sourceuri" class="tsd-kind-icon">source<wbr>Uri</a>
@@ -449,7 +403,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
@@ -469,9 +422,6 @@
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
 			</ul>
 		</div>
 	</div>

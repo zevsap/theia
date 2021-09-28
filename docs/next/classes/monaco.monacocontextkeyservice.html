@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/monaco.html">monaco</a>
@@ -71,7 +70,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="core.contextkeyservice.html" class="tsd-signature-type">ContextKeyService</a>
+						<span class="tsd-signature-type">ContextKeyService</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">MonacoContextKeyService</span>
@@ -84,6 +83,12 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-inherited">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><a href="monaco.monacocontextkeyservice.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
@@ -108,6 +113,24 @@
 					</div>
 				</section>
 			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Monaco<wbr>Context<wbr>Key<wbr>Service<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="monaco.monacocontextkeyservice.html" class="tsd-signature-type" data-tsd-kind="Class">MonacoContextKeyService</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from ContextKeyService.constructor</p>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="monaco.monacocontextkeyservice.html" class="tsd-signature-type" data-tsd-kind="Class">MonacoContextKeyService</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
@@ -116,7 +139,7 @@
 					<div class="tsd-signature tsd-kind-icon">active<wbr>Context<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-context-key-service.ts#L39">packages/monaco/src/browser/monaco-context-key-service.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-context-key-service.ts#L39">packages/monaco/src/browser/monaco-context-key-service.ts:39</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -126,39 +149,39 @@
 					<div class="tsd-signature tsd-kind-icon">context<wbr>Key<wbr>Service<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ContextKeyService</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-context-key-service.ts#L24">packages/monaco/src/browser/monaco-context-key-service.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-context-key-service.ts#L24">packages/monaco/src/browser/monaco-context-key-service.ts:24</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="expressions" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> expressions</h3>
-					<div class="tsd-signature tsd-kind-icon">expressions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">ContextKeyFalseExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyTrueExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyDefinedExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyNotExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyEqualsExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyNotEqualsExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyRegexExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyNotRegexExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyAndExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyOrExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyInExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyNotInExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyGreaterExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyGreaterEqualsExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeySmallerExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeySmallerEqualsExpr</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;string, monaco.contextkey.ContextKeyExpression&gt;()</span></div>
+					<div class="tsd-signature tsd-kind-icon">expressions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">ContextKeyExpression</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-context-key-service.ts#L51">packages/monaco/src/browser/monaco-context-key-service.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-context-key-service.ts#L51">packages/monaco/src/browser/monaco-context-key-service.ts:51</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="ondidchange" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Did<wbr>Change</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<span class="tsd-signature-symbol">:</span> <a href="../modules/core.event-1.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/core.contextkeychangeevent.html" class="tsd-signature-type">ContextKeyChangeEvent</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = this.onDidChangeEmitter.event</span></div>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ContextKeyChangeEvent</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.contextkeyservice.html">ContextKeyService</a>.<a href="core.contextkeyservice.html#ondidchange">onDidChange</a></p>
+						<p>Inherited from ContextKeyService.onDidChange</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/context-key-service.ts#L43">packages/core/src/browser/context-key-service.ts:43</a></li>
+							<li>Defined in packages/core/lib/browser/context-key-service.d.ts:30</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="ondidchangeemitter" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Did<wbr>Change<wbr>Emitter</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Emitter<span class="tsd-signature-symbol">:</span> <a href="core.emitter-1.html" class="tsd-signature-type">Emitter</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/core.contextkeychangeevent.html" class="tsd-signature-type">ContextKeyChangeEvent</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Emitter&lt;ContextKeyChangeEvent&gt;()</span></div>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Emitter</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ContextKeyChangeEvent</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.contextkeyservice.html">ContextKeyService</a>.<a href="core.contextkeyservice.html#ondidchangeemitter">onDidChangeEmitter</a></p>
+						<p>Inherited from ContextKeyService.onDidChangeEmitter</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/context-key-service.ts#L42">packages/core/src/browser/context-key-service.ts:42</a></li>
+							<li>Defined in packages/core/lib/browser/context-key-service.d.ts:29</li>
 						</ul>
 					</aside>
 				</section>
@@ -169,14 +192,14 @@
 					<a name="createkey" class="tsd-anchor"></a>
 					<h3>create<wbr>Key</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Key&lt;T&gt;<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, defaultValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/core.contextkey.html" class="tsd-signature-type">ContextKey</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Key&lt;T&gt;<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, defaultValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ContextKey</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="core.contextkeyservice.html">ContextKeyService</a>.<a href="core.contextkeyservice.html#createkey">createKey</a></p>
+								<p>Overrides ContextKeyService.createKey</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-context-key-service.ts#L35">packages/monaco/src/browser/monaco-context-key-service.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-context-key-service.ts#L35">packages/monaco/src/browser/monaco-context-key-service.ts:35</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -191,10 +214,10 @@
 									<h5>key: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>defaultValue: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>defaultValue: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/core.contextkey.html" class="tsd-signature-type">ContextKey</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ContextKey</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -202,20 +225,20 @@
 					<a name="firedidchange" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> fire<wbr>Did<wbr>Change</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">fire<wbr>Did<wbr>Change<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.contextkeychangeevent.html" class="tsd-signature-type">ContextKeyChangeEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">fire<wbr>Did<wbr>Change<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ContextKeyChangeEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="core.contextkeyservice.html">ContextKeyService</a>.<a href="core.contextkeyservice.html#firedidchange">fireDidChange</a></p>
+								<p>Inherited from ContextKeyService.fireDidChange</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/context-key-service.ts#L44">packages/core/src/browser/context-key-service.ts:44</a></li>
+									<li>Defined in packages/core/lib/browser/context-key-service.d.ts:31</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>event: <a href="../interfaces/core.contextkeychangeevent.html" class="tsd-signature-type">ContextKeyChangeEvent</a></h5>
+									<h5>event: <span class="tsd-signature-type">ContextKeyChangeEvent</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -232,7 +255,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-context-key-service.ts#L27">packages/monaco/src/browser/monaco-context-key-service.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-context-key-service.ts#L27">packages/monaco/src/browser/monaco-context-key-service.ts:27</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -248,9 +271,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="core.contextkeyservice.html">ContextKeyService</a>.<a href="core.contextkeyservice.html#match">match</a></p>
+								<p>Overrides ContextKeyService.match</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-context-key-service.ts#L41">packages/monaco/src/browser/monaco-context-key-service.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-context-key-service.ts#L41">packages/monaco/src/browser/monaco-context-key-service.ts:41</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -270,13 +293,13 @@
 					<a name="parse" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> parse</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">parse<span class="tsd-signature-symbol">(</span>when<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">monaco.contextkey.ContextKeyExpression</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">parse<span class="tsd-signature-symbol">(</span>when<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyFalseExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyTrueExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyDefinedExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyNotExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyEqualsExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyNotEqualsExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyRegexExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyNotRegexExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyAndExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyOrExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyInExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyNotInExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyGreaterExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyGreaterEqualsExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeySmallerExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeySmallerEqualsExpr</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-context-key-service.ts#L52">packages/monaco/src/browser/monaco-context-key-service.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-context-key-service.ts#L52">packages/monaco/src/browser/monaco-context-key-service.ts:52</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -285,7 +308,7 @@
 									<h5>when: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">monaco.contextkey.ContextKeyExpression</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyFalseExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyTrueExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyDefinedExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyNotExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyEqualsExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyNotEqualsExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyRegexExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyNotRegexExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyAndExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyOrExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyInExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyNotInExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyGreaterExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeyGreaterEqualsExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeySmallerExpr</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ContextKeySmallerEqualsExpr</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -293,14 +316,14 @@
 					<a name="parsekeys" class="tsd-anchor"></a>
 					<h3>parse<wbr>Keys</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">parse<wbr>Keys<span class="tsd-signature-symbol">(</span>expression<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">parse<wbr>Keys<span class="tsd-signature-symbol">(</span>expression<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="core.contextkeyservice.html">ContextKeyService</a>.<a href="core.contextkeyservice.html#parsekeys">parseKeys</a></p>
+								<p>Overrides ContextKeyService.parseKeys</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-context-key-service.ts#L63">packages/monaco/src/browser/monaco-context-key-service.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-context-key-service.ts#L63">packages/monaco/src/browser/monaco-context-key-service.ts:63</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -309,7 +332,7 @@
 									<h5>expression: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -318,8 +341,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/monaco.html">monaco</a>
@@ -331,13 +354,31 @@
 								<a href="../modules/monaco.monacocommands.html">Monaco<wbr>Commands</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.monacodiffeditor.html">Monaco<wbr>Diff<wbr>Editor</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.monacoeditor.html">Monaco<wbr>Editor</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.monacoeditormodel.html">Monaco<wbr>Editor<wbr>Model</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.monacoeditorzonewidget.html">Monaco<wbr>Editor<wbr>Zone<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/monaco.monacomenus.html">Monaco<wbr>Menus</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.monacooutlinecontribution.html">Monaco<wbr>Outline<wbr>Contribution</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/monaco.monacooutlinesymbolinformationnode.html">Monaco<wbr>Outline<wbr>Symbol<wbr>Information<wbr>Node</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/monaco.monacorangereplace.html">Monaco<wbr>Range<wbr>Replace</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.monacothemeregistry.html">Monaco<wbr>Theme<wbr>Registry</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/monaco.monacothemestate.html">Monaco<wbr>Theme<wbr>State</a>
@@ -368,6 +409,9 @@
 					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="monaco.monacocontextkeyservice.html" class="tsd-kind-icon">Monaco<wbr>Context<wbr>Key<wbr>Service</a>
 						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+								<a href="monaco.monacocontextkeyservice.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="monaco.monacocontextkeyservice.html#activecontext" class="tsd-kind-icon">active<wbr>Context</a>
 							</li>
@@ -416,7 +460,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
@@ -434,14 +477,15 @@
 				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+			</ul>
+			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
 			</ul>
 		</div>
 	</div>

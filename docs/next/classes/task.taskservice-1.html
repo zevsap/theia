@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/task.html">task</a>
@@ -78,13 +77,19 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/task.taskconfigurationclient.html" class="tsd-signature-type">TaskConfigurationClient</a></li>
+					<li><a href="../interfaces/task.taskconfigurationclient.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfigurationClient</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="task.taskservice-1.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
@@ -183,65 +188,82 @@
 					</div>
 				</section>
 			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Task<wbr>Service<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="task.taskservice-1.html" class="tsd-signature-type" data-tsd-kind="Class">TaskService</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="task.taskservice-1.html" class="tsd-signature-type" data-tsd-kind="Class">TaskService</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-private-protected">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="app" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> app</h3>
-					<div class="tsd-signature tsd-kind-icon">app<span class="tsd-signature-symbol">:</span> <a href="core.frontendapplication-1.html" class="tsd-signature-type">FrontendApplication</a></div>
+					<div class="tsd-signature tsd-kind-icon">app<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">FrontendApplication</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L107">packages/task/src/browser/task-service.ts:107</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L107">packages/task/src/browser/task-service.ts:107</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="cachedrecenttasks" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> cached<wbr>Recent<wbr>Tasks</h3>
-					<div class="tsd-signature tsd-kind-icon">cached<wbr>Recent<wbr>Tasks<span class="tsd-signature-symbol">:</span> <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
+					<div class="tsd-signature tsd-kind-icon">cached<wbr>Recent<wbr>Tasks<span class="tsd-signature-symbol">:</span> <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L97">packages/task/src/browser/task-service.ts:97</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L97">packages/task/src/browser/task-service.ts:97</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="commands" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> commands</h3>
-					<div class="tsd-signature tsd-kind-icon">commands<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.commandservice-1.html" class="tsd-signature-type">CommandService</a></div>
+					<div class="tsd-signature tsd-kind-icon">commands<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CommandService</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L179">packages/task/src/browser/task-service.ts:179</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L179">packages/task/src/browser/task-service.ts:179</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="editormanager" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> editor<wbr>Manager</h3>
-					<div class="tsd-signature tsd-kind-icon">editor<wbr>Manager<span class="tsd-signature-symbol">:</span> <a href="editor.editormanager-1.html" class="tsd-signature-type">EditorManager</a></div>
+					<div class="tsd-signature tsd-kind-icon">editor<wbr>Manager<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EditorManager</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L146">packages/task/src/browser/task-service.ts:146</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L146">packages/task/src/browser/task-service.ts:146</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="labelprovider" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> label<wbr>Provider</h3>
-					<div class="tsd-signature tsd-kind-icon">label<wbr>Provider<span class="tsd-signature-symbol">:</span> <a href="core.labelprovider-1.html" class="tsd-signature-type">LabelProvider</a></div>
+					<div class="tsd-signature tsd-kind-icon">label<wbr>Provider<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">LabelProvider</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L182">packages/task/src/browser/task-service.ts:182</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L182">packages/task/src/browser/task-service.ts:182</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="lasttask" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> last<wbr>Task</h3>
-					<div class="tsd-signature tsd-kind-icon">last<wbr>Task<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>scope<span class="tsd-signature-symbol">: </span><a href="../modules/task.html#taskconfigurationscope" class="tsd-signature-type">TaskConfigurationScope</a><span class="tsd-signature-symbol">; </span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>taskLabel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> = undefined</span></div>
+					<div class="tsd-signature tsd-kind-icon">last<wbr>Task<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>scope<span class="tsd-signature-symbol">: </span><a href="../modules/task.html#taskconfigurationscope-1" class="tsd-signature-type" data-tsd-kind="Type alias">TaskConfigurationScope</a><span class="tsd-signature-symbol">; </span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>taskLabel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L96">packages/task/src/browser/task-service.ts:96</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L96">packages/task/src/browser/task-service.ts:96</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -253,260 +275,260 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="logger" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> logger</h3>
-					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.ilogger-1.html" class="tsd-signature-type">ILogger</a></div>
+					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ILogger</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L116">packages/task/src/browser/task-service.ts:116</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L116">packages/task/src/browser/task-service.ts:116</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="messageservice" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> message<wbr>Service</h3>
-					<div class="tsd-signature tsd-kind-icon">message<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="core.messageservice-1.html" class="tsd-signature-type">MessageService</a></div>
+					<div class="tsd-signature tsd-kind-icon">message<wbr>Service<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">MessageService</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L125">packages/task/src/browser/task-service.ts:125</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L125">packages/task/src/browser/task-service.ts:125</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="monacoworkspace" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> monaco<wbr>Workspace</h3>
-					<div class="tsd-signature tsd-kind-icon">monaco<wbr>Workspace<span class="tsd-signature-symbol">:</span> <a href="monaco.monacoworkspace.html" class="tsd-signature-type">MonacoWorkspace</a></div>
+					<div class="tsd-signature tsd-kind-icon">monaco<wbr>Workspace<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">MonacoWorkspace</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L185">packages/task/src/browser/task-service.ts:185</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L185">packages/task/src/browser/task-service.ts:185</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="openerservice" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> opener<wbr>Service</h3>
-					<div class="tsd-signature tsd-kind-icon">opener<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.openerservice-1.html" class="tsd-signature-type">OpenerService</a></div>
+					<div class="tsd-signature tsd-kind-icon">opener<wbr>Service<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">OpenerService</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L161">packages/task/src/browser/task-service.ts:161</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L161">packages/task/src/browser/task-service.ts:161</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="problemmanager" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> problem<wbr>Manager</h3>
-					<div class="tsd-signature tsd-kind-icon">problem<wbr>Manager<span class="tsd-signature-symbol">:</span> <a href="markers.problemmanager-1.html" class="tsd-signature-type">ProblemManager</a></div>
+					<div class="tsd-signature tsd-kind-icon">problem<wbr>Manager<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ProblemManager</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L149">packages/task/src/browser/task-service.ts:149</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L149">packages/task/src/browser/task-service.ts:149</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="problemmatcherregistry" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> problem<wbr>Matcher<wbr>Registry</h3>
-					<div class="tsd-signature tsd-kind-icon">problem<wbr>Matcher<wbr>Registry<span class="tsd-signature-symbol">:</span> <a href="task.problemmatcherregistry-1.html" class="tsd-signature-type">ProblemMatcherRegistry</a></div>
+					<div class="tsd-signature tsd-kind-icon">problem<wbr>Matcher<wbr>Registry<span class="tsd-signature-symbol">:</span> <a href="task.problemmatcherregistry-1.html" class="tsd-signature-type" data-tsd-kind="Class">ProblemMatcherRegistry</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L155">packages/task/src/browser/task-service.ts:155</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L155">packages/task/src/browser/task-service.ts:155</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="providedtaskconfigurations" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> provided<wbr>Task<wbr>Configurations</h3>
-					<div class="tsd-signature tsd-kind-icon">provided<wbr>Task<wbr>Configurations<span class="tsd-signature-symbol">:</span> <a href="task.providedtaskconfigurations.html" class="tsd-signature-type">ProvidedTaskConfigurations</a></div>
+					<div class="tsd-signature tsd-kind-icon">provided<wbr>Task<wbr>Configurations<span class="tsd-signature-symbol">:</span> <a href="task.providedtaskconfigurations.html" class="tsd-signature-type" data-tsd-kind="Class">ProvidedTaskConfigurations</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L134">packages/task/src/browser/task-service.ts:134</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L134">packages/task/src/browser/task-service.ts:134</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="quickpickservice" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> quick<wbr>Pick<wbr>Service</h3>
-					<div class="tsd-signature tsd-kind-icon">quick<wbr>Pick<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.quickpickservice.html" class="tsd-signature-type">QuickPickService</a></div>
+					<div class="tsd-signature tsd-kind-icon">quick<wbr>Pick<wbr>Service<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">QuickPickService</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L158">packages/task/src/browser/task-service.ts:158</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L158">packages/task/src/browser/task-service.ts:158</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="runningtasks" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> running<wbr>Tasks</h3>
-					<div class="tsd-signature tsd-kind-icon">running<wbr>Tasks<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">{ </span>exitCode<span class="tsd-signature-symbol">: </span><a href="core.deferred-1.html" class="tsd-signature-type">Deferred</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>isBackgroundTaskEnded<span class="tsd-signature-symbol">: </span><a href="core.deferred-1.html" class="tsd-signature-type">Deferred</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>terminateSignal<span class="tsd-signature-symbol">: </span><a href="core.deferred-1.html" class="tsd-signature-type">Deferred</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;number, {exitCode: Deferred&lt;number | undefined&gt;,terminateSignal: Deferred&lt;string | undefined&gt;,isBackgroundTaskEnded: Deferred&lt;boolean | undefined&gt;}&gt;()</span></div>
+					<div class="tsd-signature tsd-kind-icon">running<wbr>Tasks<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">{ </span>exitCode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Deferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>isBackgroundTaskEnded<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Deferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>terminateSignal<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Deferred</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L98">packages/task/src/browser/task-service.ts:98</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L98">packages/task/src/browser/task-service.ts:98</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="shell" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> shell</h3>
-					<div class="tsd-signature tsd-kind-icon">shell<span class="tsd-signature-symbol">:</span> <a href="core.applicationshell-2.html" class="tsd-signature-type">ApplicationShell</a></div>
+					<div class="tsd-signature tsd-kind-icon">shell<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ApplicationShell</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L110">packages/task/src/browser/task-service.ts:110</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L110">packages/task/src/browser/task-service.ts:110</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="shellterminalserver" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> shell<wbr>Terminal<wbr>Server</h3>
-					<div class="tsd-signature tsd-kind-icon">shell<wbr>Terminal<wbr>Server<span class="tsd-signature-symbol">:</span> <a href="../modules/terminal.html#shellterminalserverproxy-1" class="tsd-signature-type">ShellTerminalServerProxy</a></div>
+					<div class="tsd-signature tsd-kind-icon">shell<wbr>Terminal<wbr>Server<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">JsonRpcProxy</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IShellTerminalServer</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L164">packages/task/src/browser/task-service.ts:164</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L164">packages/task/src/browser/task-service.ts:164</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="taskconfigurationmanager" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> task<wbr>Configuration<wbr>Manager</h3>
-					<div class="tsd-signature tsd-kind-icon">task<wbr>Configuration<wbr>Manager<span class="tsd-signature-symbol">:</span> <a href="task.taskconfigurationmanager.html" class="tsd-signature-type">TaskConfigurationManager</a></div>
+					<div class="tsd-signature tsd-kind-icon">task<wbr>Configuration<wbr>Manager<span class="tsd-signature-symbol">:</span> <a href="task.taskconfigurationmanager-1.html" class="tsd-signature-type" data-tsd-kind="Class">TaskConfigurationManager</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L176">packages/task/src/browser/task-service.ts:176</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L176">packages/task/src/browser/task-service.ts:176</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="taskconfigurations" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> task<wbr>Configurations</h3>
-					<div class="tsd-signature tsd-kind-icon">task<wbr>Configurations<span class="tsd-signature-symbol">:</span> <a href="task.taskconfigurations.html" class="tsd-signature-type">TaskConfigurations</a></div>
+					<div class="tsd-signature tsd-kind-icon">task<wbr>Configurations<span class="tsd-signature-symbol">:</span> <a href="task.taskconfigurations.html" class="tsd-signature-type" data-tsd-kind="Class">TaskConfigurations</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L131">packages/task/src/browser/task-service.ts:131</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L131">packages/task/src/browser/task-service.ts:131</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="taskdefinitionregistry" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> task<wbr>Definition<wbr>Registry</h3>
-					<div class="tsd-signature tsd-kind-icon">task<wbr>Definition<wbr>Registry<span class="tsd-signature-symbol">:</span> <a href="task.taskdefinitionregistry-1.html" class="tsd-signature-type">TaskDefinitionRegistry</a></div>
+					<div class="tsd-signature tsd-kind-icon">task<wbr>Definition<wbr>Registry<span class="tsd-signature-symbol">:</span> <a href="task.taskdefinitionregistry-1.html" class="tsd-signature-type" data-tsd-kind="Class">TaskDefinitionRegistry</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L152">packages/task/src/browser/task-service.ts:152</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L152">packages/task/src/browser/task-service.ts:152</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="tasknameresolver" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> task<wbr>Name<wbr>Resolver</h3>
-					<div class="tsd-signature tsd-kind-icon">task<wbr>Name<wbr>Resolver<span class="tsd-signature-symbol">:</span> <a href="task.tasknameresolver.html" class="tsd-signature-type">TaskNameResolver</a></div>
+					<div class="tsd-signature tsd-kind-icon">task<wbr>Name<wbr>Resolver<span class="tsd-signature-symbol">:</span> <a href="task.tasknameresolver.html" class="tsd-signature-type" data-tsd-kind="Class">TaskNameResolver</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L167">packages/task/src/browser/task-service.ts:167</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L167">packages/task/src/browser/task-service.ts:167</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="taskresolverregistry" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> task<wbr>Resolver<wbr>Registry</h3>
-					<div class="tsd-signature tsd-kind-icon">task<wbr>Resolver<wbr>Registry<span class="tsd-signature-symbol">:</span> <a href="task.taskresolverregistry-1.html" class="tsd-signature-type">TaskResolverRegistry</a></div>
+					<div class="tsd-signature tsd-kind-icon">task<wbr>Resolver<wbr>Registry<span class="tsd-signature-symbol">:</span> <a href="task.taskresolverregistry-1.html" class="tsd-signature-type" data-tsd-kind="Class">TaskResolverRegistry</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L140">packages/task/src/browser/task-service.ts:140</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L140">packages/task/src/browser/task-service.ts:140</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="taskschemaupdater" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> task<wbr>Schema<wbr>Updater</h3>
-					<div class="tsd-signature tsd-kind-icon">task<wbr>Schema<wbr>Updater<span class="tsd-signature-symbol">:</span> <a href="task.taskschemaupdater-1.html" class="tsd-signature-type">TaskSchemaUpdater</a></div>
+					<div class="tsd-signature tsd-kind-icon">task<wbr>Schema<wbr>Updater<span class="tsd-signature-symbol">:</span> <a href="task.taskschemaupdater-1.html" class="tsd-signature-type" data-tsd-kind="Class">TaskSchemaUpdater</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L173">packages/task/src/browser/task-service.ts:173</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L173">packages/task/src/browser/task-service.ts:173</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="taskserver" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> task<wbr>Server</h3>
-					<div class="tsd-signature tsd-kind-icon">task<wbr>Server<span class="tsd-signature-symbol">:</span> <a href="../interfaces/task.taskserver-1.html" class="tsd-signature-type">TaskServer</a></div>
+					<div class="tsd-signature tsd-kind-icon">task<wbr>Server<span class="tsd-signature-symbol">:</span> <a href="../modules/task.html#taskserver-2" class="tsd-signature-type" data-tsd-kind="Variable">TaskServer</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L113">packages/task/src/browser/task-service.ts:113</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L113">packages/task/src/browser/task-service.ts:113</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="tasksourceresolver" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> task<wbr>Source<wbr>Resolver</h3>
-					<div class="tsd-signature tsd-kind-icon">task<wbr>Source<wbr>Resolver<span class="tsd-signature-symbol">:</span> <a href="task.tasksourceresolver.html" class="tsd-signature-type">TaskSourceResolver</a></div>
+					<div class="tsd-signature tsd-kind-icon">task<wbr>Source<wbr>Resolver<span class="tsd-signature-symbol">:</span> <a href="task.tasksourceresolver.html" class="tsd-signature-type" data-tsd-kind="Class">TaskSourceResolver</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L170">packages/task/src/browser/task-service.ts:170</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L170">packages/task/src/browser/task-service.ts:170</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="taskstartinglock" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> task<wbr>Starting<wbr>Lock</h3>
-					<div class="tsd-signature tsd-kind-icon">task<wbr>Starting<wbr>Lock<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Mutex</span><span class="tsd-signature-symbol"> = new Mutex()</span></div>
+					<div class="tsd-signature tsd-kind-icon">task<wbr>Starting<wbr>Lock<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Mutex</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L104">packages/task/src/browser/task-service.ts:104</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L104">packages/task/src/browser/task-service.ts:104</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="taskterminalwidgetmanager" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> task<wbr>Terminal<wbr>Widget<wbr>Manager</h3>
-					<div class="tsd-signature tsd-kind-icon">task<wbr>Terminal<wbr>Widget<wbr>Manager<span class="tsd-signature-symbol">:</span> <a href="task.taskterminalwidgetmanager.html" class="tsd-signature-type">TaskTerminalWidgetManager</a></div>
+					<div class="tsd-signature tsd-kind-icon">task<wbr>Terminal<wbr>Widget<wbr>Manager<span class="tsd-signature-symbol">:</span> <a href="task.taskterminalwidgetmanager.html" class="tsd-signature-type" data-tsd-kind="Class">TaskTerminalWidgetManager</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L188">packages/task/src/browser/task-service.ts:188</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L188">packages/task/src/browser/task-service.ts:188</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="taskwatcher" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> task<wbr>Watcher</h3>
-					<div class="tsd-signature tsd-kind-icon">task<wbr>Watcher<span class="tsd-signature-symbol">:</span> <a href="task.taskwatcher-1.html" class="tsd-signature-type">TaskWatcher</a></div>
+					<div class="tsd-signature tsd-kind-icon">task<wbr>Watcher<span class="tsd-signature-symbol">:</span> <a href="task.taskwatcher-1.html" class="tsd-signature-type" data-tsd-kind="Class">TaskWatcher</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L122">packages/task/src/browser/task-service.ts:122</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L122">packages/task/src/browser/task-service.ts:122</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="terminalservice" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> terminal<wbr>Service</h3>
-					<div class="tsd-signature tsd-kind-icon">terminal<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="../interfaces/terminal.terminalservice.html" class="tsd-signature-type">TerminalService</a></div>
+					<div class="tsd-signature tsd-kind-icon">terminal<wbr>Service<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TerminalService</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L143">packages/task/src/browser/task-service.ts:143</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L143">packages/task/src/browser/task-service.ts:143</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="variableresolverservice" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> variable<wbr>Resolver<wbr>Service</h3>
-					<div class="tsd-signature tsd-kind-icon">variable<wbr>Resolver<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="variable_resolver.variableresolverservice-1.html" class="tsd-signature-type">VariableResolverService</a></div>
+					<div class="tsd-signature tsd-kind-icon">variable<wbr>Resolver<wbr>Service<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">VariableResolverService</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L137">packages/task/src/browser/task-service.ts:137</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L137">packages/task/src/browser/task-service.ts:137</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="widgetmanager" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> widget<wbr>Manager</h3>
-					<div class="tsd-signature tsd-kind-icon">widget<wbr>Manager<span class="tsd-signature-symbol">:</span> <a href="core.widgetmanager-1.html" class="tsd-signature-type">WidgetManager</a></div>
+					<div class="tsd-signature tsd-kind-icon">widget<wbr>Manager<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">WidgetManager</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L119">packages/task/src/browser/task-service.ts:119</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L119">packages/task/src/browser/task-service.ts:119</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="workspaceservice" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> workspace<wbr>Service</h3>
-					<div class="tsd-signature tsd-kind-icon">workspace<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="workspace.workspaceservice-1.html" class="tsd-signature-type">WorkspaceService</a></div>
+					<div class="tsd-signature tsd-kind-icon">workspace<wbr>Service<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">WorkspaceService</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L128">packages/task/src/browser/task-service.ts:128</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L128">packages/task/src/browser/task-service.ts:128</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -517,28 +539,28 @@
 					<a name="recenttasks" class="tsd-anchor"></a>
 					<h3>recent<wbr>Tasks</h3>
 					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> recentTasks<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> recentTasks<span class="tsd-signature-symbol">(</span>recent<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> recentTasks<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> recentTasks<span class="tsd-signature-symbol">(</span>recent<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L420">packages/task/src/browser/task-service.ts:420</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L420">packages/task/src/browser/task-service.ts:420</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L424">packages/task/src/browser/task-service.ts:424</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L424">packages/task/src/browser/task-service.ts:424</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>recent: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>recent: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -552,19 +574,19 @@
 					<a name="addrecenttasks" class="tsd-anchor"></a>
 					<h3>add<wbr>Recent<wbr>Tasks</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Recent<wbr>Tasks<span class="tsd-signature-symbol">(</span>tasks<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Recent<wbr>Tasks<span class="tsd-signature-symbol">(</span>tasks<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L408">packages/task/src/browser/task-service.ts:408</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L408">packages/task/src/browser/task-service.ts:408</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>tasks: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>tasks: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -575,13 +597,13 @@
 					<a name="attach" class="tsd-anchor"></a>
 					<h3>attach</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">attach<span class="tsd-signature-symbol">(</span>terminalId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, taskInfo<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type">TaskInfo</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">attach<span class="tsd-signature-symbol">(</span>terminalId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, taskInfo<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskInfo</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L1055">packages/task/src/browser/task-service.ts:1055</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L1055">packages/task/src/browser/task-service.ts:1055</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -590,7 +612,7 @@
 									<h5>terminalId: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>taskInfo: <a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type">TaskInfo</a></h5>
+									<h5>taskInfo: <a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskInfo</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -607,7 +629,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L431">packages/task/src/browser/task-service.ts:431</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L431">packages/task/src/browser/task-service.ts:431</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -623,13 +645,13 @@
 					<a name="configure" class="tsd-anchor"></a>
 					<h3>configure</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">configure<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, task<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">configure<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, task<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L1101">packages/task/src/browser/task-service.ts:1101</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L1101">packages/task/src/browser/task-service.ts:1101</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -646,7 +668,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>task: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a></h5>
+									<h5>task: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The task to configure</p>
 									</div>
@@ -660,31 +682,31 @@
 					<a name="createchildtasknode" class="tsd-anchor"></a>
 					<h3>create<wbr>Child<wbr>Task<wbr>Node</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Child<wbr>Task<wbr>Node<span class="tsd-signature-symbol">(</span>task<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a>, taskNode<span class="tsd-signature-symbol">: </span><a href="task.tasknode.html" class="tsd-signature-type">TaskNode</a>, childTaskIdentifier<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskidentifier-1.html" class="tsd-signature-type">TaskIdentifier</a>, tasks<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskgraphnode.html" class="tsd-signature-type">TaskGraphNode</a></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Child<wbr>Task<wbr>Node<span class="tsd-signature-symbol">(</span>task<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a>, taskNode<span class="tsd-signature-symbol">: </span><a href="task.tasknode.html" class="tsd-signature-type" data-tsd-kind="Class">TaskNode</a>, childTaskIdentifier<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskidentifier-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskIdentifier</a>, tasks<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TaskGraphNode</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L675">packages/task/src/browser/task-service.ts:675</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L675">packages/task/src/browser/task-service.ts:675</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>task: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a></h5>
+									<h5>task: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a></h5>
 								</li>
 								<li>
-									<h5>taskNode: <a href="task.tasknode.html" class="tsd-signature-type">TaskNode</a></h5>
+									<h5>taskNode: <a href="task.tasknode.html" class="tsd-signature-type" data-tsd-kind="Class">TaskNode</a></h5>
 								</li>
 								<li>
-									<h5>childTaskIdentifier: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskidentifier-1.html" class="tsd-signature-type">TaskIdentifier</a></h5>
+									<h5>childTaskIdentifier: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskidentifier-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskIdentifier</a></h5>
 								</li>
 								<li>
-									<h5>tasks: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>tasks: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/task.taskgraphnode.html" class="tsd-signature-type">TaskGraphNode</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TaskGraphNode</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -692,13 +714,13 @@
 					<a name="customexecutioncomplete" class="tsd-anchor"></a>
 					<h3>custom<wbr>Execution<wbr>Complete</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">custom<wbr>Execution<wbr>Complete<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, exitCode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">custom<wbr>Execution<wbr>Complete<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, exitCode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L459">packages/task/src/browser/task-service.ts:459</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L459">packages/task/src/browser/task-service.ts:459</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -707,7 +729,7 @@
 									<h5>id: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>exitCode: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>exitCode: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -718,13 +740,13 @@
 					<a name="detectdirectedacyclicgraph" class="tsd-anchor"></a>
 					<h3>detect<wbr>Directed<wbr>Acyclic<wbr>Graph</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">detect<wbr>Directed<wbr>Acyclic<wbr>Graph<span class="tsd-signature-symbol">(</span>task<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a>, taskNode<span class="tsd-signature-symbol">: </span><a href="task.tasknode.html" class="tsd-signature-type">TaskNode</a>, tasks<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">detect<wbr>Directed<wbr>Acyclic<wbr>Graph<span class="tsd-signature-symbol">(</span>task<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a>, taskNode<span class="tsd-signature-symbol">: </span><a href="task.tasknode.html" class="tsd-signature-type" data-tsd-kind="Class">TaskNode</a>, tasks<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L659">packages/task/src/browser/task-service.ts:659</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L659">packages/task/src/browser/task-service.ts:659</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -736,13 +758,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>task: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a></h5>
+									<h5>task: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a></h5>
 								</li>
 								<li>
-									<h5>taskNode: <a href="task.tasknode.html" class="tsd-signature-type">TaskNode</a></h5>
+									<h5>taskNode: <a href="task.tasknode.html" class="tsd-signature-type" data-tsd-kind="Class">TaskNode</a></h5>
 								</li>
 								<li>
-									<h5>tasks: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>tasks: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -753,25 +775,25 @@
 					<a name="doruntask" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> do<wbr>Run<wbr>Task</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">do<wbr>Run<wbr>Task<span class="tsd-signature-symbol">(</span>task<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a>, option<span class="tsd-signature-symbol">?: </span><a href="../modules/task.html#runtaskoption" class="tsd-signature-type">RunTaskOption</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type">TaskInfo</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">do<wbr>Run<wbr>Task<span class="tsd-signature-symbol">(</span>task<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a>, option<span class="tsd-signature-symbol">?: </span><a href="../interfaces/task.runtaskoption-1.html" class="tsd-signature-type" data-tsd-kind="Interface">RunTaskOption</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskInfo</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L798">packages/task/src/browser/task-service.ts:798</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L798">packages/task/src/browser/task-service.ts:798</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>task: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a></h5>
+									<h5>task: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> option: <a href="../modules/task.html#runtaskoption" class="tsd-signature-type">RunTaskOption</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> option: <a href="../interfaces/task.runtaskoption-1.html" class="tsd-signature-type" data-tsd-kind="Interface">RunTaskOption</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type">TaskInfo</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskInfo</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -779,13 +801,13 @@
 					<a name="getconfiguredtasks" class="tsd-anchor"></a>
 					<h3>get<wbr>Configured<wbr>Tasks</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Configured<wbr>Tasks<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Configured<wbr>Tasks<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L366">packages/task/src/browser/task-service.ts:366</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L366">packages/task/src/browser/task-service.ts:366</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -802,7 +824,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -810,16 +832,16 @@
 					<a name="getcontext" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Context</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Context<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Context<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L1117">packages/task/src/browser/task-service.ts:1117</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L1117">packages/task/src/browser/task-service.ts:1117</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -827,16 +849,16 @@
 					<a name="getcustomizeproblemmatcheritems" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Customize<wbr>Problem<wbr>Matcher<wbr>Items</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Customize<wbr>Problem<wbr>Matcher<wbr>Items<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/core.quickpickvalue-2.html" class="tsd-signature-type">QuickPickValue</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.quickpickproblemmatcheritem-1.html" class="tsd-signature-type">QuickPickProblemMatcherItem</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="../modules/core.quickpickitem-2.html" class="tsd-signature-type">QuickPickItem</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Customize<wbr>Problem<wbr>Matcher<wbr>Items<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">QuickPickItem</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">QuickPickValue</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.quickpickproblemmatcheritem-1.html" class="tsd-signature-type" data-tsd-kind="Interface">QuickPickProblemMatcherItem</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L1004">packages/task/src/browser/task-service.ts:1004</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L1004">packages/task/src/browser/task-service.ts:1004</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/core.quickpickvalue-2.html" class="tsd-signature-type">QuickPickValue</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.quickpickproblemmatcheritem-1.html" class="tsd-signature-type">QuickPickProblemMatcherItem</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="../modules/core.quickpickitem-2.html" class="tsd-signature-type">QuickPickItem</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">QuickPickItem</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">QuickPickValue</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.quickpickproblemmatcheritem-1.html" class="tsd-signature-type" data-tsd-kind="Interface">QuickPickProblemMatcherItem</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -844,13 +866,13 @@
 					<a name="getdependenttask" class="tsd-anchor"></a>
 					<h3>get<wbr>Dependent<wbr>Task</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Dependent<wbr>Task<span class="tsd-signature-symbol">(</span>taskIdentifier<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskidentifier-1.html" class="tsd-signature-type">TaskIdentifier</a>, tasks<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Dependent<wbr>Task<span class="tsd-signature-symbol">(</span>taskIdentifier<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskidentifier-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskIdentifier</a>, tasks<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L699">packages/task/src/browser/task-service.ts:699</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L699">packages/task/src/browser/task-service.ts:699</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -861,19 +883,19 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>taskIdentifier: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskidentifier-1.html" class="tsd-signature-type">TaskIdentifier</a></h5>
+									<h5>taskIdentifier: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskidentifier-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskIdentifier</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The task label (string) or a JSON object which represents a TaskIdentifier (e.g. {&quot;type&quot;:&quot;npm&quot;, &quot;script&quot;:&quot;script1&quot;})</p>
 									</div>
 								</li>
 								<li>
-									<h5>tasks: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>tasks: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>an array of the task configurations</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a></h4>
 							<p>the correct TaskConfiguration object which matches the taskIdentifier</p>
 						</li>
 					</ul>
@@ -882,13 +904,13 @@
 					<a name="getexitcode" class="tsd-anchor"></a>
 					<h3>get<wbr>Exit<wbr>Code</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Exit<wbr>Code<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Exit<wbr>Code<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L1138">packages/task/src/browser/task-service.ts:1138</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L1138">packages/task/src/browser/task-service.ts:1138</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -897,7 +919,7 @@
 									<h5>id: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -905,13 +927,13 @@
 					<a name="getlasttask" class="tsd-anchor"></a>
 					<h3>get<wbr>Last<wbr>Task</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Last<wbr>Task<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>scope<span class="tsd-signature-symbol">: </span><a href="../modules/task.html#taskconfigurationscope" class="tsd-signature-type">TaskConfigurationScope</a><span class="tsd-signature-symbol">; </span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>taskLabel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Last<wbr>Task<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>scope<span class="tsd-signature-symbol">: </span><a href="../modules/task.html#taskconfigurationscope-1" class="tsd-signature-type" data-tsd-kind="Type alias">TaskConfigurationScope</a><span class="tsd-signature-symbol">; </span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>taskLabel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L473">packages/task/src/browser/task-service.ts:473</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L473">packages/task/src/browser/task-service.ts:473</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -919,7 +941,7 @@
 									<p>Get the last executed task.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>scope<span class="tsd-signature-symbol">: </span><a href="../modules/task.html#taskconfigurationscope" class="tsd-signature-type">TaskConfigurationScope</a><span class="tsd-signature-symbol">; </span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>taskLabel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>scope<span class="tsd-signature-symbol">: </span><a href="../modules/task.html#taskconfigurationscope-1" class="tsd-signature-type" data-tsd-kind="Type alias">TaskConfigurationScope</a><span class="tsd-signature-symbol">; </span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>taskLabel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h4>
 							<p>the last executed task or <code>undefined</code>.</p>
 						</li>
 					</ul>
@@ -928,13 +950,13 @@
 					<a name="getprovidedtask" class="tsd-anchor"></a>
 					<h3>get<wbr>Provided<wbr>Task</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Provided<wbr>Task<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, label<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, scope<span class="tsd-signature-symbol">: </span><a href="../modules/task.html#taskconfigurationscope" class="tsd-signature-type">TaskConfigurationScope</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Provided<wbr>Task<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, label<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, scope<span class="tsd-signature-symbol">: </span><a href="../modules/task.html#taskconfigurationscope-1" class="tsd-signature-type" data-tsd-kind="Type alias">TaskConfigurationScope</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L450">packages/task/src/browser/task-service.ts:450</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L450">packages/task/src/browser/task-service.ts:450</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -964,13 +986,13 @@
 									</div>
 								</li>
 								<li>
-									<h5>scope: <a href="../modules/task.html#taskconfigurationscope" class="tsd-signature-type">TaskConfigurationScope</a></h5>
+									<h5>scope: <a href="../modules/task.html#taskconfigurationscope-1" class="tsd-signature-type" data-tsd-kind="Type alias">TaskConfigurationScope</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The task scope to look in</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -978,13 +1000,13 @@
 					<a name="getprovidedtasks" class="tsd-anchor"></a>
 					<h3>get<wbr>Provided<wbr>Tasks</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Provided<wbr>Tasks<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Provided<wbr>Tasks<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L404">packages/task/src/browser/task-service.ts:404</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L404">packages/task/src/browser/task-service.ts:404</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1001,7 +1023,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1015,7 +1037,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L464">packages/task/src/browser/task-service.ts:464</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L464">packages/task/src/browser/task-service.ts:464</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1031,13 +1053,13 @@
 					<a name="getrunningtasks" class="tsd-anchor"></a>
 					<h3>get<wbr>Running<wbr>Tasks</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Running<wbr>Tasks<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type">TaskInfo</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Running<wbr>Tasks<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskInfo</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L455">packages/task/src/browser/task-service.ts:455</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L455">packages/task/src/browser/task-service.ts:455</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1045,7 +1067,7 @@
 									<p>Returns an array of running tasks &#39;TaskInfo&#39; objects</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type">TaskInfo</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskInfo</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1053,13 +1075,13 @@
 					<a name="gettaskbytaskidentifier" class="tsd-anchor"></a>
 					<h3>get<wbr>Task<wbr>ByTask<wbr>Identifier</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Task<wbr>ByTask<wbr>Identifier<span class="tsd-signature-symbol">(</span>taskIdentifier<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskidentifier-1.html" class="tsd-signature-type">TaskIdentifier</a>, tasks<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Task<wbr>ByTask<wbr>Identifier<span class="tsd-signature-symbol">(</span>taskIdentifier<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskidentifier-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskIdentifier</a>, tasks<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L726">packages/task/src/browser/task-service.ts:726</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L726">packages/task/src/browser/task-service.ts:726</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1071,19 +1093,19 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>taskIdentifier: <a href="../interfaces/task.taskidentifier-1.html" class="tsd-signature-type">TaskIdentifier</a></h5>
+									<h5>taskIdentifier: <a href="../interfaces/task.taskidentifier-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskIdentifier</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The task label (string) or a JSON object which represents a TaskIdentifier (e.g. {&quot;type&quot;:&quot;npm&quot;, &quot;script&quot;:&quot;script1&quot;})</p>
 									</div>
 								</li>
 								<li>
-									<h5>tasks: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>tasks: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>An array of task configurations.</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a></h4>
 							<p>The correct TaskConfiguration object which matches the taskIdentifier.</p>
 						</li>
 					</ul>
@@ -1092,22 +1114,22 @@
 					<a name="gettaskcustomization" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Task<wbr>Customization</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Task<wbr>Customization<span class="tsd-signature-symbol">(</span>task<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/task.taskcustomization-1.html" class="tsd-signature-type">TaskCustomization</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Task<wbr>Customization<span class="tsd-signature-symbol">(</span>task<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskcustomization-2.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskCustomization</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L942">packages/task/src/browser/task-service.ts:942</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L942">packages/task/src/browser/task-service.ts:942</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>task: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a></h5>
+									<h5>task: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/task.taskcustomization-1.html" class="tsd-signature-type">TaskCustomization</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskcustomization-2.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskCustomization</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1115,19 +1137,19 @@
 					<a name="gettaskidentifier" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Task<wbr>Identifier</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Task<wbr>Identifier<span class="tsd-signature-symbol">(</span>taskConfig<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Task<wbr>Identifier<span class="tsd-signature-symbol">(</span>taskConfig<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L329">packages/task/src/browser/task-service.ts:329</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L329">packages/task/src/browser/task-service.ts:329</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>taskConfig: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a></h5>
+									<h5>taskConfig: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -1138,13 +1160,13 @@
 					<a name="gettasks" class="tsd-anchor"></a>
 					<h3>get<wbr>Tasks</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Tasks<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Tasks<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L352">packages/task/src/browser/task-service.ts:352</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L352">packages/task/src/browser/task-service.ts:352</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1161,7 +1183,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1169,13 +1191,13 @@
 					<a name="getterminalwidgetid" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Terminal<wbr>Widget<wbr>Id</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Terminal<wbr>Widget<wbr>Id<span class="tsd-signature-symbol">(</span>terminalId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Terminal<wbr>Widget<wbr>Id<span class="tsd-signature-symbol">(</span>terminalId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L1088">packages/task/src/browser/task-service.ts:1088</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L1088">packages/task/src/browser/task-service.ts:1088</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1184,7 +1206,7 @@
 									<h5>terminalId: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1192,13 +1214,13 @@
 					<a name="getterminatesignal" class="tsd-anchor"></a>
 					<h3>get<wbr>Terminate<wbr>Signal</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Terminate<wbr>Signal<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Terminate<wbr>Signal<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L1143">packages/task/src/browser/task-service.ts:1143</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L1143">packages/task/src/browser/task-service.ts:1143</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1207,7 +1229,7 @@
 									<h5>id: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1215,13 +1237,13 @@
 					<a name="getworkspacetasks" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Workspace<wbr>Tasks</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Workspace<wbr>Tasks<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, restrictToFolder<span class="tsd-signature-symbol">: </span><a href="../modules/task.html#taskconfigurationscope" class="tsd-signature-type">TaskConfigurationScope</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Workspace<wbr>Tasks<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, restrictToFolder<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../enums/task.taskscope-1.html#global" class="tsd-signature-type" data-tsd-kind="Enumeration member">Global</a><span class="tsd-signature-symbol"> | </span><a href="../enums/task.taskscope-1.html#workspace" class="tsd-signature-type" data-tsd-kind="Enumeration member">Workspace</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L903">packages/task/src/browser/task-service.ts:903</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L903">packages/task/src/browser/task-service.ts:903</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1230,10 +1252,10 @@
 									<h5>token: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>restrictToFolder: <a href="../modules/task.html#taskconfigurationscope" class="tsd-signature-type">TaskConfigurationScope</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>restrictToFolder: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../enums/task.taskscope-1.html#global" class="tsd-signature-type" data-tsd-kind="Enumeration member">Global</a><span class="tsd-signature-symbol"> | </span><a href="../enums/task.taskscope-1.html#workspace" class="tsd-signature-type" data-tsd-kind="Enumeration member">Workspace</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1247,7 +1269,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L191">packages/task/src/browser/task-service.ts:191</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L191">packages/task/src/browser/task-service.ts:191</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1258,13 +1280,13 @@
 					<a name="isbackgroundtaskended" class="tsd-anchor"></a>
 					<h3>is<wbr>Background<wbr>Task<wbr>Ended</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Background<wbr>Task<wbr>Ended<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Background<wbr>Task<wbr>Ended<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L1133">packages/task/src/browser/task-service.ts:1133</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L1133">packages/task/src/browser/task-service.ts:1133</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1273,7 +1295,7 @@
 									<h5>id: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1281,19 +1303,19 @@
 					<a name="iseventforthisclient" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> is<wbr>Event<wbr>For<wbr>This<wbr>Client</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Event<wbr>For<wbr>This<wbr>Client<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Event<wbr>For<wbr>This<wbr>Client<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L1106">packages/task/src/browser/task-service.ts:1106</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L1106">packages/task/src/browser/task-service.ts:1106</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>context: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>context: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -1310,7 +1332,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L1122">packages/task/src/browser/task-service.ts:1122</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L1122">packages/task/src/browser/task-service.ts:1122</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1338,7 +1360,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L438">packages/task/src/browser/task-service.ts:438</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L438">packages/task/src/browser/task-service.ts:438</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1354,19 +1376,19 @@
 					<a name="removeproblemmarkers" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> remove<wbr>Problem<wbr>Markers</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Problem<wbr>Markers<span class="tsd-signature-symbol">(</span>option<span class="tsd-signature-symbol">?: </span><a href="../modules/task.html#runtaskoption" class="tsd-signature-type">RunTaskOption</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Problem<wbr>Markers<span class="tsd-signature-symbol">(</span>option<span class="tsd-signature-symbol">?: </span><a href="../interfaces/task.runtaskoption-1.html" class="tsd-signature-type" data-tsd-kind="Interface">RunTaskOption</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L956">packages/task/src/browser/task-service.ts:956</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L956">packages/task/src/browser/task-service.ts:956</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> option: <a href="../modules/task.html#runtaskoption" class="tsd-signature-type">RunTaskOption</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> option: <a href="../interfaces/task.runtaskoption-1.html" class="tsd-signature-type" data-tsd-kind="Interface">RunTaskOption</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1377,25 +1399,25 @@
 					<a name="resolveproblemmatchers" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> resolve<wbr>Problem<wbr>Matchers</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">resolve<wbr>Problem<wbr>Matchers<span class="tsd-signature-symbol">(</span>task<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a>, customizationObject<span class="tsd-signature-symbol">: </span><a href="../modules/task.taskcustomization-1.html" class="tsd-signature-type">TaskCustomization</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/task.problemmatcher-1.html" class="tsd-signature-type">ProblemMatcher</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">resolve<wbr>Problem<wbr>Matchers<span class="tsd-signature-symbol">(</span>task<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a>, customizationObject<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskcustomization-2.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskCustomization</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.problemmatcher-2.html" class="tsd-signature-type" data-tsd-kind="Interface">ProblemMatcher</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L909">packages/task/src/browser/task-service.ts:909</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L909">packages/task/src/browser/task-service.ts:909</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>task: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a></h5>
+									<h5>task: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a></h5>
 								</li>
 								<li>
-									<h5>customizationObject: <a href="../modules/task.taskcustomization-1.html" class="tsd-signature-type">TaskCustomization</a></h5>
+									<h5>customizationObject: <a href="../interfaces/task.taskcustomization-2.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskCustomization</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/task.problemmatcher-1.html" class="tsd-signature-type">ProblemMatcher</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.problemmatcher-2.html" class="tsd-signature-type" data-tsd-kind="Interface">ProblemMatcher</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1403,13 +1425,13 @@
 					<a name="restarttask" class="tsd-anchor"></a>
 					<h3>restart<wbr>Task</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">restart<wbr>Task<span class="tsd-signature-symbol">(</span>activeTaskInfo<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type">TaskInfo</a>, option<span class="tsd-signature-symbol">?: </span><a href="../modules/task.html#runtaskoption" class="tsd-signature-type">RunTaskOption</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type">TaskInfo</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">restart<wbr>Task<span class="tsd-signature-symbol">(</span>activeTaskInfo<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskInfo</a>, option<span class="tsd-signature-symbol">?: </span><a href="../interfaces/task.runtaskoption-1.html" class="tsd-signature-type" data-tsd-kind="Interface">RunTaskOption</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskInfo</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L793">packages/task/src/browser/task-service.ts:793</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L793">packages/task/src/browser/task-service.ts:793</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1420,16 +1442,16 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>activeTaskInfo: <a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type">TaskInfo</a></h5>
+									<h5>activeTaskInfo: <a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskInfo</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the TaskInfo of the task that is actively running</p>
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> option: <a href="../modules/task.html#runtaskoption" class="tsd-signature-type">RunTaskOption</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> option: <a href="../interfaces/task.runtaskoption-1.html" class="tsd-signature-type" data-tsd-kind="Interface">RunTaskOption</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type">TaskInfo</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskInfo</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1437,13 +1459,13 @@
 					<a name="run" class="tsd-anchor"></a>
 					<h3>run</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">run<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, taskLabel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, scope<span class="tsd-signature-symbol">: </span><a href="../modules/task.html#taskconfigurationscope" class="tsd-signature-type">TaskConfigurationScope</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type">TaskInfo</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">run<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, taskLabel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, scope<span class="tsd-signature-symbol">: </span><a href="../modules/task.html#taskconfigurationscope-1" class="tsd-signature-type" data-tsd-kind="Type alias">TaskConfigurationScope</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskInfo</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L514">packages/task/src/browser/task-service.ts:514</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L514">packages/task/src/browser/task-service.ts:514</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1473,13 +1495,13 @@
 									</div>
 								</li>
 								<li>
-									<h5>scope: <a href="../modules/task.html#taskconfigurationscope" class="tsd-signature-type">TaskConfigurationScope</a></h5>
+									<h5>scope: <a href="../modules/task.html#taskconfigurationscope-1" class="tsd-signature-type" data-tsd-kind="Type alias">TaskConfigurationScope</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The scope where to look for tasks</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type">TaskInfo</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskInfo</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1487,13 +1509,13 @@
 					<a name="runcompoundtask" class="tsd-anchor"></a>
 					<h3>run<wbr>Compound<wbr>Task</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">run<wbr>Compound<wbr>Task<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, task<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a>, option<span class="tsd-signature-symbol">?: </span><a href="../modules/task.html#runtaskoption" class="tsd-signature-type">RunTaskOption</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type">TaskInfo</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">run<wbr>Compound<wbr>Task<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, task<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a>, option<span class="tsd-signature-symbol">?: </span><a href="../interfaces/task.runtaskoption-1.html" class="tsd-signature-type" data-tsd-kind="Interface">RunTaskOption</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskInfo</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L577">packages/task/src/browser/task-service.ts:577</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L577">packages/task/src/browser/task-service.ts:577</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1510,19 +1532,19 @@
 									</div>
 								</li>
 								<li>
-									<h5>task: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a></h5>
+									<h5>task: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The task to be executed</p>
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> option: <a href="../modules/task.html#runtaskoption" class="tsd-signature-type">RunTaskOption</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> option: <a href="../interfaces/task.runtaskoption-1.html" class="tsd-signature-type" data-tsd-kind="Interface">RunTaskOption</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>options for executing the task</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type">TaskInfo</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskInfo</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1530,13 +1552,13 @@
 					<a name="runconfiguredtask" class="tsd-anchor"></a>
 					<h3>run<wbr>Configured<wbr>Task</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">run<wbr>Configured<wbr>Task<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, scope<span class="tsd-signature-symbol">: </span><a href="../modules/task.html#taskconfigurationscope" class="tsd-signature-type">TaskConfigurationScope</a>, taskLabel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">run<wbr>Configured<wbr>Task<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, scope<span class="tsd-signature-symbol">: </span><a href="../modules/task.html#taskconfigurationscope-1" class="tsd-signature-type" data-tsd-kind="Type alias">TaskConfigurationScope</a>, taskLabel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L484">packages/task/src/browser/task-service.ts:484</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L484">packages/task/src/browser/task-service.ts:484</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1554,7 +1576,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>scope: <a href="../modules/task.html#taskconfigurationscope" class="tsd-signature-type">TaskConfigurationScope</a></h5>
+									<h5>scope: <a href="../modules/task.html#taskconfigurationscope-1" class="tsd-signature-type" data-tsd-kind="Type alias">TaskConfigurationScope</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The scope where to look for tasks</p>
 									</div>
@@ -1574,13 +1596,13 @@
 					<a name="runlasttask" class="tsd-anchor"></a>
 					<h3>run<wbr>Last<wbr>Task</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">run<wbr>Last<wbr>Task<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type">TaskInfo</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">run<wbr>Last<wbr>Task<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskInfo</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L498">packages/task/src/browser/task-service.ts:498</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L498">packages/task/src/browser/task-service.ts:498</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1597,7 +1619,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type">TaskInfo</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskInfo</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1605,13 +1627,13 @@
 					<a name="runresolvedtask" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> run<wbr>Resolved<wbr>Task</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">run<wbr>Resolved<wbr>Task<span class="tsd-signature-symbol">(</span>resolvedTask<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a>, option<span class="tsd-signature-symbol">?: </span><a href="../modules/task.html#runtaskoption" class="tsd-signature-type">RunTaskOption</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type">TaskInfo</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">run<wbr>Resolved<wbr>Task<span class="tsd-signature-symbol">(</span>resolvedTask<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a>, option<span class="tsd-signature-symbol">?: </span><a href="../interfaces/task.runtaskoption-1.html" class="tsd-signature-type" data-tsd-kind="Interface">RunTaskOption</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskInfo</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L975">packages/task/src/browser/task-service.ts:975</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L975">packages/task/src/browser/task-service.ts:975</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1622,19 +1644,19 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>resolvedTask: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a></h5>
+									<h5>resolvedTask: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the resolved task</p>
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> option: <a href="../modules/task.html#runtaskoption" class="tsd-signature-type">RunTaskOption</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> option: <a href="../interfaces/task.runtaskoption-1.html" class="tsd-signature-type" data-tsd-kind="Interface">RunTaskOption</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>options to run the resolved task</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type">TaskInfo</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskInfo</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1648,7 +1670,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L1034">packages/task/src/browser/task-service.ts:1034</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L1034">packages/task/src/browser/task-service.ts:1034</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1664,25 +1686,25 @@
 					<a name="runtask" class="tsd-anchor"></a>
 					<h3>run<wbr>Task</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">run<wbr>Task<span class="tsd-signature-symbol">(</span>task<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a>, option<span class="tsd-signature-symbol">?: </span><a href="../modules/task.html#runtaskoption" class="tsd-signature-type">RunTaskOption</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type">TaskInfo</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">run<wbr>Task<span class="tsd-signature-symbol">(</span>task<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a>, option<span class="tsd-signature-symbol">?: </span><a href="../interfaces/task.runtaskoption-1.html" class="tsd-signature-type" data-tsd-kind="Interface">RunTaskOption</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskInfo</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L732">packages/task/src/browser/task-service.ts:732</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L732">packages/task/src/browser/task-service.ts:732</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>task: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a></h5>
+									<h5>task: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> option: <a href="../modules/task.html#runtaskoption" class="tsd-signature-type">RunTaskOption</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> option: <a href="../interfaces/task.runtaskoption-1.html" class="tsd-signature-type" data-tsd-kind="Interface">RunTaskOption</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type">TaskInfo</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskInfo</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1690,13 +1712,13 @@
 					<a name="runtaskbylabel" class="tsd-anchor"></a>
 					<h3>run<wbr>Task<wbr>ByLabel</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">run<wbr>Task<wbr>ByLabel<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, taskLabel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type">TaskInfo</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">run<wbr>Task<wbr>ByLabel<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, taskLabel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskInfo</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L837">packages/task/src/browser/task-service.ts:837</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L837">packages/task/src/browser/task-service.ts:837</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1719,7 +1741,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type">TaskInfo</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskInfo</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1727,13 +1749,13 @@
 					<a name="runtasksgraph" class="tsd-anchor"></a>
 					<h3>run<wbr>Tasks<wbr>Graph</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">run<wbr>Tasks<wbr>Graph<span class="tsd-signature-symbol">(</span>task<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a>, tasks<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span>, option<span class="tsd-signature-symbol">?: </span><a href="../modules/task.html#runtaskoption" class="tsd-signature-type">RunTaskOption</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type">TaskInfo</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">run<wbr>Tasks<wbr>Graph<span class="tsd-signature-symbol">(</span>task<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a>, tasks<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span>, option<span class="tsd-signature-symbol">?: </span><a href="../interfaces/task.runtaskoption-1.html" class="tsd-signature-type" data-tsd-kind="Interface">RunTaskOption</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskInfo</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L597">packages/task/src/browser/task-service.ts:597</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L597">packages/task/src/browser/task-service.ts:597</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1745,16 +1767,16 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>task: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a></h5>
+									<h5>task: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a></h5>
 								</li>
 								<li>
-									<h5>tasks: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>tasks: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> option: <a href="../modules/task.html#runtaskoption" class="tsd-signature-type">RunTaskOption</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> option: <a href="../interfaces/task.runtaskoption-1.html" class="tsd-signature-type" data-tsd-kind="Interface">RunTaskOption</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type">TaskInfo</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskInfo</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1762,13 +1784,13 @@
 					<a name="runworkspacetask" class="tsd-anchor"></a>
 					<h3>run<wbr>Workspace<wbr>Task</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">run<wbr>Workspace<wbr>Task<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, workspaceFolderUri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, taskIdentifier<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskidentifier-1.html" class="tsd-signature-type">TaskIdentifier</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type">TaskInfo</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">run<wbr>Workspace<wbr>Task<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, workspaceFolderUri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, taskIdentifier<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskidentifier-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskIdentifier</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskInfo</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L854">packages/task/src/browser/task-service.ts:854</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L854">packages/task/src/browser/task-service.ts:854</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1785,19 +1807,19 @@
 									</div>
 								</li>
 								<li>
-									<h5>workspaceFolderUri: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>workspaceFolderUri: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The folder to restrict the search to</p>
 									</div>
 								</li>
 								<li>
-									<h5>taskIdentifier: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskidentifier-1.html" class="tsd-signature-type">TaskIdentifier</a></h5>
+									<h5>taskIdentifier: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskidentifier-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskIdentifier</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The identifier to look for</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type">TaskInfo</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskInfo</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1811,7 +1833,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L344">packages/task/src/browser/task-service.ts:344</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L344">packages/task/src/browser/task-service.ts:344</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1838,10 +1860,16 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of TaskConfigurationClient.taskConfigurationChanged</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L1113">packages/task/src/browser/task-service.ts:1113</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L1113">packages/task/src/browser/task-service.ts:1113</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The task configuration file has changed, so a client might want to refresh its configurations</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1856,13 +1884,13 @@
 					<a name="terminatetask" class="tsd-anchor"></a>
 					<h3>terminate<wbr>Task</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">terminate<wbr>Task<span class="tsd-signature-symbol">(</span>activeTaskInfo<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type">TaskInfo</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">terminate<wbr>Task<span class="tsd-signature-symbol">(</span>activeTaskInfo<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskInfo</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L784">packages/task/src/browser/task-service.ts:784</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L784">packages/task/src/browser/task-service.ts:784</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1873,7 +1901,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>activeTaskInfo: <a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type">TaskInfo</a></h5>
+									<h5>activeTaskInfo: <a href="../interfaces/task.taskinfo-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskInfo</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the TaskInfo of the task that is actively running</p>
 									</div>
@@ -1887,13 +1915,13 @@
 					<a name="updatetaskconfiguration" class="tsd-anchor"></a>
 					<h3>update<wbr>Task<wbr>Configuration</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>Task<wbr>Configuration<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, task<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a>, update<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Task<wbr>Configuration<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, task<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a>, update<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/browser/task-service.ts#L888">packages/task/src/browser/task-service.ts:888</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/browser/task-service.ts#L888">packages/task/src/browser/task-service.ts:888</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1911,7 +1939,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>task: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a></h5>
+									<h5>task: <a href="../interfaces/task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>task that the updates will be applied to</p>
 									</div>
@@ -1937,14 +1965,23 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/task.html">task</a>
 						<ul>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/task.applytokind-1.html">Apply<wbr>ToKind</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/task.configuretaskaction.html">Configure<wbr>Task<wbr>Action</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/task.filelocationkind-1.html">File<wbr>Location<wbr>Kind</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/task.problemlocationkind-1.html">Problem<wbr>Location<wbr>Kind</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/task.problemmatchdata-1.html">Problem<wbr>Match<wbr>Data</a>
@@ -1963,6 +2000,12 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/task.taskcommands.html">Task<wbr>Commands</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/task.taskconfigurationmanager.html">Task<wbr>Configuration<wbr>Manager</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/task.taskconfigurationmodel.html">Task<wbr>Configuration<wbr>Model</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/task.taskcustomization-1.html">Task<wbr>Customization</a>
@@ -1990,6 +2033,9 @@
 					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="task.taskservice-1.html" class="tsd-kind-icon">Task<wbr>Service</a>
 						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="task.taskservice-1.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="task.taskservice-1.html#app" class="tsd-kind-icon">app</a>
 							</li>
@@ -2245,7 +2291,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
@@ -2255,6 +2300,7 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
 			</ul>

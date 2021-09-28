@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="core.html">core</a>
@@ -67,31 +66,10 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Representation of an item in the tab</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="core.tabbartoolbaritem.html#command" class="tsd-kind-icon">command</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="core.tabbartoolbaritem.html#group" class="tsd-kind-icon">group</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="core.tabbartoolbaritem.html#icon" class="tsd-kind-icon">icon</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="core.tabbartoolbaritem.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="core.tabbartoolbaritem.html#ondidchange" class="tsd-kind-icon">on<wbr>Did<wbr>Change</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="core.tabbartoolbaritem.html#priority" class="tsd-kind-icon">priority</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="core.tabbartoolbaritem.html#text" class="tsd-kind-icon">text</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="core.tabbartoolbaritem.html#tooltip" class="tsd-kind-icon">tooltip</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="core.tabbartoolbaritem.html#when" class="tsd-kind-icon">when</a></li>
-							</ul>
-						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
@@ -103,168 +81,18 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-					<a name="command" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> command</h3>
-					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/shell/tab-bar-toolbar.tsx#L73">packages/core/src/browser/shell/tab-bar-toolbar.tsx:73</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The command to execute.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-					<a name="group" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> group</h3>
-					<div class="tsd-signature tsd-kind-icon">group<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/shell/tab-bar-toolbar.tsx#L106">packages/core/src/browser/shell/tab-bar-toolbar.tsx:106</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Optional group for the item. Default <code>navigation</code>.
-								<code>navigation</code> group will be inlined, while all the others will be within the <code>...</code> dropdown.
-								A group in format <code>submenu_group_1/submenu 1/.../submenu_group_n/ submenu n/item_group</code> means that the item will be located in a submenu(s) of the <code>...</code> dropdown.
-							The submenu&#39;s title is named by the submenu section name, e.g. <code>group/&lt;submenu name&gt;/subgroup</code>.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-					<a name="icon" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> icon</h3>
-					<div class="tsd-signature tsd-kind-icon">icon<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/shell/tab-bar-toolbar.tsx#L116">packages/core/src/browser/shell/tab-bar-toolbar.tsx:116</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Optional icon for the item.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-					<a name="id" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> id</h3>
-					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/shell/tab-bar-toolbar.tsx#L68">packages/core/src/browser/shell/tab-bar-toolbar.tsx:68</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The unique ID of the toolbar item.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-					<a name="ondidchange" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Did<wbr>Change</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<span class="tsd-signature-symbol">:</span> <a href="core.html#event" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/shell/tab-bar-toolbar.tsx#L128">packages/core/src/browser/shell/tab-bar-toolbar.tsx:128</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>When defined, the container tool-bar will be updated if this event is fired.</p>
-						</div>
-						<p>Note: currently, each item of the container toolbar will be re-rendered if any of the items have changed.</p>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-					<a name="priority" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> priority</h3>
-					<div class="tsd-signature tsd-kind-icon">priority<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/shell/tab-bar-toolbar.tsx#L98">packages/core/src/browser/shell/tab-bar-toolbar.tsx:98</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Priority among the items. Can be negative. The smaller the number the left-most the item will be placed in the toolbar. It is <code>0</code> by default.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-					<a name="text" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> text</h3>
-					<div class="tsd-signature tsd-kind-icon">text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/shell/tab-bar-toolbar.tsx#L93">packages/core/src/browser/shell/tab-bar-toolbar.tsx:93</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Optional text of the item.</p>
-						</div>
-						<p>Shamelessly copied and reused from <code>status-bar</code>:</p>
-						<p>More details about the available <code>fontawesome</code> icons and CSS class names can be hound <a href="http://fontawesome.io/icons/">here</a>.
-						To set a text with icon use the following pattern in text string:</p>
-						<pre><code class="language-typescript">$(fontawesomeClassName)</code></pre>
-						<p>To use animated icons use the following pattern:</p>
-						<pre><code class="language-typescript">$(fontawesomeClassName~typeOfAnimation)</code></pre>
-						<p>The type of animation can be either <code>spin</code> or <code>pulse</code>.
-						Look <a href="http://fontawesome.io/examples/#animated">here</a> for more information to animated icons.</p>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-					<a name="tooltip" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> tooltip</h3>
-					<div class="tsd-signature tsd-kind-icon">tooltip<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/shell/tab-bar-toolbar.tsx#L111">packages/core/src/browser/shell/tab-bar-toolbar.tsx:111</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Optional tooltip for the item.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-					<a name="when" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> when</h3>
-					<div class="tsd-signature tsd-kind-icon">when<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/shell/tab-bar-toolbar.tsx#L121">packages/core/src/browser/shell/tab-bar-toolbar.tsx:121</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p><a href="https://code.visualstudio.com/docs/getstarted/keybindings#_when-clause-contexts">https://code.visualstudio.com/docs/getstarted/keybindings#_when-clause-contexts</a></p>
-						</div>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
 					<a name="priority_comparator" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> PRIORITY_<wbr>COMPARATOR</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">PRIORITY_<wbr>COMPARATOR<span class="tsd-signature-symbol">(</span>left<span class="tsd-signature-symbol">: </span><a href="core.tabbartoolbaritem.html" class="tsd-signature-type">TabBarToolbarItem</a>, right<span class="tsd-signature-symbol">: </span><a href="core.tabbartoolbaritem.html" class="tsd-signature-type">TabBarToolbarItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">PRIORITY_<wbr>COMPARATOR<span class="tsd-signature-symbol">(</span>left<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.tabbartoolbaritem-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TabBarToolbarItem</a>, right<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.tabbartoolbaritem-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TabBarToolbarItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/shell/tab-bar-toolbar.tsx#L160">packages/core/src/browser/shell/tab-bar-toolbar.tsx:160</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/browser/shell/tab-bar-toolbar.tsx#L160">packages/core/src/browser/shell/tab-bar-toolbar.tsx:160</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -275,10 +103,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>left: <a href="core.tabbartoolbaritem.html" class="tsd-signature-type">TabBarToolbarItem</a></h5>
+									<h5>left: <a href="../interfaces/core.tabbartoolbaritem-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TabBarToolbarItem</a></h5>
 								</li>
 								<li>
-									<h5>right: <a href="core.tabbartoolbaritem.html" class="tsd-signature-type">TabBarToolbarItem</a></h5>
+									<h5>right: <a href="../interfaces/core.tabbartoolbaritem-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TabBarToolbarItem</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -289,13 +117,13 @@
 					<a name="is" class="tsd-anchor"></a>
 					<h3>is</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">is<span class="tsd-signature-symbol">(</span>arg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">TabBarToolbarItem</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<span class="tsd-signature-symbol">(</span>arg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><a href="../interfaces/core.tabbartoolbaritem-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TabBarToolbarItem</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/shell/tab-bar-toolbar.tsx#L178">packages/core/src/browser/shell/tab-bar-toolbar.tsx:178</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/browser/shell/tab-bar-toolbar.tsx#L178">packages/core/src/browser/shell/tab-bar-toolbar.tsx:178</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -304,7 +132,7 @@
 									<h5>arg: <span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">TabBarToolbarItem</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><a href="../interfaces/core.tabbartoolbaritem-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TabBarToolbarItem</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -313,8 +141,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="core.html">core</a>
@@ -328,33 +156,6 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-property tsd-parent-kind-namespace">
-						<a href="core.tabbartoolbaritem.html#command" class="tsd-kind-icon">command</a>
-					</li>
-					<li class=" tsd-kind-property tsd-parent-kind-namespace">
-						<a href="core.tabbartoolbaritem.html#group" class="tsd-kind-icon">group</a>
-					</li>
-					<li class=" tsd-kind-property tsd-parent-kind-namespace">
-						<a href="core.tabbartoolbaritem.html#icon" class="tsd-kind-icon">icon</a>
-					</li>
-					<li class=" tsd-kind-property tsd-parent-kind-namespace">
-						<a href="core.tabbartoolbaritem.html#id" class="tsd-kind-icon">id</a>
-					</li>
-					<li class=" tsd-kind-property tsd-parent-kind-namespace">
-						<a href="core.tabbartoolbaritem.html#ondidchange" class="tsd-kind-icon">on<wbr>Did<wbr>Change</a>
-					</li>
-					<li class=" tsd-kind-property tsd-parent-kind-namespace">
-						<a href="core.tabbartoolbaritem.html#priority" class="tsd-kind-icon">priority</a>
-					</li>
-					<li class=" tsd-kind-property tsd-parent-kind-namespace">
-						<a href="core.tabbartoolbaritem.html#text" class="tsd-kind-icon">text</a>
-					</li>
-					<li class=" tsd-kind-property tsd-parent-kind-namespace">
-						<a href="core.tabbartoolbaritem.html#tooltip" class="tsd-kind-icon">tooltip</a>
-					</li>
-					<li class=" tsd-kind-property tsd-parent-kind-namespace">
-						<a href="core.tabbartoolbaritem.html#when" class="tsd-kind-icon">when</a>
-					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-namespace">
 						<a href="core.tabbartoolbaritem.html#priority_comparator" class="tsd-kind-icon">PRIORITY_<wbr>COMPARATOR</a>
 					</li>
@@ -372,7 +173,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

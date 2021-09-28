@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/monaco.html">monaco</a>
@@ -90,16 +89,10 @@
 								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="monaco.gotosymbolquickaccess.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="monaco.gotosymbolquickaccess.html#service" class="tsd-kind-icon">service</a></li>
-							</ul>
-						</section>
 						<section class="tsd-index-section ">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-overwrite"><a href="monaco.gotosymbolquickaccess.html#activetexteditorcontrol" class="tsd-kind-icon">active<wbr>Text<wbr>Editor<wbr>Control</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="monaco.gotosymbolquickaccess.html#activetexteditorcontrol" class="tsd-kind-icon">active<wbr>Text<wbr>Editor<wbr>Control</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-inherited">
@@ -117,14 +110,14 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Goto<wbr>Symbol<wbr>Quick<wbr>Access<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>services<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="monaco.gotosymbolquickaccess.html" class="tsd-signature-type">GotoSymbolQuickAccess</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Goto<wbr>Symbol<wbr>Quick<wbr>Access<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>services<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="monaco.gotosymbolquickaccess.html" class="tsd-signature-type" data-tsd-kind="Class">GotoSymbolQuickAccess</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides StandaloneGotoSymbolQuickAccessProvider.__constructor</p>
+								<p>Overrides monaco.quickInput.StandaloneGotoSymbolQuickAccessProvider.constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-gotosymbol-quick-access.ts#L20">packages/monaco/src/browser/monaco-gotosymbol-quick-access.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-gotosymbol-quick-access.ts#L20">packages/monaco/src/browser/monaco-gotosymbol-quick-access.ts:20</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -133,41 +126,27 @@
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>services: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="monaco.gotosymbolquickaccess.html" class="tsd-signature-type">GotoSymbolQuickAccess</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="monaco.gotosymbolquickaccess.html" class="tsd-signature-type" data-tsd-kind="Class">GotoSymbolQuickAccess</a></h4>
 						</li>
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="service" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> service</h3>
-					<div class="tsd-signature tsd-kind-icon">service<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ICodeEditorService</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-gotosymbol-quick-access.ts#L23">packages/monaco/src/browser/monaco-gotosymbol-quick-access.ts:23</a></li>
-						</ul>
-					</aside>
-				</section>
-			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Accessors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
 					<a name="activetexteditorcontrol" class="tsd-anchor"></a>
 					<h3>active<wbr>Text<wbr>Editor<wbr>Control</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> activeTextEditorControl<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ICodeEditor</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> activeTextEditorControl<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ICodeEditor</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides StandaloneGotoSymbolQuickAccessProvider.activeTextEditorControl</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-gotosymbol-quick-access.ts#L27">packages/monaco/src/browser/monaco-gotosymbol-quick-access.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-gotosymbol-quick-access.ts#L27">packages/monaco/src/browser/monaco-gotosymbol-quick-access.ts:27</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ICodeEditor</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ICodeEditor</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -183,9 +162,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="monaco.gotosymbolquickaccess.html">GotoSymbolQuickAccess</a>.<a href="monaco.gotosymbolquickaccess.html#provide">provide</a></p>
+								<p>Inherited from monaco.quickInput.StandaloneGotoSymbolQuickAccessProvider.provide</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/typings/monaco/index.d.ts#L1334">packages/monaco/src/typings/monaco/index.d.ts:1334</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/typings/monaco/index.d.ts#L1334">packages/monaco/src/typings/monaco/index.d.ts:1334</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -206,8 +185,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/monaco.html">monaco</a>
@@ -219,13 +198,31 @@
 								<a href="../modules/monaco.monacocommands.html">Monaco<wbr>Commands</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.monacodiffeditor.html">Monaco<wbr>Diff<wbr>Editor</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.monacoeditor.html">Monaco<wbr>Editor</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.monacoeditormodel.html">Monaco<wbr>Editor<wbr>Model</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.monacoeditorzonewidget.html">Monaco<wbr>Editor<wbr>Zone<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/monaco.monacomenus.html">Monaco<wbr>Menus</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.monacooutlinecontribution.html">Monaco<wbr>Outline<wbr>Contribution</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/monaco.monacooutlinesymbolinformationnode.html">Monaco<wbr>Outline<wbr>Symbol<wbr>Information<wbr>Node</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/monaco.monacorangereplace.html">Monaco<wbr>Range<wbr>Replace</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.monacothemeregistry.html">Monaco<wbr>Theme<wbr>Registry</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/monaco.monacothemestate.html">Monaco<wbr>Theme<wbr>State</a>
@@ -259,10 +256,7 @@
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 								<a href="monaco.gotosymbolquickaccess.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="monaco.gotosymbolquickaccess.html#service" class="tsd-kind-icon">service</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="monaco.gotosymbolquickaccess.html#activetexteditorcontrol" class="tsd-kind-icon">active<wbr>Text<wbr>Editor<wbr>Control</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
@@ -283,7 +277,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
@@ -304,9 +297,6 @@
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
 			</ul>
 		</div>
 	</div>

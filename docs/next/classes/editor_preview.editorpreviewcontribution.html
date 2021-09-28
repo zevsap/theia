@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/editor_preview.html">editor-preview</a>
@@ -78,15 +77,21 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/core.commandcontribution-1.html" class="tsd-signature-type">CommandContribution</a></li>
-					<li><a href="../interfaces/core.menucontribution-1.html" class="tsd-signature-type">MenuContribution</a></li>
-					<li><a href="../interfaces/core.keybindingcontribution-1.html" class="tsd-signature-type">KeybindingContribution</a></li>
+					<li><span class="tsd-signature-type">CommandContribution</span></li>
+					<li><span class="tsd-signature-type">MenuContribution</span></li>
+					<li><span class="tsd-signature-type">KeybindingContribution</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="editor_preview.editorpreviewcontribution.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
@@ -105,15 +110,32 @@
 					</div>
 				</section>
 			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Editor<wbr>Preview<wbr>Contribution<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="editor_preview.editorpreviewcontribution.html" class="tsd-signature-type" data-tsd-kind="Class">EditorPreviewContribution</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="editor_preview.editorpreviewcontribution.html" class="tsd-signature-type" data-tsd-kind="Class">EditorPreviewContribution</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-private-protected">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="shell" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> shell</h3>
-					<div class="tsd-signature tsd-kind-icon">shell<span class="tsd-signature-symbol">:</span> <a href="core.applicationshell-2.html" class="tsd-signature-type">ApplicationShell</a></div>
+					<div class="tsd-signature tsd-kind-icon">shell<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ApplicationShell</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/editor-preview/src/browser/editor-preview-contribution.ts#L32">packages/editor-preview/src/browser/editor-preview-contribution.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/editor-preview/src/browser/editor-preview-contribution.ts#L32">packages/editor-preview/src/browser/editor-preview-contribution.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -124,22 +146,22 @@
 					<a name="gettargetwidget" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Target<wbr>Widget</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Target<wbr>Widget<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">?: </span><a href="../modules/core.event-1.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Target<wbr>Widget<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Widget</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/editor-preview/src/browser/editor-preview-contribution.ts#L69">packages/editor-preview/src/browser/editor-preview-contribution.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/editor-preview/src/browser/editor-preview-contribution.ts#L69">packages/editor-preview/src/browser/editor-preview-contribution.ts:69</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> event: <a href="../modules/core.event-1.html" class="tsd-signature-type">Event</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> event: <span class="tsd-signature-type">Event</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Widget</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -147,20 +169,20 @@
 					<a name="registercommands" class="tsd-anchor"></a>
 					<h3>register<wbr>Commands</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">register<wbr>Commands<span class="tsd-signature-symbol">(</span>registry<span class="tsd-signature-symbol">: </span><a href="core.commandregistry-1.html" class="tsd-signature-type">CommandRegistry</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Commands<span class="tsd-signature-symbol">(</span>registry<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CommandRegistry</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/core.commandcontribution-1.html">CommandContribution</a>.<a href="../interfaces/core.commandcontribution-1.html#registercommands">registerCommands</a></p>
+								<p>Implementation of CommandContribution.registerCommands</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/editor-preview/src/browser/editor-preview-contribution.ts#L34">packages/editor-preview/src/browser/editor-preview-contribution.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/editor-preview/src/browser/editor-preview-contribution.ts#L34">packages/editor-preview/src/browser/editor-preview-contribution.ts:34</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>registry: <a href="core.commandregistry-1.html" class="tsd-signature-type">CommandRegistry</a></h5>
+									<h5>registry: <span class="tsd-signature-type">CommandRegistry</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -171,20 +193,20 @@
 					<a name="registerkeybindings" class="tsd-anchor"></a>
 					<h3>register<wbr>Keybindings</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">register<wbr>Keybindings<span class="tsd-signature-symbol">(</span>registry<span class="tsd-signature-symbol">: </span><a href="core.keybindingregistry-1.html" class="tsd-signature-type">KeybindingRegistry</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Keybindings<span class="tsd-signature-symbol">(</span>registry<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">KeybindingRegistry</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/core.keybindingcontribution-1.html">KeybindingContribution</a>.<a href="../interfaces/core.keybindingcontribution-1.html#registerkeybindings">registerKeybindings</a></p>
+								<p>Implementation of KeybindingContribution.registerKeybindings</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/editor-preview/src/browser/editor-preview-contribution.ts#L54">packages/editor-preview/src/browser/editor-preview-contribution.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/editor-preview/src/browser/editor-preview-contribution.ts#L54">packages/editor-preview/src/browser/editor-preview-contribution.ts:54</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>registry: <a href="core.keybindingregistry-1.html" class="tsd-signature-type">KeybindingRegistry</a></h5>
+									<h5>registry: <span class="tsd-signature-type">KeybindingRegistry</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -195,20 +217,20 @@
 					<a name="registermenus" class="tsd-anchor"></a>
 					<h3>register<wbr>Menus</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">register<wbr>Menus<span class="tsd-signature-symbol">(</span>registry<span class="tsd-signature-symbol">: </span><a href="core.menumodelregistry-1.html" class="tsd-signature-type">MenuModelRegistry</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Menus<span class="tsd-signature-symbol">(</span>registry<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MenuModelRegistry</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/core.menucontribution-1.html">MenuContribution</a>.<a href="../interfaces/core.menucontribution-1.html#registermenus">registerMenus</a></p>
+								<p>Implementation of MenuContribution.registerMenus</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/editor-preview/src/browser/editor-preview-contribution.ts#L61">packages/editor-preview/src/browser/editor-preview-contribution.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/editor-preview/src/browser/editor-preview-contribution.ts#L61">packages/editor-preview/src/browser/editor-preview-contribution.ts:61</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>registry: <a href="core.menumodelregistry-1.html" class="tsd-signature-type">MenuModelRegistry</a></h5>
+									<h5>registry: <span class="tsd-signature-type">MenuModelRegistry</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -220,8 +242,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/editor_preview.html">editor-<wbr>preview</a>
@@ -240,6 +262,9 @@
 					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="editor_preview.editorpreviewcontribution.html" class="tsd-kind-icon">Editor<wbr>Preview<wbr>Contribution</a>
 						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="editor_preview.editorpreviewcontribution.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="editor_preview.editorpreviewcontribution.html#shell" class="tsd-kind-icon">shell</a>
 							</li>
@@ -280,23 +305,23 @@
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="../modules/editor_preview.html#editorpreviewpreferences" class="tsd-kind-icon">Editor<wbr>Preview<wbr>Preferences</a>
 					</li>
+					<li class=" tsd-kind-property tsd-parent-kind-module">
+						<a href="../modules/editor_preview.html#default" class="tsd-kind-icon">default</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/editor_preview.html#editorpreviewconfigschema" class="tsd-kind-icon">Editor<wbr>Preview<wbr>Config<wbr>Schema</a>
+					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="../modules/editor_preview.html#editorpreviewpreferencecontribution" class="tsd-kind-icon">Editor<wbr>Preview<wbr>Preference<wbr>Contribution</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="../modules/editor_preview.html#editorpreviewpreferences-1" class="tsd-kind-icon">Editor<wbr>Preview<wbr>Preferences</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/editor_preview.html#preview_title_class" class="tsd-kind-icon">PREVIEW_<wbr>TITLE_<wbr>CLASS</a>
-					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="../modules/editor_preview.html#bindeditorpreviewpreferences" class="tsd-kind-icon">bind<wbr>Editor<wbr>Preview<wbr>Preferences</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="../modules/editor_preview.html#createeditorpreviewpreferences" class="tsd-kind-icon">create<wbr>Editor<wbr>Preview<wbr>Preferences</a>
-					</li>
-					<li class=" tsd-kind-object-literal tsd-parent-kind-module">
-						<a href="../modules/editor_preview.html#editorpreviewconfigschema" class="tsd-kind-icon">Editor<wbr>Preview<wbr>Config<wbr>Schema</a>
 					</li>
 				</ul>
 			</nav>
@@ -309,7 +334,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
@@ -319,6 +343,7 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">

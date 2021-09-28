@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="typehierarchy.html">typehierarchy</a>
@@ -72,6 +71,8 @@
 							<h3>Namespaces</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-namespace tsd-parent-kind-module"><a href="typehierarchy.typehierarchycommands.html" class="tsd-kind-icon">Type<wbr>Hierarchy<wbr>Commands</a></li>
+								<li class="tsd-kind-namespace tsd-parent-kind-module"><a href="typehierarchy.typehierarchytree.html" class="tsd-kind-icon">Type<wbr>Hierarchy<wbr>Tree</a></li>
+								<li class="tsd-kind-namespace tsd-parent-kind-module"><a href="typehierarchy.typehierarchytreewidget.html" class="tsd-kind-icon">Type<wbr>Hierarchy<wbr>Tree<wbr>Widget</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -85,9 +86,9 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/typehierarchy.typehierarchycontribution.html" class="tsd-kind-icon">Type<wbr>Hierarchy<wbr>Contribution</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/typehierarchy.typehierarchyregistry.html" class="tsd-kind-icon">Type<wbr>Hierarchy<wbr>Registry</a></li>
-								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/typehierarchy.typehierarchytree.html" class="tsd-kind-icon">Type<wbr>Hierarchy<wbr>Tree</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/typehierarchy.typehierarchytree-1.html" class="tsd-kind-icon">Type<wbr>Hierarchy<wbr>Tree</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/typehierarchy.typehierarchytreemodel.html" class="tsd-kind-icon">Type<wbr>Hierarchy<wbr>Tree<wbr>Model</a></li>
-								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/typehierarchy.typehierarchytreewidget.html" class="tsd-kind-icon">Type<wbr>Hierarchy<wbr>Tree<wbr>Widget</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/typehierarchy.typehierarchytreewidget-1.html" class="tsd-kind-icon">Type<wbr>Hierarchy<wbr>Tree<wbr>Widget</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -101,9 +102,14 @@
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-module"><a href="typehierarchy.html#default" class="tsd-kind-icon">default</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="typehierarchy.html#createhierarchytreecontainer" class="tsd-kind-icon">create<wbr>Hierarchy<wbr>Tree<wbr>Container</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="typehierarchy.html#createhierarchytreewidget" class="tsd-kind-icon">create<wbr>Hierarchy<wbr>Tree<wbr>Widget</a></li>
 							</ul>
 						</section>
@@ -111,50 +117,37 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-					<a name="createhierarchytreecontainer" class="tsd-anchor"></a>
-					<h3>create<wbr>Hierarchy<wbr>Tree<wbr>Container</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Hierarchy<wbr>Tree<wbr>Container<span class="tsd-signature-symbol">(</span>parent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Container</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Container</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/typehierarchy/src/browser/tree/typehierarchy-tree-container.ts#L23">packages/typehierarchy/src/browser/tree/typehierarchy-tree-container.ts:23</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>parent: <span class="tsd-signature-type">Container</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Container</span></h4>
-						</li>
-					</ul>
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-module">
+					<a name="default" class="tsd-anchor"></a>
+					<h3>default</h3>
+					<div class="tsd-signature tsd-kind-icon">default<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ContainerModule</span></div>
+					<aside class="tsd-sources">
+					</aside>
 				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="createhierarchytreewidget" class="tsd-anchor"></a>
 					<h3>create<wbr>Hierarchy<wbr>Tree<wbr>Widget</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Hierarchy<wbr>Tree<wbr>Widget<span class="tsd-signature-symbol">(</span>parent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Container</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/typehierarchy.typehierarchytreewidget.html" class="tsd-signature-type">TypeHierarchyTreeWidget</a></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Hierarchy<wbr>Tree<wbr>Widget<span class="tsd-signature-symbol">(</span>parent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">interfaces.Container</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/typehierarchy.typehierarchytreewidget-1.html" class="tsd-signature-type" data-tsd-kind="Class">TypeHierarchyTreeWidget</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/typehierarchy/src/browser/tree/typehierarchy-tree-container.ts#L40">packages/typehierarchy/src/browser/tree/typehierarchy-tree-container.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/typehierarchy/src/browser/tree/typehierarchy-tree-container.ts#L40">packages/typehierarchy/src/browser/tree/typehierarchy-tree-container.ts:40</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>parent: <span class="tsd-signature-type">Container</span></h5>
+									<h5>parent: <span class="tsd-signature-type">interfaces.Container</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../classes/typehierarchy.typehierarchytreewidget.html" class="tsd-signature-type">TypeHierarchyTreeWidget</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/typehierarchy.typehierarchytreewidget-1.html" class="tsd-signature-type" data-tsd-kind="Class">TypeHierarchyTreeWidget</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -163,14 +156,20 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="typehierarchy.html">typehierarchy</a>
 						<ul>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="typehierarchy.typehierarchycommands.html">Type<wbr>Hierarchy<wbr>Commands</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="typehierarchy.typehierarchytree.html">Type<wbr>Hierarchy<wbr>Tree</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="typehierarchy.typehierarchytreewidget.html">Type<wbr>Hierarchy<wbr>Tree<wbr>Widget</a>
 							</li>
 						</ul>
 					</li>
@@ -188,13 +187,13 @@
 						<a href="../classes/typehierarchy.typehierarchyregistry.html" class="tsd-kind-icon">Type<wbr>Hierarchy<wbr>Registry</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/typehierarchy.typehierarchytree.html" class="tsd-kind-icon">Type<wbr>Hierarchy<wbr>Tree</a>
+						<a href="../classes/typehierarchy.typehierarchytree-1.html" class="tsd-kind-icon">Type<wbr>Hierarchy<wbr>Tree</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/typehierarchy.typehierarchytreemodel.html" class="tsd-kind-icon">Type<wbr>Hierarchy<wbr>Tree<wbr>Model</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/typehierarchy.typehierarchytreewidget.html" class="tsd-kind-icon">Type<wbr>Hierarchy<wbr>Tree<wbr>Widget</a>
+						<a href="../classes/typehierarchy.typehierarchytreewidget-1.html" class="tsd-kind-icon">Type<wbr>Hierarchy<wbr>Tree<wbr>Widget</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/typehierarchy.resolvetypehierarchyitemparams.html" class="tsd-kind-icon">Resolve<wbr>Type<wbr>Hierarchy<wbr>Item<wbr>Params</a>
@@ -211,8 +210,8 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/typehierarchy.typehierarchyprovider.html" class="tsd-kind-icon">Type<wbr>Hierarchy<wbr>Provider</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="typehierarchy.html#createhierarchytreecontainer" class="tsd-kind-icon">create<wbr>Hierarchy<wbr>Tree<wbr>Container</a>
+					<li class=" tsd-kind-property tsd-parent-kind-module">
+						<a href="typehierarchy.html#default" class="tsd-kind-icon">default</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="typehierarchy.html#createhierarchytreewidget" class="tsd-kind-icon">create<wbr>Hierarchy<wbr>Tree<wbr>Widget</a>
@@ -228,7 +227,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

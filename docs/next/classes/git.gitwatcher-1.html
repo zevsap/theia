@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/git.html">git</a>
@@ -78,8 +77,8 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/git.gitwatcherclient-1.html" class="tsd-signature-type">GitWatcherClient</a></li>
-					<li><a href="../modules/core.disposable-1.html" class="tsd-signature-type">Disposable</a></li>
+					<li><a href="../interfaces/git.gitwatcherclient-1.html" class="tsd-signature-type" data-tsd-kind="Interface">GitWatcherClient</a></li>
+					<li><span class="tsd-signature-type">Disposable</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -96,7 +95,6 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="git.gitwatcher-1.html#ongiteventemitter" class="tsd-kind-icon">on<wbr>Git<wbr>Event<wbr>Emitter</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="git.gitwatcher-1.html#server" class="tsd-kind-icon">server</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="git.gitwatcher-1.html#todispose" class="tsd-kind-icon">to<wbr>Dispose</a></li>
 							</ul>
 						</section>
@@ -123,22 +121,22 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Git<wbr>Watcher<span class="tsd-signature-symbol">(</span>server<span class="tsd-signature-symbol">: </span><a href="../interfaces/git.gitwatcherserver-1.html" class="tsd-signature-type">GitWatcherServer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="git.gitwatcher-1.html" class="tsd-signature-type">GitWatcher</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Git<wbr>Watcher<span class="tsd-signature-symbol">(</span>server<span class="tsd-signature-symbol">: </span><a href="../modules/git.html#gitwatcherserver-2" class="tsd-signature-type" data-tsd-kind="Variable">GitWatcherServer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="git.gitwatcher-1.html" class="tsd-signature-type" data-tsd-kind="Class">GitWatcher</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git-watcher.ts#L154">packages/git/src/common/git-watcher.ts:154</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git-watcher.ts#L154">packages/git/src/common/git-watcher.ts:154</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>server: <a href="../interfaces/git.gitwatcherserver-1.html" class="tsd-signature-type">GitWatcherServer</a></h5>
+									<h5>server: <a href="../modules/git.html#gitwatcherserver-2" class="tsd-signature-type" data-tsd-kind="Variable">GitWatcherServer</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="git.gitwatcher-1.html" class="tsd-signature-type">GitWatcher</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="git.gitwatcher-1.html" class="tsd-signature-type" data-tsd-kind="Class">GitWatcher</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -148,30 +146,20 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="ongiteventemitter" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Git<wbr>Event<wbr>Emitter</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Git<wbr>Event<wbr>Emitter<span class="tsd-signature-symbol">:</span> <a href="core.emitter-1.html" class="tsd-signature-type">Emitter</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/git.gitstatuschangeevent-1.html" class="tsd-signature-type">GitStatusChangeEvent</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Git<wbr>Event<wbr>Emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Emitter</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/git.gitstatuschangeevent-2.html" class="tsd-signature-type" data-tsd-kind="Interface">GitStatusChangeEvent</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git-watcher.ts#L154">packages/git/src/common/git-watcher.ts:154</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="server" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> server</h3>
-					<div class="tsd-signature tsd-kind-icon">server<span class="tsd-signature-symbol">:</span> <a href="../interfaces/git.gitwatcherserver-1.html" class="tsd-signature-type">GitWatcherServer</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git-watcher.ts#L157">packages/git/src/common/git-watcher.ts:157</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git-watcher.ts#L154">packages/git/src/common/git-watcher.ts:154</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="todispose" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> to<wbr>Dispose</h3>
-					<div class="tsd-signature tsd-kind-icon">to<wbr>Dispose<span class="tsd-signature-symbol">:</span> <a href="core.disposablecollection-1.html" class="tsd-signature-type">DisposableCollection</a></div>
+					<div class="tsd-signature tsd-kind-icon">to<wbr>Dispose<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DisposableCollection</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git-watcher.ts#L153">packages/git/src/common/git-watcher.ts:153</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git-watcher.ts#L153">packages/git/src/common/git-watcher.ts:153</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -182,16 +170,16 @@
 					<a name="ongitevent" class="tsd-anchor"></a>
 					<h3>on<wbr>Git<wbr>Event</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> onGitEvent<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/core.event-1.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/git.gitstatuschangeevent-1.html" class="tsd-signature-type">GitStatusChangeEvent</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> onGitEvent<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/git.gitstatuschangeevent-2.html" class="tsd-signature-type" data-tsd-kind="Interface">GitStatusChangeEvent</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git-watcher.ts#L170">packages/git/src/common/git-watcher.ts:170</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git-watcher.ts#L170">packages/git/src/common/git-watcher.ts:170</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/core.event-1.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/git.gitstatuschangeevent-1.html" class="tsd-signature-type">GitStatusChangeEvent</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/git.gitstatuschangeevent-2.html" class="tsd-signature-type" data-tsd-kind="Interface">GitStatusChangeEvent</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -207,8 +195,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of Disposable.dispose</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git-watcher.ts#L166">packages/git/src/common/git-watcher.ts:166</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git-watcher.ts#L166">packages/git/src/common/git-watcher.ts:166</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -219,20 +208,25 @@
 					<a name="ongitchanged" class="tsd-anchor"></a>
 					<h3>on<wbr>Git<wbr>Changed</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Git<wbr>Changed<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../modules/git.gitstatuschangeevent-1.html" class="tsd-signature-type">GitStatusChangeEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Git<wbr>Changed<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../interfaces/git.gitstatuschangeevent-2.html" class="tsd-signature-type" data-tsd-kind="Interface">GitStatusChangeEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/git.gitwatcherclient-1.html">GitWatcherClient</a>.<a href="../interfaces/git.gitwatcherclient-1.html#ongitchanged">onGitChanged</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git-watcher.ts#L174">packages/git/src/common/git-watcher.ts:174</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git-watcher.ts#L174">packages/git/src/common/git-watcher.ts:174</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Invoked with the event that encapsulates the status change in the repository.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>event: <a href="../modules/git.gitstatuschangeevent-1.html" class="tsd-signature-type">GitStatusChangeEvent</a></h5>
+									<h5>event: <a href="../interfaces/git.gitstatuschangeevent-2.html" class="tsd-signature-type" data-tsd-kind="Interface">GitStatusChangeEvent</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -243,22 +237,22 @@
 					<a name="watchgitchanges" class="tsd-anchor"></a>
 					<h3>watch<wbr>Git<wbr>Changes</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">watch<wbr>Git<wbr>Changes<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/core.disposable-1.html" class="tsd-signature-type">Disposable</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">watch<wbr>Git<wbr>Changes<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../interfaces/git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Disposable</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git-watcher.ts#L178">packages/git/src/common/git-watcher.ts:178</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git-watcher.ts#L178">packages/git/src/common/git-watcher.ts:178</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a></h5>
+									<h5>repository: <a href="../interfaces/git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/core.disposable-1.html" class="tsd-signature-type">Disposable</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Disposable</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -267,14 +261,23 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/git.html">git</a>
 						<ul>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.blameannotationskeybindingcontext.html">Blame<wbr>Annotations<wbr>Keybinding<wbr>Context</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.blamecommands.html">Blame<wbr>Commands</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.blamedecorator.html">Blame<wbr>Decorator</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.dirtydiffmodel.html">Dirty<wbr>Diff<wbr>Model</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.git_commands.html">GIT_<wbr>COMMANDS</a>
@@ -289,16 +292,37 @@
 								<a href="../modules/git.gitbindingoptions.html">Git<wbr>Binding<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitblameparser.html">Git<wbr>Blame<wbr>Parser</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.gitcommitdetailuri.html">Git<wbr>Commit<wbr>Detail<wbr>Uri</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitcommitmessagevalidator.html">Git<wbr>Commit<wbr>Message<wbr>Validator</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.gitdiffcommands.html">Git<wbr>Diff<wbr>Commands</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitdifftreemodel.html">Git<wbr>Diff<wbr>Tree<wbr>Model</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitfilestatus-1.html">Git<wbr>File<wbr>Status</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitprompt.html">Git<wbr>Prompt</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitscmprovider.html">Git<wbr>Scm<wbr>Provider</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.gitscmrepository.html">Git<wbr>Scm<wbr>Repository</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.gitstatuschangeevent-1.html">Git<wbr>Status<wbr>Change<wbr>Event</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitsyncservice.html">Git<wbr>Sync<wbr>Service</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.gitutils-1.html">Git<wbr>Utils</a>
@@ -330,9 +354,6 @@
 								<a href="git.gitwatcher-1.html#ongiteventemitter" class="tsd-kind-icon">on<wbr>Git<wbr>Event<wbr>Emitter</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="git.gitwatcher-1.html#server" class="tsd-kind-icon">server</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="git.gitwatcher-1.html#todispose" class="tsd-kind-icon">to<wbr>Dispose</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
@@ -362,7 +383,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

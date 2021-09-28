@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/filesystem.html">filesystem</a>
@@ -108,46 +107,46 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>File<wbr>Operation<wbr>Event<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><a href="core.uri.html" class="tsd-signature-type">URI</a>, operation<span class="tsd-signature-symbol">: </span><a href="../enums/filesystem.fileoperation.html#delete" class="tsd-signature-type">DELETE</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="filesystem.fileoperationevent.html" class="tsd-signature-type">FileOperationEvent</a></li>
-						<li class="tsd-signature tsd-kind-icon">new <wbr>File<wbr>Operation<wbr>Event<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><a href="core.uri.html" class="tsd-signature-type">URI</a>, operation<span class="tsd-signature-symbol">: </span><a href="../enums/filesystem.fileoperation.html#create" class="tsd-signature-type">CREATE</a><span class="tsd-signature-symbol"> | </span><a href="../enums/filesystem.fileoperation.html#move" class="tsd-signature-type">MOVE</a><span class="tsd-signature-symbol"> | </span><a href="../enums/filesystem.fileoperation.html#copy" class="tsd-signature-type">COPY</a>, target<span class="tsd-signature-symbol">: </span><a href="../interfaces/filesystem.filestatwithmetadata.html" class="tsd-signature-type">FileStatWithMetadata</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="filesystem.fileoperationevent.html" class="tsd-signature-type">FileOperationEvent</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>File<wbr>Operation<wbr>Event<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default</span>, operation<span class="tsd-signature-symbol">: </span><a href="../enums/filesystem.fileoperation.html#delete" class="tsd-signature-type" data-tsd-kind="Enumeration member">DELETE</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="filesystem.fileoperationevent.html" class="tsd-signature-type" data-tsd-kind="Class">FileOperationEvent</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>File<wbr>Operation<wbr>Event<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default</span>, operation<span class="tsd-signature-symbol">: </span><a href="../enums/filesystem.fileoperation.html#create" class="tsd-signature-type" data-tsd-kind="Enumeration member">CREATE</a><span class="tsd-signature-symbol"> | </span><a href="../enums/filesystem.fileoperation.html#move" class="tsd-signature-type" data-tsd-kind="Enumeration member">MOVE</a><span class="tsd-signature-symbol"> | </span><a href="../enums/filesystem.fileoperation.html#copy" class="tsd-signature-type" data-tsd-kind="Enumeration member">COPY</a>, target<span class="tsd-signature-symbol">: </span><a href="../interfaces/filesystem.filestatwithmetadata.html" class="tsd-signature-type" data-tsd-kind="Interface">FileStatWithMetadata</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="filesystem.fileoperationevent.html" class="tsd-signature-type" data-tsd-kind="Class">FileOperationEvent</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/common/files.ts#L37">packages/filesystem/src/common/files.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/common/files.ts#L37">packages/filesystem/src/common/files.ts:37</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>resource: <a href="core.uri.html" class="tsd-signature-type">URI</a></h5>
+									<h5>resource: <span class="tsd-signature-type">default</span></h5>
 								</li>
 								<li>
-									<h5>operation: <a href="../enums/filesystem.fileoperation.html#delete" class="tsd-signature-type">DELETE</a></h5>
+									<h5>operation: <a href="../enums/filesystem.fileoperation.html#delete" class="tsd-signature-type" data-tsd-kind="Enumeration member">DELETE</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="filesystem.fileoperationevent.html" class="tsd-signature-type">FileOperationEvent</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="filesystem.fileoperationevent.html" class="tsd-signature-type" data-tsd-kind="Class">FileOperationEvent</a></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/common/files.ts#L39">packages/filesystem/src/common/files.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/common/files.ts#L39">packages/filesystem/src/common/files.ts:39</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>resource: <a href="core.uri.html" class="tsd-signature-type">URI</a></h5>
+									<h5>resource: <span class="tsd-signature-type">default</span></h5>
 								</li>
 								<li>
-									<h5>operation: <a href="../enums/filesystem.fileoperation.html#create" class="tsd-signature-type">CREATE</a><span class="tsd-signature-symbol"> | </span><a href="../enums/filesystem.fileoperation.html#move" class="tsd-signature-type">MOVE</a><span class="tsd-signature-symbol"> | </span><a href="../enums/filesystem.fileoperation.html#copy" class="tsd-signature-type">COPY</a></h5>
+									<h5>operation: <a href="../enums/filesystem.fileoperation.html#create" class="tsd-signature-type" data-tsd-kind="Enumeration member">CREATE</a><span class="tsd-signature-symbol"> | </span><a href="../enums/filesystem.fileoperation.html#move" class="tsd-signature-type" data-tsd-kind="Enumeration member">MOVE</a><span class="tsd-signature-symbol"> | </span><a href="../enums/filesystem.fileoperation.html#copy" class="tsd-signature-type" data-tsd-kind="Enumeration member">COPY</a></h5>
 								</li>
 								<li>
-									<h5>target: <a href="../interfaces/filesystem.filestatwithmetadata.html" class="tsd-signature-type">FileStatWithMetadata</a></h5>
+									<h5>target: <a href="../interfaces/filesystem.filestatwithmetadata.html" class="tsd-signature-type" data-tsd-kind="Interface">FileStatWithMetadata</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="filesystem.fileoperationevent.html" class="tsd-signature-type">FileOperationEvent</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="filesystem.fileoperationevent.html" class="tsd-signature-type" data-tsd-kind="Class">FileOperationEvent</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -157,31 +156,22 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="operation" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> operation</h3>
-					<div class="tsd-signature tsd-kind-icon">operation<span class="tsd-signature-symbol">:</span> <a href="../enums/filesystem.fileoperation.html" class="tsd-signature-type">FileOperation</a></div>
+					<div class="tsd-signature tsd-kind-icon">operation<span class="tsd-signature-symbol">:</span> <a href="../enums/filesystem.fileoperation.html" class="tsd-signature-type" data-tsd-kind="Enumeration">FileOperation</a></div>
 					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/common/files.ts#L41">packages/filesystem/src/common/files.ts:41</a></li>
-						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="resource" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> resource</h3>
-					<div class="tsd-signature tsd-kind-icon">resource<span class="tsd-signature-symbol">:</span> <a href="core.uri.html" class="tsd-signature-type">URI</a></div>
+					<div class="tsd-signature tsd-kind-icon">resource<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">default</span></div>
 					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/common/files.ts#L41">packages/filesystem/src/common/files.ts:41</a></li>
-						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="target" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> target</h3>
-					<div class="tsd-signature tsd-kind-icon">target<span class="tsd-signature-symbol">:</span> <a href="../interfaces/filesystem.filestatwithmetadata.html" class="tsd-signature-type">FileStatWithMetadata</a></div>
+					<div class="tsd-signature tsd-kind-icon">target<span class="tsd-signature-symbol">:</span> <a href="../interfaces/filesystem.filestatwithmetadata.html" class="tsd-signature-type" data-tsd-kind="Interface">FileStatWithMetadata</a></div>
 					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/common/files.ts#L41">packages/filesystem/src/common/files.ts:41</a></li>
-						</ul>
 					</aside>
 				</section>
 			</section>
@@ -191,20 +181,20 @@
 					<a name="isoperation" class="tsd-anchor"></a>
 					<h3>is<wbr>Operation</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Operation<span class="tsd-signature-symbol">(</span>operation<span class="tsd-signature-symbol">: </span><a href="../enums/filesystem.fileoperation.html#delete" class="tsd-signature-type">DELETE</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Operation<span class="tsd-signature-symbol">(</span>operation<span class="tsd-signature-symbol">: </span><a href="../enums/filesystem.fileoperation.html#move" class="tsd-signature-type">MOVE</a><span class="tsd-signature-symbol"> | </span><a href="../enums/filesystem.fileoperation.html#copy" class="tsd-signature-type">COPY</a><span class="tsd-signature-symbol"> | </span><a href="../enums/filesystem.fileoperation.html#create" class="tsd-signature-type">CREATE</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-symbol">{ </span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/filesystem.filestatwithmetadata.html" class="tsd-signature-type">FileStatWithMetadata</a><span class="tsd-signature-symbol"> }</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Operation<span class="tsd-signature-symbol">(</span>operation<span class="tsd-signature-symbol">: </span><a href="../enums/filesystem.fileoperation.html#delete" class="tsd-signature-type" data-tsd-kind="Enumeration member">DELETE</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Operation<span class="tsd-signature-symbol">(</span>operation<span class="tsd-signature-symbol">: </span><a href="../enums/filesystem.fileoperation.html#create" class="tsd-signature-type" data-tsd-kind="Enumeration member">CREATE</a><span class="tsd-signature-symbol"> | </span><a href="../enums/filesystem.fileoperation.html#move" class="tsd-signature-type" data-tsd-kind="Enumeration member">MOVE</a><span class="tsd-signature-symbol"> | </span><a href="../enums/filesystem.fileoperation.html#copy" class="tsd-signature-type" data-tsd-kind="Enumeration member">COPY</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-symbol">{ </span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/filesystem.filestatwithmetadata.html" class="tsd-signature-type" data-tsd-kind="Interface">FileStatWithMetadata</a><span class="tsd-signature-symbol"> }</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/common/files.ts#L43">packages/filesystem/src/common/files.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/common/files.ts#L43">packages/filesystem/src/common/files.ts:43</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>operation: <a href="../enums/filesystem.fileoperation.html#delete" class="tsd-signature-type">DELETE</a></h5>
+									<h5>operation: <a href="../enums/filesystem.fileoperation.html#delete" class="tsd-signature-type" data-tsd-kind="Enumeration member">DELETE</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -212,16 +202,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/common/files.ts#L44">packages/filesystem/src/common/files.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/common/files.ts#L44">packages/filesystem/src/common/files.ts:44</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>operation: <a href="../enums/filesystem.fileoperation.html#move" class="tsd-signature-type">MOVE</a><span class="tsd-signature-symbol"> | </span><a href="../enums/filesystem.fileoperation.html#copy" class="tsd-signature-type">COPY</a><span class="tsd-signature-symbol"> | </span><a href="../enums/filesystem.fileoperation.html#create" class="tsd-signature-type">CREATE</a></h5>
+									<h5>operation: <a href="../enums/filesystem.fileoperation.html#create" class="tsd-signature-type" data-tsd-kind="Enumeration member">CREATE</a><span class="tsd-signature-symbol"> | </span><a href="../enums/filesystem.fileoperation.html#move" class="tsd-signature-type" data-tsd-kind="Enumeration member">MOVE</a><span class="tsd-signature-symbol"> | </span><a href="../enums/filesystem.fileoperation.html#copy" class="tsd-signature-type" data-tsd-kind="Enumeration member">COPY</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-symbol">{ </span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/filesystem.filestatwithmetadata.html" class="tsd-signature-type">FileStatWithMetadata</a><span class="tsd-signature-symbol"> }</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-symbol">{ </span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/filesystem.filestatwithmetadata.html" class="tsd-signature-type" data-tsd-kind="Interface">FileStatWithMetadata</a><span class="tsd-signature-symbol"> }</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -230,8 +220,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/filesystem.html">filesystem</a>
@@ -240,7 +230,13 @@
 								<a href="../modules/filesystem.basestat.html">Base<wbr>Stat</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.delegatingfilesystemprovider.html">Delegating<wbr>File<wbr>System<wbr>Provider</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/filesystem.dirnode-2.html">Dir<wbr>Node</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.diskfilesystemprovider.html">Disk<wbr>File<wbr>System<wbr>Provider</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/filesystem.fileaccess-1.html">File<wbr>Access</a>
@@ -256,6 +252,12 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/filesystem.filedownloaddata.html">File<wbr>Download<wbr>Data</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.filedownloadhandler.html">File<wbr>Download<wbr>Handler</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.filedownloadservice.html">File<wbr>Download<wbr>Service</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/filesystem.filemoveevent-1.html">File<wbr>Move<wbr>Event</a>
@@ -291,7 +293,22 @@
 								<a href="../modules/filesystem.filesystemutils-1.html">File<wbr>System<wbr>Utils</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.fileuploadservice.html">File<wbr>Upload<wbr>Service</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.filepathbreadcrumb.html">Filepath<wbr>Breadcrumb</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.locationlistrenderer-2.html">Location<wbr>List<wbr>Renderer</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/filesystem.electron.html">electron</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.export_.html">export&#61;</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.export_-1.html">export&#61;</a>
 							</li>
 						</ul>
 					</li>
@@ -334,7 +351,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="core.html">core</a>
@@ -71,14 +70,6 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-inherited">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-namespace tsd-is-inherited"><a href="core.binarybufferreadablebufferedstream.html#buffer" class="tsd-kind-icon">buffer</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-namespace tsd-is-inherited"><a href="core.binarybufferreadablebufferedstream.html#ended" class="tsd-kind-icon">ended</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-namespace tsd-is-inherited"><a href="core.binarybufferreadablebufferedstream.html#stream" class="tsd-kind-icon">stream</a></li>
-							</ul>
-						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
@@ -88,80 +79,28 @@
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace tsd-is-inherited">
-					<a name="buffer" class="tsd-anchor"></a>
-					<h3>buffer</h3>
-					<div class="tsd-signature tsd-kind-icon">buffer<span class="tsd-signature-symbol">:</span> <a href="../classes/core.binarybuffer.html" class="tsd-signature-type">BinaryBuffer</a><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="../interfaces/core.readablebufferedstream.html">ReadableBufferedStream</a>.<a href="../interfaces/core.readablebufferedstream.html#buffer">buffer</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/common/stream.ts#L169">packages/core/src/common/stream.ts:169</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>An array of chunks already read from this stream.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace tsd-is-inherited">
-					<a name="ended" class="tsd-anchor"></a>
-					<h3>ended</h3>
-					<div class="tsd-signature tsd-kind-icon">ended<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="../interfaces/core.readablebufferedstream.html">ReadableBufferedStream</a>.<a href="../interfaces/core.readablebufferedstream.html#ended">ended</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/common/stream.ts#L175">packages/core/src/common/stream.ts:175</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Signals if the stream has ended or not. If not, consumers
-							should continue to read from the stream until consumed.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace tsd-is-inherited">
-					<a name="stream" class="tsd-anchor"></a>
-					<h3>stream</h3>
-					<div class="tsd-signature tsd-kind-icon">stream<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.readablestream.html" class="tsd-signature-type">ReadableStream</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/core.binarybuffer.html" class="tsd-signature-type">BinaryBuffer</a><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="../interfaces/core.readablebufferedstream.html">ReadableBufferedStream</a>.<a href="../interfaces/core.readablebufferedstream.html#stream">stream</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/common/stream.ts#L164">packages/core/src/common/stream.ts:164</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The original stream that is being read.</p>
-						</div>
-					</div>
-				</section>
-			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
 					<a name="tobuffer" class="tsd-anchor"></a>
 					<h3>to<wbr>Buffer</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Buffer<span class="tsd-signature-symbol">(</span>bufferedStream<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.readablebufferedstream.html" class="tsd-signature-type">ReadableBufferedStream</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/core.binarybuffer.html" class="tsd-signature-type">BinaryBuffer</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/core.binarybuffer.html" class="tsd-signature-type">BinaryBuffer</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Buffer<span class="tsd-signature-symbol">(</span>bufferedStream<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.readablebufferedstream.html" class="tsd-signature-type" data-tsd-kind="Interface">ReadableBufferedStream</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/core.binarybuffer.html" class="tsd-signature-type" data-tsd-kind="Class">BinaryBuffer</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/core.binarybuffer.html" class="tsd-signature-type" data-tsd-kind="Class">BinaryBuffer</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/common/buffer.ts#L207">packages/core/src/common/buffer.ts:207</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/common/buffer.ts#L207">packages/core/src/common/buffer.ts:207</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>bufferedStream: <a href="../interfaces/core.readablebufferedstream.html" class="tsd-signature-type">ReadableBufferedStream</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/core.binarybuffer.html" class="tsd-signature-type">BinaryBuffer</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>bufferedStream: <a href="../interfaces/core.readablebufferedstream.html" class="tsd-signature-type" data-tsd-kind="Interface">ReadableBufferedStream</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/core.binarybuffer.html" class="tsd-signature-type" data-tsd-kind="Class">BinaryBuffer</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/core.binarybuffer.html" class="tsd-signature-type">BinaryBuffer</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/core.binarybuffer.html" class="tsd-signature-type" data-tsd-kind="Class">BinaryBuffer</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -170,8 +109,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="core.html">core</a>
@@ -185,15 +124,6 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-property tsd-parent-kind-namespace tsd-is-inherited">
-						<a href="core.binarybufferreadablebufferedstream.html#buffer" class="tsd-kind-icon">buffer</a>
-					</li>
-					<li class=" tsd-kind-property tsd-parent-kind-namespace tsd-is-inherited">
-						<a href="core.binarybufferreadablebufferedstream.html#ended" class="tsd-kind-icon">ended</a>
-					</li>
-					<li class=" tsd-kind-property tsd-parent-kind-namespace tsd-is-inherited">
-						<a href="core.binarybufferreadablebufferedstream.html#stream" class="tsd-kind-icon">stream</a>
-					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-namespace">
 						<a href="core.binarybufferreadablebufferedstream.html#tobuffer" class="tsd-kind-icon">to<wbr>Buffer</a>
 					</li>
@@ -208,7 +138,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

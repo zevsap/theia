@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/plugin_ext.html">plugin-ext</a>
@@ -71,7 +70,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="plugin_ext.task.html" class="tsd-signature-type">Task</a>
+						<a href="plugin_ext.task.html" class="tsd-signature-type" data-tsd-kind="Class">Task</a>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">Task2</span>
@@ -96,7 +95,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.task2.html#detail" class="tsd-kind-icon">detail</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="plugin_ext.task2.html#definition" class="tsd-kind-icon">definition</a></li>
@@ -120,24 +119,24 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Task2<span class="tsd-signature-symbol">(</span>taskDefinition<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin._plugin_-1.taskdefinition.html" class="tsd-signature-type">TaskDefinition</a>, scope<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin._plugin_-1.workspacefolder.html" class="tsd-signature-type">WorkspaceFolder</a><span class="tsd-signature-symbol"> | </span><a href="../enums/plugin._plugin_-1.taskscope.html#global" class="tsd-signature-type">Global</a><span class="tsd-signature-symbol"> | </span><a href="../enums/plugin._plugin_-1.taskscope.html#workspace" class="tsd-signature-type">Workspace</a>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, execution<span class="tsd-signature-symbol">?: </span><a href="plugin_ext.processexecution.html" class="tsd-signature-type">ProcessExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.shellexecution.html" class="tsd-signature-type">ShellExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.customexecution.html" class="tsd-signature-type">CustomExecution</a>, problemMatchers<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.task2.html" class="tsd-signature-type">Task2</a></li>
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Task2<span class="tsd-signature-symbol">(</span>taskDefinition<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin._plugin_-1.taskdefinition.html" class="tsd-signature-type">TaskDefinition</a>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, execution<span class="tsd-signature-symbol">?: </span><a href="plugin_ext.processexecution.html" class="tsd-signature-type">ProcessExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.shellexecution.html" class="tsd-signature-type">ShellExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.customexecution.html" class="tsd-signature-type">CustomExecution</a>, problemMatchers<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.task2.html" class="tsd-signature-type">Task2</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Task2<span class="tsd-signature-symbol">(</span>taskDefinition<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TaskDefinition</span>, scope<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WorkspaceFolder</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Global</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Workspace</span>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, execution<span class="tsd-signature-symbol">?: </span><a href="plugin_ext.processexecution.html" class="tsd-signature-type" data-tsd-kind="Class">ProcessExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.shellexecution.html" class="tsd-signature-type" data-tsd-kind="Class">ShellExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.customexecution.html" class="tsd-signature-type" data-tsd-kind="Class">CustomExecution</a>, problemMatchers<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.task2.html" class="tsd-signature-type" data-tsd-kind="Class">Task2</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Task2<span class="tsd-signature-symbol">(</span>taskDefinition<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TaskDefinition</span>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, execution<span class="tsd-signature-symbol">?: </span><a href="plugin_ext.processexecution.html" class="tsd-signature-type" data-tsd-kind="Class">ProcessExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.shellexecution.html" class="tsd-signature-type" data-tsd-kind="Class">ShellExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.customexecution.html" class="tsd-signature-type" data-tsd-kind="Class">CustomExecution</a>, problemMatchers<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.task2.html" class="tsd-signature-type" data-tsd-kind="Class">Task2</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="plugin_ext.task.html">Task</a>.<a href="plugin_ext.task.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L1889">packages/plugin-ext/src/plugin/types-impl.ts:1889</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L1889">packages/plugin-ext/src/plugin/types-impl.ts:1889</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>taskDefinition: <a href="../interfaces/plugin._plugin_-1.taskdefinition.html" class="tsd-signature-type">TaskDefinition</a></h5>
+									<h5>taskDefinition: <span class="tsd-signature-type">TaskDefinition</span></h5>
 								</li>
 								<li>
-									<h5>scope: <a href="../interfaces/plugin._plugin_-1.workspacefolder.html" class="tsd-signature-type">WorkspaceFolder</a><span class="tsd-signature-symbol"> | </span><a href="../enums/plugin._plugin_-1.taskscope.html#global" class="tsd-signature-type">Global</a><span class="tsd-signature-symbol"> | </span><a href="../enums/plugin._plugin_-1.taskscope.html#workspace" class="tsd-signature-type">Workspace</a></h5>
+									<h5>scope: <span class="tsd-signature-type">WorkspaceFolder</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Global</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Workspace</span></h5>
 								</li>
 								<li>
 									<h5>name: <span class="tsd-signature-type">string</span></h5>
@@ -146,25 +145,25 @@
 									<h5>source: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> execution: <a href="plugin_ext.processexecution.html" class="tsd-signature-type">ProcessExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.shellexecution.html" class="tsd-signature-type">ShellExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.customexecution.html" class="tsd-signature-type">CustomExecution</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> execution: <a href="plugin_ext.processexecution.html" class="tsd-signature-type" data-tsd-kind="Class">ProcessExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.shellexecution.html" class="tsd-signature-type" data-tsd-kind="Class">ShellExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.customexecution.html" class="tsd-signature-type" data-tsd-kind="Class">CustomExecution</a></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> problemMatchers: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.task2.html" class="tsd-signature-type">Task2</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.task2.html" class="tsd-signature-type" data-tsd-kind="Class">Task2</a></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="plugin_ext.task.html">Task</a>.<a href="plugin_ext.task.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L1897">packages/plugin-ext/src/plugin/types-impl.ts:1897</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L1897">packages/plugin-ext/src/plugin/types-impl.ts:1897</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>taskDefinition: <a href="../interfaces/plugin._plugin_-1.taskdefinition.html" class="tsd-signature-type">TaskDefinition</a></h5>
+									<h5>taskDefinition: <span class="tsd-signature-type">TaskDefinition</span></h5>
 								</li>
 								<li>
 									<h5>name: <span class="tsd-signature-type">string</span></h5>
@@ -173,13 +172,13 @@
 									<h5>source: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> execution: <a href="plugin_ext.processexecution.html" class="tsd-signature-type">ProcessExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.shellexecution.html" class="tsd-signature-type">ShellExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.customexecution.html" class="tsd-signature-type">CustomExecution</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> execution: <a href="plugin_ext.processexecution.html" class="tsd-signature-type" data-tsd-kind="Class">ProcessExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.shellexecution.html" class="tsd-signature-type" data-tsd-kind="Class">ShellExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.customexecution.html" class="tsd-signature-type" data-tsd-kind="Class">CustomExecution</a></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> problemMatchers: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.task2.html" class="tsd-signature-type">Task2</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.task2.html" class="tsd-signature-type" data-tsd-kind="Class">Task2</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -189,44 +188,42 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="detail" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> detail</h3>
-					<div class="tsd-signature tsd-kind-icon">detail<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<div class="tsd-signature tsd-kind-icon">detail<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L2066">packages/plugin-ext/src/plugin/types-impl.ts:2066</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L2066">packages/plugin-ext/src/plugin/types-impl.ts:2066</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Accessors</h2>
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
 					<a name="definition" class="tsd-anchor"></a>
 					<h3>definition</h3>
 					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> definition<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin._plugin_-1.taskdefinition.html" class="tsd-signature-type">TaskDefinition</a></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> definition<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin._plugin_-1.taskdefinition.html" class="tsd-signature-type">TaskDefinition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> definition<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TaskDefinition</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> definition<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TaskDefinition</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.task.html">Task</a>.<a href="plugin_ext.task.html#definition">definition</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L1956">packages/plugin-ext/src/plugin/types-impl.ts:1956</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L1956">packages/plugin-ext/src/plugin/types-impl.ts:1956</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin._plugin_-1.taskdefinition.html" class="tsd-signature-type">TaskDefinition</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TaskDefinition</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.task.html">Task</a>.<a href="plugin_ext.task.html#definition">definition</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L1960">packages/plugin-ext/src/plugin/types-impl.ts:1960</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L1960">packages/plugin-ext/src/plugin/types-impl.ts:1960</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>value: <a href="../interfaces/plugin._plugin_-1.taskdefinition.html" class="tsd-signature-type">TaskDefinition</a></h5>
+									<h5>value: <span class="tsd-signature-type">TaskDefinition</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -237,30 +234,28 @@
 					<a name="execution" class="tsd-anchor"></a>
 					<h3>execution</h3>
 					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> execution<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.processexecution.html" class="tsd-signature-type">ProcessExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.shellexecution.html" class="tsd-signature-type">ShellExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.customexecution.html" class="tsd-signature-type">CustomExecution</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> execution<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="plugin_ext.processexecution.html" class="tsd-signature-type">ProcessExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.shellexecution.html" class="tsd-signature-type">ShellExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.customexecution.html" class="tsd-signature-type">CustomExecution</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> execution<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.processexecution.html" class="tsd-signature-type" data-tsd-kind="Class">ProcessExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.shellexecution.html" class="tsd-signature-type" data-tsd-kind="Class">ShellExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.customexecution.html" class="tsd-signature-type" data-tsd-kind="Class">CustomExecution</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> execution<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.processexecution.html" class="tsd-signature-type" data-tsd-kind="Class">ProcessExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.shellexecution.html" class="tsd-signature-type" data-tsd-kind="Class">ShellExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.customexecution.html" class="tsd-signature-type" data-tsd-kind="Class">CustomExecution</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.task.html">Task</a>.<a href="plugin_ext.task.html#execution">execution</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L1989">packages/plugin-ext/src/plugin/types-impl.ts:1989</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L1989">packages/plugin-ext/src/plugin/types-impl.ts:1989</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.processexecution.html" class="tsd-signature-type">ProcessExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.shellexecution.html" class="tsd-signature-type">ShellExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.customexecution.html" class="tsd-signature-type">CustomExecution</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.processexecution.html" class="tsd-signature-type" data-tsd-kind="Class">ProcessExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.shellexecution.html" class="tsd-signature-type" data-tsd-kind="Class">ShellExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.customexecution.html" class="tsd-signature-type" data-tsd-kind="Class">CustomExecution</a></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.task.html">Task</a>.<a href="plugin_ext.task.html#execution">execution</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L1993">packages/plugin-ext/src/plugin/types-impl.ts:1993</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L1993">packages/plugin-ext/src/plugin/types-impl.ts:1993</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>value: <a href="plugin_ext.processexecution.html" class="tsd-signature-type">ProcessExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.shellexecution.html" class="tsd-signature-type">ShellExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.customexecution.html" class="tsd-signature-type">CustomExecution</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>value: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.processexecution.html" class="tsd-signature-type" data-tsd-kind="Class">ProcessExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.shellexecution.html" class="tsd-signature-type" data-tsd-kind="Class">ShellExecution</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.customexecution.html" class="tsd-signature-type" data-tsd-kind="Class">CustomExecution</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -271,30 +266,28 @@
 					<a name="group" class="tsd-anchor"></a>
 					<h3>group</h3>
 					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> group<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.taskgroup.html" class="tsd-signature-type">TaskGroup</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> group<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="plugin_ext.taskgroup.html" class="tsd-signature-type">TaskGroup</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> group<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.taskgroup.html" class="tsd-signature-type" data-tsd-kind="Class">TaskGroup</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> group<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.taskgroup.html" class="tsd-signature-type" data-tsd-kind="Class">TaskGroup</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.task.html">Task</a>.<a href="plugin_ext.task.html#group">group</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L2040">packages/plugin-ext/src/plugin/types-impl.ts:2040</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L2040">packages/plugin-ext/src/plugin/types-impl.ts:2040</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.taskgroup.html" class="tsd-signature-type">TaskGroup</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.taskgroup.html" class="tsd-signature-type" data-tsd-kind="Class">TaskGroup</a></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.task.html">Task</a>.<a href="plugin_ext.task.html#group">group</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L2044">packages/plugin-ext/src/plugin/types-impl.ts:2044</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L2044">packages/plugin-ext/src/plugin/types-impl.ts:2044</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>value: <a href="plugin_ext.taskgroup.html" class="tsd-signature-type">TaskGroup</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>value: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.taskgroup.html" class="tsd-signature-type" data-tsd-kind="Class">TaskGroup</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -310,9 +303,8 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.task.html">Task</a>.<a href="plugin_ext.task.html#hasproblemmatchers">hasProblemMatchers</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L2014">packages/plugin-ext/src/plugin/types-impl.ts:2014</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L2014">packages/plugin-ext/src/plugin/types-impl.ts:2014</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -329,18 +321,16 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.task.html">Task</a>.<a href="plugin_ext.task.html#isbackground">isBackground</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L2018">packages/plugin-ext/src/plugin/types-impl.ts:2018</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L2018">packages/plugin-ext/src/plugin/types-impl.ts:2018</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.task.html">Task</a>.<a href="plugin_ext.task.html#isbackground">isBackground</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L2022">packages/plugin-ext/src/plugin/types-impl.ts:2022</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L2022">packages/plugin-ext/src/plugin/types-impl.ts:2022</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -363,18 +353,16 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.task.html">Task</a>.<a href="plugin_ext.task.html#name">name</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L1978">packages/plugin-ext/src/plugin/types-impl.ts:1978</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L1978">packages/plugin-ext/src/plugin/types-impl.ts:1978</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.task.html">Task</a>.<a href="plugin_ext.task.html#name">name</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L1982">packages/plugin-ext/src/plugin/types-impl.ts:1982</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L1982">packages/plugin-ext/src/plugin/types-impl.ts:1982</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -391,30 +379,28 @@
 					<a name="presentationoptions" class="tsd-anchor"></a>
 					<h3>presentation<wbr>Options</h3>
 					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> presentationOptions<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin._plugin_-1.taskpresentationoptions.html" class="tsd-signature-type">TaskPresentationOptions</a></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> presentationOptions<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin._plugin_-1.taskpresentationoptions.html" class="tsd-signature-type">TaskPresentationOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> presentationOptions<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TaskPresentationOptions</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> presentationOptions<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TaskPresentationOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.task.html">Task</a>.<a href="plugin_ext.task.html#presentationoptions">presentationOptions</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L2052">packages/plugin-ext/src/plugin/types-impl.ts:2052</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L2052">packages/plugin-ext/src/plugin/types-impl.ts:2052</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin._plugin_-1.taskpresentationoptions.html" class="tsd-signature-type">TaskPresentationOptions</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TaskPresentationOptions</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.task.html">Task</a>.<a href="plugin_ext.task.html#presentationoptions">presentationOptions</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L2056">packages/plugin-ext/src/plugin/types-impl.ts:2056</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L2056">packages/plugin-ext/src/plugin/types-impl.ts:2056</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>value: <a href="../interfaces/plugin._plugin_-1.taskpresentationoptions.html" class="tsd-signature-type">TaskPresentationOptions</a></h5>
+									<h5>value: <span class="tsd-signature-type">TaskPresentationOptions</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -431,18 +417,16 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.task.html">Task</a>.<a href="plugin_ext.task.html#problemmatchers">problemMatchers</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L2000">packages/plugin-ext/src/plugin/types-impl.ts:2000</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L2000">packages/plugin-ext/src/plugin/types-impl.ts:2000</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.task.html">Task</a>.<a href="plugin_ext.task.html#problemmatchers">problemMatchers</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L2004">packages/plugin-ext/src/plugin/types-impl.ts:2004</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L2004">packages/plugin-ext/src/plugin/types-impl.ts:2004</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -459,30 +443,28 @@
 					<a name="scope" class="tsd-anchor"></a>
 					<h3>scope</h3>
 					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> scope<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/plugin._plugin_-1.taskscope.html#global" class="tsd-signature-type">Global</a><span class="tsd-signature-symbol"> | </span><a href="../enums/plugin._plugin_-1.taskscope.html#workspace" class="tsd-signature-type">Workspace</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/plugin._plugin_-1.workspacefolder.html" class="tsd-signature-type">WorkspaceFolder</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> scope<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="../enums/plugin._plugin_-1.taskscope.html#global" class="tsd-signature-type">Global</a><span class="tsd-signature-symbol"> | </span><a href="../enums/plugin._plugin_-1.taskscope.html#workspace" class="tsd-signature-type">Workspace</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/plugin._plugin_-1.workspacefolder.html" class="tsd-signature-type">WorkspaceFolder</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> scope<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">WorkspaceFolder</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Global</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Workspace</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> scope<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">WorkspaceFolder</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Global</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Workspace</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.task.html">Task</a>.<a href="plugin_ext.task.html#scope">scope</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L1967">packages/plugin-ext/src/plugin/types-impl.ts:1967</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L1967">packages/plugin-ext/src/plugin/types-impl.ts:1967</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../enums/plugin._plugin_-1.taskscope.html#global" class="tsd-signature-type">Global</a><span class="tsd-signature-symbol"> | </span><a href="../enums/plugin._plugin_-1.taskscope.html#workspace" class="tsd-signature-type">Workspace</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/plugin._plugin_-1.workspacefolder.html" class="tsd-signature-type">WorkspaceFolder</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">WorkspaceFolder</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Global</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Workspace</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.task.html">Task</a>.<a href="plugin_ext.task.html#scope">scope</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L1971">packages/plugin-ext/src/plugin/types-impl.ts:1971</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L1971">packages/plugin-ext/src/plugin/types-impl.ts:1971</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>value: <a href="../enums/plugin._plugin_-1.taskscope.html#global" class="tsd-signature-type">Global</a><span class="tsd-signature-symbol"> | </span><a href="../enums/plugin._plugin_-1.taskscope.html#workspace" class="tsd-signature-type">Workspace</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/plugin._plugin_-1.workspacefolder.html" class="tsd-signature-type">WorkspaceFolder</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>value: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">WorkspaceFolder</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Global</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Workspace</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -499,18 +481,16 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.task.html">Task</a>.<a href="plugin_ext.task.html#source">source</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L2029">packages/plugin-ext/src/plugin/types-impl.ts:2029</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L2029">packages/plugin-ext/src/plugin/types-impl.ts:2029</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.task.html">Task</a>.<a href="plugin_ext.task.html#source">source</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L2033">packages/plugin-ext/src/plugin/types-impl.ts:2033</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L2033">packages/plugin-ext/src/plugin/types-impl.ts:2033</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -528,8 +508,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/plugin_ext.html">plugin-<wbr>ext</a>
@@ -550,13 +530,13 @@
 								<a href="../modules/plugin_ext.connectionclosederror.html">Connection<wbr>Closed<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.customeditorwidget.html">Custom<wbr>Editor<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrangebehavior.html">Decoration<wbr>Range<wbr>Behavior</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrenderoptions-1.html">Decoration<wbr>Render<wbr>Options</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.delta.html">Delta</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.documentlink.html">Document<wbr>Link</a>
@@ -577,6 +557,9 @@
 								<a href="../modules/plugin_ext.parameterinformation.html">Parameter<wbr>Information</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.plugincontributions.html">Plugin<wbr>Contributions</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginiconpath.html">Plugin<wbr>Icon<wbr>Path</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
@@ -584,6 +567,12 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginpaths.html">Plugin<wbr>Paths</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewregistry.html">Plugin<wbr>View<wbr>Registry</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewwidget.html">Plugin<wbr>View<wbr>Widget</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.schemes.html">Schemes</a>
@@ -610,10 +599,16 @@
 								<a href="../modules/plugin_ext.textdocumentshowoptions.html">Text<wbr>Document<wbr>Show<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.texteditorselectionchangekind.html">Text<wbr>Editor<wbr>Selection<wbr>Change<wbr>Kind</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationattachmentrenderoptions.html">Themable<wbr>Decoration<wbr>Attachment<wbr>Render<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationrenderoptions.html">Themable<wbr>Decoration<wbr>Render<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.themeicon.html">Theme<wbr>Icon</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.timelinecommandarg-1.html">Timeline<wbr>Command<wbr>Arg</a>
@@ -628,10 +623,10 @@
 								<a href="../modules/plugin_ext.webviewexternalendpoint.html">Webview<wbr>External<wbr>Endpoint</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
+								<a href="../modules/plugin_ext.webviewwidget.html">Webview<wbr>Widget</a>
 							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.nls.html">nls</a>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
 							</li>
 						</ul>
 					</li>
@@ -695,7 +690,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

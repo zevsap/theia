@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/git.html">git</a>
@@ -74,7 +73,7 @@
 						<span class="target">GitRepositoryManager</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<a href="git.nosyncrepositorymanager.html" class="tsd-signature-type">NoSyncRepositoryManager</a>
+								<a href="git.nosyncrepositorymanager.html" class="tsd-signature-type" data-tsd-kind="Class">NoSyncRepositoryManager</a>
 							</li>
 						</ul>
 					</li>
@@ -84,6 +83,12 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="git.gitrepositorymanager.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
@@ -102,25 +107,42 @@
 					</div>
 				</section>
 			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Git<wbr>Repository<wbr>Manager<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="git.gitrepositorymanager.html" class="tsd-signature-type" data-tsd-kind="Class">GitRepositoryManager</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="git.gitrepositorymanager.html" class="tsd-signature-type" data-tsd-kind="Class">GitRepositoryManager</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-private-protected">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="watcherfactory" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> watcher<wbr>Factory</h3>
-					<div class="tsd-signature tsd-kind-icon">watcher<wbr>Factory<span class="tsd-signature-symbol">:</span> <a href="../modules/git.html#gitrepositorywatcherfactory" class="tsd-signature-type">GitRepositoryWatcherFactory</a></div>
+					<div class="tsd-signature tsd-kind-icon">watcher<wbr>Factory<span class="tsd-signature-symbol">:</span> <a href="../modules/git.html#gitrepositorywatcherfactory-1" class="tsd-signature-type" data-tsd-kind="Variable">GitRepositoryWatcherFactory</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/node/git-repository-manager.ts#L26">packages/git/src/node/git-repository-manager.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/node/git-repository-manager.ts#L26">packages/git/src/node/git-repository-manager.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="watchers" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> watchers</h3>
-					<div class="tsd-signature tsd-kind-icon">watchers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReferenceCollection</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a><span class="tsd-signature-symbol">, </span><a href="git.gitrepositorywatcher.html" class="tsd-signature-type">GitRepositoryWatcher</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new ReferenceCollection&lt;Repository, GitRepositoryWatcher&gt;(repository &#x3D;&gt; this.watcherFactory({ repository }))</span></div>
+					<div class="tsd-signature tsd-kind-icon">watchers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReferenceCollection</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a><span class="tsd-signature-symbol">, </span><a href="git.gitrepositorywatcher.html" class="tsd-signature-type" data-tsd-kind="Class">GitRepositoryWatcher</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/node/git-repository-manager.ts#L27">packages/git/src/node/git-repository-manager.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/node/git-repository-manager.ts#L27">packages/git/src/node/git-repository-manager.ts:27</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -131,22 +153,22 @@
 					<a name="getwatcher" class="tsd-anchor"></a>
 					<h3>get<wbr>Watcher</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Watcher<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Reference</span><span class="tsd-signature-symbol">&lt;</span><a href="git.gitrepositorywatcher.html" class="tsd-signature-type">GitRepositoryWatcher</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Watcher<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../interfaces/git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Reference</span><span class="tsd-signature-symbol">&lt;</span><a href="git.gitrepositorywatcher.html" class="tsd-signature-type" data-tsd-kind="Class">GitRepositoryWatcher</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/node/git-repository-manager.ts#L37">packages/git/src/node/git-repository-manager.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/node/git-repository-manager.ts#L37">packages/git/src/node/git-repository-manager.ts:37</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a></h5>
+									<h5>repository: <a href="../interfaces/git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Reference</span><span class="tsd-signature-symbol">&lt;</span><a href="git.gitrepositorywatcher.html" class="tsd-signature-type">GitRepositoryWatcher</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Reference</span><span class="tsd-signature-symbol">&lt;</span><a href="git.gitrepositorywatcher.html" class="tsd-signature-type" data-tsd-kind="Class">GitRepositoryWatcher</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -154,13 +176,13 @@
 					<a name="run" class="tsd-anchor"></a>
 					<h3>run</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">run&lt;T&gt;<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a>, op<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">run&lt;T&gt;<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../interfaces/git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a>, op<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/node/git-repository-manager.ts#L31">packages/git/src/node/git-repository-manager.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/node/git-repository-manager.ts#L31">packages/git/src/node/git-repository-manager.ts:31</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -172,7 +194,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a></h5>
+									<h5>repository: <a href="../interfaces/git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a></h5>
 								</li>
 								<li>
 									<h5>op: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
@@ -198,19 +220,19 @@
 					<a name="sync" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> sync</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">sync<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">sync<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../interfaces/git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/node/git-repository-manager.ts#L41">packages/git/src/node/git-repository-manager.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/node/git-repository-manager.ts#L41">packages/git/src/node/git-repository-manager.ts:41</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a></h5>
+									<h5>repository: <a href="../interfaces/git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -222,14 +244,23 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/git.html">git</a>
 						<ul>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.blameannotationskeybindingcontext.html">Blame<wbr>Annotations<wbr>Keybinding<wbr>Context</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.blamecommands.html">Blame<wbr>Commands</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.blamedecorator.html">Blame<wbr>Decorator</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.dirtydiffmodel.html">Dirty<wbr>Diff<wbr>Model</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.git_commands.html">GIT_<wbr>COMMANDS</a>
@@ -244,16 +275,37 @@
 								<a href="../modules/git.gitbindingoptions.html">Git<wbr>Binding<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitblameparser.html">Git<wbr>Blame<wbr>Parser</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.gitcommitdetailuri.html">Git<wbr>Commit<wbr>Detail<wbr>Uri</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitcommitmessagevalidator.html">Git<wbr>Commit<wbr>Message<wbr>Validator</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.gitdiffcommands.html">Git<wbr>Diff<wbr>Commands</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitdifftreemodel.html">Git<wbr>Diff<wbr>Tree<wbr>Model</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitfilestatus-1.html">Git<wbr>File<wbr>Status</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitprompt.html">Git<wbr>Prompt</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitscmprovider.html">Git<wbr>Scm<wbr>Provider</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.gitscmrepository.html">Git<wbr>Scm<wbr>Repository</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.gitstatuschangeevent-1.html">Git<wbr>Status<wbr>Change<wbr>Event</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitsyncservice.html">Git<wbr>Sync<wbr>Service</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.gitutils-1.html">Git<wbr>Utils</a>
@@ -278,6 +330,9 @@
 					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="git.gitrepositorymanager.html" class="tsd-kind-icon">Git<wbr>Repository<wbr>Manager</a>
 						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="git.gitrepositorymanager.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="git.gitrepositorymanager.html#watcherfactory" class="tsd-kind-icon">watcher<wbr>Factory</a>
 							</li>
@@ -308,7 +363,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
@@ -318,6 +372,7 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">

@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/monaco.html">monaco</a>
@@ -78,12 +77,6 @@
 							</li>
 						</ul>
 					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implements</h3>
-				<ul class="tsd-hierarchy">
-					<li><span class="tsd-signature-type">ICodeEditorService</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -131,17 +124,17 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Monaco<wbr>Editor<wbr>Service<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="monaco.monacoeditorservice.html" class="tsd-signature-type">MonacoEditorService</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Monaco<wbr>Editor<wbr>Service<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="monaco.monacoeditorservice.html" class="tsd-signature-type" data-tsd-kind="Class">MonacoEditorService</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides CodeEditorServiceImpl.__constructor</p>
+								<p>Overrides monaco.services.CodeEditorServiceImpl.constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-editor-service.ts#L49">packages/monaco/src/browser/monaco-editor-service.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-editor-service.ts#L49">packages/monaco/src/browser/monaco-editor-service.ts:49</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="monaco.monacoeditorservice.html" class="tsd-signature-type">MonacoEditorService</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="monaco.monacoeditorservice.html" class="tsd-signature-type" data-tsd-kind="Class">MonacoEditorService</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -151,93 +144,168 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="editors" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> editors</h3>
-					<div class="tsd-signature tsd-kind-icon">editors<span class="tsd-signature-symbol">:</span> <a href="editor.editormanager-1.html" class="tsd-signature-type">EditorManager</a></div>
+					<div class="tsd-signature tsd-kind-icon">editors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EditorManager</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-editor-service.ts#L46">packages/monaco/src/browser/monaco-editor-service.ts:46</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-editor-service.ts#L46">packages/monaco/src/browser/monaco-editor-service.ts:46</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="m2p" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> m2p</h3>
-					<div class="tsd-signature tsd-kind-icon">m2p<span class="tsd-signature-symbol">:</span> <a href="monaco.monacotoprotocolconverter.html" class="tsd-signature-type">MonacoToProtocolConverter</a></div>
+					<div class="tsd-signature tsd-kind-icon">m2p<span class="tsd-signature-symbol">:</span> <a href="monaco.monacotoprotocolconverter.html" class="tsd-signature-type" data-tsd-kind="Class">MonacoToProtocolConverter</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-editor-service.ts#L40">packages/monaco/src/browser/monaco-editor-service.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-editor-service.ts#L40">packages/monaco/src/browser/monaco-editor-service.ts:40</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="openerservice" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> opener<wbr>Service</h3>
-					<div class="tsd-signature tsd-kind-icon">opener<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.openerservice-1.html" class="tsd-signature-type">OpenerService</a></div>
+					<div class="tsd-signature tsd-kind-icon">opener<wbr>Service<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">OpenerService</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-editor-service.ts#L37">packages/monaco/src/browser/monaco-editor-service.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-editor-service.ts#L37">packages/monaco/src/browser/monaco-editor-service.ts:37</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="preferencesservice" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> preferences<wbr>Service</h3>
-					<div class="tsd-signature tsd-kind-icon">preferences<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.preferenceservice-2.html" class="tsd-signature-type">PreferenceService</a></div>
+					<div class="tsd-signature tsd-kind-icon">preferences<wbr>Service<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">PreferenceService</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-editor-service.ts#L49">packages/monaco/src/browser/monaco-editor-service.ts:49</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-editor-service.ts#L49">packages/monaco/src/browser/monaco-editor-service.ts:49</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="registerdecorationtype" class="tsd-anchor"></a>
 					<h3>register<wbr>Decoration<wbr>Type</h3>
-					<div class="tsd-signature tsd-kind-icon">register<wbr>Decoration<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ICodeEditorService</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">"registerDecorationType"</span><span class="tsd-signature-symbol">]</span></div>
+					<div class="tsd-signature tsd-kind-icon">register<wbr>Decoration<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IDecorationRenderOptions</span>, parentTypeKey<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, editor<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ICodeEditor</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="monaco.monacoeditorservice.html">MonacoEditorService</a>.<a href="monaco.monacoeditorservice.html#registerdecorationtype">registerDecorationType</a></p>
+						<p>Inherited from monaco.services.CodeEditorServiceImpl.registerDecorationType</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/typings/monaco/index.d.ts#L903">packages/monaco/src/typings/monaco/index.d.ts:903</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/typings/monaco/index.d.ts#L903">packages/monaco/src/typings/monaco/index.d.ts:903</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-class">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IDecorationRenderOptions</span>, parentTypeKey<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, editor<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ICodeEditor</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>key: <span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li>
+												<h5>options: <span class="tsd-signature-type">IDecorationRenderOptions</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> parentTypeKey: <span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> editor: <span class="tsd-signature-type">ICodeEditor</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="removedecorationtype" class="tsd-anchor"></a>
 					<h3>remove<wbr>Decoration<wbr>Type</h3>
-					<div class="tsd-signature tsd-kind-icon">remove<wbr>Decoration<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ICodeEditorService</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">"removeDecorationType"</span><span class="tsd-signature-symbol">]</span></div>
+					<div class="tsd-signature tsd-kind-icon">remove<wbr>Decoration<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="monaco.monacoeditorservice.html">MonacoEditorService</a>.<a href="monaco.monacoeditorservice.html#removedecorationtype">removeDecorationType</a></p>
+						<p>Inherited from monaco.services.CodeEditorServiceImpl.removeDecorationType</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/typings/monaco/index.d.ts#L904">packages/monaco/src/typings/monaco/index.d.ts:904</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/typings/monaco/index.d.ts#L904">packages/monaco/src/typings/monaco/index.d.ts:904</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-class">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>key: <span class="tsd-signature-type">string</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="resolvedecorationoptions" class="tsd-anchor"></a>
 					<h3>resolve<wbr>Decoration<wbr>Options</h3>
-					<div class="tsd-signature tsd-kind-icon">resolve<wbr>Decoration<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ICodeEditorService</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">"resolveDecorationOptions"</span><span class="tsd-signature-symbol">]</span></div>
+					<div class="tsd-signature tsd-kind-icon">resolve<wbr>Decoration<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>typeKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, writable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">IModelDecorationOptions</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="monaco.monacoeditorservice.html">MonacoEditorService</a>.<a href="monaco.monacoeditorservice.html#resolvedecorationoptions">resolveDecorationOptions</a></p>
+						<p>Inherited from monaco.services.CodeEditorServiceImpl.resolveDecorationOptions</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/typings/monaco/index.d.ts#L905">packages/monaco/src/typings/monaco/index.d.ts:905</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/typings/monaco/index.d.ts#L905">packages/monaco/src/typings/monaco/index.d.ts:905</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-class">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>typeKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, writable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IModelDecorationOptions</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>typeKey: <span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li>
+												<h5>writable: <span class="tsd-signature-type">boolean</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IModelDecorationOptions</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="shell" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> shell</h3>
-					<div class="tsd-signature tsd-kind-icon">shell<span class="tsd-signature-symbol">:</span> <a href="core.applicationshell-2.html" class="tsd-signature-type">ApplicationShell</a></div>
+					<div class="tsd-signature tsd-kind-icon">shell<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ApplicationShell</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-editor-service.ts#L43">packages/monaco/src/browser/monaco-editor-service.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-editor-service.ts#L43">packages/monaco/src/browser/monaco-editor-service.ts:43</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="enable_preview_preference" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> ENABLE_<wbr>PREVIEW_<wbr>PREFERENCE</h3>
-					<div class="tsd-signature tsd-kind-icon">ENABLE_<wbr>PREVIEW_<wbr>PREFERENCE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;editor.enablePreview&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">ENABLE_<wbr>PREVIEW_<wbr>PREFERENCE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#x27;editor.enablePreview&#x27;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-editor-service.ts#L34">packages/monaco/src/browser/monaco-editor-service.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-editor-service.ts#L34">packages/monaco/src/browser/monaco-editor-service.ts:34</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -248,13 +316,13 @@
 					<a name="createeditoropeneroptions" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> create<wbr>Editor<wbr>Opener<wbr>Options</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Editor<wbr>Opener<wbr>Options<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IResourceEditorInput</span>, source<span class="tsd-signature-symbol">?: </span><a href="../modules/monaco.html#icodeeditor" class="tsd-signature-type">ICodeEditor</a>, sideBySide<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/editor.editoropeneroptions-1.html" class="tsd-signature-type">EditorOpenerOptions</a></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Editor<wbr>Opener<wbr>Options<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IResourceEditorInput</span>, source<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ICodeEditor</span>, sideBySide<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EditorOpenerOptions</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-editor-service.ts#L98">packages/monaco/src/browser/monaco-editor-service.ts:98</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-editor-service.ts#L98">packages/monaco/src/browser/monaco-editor-service.ts:98</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -263,13 +331,13 @@
 									<h5>input: <span class="tsd-signature-type">IResourceEditorInput</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> source: <a href="../modules/monaco.html#icodeeditor" class="tsd-signature-type">ICodeEditor</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> source: <span class="tsd-signature-type">ICodeEditor</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> sideBySide: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> sideBySide: <span class="tsd-signature-type">boolean</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/editor.editoropeneroptions-1.html" class="tsd-signature-type">EditorOpenerOptions</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">EditorOpenerOptions</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -277,25 +345,25 @@
 					<a name="findeditorwidgetbyuri" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> find<wbr>Editor<wbr>Widget<wbr>ByUri</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">find<wbr>Editor<wbr>Widget<wbr>ByUri<span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, uriAsString<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="editor.editorwidget-1.html" class="tsd-signature-type">EditorWidget</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Editor<wbr>Widget<wbr>ByUri<span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">object</span>, uriAsString<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">EditorWidget</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-editor-service.ts#L80">packages/monaco/src/browser/monaco-editor-service.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-editor-service.ts#L80">packages/monaco/src/browser/monaco-editor-service.ts:80</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>widget: <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>widget: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">object</span></h5>
 								</li>
 								<li>
 									<h5>uriAsString: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="editor.editorwidget-1.html" class="tsd-signature-type">EditorWidget</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">EditorWidget</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -303,14 +371,14 @@
 					<a name="getactivecodeeditor" class="tsd-anchor"></a>
 					<h3>get<wbr>Active<wbr>Code<wbr>Editor</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Active<wbr>Code<wbr>Editor<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IStandaloneCodeEditor</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Active<wbr>Code<wbr>Editor<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">IStandaloneCodeEditor</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides CodeEditorServiceImpl.getActiveCodeEditor</p>
+								<p>Overrides monaco.services.CodeEditorServiceImpl.getActiveCodeEditor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-editor-service.ts#L58">packages/monaco/src/browser/monaco-editor-service.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-editor-service.ts#L58">packages/monaco/src/browser/monaco-editor-service.ts:58</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -318,7 +386,7 @@
 									<p>Monaco active editor is either focused or last focused editor.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IStandaloneCodeEditor</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">IStandaloneCodeEditor</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -326,13 +394,13 @@
 					<a name="geteditoropenmode" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Editor<wbr>Open<wbr>Mode</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Editor<wbr>Open<wbr>Mode<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IResourceEditorInput</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/core.html#widgetopenmode-1" class="tsd-signature-type">WidgetOpenMode</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Editor<wbr>Open<wbr>Mode<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IResourceEditorInput</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WidgetOpenMode</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-editor-service.ts#L105">packages/monaco/src/browser/monaco-editor-service.ts:105</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-editor-service.ts#L105">packages/monaco/src/browser/monaco-editor-service.ts:105</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -341,7 +409,7 @@
 									<h5>input: <span class="tsd-signature-type">IResourceEditorInput</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/core.html#widgetopenmode-1" class="tsd-signature-type">WidgetOpenMode</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">WidgetOpenMode</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -349,14 +417,14 @@
 					<a name="getfocusedcodeeditor" class="tsd-anchor"></a>
 					<h3>get<wbr>Focused<wbr>Code<wbr>Editor</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Focused<wbr>Code<wbr>Editor<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ICodeEditor</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Focused<wbr>Code<wbr>Editor<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ICodeEditor</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="monaco.monacoeditorservice.html">MonacoEditorService</a>.<a href="monaco.monacoeditorservice.html#getfocusedcodeeditor">getFocusedCodeEditor</a></p>
+								<p>Inherited from monaco.services.CodeEditorServiceImpl.getFocusedCodeEditor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/typings/monaco/index.d.ts#L910">packages/monaco/src/typings/monaco/index.d.ts:910</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/typings/monaco/index.d.ts#L910">packages/monaco/src/typings/monaco/index.d.ts:910</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -365,7 +433,7 @@
 									which only respect standalone and diff modified editors.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ICodeEditor</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ICodeEditor</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -373,25 +441,25 @@
 					<a name="getwidgetoptions" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Widget<wbr>Options</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Widget<wbr>Options<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">?: </span><a href="../modules/monaco.html#icodeeditor" class="tsd-signature-type">ICodeEditor</a>, sideBySide<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/core.applicationshell-2.widgetoptions.html" class="tsd-signature-type">WidgetOptions</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Widget<wbr>Options<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ICodeEditor</span>, sideBySide<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">WidgetOptions</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-editor-service.ts#L116">packages/monaco/src/browser/monaco-editor-service.ts:116</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-editor-service.ts#L116">packages/monaco/src/browser/monaco-editor-service.ts:116</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> source: <a href="../modules/monaco.html#icodeeditor" class="tsd-signature-type">ICodeEditor</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> source: <span class="tsd-signature-type">ICodeEditor</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> sideBySide: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> sideBySide: <span class="tsd-signature-type">boolean</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/core.applicationshell-2.widgetoptions.html" class="tsd-signature-type">WidgetOptions</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">WidgetOptions</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -399,14 +467,14 @@
 					<a name="opencodeeditor" class="tsd-anchor"></a>
 					<h3>open<wbr>Code<wbr>Editor</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">open<wbr>Code<wbr>Editor<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IResourceEditorInput</span>, source<span class="tsd-signature-symbol">?: </span><a href="../modules/monaco.html#icodeeditor" class="tsd-signature-type">ICodeEditor</a>, sideBySide<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">CommonCodeEditor</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">open<wbr>Code<wbr>Editor<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IResourceEditorInput</span>, source<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ICodeEditor</span>, sideBySide<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">CommonCodeEditor</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides CodeEditorServiceImpl.openCodeEditor</p>
+								<p>Overrides monaco.services.CodeEditorServiceImpl.openCodeEditor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-editor-service.ts#L69">packages/monaco/src/browser/monaco-editor-service.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-editor-service.ts#L69">packages/monaco/src/browser/monaco-editor-service.ts:69</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -415,13 +483,13 @@
 									<h5>input: <span class="tsd-signature-type">IResourceEditorInput</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> source: <a href="../modules/monaco.html#icodeeditor" class="tsd-signature-type">ICodeEditor</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> source: <span class="tsd-signature-type">ICodeEditor</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> sideBySide: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> sideBySide: <span class="tsd-signature-type">boolean</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">CommonCodeEditor</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">CommonCodeEditor</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -430,8 +498,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/monaco.html">monaco</a>
@@ -443,13 +511,31 @@
 								<a href="../modules/monaco.monacocommands.html">Monaco<wbr>Commands</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.monacodiffeditor.html">Monaco<wbr>Diff<wbr>Editor</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.monacoeditor.html">Monaco<wbr>Editor</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.monacoeditormodel.html">Monaco<wbr>Editor<wbr>Model</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.monacoeditorzonewidget.html">Monaco<wbr>Editor<wbr>Zone<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/monaco.monacomenus.html">Monaco<wbr>Menus</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.monacooutlinecontribution.html">Monaco<wbr>Outline<wbr>Contribution</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/monaco.monacooutlinesymbolinformationnode.html">Monaco<wbr>Outline<wbr>Symbol<wbr>Information<wbr>Node</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/monaco.monacorangereplace.html">Monaco<wbr>Range<wbr>Replace</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.monacothemeregistry.html">Monaco<wbr>Theme<wbr>Registry</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/monaco.monacothemestate.html">Monaco<wbr>Theme<wbr>State</a>
@@ -546,7 +632,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/preview.html">preview</a>
@@ -79,6 +78,12 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="preview.previewlinknormalizer.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
@@ -95,25 +100,42 @@
 					</div>
 				</section>
 			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Preview<wbr>Link<wbr>Normalizer<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="preview.previewlinknormalizer.html" class="tsd-signature-type" data-tsd-kind="Class">PreviewLinkNormalizer</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="preview.previewlinknormalizer.html" class="tsd-signature-type" data-tsd-kind="Class">PreviewLinkNormalizer</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-private-protected">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="minibrowserenvironment" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> mini<wbr>Browser<wbr>Environment</h3>
-					<div class="tsd-signature tsd-kind-icon">mini<wbr>Browser<wbr>Environment<span class="tsd-signature-symbol">:</span> <a href="mini_browser.minibrowserenvironment.html" class="tsd-signature-type">MiniBrowserEnvironment</a></div>
+					<div class="tsd-signature tsd-kind-icon">mini<wbr>Browser<wbr>Environment<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">MiniBrowserEnvironment</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/preview/src/browser/preview-link-normalizer.ts#L27">packages/preview/src/browser/preview-link-normalizer.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/preview/src/browser/preview-link-normalizer.ts#L27">packages/preview/src/browser/preview-link-normalizer.ts:27</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="urlscheme" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> url<wbr>Scheme</h3>
-					<div class="tsd-signature tsd-kind-icon">url<wbr>Scheme<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = new RegExp(&#x27;^[a-z][a-z|0-9|\+|\-|\.]*:&#x27;, &#x27;i&#x27;)</span></div>
+					<div class="tsd-signature tsd-kind-icon">url<wbr>Scheme<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/preview/src/browser/preview-link-normalizer.ts#L24">packages/preview/src/browser/preview-link-normalizer.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/preview/src/browser/preview-link-normalizer.ts#L24">packages/preview/src/browser/preview-link-normalizer.ts:24</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -124,19 +146,19 @@
 					<a name="normalizelink" class="tsd-anchor"></a>
 					<h3>normalize<wbr>Link</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">normalize<wbr>Link<span class="tsd-signature-symbol">(</span>documentUri<span class="tsd-signature-symbol">: </span><a href="core.uri.html" class="tsd-signature-type">URI</a>, link<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">normalize<wbr>Link<span class="tsd-signature-symbol">(</span>documentUri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default</span>, link<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/preview/src/browser/preview-link-normalizer.ts#L29">packages/preview/src/browser/preview-link-normalizer.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/preview/src/browser/preview-link-normalizer.ts#L29">packages/preview/src/browser/preview-link-normalizer.ts:29</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>documentUri: <a href="core.uri.html" class="tsd-signature-type">URI</a></h5>
+									<h5>documentUri: <span class="tsd-signature-type">default</span></h5>
 								</li>
 								<li>
 									<h5>link: <span class="tsd-signature-type">string</span></h5>
@@ -151,8 +173,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/preview.html">preview</a>
@@ -204,6 +226,9 @@
 					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="preview.previewlinknormalizer.html" class="tsd-kind-icon">Preview<wbr>Link<wbr>Normalizer</a>
 						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="preview.previewlinknormalizer.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="preview.previewlinknormalizer.html#minibrowserenvironment" class="tsd-kind-icon">mini<wbr>Browser<wbr>Environment</a>
 							</li>
@@ -232,14 +257,20 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/preview.previewwidgetoptions.html" class="tsd-kind-icon">Preview<wbr>Widget<wbr>Options</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/preview.rendercontentparams-2.html" class="tsd-kind-icon">Render<wbr>Content<wbr>Params</a>
+					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="../modules/preview.html#previewpreferences" class="tsd-kind-icon">Preview<wbr>Preferences</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/preview.html#default_icon" class="tsd-kind-icon">DEFAULT_<wbr>ICON</a>
+					<li class=" tsd-kind-property tsd-parent-kind-module">
+						<a href="../modules/preview.html#default" class="tsd-kind-icon">default</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="../modules/preview.html#preview_widget_class" class="tsd-kind-icon">PREVIEW_<wbr>WIDGET_<wbr>CLASS</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/preview.html#previewconfigschema" class="tsd-kind-icon">Preview<wbr>Config<wbr>Schema</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="../modules/preview.html#previewhandler-2" class="tsd-kind-icon">Preview<wbr>Handler</a>
@@ -253,23 +284,11 @@
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="../modules/preview.html#previewwidgetoptions-1" class="tsd-kind-icon">Preview<wbr>Widget<wbr>Options</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/preview.html#debounce" class="tsd-kind-icon">debounce</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/preview.html#throttle" class="tsd-kind-icon">throttle</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/preview.html#widgetcounter" class="tsd-kind-icon">widget<wbr>Counter</a>
-					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="../modules/preview.html#bindpreviewpreferences" class="tsd-kind-icon">bind<wbr>Preview<wbr>Preferences</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="../modules/preview.html#createpreviewpreferences" class="tsd-kind-icon">create<wbr>Preview<wbr>Preferences</a>
-					</li>
-					<li class=" tsd-kind-object-literal tsd-parent-kind-module">
-						<a href="../modules/preview.html#previewconfigschema" class="tsd-kind-icon">Preview<wbr>Config<wbr>Schema</a>
 					</li>
 				</ul>
 			</nav>
@@ -282,7 +301,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
@@ -292,6 +310,7 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">

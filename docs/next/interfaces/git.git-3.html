@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/git.html">git</a>
@@ -87,22 +86,10 @@
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel">
-				<h3>Implemented by</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../classes/git.dugitegit.html" class="tsd-signature-type">DugiteGit</a></li>
-				</ul>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="git.git-3.html#null" class="tsd-kind-icon">NULL</a></li>
-							</ul>
-						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
@@ -112,12 +99,10 @@
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="git.git-3.html#checkout" class="tsd-kind-icon">checkout</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="git.git-3.html#clone" class="tsd-kind-icon">clone</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="git.git-3.html#commit" class="tsd-kind-icon">commit</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="git.git-3.html#create" class="tsd-kind-icon">create</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="git.git-3.html#diff" class="tsd-kind-icon">diff</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="git.git-3.html#dispose" class="tsd-kind-icon">dispose</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="git.git-3.html#exec" class="tsd-kind-icon">exec</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="git.git-3.html#fetch" class="tsd-kind-icon">fetch</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="git.git-3.html#is" class="tsd-kind-icon">is</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="git.git-3.html#log" class="tsd-kind-icon">log</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="git.git-3.html#lsfiles" class="tsd-kind-icon">ls<wbr>Files</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="git.git-3.html#merge" class="tsd-kind-icon">merge</a></li>
@@ -137,31 +122,18 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="null" class="tsd-anchor"></a>
-					<h3>NULL</h3>
-					<div class="tsd-signature tsd-kind-icon">NULL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Disposable</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in packages/core/lib/common/disposable.d.ts:26</li>
-						</ul>
-					</aside>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="add" class="tsd-anchor"></a>
 					<h3>add</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">add<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a>, uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a>, uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L632">packages/git/src/common/git.ts:632</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L632">packages/git/src/common/git.ts:632</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -173,7 +145,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a></h5>
+									<h5>repository: <a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the repository to stage the files.</p>
 									</div>
@@ -193,13 +165,13 @@
 					<a name="blame" class="tsd-anchor"></a>
 					<h3>blame</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">blame<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a>, uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="git.git-2.options.blame.html" class="tsd-signature-type">Blame</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.gitfileblame-1.html" class="tsd-signature-type">GitFileBlame</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">blame<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a>, uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="git.git-2.options.blame.html" class="tsd-signature-type" data-tsd-kind="Interface">Blame</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="git.gitfileblame-1.html" class="tsd-signature-type" data-tsd-kind="Interface">GitFileBlame</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L830">packages/git/src/common/git.ts:830</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L830">packages/git/src/common/git.ts:830</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -210,7 +182,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a></h5>
+									<h5>repository: <a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the repository which contains the given file.</p>
 									</div>
@@ -222,13 +194,13 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="git.git-2.options.blame.html" class="tsd-signature-type">Blame</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="git.git-2.options.blame.html" class="tsd-signature-type" data-tsd-kind="Interface">Blame</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>more options refining the <code>git blame</code>.</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.gitfileblame-1.html" class="tsd-signature-type">GitFileBlame</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="git.gitfileblame-1.html" class="tsd-signature-type" data-tsd-kind="Interface">GitFileBlame</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -236,15 +208,15 @@
 					<a name="branch" class="tsd-anchor"></a>
 					<h3>branch</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">branch<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"current"</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.branch-1.html" class="tsd-signature-type">Branch</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">branch<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"local"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"remote"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"all"</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.branch-1.html" class="tsd-signature-type">Branch</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">branch<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a>, options<span class="tsd-signature-symbol">: </span><a href="git.git-2.options.branchcommand.create.html" class="tsd-signature-type">Create</a><span class="tsd-signature-symbol"> | </span><a href="git.git-2.options.branchcommand.rename.html" class="tsd-signature-type">Rename</a><span class="tsd-signature-symbol"> | </span><a href="git.git-2.options.branchcommand.delete.html" class="tsd-signature-type">Delete</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">branch<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;current&quot;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="git.branch-1.html" class="tsd-signature-type" data-tsd-kind="Interface">Branch</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">branch<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;local&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;remote&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;all&quot;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.branch-1.html" class="tsd-signature-type" data-tsd-kind="Interface">Branch</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">branch<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a>, options<span class="tsd-signature-symbol">: </span><a href="git.git-2.options.branchcommand.create.html" class="tsd-signature-type" data-tsd-kind="Interface">Create</a><span class="tsd-signature-symbol"> | </span><a href="git.git-2.options.branchcommand.rename.html" class="tsd-signature-type" data-tsd-kind="Interface">Rename</a><span class="tsd-signature-symbol"> | </span><a href="git.git-2.options.branchcommand.delete.html" class="tsd-signature-type" data-tsd-kind="Interface">Delete</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L650">packages/git/src/common/git.ts:650</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L650">packages/git/src/common/git.ts:650</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -255,26 +227,26 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a></h5>
+									<h5>repository: <a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a></h5>
 								</li>
 								<li>
-									<h5>options: <span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"current"</span><span class="tsd-signature-symbol"> }</span></h5>
+									<h5>options: <span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;current&quot;</span><span class="tsd-signature-symbol"> }</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the type of the branch, which is always the <code>current</code>.</p>
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter">
-											<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"current"</span></h5>
+											<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;current&quot;</span></h5>
 										</li>
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.branch-1.html" class="tsd-signature-type">Branch</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="git.branch-1.html" class="tsd-signature-type" data-tsd-kind="Interface">Branch</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L658">packages/git/src/common/git.ts:658</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L658">packages/git/src/common/git.ts:658</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -285,26 +257,26 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a></h5>
+									<h5>repository: <a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a></h5>
 								</li>
 								<li>
-									<h5>options: <span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"local"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"remote"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"all"</span><span class="tsd-signature-symbol"> }</span></h5>
+									<h5>options: <span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;local&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;remote&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;all&quot;</span><span class="tsd-signature-symbol"> }</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the type of the branch, which is either the <code>local</code>, the <code>remote</code>, or <code>all</code> of them.</p>
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter">
-											<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"local"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"remote"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"all"</span></h5>
+											<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;local&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;remote&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;all&quot;</span></h5>
 										</li>
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.branch-1.html" class="tsd-signature-type">Branch</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.branch-1.html" class="tsd-signature-type" data-tsd-kind="Interface">Branch</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L667">packages/git/src/common/git.ts:667</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L667">packages/git/src/common/git.ts:667</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -315,10 +287,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a></h5>
+									<h5>repository: <a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a></h5>
 								</li>
 								<li>
-									<h5>options: <a href="git.git-2.options.branchcommand.create.html" class="tsd-signature-type">Create</a><span class="tsd-signature-symbol"> | </span><a href="git.git-2.options.branchcommand.rename.html" class="tsd-signature-type">Rename</a><span class="tsd-signature-symbol"> | </span><a href="git.git-2.options.branchcommand.delete.html" class="tsd-signature-type">Delete</a></h5>
+									<h5>options: <a href="git.git-2.options.branchcommand.create.html" class="tsd-signature-type" data-tsd-kind="Interface">Create</a><span class="tsd-signature-symbol"> | </span><a href="git.git-2.options.branchcommand.rename.html" class="tsd-signature-type" data-tsd-kind="Interface">Rename</a><span class="tsd-signature-symbol"> | </span><a href="git.git-2.options.branchcommand.delete.html" class="tsd-signature-type" data-tsd-kind="Interface">Delete</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>further Git command refinements for the branch modification.</p>
 									</div>
@@ -332,13 +304,13 @@
 					<a name="checkout" class="tsd-anchor"></a>
 					<h3>checkout</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">checkout<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a>, options<span class="tsd-signature-symbol">: </span><a href="git.git-2.options.checkout.checkoutbranch.html" class="tsd-signature-type">CheckoutBranch</a><span class="tsd-signature-symbol"> | </span><a href="git.git-2.options.checkout.workingtreefile.html" class="tsd-signature-type">WorkingTreeFile</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">checkout<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a>, options<span class="tsd-signature-symbol">: </span><a href="git.git-2.options.checkout.checkoutbranch.html" class="tsd-signature-type" data-tsd-kind="Interface">CheckoutBranch</a><span class="tsd-signature-symbol"> | </span><a href="git.git-2.options.checkout.workingtreefile.html" class="tsd-signature-type" data-tsd-kind="Interface">WorkingTreeFile</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L680">packages/git/src/common/git.ts:680</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L680">packages/git/src/common/git.ts:680</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -349,13 +321,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a></h5>
+									<h5>repository: <a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the repository to where the <code>git checkout</code> has to be performed.</p>
 									</div>
 								</li>
 								<li>
-									<h5>options: <a href="git.git-2.options.checkout.checkoutbranch.html" class="tsd-signature-type">CheckoutBranch</a><span class="tsd-signature-symbol"> | </span><a href="git.git-2.options.checkout.workingtreefile.html" class="tsd-signature-type">WorkingTreeFile</a></h5>
+									<h5>options: <a href="git.git-2.options.checkout.checkoutbranch.html" class="tsd-signature-type" data-tsd-kind="Interface">CheckoutBranch</a><span class="tsd-signature-symbol"> | </span><a href="git.git-2.options.checkout.workingtreefile.html" class="tsd-signature-type" data-tsd-kind="Interface">WorkingTreeFile</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>further checkout options.</p>
 									</div>
@@ -369,13 +341,13 @@
 					<a name="clone" class="tsd-anchor"></a>
 					<h3>clone</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">clone<span class="tsd-signature-symbol">(</span>remoteUrl<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><a href="git.git-2.options.clone.html" class="tsd-signature-type">Clone</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">clone<span class="tsd-signature-symbol">(</span>remoteUrl<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><a href="git.git-2.options.clone.html" class="tsd-signature-type" data-tsd-kind="Interface">Clone</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L611">packages/git/src/common/git.ts:611</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L611">packages/git/src/common/git.ts:611</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -392,13 +364,13 @@
 									</div>
 								</li>
 								<li>
-									<h5>options: <a href="git.git-2.options.clone.html" class="tsd-signature-type">Clone</a></h5>
+									<h5>options: <a href="git.git-2.options.clone.html" class="tsd-signature-type" data-tsd-kind="Interface">Clone</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the clone options.</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -406,13 +378,13 @@
 					<a name="commit" class="tsd-anchor"></a>
 					<h3>commit</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">commit<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a>, message<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="git.git-2.options.commit.html" class="tsd-signature-type">Commit</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">commit<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a>, message<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="git.git-2.options.commit.html" class="tsd-signature-type" data-tsd-kind="Interface">Commit</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L688">packages/git/src/common/git.ts:688</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L688">packages/git/src/common/git.ts:688</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -423,19 +395,19 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a></h5>
+									<h5>repository: <a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the repository where the staged changes has to be committed.</p>
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> message: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> message: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the optional commit message.</p>
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="git.git-2.options.commit.html" class="tsd-signature-type">Commit</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="git.git-2.options.commit.html" class="tsd-signature-type" data-tsd-kind="Interface">Commit</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -443,51 +415,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="create" class="tsd-anchor"></a>
-					<h3>create</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">create<span class="tsd-signature-symbol">(</span>func<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Disposable</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in packages/core/lib/common/disposable.d.ts:25</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>func: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-signature">
-											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Disposable</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="diff" class="tsd-anchor"></a>
 					<h3>diff</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">diff<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a>, options<span class="tsd-signature-symbol">?: </span><a href="git.git-2.options.diff.html" class="tsd-signature-type">Diff</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.gitfilechange-1.html" class="tsd-signature-type">GitFileChange</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">diff<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a>, options<span class="tsd-signature-symbol">?: </span><a href="git.git-2.options.diff.html" class="tsd-signature-type" data-tsd-kind="Interface">Diff</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.gitfilechange-1.html" class="tsd-signature-type" data-tsd-kind="Interface">GitFileChange</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L804">packages/git/src/common/git.ts:804</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L804">packages/git/src/common/git.ts:804</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -498,19 +435,19 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a></h5>
+									<h5>repository: <a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the repository where where the diff has to be calculated.</p>
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="git.git-2.options.diff.html" class="tsd-signature-type">Diff</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="git.git-2.options.diff.html" class="tsd-signature-type" data-tsd-kind="Interface">Diff</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>optional configuration for further refining the <code>git diff</code> command execution.</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.gitfilechange-1.html" class="tsd-signature-type">GitFileChange</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.gitfilechange-1.html" class="tsd-signature-type" data-tsd-kind="Interface">GitFileChange</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -523,7 +460,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="debug.debugservice.html">DebugService</a>.<a href="debug.debugservice.html#dispose">dispose</a></p>
+								<p>Inherited from Disposable.dispose</p>
 								<ul>
 									<li>Defined in packages/core/lib/common/disposable.d.ts:21</li>
 								</ul>
@@ -541,13 +478,13 @@
 					<a name="exec" class="tsd-anchor"></a>
 					<h3>exec</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">exec<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a>, args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, options<span class="tsd-signature-symbol">?: </span><a href="git.git-2.options.execution.html" class="tsd-signature-type">Execution</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.gitresult-1.html" class="tsd-signature-type">GitResult</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">exec<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a>, args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, options<span class="tsd-signature-symbol">?: </span><a href="git.git-2.options.execution.html" class="tsd-signature-type" data-tsd-kind="Interface">Execution</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.gitresult-1.html" class="tsd-signature-type" data-tsd-kind="Interface">GitResult</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L796">packages/git/src/common/git.ts:796</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L796">packages/git/src/common/git.ts:796</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -559,7 +496,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a></h5>
+									<h5>repository: <a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the repository where one can execute the command. (Although the repository path is not necessarily mandatory for each Git commands,
 										such as <code>git config -l</code>, or <code>git --version</code>, we treat the repository as a required argument to have a symmetric API.)</p>
@@ -572,13 +509,13 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="git.git-2.options.execution.html" class="tsd-signature-type">Execution</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="git.git-2.options.execution.html" class="tsd-signature-type" data-tsd-kind="Interface">Execution</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>options can be used to tweaked additional configurations for the low-level command execution.</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.gitresult-1.html" class="tsd-signature-type">GitResult</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.gitresult-1.html" class="tsd-signature-type" data-tsd-kind="Interface">GitResult</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -586,13 +523,13 @@
 					<a name="fetch" class="tsd-anchor"></a>
 					<h3>fetch</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">fetch<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a>, options<span class="tsd-signature-symbol">?: </span><a href="git.git-2.options.fetch.html" class="tsd-signature-type">Fetch</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">fetch<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a>, options<span class="tsd-signature-symbol">?: </span><a href="git.git-2.options.fetch.html" class="tsd-signature-type" data-tsd-kind="Interface">Fetch</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L697">packages/git/src/common/git.ts:697</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L697">packages/git/src/common/git.ts:697</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -604,13 +541,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a></h5>
+									<h5>repository: <a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the repository to fetch from.</p>
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="git.git-2.options.fetch.html" class="tsd-signature-type">Fetch</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="git.git-2.options.fetch.html" class="tsd-signature-type" data-tsd-kind="Interface">Fetch</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>optional options for <code>git fetch</code> refinement.</p>
 									</div>
@@ -621,39 +558,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="is" class="tsd-anchor"></a>
-					<h3>is</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">is<span class="tsd-signature-symbol">(</span>arg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Disposable</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in packages/core/lib/common/disposable.d.ts:24</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>arg: <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">arg</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Disposable</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="log" class="tsd-anchor"></a>
 					<h3>log</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">log<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a>, options<span class="tsd-signature-symbol">?: </span><a href="git.git-2.options.log.html" class="tsd-signature-type">Log</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.commitwithchanges-1.html" class="tsd-signature-type">CommitWithChanges</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">log<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a>, options<span class="tsd-signature-symbol">?: </span><a href="git.git-2.options.log.html" class="tsd-signature-type" data-tsd-kind="Interface">Log</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.commitwithchanges-1.html" class="tsd-signature-type" data-tsd-kind="Interface">CommitWithChanges</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L812">packages/git/src/common/git.ts:812</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L812">packages/git/src/common/git.ts:812</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -664,19 +578,19 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a></h5>
+									<h5>repository: <a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the repository where the log has to be calculated.</p>
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="git.git-2.options.log.html" class="tsd-signature-type">Log</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="git.git-2.options.log.html" class="tsd-signature-type" data-tsd-kind="Interface">Log</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>optional configuration for further refining the <code>git log</code> command execution.</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.commitwithchanges-1.html" class="tsd-signature-type">CommitWithChanges</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.commitwithchanges-1.html" class="tsd-signature-type" data-tsd-kind="Interface">CommitWithChanges</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -684,14 +598,14 @@
 					<a name="lsfiles" class="tsd-anchor"></a>
 					<h3>ls<wbr>Files</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">ls<wbr>Files<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a>, uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>errorUnmatch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">ls<wbr>Files<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a>, uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="git.git-2.options.lsfiles.html" class="tsd-signature-type">LsFiles</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">ls<wbr>Files<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a>, uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>errorUnmatch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">ls<wbr>Files<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a>, uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="git.git-2.options.lsfiles.html" class="tsd-signature-type" data-tsd-kind="Interface">LsFiles</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L835">packages/git/src/common/git.ts:835</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L835">packages/git/src/common/git.ts:835</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -702,7 +616,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a></h5>
+									<h5>repository: <a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a></h5>
 								</li>
 								<li>
 									<h5>uri: <span class="tsd-signature-type">string</span></h5>
@@ -721,7 +635,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L844">packages/git/src/common/git.ts:844</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L844">packages/git/src/common/git.ts:844</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -732,7 +646,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a></h5>
+									<h5>repository: <a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the repository where the <code>git lf-files</code> has to be executed.</p>
 									</div>
@@ -744,7 +658,7 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="git.git-2.options.lsfiles.html" class="tsd-signature-type">LsFiles</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="git.git-2.options.lsfiles.html" class="tsd-signature-type" data-tsd-kind="Interface">LsFiles</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>further options for the command executions.</p>
 									</div>
@@ -758,13 +672,13 @@
 					<a name="merge" class="tsd-anchor"></a>
 					<h3>merge</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">merge<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a>, options<span class="tsd-signature-symbol">: </span><a href="git.git-2.options.merge.html" class="tsd-signature-type">Merge</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">merge<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a>, options<span class="tsd-signature-symbol">: </span><a href="git.git-2.options.merge.html" class="tsd-signature-type" data-tsd-kind="Interface">Merge</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L731">packages/git/src/common/git.ts:731</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L731">packages/git/src/common/git.ts:731</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -775,13 +689,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a></h5>
+									<h5>repository: <a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the repository to merge from.</p>
 									</div>
 								</li>
 								<li>
-									<h5>options: <a href="git.git-2.options.merge.html" class="tsd-signature-type">Merge</a></h5>
+									<h5>options: <a href="git.git-2.options.merge.html" class="tsd-signature-type" data-tsd-kind="Interface">Merge</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p><code>git merge</code> command refinements.</p>
 									</div>
@@ -795,13 +709,13 @@
 					<a name="pull" class="tsd-anchor"></a>
 					<h3>pull</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">pull<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a>, options<span class="tsd-signature-symbol">?: </span><a href="git.git-2.options.pull.html" class="tsd-signature-type">Pull</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">pull<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a>, options<span class="tsd-signature-symbol">?: </span><a href="git.git-2.options.pull.html" class="tsd-signature-type" data-tsd-kind="Interface">Pull</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L715">packages/git/src/common/git.ts:715</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L715">packages/git/src/common/git.ts:715</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -813,13 +727,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a></h5>
+									<h5>repository: <a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the repository to pull from.</p>
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="git.git-2.options.pull.html" class="tsd-signature-type">Pull</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="git.git-2.options.pull.html" class="tsd-signature-type" data-tsd-kind="Interface">Pull</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>optional refinements for the <code>git pull</code> command.</p>
 									</div>
@@ -833,13 +747,13 @@
 					<a name="push" class="tsd-anchor"></a>
 					<h3>push</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">push<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a>, options<span class="tsd-signature-symbol">?: </span><a href="git.git-2.options.push.html" class="tsd-signature-type">Push</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">push<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a>, options<span class="tsd-signature-symbol">?: </span><a href="git.git-2.options.push.html" class="tsd-signature-type" data-tsd-kind="Interface">Push</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L706">packages/git/src/common/git.ts:706</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L706">packages/git/src/common/git.ts:706</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -851,13 +765,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a></h5>
+									<h5>repository: <a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the repository to push to.</p>
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="git.git-2.options.push.html" class="tsd-signature-type">Push</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="git.git-2.options.push.html" class="tsd-signature-type" data-tsd-kind="Interface">Push</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>optional refinements for the <code>git push</code> command.</p>
 									</div>
@@ -871,14 +785,14 @@
 					<a name="remote" class="tsd-anchor"></a>
 					<h3>remote</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">remote<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">remote<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>verbose<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RemoteModel</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">remote<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">remote<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>verbose<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.remote-1.html" class="tsd-signature-type" data-tsd-kind="Interface">Remote</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L777">packages/git/src/common/git.ts:777</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L777">packages/git/src/common/git.ts:777</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -889,7 +803,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a></h5>
+									<h5>repository: <a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the repository to get the remote names.</p>
 									</div>
@@ -900,7 +814,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L785">packages/git/src/common/git.ts:785</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L785">packages/git/src/common/git.ts:785</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -911,7 +825,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a></h5>
+									<h5>repository: <a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the repository to get the remote objects.</p>
 									</div>
@@ -928,7 +842,7 @@
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RemoteModel</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.remote-1.html" class="tsd-signature-type" data-tsd-kind="Interface">Remote</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -936,13 +850,13 @@
 					<a name="repositories" class="tsd-anchor"></a>
 					<h3>repositories</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">repositories<span class="tsd-signature-symbol">(</span>workspaceRootUri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><a href="git.git-2.options.repositories.html" class="tsd-signature-type">Repositories</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">repositories<span class="tsd-signature-symbol">(</span>workspaceRootUri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><a href="git.git-2.options.repositories.html" class="tsd-signature-type" data-tsd-kind="Interface">Repositories</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L616">packages/git/src/common/git.ts:616</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L616">packages/git/src/common/git.ts:616</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -956,10 +870,10 @@
 									<h5>workspaceRootUri: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>options: <a href="git.git-2.options.repositories.html" class="tsd-signature-type">Repositories</a></h5>
+									<h5>options: <a href="git.git-2.options.repositories.html" class="tsd-signature-type" data-tsd-kind="Interface">Repositories</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -967,13 +881,13 @@
 					<a name="reset" class="tsd-anchor"></a>
 					<h3>reset</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">reset<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a>, options<span class="tsd-signature-symbol">: </span><a href="git.git-2.options.reset.html" class="tsd-signature-type">Reset</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">reset<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a>, options<span class="tsd-signature-symbol">: </span><a href="git.git-2.options.reset.html" class="tsd-signature-type" data-tsd-kind="Interface">Reset</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L723">packages/git/src/common/git.ts:723</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L723">packages/git/src/common/git.ts:723</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -984,13 +898,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a></h5>
+									<h5>repository: <a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the repository which state has to be reset.</p>
 									</div>
 								</li>
 								<li>
-									<h5>options: <a href="git.git-2.options.reset.html" class="tsd-signature-type">Reset</a></h5>
+									<h5>options: <a href="git.git-2.options.reset.html" class="tsd-signature-type" data-tsd-kind="Interface">Reset</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>further clarifying the <code>git reset</code> command.</p>
 									</div>
@@ -1004,13 +918,13 @@
 					<a name="revparse" class="tsd-anchor"></a>
 					<h3>rev<wbr>Parse</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">rev<wbr>Parse<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a>, options<span class="tsd-signature-symbol">: </span><a href="git.git-2.options.revparse.html" class="tsd-signature-type">RevParse</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">rev<wbr>Parse<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a>, options<span class="tsd-signature-symbol">: </span><a href="git.git-2.options.revparse.html" class="tsd-signature-type" data-tsd-kind="Interface">RevParse</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L821">packages/git/src/common/git.ts:821</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L821">packages/git/src/common/git.ts:821</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1022,19 +936,19 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a></h5>
+									<h5>repository: <a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the repository where the ref may be found.</p>
 									</div>
 								</li>
 								<li>
-									<h5>options: <a href="git.git-2.options.revparse.html" class="tsd-signature-type">RevParse</a></h5>
+									<h5>options: <a href="git.git-2.options.revparse.html" class="tsd-signature-type" data-tsd-kind="Interface">RevParse</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>configuration containing the ref and optionally other properties for further refining the <code>git rev-parse</code> command execution.</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1042,13 +956,13 @@
 					<a name="show" class="tsd-anchor"></a>
 					<h3>show</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">show<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a>, uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="git.git-2.options.show.html" class="tsd-signature-type">Show</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">show<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a>, uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="git.git-2.options.show.html" class="tsd-signature-type" data-tsd-kind="Interface">Show</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L741">packages/git/src/common/git.ts:741</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L741">packages/git/src/common/git.ts:741</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1060,7 +974,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a></h5>
+									<h5>repository: <a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the repository to get the file content from.</p>
 									</div>
@@ -1072,7 +986,7 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="git.git-2.options.show.html" class="tsd-signature-type">Show</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="git.git-2.options.show.html" class="tsd-signature-type" data-tsd-kind="Interface">Show</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the options for further refining the <code>git show</code>.</p>
 									</div>
@@ -1086,16 +1000,16 @@
 					<a name="stash" class="tsd-anchor"></a>
 					<h3>stash</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">stash<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a>, options<span class="tsd-signature-symbol">?: </span><a href="../enums/filesystem.filesystemprovidercapabilities.html#readonly" class="tsd-signature-type">Readonly</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>action<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"push"</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">stash<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a>, options<span class="tsd-signature-symbol">: </span><a href="../enums/filesystem.filesystemprovidercapabilities.html#readonly" class="tsd-signature-type">Readonly</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"list"</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.stashentry-1.html" class="tsd-signature-type">StashEntry</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">stash<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a>, options<span class="tsd-signature-symbol">: </span><a href="../enums/filesystem.filesystemprovidercapabilities.html#readonly" class="tsd-signature-type">Readonly</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"clear"</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">stash<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a>, options<span class="tsd-signature-symbol">: </span><a href="../enums/filesystem.filesystemprovidercapabilities.html#readonly" class="tsd-signature-type">Readonly</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"apply"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"pop"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"drop"</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">stash<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>action<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">&quot;push&quot;</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">stash<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;list&quot;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.stashentry-1.html" class="tsd-signature-type" data-tsd-kind="Interface">StashEntry</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">stash<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;clear&quot;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">stash<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;drop&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;pop&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;apply&quot;</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L746">packages/git/src/common/git.ts:746</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L746">packages/git/src/common/git.ts:746</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1106,10 +1020,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a></h5>
+									<h5>repository: <a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../enums/filesystem.filesystemprovidercapabilities.html#readonly" class="tsd-signature-type">Readonly</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>action<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"push"</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>action<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">&quot;push&quot;</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1117,7 +1031,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L751">packages/git/src/common/git.ts:751</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L751">packages/git/src/common/git.ts:751</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1128,18 +1042,18 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a></h5>
+									<h5>repository: <a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a></h5>
 								</li>
 								<li>
-									<h5>options: <a href="../enums/filesystem.filesystemprovidercapabilities.html#readonly" class="tsd-signature-type">Readonly</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"list"</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>options: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;list&quot;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.stashentry-1.html" class="tsd-signature-type">StashEntry</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.stashentry-1.html" class="tsd-signature-type" data-tsd-kind="Interface">StashEntry</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L756">packages/git/src/common/git.ts:756</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L756">packages/git/src/common/git.ts:756</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1150,10 +1064,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a></h5>
+									<h5>repository: <a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a></h5>
 								</li>
 								<li>
-									<h5>options: <a href="../enums/filesystem.filesystemprovidercapabilities.html#readonly" class="tsd-signature-type">Readonly</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"clear"</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>options: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;clear&quot;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1161,7 +1075,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L770">packages/git/src/common/git.ts:770</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L770">packages/git/src/common/git.ts:770</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1179,10 +1093,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a></h5>
+									<h5>repository: <a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a></h5>
 								</li>
 								<li>
-									<h5>options: <a href="../enums/filesystem.filesystemprovidercapabilities.html#readonly" class="tsd-signature-type">Readonly</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"apply"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"pop"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"drop"</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>options: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;drop&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;pop&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;apply&quot;</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1193,13 +1107,13 @@
 					<a name="status" class="tsd-anchor"></a>
 					<h3>status</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">status<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/git.workingdirectorystatus-1.html" class="tsd-signature-type">WorkingDirectoryStatus</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">status<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.workingdirectorystatus-2.html" class="tsd-signature-type" data-tsd-kind="Interface">WorkingDirectoryStatus</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L623">packages/git/src/common/git.ts:623</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L623">packages/git/src/common/git.ts:623</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1210,10 +1124,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a></h5>
+									<h5>repository: <a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/git.workingdirectorystatus-1.html" class="tsd-signature-type">WorkingDirectoryStatus</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="git.workingdirectorystatus-2.html" class="tsd-signature-type" data-tsd-kind="Interface">WorkingDirectoryStatus</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1221,13 +1135,13 @@
 					<a name="unstage" class="tsd-anchor"></a>
 					<h3>unstage</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">unstage<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a>, uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, options<span class="tsd-signature-symbol">?: </span><a href="git.git-2.options.unstage.html" class="tsd-signature-type">Unstage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">unstage<span class="tsd-signature-symbol">(</span>repository<span class="tsd-signature-symbol">: </span><a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a>, uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, options<span class="tsd-signature-symbol">?: </span><a href="git.git-2.options.unstage.html" class="tsd-signature-type" data-tsd-kind="Interface">Unstage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/common/git.ts#L642">packages/git/src/common/git.ts:642</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/common/git.ts#L642">packages/git/src/common/git.ts:642</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1239,7 +1153,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>repository: <a href="../modules/git.repository-1.html" class="tsd-signature-type">Repository</a></h5>
+									<h5>repository: <a href="git.repository-2.html" class="tsd-signature-type" data-tsd-kind="Interface">Repository</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the repository to where the staged files have to be removed from.</p>
 									</div>
@@ -1251,7 +1165,7 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="git.git-2.options.unstage.html" class="tsd-signature-type">Unstage</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="git.git-2.options.unstage.html" class="tsd-signature-type" data-tsd-kind="Interface">Unstage</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>optional refinements for the the unstaging operation.</p>
 									</div>
@@ -1266,14 +1180,23 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/git.html">git</a>
 						<ul>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.blameannotationskeybindingcontext.html">Blame<wbr>Annotations<wbr>Keybinding<wbr>Context</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.blamecommands.html">Blame<wbr>Commands</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.blamedecorator.html">Blame<wbr>Decorator</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.dirtydiffmodel.html">Dirty<wbr>Diff<wbr>Model</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.git_commands.html">GIT_<wbr>COMMANDS</a>
@@ -1288,16 +1211,37 @@
 								<a href="../modules/git.gitbindingoptions.html">Git<wbr>Binding<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitblameparser.html">Git<wbr>Blame<wbr>Parser</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.gitcommitdetailuri.html">Git<wbr>Commit<wbr>Detail<wbr>Uri</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitcommitmessagevalidator.html">Git<wbr>Commit<wbr>Message<wbr>Validator</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.gitdiffcommands.html">Git<wbr>Diff<wbr>Commands</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitdifftreemodel.html">Git<wbr>Diff<wbr>Tree<wbr>Model</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitfilestatus-1.html">Git<wbr>File<wbr>Status</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitprompt.html">Git<wbr>Prompt</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitscmprovider.html">Git<wbr>Scm<wbr>Provider</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.gitscmrepository.html">Git<wbr>Scm<wbr>Repository</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.gitstatuschangeevent-1.html">Git<wbr>Status<wbr>Change<wbr>Event</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitsyncservice.html">Git<wbr>Sync<wbr>Service</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.gitutils-1.html">Git<wbr>Utils</a>
@@ -1322,9 +1266,6 @@
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
 						<a href="git.git-3.html" class="tsd-kind-icon">Git</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="git.git-3.html#null" class="tsd-kind-icon">NULL</a>
-							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="git.git-3.html#add" class="tsd-kind-icon">add</a>
 							</li>
@@ -1344,9 +1285,6 @@
 								<a href="git.git-3.html#commit" class="tsd-kind-icon">commit</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="git.git-3.html#create" class="tsd-kind-icon">create</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="git.git-3.html#diff" class="tsd-kind-icon">diff</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
@@ -1357,9 +1295,6 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="git.git-3.html#fetch" class="tsd-kind-icon">fetch</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="git.git-3.html#is" class="tsd-kind-icon">is</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="git.git-3.html#log" class="tsd-kind-icon">log</a>
@@ -1415,7 +1350,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
@@ -1425,7 +1359,6 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">

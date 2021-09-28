@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="metrics.html">metrics</a>
@@ -94,11 +93,16 @@
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-module"><a href="metrics.html#default" class="tsd-kind-icon">default</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="metrics.html#metricscontribution-2" class="tsd-kind-icon">Metrics<wbr>Contribution</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="metrics.html#prometheus_regexp-1" class="tsd-kind-icon">PROMETHEUS_<wbr>REGEXP</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="metrics.html#metricsname" class="tsd-kind-icon">metrics<wbr>Name</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -125,7 +129,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
 					<a name="metricscontribution" class="tsd-anchor"></a>
 					<h3>Metrics<wbr>Contribution</h3>
-					Re-exports <a href="../interfaces/metrics.metricscontribution-1.html">MetricsContribution</a>
+					Re-exports <a href="metrics.html#metricscontribution-2">MetricsContribution</a>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
 					<a name="nodemetricscontribution" class="tsd-anchor"></a>
@@ -144,14 +148,24 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-module">
+					<a name="default" class="tsd-anchor"></a>
+					<h3>default</h3>
+					<div class="tsd-signature tsd-kind-icon">default<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ContainerModule</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="metricscontribution-2" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> Metrics<wbr>Contribution</h3>
-					<div class="tsd-signature tsd-kind-icon">Metrics<wbr>Contribution<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">unique symbol</span><span class="tsd-signature-symbol"> = Symbol(&#x27;MetricsContribution&#x27;)</span></div>
+					<div class="tsd-signature tsd-kind-icon">Metrics<wbr>Contribution<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><a href="metrics.html#metricscontribution-2" class="tsd-signature-type" data-tsd-kind="Variable">MetricsContribution</a><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/metrics/src/node/metrics-contribution.ts#L16">packages/metrics/src/node/metrics-contribution.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/metrics/src/node/metrics-contribution.ts#L16">packages/metrics/src/node/metrics-contribution.ts:16</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -172,20 +186,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="prometheus_regexp-1" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> PROMETHEUS_<wbr>REGEXP</h3>
-					<div class="tsd-signature tsd-kind-icon">PROMETHEUS_<wbr>REGEXP<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = /^[a-zA-Z_:][a-zA-Z0-9_:]*/</span></div>
+					<div class="tsd-signature tsd-kind-icon">PROMETHEUS_<wbr>REGEXP<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/metrics/src/node/prometheus.ts#L25">packages/metrics/src/node/prometheus.ts:25</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-					<a name="metricsname" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> metrics<wbr>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">metrics<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"theia_extension_version"</span><span class="tsd-signature-symbol"> = &quot;theia_extension_version&quot;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/metrics/src/node/extensions-metrics-contribution.ts#L21">packages/metrics/src/node/extensions-metrics-contribution.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/metrics/src/node/prometheus.ts#L25">packages/metrics/src/node/prometheus.ts:25</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -202,7 +206,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/metrics/src/node/prometheus.ts#L17">packages/metrics/src/node/prometheus.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/metrics/src/node/prometheus.ts#L17">packages/metrics/src/node/prometheus.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -234,8 +238,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="metrics.html">metrics</a>
@@ -274,14 +278,14 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/metrics.metricscontribution-1.html" class="tsd-kind-icon">Metrics<wbr>Contribution</a>
 					</li>
+					<li class=" tsd-kind-property tsd-parent-kind-module">
+						<a href="metrics.html#default" class="tsd-kind-icon">default</a>
+					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="metrics.html#metricscontribution-2" class="tsd-kind-icon">Metrics<wbr>Contribution</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="metrics.html#prometheus_regexp-1" class="tsd-kind-icon">PROMETHEUS_<wbr>REGEXP</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="metrics.html#metricsname" class="tsd-kind-icon">metrics<wbr>Name</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="metrics.html#toprometheusvalidname-1" class="tsd-kind-icon">to<wbr>Prometheus<wbr>Valid<wbr>Name</a>
@@ -297,7 +301,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

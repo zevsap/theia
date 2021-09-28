@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="task.html">task</a>
@@ -72,14 +71,6 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="task.watchingmatcher-1.html#activeonstart" class="tsd-kind-icon">active<wbr>OnStart</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="task.watchingmatcher-1.html#beginspattern" class="tsd-kind-icon">begins<wbr>Pattern</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="task.watchingmatcher-1.html#endspattern" class="tsd-kind-icon">ends<wbr>Pattern</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="task.watchingmatcher-1.html#fromwatchingmatchercontribution" class="tsd-kind-icon">from<wbr>Watching<wbr>Matcher<wbr>Contribution</a></li>
@@ -89,60 +80,27 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-					<a name="activeonstart" class="tsd-anchor"></a>
-					<h3>active<wbr>OnStart</h3>
-					<div class="tsd-signature tsd-kind-icon">active<wbr>OnStart<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/common/problem-matcher-protocol.ts#L79">packages/task/src/common/problem-matcher-protocol.ts:79</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-					<a name="beginspattern" class="tsd-anchor"></a>
-					<h3>begins<wbr>Pattern</h3>
-					<div class="tsd-signature tsd-kind-icon">begins<wbr>Pattern<span class="tsd-signature-symbol">:</span> <a href="../interfaces/task.watchingpattern-1.html" class="tsd-signature-type">WatchingPattern</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/common/problem-matcher-protocol.ts#L80">packages/task/src/common/problem-matcher-protocol.ts:80</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-					<a name="endspattern" class="tsd-anchor"></a>
-					<h3>ends<wbr>Pattern</h3>
-					<div class="tsd-signature tsd-kind-icon">ends<wbr>Pattern<span class="tsd-signature-symbol">:</span> <a href="../interfaces/task.watchingpattern-1.html" class="tsd-signature-type">WatchingPattern</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/common/problem-matcher-protocol.ts#L81">packages/task/src/common/problem-matcher-protocol.ts:81</a></li>
-						</ul>
-					</aside>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
 					<a name="fromwatchingmatchercontribution" class="tsd-anchor"></a>
 					<h3>from<wbr>Watching<wbr>Matcher<wbr>Contribution</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">from<wbr>Watching<wbr>Matcher<wbr>Contribution<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.watchingmatchercontribution-1.html" class="tsd-signature-type">WatchingMatcherContribution</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="task.watchingmatcher-1.html" class="tsd-signature-type">WatchingMatcher</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">from<wbr>Watching<wbr>Matcher<wbr>Contribution<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.watchingmatchercontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">WatchingMatcherContribution</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/task.watchingmatcher-2.html" class="tsd-signature-type" data-tsd-kind="Interface">WatchingMatcher</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/common/problem-matcher-protocol.ts#L84">packages/task/src/common/problem-matcher-protocol.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/common/problem-matcher-protocol.ts#L84">packages/task/src/common/problem-matcher-protocol.ts:84</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>value: <a href="../interfaces/task.watchingmatchercontribution-1.html" class="tsd-signature-type">WatchingMatcherContribution</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>value: <a href="../interfaces/task.watchingmatchercontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">WatchingMatcherContribution</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="task.watchingmatcher-1.html" class="tsd-signature-type">WatchingMatcher</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/task.watchingmatcher-2.html" class="tsd-signature-type" data-tsd-kind="Interface">WatchingMatcher</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -151,14 +109,23 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="task.html">task</a>
 						<ul>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="task.applytokind-1.html">Apply<wbr>ToKind</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="task.configuretaskaction.html">Configure<wbr>Task<wbr>Action</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="task.filelocationkind-1.html">File<wbr>Location<wbr>Kind</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="task.problemlocationkind-1.html">Problem<wbr>Location<wbr>Kind</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="task.problemmatchdata-1.html">Problem<wbr>Match<wbr>Data</a>
@@ -177,6 +144,12 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="task.taskcommands.html">Task<wbr>Commands</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="task.taskconfigurationmanager.html">Task<wbr>Configuration<wbr>Manager</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="task.taskconfigurationmodel.html">Task<wbr>Configuration<wbr>Model</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="task.taskcustomization-1.html">Task<wbr>Customization</a>
@@ -199,15 +172,6 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-property tsd-parent-kind-namespace">
-						<a href="task.watchingmatcher-1.html#activeonstart" class="tsd-kind-icon">active<wbr>OnStart</a>
-					</li>
-					<li class=" tsd-kind-property tsd-parent-kind-namespace">
-						<a href="task.watchingmatcher-1.html#beginspattern" class="tsd-kind-icon">begins<wbr>Pattern</a>
-					</li>
-					<li class=" tsd-kind-property tsd-parent-kind-namespace">
-						<a href="task.watchingmatcher-1.html#endspattern" class="tsd-kind-icon">ends<wbr>Pattern</a>
-					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-namespace">
 						<a href="task.watchingmatcher-1.html#fromwatchingmatchercontribution" class="tsd-kind-icon">from<wbr>Watching<wbr>Matcher<wbr>Contribution</a>
 					</li>
@@ -222,7 +186,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

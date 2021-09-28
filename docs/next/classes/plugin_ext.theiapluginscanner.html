@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/plugin_ext.html">plugin-ext</a>
@@ -74,10 +73,7 @@
 						<span class="target">TheiaPluginScanner</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<a href="plugin_ext.theiapluginscannerelectron.html" class="tsd-signature-type">TheiaPluginScannerElectron</a>
-							</li>
-							<li>
-								<a href="plugin_ext_vscode.vscodepluginscanner.html" class="tsd-signature-type">VsCodePluginScanner</a>
+								<a href="plugin_ext.theiapluginscannerelectron.html" class="tsd-signature-type" data-tsd-kind="Class">TheiaPluginScannerElectron</a>
 							</li>
 						</ul>
 					</li>
@@ -86,13 +82,19 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/plugin_ext.pluginscanner-1.html" class="tsd-signature-type">PluginScanner</a></li>
+					<li><a href="../modules/plugin_ext.html#pluginscanner-2" class="tsd-signature-type" data-tsd-kind="Variable">PluginScanner</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="plugin_ext.theiapluginscanner.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
@@ -153,35 +155,52 @@
 					</div>
 				</section>
 			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Theia<wbr>Plugin<wbr>Scanner<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.theiapluginscanner.html" class="tsd-signature-type" data-tsd-kind="Class">TheiaPluginScanner</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.theiapluginscanner.html" class="tsd-signature-type" data-tsd-kind="Class">TheiaPluginScanner</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-private-protected">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="_apitype" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> _api<wbr>Type</h3>
-					<div class="tsd-signature tsd-kind-icon">_api<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../modules/plugin_ext.html#pluginengine" class="tsd-signature-type">PluginEngine</a><span class="tsd-signature-symbol"> = &quot;theiaPlugin&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">_api<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#x27;theiaPlugin&#x27;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L98">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:98</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L98">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:98</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="grammarsreader" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> grammars<wbr>Reader</h3>
-					<div class="tsd-signature tsd-kind-icon">grammars<wbr>Reader<span class="tsd-signature-symbol">:</span> <a href="plugin_ext.grammarsreader.html" class="tsd-signature-type">GrammarsReader</a></div>
+					<div class="tsd-signature tsd-kind-icon">grammars<wbr>Reader<span class="tsd-signature-symbol">:</span> <a href="plugin_ext.grammarsreader.html" class="tsd-signature-type" data-tsd-kind="Class">GrammarsReader</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L101">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:101</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L101">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:101</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="pluginurifactory" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> plugin<wbr>Uri<wbr>Factory</h3>
-					<div class="tsd-signature tsd-kind-icon">plugin<wbr>Uri<wbr>Factory<span class="tsd-signature-symbol">:</span> <a href="../interfaces/plugin_ext.pluginurifactory.html" class="tsd-signature-type">PluginUriFactory</a></div>
+					<div class="tsd-signature tsd-kind-icon">plugin<wbr>Uri<wbr>Factory<span class="tsd-signature-symbol">:</span> <a href="../modules/plugin_ext.html#pluginurifactory-1" class="tsd-signature-type" data-tsd-kind="Variable">PluginUriFactory</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L104">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:104</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L104">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:104</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -192,16 +211,16 @@
 					<a name="apitype" class="tsd-anchor"></a>
 					<h3>api<wbr>Type</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> apiType<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/plugin_ext.html#pluginengine" class="tsd-signature-type">PluginEngine</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> apiType<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L106">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:106</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L106">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:106</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/plugin_ext.html#pluginengine" class="tsd-signature-type">PluginEngine</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -212,19 +231,19 @@
 					<a name="extractpluginviewsids" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> extract<wbr>Plugin<wbr>Views<wbr>Ids</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">extract<wbr>Plugin<wbr>Views<wbr>Ids<span class="tsd-signature-symbol">(</span>views<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">extract<wbr>Plugin<wbr>Views<wbr>Ids<span class="tsd-signature-symbol">(</span>views<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L594">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:594</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L594">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:594</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>views: <span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>views: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -235,13 +254,13 @@
 					<a name="extractvalidautoclosingpairs" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> extract<wbr>Valid<wbr>Auto<wbr>Closing<wbr>Pairs</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">extract<wbr>Valid<wbr>Auto<wbr>Closing<wbr>Pairs<span class="tsd-signature-symbol">(</span>langId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, configuration<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagelanguagecontributionconfiguration-1.html" class="tsd-signature-type">PluginPackageLanguageContributionConfiguration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.autoclosingpairconditional-1.html" class="tsd-signature-type">AutoClosingPairConditional</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">extract<wbr>Valid<wbr>Auto<wbr>Closing<wbr>Pairs<span class="tsd-signature-symbol">(</span>langId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, configuration<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagelanguagecontributionconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageLanguageContributionConfiguration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/plugin_ext.autoclosingpairconditional-1.html" class="tsd-signature-type" data-tsd-kind="Interface">AutoClosingPairConditional</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L788">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:788</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L788">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:788</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -250,10 +269,10 @@
 									<h5>langId: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>configuration: <a href="../interfaces/plugin_ext.pluginpackagelanguagecontributionconfiguration-1.html" class="tsd-signature-type">PluginPackageLanguageContributionConfiguration</a></h5>
+									<h5>configuration: <a href="../interfaces/plugin_ext.pluginpackagelanguagecontributionconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageLanguageContributionConfiguration</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.autoclosingpairconditional-1.html" class="tsd-signature-type">AutoClosingPairConditional</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/plugin_ext.autoclosingpairconditional-1.html" class="tsd-signature-type" data-tsd-kind="Interface">AutoClosingPairConditional</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -261,13 +280,13 @@
 					<a name="extractvalidsurroundingpairs" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> extract<wbr>Valid<wbr>Surrounding<wbr>Pairs</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">extract<wbr>Valid<wbr>Surrounding<wbr>Pairs<span class="tsd-signature-symbol">(</span>langId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, configuration<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagelanguagecontributionconfiguration-1.html" class="tsd-signature-type">PluginPackageLanguageContributionConfiguration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.autoclosingpair-1.html" class="tsd-signature-type">AutoClosingPair</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">extract<wbr>Valid<wbr>Surrounding<wbr>Pairs<span class="tsd-signature-symbol">(</span>langId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, configuration<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagelanguagecontributionconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageLanguageContributionConfiguration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/plugin_ext.autoclosingpair-1.html" class="tsd-signature-type" data-tsd-kind="Interface">AutoClosingPair</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L835">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:835</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L835">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:835</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -276,10 +295,10 @@
 									<h5>langId: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>configuration: <a href="../interfaces/plugin_ext.pluginpackagelanguagecontributionconfiguration-1.html" class="tsd-signature-type">PluginPackageLanguageContributionConfiguration</a></h5>
+									<h5>configuration: <a href="../interfaces/plugin_ext.pluginpackagelanguagecontributionconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageLanguageContributionConfiguration</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.autoclosingpair-1.html" class="tsd-signature-type">AutoClosingPair</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/plugin_ext.autoclosingpair-1.html" class="tsd-signature-type" data-tsd-kind="Interface">AutoClosingPair</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -287,23 +306,23 @@
 					<a name="getcontribution" class="tsd-anchor"></a>
 					<h3>get<wbr>Contribution</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Contribution<span class="tsd-signature-symbol">(</span>rawPlugin<span class="tsd-signature-symbol">: </span><a href="../modules/plugin_ext.pluginpackage-1.html" class="tsd-signature-type">PluginPackage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.plugincontribution-1.html" class="tsd-signature-type">PluginContribution</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Contribution<span class="tsd-signature-symbol">(</span>rawPlugin<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackage-2.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/plugin_ext.plugincontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginContribution</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/plugin_ext.pluginscanner-1.html">PluginScanner</a>.<a href="../interfaces/plugin_ext.pluginscanner-1.html#getcontribution">getContribution</a></p>
+								<p>Implementation of PluginScanner.getContribution</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L148">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:148</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L148">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:148</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>rawPlugin: <a href="../modules/plugin_ext.pluginpackage-1.html" class="tsd-signature-type">PluginPackage</a></h5>
+									<h5>rawPlugin: <a href="../interfaces/plugin_ext.pluginpackage-2.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackage</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.plugincontribution-1.html" class="tsd-signature-type">PluginContribution</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/plugin_ext.plugincontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginContribution</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -311,23 +330,23 @@
 					<a name="getdependencies" class="tsd-anchor"></a>
 					<h3>get<wbr>Dependencies</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Dependencies<span class="tsd-signature-symbol">(</span>rawPlugin<span class="tsd-signature-symbol">: </span><a href="../modules/plugin_ext.pluginpackage-1.html" class="tsd-signature-type">PluginPackage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Dependencies<span class="tsd-signature-symbol">(</span>rawPlugin<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackage-2.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/plugin_ext.pluginscanner-1.html">PluginScanner</a>.<a href="../interfaces/plugin_ext.pluginscanner-1.html#getdependencies">getDependencies</a></p>
+								<p>Implementation of PluginScanner.getDependencies</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L143">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:143</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L143">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:143</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>rawPlugin: <a href="../modules/plugin_ext.pluginpackage-1.html" class="tsd-signature-type">PluginPackage</a></h5>
+									<h5>rawPlugin: <a href="../interfaces/plugin_ext.pluginpackage-2.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackage</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -335,23 +354,23 @@
 					<a name="getlifecycle" class="tsd-anchor"></a>
 					<h3>get<wbr>Lifecycle</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Lifecycle<span class="tsd-signature-symbol">(</span>plugin<span class="tsd-signature-symbol">: </span><a href="../modules/plugin_ext.pluginpackage-1.html" class="tsd-signature-type">PluginPackage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginlifecycle-1.html" class="tsd-signature-type">PluginLifecycle</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Lifecycle<span class="tsd-signature-symbol">(</span>plugin<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackage-2.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginlifecycle-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginLifecycle</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/plugin_ext.pluginscanner-1.html">PluginScanner</a>.<a href="../interfaces/plugin_ext.pluginscanner-1.html#getlifecycle">getLifecycle</a></p>
+								<p>Implementation of PluginScanner.getLifecycle</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L133">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:133</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L133">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:133</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>plugin: <a href="../modules/plugin_ext.pluginpackage-1.html" class="tsd-signature-type">PluginPackage</a></h5>
+									<h5>plugin: <a href="../interfaces/plugin_ext.pluginpackage-2.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackage</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.pluginlifecycle-1.html" class="tsd-signature-type">PluginLifecycle</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.pluginlifecycle-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginLifecycle</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -359,23 +378,23 @@
 					<a name="getmodel" class="tsd-anchor"></a>
 					<h3>get<wbr>Model</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Model<span class="tsd-signature-symbol">(</span>plugin<span class="tsd-signature-symbol">: </span><a href="../modules/plugin_ext.pluginpackage-1.html" class="tsd-signature-type">PluginPackage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginmodel-1.html" class="tsd-signature-type">PluginModel</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Model<span class="tsd-signature-symbol">(</span>plugin<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackage-2.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginmodel-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginModel</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/plugin_ext.pluginscanner-1.html">PluginScanner</a>.<a href="../interfaces/plugin_ext.pluginscanner-1.html#getmodel">getModel</a></p>
+								<p>Implementation of PluginScanner.getModel</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L110">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:110</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L110">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:110</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>plugin: <a href="../modules/plugin_ext.pluginpackage-1.html" class="tsd-signature-type">PluginPackage</a></h5>
+									<h5>plugin: <a href="../interfaces/plugin_ext.pluginpackage-2.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackage</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.pluginmodel-1.html" class="tsd-signature-type">PluginModel</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.pluginmodel-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginModel</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -383,22 +402,22 @@
 					<a name="readcolors" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> read<wbr>Colors</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>Colors<span class="tsd-signature-symbol">(</span>pck<span class="tsd-signature-symbol">: </span><a href="../modules/plugin_ext.pluginpackage-1.html" class="tsd-signature-type">PluginPackage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/core.colordefinition.html" class="tsd-signature-type">ColorDefinition</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Colors<span class="tsd-signature-symbol">(</span>pck<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackage-2.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ColorDefinition</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L412">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:412</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L412">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:412</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>pck: <a href="../modules/plugin_ext.pluginpackage-1.html" class="tsd-signature-type">PluginPackage</a></h5>
+									<h5>pck: <a href="../interfaces/plugin_ext.pluginpackage-2.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackage</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/core.colordefinition.html" class="tsd-signature-type">ColorDefinition</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ColorDefinition</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -406,45 +425,25 @@
 					<a name="readcommand" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> read<wbr>Command</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>Command<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>category<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>enablement<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>icon<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>dark<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>light<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>original<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span>, pck<span class="tsd-signature-symbol">: </span><a href="../modules/plugin_ext.pluginpackage-1.html" class="tsd-signature-type">PluginPackage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.plugincommand-1.html" class="tsd-signature-type">PluginCommand</a></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Command<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagecommand-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageCommand</a>, pck<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackage-2.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.plugincommand-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginCommand</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L388">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:388</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L388">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:388</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>category<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>enablement<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>icon<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>dark<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>light<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>original<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>category<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5>enablement<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5>icon<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>dark<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>light<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5>original<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-										</li>
-									</ul>
+									<h5>__namedParameters: <a href="../interfaces/plugin_ext.pluginpackagecommand-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageCommand</a></h5>
 								</li>
 								<li>
-									<h5>pck: <a href="../modules/plugin_ext.pluginpackage-1.html" class="tsd-signature-type">PluginPackage</a></h5>
+									<h5>pck: <a href="../interfaces/plugin_ext.pluginpackage-2.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackage</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.plugincommand-1.html" class="tsd-signature-type">PluginCommand</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.plugincommand-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginCommand</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -452,25 +451,25 @@
 					<a name="readconfiguration" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> read<wbr>Configuration</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>Configuration<span class="tsd-signature-symbol">(</span>rawConfiguration<span class="tsd-signature-symbol">: </span><a href="../modules/core.html#recursivepartial-1" class="tsd-signature-type">RecursivePartial</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/core.preferenceschema-2.html" class="tsd-signature-type">PreferenceSchema</a><span class="tsd-signature-symbol">&gt;</span>, pluginPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/core.preferenceschema-2.html" class="tsd-signature-type">PreferenceSchema</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Configuration<span class="tsd-signature-symbol">(</span>rawConfiguration<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RecursivePartial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">PreferenceSchema</span><span class="tsd-signature-symbol">&gt;</span>, pluginPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PreferenceSchema</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L523">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:523</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L523">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:523</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>rawConfiguration: <a href="../modules/core.html#recursivepartial-1" class="tsd-signature-type">RecursivePartial</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/core.preferenceschema-2.html" class="tsd-signature-type">PreferenceSchema</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>rawConfiguration: <span class="tsd-signature-type">RecursivePartial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">PreferenceSchema</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>pluginPath: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/core.preferenceschema-2.html" class="tsd-signature-type">PreferenceSchema</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PreferenceSchema</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -478,22 +477,22 @@
 					<a name="readcustomeditor" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> read<wbr>Custom<wbr>Editor</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>Custom<wbr>Editor<span class="tsd-signature-symbol">(</span>rawCustomEditor<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagecustomeditor-1.html" class="tsd-signature-type">PluginPackageCustomEditor</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.customeditor-1.html" class="tsd-signature-type">CustomEditor</a></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Custom<wbr>Editor<span class="tsd-signature-symbol">(</span>rawCustomEditor<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagecustomeditor-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageCustomEditor</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.customeditor-1.html" class="tsd-signature-type" data-tsd-kind="Interface">CustomEditor</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L543">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:543</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L543">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:543</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>rawCustomEditor: <a href="../interfaces/plugin_ext.pluginpackagecustomeditor-1.html" class="tsd-signature-type">PluginPackageCustomEditor</a></h5>
+									<h5>rawCustomEditor: <a href="../interfaces/plugin_ext.pluginpackagecustomeditor-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageCustomEditor</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.customeditor-1.html" class="tsd-signature-type">CustomEditor</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.customeditor-1.html" class="tsd-signature-type" data-tsd-kind="Interface">CustomEditor</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -501,22 +500,22 @@
 					<a name="readcustomeditors" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> read<wbr>Custom<wbr>Editors</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>Custom<wbr>Editors<span class="tsd-signature-symbol">(</span>rawCustomEditors<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagecustomeditor-1.html" class="tsd-signature-type">PluginPackageCustomEditor</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.customeditor-1.html" class="tsd-signature-type">CustomEditor</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Custom<wbr>Editors<span class="tsd-signature-symbol">(</span>rawCustomEditors<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagecustomeditor-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageCustomEditor</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.customeditor-1.html" class="tsd-signature-type" data-tsd-kind="Interface">CustomEditor</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L539">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:539</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L539">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:539</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>rawCustomEditors: <a href="../interfaces/plugin_ext.pluginpackagecustomeditor-1.html" class="tsd-signature-type">PluginPackageCustomEditor</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>rawCustomEditors: <a href="../interfaces/plugin_ext.pluginpackagecustomeditor-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageCustomEditor</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.customeditor-1.html" class="tsd-signature-type">CustomEditor</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.customeditor-1.html" class="tsd-signature-type" data-tsd-kind="Interface">CustomEditor</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -524,22 +523,22 @@
 					<a name="readdebugger" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> read<wbr>Debugger</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>Debugger<span class="tsd-signature-symbol">(</span>rawDebugger<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagedebuggerscontribution-1.html" class="tsd-signature-type">PluginPackageDebuggersContribution</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.debuggercontribution-1.html" class="tsd-signature-type">DebuggerContribution</a></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Debugger<span class="tsd-signature-symbol">(</span>rawDebugger<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagedebuggerscontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageDebuggersContribution</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.debuggercontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">DebuggerContribution</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L670">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:670</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L670">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:670</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>rawDebugger: <a href="../interfaces/plugin_ext.pluginpackagedebuggerscontribution-1.html" class="tsd-signature-type">PluginPackageDebuggersContribution</a></h5>
+									<h5>rawDebugger: <a href="../interfaces/plugin_ext.pluginpackagedebuggerscontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageDebuggersContribution</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.debuggercontribution-1.html" class="tsd-signature-type">DebuggerContribution</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.debuggercontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">DebuggerContribution</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -547,22 +546,22 @@
 					<a name="readdebuggers" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> read<wbr>Debuggers</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>Debuggers<span class="tsd-signature-symbol">(</span>rawDebuggers<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagedebuggerscontribution-1.html" class="tsd-signature-type">PluginPackageDebuggersContribution</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.debuggercontribution-1.html" class="tsd-signature-type">DebuggerContribution</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Debuggers<span class="tsd-signature-symbol">(</span>rawDebuggers<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagedebuggerscontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageDebuggersContribution</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.debuggercontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">DebuggerContribution</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L666">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:666</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L666">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:666</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>rawDebuggers: <a href="../interfaces/plugin_ext.pluginpackagedebuggerscontribution-1.html" class="tsd-signature-type">PluginPackageDebuggersContribution</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>rawDebuggers: <a href="../interfaces/plugin_ext.pluginpackagedebuggerscontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageDebuggersContribution</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.debuggercontribution-1.html" class="tsd-signature-type">DebuggerContribution</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.debuggercontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">DebuggerContribution</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -576,7 +575,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L513">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:513</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L513">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:513</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -593,22 +592,22 @@
 					<a name="readiconthemes" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> read<wbr>Icon<wbr>Themes</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>Icon<wbr>Themes<span class="tsd-signature-symbol">(</span>pck<span class="tsd-signature-symbol">: </span><a href="../modules/plugin_ext.pluginpackage-1.html" class="tsd-signature-type">PluginPackage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.iconthemecontribution-1.html" class="tsd-signature-type">IconThemeContribution</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Icon<wbr>Themes<span class="tsd-signature-symbol">(</span>pck<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackage-2.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/plugin_ext.iconthemecontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">IconThemeContribution</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L467">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:467</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L467">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:467</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>pck: <a href="../modules/plugin_ext.pluginpackage-1.html" class="tsd-signature-type">PluginPackage</a></h5>
+									<h5>pck: <a href="../interfaces/plugin_ext.pluginpackage-2.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackage</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.iconthemecontribution-1.html" class="tsd-signature-type">IconThemeContribution</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/plugin_ext.iconthemecontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">IconThemeContribution</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -616,13 +615,13 @@
 					<a name="readjson" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> read<wbr>Json</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>Json&lt;T&gt;<span class="tsd-signature-symbol">(</span>filePath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Json&lt;T&gt;<span class="tsd-signature-symbol">(</span>filePath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L509">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:509</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L509">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:509</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -637,7 +636,7 @@
 									<h5>filePath: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -645,22 +644,22 @@
 					<a name="readkeybinding" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> read<wbr>Keybinding</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>Keybinding<span class="tsd-signature-symbol">(</span>rawKeybinding<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagekeybinding-1.html" class="tsd-signature-type">PluginPackageKeybinding</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.keybinding-1.html" class="tsd-signature-type">Keybinding</a></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Keybinding<span class="tsd-signature-symbol">(</span>rawKeybinding<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagekeybinding-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageKeybinding</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.keybinding-1.html" class="tsd-signature-type" data-tsd-kind="Interface">Keybinding</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L527">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:527</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L527">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:527</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>rawKeybinding: <a href="../interfaces/plugin_ext.pluginpackagekeybinding-1.html" class="tsd-signature-type">PluginPackageKeybinding</a></h5>
+									<h5>rawKeybinding: <a href="../interfaces/plugin_ext.pluginpackagekeybinding-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageKeybinding</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.keybinding-1.html" class="tsd-signature-type">Keybinding</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.keybinding-1.html" class="tsd-signature-type" data-tsd-kind="Interface">Keybinding</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -668,25 +667,25 @@
 					<a name="readlanguage" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> read<wbr>Language</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>Language<span class="tsd-signature-symbol">(</span>rawLang<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagelanguagecontribution-1.html" class="tsd-signature-type">PluginPackageLanguageContribution</a>, pluginPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.languagecontribution-1.html" class="tsd-signature-type">LanguageContribution</a></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Language<span class="tsd-signature-symbol">(</span>rawLang<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagelanguagecontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageLanguageContribution</a>, pluginPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.languagecontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">LanguageContribution</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L636">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:636</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L636">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:636</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>rawLang: <a href="../interfaces/plugin_ext.pluginpackagelanguagecontribution-1.html" class="tsd-signature-type">PluginPackageLanguageContribution</a></h5>
+									<h5>rawLang: <a href="../interfaces/plugin_ext.pluginpackagelanguagecontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageLanguageContribution</a></h5>
 								</li>
 								<li>
 									<h5>pluginPath: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.languagecontribution-1.html" class="tsd-signature-type">LanguageContribution</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.languagecontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">LanguageContribution</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -694,25 +693,25 @@
 					<a name="readlanguages" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> read<wbr>Languages</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>Languages<span class="tsd-signature-symbol">(</span>rawLanguages<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagelanguagecontribution-1.html" class="tsd-signature-type">PluginPackageLanguageContribution</a><span class="tsd-signature-symbol">[]</span>, pluginPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.languagecontribution-1.html" class="tsd-signature-type">LanguageContribution</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Languages<span class="tsd-signature-symbol">(</span>rawLanguages<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagelanguagecontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageLanguageContribution</a><span class="tsd-signature-symbol">[]</span>, pluginPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.languagecontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">LanguageContribution</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L620">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:620</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L620">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:620</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>rawLanguages: <a href="../interfaces/plugin_ext.pluginpackagelanguagecontribution-1.html" class="tsd-signature-type">PluginPackageLanguageContribution</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>rawLanguages: <a href="../interfaces/plugin_ext.pluginpackagelanguagecontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageLanguageContribution</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 								<li>
 									<h5>pluginPath: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.languagecontribution-1.html" class="tsd-signature-type">LanguageContribution</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.languagecontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">LanguageContribution</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -720,39 +719,25 @@
 					<a name="readlocalization" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> read<wbr>Localization</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>Localization<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>languageId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>languageName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>localizedLanguageName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>translations<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagetranslation-1.html" class="tsd-signature-type">PluginPackageTranslation</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span>, pluginPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.localization-1.html" class="tsd-signature-type">Localization</a></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Localization<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagelocalization-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageLocalization</a>, pluginPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.localization-1.html" class="tsd-signature-type" data-tsd-kind="Interface">Localization</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L368">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:368</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L368">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:368</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>languageId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>languageName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>localizedLanguageName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>translations<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagetranslation-1.html" class="tsd-signature-type">PluginPackageTranslation</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>language<wbr>Id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5>language<wbr>Name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5>localized<wbr>Language<wbr>Name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5>translations<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagetranslation-1.html" class="tsd-signature-type">PluginPackageTranslation</a><span class="tsd-signature-symbol">[]</span></h5>
-										</li>
-									</ul>
+									<h5>__namedParameters: <a href="../interfaces/plugin_ext.pluginpackagelocalization-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageLocalization</a></h5>
 								</li>
 								<li>
 									<h5>pluginPath: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.localization-1.html" class="tsd-signature-type">Localization</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.localization-1.html" class="tsd-signature-type" data-tsd-kind="Interface">Localization</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -760,22 +745,22 @@
 					<a name="readlocalizations" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> read<wbr>Localizations</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>Localizations<span class="tsd-signature-symbol">(</span>pck<span class="tsd-signature-symbol">: </span><a href="../modules/plugin_ext.pluginpackage-1.html" class="tsd-signature-type">PluginPackage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.localization-1.html" class="tsd-signature-type">Localization</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Localizations<span class="tsd-signature-symbol">(</span>pck<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackage-2.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/plugin_ext.localization-1.html" class="tsd-signature-type" data-tsd-kind="Interface">Localization</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L361">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:361</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L361">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:361</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>pck: <a href="../modules/plugin_ext.pluginpackage-1.html" class="tsd-signature-type">PluginPackage</a></h5>
+									<h5>pck: <a href="../interfaces/plugin_ext.pluginpackage-2.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackage</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.localization-1.html" class="tsd-signature-type">Localization</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/plugin_ext.localization-1.html" class="tsd-signature-type" data-tsd-kind="Interface">Localization</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -783,22 +768,22 @@
 					<a name="readmenu" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> read<wbr>Menu</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>Menu<span class="tsd-signature-symbol">(</span>rawMenu<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagemenu-1.html" class="tsd-signature-type">PluginPackageMenu</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.menu-1.html" class="tsd-signature-type">Menu</a></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Menu<span class="tsd-signature-symbol">(</span>rawMenu<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagemenu-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageMenu</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.menu-1.html" class="tsd-signature-type" data-tsd-kind="Interface">Menu</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L609">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:609</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L609">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:609</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>rawMenu: <a href="../interfaces/plugin_ext.pluginpackagemenu-1.html" class="tsd-signature-type">PluginPackageMenu</a></h5>
+									<h5>rawMenu: <a href="../interfaces/plugin_ext.pluginpackagemenu-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageMenu</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.menu-1.html" class="tsd-signature-type">Menu</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.menu-1.html" class="tsd-signature-type" data-tsd-kind="Interface">Menu</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -806,22 +791,22 @@
 					<a name="readmenus" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> read<wbr>Menus</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>Menus<span class="tsd-signature-symbol">(</span>rawMenus<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagemenu-1.html" class="tsd-signature-type">PluginPackageMenu</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.menu-1.html" class="tsd-signature-type">Menu</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Menus<span class="tsd-signature-symbol">(</span>rawMenus<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagemenu-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageMenu</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.menu-1.html" class="tsd-signature-type" data-tsd-kind="Interface">Menu</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L605">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:605</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L605">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:605</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>rawMenus: <a href="../interfaces/plugin_ext.pluginpackagemenu-1.html" class="tsd-signature-type">PluginPackageMenu</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>rawMenus: <a href="../interfaces/plugin_ext.pluginpackagemenu-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageMenu</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.menu-1.html" class="tsd-signature-type">Menu</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.menu-1.html" class="tsd-signature-type" data-tsd-kind="Interface">Menu</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -829,22 +814,22 @@
 					<a name="readsnippets" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> read<wbr>Snippets</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>Snippets<span class="tsd-signature-symbol">(</span>pck<span class="tsd-signature-symbol">: </span><a href="../modules/plugin_ext.pluginpackage-1.html" class="tsd-signature-type">PluginPackage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.snippetcontribution-1.html" class="tsd-signature-type">SnippetContribution</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Snippets<span class="tsd-signature-symbol">(</span>pck<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackage-2.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/plugin_ext.snippetcontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">SnippetContribution</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L492">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:492</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L492">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:492</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>pck: <a href="../modules/plugin_ext.pluginpackage-1.html" class="tsd-signature-type">PluginPackage</a></h5>
+									<h5>pck: <a href="../interfaces/plugin_ext.pluginpackage-2.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackage</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.snippetcontribution-1.html" class="tsd-signature-type">SnippetContribution</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/plugin_ext.snippetcontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">SnippetContribution</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -852,22 +837,22 @@
 					<a name="readsubmenu" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> read<wbr>Submenu</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>Submenu<span class="tsd-signature-symbol">(</span>rawSubmenu<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagesubmenu-1.html" class="tsd-signature-type">PluginPackageSubmenu</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.submenu-1.html" class="tsd-signature-type">Submenu</a></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Submenu<span class="tsd-signature-symbol">(</span>rawSubmenu<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagesubmenu-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageSubmenu</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.submenu-1.html" class="tsd-signature-type" data-tsd-kind="Interface">Submenu</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L628">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:628</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L628">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:628</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>rawSubmenu: <a href="../interfaces/plugin_ext.pluginpackagesubmenu-1.html" class="tsd-signature-type">PluginPackageSubmenu</a></h5>
+									<h5>rawSubmenu: <a href="../interfaces/plugin_ext.pluginpackagesubmenu-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageSubmenu</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.submenu-1.html" class="tsd-signature-type">Submenu</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.submenu-1.html" class="tsd-signature-type" data-tsd-kind="Interface">Submenu</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -875,22 +860,22 @@
 					<a name="readsubmenus" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> read<wbr>Submenus</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>Submenus<span class="tsd-signature-symbol">(</span>rawSubmenus<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagesubmenu-1.html" class="tsd-signature-type">PluginPackageSubmenu</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.submenu-1.html" class="tsd-signature-type">Submenu</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Submenus<span class="tsd-signature-symbol">(</span>rawSubmenus<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagesubmenu-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageSubmenu</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.submenu-1.html" class="tsd-signature-type" data-tsd-kind="Interface">Submenu</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L624">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:624</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L624">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:624</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>rawSubmenus: <a href="../interfaces/plugin_ext.pluginpackagesubmenu-1.html" class="tsd-signature-type">PluginPackageSubmenu</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>rawSubmenus: <a href="../interfaces/plugin_ext.pluginpackagesubmenu-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageSubmenu</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.submenu-1.html" class="tsd-signature-type">Submenu</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.submenu-1.html" class="tsd-signature-type" data-tsd-kind="Interface">Submenu</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -898,13 +883,13 @@
 					<a name="readtaskdefinition" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> read<wbr>Task<wbr>Definition</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>Task<wbr>Definition<span class="tsd-signature-symbol">(</span>pluginName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, definitionContribution<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.plugintaskdefinitioncontribution-1.html" class="tsd-signature-type">PluginTaskDefinitionContribution</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/task.taskdefinition-1.html" class="tsd-signature-type">TaskDefinition</a></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Task<wbr>Definition<span class="tsd-signature-symbol">(</span>pluginName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, definitionContribution<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.plugintaskdefinitioncontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginTaskDefinitionContribution</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TaskDefinition</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L696">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:696</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L696">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:696</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -913,10 +898,10 @@
 									<h5>pluginName: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>definitionContribution: <a href="../interfaces/plugin_ext.plugintaskdefinitioncontribution-1.html" class="tsd-signature-type">PluginTaskDefinitionContribution</a></h5>
+									<h5>definitionContribution: <a href="../interfaces/plugin_ext.plugintaskdefinitioncontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginTaskDefinitionContribution</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/task.taskdefinition-1.html" class="tsd-signature-type">TaskDefinition</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TaskDefinition</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -924,22 +909,22 @@
 					<a name="readthemes" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> read<wbr>Themes</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>Themes<span class="tsd-signature-symbol">(</span>pck<span class="tsd-signature-symbol">: </span><a href="../modules/plugin_ext.pluginpackage-1.html" class="tsd-signature-type">PluginPackage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.themecontribution-1.html" class="tsd-signature-type">ThemeContribution</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Themes<span class="tsd-signature-symbol">(</span>pck<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackage-2.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/plugin_ext.themecontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">ThemeContribution</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L448">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:448</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L448">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:448</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>pck: <a href="../modules/plugin_ext.pluginpackage-1.html" class="tsd-signature-type">PluginPackage</a></h5>
+									<h5>pck: <a href="../interfaces/plugin_ext.pluginpackage-2.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackage</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.themecontribution-1.html" class="tsd-signature-type">ThemeContribution</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/plugin_ext.themecontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">ThemeContribution</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -947,25 +932,25 @@
 					<a name="readtranslation" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> read<wbr>Translation</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>Translation<span class="tsd-signature-symbol">(</span>packageTranslation<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagetranslation-1.html" class="tsd-signature-type">PluginPackageTranslation</a>, pluginPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.translation-1.html" class="tsd-signature-type">Translation</a></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Translation<span class="tsd-signature-symbol">(</span>packageTranslation<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackagetranslation-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageTranslation</a>, pluginPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.translation-1.html" class="tsd-signature-type" data-tsd-kind="Interface">Translation</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L379">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:379</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L379">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:379</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>packageTranslation: <a href="../interfaces/plugin_ext.pluginpackagetranslation-1.html" class="tsd-signature-type">PluginPackageTranslation</a></h5>
+									<h5>packageTranslation: <a href="../interfaces/plugin_ext.pluginpackagetranslation-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageTranslation</a></h5>
 								</li>
 								<li>
 									<h5>pluginPath: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.translation-1.html" class="tsd-signature-type">Translation</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.translation-1.html" class="tsd-signature-type" data-tsd-kind="Interface">Translation</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -973,22 +958,22 @@
 					<a name="readview" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> read<wbr>View</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>View<span class="tsd-signature-symbol">(</span>rawView<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackageview-1.html" class="tsd-signature-type">PluginPackageView</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.view-1.html" class="tsd-signature-type">View</a></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>View<span class="tsd-signature-symbol">(</span>rawView<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackageview-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageView</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.view-1.html" class="tsd-signature-type" data-tsd-kind="Interface">View</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L568">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:568</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L568">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:568</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>rawView: <a href="../interfaces/plugin_ext.pluginpackageview-1.html" class="tsd-signature-type">PluginPackageView</a></h5>
+									<h5>rawView: <a href="../interfaces/plugin_ext.pluginpackageview-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageView</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.view-1.html" class="tsd-signature-type">View</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.view-1.html" class="tsd-signature-type" data-tsd-kind="Interface">View</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -996,25 +981,25 @@
 					<a name="readviewcontainer" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> read<wbr>View<wbr>Container</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>View<wbr>Container<span class="tsd-signature-symbol">(</span>rawViewContainer<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackageviewcontainer-1.html" class="tsd-signature-type">PluginPackageViewContainer</a>, pck<span class="tsd-signature-symbol">: </span><a href="../modules/plugin_ext.pluginpackage-1.html" class="tsd-signature-type">PluginPackage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.viewcontainer-1.html" class="tsd-signature-type">ViewContainer</a></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>View<wbr>Container<span class="tsd-signature-symbol">(</span>rawViewContainer<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackageviewcontainer-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageViewContainer</a>, pck<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackage-2.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.viewcontainer-1.html" class="tsd-signature-type" data-tsd-kind="Interface">ViewContainer</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L556">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:556</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L556">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:556</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>rawViewContainer: <a href="../interfaces/plugin_ext.pluginpackageviewcontainer-1.html" class="tsd-signature-type">PluginPackageViewContainer</a></h5>
+									<h5>rawViewContainer: <a href="../interfaces/plugin_ext.pluginpackageviewcontainer-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageViewContainer</a></h5>
 								</li>
 								<li>
-									<h5>pck: <a href="../modules/plugin_ext.pluginpackage-1.html" class="tsd-signature-type">PluginPackage</a></h5>
+									<h5>pck: <a href="../interfaces/plugin_ext.pluginpackage-2.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackage</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.viewcontainer-1.html" class="tsd-signature-type">ViewContainer</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.viewcontainer-1.html" class="tsd-signature-type" data-tsd-kind="Interface">ViewContainer</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -1022,25 +1007,25 @@
 					<a name="readviewwelcome" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> read<wbr>View<wbr>Welcome</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>View<wbr>Welcome<span class="tsd-signature-symbol">(</span>rawViewWelcome<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackageviewwelcome-1.html" class="tsd-signature-type">PluginPackageViewWelcome</a>, pluginViewsIds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.viewwelcome-1.html" class="tsd-signature-type">ViewWelcome</a></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>View<wbr>Welcome<span class="tsd-signature-symbol">(</span>rawViewWelcome<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackageviewwelcome-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageViewWelcome</a>, pluginViewsIds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.viewwelcome-1.html" class="tsd-signature-type" data-tsd-kind="Interface">ViewWelcome</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L582">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:582</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L582">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:582</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>rawViewWelcome: <a href="../interfaces/plugin_ext.pluginpackageviewwelcome-1.html" class="tsd-signature-type">PluginPackageViewWelcome</a></h5>
+									<h5>rawViewWelcome: <a href="../interfaces/plugin_ext.pluginpackageviewwelcome-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageViewWelcome</a></h5>
 								</li>
 								<li>
 									<h5>pluginViewsIds: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.viewwelcome-1.html" class="tsd-signature-type">ViewWelcome</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.viewwelcome-1.html" class="tsd-signature-type" data-tsd-kind="Interface">ViewWelcome</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -1048,22 +1033,22 @@
 					<a name="readviews" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> read<wbr>Views</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>Views<span class="tsd-signature-symbol">(</span>rawViews<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackageview-1.html" class="tsd-signature-type">PluginPackageView</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.view-1.html" class="tsd-signature-type">View</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Views<span class="tsd-signature-symbol">(</span>rawViews<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackageview-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageView</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.view-1.html" class="tsd-signature-type" data-tsd-kind="Interface">View</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L564">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:564</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L564">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:564</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>rawViews: <a href="../interfaces/plugin_ext.pluginpackageview-1.html" class="tsd-signature-type">PluginPackageView</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>rawViews: <a href="../interfaces/plugin_ext.pluginpackageview-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageView</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.view-1.html" class="tsd-signature-type">View</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.view-1.html" class="tsd-signature-type" data-tsd-kind="Interface">View</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1071,25 +1056,25 @@
 					<a name="readviewscontainers" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> read<wbr>Views<wbr>Containers</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>Views<wbr>Containers<span class="tsd-signature-symbol">(</span>rawViewsContainers<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackageviewcontainer-1.html" class="tsd-signature-type">PluginPackageViewContainer</a><span class="tsd-signature-symbol">[]</span>, pck<span class="tsd-signature-symbol">: </span><a href="../modules/plugin_ext.pluginpackage-1.html" class="tsd-signature-type">PluginPackage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.viewcontainer-1.html" class="tsd-signature-type">ViewContainer</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Views<wbr>Containers<span class="tsd-signature-symbol">(</span>rawViewsContainers<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackageviewcontainer-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageViewContainer</a><span class="tsd-signature-symbol">[]</span>, pck<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackage-2.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.viewcontainer-1.html" class="tsd-signature-type" data-tsd-kind="Interface">ViewContainer</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L552">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:552</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L552">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:552</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>rawViewsContainers: <a href="../interfaces/plugin_ext.pluginpackageviewcontainer-1.html" class="tsd-signature-type">PluginPackageViewContainer</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>rawViewsContainers: <a href="../interfaces/plugin_ext.pluginpackageviewcontainer-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageViewContainer</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 								<li>
-									<h5>pck: <a href="../modules/plugin_ext.pluginpackage-1.html" class="tsd-signature-type">PluginPackage</a></h5>
+									<h5>pck: <a href="../interfaces/plugin_ext.pluginpackage-2.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackage</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.viewcontainer-1.html" class="tsd-signature-type">ViewContainer</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.viewcontainer-1.html" class="tsd-signature-type" data-tsd-kind="Interface">ViewContainer</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1097,25 +1082,25 @@
 					<a name="readviewswelcome" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> read<wbr>Views<wbr>Welcome</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">read<wbr>Views<wbr>Welcome<span class="tsd-signature-symbol">(</span>rawViewsWelcome<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackageviewwelcome-1.html" class="tsd-signature-type">PluginPackageViewWelcome</a><span class="tsd-signature-symbol">[]</span>, rowViews<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.viewwelcome-1.html" class="tsd-signature-type">ViewWelcome</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Views<wbr>Welcome<span class="tsd-signature-symbol">(</span>rawViewsWelcome<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackageviewwelcome-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageViewWelcome</a><span class="tsd-signature-symbol">[]</span>, rowViews<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.viewwelcome-1.html" class="tsd-signature-type" data-tsd-kind="Interface">ViewWelcome</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L578">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:578</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L578">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:578</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>rawViewsWelcome: <a href="../interfaces/plugin_ext.pluginpackageviewwelcome-1.html" class="tsd-signature-type">PluginPackageViewWelcome</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>rawViewsWelcome: <a href="../interfaces/plugin_ext.pluginpackageviewwelcome-1.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackageViewWelcome</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 								<li>
-									<h5>rowViews: <span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>rowViews: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.viewwelcome-1.html" class="tsd-signature-type">ViewWelcome</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.viewwelcome-1.html" class="tsd-signature-type" data-tsd-kind="Interface">ViewWelcome</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1123,13 +1108,13 @@
 					<a name="resolveschemaattributes" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> resolve<wbr>Schema<wbr>Attributes</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">resolve<wbr>Schema<wbr>Attributes<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, configurationAttributes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/core.ijsonschema.html" class="tsd-signature-type">IJSONSchema</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">resolve<wbr>Schema<wbr>Attributes<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, configurationAttributes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IJSONSchema</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L709">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:709</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L709">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:709</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1141,12 +1126,12 @@
 									<h5>configurationAttributes: <span class="tsd-signature-symbol">{}</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-index-signature">
-											<h5><span class="tsd-signature-symbol">[</span>request: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="../interfaces/core.ijsonschema.html" class="tsd-signature-type">IJSONSchema</a></h5>
+											<h5><span class="tsd-signature-symbol">[</span>request: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">IJSONSchema</span></h5>
 										</li>
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/core.ijsonschema.html" class="tsd-signature-type">IJSONSchema</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IJSONSchema</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1154,19 +1139,19 @@
 					<a name="topluginurl" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> to<wbr>Plugin<wbr>Url</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Plugin<wbr>Url<span class="tsd-signature-symbol">(</span>pck<span class="tsd-signature-symbol">: </span><a href="../modules/plugin_ext.pluginpackage-1.html" class="tsd-signature-type">PluginPackage</a>, relativePath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Plugin<wbr>Url<span class="tsd-signature-symbol">(</span>pck<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.pluginpackage-2.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackage</a>, relativePath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L408">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:408</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts#L408">packages/plugin-ext/src/hosted/node/scanners/scanner-theia.ts:408</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>pck: <a href="../modules/plugin_ext.pluginpackage-1.html" class="tsd-signature-type">PluginPackage</a></h5>
+									<h5>pck: <a href="../interfaces/plugin_ext.pluginpackage-2.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginPackage</a></h5>
 								</li>
 								<li>
 									<h5>relativePath: <span class="tsd-signature-type">string</span></h5>
@@ -1181,8 +1166,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/plugin_ext.html">plugin-<wbr>ext</a>
@@ -1203,13 +1188,13 @@
 								<a href="../modules/plugin_ext.connectionclosederror.html">Connection<wbr>Closed<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.customeditorwidget.html">Custom<wbr>Editor<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrangebehavior.html">Decoration<wbr>Range<wbr>Behavior</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrenderoptions-1.html">Decoration<wbr>Render<wbr>Options</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.delta.html">Delta</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.documentlink.html">Document<wbr>Link</a>
@@ -1230,6 +1215,9 @@
 								<a href="../modules/plugin_ext.parameterinformation.html">Parameter<wbr>Information</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.plugincontributions.html">Plugin<wbr>Contributions</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginiconpath.html">Plugin<wbr>Icon<wbr>Path</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
@@ -1237,6 +1225,12 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginpaths.html">Plugin<wbr>Paths</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewregistry.html">Plugin<wbr>View<wbr>Registry</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewwidget.html">Plugin<wbr>View<wbr>Widget</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.schemes.html">Schemes</a>
@@ -1263,10 +1257,16 @@
 								<a href="../modules/plugin_ext.textdocumentshowoptions.html">Text<wbr>Document<wbr>Show<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.texteditorselectionchangekind.html">Text<wbr>Editor<wbr>Selection<wbr>Change<wbr>Kind</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationattachmentrenderoptions.html">Themable<wbr>Decoration<wbr>Attachment<wbr>Render<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationrenderoptions.html">Themable<wbr>Decoration<wbr>Render<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.themeicon.html">Theme<wbr>Icon</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.timelinecommandarg-1.html">Timeline<wbr>Command<wbr>Arg</a>
@@ -1281,10 +1281,10 @@
 								<a href="../modules/plugin_ext.webviewexternalendpoint.html">Webview<wbr>External<wbr>Endpoint</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
+								<a href="../modules/plugin_ext.webviewwidget.html">Webview<wbr>Widget</a>
 							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.nls.html">nls</a>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
 							</li>
 						</ul>
 					</li>
@@ -1297,6 +1297,9 @@
 					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="plugin_ext.theiapluginscanner.html" class="tsd-kind-icon">Theia<wbr>Plugin<wbr>Scanner</a>
 						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="plugin_ext.theiapluginscanner.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="plugin_ext.theiapluginscanner.html#_apitype" class="tsd-kind-icon">_api<wbr>Type</a>
 							</li>
@@ -1438,7 +1441,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
@@ -1448,6 +1450,7 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">

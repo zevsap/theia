@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="core.html">core</a>
@@ -70,13 +69,6 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>The caption highlighting with the highlighted ranges and an optional background color.</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
@@ -91,14 +83,7 @@
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/core.widgetdecoration.captionhighlight.fragment.html" class="tsd-kind-icon">Fragment</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="core.widgetdecoration.captionhighlight.html#backgroundcolor" class="tsd-kind-icon">background<wbr>Color</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="core.widgetdecoration.captionhighlight.html#color" class="tsd-kind-icon">color</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="core.widgetdecoration.captionhighlight.html#ranges" class="tsd-kind-icon">ranges</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/core.widgetdecoration.captionhighlight.range-1.html" class="tsd-kind-icon">Range</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -111,66 +96,18 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-					<a name="backgroundcolor" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> background<wbr>Color</h3>
-					<div class="tsd-signature tsd-kind-icon">background<wbr>Color<span class="tsd-signature-symbol">:</span> <a href="core.widgetdecoration.html#color" class="tsd-signature-type">Color</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/widget-decoration.ts#L219">packages/core/src/browser/widget-decoration.ts:219</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The optional background color of the text data that is being highlighted.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-					<a name="color" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> color</h3>
-					<div class="tsd-signature tsd-kind-icon">color<span class="tsd-signature-symbol">:</span> <a href="core.widgetdecoration.html#color" class="tsd-signature-type">Color</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/widget-decoration.ts#L215">packages/core/src/browser/widget-decoration.ts:215</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The optional color of the text data that is being highlighted. Falls back to the default <code>mark</code> color values defined under a widget segment class.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-					<a name="ranges" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> ranges</h3>
-					<div class="tsd-signature tsd-kind-icon">ranges<span class="tsd-signature-symbol">:</span> <a href="core.widgetdecoration.captionhighlight.range.html" class="tsd-signature-type">Range</a><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/widget-decoration.ts#L211">packages/core/src/browser/widget-decoration.ts:211</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The ranges to highlight in the caption.</p>
-						</div>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
 					<a name="split" class="tsd-anchor"></a>
 					<h3>split</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">split<span class="tsd-signature-symbol">(</span>caption<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, highlight<span class="tsd-signature-symbol">: </span><a href="core.widgetdecoration.captionhighlight.html" class="tsd-signature-type">CaptionHighlight</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/core.widgetdecoration.captionhighlight.fragment.html" class="tsd-signature-type">Fragment</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">split<span class="tsd-signature-symbol">(</span>caption<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, highlight<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.widgetdecoration.captionhighlight-1.html" class="tsd-signature-type" data-tsd-kind="Interface">CaptionHighlight</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/core.widgetdecoration.captionhighlight.fragment.html" class="tsd-signature-type" data-tsd-kind="Interface">Fragment</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/widget-decoration.ts#L259">packages/core/src/browser/widget-decoration.ts:259</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/browser/widget-decoration.ts#L259">packages/core/src/browser/widget-decoration.ts:259</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -184,10 +121,10 @@
 									<h5>caption: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>highlight: <a href="core.widgetdecoration.captionhighlight.html" class="tsd-signature-type">CaptionHighlight</a></h5>
+									<h5>highlight: <a href="../interfaces/core.widgetdecoration.captionhighlight-1.html" class="tsd-signature-type" data-tsd-kind="Interface">CaptionHighlight</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/core.widgetdecoration.captionhighlight.fragment.html" class="tsd-signature-type">Fragment</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/core.widgetdecoration.captionhighlight.fragment.html" class="tsd-signature-type" data-tsd-kind="Interface">Fragment</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -196,8 +133,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="core.html">core</a>
@@ -217,6 +154,9 @@
 										<a href="core.widgetdecoration.data.html">Data</a>
 									</li>
 									<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+										<a href="core.widgetdecoration.iconoverlayposition.html">Icon<wbr>Overlay<wbr>Position</a>
+									</li>
+									<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
 										<a href="core.widgetdecoration.styles.html">Styles</a>
 									</li>
 								</ul>
@@ -230,14 +170,8 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
 						<a href="../interfaces/core.widgetdecoration.captionhighlight.fragment.html" class="tsd-kind-icon">Fragment</a>
 					</li>
-					<li class=" tsd-kind-property tsd-parent-kind-namespace">
-						<a href="core.widgetdecoration.captionhighlight.html#backgroundcolor" class="tsd-kind-icon">background<wbr>Color</a>
-					</li>
-					<li class=" tsd-kind-property tsd-parent-kind-namespace">
-						<a href="core.widgetdecoration.captionhighlight.html#color" class="tsd-kind-icon">color</a>
-					</li>
-					<li class=" tsd-kind-property tsd-parent-kind-namespace">
-						<a href="core.widgetdecoration.captionhighlight.html#ranges" class="tsd-kind-icon">ranges</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/core.widgetdecoration.captionhighlight.range-1.html" class="tsd-kind-icon">Range</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-namespace">
 						<a href="core.widgetdecoration.captionhighlight.html#split" class="tsd-kind-icon">split</a>
@@ -253,7 +187,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

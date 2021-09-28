@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/task.html">task</a>
@@ -71,7 +70,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="task.taskconfiguration-1.html" class="tsd-signature-type">TaskConfiguration</a>
+						<a href="task.taskconfiguration-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskConfiguration</a>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">ContributedTaskConfiguration</span>
@@ -79,10 +78,6 @@
 						</ul>
 					</li>
 				</ul>
-			</section>
-			<section class="tsd-panel tsd-kind-interface tsd-parent-kind-module">
-				<h3 class="tsd-before-signature">Indexable</h3>
-				<div class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">[</span>name: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></div>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
@@ -112,11 +107,11 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="_scope" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> _scope</h3>
-					<div class="tsd-signature tsd-kind-icon">_scope<span class="tsd-signature-symbol">:</span> <a href="../modules/task.html#taskconfigurationscope" class="tsd-signature-type">TaskConfigurationScope</a></div>
+					<div class="tsd-signature tsd-kind-icon">_scope<span class="tsd-signature-symbol">:</span> <a href="../modules/task.html#taskconfigurationscope-1" class="tsd-signature-type" data-tsd-kind="Type alias">TaskConfigurationScope</a></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="task.taskconfiguration-1.html">TaskConfiguration</a>.<a href="task.taskconfiguration-1.html#_scope">_scope</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/common/task-protocol.ts#L165">packages/task/src/common/task-protocol.ts:165</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/common/task-protocol.ts#L165">packages/task/src/common/task-protocol.ts:165</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -126,7 +121,7 @@
 					<div class="tsd-signature tsd-kind-icon">_source<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/common/task-protocol.ts#L174">packages/task/src/common/task-protocol.ts:174</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/common/task-protocol.ts#L174">packages/task/src/common/task-protocol.ts:174</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -140,11 +135,11 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="dependson" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> depends<wbr>On</h3>
-					<div class="tsd-signature tsd-kind-icon">depends<wbr>On<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="task.taskidentifier-1.html" class="tsd-signature-type">TaskIdentifier</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="task.taskidentifier-1.html" class="tsd-signature-type">TaskIdentifier</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">depends<wbr>On<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="task.taskidentifier-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskIdentifier</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="task.taskidentifier-1.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskIdentifier</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="../modules/task.taskcustomization-1.html">TaskCustomization</a>.<a href="../modules/task.taskcustomization-1.html#dependson">dependsOn</a></p>
+						<p>Inherited from <a href="task.taskconfiguration-1.html">TaskConfiguration</a>.<a href="task.taskconfiguration-1.html#dependson">dependsOn</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/common/task-protocol.ts#L125">packages/task/src/common/task-protocol.ts:125</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/common/task-protocol.ts#L125">packages/task/src/common/task-protocol.ts:125</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -156,11 +151,11 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="dependsorder" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> depends<wbr>Order</h3>
-					<div class="tsd-signature tsd-kind-icon">depends<wbr>Order<span class="tsd-signature-symbol">:</span> <a href="../modules/task.html#dependsorder" class="tsd-signature-type">DependsOrder</a></div>
+					<div class="tsd-signature tsd-kind-icon">depends<wbr>Order<span class="tsd-signature-symbol">:</span> <a href="../enums/task.dependsorder-1.html#sequence" class="tsd-signature-type" data-tsd-kind="Enumeration member">Sequence</a><span class="tsd-signature-symbol"> | </span><a href="../enums/task.dependsorder-1.html#parallel" class="tsd-signature-type" data-tsd-kind="Enumeration member">Parallel</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="../modules/task.taskcustomization-1.html">TaskCustomization</a>.<a href="../modules/task.taskcustomization-1.html#dependsorder">dependsOrder</a></p>
+						<p>Inherited from <a href="task.taskconfiguration-1.html">TaskConfiguration</a>.<a href="task.taskconfiguration-1.html#dependsorder">dependsOrder</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/common/task-protocol.ts#L128">packages/task/src/common/task-protocol.ts:128</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/common/task-protocol.ts#L128">packages/task/src/common/task-protocol.ts:128</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -172,33 +167,33 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="detail" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> detail</h3>
-					<div class="tsd-signature tsd-kind-icon">detail<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<div class="tsd-signature tsd-kind-icon">detail<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="../modules/task.taskcustomization-1.html">TaskCustomization</a>.<a href="../modules/task.taskcustomization-1.html#detail">detail</a></p>
+						<p>Inherited from <a href="task.taskconfiguration-1.html">TaskConfiguration</a>.<a href="task.taskconfiguration-1.html#detail">detail</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/common/task-protocol.ts#L119">packages/task/src/common/task-protocol.ts:119</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/common/task-protocol.ts#L119">packages/task/src/common/task-protocol.ts:119</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="group" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> group</h3>
-					<div class="tsd-signature tsd-kind-icon">group<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"build"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"test"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"none"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>isDefault<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>kind<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"build"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"test"</span><span class="tsd-signature-symbol"> }</span></div>
+					<div class="tsd-signature tsd-kind-icon">group<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;build&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;test&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;none&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>isDefault<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>kind<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;build&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;test&quot;</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="../modules/task.taskcustomization-1.html">TaskCustomization</a>.<a href="../modules/task.taskcustomization-1.html#group">group</a></p>
+						<p>Inherited from <a href="task.taskconfiguration-1.html">TaskConfiguration</a>.<a href="task.taskconfiguration-1.html#group">group</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/common/task-protocol.ts#L116">packages/task/src/common/task-protocol.ts:116</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/common/task-protocol.ts#L116">packages/task/src/common/task-protocol.ts:116</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="isbackground" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>Background</h3>
-					<div class="tsd-signature tsd-kind-icon">is<wbr>Background<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Background<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="../modules/task.taskcustomization-1.html">TaskCustomization</a>.<a href="../modules/task.taskcustomization-1.html#isbackground">isBackground</a></p>
+						<p>Inherited from <a href="task.taskconfiguration-1.html">TaskConfiguration</a>.<a href="task.taskconfiguration-1.html#isbackground">isBackground</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/common/task-protocol.ts#L122">packages/task/src/common/task-protocol.ts:122</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/common/task-protocol.ts#L122">packages/task/src/common/task-protocol.ts:122</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -214,7 +209,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="task.taskconfiguration-1.html">TaskConfiguration</a>.<a href="task.taskconfiguration-1.html#label">label</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/common/task-protocol.ts#L164">packages/task/src/common/task-protocol.ts:164</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/common/task-protocol.ts#L164">packages/task/src/common/task-protocol.ts:164</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -226,22 +221,22 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="presentation" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> presentation</h3>
-					<div class="tsd-signature tsd-kind-icon">presentation<span class="tsd-signature-symbol">:</span> <a href="../modules/task.html#taskoutputpresentation" class="tsd-signature-type">TaskOutputPresentation</a></div>
+					<div class="tsd-signature tsd-kind-icon">presentation<span class="tsd-signature-symbol">:</span> <a href="task.taskoutputpresentation-2.html" class="tsd-signature-type" data-tsd-kind="Interface">TaskOutputPresentation</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="../modules/task.taskcustomization-1.html">TaskCustomization</a>.<a href="../modules/task.taskcustomization-1.html#presentation">presentation</a></p>
+						<p>Inherited from <a href="task.taskconfiguration-1.html">TaskConfiguration</a>.<a href="task.taskconfiguration-1.html#presentation">presentation</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/common/task-protocol.ts#L118">packages/task/src/common/task-protocol.ts:118</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/common/task-protocol.ts#L118">packages/task/src/common/task-protocol.ts:118</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="problemmatcher" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> problem<wbr>Matcher</h3>
-					<div class="tsd-signature tsd-kind-icon">problem<wbr>Matcher<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="task.problemmatchercontribution-1.html" class="tsd-signature-type">ProblemMatcherContribution</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="task.problemmatchercontribution-1.html" class="tsd-signature-type">ProblemMatcherContribution</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">problem<wbr>Matcher<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="task.problemmatchercontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">ProblemMatcherContribution</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="task.problemmatchercontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">ProblemMatcherContribution</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="../modules/task.taskcustomization-1.html">TaskCustomization</a>.<a href="../modules/task.taskcustomization-1.html#problemmatcher">problemMatcher</a></p>
+						<p>Inherited from <a href="task.taskconfiguration-1.html">TaskConfiguration</a>.<a href="task.taskconfiguration-1.html#problemmatcher">problemMatcher</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/common/task-protocol.ts#L117">packages/task/src/common/task-protocol.ts:117</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/common/task-protocol.ts#L117">packages/task/src/common/task-protocol.ts:117</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -250,9 +245,9 @@
 					<h3>type</h3>
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="../modules/task.taskcustomization-1.html">TaskCustomization</a>.<a href="../modules/task.taskcustomization-1.html#type">type</a></p>
+						<p>Inherited from <a href="task.taskconfiguration-1.html">TaskConfiguration</a>.<a href="task.taskconfiguration-1.html#type">type</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/common/task-protocol.ts#L115">packages/task/src/common/task-protocol.ts:115</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/common/task-protocol.ts#L115">packages/task/src/common/task-protocol.ts:115</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -261,14 +256,23 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/task.html">task</a>
 						<ul>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/task.applytokind-1.html">Apply<wbr>ToKind</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/task.configuretaskaction.html">Configure<wbr>Task<wbr>Action</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/task.filelocationkind-1.html">File<wbr>Location<wbr>Kind</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/task.problemlocationkind-1.html">Problem<wbr>Location<wbr>Kind</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/task.problemmatchdata-1.html">Problem<wbr>Match<wbr>Data</a>
@@ -287,6 +291,12 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/task.taskcommands.html">Task<wbr>Commands</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/task.taskconfigurationmanager.html">Task<wbr>Configuration<wbr>Manager</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/task.taskconfigurationmodel.html">Task<wbr>Configuration<wbr>Model</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/task.taskcustomization-1.html">Task<wbr>Customization</a>
@@ -362,7 +372,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

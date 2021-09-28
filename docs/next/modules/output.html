@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="output.html">output</a>
@@ -74,6 +73,7 @@
 								<li class="tsd-kind-namespace tsd-parent-kind-module"><a href="output.outputcommands.html" class="tsd-kind-icon">Output<wbr>Commands</a></li>
 								<li class="tsd-kind-namespace tsd-parent-kind-module"><a href="output.outputcontextmenu.html" class="tsd-kind-icon">Output<wbr>Context<wbr>Menu</a></li>
 								<li class="tsd-kind-namespace tsd-parent-kind-module"><a href="output.outputuri.html" class="tsd-kind-icon">Output<wbr>Uri</a></li>
+								<li class="tsd-kind-namespace tsd-parent-kind-module"><a href="output.outputwidget.html" class="tsd-kind-icon">Output<wbr>Widget</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -85,7 +85,6 @@
 						<section class="tsd-index-section ">
 							<h3>Classes</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-class tsd-parent-kind-module tsd-is-not-exported"><a href="../classes/output.noopdragoverdockpanel.html" class="tsd-kind-icon">Noop<wbr>Drag<wbr>Over<wbr>Dock<wbr>Panel</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/output.outputchannel.html" class="tsd-kind-icon">Output<wbr>Channel</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/output.outputchannelmanager.html" class="tsd-kind-icon">Output<wbr>Channel<wbr>Manager</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/output.outputcontextmenuservice.html" class="tsd-kind-icon">Output<wbr>Context<wbr>Menu<wbr>Service</a></li>
@@ -95,7 +94,7 @@
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/output.outputeditormodelfactory.html" class="tsd-kind-icon">Output<wbr>Editor<wbr>Model<wbr>Factory</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/output.outputresource.html" class="tsd-kind-icon">Output<wbr>Resource</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/output.outputtoolbarcontribution.html" class="tsd-kind-icon">Output<wbr>Toolbar<wbr>Contribution</a></li>
-								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/output.outputwidget.html" class="tsd-kind-icon">Output<wbr>Widget</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/output.outputwidget-1.html" class="tsd-kind-icon">Output<wbr>Widget</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -111,9 +110,16 @@
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-module"><a href="output.html#default" class="tsd-kind-icon">default</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="output.html#output_widget_kind" class="tsd-kind-icon">OUTPUT_<wbr>WIDGET_<wbr>KIND</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="output.html#outputconfigschema" class="tsd-kind-icon">Output<wbr>Config<wbr>Schema</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="output.html#outputpreferencecontribution" class="tsd-kind-icon">Output<wbr>Preference<wbr>Contribution</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="output.html#outputpreferences-1" class="tsd-kind-icon">Output<wbr>Preferences</a></li>
 							</ul>
@@ -125,12 +131,6 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="output.html#createoutputpreferences" class="tsd-kind-icon">create<wbr>Output<wbr>Preferences</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section ">
-							<h3>Object literals</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-object-literal tsd-parent-kind-module"><a href="output.html#outputconfigschema" class="tsd-kind-icon">Output<wbr>Config<wbr>Schema</a></li>
-							</ul>
-						</section>
 					</div>
 				</section>
 			</section>
@@ -139,11 +139,21 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
 					<a name="outputpreferences" class="tsd-anchor"></a>
 					<h3>Output<wbr>Preferences</h3>
-					<div class="tsd-signature tsd-kind-icon">Output<wbr>Preferences<span class="tsd-signature-symbol">:</span> <a href="core.html#preferenceproxy-2" class="tsd-signature-type">PreferenceProxy</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/output.outputconfiguration.html" class="tsd-signature-type">OutputConfiguration</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">Output<wbr>Preferences<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">PreferenceProxy</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/output.outputconfiguration.html" class="tsd-signature-type" data-tsd-kind="Interface">OutputConfiguration</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/output/src/common/output-preferences.ts#L45">packages/output/src/common/output-preferences.ts:45</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/output/src/common/output-preferences.ts#L45">packages/output/src/common/output-preferences.ts:45</a></li>
 						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-module">
+					<a name="default" class="tsd-anchor"></a>
+					<h3>default</h3>
+					<div class="tsd-signature tsd-kind-icon">default<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ContainerModule</span></div>
+					<aside class="tsd-sources">
 					</aside>
 				</section>
 			</section>
@@ -152,10 +162,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="output_widget_kind" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> OUTPUT_<wbr>WIDGET_<wbr>KIND</h3>
-					<div class="tsd-signature tsd-kind-icon">OUTPUT_<wbr>WIDGET_<wbr>KIND<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"outputView"</span><span class="tsd-signature-symbol"> = OutputWidget.ID</span></div>
+					<div class="tsd-signature tsd-kind-icon">OUTPUT_<wbr>WIDGET_<wbr>KIND<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;outputView&quot;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/output/src/browser/output-widget.ts#L251">packages/output/src/browser/output-widget.ts:251</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/output/src/browser/output-widget.ts#L251">packages/output/src/browser/output-widget.ts:251</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -167,22 +177,32 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
-					<a name="outputpreferencecontribution" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> Output<wbr>Preference<wbr>Contribution</h3>
-					<div class="tsd-signature tsd-kind-icon">Output<wbr>Preference<wbr>Contribution<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">unique symbol</span><span class="tsd-signature-symbol"> = Symbol(&#x27;OutputPreferenceContribution&#x27;)</span></div>
+					<a name="outputconfigschema" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> Output<wbr>Config<wbr>Schema</h3>
+					<div class="tsd-signature tsd-kind-icon">Output<wbr>Config<wbr>Schema<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">PreferenceSchema</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/output/src/common/output-preferences.ts#L43">packages/output/src/common/output-preferences.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/output/src/common/output-preferences.ts#L28">packages/output/src/common/output-preferences.ts:28</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="outputpreferencecontribution" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> Output<wbr>Preference<wbr>Contribution</h3>
+					<div class="tsd-signature tsd-kind-icon">Output<wbr>Preference<wbr>Contribution<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><a href="output.html#outputpreferencecontribution" class="tsd-signature-type" data-tsd-kind="Variable">OutputPreferenceContribution</a><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/output/src/common/output-preferences.ts#L43">packages/output/src/common/output-preferences.ts:43</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="outputpreferences-1" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> Output<wbr>Preferences</h3>
-					<div class="tsd-signature tsd-kind-icon">Output<wbr>Preferences<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">unique symbol</span><span class="tsd-signature-symbol"> = Symbol(&#x27;OutputPreferences&#x27;)</span></div>
+					<div class="tsd-signature tsd-kind-icon">Output<wbr>Preferences<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><a href="output.html#outputpreferences-1" class="tsd-signature-type" data-tsd-kind="Variable">OutputPreferences</a><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/output/src/common/output-preferences.ts#L44">packages/output/src/common/output-preferences.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/output/src/common/output-preferences.ts#L44">packages/output/src/common/output-preferences.ts:44</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -199,7 +219,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/output/src/common/output-preferences.ts#L51">packages/output/src/common/output-preferences.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/output/src/common/output-preferences.ts#L51">packages/output/src/common/output-preferences.ts:51</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -216,108 +236,35 @@
 					<a name="createoutputpreferences" class="tsd-anchor"></a>
 					<h3>create<wbr>Output<wbr>Preferences</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Output<wbr>Preferences<span class="tsd-signature-symbol">(</span>preferences<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.preferenceservice-2.html" class="tsd-signature-type">PreferenceService</a>, schema<span class="tsd-signature-symbol">?: </span><a href="core.preferenceschema-2.html" class="tsd-signature-type">PreferenceSchema</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="output.html#outputpreferences" class="tsd-signature-type">OutputPreferences</a></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Output<wbr>Preferences<span class="tsd-signature-symbol">(</span>preferences<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PreferenceService</span>, schema<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">PreferenceSchema</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="output.html#outputpreferences-1" class="tsd-signature-type" data-tsd-kind="Variable">OutputPreferences</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/output/src/common/output-preferences.ts#L47">packages/output/src/common/output-preferences.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/output/src/common/output-preferences.ts#L47">packages/output/src/common/output-preferences.ts:47</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>preferences: <a href="../interfaces/core.preferenceservice-2.html" class="tsd-signature-type">PreferenceService</a></h5>
+									<h5>preferences: <span class="tsd-signature-type">PreferenceService</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> schema: <a href="core.preferenceschema-2.html" class="tsd-signature-type">PreferenceSchema</a><span class="tsd-signature-symbol"> = OutputConfigSchema</span></h5>
+									<h5>schema: <span class="tsd-signature-type">PreferenceSchema</span><span class="tsd-signature-symbol"> = ...</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="output.html#outputpreferences" class="tsd-signature-type">OutputPreferences</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="output.html#outputpreferences-1" class="tsd-signature-type" data-tsd-kind="Variable">OutputPreferences</a></h4>
 						</li>
 					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Object literals</h2>
-				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-module">
-					<a name="outputconfigschema" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> Output<wbr>Config<wbr>Schema</h3>
-					<div class="tsd-signature tsd-kind-icon">Output<wbr>Config<wbr>Schema<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/output/src/common/output-preferences.ts#L28">packages/output/src/common/output-preferences.ts:28</a></li>
-						</ul>
-					</aside>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-						<a name="outputconfigschema.type" class="tsd-anchor"></a>
-						<h3>type</h3>
-						<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;object&quot;</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/output/src/common/output-preferences.ts#L29">packages/output/src/common/output-preferences.ts:29</a></li>
-							</ul>
-						</aside>
-					</section>
-					<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal">
-						<a name="outputconfigschema.properties" class="tsd-anchor"></a>
-						<h3>properties</h3>
-						<div class="tsd-signature tsd-kind-icon">properties<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/output/src/common/output-preferences.ts#L30">packages/output/src/common/output-preferences.ts:30</a></li>
-							</ul>
-						</aside>
-						<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal">
-							<a name="outputconfigschema.properties.output_maxchannelhistory" class="tsd-anchor"></a>
-							<h3>output.max<wbr>Channel<wbr>History</h3>
-							<div class="tsd-signature tsd-kind-icon">output.max<wbr>Channel<wbr>History<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/output/src/common/output-preferences.ts#L31">packages/output/src/common/output-preferences.ts:31</a></li>
-								</ul>
-							</aside>
-							<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-								<a name="outputconfigschema.properties.output_maxchannelhistory.default" class="tsd-anchor"></a>
-								<h3>default</h3>
-								<div class="tsd-signature tsd-kind-icon">default<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1000</span></div>
-								<aside class="tsd-sources">
-									<ul>
-										<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/output/src/common/output-preferences.ts#L34">packages/output/src/common/output-preferences.ts:34</a></li>
-									</ul>
-								</aside>
-							</section>
-							<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-								<a name="outputconfigschema.properties.output_maxchannelhistory.description" class="tsd-anchor"></a>
-								<h3>description</h3>
-								<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;The maximum number of entries in an output channel.&quot;</span></div>
-								<aside class="tsd-sources">
-									<ul>
-										<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/output/src/common/output-preferences.ts#L33">packages/output/src/common/output-preferences.ts:33</a></li>
-									</ul>
-								</aside>
-							</section>
-							<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-								<a name="outputconfigschema.properties.output_maxchannelhistory.type-1" class="tsd-anchor"></a>
-								<h3>type</h3>
-								<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"number"</span><span class="tsd-signature-symbol"> = &quot;number&quot;</span></div>
-								<aside class="tsd-sources">
-									<ul>
-										<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/output/src/common/output-preferences.ts#L32">packages/output/src/common/output-preferences.ts:32</a></li>
-									</ul>
-								</aside>
-							</section>
-						</section>
-					</section>
 				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="output.html">output</a>
@@ -331,6 +278,9 @@
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="output.outputuri.html">Output<wbr>Uri</a>
 							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="output.outputwidget.html">Output<wbr>Widget</a>
+							</li>
 						</ul>
 					</li>
 				</ul>
@@ -339,9 +289,6 @@
 				<ul class="before-current">
 					<li class=" tsd-kind-enum tsd-parent-kind-module">
 						<a href="../enums/output.outputchannelseverity.html" class="tsd-kind-icon">Output<wbr>Channel<wbr>Severity</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../classes/output.noopdragoverdockpanel.html" class="tsd-kind-icon">Noop<wbr>Drag<wbr>Over<wbr>Dock<wbr>Panel</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/output.outputchannel.html" class="tsd-kind-icon">Output<wbr>Channel</a>
@@ -371,7 +318,7 @@
 						<a href="../classes/output.outputtoolbarcontribution.html" class="tsd-kind-icon">Output<wbr>Toolbar<wbr>Contribution</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/output.outputwidget.html" class="tsd-kind-icon">Output<wbr>Widget</a>
+						<a href="../classes/output.outputwidget-1.html" class="tsd-kind-icon">Output<wbr>Widget</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/output.outputconfiguration.html" class="tsd-kind-icon">Output<wbr>Configuration</a>
@@ -379,8 +326,14 @@
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="output.html#outputpreferences" class="tsd-kind-icon">Output<wbr>Preferences</a>
 					</li>
+					<li class=" tsd-kind-property tsd-parent-kind-module">
+						<a href="output.html#default" class="tsd-kind-icon">default</a>
+					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="output.html#output_widget_kind" class="tsd-kind-icon">OUTPUT_<wbr>WIDGET_<wbr>KIND</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="output.html#outputconfigschema" class="tsd-kind-icon">Output<wbr>Config<wbr>Schema</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="output.html#outputpreferencecontribution" class="tsd-kind-icon">Output<wbr>Preference<wbr>Contribution</a>
@@ -394,9 +347,6 @@
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="output.html#createoutputpreferences" class="tsd-kind-icon">create<wbr>Output<wbr>Preferences</a>
 					</li>
-					<li class=" tsd-kind-object-literal tsd-parent-kind-module">
-						<a href="output.html#outputconfigschema" class="tsd-kind-icon">Output<wbr>Config<wbr>Schema</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
@@ -408,7 +358,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

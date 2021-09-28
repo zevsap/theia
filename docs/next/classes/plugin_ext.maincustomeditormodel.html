@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/plugin_ext.html">plugin-ext</a>
@@ -78,7 +77,7 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/plugin_ext.customeditormodel.html" class="tsd-signature-type">CustomEditorModel</a></li>
+					<li><a href="../interfaces/plugin_ext.customeditormodel.html" class="tsd-signature-type" data-tsd-kind="Interface">CustomEditorModel</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -97,19 +96,13 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.maincustomeditormodel.html#autosave" class="tsd-kind-icon">auto<wbr>Save</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.maincustomeditormodel.html#autosavedelay" class="tsd-kind-icon">auto<wbr>Save<wbr>Delay</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.maincustomeditormodel.html#currenteditindex" class="tsd-kind-icon">current<wbr>Edit<wbr>Index</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.maincustomeditormodel.html#editable" class="tsd-kind-icon">editable</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.maincustomeditormodel.html#editorpreferences" class="tsd-kind-icon">editor<wbr>Preferences</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.maincustomeditormodel.html#editorresource" class="tsd-kind-icon">editor<wbr>Resource</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.maincustomeditormodel.html#edits" class="tsd-kind-icon">edits</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.maincustomeditormodel.html#fileservice" class="tsd-kind-icon">file<wbr>Service</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.maincustomeditormodel.html#isdirtyfromcontentchange" class="tsd-kind-icon">is<wbr>Dirty<wbr>From<wbr>Content<wbr>Change</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.maincustomeditormodel.html#ondirtychanged" class="tsd-kind-icon">on<wbr>Dirty<wbr>Changed</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.maincustomeditormodel.html#ondirtychangedemitter" class="tsd-kind-icon">on<wbr>Dirty<wbr>Changed<wbr>Emitter</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.maincustomeditormodel.html#ongoingsave" class="tsd-kind-icon">ongoing<wbr>Save</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.maincustomeditormodel.html#proxy" class="tsd-kind-icon">proxy</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.maincustomeditormodel.html#savepoint" class="tsd-kind-icon">save<wbr>Point</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.maincustomeditormodel.html#todispose" class="tsd-kind-icon">to<wbr>Dispose</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.maincustomeditormodel.html#undoredoservice" class="tsd-kind-icon">undo<wbr>Redo<wbr>Service</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.maincustomeditormodel.html#viewtype" class="tsd-kind-icon">view<wbr>Type</a></li>
 							</ul>
 						</section>
@@ -148,40 +141,40 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Main<wbr>Custom<wbr>Editor<wbr>Model<span class="tsd-signature-symbol">(</span>proxy<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.customeditorsext-1.html" class="tsd-signature-type">CustomEditorsExt</a>, viewType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, editorResource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TheiaURI</span>, editable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, undoRedoService<span class="tsd-signature-symbol">: </span><a href="plugin_ext.undoredoservice.html" class="tsd-signature-type">UndoRedoService</a>, fileService<span class="tsd-signature-symbol">: </span><a href="filesystem.fileservice.html" class="tsd-signature-type">FileService</a>, editorPreferences<span class="tsd-signature-symbol">: </span><a href="../modules/editor.html#editorpreferences-2" class="tsd-signature-type">EditorPreferences</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.maincustomeditormodel.html" class="tsd-signature-type">MainCustomEditorModel</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Main<wbr>Custom<wbr>Editor<wbr>Model<span class="tsd-signature-symbol">(</span>proxy<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.customeditorsext-1.html" class="tsd-signature-type" data-tsd-kind="Interface">CustomEditorsExt</a>, viewType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, editorResource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default</span>, editable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, undoRedoService<span class="tsd-signature-symbol">: </span><a href="plugin_ext.undoredoservice.html" class="tsd-signature-type" data-tsd-kind="Class">UndoRedoService</a>, fileService<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FileService</span>, editorPreferences<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PreferenceProxy</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EditorConfiguration</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.maincustomeditormodel.html" class="tsd-signature-type" data-tsd-kind="Class">MainCustomEditorModel</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L281">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:281</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L281">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:281</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>proxy: <a href="../interfaces/plugin_ext.customeditorsext-1.html" class="tsd-signature-type">CustomEditorsExt</a></h5>
+									<h5>proxy: <a href="../interfaces/plugin_ext.customeditorsext-1.html" class="tsd-signature-type" data-tsd-kind="Interface">CustomEditorsExt</a></h5>
 								</li>
 								<li>
 									<h5>viewType: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>editorResource: <span class="tsd-signature-type">TheiaURI</span></h5>
+									<h5>editorResource: <span class="tsd-signature-type">default</span></h5>
 								</li>
 								<li>
 									<h5>editable: <span class="tsd-signature-type">boolean</span></h5>
 								</li>
 								<li>
-									<h5>undoRedoService: <a href="plugin_ext.undoredoservice.html" class="tsd-signature-type">UndoRedoService</a></h5>
+									<h5>undoRedoService: <a href="plugin_ext.undoredoservice.html" class="tsd-signature-type" data-tsd-kind="Class">UndoRedoService</a></h5>
 								</li>
 								<li>
-									<h5>fileService: <a href="filesystem.fileservice.html" class="tsd-signature-type">FileService</a></h5>
+									<h5>fileService: <span class="tsd-signature-type">FileService</span></h5>
 								</li>
 								<li>
-									<h5>editorPreferences: <a href="../modules/editor.html#editorpreferences-2" class="tsd-signature-type">EditorPreferences</a></h5>
+									<h5>editorPreferences: <span class="tsd-signature-type">PreferenceProxy</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EditorConfiguration</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.maincustomeditormodel.html" class="tsd-signature-type">MainCustomEditorModel</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.maincustomeditormodel.html" class="tsd-signature-type" data-tsd-kind="Class">MainCustomEditorModel</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -191,11 +184,11 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="autosave" class="tsd-anchor"></a>
 					<h3>auto<wbr>Save</h3>
-					<div class="tsd-signature tsd-kind-icon">auto<wbr>Save<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"on"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"off"</span></div>
+					<div class="tsd-signature tsd-kind-icon">auto<wbr>Save<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;on&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;off&quot;</span></div>
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/plugin_ext.customeditormodel.html">CustomEditorModel</a>.<a href="../interfaces/plugin_ext.customeditormodel.html#autosave">autoSave</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L267">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:267</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L267">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:267</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -205,7 +198,7 @@
 					<div class="tsd-signature tsd-kind-icon">auto<wbr>Save<wbr>Delay<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L268">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:268</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L268">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:268</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -215,57 +208,17 @@
 					<div class="tsd-signature tsd-kind-icon">current<wbr>Edit<wbr>Index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L257">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:257</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="editable" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> editable</h3>
-					<div class="tsd-signature tsd-kind-icon">editable<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L287">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:287</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="editorpreferences" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> editor<wbr>Preferences</h3>
-					<div class="tsd-signature tsd-kind-icon">editor<wbr>Preferences<span class="tsd-signature-symbol">:</span> <a href="../modules/editor.html#editorpreferences-2" class="tsd-signature-type">EditorPreferences</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L290">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:290</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="editorresource" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> editor<wbr>Resource</h3>
-					<div class="tsd-signature tsd-kind-icon">editor<wbr>Resource<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TheiaURI</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L286">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:286</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L257">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:257</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="edits" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> edits</h3>
-					<div class="tsd-signature tsd-kind-icon">edits<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = []</span></div>
+					<div class="tsd-signature tsd-kind-icon">edits<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L261">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:261</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="fileservice" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> file<wbr>Service</h3>
-					<div class="tsd-signature tsd-kind-icon">file<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="filesystem.fileservice.html" class="tsd-signature-type">FileService</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L289">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:289</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L261">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:261</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -275,48 +228,38 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Dirty<wbr>From<wbr>Content<wbr>Change<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L259">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:259</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L259">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:259</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="ondirtychanged" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Dirty<wbr>Changed</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Dirty<wbr>Changed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = this.onDirtyChangedEmitter.event</span></div>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Dirty<wbr>Changed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/plugin_ext.customeditormodel.html">CustomEditorModel</a>.<a href="../interfaces/plugin_ext.customeditormodel.html#ondirtychanged">onDirtyChanged</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L265">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:265</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L265">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:265</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="ondirtychangedemitter" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Dirty<wbr>Changed<wbr>Emitter</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Dirty<wbr>Changed<wbr>Emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Emitter</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Emitter&lt;void&gt;()</span></div>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Dirty<wbr>Changed<wbr>Emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Emitter</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L264">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:264</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L264">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:264</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="ongoingsave" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagOptional">Optional</span> ongoing<wbr>Save</h3>
-					<div class="tsd-signature tsd-kind-icon">ongoing<wbr>Save<span class="tsd-signature-symbol">:</span> <a href="core.cancellationtokensource-1.html" class="tsd-signature-type">CancellationTokenSource</a></div>
+					<div class="tsd-signature tsd-kind-icon">ongoing<wbr>Save<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CancellationTokenSource</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L260">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:260</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="proxy" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> proxy</h3>
-					<div class="tsd-signature tsd-kind-icon">proxy<span class="tsd-signature-symbol">:</span> <a href="../interfaces/plugin_ext.customeditorsext-1.html" class="tsd-signature-type">CustomEditorsExt</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L284">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:284</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L260">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:260</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -326,27 +269,17 @@
 					<div class="tsd-signature tsd-kind-icon">save<wbr>Point<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L258">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:258</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L258">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:258</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="todispose" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> to<wbr>Dispose</h3>
-					<div class="tsd-signature tsd-kind-icon">to<wbr>Dispose<span class="tsd-signature-symbol">:</span> <a href="core.disposablecollection-1.html" class="tsd-signature-type">DisposableCollection</a><span class="tsd-signature-symbol"> = new DisposableCollection()</span></div>
+					<div class="tsd-signature tsd-kind-icon">to<wbr>Dispose<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DisposableCollection</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L262">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:262</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="undoredoservice" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> undo<wbr>Redo<wbr>Service</h3>
-					<div class="tsd-signature tsd-kind-icon">undo<wbr>Redo<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="plugin_ext.undoredoservice.html" class="tsd-signature-type">UndoRedoService</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L288">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:288</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L262">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:262</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -356,9 +289,6 @@
 					<div class="tsd-signature tsd-kind-icon">view<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/plugin_ext.customeditormodel.html">CustomEditorModel</a>.<a href="../interfaces/plugin_ext.customeditormodel.html#viewtype">viewType</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L285">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:285</a></li>
-						</ul>
 					</aside>
 				</section>
 			</section>
@@ -373,8 +303,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/plugin_ext.customeditormodel.html">CustomEditorModel</a>.<a href="../interfaces/plugin_ext.customeditormodel.html#dirty">dirty</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L312">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:312</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L312">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:312</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -390,8 +321,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/plugin_ext.customeditormodel.html">CustomEditorModel</a>.<a href="../interfaces/plugin_ext.customeditormodel.html#readonly">readonly</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L322">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:322</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L322">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:322</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -407,8 +339,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/plugin_ext.customeditormodel.html">CustomEditorModel</a>.<a href="../interfaces/plugin_ext.customeditormodel.html#resource">resource</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L308">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:308</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L308">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:308</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">URI</span></h4>
@@ -428,7 +361,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L468">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:468</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L468">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:468</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -463,7 +396,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L337">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:337</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L337">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:337</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -481,9 +414,14 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/plugin_ext.customeditormodel.html">CustomEditorModel</a>.<a href="../interfaces/plugin_ext.customeditormodel.html#dispose">dispose</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L330">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:330</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L330">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:330</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Dispose this object.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -492,13 +430,13 @@
 					<a name="pushedit" class="tsd-anchor"></a>
 					<h3>push<wbr>Edit</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">push<wbr>Edit<span class="tsd-signature-symbol">(</span>editId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, label<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">push<wbr>Edit<span class="tsd-signature-symbol">(</span>editId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, label<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L343">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:343</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L343">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:343</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -507,7 +445,7 @@
 									<h5>editId: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>label: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>label: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -524,7 +462,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L438">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:438</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L438">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:438</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -535,20 +473,20 @@
 					<a name="revert" class="tsd-anchor"></a>
 					<h3>revert</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">revert<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/core.saveable-1.revertoptions.html" class="tsd-signature-type">RevertOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">revert<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">RevertOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/plugin_ext.customeditormodel.html">CustomEditorModel</a>.<a href="../interfaces/plugin_ext.customeditormodel.html#revert">revert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L360">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:360</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L360">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:360</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/core.saveable-1.revertoptions.html" class="tsd-signature-type">RevertOptions</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">RevertOptions</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -559,20 +497,25 @@
 					<a name="save" class="tsd-anchor"></a>
 					<h3>save</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">save<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/core.saveoptions-1.html" class="tsd-signature-type">SaveOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">save<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">SaveOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/plugin_ext.customeditormodel.html">CustomEditorModel</a>.<a href="../interfaces/plugin_ext.customeditormodel.html#save">save</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L378">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:378</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L378">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:378</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Saves dirty changes.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/core.saveoptions-1.html" class="tsd-signature-type">SaveOptions</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">SaveOptions</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -583,20 +526,20 @@
 					<a name="savecustomeditor" class="tsd-anchor"></a>
 					<h3>save<wbr>Custom<wbr>Editor</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">save<wbr>Custom<wbr>Editor<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/core.saveoptions-1.html" class="tsd-signature-type">SaveOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">save<wbr>Custom<wbr>Editor<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">SaveOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/plugin_ext.customeditormodel.html">CustomEditorModel</a>.<a href="../interfaces/plugin_ext.customeditormodel.html#savecustomeditor">saveCustomEditor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L382">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:382</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L382">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:382</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/core.saveoptions-1.html" class="tsd-signature-type">SaveOptions</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">SaveOptions</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -607,26 +550,26 @@
 					<a name="savecustomeditoras" class="tsd-anchor"></a>
 					<h3>save<wbr>Custom<wbr>Editor<wbr>As</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">save<wbr>Custom<wbr>Editor<wbr>As<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TheiaURI</span>, targetResource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TheiaURI</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/core.saveoptions-1.html" class="tsd-signature-type">SaveOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">save<wbr>Custom<wbr>Editor<wbr>As<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default</span>, targetResource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">SaveOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/plugin_ext.customeditormodel.html">CustomEditorModel</a>.<a href="../interfaces/plugin_ext.customeditormodel.html#savecustomeditoras">saveCustomEditorAs</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L408">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:408</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L408">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:408</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>resource: <span class="tsd-signature-type">TheiaURI</span></h5>
+									<h5>resource: <span class="tsd-signature-type">default</span></h5>
 								</li>
 								<li>
-									<h5>targetResource: <span class="tsd-signature-type">TheiaURI</span></h5>
+									<h5>targetResource: <span class="tsd-signature-type">default</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/core.saveoptions-1.html" class="tsd-signature-type">SaveOptions</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">SaveOptions</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -637,19 +580,19 @@
 					<a name="setproxy" class="tsd-anchor"></a>
 					<h3>set<wbr>Proxy</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Proxy<span class="tsd-signature-symbol">(</span>proxy<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.customeditorsext-1.html" class="tsd-signature-type">CustomEditorsExt</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Proxy<span class="tsd-signature-symbol">(</span>proxy<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.customeditorsext-1.html" class="tsd-signature-type" data-tsd-kind="Interface">CustomEditorsExt</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L326">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:326</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L326">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:326</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>proxy: <a href="../interfaces/plugin_ext.customeditorsext-1.html" class="tsd-signature-type">CustomEditorsExt</a></h5>
+									<h5>proxy: <a href="../interfaces/plugin_ext.customeditorsext-1.html" class="tsd-signature-type" data-tsd-kind="Interface">CustomEditorsExt</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -660,19 +603,19 @@
 					<a name="spliceedits" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> splice<wbr>Edits</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">splice<wbr>Edits<span class="tsd-signature-symbol">(</span>editToInsert<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">splice<wbr>Edits<span class="tsd-signature-symbol">(</span>editToInsert<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L455">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:455</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L455">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:455</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> editToInsert: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> editToInsert: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -689,7 +632,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L421">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:421</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L421">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:421</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -700,40 +643,40 @@
 					<a name="create" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> create</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">create<span class="tsd-signature-symbol">(</span>proxy<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.customeditorsext-1.html" class="tsd-signature-type">CustomEditorsExt</a>, viewType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, resource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TheiaURI</span>, undoRedoService<span class="tsd-signature-symbol">: </span><a href="plugin_ext.undoredoservice.html" class="tsd-signature-type">UndoRedoService</a>, fileService<span class="tsd-signature-symbol">: </span><a href="filesystem.fileservice.html" class="tsd-signature-type">FileService</a>, editorPreferences<span class="tsd-signature-symbol">: </span><a href="../modules/editor.html#editorpreferences-2" class="tsd-signature-type">EditorPreferences</a>, cancellation<span class="tsd-signature-symbol">: </span><a href="../modules/core.cancellationtoken-1.html" class="tsd-signature-type">CancellationToken</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="plugin_ext.maincustomeditormodel.html" class="tsd-signature-type">MainCustomEditorModel</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<span class="tsd-signature-symbol">(</span>proxy<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.customeditorsext-1.html" class="tsd-signature-type" data-tsd-kind="Interface">CustomEditorsExt</a>, viewType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, resource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default</span>, undoRedoService<span class="tsd-signature-symbol">: </span><a href="plugin_ext.undoredoservice.html" class="tsd-signature-type" data-tsd-kind="Class">UndoRedoService</a>, fileService<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FileService</span>, editorPreferences<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PreferenceProxy</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EditorConfiguration</span><span class="tsd-signature-symbol">&gt;</span>, cancellation<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CancellationToken</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="plugin_ext.maincustomeditormodel.html" class="tsd-signature-type" data-tsd-kind="Class">MainCustomEditorModel</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L270">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:270</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts#L270">packages/plugin-ext/src/main/browser/custom-editors/custom-editors-main.ts:270</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>proxy: <a href="../interfaces/plugin_ext.customeditorsext-1.html" class="tsd-signature-type">CustomEditorsExt</a></h5>
+									<h5>proxy: <a href="../interfaces/plugin_ext.customeditorsext-1.html" class="tsd-signature-type" data-tsd-kind="Interface">CustomEditorsExt</a></h5>
 								</li>
 								<li>
 									<h5>viewType: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>resource: <span class="tsd-signature-type">TheiaURI</span></h5>
+									<h5>resource: <span class="tsd-signature-type">default</span></h5>
 								</li>
 								<li>
-									<h5>undoRedoService: <a href="plugin_ext.undoredoservice.html" class="tsd-signature-type">UndoRedoService</a></h5>
+									<h5>undoRedoService: <a href="plugin_ext.undoredoservice.html" class="tsd-signature-type" data-tsd-kind="Class">UndoRedoService</a></h5>
 								</li>
 								<li>
-									<h5>fileService: <a href="filesystem.fileservice.html" class="tsd-signature-type">FileService</a></h5>
+									<h5>fileService: <span class="tsd-signature-type">FileService</span></h5>
 								</li>
 								<li>
-									<h5>editorPreferences: <a href="../modules/editor.html#editorpreferences-2" class="tsd-signature-type">EditorPreferences</a></h5>
+									<h5>editorPreferences: <span class="tsd-signature-type">PreferenceProxy</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">EditorConfiguration</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
-									<h5>cancellation: <a href="../modules/core.cancellationtoken-1.html" class="tsd-signature-type">CancellationToken</a></h5>
+									<h5>cancellation: <span class="tsd-signature-type">CancellationToken</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="plugin_ext.maincustomeditormodel.html" class="tsd-signature-type">MainCustomEditorModel</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="plugin_ext.maincustomeditormodel.html" class="tsd-signature-type" data-tsd-kind="Class">MainCustomEditorModel</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -742,8 +685,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/plugin_ext.html">plugin-<wbr>ext</a>
@@ -764,13 +707,13 @@
 								<a href="../modules/plugin_ext.connectionclosederror.html">Connection<wbr>Closed<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.customeditorwidget.html">Custom<wbr>Editor<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrangebehavior.html">Decoration<wbr>Range<wbr>Behavior</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrenderoptions-1.html">Decoration<wbr>Render<wbr>Options</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.delta.html">Delta</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.documentlink.html">Document<wbr>Link</a>
@@ -791,6 +734,9 @@
 								<a href="../modules/plugin_ext.parameterinformation.html">Parameter<wbr>Information</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.plugincontributions.html">Plugin<wbr>Contributions</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginiconpath.html">Plugin<wbr>Icon<wbr>Path</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
@@ -798,6 +744,12 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginpaths.html">Plugin<wbr>Paths</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewregistry.html">Plugin<wbr>View<wbr>Registry</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewwidget.html">Plugin<wbr>View<wbr>Widget</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.schemes.html">Schemes</a>
@@ -824,10 +776,16 @@
 								<a href="../modules/plugin_ext.textdocumentshowoptions.html">Text<wbr>Document<wbr>Show<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.texteditorselectionchangekind.html">Text<wbr>Editor<wbr>Selection<wbr>Change<wbr>Kind</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationattachmentrenderoptions.html">Themable<wbr>Decoration<wbr>Attachment<wbr>Render<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationrenderoptions.html">Themable<wbr>Decoration<wbr>Render<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.themeicon.html">Theme<wbr>Icon</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.timelinecommandarg-1.html">Timeline<wbr>Command<wbr>Arg</a>
@@ -842,10 +800,10 @@
 								<a href="../modules/plugin_ext.webviewexternalendpoint.html">Webview<wbr>External<wbr>Endpoint</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
+								<a href="../modules/plugin_ext.webviewwidget.html">Webview<wbr>Widget</a>
 							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.nls.html">nls</a>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
 							</li>
 						</ul>
 					</li>
@@ -871,19 +829,7 @@
 								<a href="plugin_ext.maincustomeditormodel.html#currenteditindex" class="tsd-kind-icon">current<wbr>Edit<wbr>Index</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="plugin_ext.maincustomeditormodel.html#editable" class="tsd-kind-icon">editable</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="plugin_ext.maincustomeditormodel.html#editorpreferences" class="tsd-kind-icon">editor<wbr>Preferences</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="plugin_ext.maincustomeditormodel.html#editorresource" class="tsd-kind-icon">editor<wbr>Resource</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="plugin_ext.maincustomeditormodel.html#edits" class="tsd-kind-icon">edits</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="plugin_ext.maincustomeditormodel.html#fileservice" class="tsd-kind-icon">file<wbr>Service</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="plugin_ext.maincustomeditormodel.html#isdirtyfromcontentchange" class="tsd-kind-icon">is<wbr>Dirty<wbr>From<wbr>Content<wbr>Change</a>
@@ -898,16 +844,10 @@
 								<a href="plugin_ext.maincustomeditormodel.html#ongoingsave" class="tsd-kind-icon">ongoing<wbr>Save</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="plugin_ext.maincustomeditormodel.html#proxy" class="tsd-kind-icon">proxy</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="plugin_ext.maincustomeditormodel.html#savepoint" class="tsd-kind-icon">save<wbr>Point</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="plugin_ext.maincustomeditormodel.html#todispose" class="tsd-kind-icon">to<wbr>Dispose</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="plugin_ext.maincustomeditormodel.html#undoredoservice" class="tsd-kind-icon">undo<wbr>Redo<wbr>Service</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="plugin_ext.maincustomeditormodel.html#viewtype" class="tsd-kind-icon">view<wbr>Type</a>
@@ -975,7 +915,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

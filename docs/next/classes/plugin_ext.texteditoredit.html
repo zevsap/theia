@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/plugin_ext.html">plugin-ext</a>
@@ -89,7 +88,6 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.texteditoredit.html#collectededits" class="tsd-kind-icon">collected<wbr>Edits</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.texteditoredit.html#document" class="tsd-kind-icon">document</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.texteditoredit.html#documentversionid" class="tsd-kind-icon">document<wbr>Version<wbr>Id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.texteditoredit.html#eol" class="tsd-kind-icon">eol</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.texteditoredit.html#undostopafter" class="tsd-kind-icon">undo<wbr>Stop<wbr>After</a></li>
@@ -116,19 +114,19 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Text<wbr>Editor<wbr>Edit<span class="tsd-signature-symbol">(</span>document<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin._plugin_-1.textdocument.html" class="tsd-signature-type">TextDocument</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>undoStopAfter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>undoStopBefore<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.texteditoredit.html" class="tsd-signature-type">TextEditorEdit</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Text<wbr>Editor<wbr>Edit<span class="tsd-signature-symbol">(</span>document<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TextDocument</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>undoStopAfter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>undoStopBefore<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.texteditoredit.html" class="tsd-signature-type" data-tsd-kind="Class">TextEditorEdit</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/text-editor.ts#L441">packages/plugin-ext/src/plugin/text-editor.ts:441</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/text-editor.ts#L441">packages/plugin-ext/src/plugin/text-editor.ts:441</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>document: <a href="../interfaces/plugin._plugin_-1.textdocument.html" class="tsd-signature-type">TextDocument</a></h5>
+									<h5>document: <span class="tsd-signature-type">TextDocument</span></h5>
 								</li>
 								<li>
 									<h5>options: <span class="tsd-signature-symbol">{ </span>undoStopAfter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>undoStopBefore<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></h5>
@@ -142,7 +140,7 @@
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.texteditoredit.html" class="tsd-signature-type">TextEditorEdit</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.texteditoredit.html" class="tsd-signature-type" data-tsd-kind="Class">TextEditorEdit</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -152,20 +150,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="collectededits" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> collected<wbr>Edits</h3>
-					<div class="tsd-signature tsd-kind-icon">collected<wbr>Edits<span class="tsd-signature-symbol">:</span> <a href="../interfaces/plugin_ext.texteditoperation.html" class="tsd-signature-type">TextEditOperation</a><span class="tsd-signature-symbol">[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">collected<wbr>Edits<span class="tsd-signature-symbol">:</span> <a href="../interfaces/plugin_ext.texteditoperation.html" class="tsd-signature-type" data-tsd-kind="Interface">TextEditOperation</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/text-editor.ts#L438">packages/plugin-ext/src/plugin/text-editor.ts:438</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="document" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> document</h3>
-					<div class="tsd-signature tsd-kind-icon">document<span class="tsd-signature-symbol">:</span> <a href="../interfaces/plugin._plugin_-1.textdocument.html" class="tsd-signature-type">TextDocument</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/text-editor.ts#L442">packages/plugin-ext/src/plugin/text-editor.ts:442</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/text-editor.ts#L438">packages/plugin-ext/src/plugin/text-editor.ts:438</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -175,17 +163,17 @@
 					<div class="tsd-signature tsd-kind-icon">document<wbr>Version<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/text-editor.ts#L437">packages/plugin-ext/src/plugin/text-editor.ts:437</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/text-editor.ts#L437">packages/plugin-ext/src/plugin/text-editor.ts:437</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="eol" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> eol</h3>
-					<div class="tsd-signature tsd-kind-icon">eol<span class="tsd-signature-symbol">:</span> <a href="../enums/plugin_ext.endofline.html" class="tsd-signature-type">EndOfLine</a></div>
+					<div class="tsd-signature tsd-kind-icon">eol<span class="tsd-signature-symbol">:</span> <a href="../enums/plugin_ext.endofline.html" class="tsd-signature-type" data-tsd-kind="Enumeration">EndOfLine</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/text-editor.ts#L439">packages/plugin-ext/src/plugin/text-editor.ts:439</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/text-editor.ts#L439">packages/plugin-ext/src/plugin/text-editor.ts:439</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -195,7 +183,7 @@
 					<div class="tsd-signature tsd-kind-icon">undo<wbr>Stop<wbr>After<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/text-editor.ts#L441">packages/plugin-ext/src/plugin/text-editor.ts:441</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/text-editor.ts#L441">packages/plugin-ext/src/plugin/text-editor.ts:441</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -205,7 +193,7 @@
 					<div class="tsd-signature tsd-kind-icon">undo<wbr>Stop<wbr>Before<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/text-editor.ts#L440">packages/plugin-ext/src/plugin/text-editor.ts:440</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/text-editor.ts#L440">packages/plugin-ext/src/plugin/text-editor.ts:440</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -216,22 +204,22 @@
 					<a name="addedit" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> add<wbr>Edit</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Edit<span class="tsd-signature-symbol">(</span>range<span class="tsd-signature-symbol">: </span><a href="plugin_ext.range.html" class="tsd-signature-type">Range</a>, text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, moveMarkers<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Edit<span class="tsd-signature-symbol">(</span>range<span class="tsd-signature-symbol">: </span><a href="plugin_ext.range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a>, text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, moveMarkers<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/text-editor.ts#L496">packages/plugin-ext/src/plugin/text-editor.ts:496</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/text-editor.ts#L496">packages/plugin-ext/src/plugin/text-editor.ts:496</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>range: <a href="plugin_ext.range.html" class="tsd-signature-type">Range</a></h5>
+									<h5>range: <a href="plugin_ext.range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h5>
 								</li>
 								<li>
-									<h5>text: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>text: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
 									<h5>moveMarkers: <span class="tsd-signature-type">boolean</span></h5>
@@ -245,19 +233,19 @@
 					<a name="delete" class="tsd-anchor"></a>
 					<h3>delete</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">delete<span class="tsd-signature-symbol">(</span>location<span class="tsd-signature-symbol">: </span><a href="plugin_ext.range.html" class="tsd-signature-type">Range</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.selection-1.html" class="tsd-signature-type">Selection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">delete<span class="tsd-signature-symbol">(</span>location<span class="tsd-signature-symbol">: </span><a href="plugin_ext.range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.selection-1.html" class="tsd-signature-type" data-tsd-kind="Class">Selection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/text-editor.ts#L477">packages/plugin-ext/src/plugin/text-editor.ts:477</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/text-editor.ts#L477">packages/plugin-ext/src/plugin/text-editor.ts:477</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>location: <a href="plugin_ext.range.html" class="tsd-signature-type">Range</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.selection-1.html" class="tsd-signature-type">Selection</a></h5>
+									<h5>location: <a href="plugin_ext.range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.selection-1.html" class="tsd-signature-type" data-tsd-kind="Class">Selection</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -268,16 +256,16 @@
 					<a name="finalize" class="tsd-anchor"></a>
 					<h3>finalize</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">finalize<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.editdata.html" class="tsd-signature-type">EditData</a></li>
+						<li class="tsd-signature tsd-kind-icon">finalize<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.editdata.html" class="tsd-signature-type" data-tsd-kind="Interface">EditData</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/text-editor.ts#L450">packages/plugin-ext/src/plugin/text-editor.ts:450</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/text-editor.ts#L450">packages/plugin-ext/src/plugin/text-editor.ts:450</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.editdata.html" class="tsd-signature-type">EditData</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin_ext.editdata.html" class="tsd-signature-type" data-tsd-kind="Interface">EditData</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -285,19 +273,19 @@
 					<a name="insert" class="tsd-anchor"></a>
 					<h3>insert</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">insert<span class="tsd-signature-symbol">(</span>location<span class="tsd-signature-symbol">: </span><a href="plugin_ext.position-1.html" class="tsd-signature-type">Position</a>, val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">insert<span class="tsd-signature-symbol">(</span>location<span class="tsd-signature-symbol">: </span><a href="plugin_ext.position-1.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a>, val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/text-editor.ts#L473">packages/plugin-ext/src/plugin/text-editor.ts:473</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/text-editor.ts#L473">packages/plugin-ext/src/plugin/text-editor.ts:473</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>location: <a href="plugin_ext.position-1.html" class="tsd-signature-type">Position</a></h5>
+									<h5>location: <a href="plugin_ext.position-1.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a></h5>
 								</li>
 								<li>
 									<h5>val: <span class="tsd-signature-type">string</span></h5>
@@ -311,19 +299,19 @@
 					<a name="replace" class="tsd-anchor"></a>
 					<h3>replace</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">replace<span class="tsd-signature-symbol">(</span>location<span class="tsd-signature-symbol">: </span><a href="plugin_ext.position-1.html" class="tsd-signature-type">Position</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.range.html" class="tsd-signature-type">Range</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.selection-1.html" class="tsd-signature-type">Selection</a>, val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">replace<span class="tsd-signature-symbol">(</span>location<span class="tsd-signature-symbol">: </span><a href="plugin_ext.position-1.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.selection-1.html" class="tsd-signature-type" data-tsd-kind="Class">Selection</a>, val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/text-editor.ts#L460">packages/plugin-ext/src/plugin/text-editor.ts:460</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/text-editor.ts#L460">packages/plugin-ext/src/plugin/text-editor.ts:460</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>location: <a href="plugin_ext.position-1.html" class="tsd-signature-type">Position</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.range.html" class="tsd-signature-type">Range</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.selection-1.html" class="tsd-signature-type">Selection</a></h5>
+									<h5>location: <a href="plugin_ext.position-1.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.selection-1.html" class="tsd-signature-type" data-tsd-kind="Class">Selection</a></h5>
 								</li>
 								<li>
 									<h5>val: <span class="tsd-signature-type">string</span></h5>
@@ -337,19 +325,19 @@
 					<a name="setendofline" class="tsd-anchor"></a>
 					<h3>set<wbr>End<wbr>OfLine</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>End<wbr>OfLine<span class="tsd-signature-symbol">(</span>endOfLine<span class="tsd-signature-symbol">: </span><a href="../enums/plugin_ext.endofline.html" class="tsd-signature-type">EndOfLine</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>End<wbr>OfLine<span class="tsd-signature-symbol">(</span>endOfLine<span class="tsd-signature-symbol">: </span><a href="../enums/plugin_ext.endofline.html" class="tsd-signature-type" data-tsd-kind="Enumeration">EndOfLine</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/text-editor.ts#L488">packages/plugin-ext/src/plugin/text-editor.ts:488</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/text-editor.ts#L488">packages/plugin-ext/src/plugin/text-editor.ts:488</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>endOfLine: <a href="../enums/plugin_ext.endofline.html" class="tsd-signature-type">EndOfLine</a></h5>
+									<h5>endOfLine: <a href="../enums/plugin_ext.endofline.html" class="tsd-signature-type" data-tsd-kind="Enumeration">EndOfLine</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -361,8 +349,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/plugin_ext.html">plugin-<wbr>ext</a>
@@ -383,13 +371,13 @@
 								<a href="../modules/plugin_ext.connectionclosederror.html">Connection<wbr>Closed<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.customeditorwidget.html">Custom<wbr>Editor<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrangebehavior.html">Decoration<wbr>Range<wbr>Behavior</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrenderoptions-1.html">Decoration<wbr>Render<wbr>Options</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.delta.html">Delta</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.documentlink.html">Document<wbr>Link</a>
@@ -410,6 +398,9 @@
 								<a href="../modules/plugin_ext.parameterinformation.html">Parameter<wbr>Information</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.plugincontributions.html">Plugin<wbr>Contributions</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginiconpath.html">Plugin<wbr>Icon<wbr>Path</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
@@ -417,6 +408,12 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginpaths.html">Plugin<wbr>Paths</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewregistry.html">Plugin<wbr>View<wbr>Registry</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewwidget.html">Plugin<wbr>View<wbr>Widget</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.schemes.html">Schemes</a>
@@ -443,10 +440,16 @@
 								<a href="../modules/plugin_ext.textdocumentshowoptions.html">Text<wbr>Document<wbr>Show<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.texteditorselectionchangekind.html">Text<wbr>Editor<wbr>Selection<wbr>Change<wbr>Kind</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationattachmentrenderoptions.html">Themable<wbr>Decoration<wbr>Attachment<wbr>Render<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationrenderoptions.html">Themable<wbr>Decoration<wbr>Render<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.themeicon.html">Theme<wbr>Icon</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.timelinecommandarg-1.html">Timeline<wbr>Command<wbr>Arg</a>
@@ -461,10 +464,10 @@
 								<a href="../modules/plugin_ext.webviewexternalendpoint.html">Webview<wbr>External<wbr>Endpoint</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
+								<a href="../modules/plugin_ext.webviewwidget.html">Webview<wbr>Widget</a>
 							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.nls.html">nls</a>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
 							</li>
 						</ul>
 					</li>
@@ -482,9 +485,6 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="plugin_ext.texteditoredit.html#collectededits" class="tsd-kind-icon">collected<wbr>Edits</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="plugin_ext.texteditoredit.html#document" class="tsd-kind-icon">document</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="plugin_ext.texteditoredit.html#documentversionid" class="tsd-kind-icon">document<wbr>Version<wbr>Id</a>
@@ -531,7 +531,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

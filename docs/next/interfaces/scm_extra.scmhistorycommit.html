@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/scm_extra.html">scm-extra</a>
@@ -71,15 +70,10 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="scm.scmcommit.html" class="tsd-signature-type">ScmCommit</a>
+						<span class="tsd-signature-type">ScmCommit</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">ScmHistoryCommit</span>
-								<ul class="tsd-hierarchy">
-									<li>
-										<a href="git.gitscmcommit.html" class="tsd-signature-type">GitScmCommit</a>
-									</li>
-								</ul>
 							</li>
 						</ul>
 					</li>
@@ -112,9 +106,9 @@
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> author<wbr>Date<wbr>Relative</h3>
 					<div class="tsd-signature tsd-kind-icon">author<wbr>Date<wbr>Relative<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="scm.scmcommit.html">ScmCommit</a>.<a href="scm.scmcommit.html#authordaterelative">authorDateRelative</a></p>
+						<p>Inherited from ScmCommit.authorDateRelative</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/scm/src/browser/scm-provider.ts#L80">packages/scm/src/browser/scm-provider.ts:80</a></li>
+							<li>Defined in packages/scm/lib/browser/scm-provider.d.ts:63</li>
 						</ul>
 					</aside>
 				</section>
@@ -123,9 +117,9 @@
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> author<wbr>Email</h3>
 					<div class="tsd-signature tsd-kind-icon">author<wbr>Email<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="scm.scmcommit.html">ScmCommit</a>.<a href="scm.scmcommit.html#authoremail">authorEmail</a></p>
+						<p>Inherited from ScmCommit.authorEmail</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/scm/src/browser/scm-provider.ts#L79">packages/scm/src/browser/scm-provider.ts:79</a></li>
+							<li>Defined in packages/scm/lib/browser/scm-provider.d.ts:62</li>
 						</ul>
 					</aside>
 				</section>
@@ -134,9 +128,9 @@
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> author<wbr>Name</h3>
 					<div class="tsd-signature tsd-kind-icon">author<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="scm.scmcommit.html">ScmCommit</a>.<a href="scm.scmcommit.html#authorname">authorName</a></p>
+						<p>Inherited from ScmCommit.authorName</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/scm/src/browser/scm-provider.ts#L78">packages/scm/src/browser/scm-provider.ts:78</a></li>
+							<li>Defined in packages/scm/lib/browser/scm-provider.d.ts:61</li>
 						</ul>
 					</aside>
 				</section>
@@ -146,7 +140,7 @@
 					<div class="tsd-signature tsd-kind-icon">commit<wbr>Detail<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/scm-extra/src/browser/scm-file-change-node.ts#L34">packages/scm-extra/src/browser/scm-file-change-node.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/scm-extra/src/browser/scm-file-change-node.ts#L34">packages/scm-extra/src/browser/scm-file-change-node.ts:34</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -158,20 +152,20 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="commitdetailuri" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> commit<wbr>Detail<wbr>Uri</h3>
-					<div class="tsd-signature tsd-kind-icon">commit<wbr>Detail<wbr>Uri<span class="tsd-signature-symbol">:</span> <a href="../classes/core.uri.html" class="tsd-signature-type">URI</a></div>
+					<div class="tsd-signature tsd-kind-icon">commit<wbr>Detail<wbr>Uri<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">default</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/scm-extra/src/browser/scm-file-change-node.ts#L32">packages/scm-extra/src/browser/scm-file-change-node.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/scm-extra/src/browser/scm-file-change-node.ts#L32">packages/scm-extra/src/browser/scm-file-change-node.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="filechanges" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> file<wbr>Changes</h3>
-					<div class="tsd-signature tsd-kind-icon">file<wbr>Changes<span class="tsd-signature-symbol">:</span> <a href="scm_extra.scmfilechange.html" class="tsd-signature-type">ScmFileChange</a><span class="tsd-signature-symbol">[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">file<wbr>Changes<span class="tsd-signature-symbol">:</span> <a href="scm_extra.scmfilechange.html" class="tsd-signature-type" data-tsd-kind="Interface">ScmFileChange</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/scm-extra/src/browser/scm-file-change-node.ts#L33">packages/scm-extra/src/browser/scm-file-change-node.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/scm-extra/src/browser/scm-file-change-node.ts#L33">packages/scm-extra/src/browser/scm-file-change-node.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -180,9 +174,9 @@
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> id</h3>
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="scm.scmcommit.html">ScmCommit</a>.<a href="scm.scmcommit.html#id">id</a></p>
+						<p>Inherited from ScmCommit.id</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/scm/src/browser/scm-provider.ts#L76">packages/scm/src/browser/scm-provider.ts:76</a></li>
+							<li>Defined in packages/scm/lib/browser/scm-provider.d.ts:59</li>
 						</ul>
 					</aside>
 				</section>
@@ -191,9 +185,9 @@
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> summary</h3>
 					<div class="tsd-signature tsd-kind-icon">summary<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="scm.scmcommit.html">ScmCommit</a>.<a href="scm.scmcommit.html#summary">summary</a></p>
+						<p>Inherited from ScmCommit.summary</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/scm/src/browser/scm-provider.ts#L77">packages/scm/src/browser/scm-provider.ts:77</a></li>
+							<li>Defined in packages/scm/lib/browser/scm-provider.d.ts:60</li>
 						</ul>
 					</aside>
 				</section>
@@ -202,8 +196,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/scm_extra.html">scm-<wbr>extra</a>
@@ -218,7 +212,13 @@
 								<a href="../modules/scm_extra.scmhistorycommands.html">Scm<wbr>History<wbr>Commands</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/scm_extra.scmhistorylist.html">Scm<wbr>History<wbr>List</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/scm_extra.scmhistoryprovider.html">Scm<wbr>History<wbr>Provider</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/scm_extra.scmitemcomponent.html">Scm<wbr>Item<wbr>Component</a>
 							</li>
 						</ul>
 					</li>
@@ -226,6 +226,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="../modules/scm_extra.html#scmhistorysupport" class="tsd-kind-icon">Scm<wbr>History<wbr>Support</a>
+					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/scm_extra.scmextralayoutversion4migration.html" class="tsd-kind-icon">Scm<wbr>Extra<wbr>Layout<wbr>Version4<wbr>Migration</a>
 					</li>
@@ -235,14 +238,14 @@
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/scm_extra.scmhistorycontribution.html" class="tsd-kind-icon">Scm<wbr>History<wbr>Contribution</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="../classes/scm_extra.scmhistorylist.html" class="tsd-kind-icon">Scm<wbr>History<wbr>List</a>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/scm_extra.scmhistorylist-1.html" class="tsd-kind-icon">Scm<wbr>History<wbr>List</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/scm_extra.scmhistorywidget.html" class="tsd-kind-icon">Scm<wbr>History<wbr>Widget</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="../classes/scm_extra.scmitemcomponent.html" class="tsd-kind-icon">Scm<wbr>Item<wbr>Component</a>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/scm_extra.scmitemcomponent-1.html" class="tsd-kind-icon">Scm<wbr>Item<wbr>Component</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="../classes/scm_extra.scmnavigablelistwidget.html" class="tsd-kind-icon">Scm<wbr>Navigable<wbr>List<wbr>Widget</a>
@@ -251,7 +254,13 @@
 						<a href="scm_extra.historywidgetoptions.html" class="tsd-kind-icon">History<wbr>Widget<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="scm_extra.scmcommitnode-1.html" class="tsd-kind-icon">Scm<wbr>Commit<wbr>Node</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="scm_extra.scmfilechange.html" class="tsd-kind-icon">Scm<wbr>File<wbr>Change</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="scm_extra.scmfilechangenode-1.html" class="tsd-kind-icon">Scm<wbr>File<wbr>Change<wbr>Node</a>
 					</li>
 				</ul>
 				<ul class="current">
@@ -290,10 +299,16 @@
 						<a href="scm_extra.scmhistoryopenviewarguments.html" class="tsd-kind-icon">Scm<wbr>History<wbr>Open<wbr>View<wbr>Arguments</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="scm_extra.scmhistorysupport.html" class="tsd-kind-icon">Scm<wbr>History<wbr>Support</a>
+						<a href="scm_extra.scmhistoryprovider-1.html" class="tsd-kind-icon">Scm<wbr>History<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="scm_extra.scmhistorysupport-1.html" class="tsd-kind-icon">Scm<wbr>History<wbr>Support</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="../modules/scm_extra.html#scmhistorylistnode" class="tsd-kind-icon">Scm<wbr>History<wbr>List<wbr>Node</a>
+					</li>
+					<li class=" tsd-kind-property tsd-parent-kind-module">
+						<a href="../modules/scm_extra.html#default" class="tsd-kind-icon">default</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="../modules/scm_extra.html#editor_context_menu_scm" class="tsd-kind-icon">EDITOR_<wbr>CONTEXT_<wbr>MENU_<wbr>SCM</a>
@@ -311,7 +326,7 @@
 						<a href="../modules/scm_extra.html#scm_history_toggle_keybinding" class="tsd-kind-icon">SCM_<wbr>HISTORY_<wbr>TOGGLE_<wbr>KEYBINDING</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/scm_extra.html#scmhistorysupport-1" class="tsd-kind-icon">Scm<wbr>History<wbr>Support</a>
+						<a href="../modules/scm_extra.html#scmhistorysupport-2" class="tsd-kind-icon">Scm<wbr>History<wbr>Support</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="../modules/scm_extra.html#bindscmhistorymodule" class="tsd-kind-icon">bind<wbr>Scm<wbr>History<wbr>Module</a>
@@ -327,7 +342,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

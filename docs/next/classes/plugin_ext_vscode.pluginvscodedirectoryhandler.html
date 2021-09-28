@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/plugin_ext_vscode.html">plugin-ext-vscode</a>
@@ -86,6 +85,12 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="plugin_ext_vscode.pluginvscodedirectoryhandler.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="plugin_ext_vscode.pluginvscodedirectoryhandler.html#accept" class="tsd-kind-icon">accept</a></li>
@@ -101,6 +106,23 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Plugin<wbr>VsCode<wbr>Directory<wbr>Handler<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext_vscode.pluginvscodedirectoryhandler.html" class="tsd-signature-type" data-tsd-kind="Class">PluginVsCodeDirectoryHandler</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="plugin_ext_vscode.pluginvscodedirectoryhandler.html" class="tsd-signature-type" data-tsd-kind="Class">PluginVsCodeDirectoryHandler</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="accept" class="tsd-anchor"></a>
@@ -111,8 +133,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of PluginDeployerDirectoryHandler.accept</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext-vscode/src/node/plugin-vscode-directory-handler.ts#L30">packages/plugin-ext-vscode/src/node/plugin-vscode-directory-handler.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext-vscode/src/node/plugin-vscode-directory-handler.ts#L30">packages/plugin-ext-vscode/src/node/plugin-vscode-directory-handler.ts:30</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -134,8 +157,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of PluginDeployerDirectoryHandler.handle</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext-vscode/src/node/plugin-vscode-directory-handler.ts#L35">packages/plugin-ext-vscode/src/node/plugin-vscode-directory-handler.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext-vscode/src/node/plugin-vscode-directory-handler.ts#L35">packages/plugin-ext-vscode/src/node/plugin-vscode-directory-handler.ts:35</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -152,13 +176,13 @@
 					<a name="requirepackage" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> require<wbr>Package</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">require<wbr>Package<span class="tsd-signature-symbol">(</span>pluginPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PluginPackage</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">require<wbr>Package<span class="tsd-signature-symbol">(</span>pluginPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PluginPackage</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext-vscode/src/node/plugin-vscode-directory-handler.ts#L77">packages/plugin-ext-vscode/src/node/plugin-vscode-directory-handler.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext-vscode/src/node/plugin-vscode-directory-handler.ts#L77">packages/plugin-ext-vscode/src/node/plugin-vscode-directory-handler.ts:77</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -167,7 +191,7 @@
 									<h5>pluginPath: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PluginPackage</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PluginPackage</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -181,7 +205,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext-vscode/src/node/plugin-vscode-directory-handler.ts#L52">packages/plugin-ext-vscode/src/node/plugin-vscode-directory-handler.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext-vscode/src/node/plugin-vscode-directory-handler.ts#L52">packages/plugin-ext-vscode/src/node/plugin-vscode-directory-handler.ts:52</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -204,7 +228,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext-vscode/src/node/plugin-vscode-directory-handler.ts#L39">packages/plugin-ext-vscode/src/node/plugin-vscode-directory-handler.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext-vscode/src/node/plugin-vscode-directory-handler.ts#L39">packages/plugin-ext-vscode/src/node/plugin-vscode-directory-handler.ts:39</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -227,7 +251,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext-vscode/src/node/plugin-vscode-directory-handler.ts#L44">packages/plugin-ext-vscode/src/node/plugin-vscode-directory-handler.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext-vscode/src/node/plugin-vscode-directory-handler.ts#L44">packages/plugin-ext-vscode/src/node/plugin-vscode-directory-handler.ts:44</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -244,13 +268,13 @@
 					<a name="resolvepackage" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> resolve<wbr>Package</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">resolve<wbr>Package<span class="tsd-signature-symbol">(</span>plugin<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PluginDeployerEntry</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>pck<span class="tsd-signature-symbol">?: </span><a href="../modules/core.html#recursivepartial-1" class="tsd-signature-type">RecursivePartial</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">PluginPackage</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>pluginPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">resolve<wbr>Package<span class="tsd-signature-symbol">(</span>plugin<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PluginDeployerEntry</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>pck<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">RecursivePartial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">PluginPackage</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>pluginPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext-vscode/src/node/plugin-vscode-directory-handler.ts#L57">packages/plugin-ext-vscode/src/node/plugin-vscode-directory-handler.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext-vscode/src/node/plugin-vscode-directory-handler.ts#L57">packages/plugin-ext-vscode/src/node/plugin-vscode-directory-handler.ts:57</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -259,7 +283,15 @@
 									<h5>plugin: <span class="tsd-signature-type">PluginDeployerEntry</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>pck<span class="tsd-signature-symbol">?: </span><a href="../modules/core.html#recursivepartial-1" class="tsd-signature-type">RecursivePartial</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">PluginPackage</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>pluginPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-symbol">{ </span>pck<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">RecursivePartial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">PluginPackage</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>pluginPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> pck<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">RecursivePartial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">PluginPackage</span><span class="tsd-signature-symbol">&gt;</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>plugin<wbr>Path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+									</ul>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -271,8 +303,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/plugin_ext_vscode.html">plugin-<wbr>ext-<wbr>vscode</a>
@@ -306,6 +338,9 @@
 					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="plugin_ext_vscode.pluginvscodedirectoryhandler.html" class="tsd-kind-icon">Plugin<wbr>VsCode<wbr>Directory<wbr>Handler</a>
 						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="plugin_ext_vscode.pluginvscodedirectoryhandler.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="plugin_ext_vscode.pluginvscodedirectoryhandler.html#accept" class="tsd-kind-icon">accept</a>
 							</li>
@@ -340,38 +375,20 @@
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="plugin_ext_vscode.vscodepluginscanner.html" class="tsd-kind-icon">Vs<wbr>Code<wbr>Plugin<wbr>Scanner</a>
 					</li>
+					<li class=" tsd-kind-property tsd-parent-kind-module">
+						<a href="../modules/plugin_ext_vscode.html#default" class="tsd-kind-icon">default</a>
+					</li>
+					<li class=" tsd-kind-property tsd-parent-kind-module">
+						<a href="../modules/plugin_ext_vscode.html#default-1" class="tsd-kind-icon">default</a>
+					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="../modules/plugin_ext_vscode.html#vscode_default_api_version" class="tsd-kind-icon">VSCODE_<wbr>DEFAULT_<wbr>API_<wbr>VERSION</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="../modules/plugin_ext_vscode.html#vsx_registry_url_default" class="tsd-kind-icon">VSX_<wbr>REGISTRY_<wbr>URL_<wbr>DEFAULT</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/plugin_ext_vscode.html#defaultapi" class="tsd-kind-icon">default<wbr>Api</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/plugin_ext_vscode.html#isloadoverride" class="tsd-kind-icon">is<wbr>Load<wbr>Override</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/plugin_ext_vscode.html#pluginapifactory" class="tsd-kind-icon">plugin<wbr>Api<wbr>Factory</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/plugin_ext_vscode.html#plugins" class="tsd-kind-icon">plugins</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/plugin_ext_vscode.html#pluginsapiimpl" class="tsd-kind-icon">plugins<wbr>Api<wbr>Impl</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/plugin_ext_vscode.html#asextension" class="tsd-kind-icon">as<wbr>Extension</a>
-					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="../modules/plugin_ext_vscode.html#doinitialization" class="tsd-kind-icon">do<wbr>Initialization</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/plugin_ext_vscode.html#findplugin" class="tsd-kind-icon">find<wbr>Plugin</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/plugin_ext_vscode.html#overrideinternalload" class="tsd-kind-icon">override<wbr>Internal<wbr>Load</a>
 					</li>
 				</ul>
 			</nav>
@@ -384,7 +401,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
@@ -394,6 +410,7 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">

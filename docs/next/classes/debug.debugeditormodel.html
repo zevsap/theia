@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/debug.html">debug</a>
@@ -86,6 +85,12 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="debug.debugeditormodel.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="debug.debugeditormodel.html#breakpointdecorations" class="tsd-kind-icon">breakpoint<wbr>Decorations</a></li>
@@ -108,8 +113,14 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="debug.debugeditormodel.html#update" class="tsd-kind-icon">update</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="debug.debugeditormodel.html#updatingdecorations" class="tsd-kind-icon">updating<wbr>Decorations</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="debug.debugeditormodel.html#uri" class="tsd-kind-icon">uri</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="debug.debugeditormodel.html#breakpoint_hint_decoration" class="tsd-kind-icon">BREAKPOINT_<wbr>HINT_<wbr>DECORATION</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="debug.debugeditormodel.html#context_menu" class="tsd-kind-icon">CONTEXT_<wbr>MENU</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="debug.debugeditormodel.html#focused_stack_frame_decoration" class="tsd-kind-icon">FOCUSED_<wbr>STACK_<wbr>FRAME_<wbr>DECORATION</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="debug.debugeditormodel.html#focused_stack_frame_margin" class="tsd-kind-icon">FOCUSED_<wbr>STACK_<wbr>FRAME_<wbr>MARGIN</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="debug.debugeditormodel.html#stickiness" class="tsd-kind-icon">STICKINESS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="debug.debugeditormodel.html#top_stack_frame_decoration" class="tsd-kind-icon">TOP_<wbr>STACK_<wbr>FRAME_<wbr>DECORATION</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="debug.debugeditormodel.html#top_stack_frame_inline_decoration" class="tsd-kind-icon">TOP_<wbr>STACK_<wbr>FRAME_<wbr>INLINE_<wbr>DECORATION</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="debug.debugeditormodel.html#top_stack_frame_margin" class="tsd-kind-icon">TOP_<wbr>STACK_<wbr>FRAME_<wbr>MARGIN</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -159,18 +170,24 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="debug.debugeditormodel.html#createmodel" class="tsd-kind-icon">create<wbr>Model</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section ">
-							<h3>Object literals</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-object-literal tsd-parent-kind-class tsd-is-static"><a href="debug.debugeditormodel.html#breakpoint_hint_decoration" class="tsd-kind-icon">BREAKPOINT_<wbr>HINT_<wbr>DECORATION</a></li>
-								<li class="tsd-kind-object-literal tsd-parent-kind-class tsd-is-static"><a href="debug.debugeditormodel.html#focused_stack_frame_decoration" class="tsd-kind-icon">FOCUSED_<wbr>STACK_<wbr>FRAME_<wbr>DECORATION</a></li>
-								<li class="tsd-kind-object-literal tsd-parent-kind-class tsd-is-static"><a href="debug.debugeditormodel.html#focused_stack_frame_margin" class="tsd-kind-icon">FOCUSED_<wbr>STACK_<wbr>FRAME_<wbr>MARGIN</a></li>
-								<li class="tsd-kind-object-literal tsd-parent-kind-class tsd-is-static"><a href="debug.debugeditormodel.html#top_stack_frame_decoration" class="tsd-kind-icon">TOP_<wbr>STACK_<wbr>FRAME_<wbr>DECORATION</a></li>
-								<li class="tsd-kind-object-literal tsd-parent-kind-class tsd-is-static"><a href="debug.debugeditormodel.html#top_stack_frame_inline_decoration" class="tsd-kind-icon">TOP_<wbr>STACK_<wbr>FRAME_<wbr>INLINE_<wbr>DECORATION</a></li>
-								<li class="tsd-kind-object-literal tsd-parent-kind-class tsd-is-static"><a href="debug.debugeditormodel.html#top_stack_frame_margin" class="tsd-kind-icon">TOP_<wbr>STACK_<wbr>FRAME_<wbr>MARGIN</a></li>
-							</ul>
-						</section>
 					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Debug<wbr>Editor<wbr>Model<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="debug.debugeditormodel.html" class="tsd-signature-type" data-tsd-kind="Class">DebugEditorModel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="debug.debugeditormodel.html" class="tsd-signature-type" data-tsd-kind="Class">DebugEditorModel</a></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -181,37 +198,37 @@
 					<div class="tsd-signature tsd-kind-icon">breakpoint<wbr>Decorations<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L58">packages/debug/src/browser/editor/debug-editor-model.ts:58</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L58">packages/debug/src/browser/editor/debug-editor-model.ts:58</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="breakpointranges" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> breakpoint<wbr>Ranges</h3>
-					<div class="tsd-signature tsd-kind-icon">breakpoint<wbr>Ranges<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Range</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;string, monaco.Range&gt;()</span></div>
+					<div class="tsd-signature tsd-kind-icon">breakpoint<wbr>Ranges<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Range</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L59">packages/debug/src/browser/editor/debug-editor-model.ts:59</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L59">packages/debug/src/browser/editor/debug-editor-model.ts:59</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="breakpointwidget" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> breakpoint<wbr>Widget</h3>
-					<div class="tsd-signature tsd-kind-icon">breakpoint<wbr>Widget<span class="tsd-signature-symbol">:</span> <a href="debug.debugbreakpointwidget.html" class="tsd-signature-type">DebugBreakpointWidget</a></div>
+					<div class="tsd-signature tsd-kind-icon">breakpoint<wbr>Widget<span class="tsd-signature-symbol">:</span> <a href="debug.debugbreakpointwidget-1.html" class="tsd-signature-type" data-tsd-kind="Class">DebugBreakpointWidget</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L84">packages/debug/src/browser/editor/debug-editor-model.ts:84</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L84">packages/debug/src/browser/editor/debug-editor-model.ts:84</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="breakpoints" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> breakpoints</h3>
-					<div class="tsd-signature tsd-kind-icon">breakpoints<span class="tsd-signature-symbol">:</span> <a href="debug.breakpointmanager.html" class="tsd-signature-type">BreakpointManager</a></div>
+					<div class="tsd-signature tsd-kind-icon">breakpoints<span class="tsd-signature-symbol">:</span> <a href="debug.breakpointmanager-1.html" class="tsd-signature-type" data-tsd-kind="Class">BreakpointManager</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L75">packages/debug/src/browser/editor/debug-editor-model.ts:75</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L75">packages/debug/src/browser/editor/debug-editor-model.ts:75</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -221,17 +238,17 @@
 					<div class="tsd-signature tsd-kind-icon">configuration<wbr>Service<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IConfigurationService</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L93">packages/debug/src/browser/editor/debug-editor-model.ts:93</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L93">packages/debug/src/browser/editor/debug-editor-model.ts:93</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="contextmenu" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> context<wbr>Menu</h3>
-					<div class="tsd-signature tsd-kind-icon">context<wbr>Menu<span class="tsd-signature-symbol">:</span> <a href="core.contextmenurenderer-1.html" class="tsd-signature-type">ContextMenuRenderer</a></div>
+					<div class="tsd-signature tsd-kind-icon">context<wbr>Menu<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ContextMenuRenderer</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L81">packages/debug/src/browser/editor/debug-editor-model.ts:81</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L81">packages/debug/src/browser/editor/debug-editor-model.ts:81</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -241,17 +258,17 @@
 					<div class="tsd-signature tsd-kind-icon">current<wbr>Breakpoint<wbr>Decorations<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L61">packages/debug/src/browser/editor/debug-editor-model.ts:61</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L61">packages/debug/src/browser/editor/debug-editor-model.ts:61</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="editor" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> editor</h3>
-					<div class="tsd-signature tsd-kind-icon">editor<span class="tsd-signature-symbol">:</span> <a href="../modules/debug.html#debugeditor" class="tsd-signature-type">DebugEditor</a></div>
+					<div class="tsd-signature tsd-kind-icon">editor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">MonacoEditor</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L72">packages/debug/src/browser/editor/debug-editor-model.ts:72</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L72">packages/debug/src/browser/editor/debug-editor-model.ts:72</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -261,17 +278,17 @@
 					<div class="tsd-signature tsd-kind-icon">editor<wbr>Decorations<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L63">packages/debug/src/browser/editor/debug-editor-model.ts:63</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L63">packages/debug/src/browser/editor/debug-editor-model.ts:63</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="exceptionwidget" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> exception<wbr>Widget</h3>
-					<div class="tsd-signature tsd-kind-icon">exception<wbr>Widget<span class="tsd-signature-symbol">:</span> <a href="debug.debugexceptionwidget.html" class="tsd-signature-type">DebugExceptionWidget</a></div>
+					<div class="tsd-signature tsd-kind-icon">exception<wbr>Widget<span class="tsd-signature-symbol">:</span> <a href="debug.debugexceptionwidget.html" class="tsd-signature-type" data-tsd-kind="Class">DebugExceptionWidget</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L87">packages/debug/src/browser/editor/debug-editor-model.ts:87</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L87">packages/debug/src/browser/editor/debug-editor-model.ts:87</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -281,95 +298,95 @@
 					<div class="tsd-signature tsd-kind-icon">hint<wbr>Decorations<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L418">packages/debug/src/browser/editor/debug-editor-model.ts:418</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L418">packages/debug/src/browser/editor/debug-editor-model.ts:418</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="hover" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> hover</h3>
-					<div class="tsd-signature tsd-kind-icon">hover<span class="tsd-signature-symbol">:</span> <a href="debug.debughoverwidget.html" class="tsd-signature-type">DebugHoverWidget</a></div>
+					<div class="tsd-signature tsd-kind-icon">hover<span class="tsd-signature-symbol">:</span> <a href="debug.debughoverwidget.html" class="tsd-signature-type" data-tsd-kind="Class">DebugHoverWidget</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L69">packages/debug/src/browser/editor/debug-editor-model.ts:69</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L69">packages/debug/src/browser/editor/debug-editor-model.ts:69</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="inlinevaluedecorator" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> inline<wbr>Value<wbr>Decorator</h3>
-					<div class="tsd-signature tsd-kind-icon">inline<wbr>Value<wbr>Decorator<span class="tsd-signature-symbol">:</span> <a href="debug.debuginlinevaluedecorator.html" class="tsd-signature-type">DebugInlineValueDecorator</a></div>
+					<div class="tsd-signature tsd-kind-icon">inline<wbr>Value<wbr>Decorator<span class="tsd-signature-symbol">:</span> <a href="debug.debuginlinevaluedecorator.html" class="tsd-signature-type" data-tsd-kind="Class">DebugInlineValueDecorator</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L90">packages/debug/src/browser/editor/debug-editor-model.ts:90</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L90">packages/debug/src/browser/editor/debug-editor-model.ts:90</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="sessions" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> sessions</h3>
-					<div class="tsd-signature tsd-kind-icon">sessions<span class="tsd-signature-symbol">:</span> <a href="debug.debugsessionmanager.html" class="tsd-signature-type">DebugSessionManager</a></div>
+					<div class="tsd-signature tsd-kind-icon">sessions<span class="tsd-signature-symbol">:</span> <a href="debug.debugsessionmanager.html" class="tsd-signature-type" data-tsd-kind="Class">DebugSessionManager</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L78">packages/debug/src/browser/editor/debug-editor-model.ts:78</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L78">packages/debug/src/browser/editor/debug-editor-model.ts:78</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="todispose" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> to<wbr>Dispose</h3>
-					<div class="tsd-signature tsd-kind-icon">to<wbr>Dispose<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DisposableCollection</span><span class="tsd-signature-symbol"> = new DisposableCollection()</span></div>
+					<div class="tsd-signature tsd-kind-icon">to<wbr>Dispose<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DisposableCollection</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L53">packages/debug/src/browser/editor/debug-editor-model.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L53">packages/debug/src/browser/editor/debug-editor-model.ts:53</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="todisposeonupdate" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> to<wbr>Dispose<wbr>OnUpdate</h3>
-					<div class="tsd-signature tsd-kind-icon">to<wbr>Dispose<wbr>OnUpdate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DisposableCollection</span><span class="tsd-signature-symbol"> = new DisposableCollection()</span></div>
+					<div class="tsd-signature tsd-kind-icon">to<wbr>Dispose<wbr>OnUpdate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DisposableCollection</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L54">packages/debug/src/browser/editor/debug-editor-model.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L54">packages/debug/src/browser/editor/debug-editor-model.ts:54</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="topframerange" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> top<wbr>Frame<wbr>Range</h3>
-					<div class="tsd-signature tsd-kind-icon">top<wbr>Frame<wbr>Range<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Range</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+					<div class="tsd-signature tsd-kind-icon">top<wbr>Frame<wbr>Range<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Range</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L64">packages/debug/src/browser/editor/debug-editor-model.ts:64</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L64">packages/debug/src/browser/editor/debug-editor-model.ts:64</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="update" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> update</h3>
-					<div class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>arguments<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ArgumentsType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ReturnType</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = debounce(async () &#x3D;&gt; {if (this.toDispose.disposed) {return;}this.toDisposeOnUpdate.dispose();this.toggleExceptionWidget();await this.updateEditorDecorations();this.updateEditorHover();}, 100)</span></div>
+					<div class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>arguments<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L120">packages/debug/src/browser/editor/debug-editor-model.ts:120</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L120">packages/debug/src/browser/editor/debug-editor-model.ts:120</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-signature">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>arguments<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ArgumentsType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ReturnType</span><span class="tsd-signature-symbol">&gt;</span></li>
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-class">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>arguments<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
-												<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>arguments: <span class="tsd-signature-type">ArgumentsType</span></h5>
+												<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>arguments: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-symbol">]</span></h5>
 											</li>
 										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ReturnType</span><span class="tsd-signature-symbol">&gt;</span></h4>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 									</li>
 								</ul>
 							</li>
@@ -382,37 +399,97 @@
 					<div class="tsd-signature tsd-kind-icon">updating<wbr>Decorations<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L66">packages/debug/src/browser/editor/debug-editor-model.ts:66</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L66">packages/debug/src/browser/editor/debug-editor-model.ts:66</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="uri" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> uri</h3>
-					<div class="tsd-signature tsd-kind-icon">uri<span class="tsd-signature-symbol">:</span> <a href="core.uri.html" class="tsd-signature-type">URI</a></div>
+					<div class="tsd-signature tsd-kind-icon">uri<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">default</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L56">packages/debug/src/browser/editor/debug-editor-model.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L56">packages/debug/src/browser/editor/debug-editor-model.ts:56</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="breakpoint_hint_decoration" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> BREAKPOINT_<wbr>HINT_<wbr>DECORATION</h3>
+					<div class="tsd-signature tsd-kind-icon">BREAKPOINT_<wbr>HINT_<wbr>DECORATION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IModelDecorationOptions</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L476">packages/debug/src/browser/editor/debug-editor-model.ts:476</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="context_menu" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> CONTEXT_<wbr>MENU</h3>
-					<div class="tsd-signature tsd-kind-icon">CONTEXT_<wbr>MENU<span class="tsd-signature-symbol">:</span> <a href="../modules/core.html#menupath-1" class="tsd-signature-type">MenuPath</a><span class="tsd-signature-symbol"> = [&#x27;debug-editor-context-menu&#x27;]</span></div>
+					<div class="tsd-signature tsd-kind-icon">CONTEXT_<wbr>MENU<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">MenuPath</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L51">packages/debug/src/browser/editor/debug-editor-model.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L51">packages/debug/src/browser/editor/debug-editor-model.ts:51</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="focused_stack_frame_decoration" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> FOCUSED_<wbr>STACK_<wbr>FRAME_<wbr>DECORATION</h3>
+					<div class="tsd-signature tsd-kind-icon">FOCUSED_<wbr>STACK_<wbr>FRAME_<wbr>DECORATION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IModelDecorationOptions</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L497">packages/debug/src/browser/editor/debug-editor-model.ts:497</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="focused_stack_frame_margin" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> FOCUSED_<wbr>STACK_<wbr>FRAME_<wbr>MARGIN</h3>
+					<div class="tsd-signature tsd-kind-icon">FOCUSED_<wbr>STACK_<wbr>FRAME_<wbr>MARGIN<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IModelDecorationOptions</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L485">packages/debug/src/browser/editor/debug-editor-model.ts:485</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="stickiness" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> STICKINESS</h3>
-					<div class="tsd-signature tsd-kind-icon">STICKINESS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TrackedRangeStickiness</span><span class="tsd-signature-symbol"> = monaco.editor.TrackedRangeStickiness.NeverGrowsWhenTypingAtEdges</span></div>
+					<div class="tsd-signature tsd-kind-icon">STICKINESS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TrackedRangeStickiness</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L474">packages/debug/src/browser/editor/debug-editor-model.ts:474</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L474">packages/debug/src/browser/editor/debug-editor-model.ts:474</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="top_stack_frame_decoration" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> TOP_<wbr>STACK_<wbr>FRAME_<wbr>DECORATION</h3>
+					<div class="tsd-signature tsd-kind-icon">TOP_<wbr>STACK_<wbr>FRAME_<wbr>DECORATION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IModelDecorationOptions</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L489">packages/debug/src/browser/editor/debug-editor-model.ts:489</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="top_stack_frame_inline_decoration" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> TOP_<wbr>STACK_<wbr>FRAME_<wbr>INLINE_<wbr>DECORATION</h3>
+					<div class="tsd-signature tsd-kind-icon">TOP_<wbr>STACK_<wbr>FRAME_<wbr>INLINE_<wbr>DECORATION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IModelDecorationOptions</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L494">packages/debug/src/browser/editor/debug-editor-model.ts:494</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="top_stack_frame_margin" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> TOP_<wbr>STACK_<wbr>FRAME_<wbr>MARGIN</h3>
+					<div class="tsd-signature tsd-kind-icon">TOP_<wbr>STACK_<wbr>FRAME_<wbr>MARGIN<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IModelDecorationOptions</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L481">packages/debug/src/browser/editor/debug-editor-model.ts:481</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -429,7 +506,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L336">packages/debug/src/browser/editor/debug-editor-model.ts:336</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L336">packages/debug/src/browser/editor/debug-editor-model.ts:336</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Position</span></h4>
@@ -449,7 +526,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L377">packages/debug/src/browser/editor/debug-editor-model.ts:377</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L377">packages/debug/src/browser/editor/debug-editor-model.ts:377</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -466,7 +543,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L351">packages/debug/src/browser/editor/debug-editor-model.ts:351</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L351">packages/debug/src/browser/editor/debug-editor-model.ts:351</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -489,7 +566,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L367">packages/debug/src/browser/editor/debug-editor-model.ts:367</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L367">packages/debug/src/browser/editor/debug-editor-model.ts:367</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -506,7 +583,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L304">packages/debug/src/browser/editor/debug-editor-model.ts:304</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L304">packages/debug/src/browser/editor/debug-editor-model.ts:304</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -517,19 +594,19 @@
 					<a name="createbreakpointdecoration" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> create<wbr>Breakpoint<wbr>Decoration</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Breakpoint<wbr>Decoration<span class="tsd-signature-symbol">(</span>breakpoint<span class="tsd-signature-symbol">: </span><a href="../modules/debug.sourcebreakpoint.html" class="tsd-signature-type">SourceBreakpoint</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IModelDeltaDecoration</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Breakpoint<wbr>Decoration<span class="tsd-signature-symbol">(</span>breakpoint<span class="tsd-signature-symbol">: </span><a href="../interfaces/debug.sourcebreakpoint-1.html" class="tsd-signature-type" data-tsd-kind="Interface">SourceBreakpoint</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IModelDeltaDecoration</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L254">packages/debug/src/browser/editor/debug-editor-model.ts:254</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L254">packages/debug/src/browser/editor/debug-editor-model.ts:254</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>breakpoint: <a href="../modules/debug.sourcebreakpoint.html" class="tsd-signature-type">SourceBreakpoint</a></h5>
+									<h5>breakpoint: <a href="../interfaces/debug.sourcebreakpoint-1.html" class="tsd-signature-type" data-tsd-kind="Interface">SourceBreakpoint</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IModelDeltaDecoration</span></h4>
@@ -546,7 +623,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L250">packages/debug/src/browser/editor/debug-editor-model.ts:250</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L250">packages/debug/src/browser/editor/debug-editor-model.ts:250</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IModelDeltaDecoration</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -557,16 +634,16 @@
 					<a name="createbreakpoints" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> create<wbr>Breakpoints</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Breakpoints<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/debug.sourcebreakpoint.html" class="tsd-signature-type">SourceBreakpoint</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Breakpoints<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/debug.sourcebreakpoint-1.html" class="tsd-signature-type" data-tsd-kind="Interface">SourceBreakpoint</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L317">packages/debug/src/browser/editor/debug-editor-model.ts:317</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L317">packages/debug/src/browser/editor/debug-editor-model.ts:317</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/debug.sourcebreakpoint.html" class="tsd-signature-type">SourceBreakpoint</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/debug.sourcebreakpoint-1.html" class="tsd-signature-type" data-tsd-kind="Interface">SourceBreakpoint</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -574,19 +651,19 @@
 					<a name="createcurrentbreakpointdecoration" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> create<wbr>Current<wbr>Breakpoint<wbr>Decoration</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Current<wbr>Breakpoint<wbr>Decoration<span class="tsd-signature-symbol">(</span>breakpoint<span class="tsd-signature-symbol">: </span><a href="debug.debugsourcebreakpoint.html" class="tsd-signature-type">DebugSourceBreakpoint</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IModelDeltaDecoration</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Current<wbr>Breakpoint<wbr>Decoration<span class="tsd-signature-symbol">(</span>breakpoint<span class="tsd-signature-symbol">: </span><a href="debug.debugsourcebreakpoint.html" class="tsd-signature-type" data-tsd-kind="Class">DebugSourceBreakpoint</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IModelDeltaDecoration</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L281">packages/debug/src/browser/editor/debug-editor-model.ts:281</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L281">packages/debug/src/browser/editor/debug-editor-model.ts:281</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>breakpoint: <a href="debug.debugsourcebreakpoint.html" class="tsd-signature-type">DebugSourceBreakpoint</a></h5>
+									<h5>breakpoint: <a href="debug.debugsourcebreakpoint.html" class="tsd-signature-type" data-tsd-kind="Class">DebugSourceBreakpoint</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IModelDeltaDecoration</span></h4>
@@ -603,7 +680,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L277">packages/debug/src/browser/editor/debug-editor-model.ts:277</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L277">packages/debug/src/browser/editor/debug-editor-model.ts:277</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IModelDeltaDecoration</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -620,7 +697,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L176">packages/debug/src/browser/editor/debug-editor-model.ts:176</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L176">packages/debug/src/browser/editor/debug-editor-model.ts:176</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IModelDeltaDecoration</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -637,7 +714,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L426">packages/debug/src/browser/editor/debug-editor-model.ts:426</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L426">packages/debug/src/browser/editor/debug-editor-model.ts:426</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -660,7 +737,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L168">packages/debug/src/browser/editor/debug-editor-model.ts:168</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L168">packages/debug/src/browser/editor/debug-editor-model.ts:168</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IDecorationOptions</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -677,7 +754,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L465">packages/debug/src/browser/editor/debug-editor-model.ts:465</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L465">packages/debug/src/browser/editor/debug-editor-model.ts:465</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -703,7 +780,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L423">packages/debug/src/browser/editor/debug-editor-model.ts:423</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L423">packages/debug/src/browser/editor/debug-editor-model.ts:423</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -725,8 +802,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of Disposable.dispose</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L116">packages/debug/src/browser/editor/debug-editor-model.ts:116</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L116">packages/debug/src/browser/editor/debug-editor-model.ts:116</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -737,22 +815,22 @@
 					<a name="getbreakpoint" class="tsd-anchor"></a>
 					<h3>get<wbr>Breakpoint</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Breakpoint<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Position</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="debug.debugsourcebreakpoint.html" class="tsd-signature-type">DebugSourceBreakpoint</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Breakpoint<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Position</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="debug.debugsourcebreakpoint.html" class="tsd-signature-type" data-tsd-kind="Class">DebugSourceBreakpoint</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L339">packages/debug/src/browser/editor/debug-editor-model.ts:339</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L339">packages/debug/src/browser/editor/debug-editor-model.ts:339</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> position: <span class="tsd-signature-type">Position</span><span class="tsd-signature-symbol"> = this.position</span></h5>
+									<h5>position: <span class="tsd-signature-type">Position</span><span class="tsd-signature-symbol"> = ...</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="debug.debugsourcebreakpoint.html" class="tsd-signature-type">DebugSourceBreakpoint</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="debug.debugsourcebreakpoint.html" class="tsd-signature-type" data-tsd-kind="Class">DebugSourceBreakpoint</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -760,22 +838,22 @@
 					<a name="getinlinebreakpoint" class="tsd-anchor"></a>
 					<h3>get<wbr>Inline<wbr>Breakpoint</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Inline<wbr>Breakpoint<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Position</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="debug.debugsourcebreakpoint.html" class="tsd-signature-type">DebugSourceBreakpoint</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Inline<wbr>Breakpoint<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Position</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="debug.debugsourcebreakpoint.html" class="tsd-signature-type" data-tsd-kind="Class">DebugSourceBreakpoint</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L343">packages/debug/src/browser/editor/debug-editor-model.ts:343</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L343">packages/debug/src/browser/editor/debug-editor-model.ts:343</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> position: <span class="tsd-signature-type">Position</span><span class="tsd-signature-symbol"> = this.position</span></h5>
+									<h5>position: <span class="tsd-signature-type">Position</span><span class="tsd-signature-symbol"> = ...</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="debug.debugsourcebreakpoint.html" class="tsd-signature-type">DebugSourceBreakpoint</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="debug.debugsourcebreakpoint.html" class="tsd-signature-type" data-tsd-kind="Class">DebugSourceBreakpoint</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -783,22 +861,22 @@
 					<a name="getlinebreakpoints" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Line<wbr>Breakpoints</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Line<wbr>Breakpoints<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Position</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="debug.debugsourcebreakpoint.html" class="tsd-signature-type">DebugSourceBreakpoint</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Line<wbr>Breakpoints<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Position</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="debug.debugsourcebreakpoint.html" class="tsd-signature-type" data-tsd-kind="Class">DebugSourceBreakpoint</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L347">packages/debug/src/browser/editor/debug-editor-model.ts:347</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L347">packages/debug/src/browser/editor/debug-editor-model.ts:347</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> position: <span class="tsd-signature-type">Position</span><span class="tsd-signature-symbol"> = this.position</span></h5>
+									<h5>position: <span class="tsd-signature-type">Position</span><span class="tsd-signature-symbol"> = ...</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="debug.debugsourcebreakpoint.html" class="tsd-signature-type">DebugSourceBreakpoint</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="debug.debugsourcebreakpoint.html" class="tsd-signature-type" data-tsd-kind="Class">DebugSourceBreakpoint</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -812,7 +890,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L392">packages/debug/src/browser/editor/debug-editor-model.ts:392</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L392">packages/debug/src/browser/editor/debug-editor-model.ts:392</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -835,7 +913,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L413">packages/debug/src/browser/editor/debug-editor-model.ts:413</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L413">packages/debug/src/browser/editor/debug-editor-model.ts:413</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -858,7 +936,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L409">packages/debug/src/browser/editor/debug-editor-model.ts:409</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L409">packages/debug/src/browser/editor/debug-editor-model.ts:409</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -875,24 +953,19 @@
 					<a name="hidehover" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> hide<wbr>Hover</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">hide<wbr>Hover<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IMouseEvent</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">hide<wbr>Hover<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IPartialEditorMouseEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L458">packages/debug/src/browser/editor/debug-editor-model.ts:458</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L458">packages/debug/src/browser/editor/debug-editor-model.ts:458</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IMouseEvent</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IMouseEvent</span></h5>
-										</li>
-									</ul>
+									<h5>__namedParameters: <span class="tsd-signature-type">IPartialEditorMouseEvent</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -909,7 +982,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L419">packages/debug/src/browser/editor/debug-editor-model.ts:419</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L419">packages/debug/src/browser/editor/debug-editor-model.ts:419</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -932,7 +1005,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L96">packages/debug/src/browser/editor/debug-editor-model.ts:96</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L96">packages/debug/src/browser/editor/debug-editor-model.ts:96</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -949,7 +1022,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L241">packages/debug/src/browser/editor/debug-editor-model.ts:241</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L241">packages/debug/src/browser/editor/debug-editor-model.ts:241</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -966,7 +1039,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L245">packages/debug/src/browser/editor/debug-editor-model.ts:245</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L245">packages/debug/src/browser/editor/debug-editor-model.ts:245</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -983,7 +1056,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L273">packages/debug/src/browser/editor/debug-editor-model.ts:273</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L273">packages/debug/src/browser/editor/debug-editor-model.ts:273</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1000,7 +1073,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L440">packages/debug/src/browser/editor/debug-editor-model.ts:440</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L440">packages/debug/src/browser/editor/debug-editor-model.ts:440</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1023,13 +1096,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L355">packages/debug/src/browser/editor/debug-editor-model.ts:355</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L355">packages/debug/src/browser/editor/debug-editor-model.ts:355</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> position: <span class="tsd-signature-type">Position</span><span class="tsd-signature-symbol"> = this.position</span></h5>
+									<h5>position: <span class="tsd-signature-type">Position</span><span class="tsd-signature-symbol"> = ...</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1046,7 +1119,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L220">packages/debug/src/browser/editor/debug-editor-model.ts:220</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L220">packages/debug/src/browser/editor/debug-editor-model.ts:220</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1063,7 +1136,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L265">packages/debug/src/browser/editor/debug-editor-model.ts:265</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L265">packages/debug/src/browser/editor/debug-editor-model.ts:265</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1080,7 +1153,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L298">packages/debug/src/browser/editor/debug-editor-model.ts:298</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L298">packages/debug/src/browser/editor/debug-editor-model.ts:298</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1097,7 +1170,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L157">packages/debug/src/browser/editor/debug-editor-model.ts:157</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L157">packages/debug/src/browser/editor/debug-editor-model.ts:157</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1114,7 +1187,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L135">packages/debug/src/browser/editor/debug-editor-model.ts:135</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L135">packages/debug/src/browser/editor/debug-editor-model.ts:135</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1132,13 +1205,13 @@
 					<a name="createcontainer" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> create<wbr>Container</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Container<span class="tsd-signature-symbol">(</span>parent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Container</span>, editor<span class="tsd-signature-symbol">: </span><a href="../modules/debug.html#debugeditor" class="tsd-signature-type">DebugEditor</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Container</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Container<span class="tsd-signature-symbol">(</span>parent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Container</span>, editor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MonacoEditor</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Container</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L40">packages/debug/src/browser/editor/debug-editor-model.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L40">packages/debug/src/browser/editor/debug-editor-model.ts:40</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1147,7 +1220,7 @@
 									<h5>parent: <span class="tsd-signature-type">Container</span></h5>
 								</li>
 								<li>
-									<h5>editor: <a href="../modules/debug.html#debugeditor" class="tsd-signature-type">DebugEditor</a></h5>
+									<h5>editor: <span class="tsd-signature-type">MonacoEditor</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Container</span></h4>
@@ -1158,13 +1231,13 @@
 					<a name="createmodel" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> create<wbr>Model</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Model<span class="tsd-signature-symbol">(</span>parent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Container</span>, editor<span class="tsd-signature-symbol">: </span><a href="../modules/debug.html#debugeditor" class="tsd-signature-type">DebugEditor</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="debug.debugeditormodel.html" class="tsd-signature-type">DebugEditorModel</a></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Model<span class="tsd-signature-symbol">(</span>parent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Container</span>, editor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MonacoEditor</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="debug.debugeditormodel.html" class="tsd-signature-type" data-tsd-kind="Class">DebugEditorModel</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L47">packages/debug/src/browser/editor/debug-editor-model.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/debug/src/browser/editor/debug-editor-model.ts#L47">packages/debug/src/browser/editor/debug-editor-model.ts:47</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1173,219 +1246,35 @@
 									<h5>parent: <span class="tsd-signature-type">Container</span></h5>
 								</li>
 								<li>
-									<h5>editor: <a href="../modules/debug.html#debugeditor" class="tsd-signature-type">DebugEditor</a></h5>
+									<h5>editor: <span class="tsd-signature-type">MonacoEditor</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="debug.debugeditormodel.html" class="tsd-signature-type">DebugEditorModel</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="debug.debugeditormodel.html" class="tsd-signature-type" data-tsd-kind="Class">DebugEditorModel</a></h4>
 						</li>
 					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Object literals</h2>
-				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-class tsd-is-static">
-					<a name="breakpoint_hint_decoration" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> BREAKPOINT_<wbr>HINT_<wbr>DECORATION</h3>
-					<div class="tsd-signature tsd-kind-icon">BREAKPOINT_<wbr>HINT_<wbr>DECORATION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L476">packages/debug/src/browser/editor/debug-editor-model.ts:476</a></li>
-						</ul>
-					</aside>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-						<a name="breakpoint_hint_decoration.glyphmarginclassname" class="tsd-anchor"></a>
-						<h3>glyph<wbr>Margin<wbr>Class<wbr>Name</h3>
-						<div class="tsd-signature tsd-kind-icon">glyph<wbr>Margin<wbr>Class<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;theia-debug-breakpoint-hint&quot;</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L477">packages/debug/src/browser/editor/debug-editor-model.ts:477</a></li>
-							</ul>
-						</aside>
-					</section>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-						<a name="breakpoint_hint_decoration.stickiness-1" class="tsd-anchor"></a>
-						<h3>stickiness</h3>
-						<div class="tsd-signature tsd-kind-icon">stickiness<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TrackedRangeStickiness</span><span class="tsd-signature-symbol"> = DebugEditorModel.STICKINESS</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L478">packages/debug/src/browser/editor/debug-editor-model.ts:478</a></li>
-							</ul>
-						</aside>
-					</section>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-class tsd-is-static">
-					<a name="focused_stack_frame_decoration" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> FOCUSED_<wbr>STACK_<wbr>FRAME_<wbr>DECORATION</h3>
-					<div class="tsd-signature tsd-kind-icon">FOCUSED_<wbr>STACK_<wbr>FRAME_<wbr>DECORATION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L497">packages/debug/src/browser/editor/debug-editor-model.ts:497</a></li>
-						</ul>
-					</aside>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-						<a name="focused_stack_frame_decoration.classname" class="tsd-anchor"></a>
-						<h3>class<wbr>Name</h3>
-						<div class="tsd-signature tsd-kind-icon">class<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;theia-debug-focused-stack-frame-line&quot;</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L499">packages/debug/src/browser/editor/debug-editor-model.ts:499</a></li>
-							</ul>
-						</aside>
-					</section>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-						<a name="focused_stack_frame_decoration.iswholeline" class="tsd-anchor"></a>
-						<h3>is<wbr>Whole<wbr>Line</h3>
-						<div class="tsd-signature tsd-kind-icon">is<wbr>Whole<wbr>Line<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> = true</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L498">packages/debug/src/browser/editor/debug-editor-model.ts:498</a></li>
-							</ul>
-						</aside>
-					</section>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-						<a name="focused_stack_frame_decoration.stickiness-2" class="tsd-anchor"></a>
-						<h3>stickiness</h3>
-						<div class="tsd-signature tsd-kind-icon">stickiness<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TrackedRangeStickiness</span><span class="tsd-signature-symbol"> = DebugEditorModel.STICKINESS</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L500">packages/debug/src/browser/editor/debug-editor-model.ts:500</a></li>
-							</ul>
-						</aside>
-					</section>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-class tsd-is-static">
-					<a name="focused_stack_frame_margin" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> FOCUSED_<wbr>STACK_<wbr>FRAME_<wbr>MARGIN</h3>
-					<div class="tsd-signature tsd-kind-icon">FOCUSED_<wbr>STACK_<wbr>FRAME_<wbr>MARGIN<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L485">packages/debug/src/browser/editor/debug-editor-model.ts:485</a></li>
-						</ul>
-					</aside>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-						<a name="focused_stack_frame_margin.glyphmarginclassname-1" class="tsd-anchor"></a>
-						<h3>glyph<wbr>Margin<wbr>Class<wbr>Name</h3>
-						<div class="tsd-signature tsd-kind-icon">glyph<wbr>Margin<wbr>Class<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;theia-debug-focused-stack-frame&quot;</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L486">packages/debug/src/browser/editor/debug-editor-model.ts:486</a></li>
-							</ul>
-						</aside>
-					</section>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-						<a name="focused_stack_frame_margin.stickiness-3" class="tsd-anchor"></a>
-						<h3>stickiness</h3>
-						<div class="tsd-signature tsd-kind-icon">stickiness<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TrackedRangeStickiness</span><span class="tsd-signature-symbol"> = DebugEditorModel.STICKINESS</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L487">packages/debug/src/browser/editor/debug-editor-model.ts:487</a></li>
-							</ul>
-						</aside>
-					</section>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-class tsd-is-static">
-					<a name="top_stack_frame_decoration" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> TOP_<wbr>STACK_<wbr>FRAME_<wbr>DECORATION</h3>
-					<div class="tsd-signature tsd-kind-icon">TOP_<wbr>STACK_<wbr>FRAME_<wbr>DECORATION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L489">packages/debug/src/browser/editor/debug-editor-model.ts:489</a></li>
-						</ul>
-					</aside>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-						<a name="top_stack_frame_decoration.classname-1" class="tsd-anchor"></a>
-						<h3>class<wbr>Name</h3>
-						<div class="tsd-signature tsd-kind-icon">class<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;theia-debug-top-stack-frame-line&quot;</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L491">packages/debug/src/browser/editor/debug-editor-model.ts:491</a></li>
-							</ul>
-						</aside>
-					</section>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-						<a name="top_stack_frame_decoration.iswholeline-1" class="tsd-anchor"></a>
-						<h3>is<wbr>Whole<wbr>Line</h3>
-						<div class="tsd-signature tsd-kind-icon">is<wbr>Whole<wbr>Line<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> = true</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L490">packages/debug/src/browser/editor/debug-editor-model.ts:490</a></li>
-							</ul>
-						</aside>
-					</section>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-						<a name="top_stack_frame_decoration.stickiness-4" class="tsd-anchor"></a>
-						<h3>stickiness</h3>
-						<div class="tsd-signature tsd-kind-icon">stickiness<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TrackedRangeStickiness</span><span class="tsd-signature-symbol"> = DebugEditorModel.STICKINESS</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L492">packages/debug/src/browser/editor/debug-editor-model.ts:492</a></li>
-							</ul>
-						</aside>
-					</section>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-class tsd-is-static">
-					<a name="top_stack_frame_inline_decoration" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> TOP_<wbr>STACK_<wbr>FRAME_<wbr>INLINE_<wbr>DECORATION</h3>
-					<div class="tsd-signature tsd-kind-icon">TOP_<wbr>STACK_<wbr>FRAME_<wbr>INLINE_<wbr>DECORATION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L494">packages/debug/src/browser/editor/debug-editor-model.ts:494</a></li>
-						</ul>
-					</aside>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-						<a name="top_stack_frame_inline_decoration.beforecontentclassname" class="tsd-anchor"></a>
-						<h3>before<wbr>Content<wbr>Class<wbr>Name</h3>
-						<div class="tsd-signature tsd-kind-icon">before<wbr>Content<wbr>Class<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;theia-debug-top-stack-frame-column&quot;</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L495">packages/debug/src/browser/editor/debug-editor-model.ts:495</a></li>
-							</ul>
-						</aside>
-					</section>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-class tsd-is-static">
-					<a name="top_stack_frame_margin" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> TOP_<wbr>STACK_<wbr>FRAME_<wbr>MARGIN</h3>
-					<div class="tsd-signature tsd-kind-icon">TOP_<wbr>STACK_<wbr>FRAME_<wbr>MARGIN<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L481">packages/debug/src/browser/editor/debug-editor-model.ts:481</a></li>
-						</ul>
-					</aside>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-						<a name="top_stack_frame_margin.glyphmarginclassname-2" class="tsd-anchor"></a>
-						<h3>glyph<wbr>Margin<wbr>Class<wbr>Name</h3>
-						<div class="tsd-signature tsd-kind-icon">glyph<wbr>Margin<wbr>Class<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;theia-debug-top-stack-frame&quot;</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L482">packages/debug/src/browser/editor/debug-editor-model.ts:482</a></li>
-							</ul>
-						</aside>
-					</section>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-						<a name="top_stack_frame_margin.stickiness-5" class="tsd-anchor"></a>
-						<h3>stickiness</h3>
-						<div class="tsd-signature tsd-kind-icon">stickiness<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TrackedRangeStickiness</span><span class="tsd-signature-symbol"> = DebugEditorModel.STICKINESS</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/debug/src/browser/editor/debug-editor-model.ts#L483">packages/debug/src/browser/editor/debug-editor-model.ts:483</a></li>
-							</ul>
-						</aside>
-					</section>
 				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/debug.html">debug</a>
 						<ul>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/debug.breakpointmanager.html">Breakpoint<wbr>Manager</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/debug.breakpointmarker.html">Breakpoint<wbr>Marker</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/debug.debugaction.html">Debug<wbr>Action</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/debug.debugbreakpointwidget.html">Debug<wbr>Breakpoint<wbr>Widget</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/debug.debugbreakpointwidgetcommands.html">Debug<wbr>Breakpoint<wbr>Widget<wbr>Commands</a>
@@ -1395,6 +1284,12 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/debug.debugconfiguration-1.html">Debug<wbr>Configuration</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/debug.debugconfigurationmanager.html">Debug<wbr>Configuration<wbr>Manager</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/debug.debugconfigurationmodel.html">Debug<wbr>Configuration<wbr>Model</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/debug.debugconsolecommands.html">Debug<wbr>Console<wbr>Commands</a>
@@ -1421,6 +1316,9 @@
 								<a href="../modules/debug.exceptionbreakpoint.html">Exception<wbr>Breakpoint</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/debug.expressioncontainer.html">Expression<wbr>Container</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/debug.functionbreakpoint.html">Function<wbr>Breakpoint</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
@@ -1435,9 +1333,6 @@
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/debug.virtualvariableitem.html">Virtual<wbr>Variable<wbr>Item</a>
 							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/debug.nls.html">nls</a>
-							</li>
 						</ul>
 					</li>
 				</ul>
@@ -1449,6 +1344,9 @@
 					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="debug.debugeditormodel.html" class="tsd-kind-icon">Debug<wbr>Editor<wbr>Model</a>
 						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="debug.debugeditormodel.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="debug.debugeditormodel.html#breakpointdecorations" class="tsd-kind-icon">breakpoint<wbr>Decorations</a>
 							</li>
@@ -1510,10 +1408,28 @@
 								<a href="debug.debugeditormodel.html#uri" class="tsd-kind-icon">uri</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="debug.debugeditormodel.html#breakpoint_hint_decoration" class="tsd-kind-icon">BREAKPOINT_<wbr>HINT_<wbr>DECORATION</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
 								<a href="debug.debugeditormodel.html#context_menu" class="tsd-kind-icon">CONTEXT_<wbr>MENU</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="debug.debugeditormodel.html#focused_stack_frame_decoration" class="tsd-kind-icon">FOCUSED_<wbr>STACK_<wbr>FRAME_<wbr>DECORATION</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="debug.debugeditormodel.html#focused_stack_frame_margin" class="tsd-kind-icon">FOCUSED_<wbr>STACK_<wbr>FRAME_<wbr>MARGIN</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
 								<a href="debug.debugeditormodel.html#stickiness" class="tsd-kind-icon">STICKINESS</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="debug.debugeditormodel.html#top_stack_frame_decoration" class="tsd-kind-icon">TOP_<wbr>STACK_<wbr>FRAME_<wbr>DECORATION</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="debug.debugeditormodel.html#top_stack_frame_inline_decoration" class="tsd-kind-icon">TOP_<wbr>STACK_<wbr>FRAME_<wbr>INLINE_<wbr>DECORATION</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="debug.debugeditormodel.html#top_stack_frame_margin" class="tsd-kind-icon">TOP_<wbr>STACK_<wbr>FRAME_<wbr>MARGIN</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="debug.debugeditormodel.html#position" class="tsd-kind-icon">position</a>
@@ -1626,24 +1542,6 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="debug.debugeditormodel.html#createmodel" class="tsd-kind-icon">create<wbr>Model</a>
 							</li>
-							<li class=" tsd-kind-object-literal tsd-parent-kind-class tsd-is-static">
-								<a href="debug.debugeditormodel.html#breakpoint_hint_decoration" class="tsd-kind-icon">BREAKPOINT_<wbr>HINT_<wbr>DECORATION</a>
-							</li>
-							<li class=" tsd-kind-object-literal tsd-parent-kind-class tsd-is-static">
-								<a href="debug.debugeditormodel.html#focused_stack_frame_decoration" class="tsd-kind-icon">FOCUSED_<wbr>STACK_<wbr>FRAME_<wbr>DECORATION</a>
-							</li>
-							<li class=" tsd-kind-object-literal tsd-parent-kind-class tsd-is-static">
-								<a href="debug.debugeditormodel.html#focused_stack_frame_margin" class="tsd-kind-icon">FOCUSED_<wbr>STACK_<wbr>FRAME_<wbr>MARGIN</a>
-							</li>
-							<li class=" tsd-kind-object-literal tsd-parent-kind-class tsd-is-static">
-								<a href="debug.debugeditormodel.html#top_stack_frame_decoration" class="tsd-kind-icon">TOP_<wbr>STACK_<wbr>FRAME_<wbr>DECORATION</a>
-							</li>
-							<li class=" tsd-kind-object-literal tsd-parent-kind-class tsd-is-static">
-								<a href="debug.debugeditormodel.html#top_stack_frame_inline_decoration" class="tsd-kind-icon">TOP_<wbr>STACK_<wbr>FRAME_<wbr>INLINE_<wbr>DECORATION</a>
-							</li>
-							<li class=" tsd-kind-object-literal tsd-parent-kind-class tsd-is-static">
-								<a href="debug.debugeditormodel.html#top_stack_frame_margin" class="tsd-kind-icon">TOP_<wbr>STACK_<wbr>FRAME_<wbr>MARGIN</a>
-							</li>
 						</ul>
 					</li>
 				</ul>
@@ -1659,7 +1557,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
@@ -1669,6 +1566,7 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>

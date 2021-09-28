@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/git.html">git</a>
@@ -80,14 +79,20 @@
 				<ul class="tsd-hierarchy">
 					<li><span class="tsd-signature-type">CommandContribution</span></li>
 					<li><span class="tsd-signature-type">MenuContribution</span></li>
-					<li><a href="../interfaces/core.tabbartoolbarcontribution.html" class="tsd-signature-type">TabBarToolbarContribution</a></li>
-					<li><a href="../interfaces/core.colorcontribution.html" class="tsd-signature-type">ColorContribution</a></li>
+					<li><span class="tsd-signature-type">TabBarToolbarContribution</span></li>
+					<li><span class="tsd-signature-type">ColorContribution</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="git.gitcontribution.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
@@ -137,6 +142,23 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Git<wbr>Contribution<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="git.gitcontribution.html" class="tsd-signature-type" data-tsd-kind="Class">GitContribution</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="git.gitcontribution.html" class="tsd-signature-type" data-tsd-kind="Class">GitContribution</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="commands" class="tsd-anchor"></a>
@@ -144,157 +166,157 @@
 					<div class="tsd-signature tsd-kind-icon">commands<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CommandRegistry</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L259">packages/git/src/browser/git-contribution.ts:259</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L259">packages/git/src/browser/git-contribution.ts:259</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="decorationsservice" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> decorations<wbr>Service</h3>
-					<div class="tsd-signature tsd-kind-icon">decorations<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.decorationsservice.html" class="tsd-signature-type">DecorationsService</a></div>
+					<div class="tsd-signature tsd-kind-icon">decorations<wbr>Service<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DecorationsService</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L262">packages/git/src/browser/git-contribution.ts:262</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L262">packages/git/src/browser/git-contribution.ts:262</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="editormanager" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> editor<wbr>Manager</h3>
-					<div class="tsd-signature tsd-kind-icon">editor<wbr>Manager<span class="tsd-signature-symbol">:</span> <a href="editor.editormanager-1.html" class="tsd-signature-type">EditorManager</a></div>
+					<div class="tsd-signature tsd-kind-icon">editor<wbr>Manager<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EditorManager</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L251">packages/git/src/browser/git-contribution.ts:251</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L251">packages/git/src/browser/git-contribution.ts:251</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="git" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> git</h3>
-					<div class="tsd-signature tsd-kind-icon">git<span class="tsd-signature-symbol">:</span> <a href="../interfaces/git.git-3.html" class="tsd-signature-type">Git</a></div>
+					<div class="tsd-signature tsd-kind-icon">git<span class="tsd-signature-symbol">:</span> <a href="../modules/git.html#git-4" class="tsd-signature-type" data-tsd-kind="Variable">Git</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L257">packages/git/src/browser/git-contribution.ts:257</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L257">packages/git/src/browser/git-contribution.ts:257</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="gitdecorationprovider" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> git<wbr>Decoration<wbr>Provider</h3>
-					<div class="tsd-signature tsd-kind-icon">git<wbr>Decoration<wbr>Provider<span class="tsd-signature-symbol">:</span> <a href="git.gitdecorationprovider.html" class="tsd-signature-type">GitDecorationProvider</a></div>
+					<div class="tsd-signature tsd-kind-icon">git<wbr>Decoration<wbr>Provider<span class="tsd-signature-symbol">:</span> <a href="git.gitdecorationprovider.html" class="tsd-signature-type" data-tsd-kind="Class">GitDecorationProvider</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L263">packages/git/src/browser/git-contribution.ts:263</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L263">packages/git/src/browser/git-contribution.ts:263</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="giterrorhandler" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> git<wbr>Error<wbr>Handler</h3>
-					<div class="tsd-signature tsd-kind-icon">git<wbr>Error<wbr>Handler<span class="tsd-signature-symbol">:</span> <a href="git.giterrorhandler.html" class="tsd-signature-type">GitErrorHandler</a></div>
+					<div class="tsd-signature tsd-kind-icon">git<wbr>Error<wbr>Handler<span class="tsd-signature-symbol">:</span> <a href="git.giterrorhandler.html" class="tsd-signature-type" data-tsd-kind="Class">GitErrorHandler</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L258">packages/git/src/browser/git-contribution.ts:258</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L258">packages/git/src/browser/git-contribution.ts:258</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="gitpreferences" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> git<wbr>Preferences</h3>
-					<div class="tsd-signature tsd-kind-icon">git<wbr>Preferences<span class="tsd-signature-symbol">:</span> <a href="../modules/git.html#gitpreferences" class="tsd-signature-type">GitPreferences</a></div>
+					<div class="tsd-signature tsd-kind-icon">git<wbr>Preferences<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">PreferenceProxy</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/git.gitconfiguration.html" class="tsd-signature-type" data-tsd-kind="Interface">GitConfiguration</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L261">packages/git/src/browser/git-contribution.ts:261</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L261">packages/git/src/browser/git-contribution.ts:261</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="progressservice" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> progress<wbr>Service</h3>
-					<div class="tsd-signature tsd-kind-icon">progress<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="core.progressservice-1.html" class="tsd-signature-type">ProgressService</a></div>
+					<div class="tsd-signature tsd-kind-icon">progress<wbr>Service<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ProgressService</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L260">packages/git/src/browser/git-contribution.ts:260</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L260">packages/git/src/browser/git-contribution.ts:260</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="quickopenservice" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> quick<wbr>Open<wbr>Service</h3>
-					<div class="tsd-signature tsd-kind-icon">quick<wbr>Open<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="git.gitquickopenservice.html" class="tsd-signature-type">GitQuickOpenService</a></div>
+					<div class="tsd-signature tsd-kind-icon">quick<wbr>Open<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="git.gitquickopenservice.html" class="tsd-signature-type" data-tsd-kind="Class">GitQuickOpenService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L252">packages/git/src/browser/git-contribution.ts:252</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L252">packages/git/src/browser/git-contribution.ts:252</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="repositoryprovider" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> repository<wbr>Provider</h3>
-					<div class="tsd-signature tsd-kind-icon">repository<wbr>Provider<span class="tsd-signature-symbol">:</span> <a href="git.gitrepositoryprovider.html" class="tsd-signature-type">GitRepositoryProvider</a></div>
+					<div class="tsd-signature tsd-kind-icon">repository<wbr>Provider<span class="tsd-signature-symbol">:</span> <a href="git.gitrepositoryprovider.html" class="tsd-signature-type" data-tsd-kind="Class">GitRepositoryProvider</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L256">packages/git/src/browser/git-contribution.ts:256</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L256">packages/git/src/browser/git-contribution.ts:256</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="repositorytracker" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> repository<wbr>Tracker</h3>
-					<div class="tsd-signature tsd-kind-icon">repository<wbr>Tracker<span class="tsd-signature-symbol">:</span> <a href="git.gitrepositorytracker.html" class="tsd-signature-type">GitRepositoryTracker</a></div>
+					<div class="tsd-signature tsd-kind-icon">repository<wbr>Tracker<span class="tsd-signature-symbol">:</span> <a href="git.gitrepositorytracker.html" class="tsd-signature-type" data-tsd-kind="Class">GitRepositoryTracker</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L253">packages/git/src/browser/git-contribution.ts:253</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L253">packages/git/src/browser/git-contribution.ts:253</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="syncservice" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> sync<wbr>Service</h3>
-					<div class="tsd-signature tsd-kind-icon">sync<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="git.gitsyncservice.html" class="tsd-signature-type">GitSyncService</a></div>
+					<div class="tsd-signature tsd-kind-icon">sync<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="git.gitsyncservice-1.html" class="tsd-signature-type" data-tsd-kind="Class">GitSyncService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L254">packages/git/src/browser/git-contribution.ts:254</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L254">packages/git/src/browser/git-contribution.ts:254</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="todispose" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> to<wbr>Dispose</h3>
-					<div class="tsd-signature tsd-kind-icon">to<wbr>Dispose<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DisposableCollection</span><span class="tsd-signature-symbol"> = new DisposableCollection()</span></div>
+					<div class="tsd-signature tsd-kind-icon">to<wbr>Dispose<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DisposableCollection</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L249">packages/git/src/browser/git-contribution.ts:249</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L249">packages/git/src/browser/git-contribution.ts:249</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="workspaceservice" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> workspace<wbr>Service</h3>
-					<div class="tsd-signature tsd-kind-icon">workspace<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="workspace.workspaceservice-1.html" class="tsd-signature-type">WorkspaceService</a></div>
+					<div class="tsd-signature tsd-kind-icon">workspace<wbr>Service<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">WorkspaceService</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L255">packages/git/src/browser/git-contribution.ts:255</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L255">packages/git/src/browser/git-contribution.ts:255</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="git_checkout" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> GIT_<wbr>CHECKOUT</h3>
-					<div class="tsd-signature tsd-kind-icon">GIT_<wbr>CHECKOUT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;git.checkout&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">GIT_<wbr>CHECKOUT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#x27;git.checkout&#x27;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L246">packages/git/src/browser/git-contribution.ts:246</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L246">packages/git/src/browser/git-contribution.ts:246</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="git_sync_status" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> GIT_<wbr>SYNC_<wbr>STATUS</h3>
-					<div class="tsd-signature tsd-kind-icon">GIT_<wbr>SYNC_<wbr>STATUS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;git-sync-status&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">GIT_<wbr>SYNC_<wbr>STATUS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#x27;git-sync-status&#x27;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L247">packages/git/src/browser/git-contribution.ts:247</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L247">packages/git/src/browser/git-contribution.ts:247</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -311,7 +333,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L858">packages/git/src/browser/git-contribution.ts:858</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L858">packages/git/src/browser/git-contribution.ts:858</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -322,19 +344,19 @@
 					<a name="allstaged" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> all<wbr>Staged</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">all<wbr>Staged<span class="tsd-signature-symbol">(</span>changes<span class="tsd-signature-symbol">: </span><a href="../interfaces/git.gitfilechange-1.html" class="tsd-signature-type">GitFileChange</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">all<wbr>Staged<span class="tsd-signature-symbol">(</span>changes<span class="tsd-signature-symbol">: </span><a href="../interfaces/git.gitfilechange-1.html" class="tsd-signature-type" data-tsd-kind="Interface">GitFileChange</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L714">packages/git/src/browser/git-contribution.ts:714</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L714">packages/git/src/browser/git-contribution.ts:714</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>changes: <a href="../interfaces/git.gitfilechange-1.html" class="tsd-signature-type">GitFileChange</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>changes: <a href="../interfaces/git.gitfilechange-1.html" class="tsd-signature-type" data-tsd-kind="Interface">GitFileChange</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -351,7 +373,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L539">packages/git/src/browser/git-contribution.ts:539</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L539">packages/git/src/browser/git-contribution.ts:539</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -368,7 +390,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L706">packages/git/src/browser/git-contribution.ts:706</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L706">packages/git/src/browser/git-contribution.ts:706</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -388,7 +410,7 @@
 									</ul>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> groupIdx: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+									<h5>groupIdx: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -399,19 +421,19 @@
 					<a name="commit" class="tsd-anchor"></a>
 					<h3>commit</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">commit<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/git.git-2.options.commit.html" class="tsd-signature-type">Commit</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>message<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">commit<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/git.git-2.options.commit.html" class="tsd-signature-type" data-tsd-kind="Interface">Commit</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>message<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L823">packages/git/src/browser/git-contribution.ts:823</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L823">packages/git/src/browser/git-contribution.ts:823</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <a href="../interfaces/git.git-2.options.commit.html" class="tsd-signature-type">Commit</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>message<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = {}</span></h5>
+									<h5>options: <a href="../interfaces/git.git-2.options.commit.html" class="tsd-signature-type" data-tsd-kind="Interface">Commit</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>message<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = {}</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -422,16 +444,16 @@
 					<a name="getcheckoutstatusbarcommand" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Checkout<wbr>Status<wbr>Bar<wbr>Command</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Checkout<wbr>Status<wbr>Bar<wbr>Command<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/scm.scmcommand.html" class="tsd-signature-type">ScmCommand</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Checkout<wbr>Status<wbr>Bar<wbr>Command<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ScmCommand</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L778">packages/git/src/browser/git-contribution.ts:778</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L778">packages/git/src/browser/git-contribution.ts:778</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/scm.scmcommand.html" class="tsd-signature-type">ScmCommand</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ScmCommand</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -439,13 +461,13 @@
 					<a name="getopenchangesoptions" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Open<wbr>Changes<wbr>Options</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Open<wbr>Changes<wbr>Options<span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/git.gitopenchangesoptions.html" class="tsd-signature-type">GitOpenChangesOptions</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Open<wbr>Changes<wbr>Options<span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/git.gitopenchangesoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">GitOpenChangesOptions</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L743">packages/git/src/browser/git-contribution.ts:743</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L743">packages/git/src/browser/git-contribution.ts:743</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -454,7 +476,7 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> widget: <span class="tsd-signature-type">Widget</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/git.gitopenchangesoptions.html" class="tsd-signature-type">GitOpenChangesOptions</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/git.gitopenchangesoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">GitOpenChangesOptions</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -462,13 +484,13 @@
 					<a name="getopenfileoptions" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Open<wbr>File<wbr>Options</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Open<wbr>File<wbr>Options<span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/git.gitopenfileoptions.html" class="tsd-signature-type">GitOpenFileOptions</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Open<wbr>File<wbr>Options<span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/git.gitopenfileoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">GitOpenFileOptions</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L723">packages/git/src/browser/git-contribution.ts:723</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L723">packages/git/src/browser/git-contribution.ts:723</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -477,7 +499,7 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> widget: <span class="tsd-signature-type">Widget</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/git.gitopenfileoptions.html" class="tsd-signature-type">GitOpenFileOptions</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/git.gitopenfileoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">GitOpenFileOptions</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -485,16 +507,16 @@
 					<a name="getsyncstatusbarcommand" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Sync<wbr>Status<wbr>Bar<wbr>Command</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Sync<wbr>Status<wbr>Bar<wbr>Command<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/scm.scmcommand.html" class="tsd-signature-type">ScmCommand</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Sync<wbr>Status<wbr>Bar<wbr>Command<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ScmCommand</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L797">packages/git/src/browser/git-contribution.ts:797</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L797">packages/git/src/browser/git-contribution.ts:797</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/scm.scmcommand.html" class="tsd-signature-type">ScmCommand</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ScmCommand</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -502,19 +524,19 @@
 					<a name="hasconflicts" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> has<wbr>Conflicts</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">has<wbr>Conflicts<span class="tsd-signature-symbol">(</span>changes<span class="tsd-signature-symbol">: </span><a href="../interfaces/git.gitfilechange-1.html" class="tsd-signature-type">GitFileChange</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">has<wbr>Conflicts<span class="tsd-signature-symbol">(</span>changes<span class="tsd-signature-symbol">: </span><a href="../interfaces/git.gitfilechange-1.html" class="tsd-signature-type" data-tsd-kind="Interface">GitFileChange</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L710">packages/git/src/browser/git-contribution.ts:710</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L710">packages/git/src/browser/git-contribution.ts:710</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>changes: <a href="../interfaces/git.gitfilechange-1.html" class="tsd-signature-type">GitFileChange</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>changes: <a href="../interfaces/git.gitfilechange-1.html" class="tsd-signature-type" data-tsd-kind="Interface">GitFileChange</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -531,7 +553,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L265">packages/git/src/browser/git-contribution.ts:265</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L265">packages/git/src/browser/git-contribution.ts:265</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -542,13 +564,13 @@
 					<a name="openchanges" class="tsd-anchor"></a>
 					<h3>open<wbr>Changes</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">open<wbr>Changes<span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="editor.editorwidget-1.html" class="tsd-signature-type">EditorWidget</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">open<wbr>Changes<span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">EditorWidget</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L734">packages/git/src/browser/git-contribution.ts:734</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L734">packages/git/src/browser/git-contribution.ts:734</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -557,7 +579,7 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> widget: <span class="tsd-signature-type">Widget</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="editor.editorwidget-1.html" class="tsd-signature-type">EditorWidget</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">EditorWidget</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -565,13 +587,13 @@
 					<a name="openfile" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> open<wbr>File</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">open<wbr>File<span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="editor.editorwidget-1.html" class="tsd-signature-type">EditorWidget</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">open<wbr>File<span class="tsd-signature-symbol">(</span>widget<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">EditorWidget</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L718">packages/git/src/browser/git-contribution.ts:718</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L718">packages/git/src/browser/git-contribution.ts:718</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -580,7 +602,7 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> widget: <span class="tsd-signature-type">Widget</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="editor.editorwidget-1.html" class="tsd-signature-type">EditorWidget</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">EditorWidget</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -588,14 +610,14 @@
 					<a name="registercolors" class="tsd-anchor"></a>
 					<h3>register<wbr>Colors</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">register<wbr>Colors<span class="tsd-signature-symbol">(</span>colors<span class="tsd-signature-symbol">: </span><a href="core.colorregistry.html" class="tsd-signature-type">ColorRegistry</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Colors<span class="tsd-signature-symbol">(</span>colors<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ColorRegistry</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/core.colorcontribution.html">ColorContribution</a>.<a href="../interfaces/core.colorcontribution.html#registercolors">registerColors</a></p>
+								<p>Implementation of ColorContribution.registerColors</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L890">packages/git/src/browser/git-contribution.ts:890</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L890">packages/git/src/browser/git-contribution.ts:890</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -606,7 +628,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>colors: <a href="core.colorregistry.html" class="tsd-signature-type">ColorRegistry</a></h5>
+									<h5>colors: <span class="tsd-signature-type">ColorRegistry</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -622,8 +644,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of CommandContribution.registerCommands</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L371">packages/git/src/browser/git-contribution.ts:371</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L371">packages/git/src/browser/git-contribution.ts:371</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -645,8 +668,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of MenuContribution.registerMenus</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L272">packages/git/src/browser/git-contribution.ts:272</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L272">packages/git/src/browser/git-contribution.ts:272</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -663,20 +687,20 @@
 					<a name="registertoolbaritems" class="tsd-anchor"></a>
 					<h3>register<wbr>Toolbar<wbr>Items</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">register<wbr>Toolbar<wbr>Items<span class="tsd-signature-symbol">(</span>registry<span class="tsd-signature-symbol">: </span><a href="core.tabbartoolbarregistry.html" class="tsd-signature-type">TabBarToolbarRegistry</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Toolbar<wbr>Items<span class="tsd-signature-symbol">(</span>registry<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TabBarToolbarRegistry</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/core.tabbartoolbarcontribution.html">TabBarToolbarContribution</a>.<a href="../interfaces/core.tabbartoolbarcontribution.html#registertoolbaritems">registerToolbarItems</a></p>
+								<p>Implementation of TabBarToolbarContribution.registerToolbarItems</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L570">packages/git/src/browser/git-contribution.ts:570</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L570">packages/git/src/browser/git-contribution.ts:570</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>registry: <a href="core.tabbartoolbarregistry.html" class="tsd-signature-type">TabBarToolbarRegistry</a></h5>
+									<h5>registry: <span class="tsd-signature-type">TabBarToolbarRegistry</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -693,7 +717,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L760">packages/git/src/browser/git-contribution.ts:760</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L760">packages/git/src/browser/git-contribution.ts:760</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -710,7 +734,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-contribution.ts#L566">packages/git/src/browser/git-contribution.ts:566</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-contribution.ts#L566">packages/git/src/browser/git-contribution.ts:566</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -746,14 +770,23 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/git.html">git</a>
 						<ul>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.blameannotationskeybindingcontext.html">Blame<wbr>Annotations<wbr>Keybinding<wbr>Context</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.blamecommands.html">Blame<wbr>Commands</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.blamedecorator.html">Blame<wbr>Decorator</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.dirtydiffmodel.html">Dirty<wbr>Diff<wbr>Model</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.git_commands.html">GIT_<wbr>COMMANDS</a>
@@ -768,16 +801,37 @@
 								<a href="../modules/git.gitbindingoptions.html">Git<wbr>Binding<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitblameparser.html">Git<wbr>Blame<wbr>Parser</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.gitcommitdetailuri.html">Git<wbr>Commit<wbr>Detail<wbr>Uri</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitcommitmessagevalidator.html">Git<wbr>Commit<wbr>Message<wbr>Validator</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.gitdiffcommands.html">Git<wbr>Diff<wbr>Commands</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitdifftreemodel.html">Git<wbr>Diff<wbr>Tree<wbr>Model</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitfilestatus-1.html">Git<wbr>File<wbr>Status</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitprompt.html">Git<wbr>Prompt</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitscmprovider.html">Git<wbr>Scm<wbr>Provider</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.gitscmrepository.html">Git<wbr>Scm<wbr>Repository</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.gitstatuschangeevent-1.html">Git<wbr>Status<wbr>Change<wbr>Event</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitsyncservice.html">Git<wbr>Sync<wbr>Service</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.gitutils-1.html">Git<wbr>Utils</a>
@@ -802,6 +856,9 @@
 					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="git.gitcontribution.html" class="tsd-kind-icon">Git<wbr>Contribution</a>
 						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="git.gitcontribution.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="git.gitcontribution.html#commands" class="tsd-kind-icon">commands</a>
 							</li>
@@ -922,7 +979,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
@@ -932,6 +988,7 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">

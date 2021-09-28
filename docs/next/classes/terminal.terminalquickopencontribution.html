@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/terminal.html">terminal</a>
@@ -85,14 +84,20 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/core.commandcontribution-1.html" class="tsd-signature-type">CommandContribution</a></li>
-					<li><a href="../interfaces/core.quickaccesscontribution-2.html" class="tsd-signature-type">QuickAccessContribution</a></li>
+					<li><span class="tsd-signature-type">CommandContribution</span></li>
+					<li><span class="tsd-signature-type">QuickAccessContribution</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="terminal.terminalquickopencontribution.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
@@ -109,15 +114,32 @@
 					</div>
 				</section>
 			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Terminal<wbr>Quick<wbr>Open<wbr>Contribution<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="terminal.terminalquickopencontribution.html" class="tsd-signature-type" data-tsd-kind="Class">TerminalQuickOpenContribution</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="terminal.terminalquickopencontribution.html" class="tsd-signature-type" data-tsd-kind="Class">TerminalQuickOpenContribution</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-private-protected">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="terminalquickopenservice" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> terminal<wbr>Quick<wbr>Open<wbr>Service</h3>
-					<div class="tsd-signature tsd-kind-icon">terminal<wbr>Quick<wbr>Open<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="terminal.terminalquickopenservice.html" class="tsd-signature-type">TerminalQuickOpenService</a></div>
+					<div class="tsd-signature tsd-kind-icon">terminal<wbr>Quick<wbr>Open<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="terminal.terminalquickopenservice.html" class="tsd-signature-type" data-tsd-kind="Class">TerminalQuickOpenService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/terminal/src/browser/terminal-quick-open-service.ts#L121">packages/terminal/src/browser/terminal-quick-open-service.ts:121</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/terminal/src/browser/terminal-quick-open-service.ts#L121">packages/terminal/src/browser/terminal-quick-open-service.ts:121</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -128,20 +150,20 @@
 					<a name="registercommands" class="tsd-anchor"></a>
 					<h3>register<wbr>Commands</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">register<wbr>Commands<span class="tsd-signature-symbol">(</span>commands<span class="tsd-signature-symbol">: </span><a href="core.commandregistry-1.html" class="tsd-signature-type">CommandRegistry</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Commands<span class="tsd-signature-symbol">(</span>commands<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CommandRegistry</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/core.commandcontribution-1.html">CommandContribution</a>.<a href="../interfaces/core.commandcontribution-1.html#registercommands">registerCommands</a></p>
+								<p>Implementation of CommandContribution.registerCommands</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/terminal/src/browser/terminal-quick-open-service.ts#L127">packages/terminal/src/browser/terminal-quick-open-service.ts:127</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/terminal/src/browser/terminal-quick-open-service.ts#L127">packages/terminal/src/browser/terminal-quick-open-service.ts:127</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>commands: <a href="core.commandregistry-1.html" class="tsd-signature-type">CommandRegistry</a></h5>
+									<h5>commands: <span class="tsd-signature-type">CommandRegistry</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -157,9 +179,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/core.quickaccesscontribution-2.html">QuickAccessContribution</a>.<a href="../interfaces/core.quickaccesscontribution-2.html#registerquickaccessprovider">registerQuickAccessProvider</a></p>
+								<p>Implementation of QuickAccessContribution.registerQuickAccessProvider</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/terminal/src/browser/terminal-quick-open-service.ts#L123">packages/terminal/src/browser/terminal-quick-open-service.ts:123</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/terminal/src/browser/terminal-quick-open-service.ts#L123">packages/terminal/src/browser/terminal-quick-open-service.ts:123</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -171,8 +193,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/terminal.html">terminal</a>
@@ -200,6 +222,9 @@
 					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="terminal.terminalquickopencontribution.html" class="tsd-kind-icon">Terminal<wbr>Quick<wbr>Open<wbr>Contribution</a>
 						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="terminal.terminalquickopencontribution.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="terminal.terminalquickopencontribution.html#terminalquickopenservice" class="tsd-kind-icon">terminal<wbr>Quick<wbr>Open<wbr>Service</a>
 							</li>
@@ -224,7 +249,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
@@ -234,6 +258,7 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">

@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/plugin_ext.html">plugin-ext</a>
@@ -70,7 +69,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Base implementation of <a href="../modules/core.html#quickpick">QuickPick</a> that uses <a href="../modules/plugin_ext.html#quickopenext">QuickOpenExt</a>.
+						<p>Base implementation of <a href="../interfaces/core.quickpick-2.html">QuickPick</a> that uses <a href="../modules/plugin_ext.html#quickopenext">QuickOpenExt</a>.
 						Missing functionality is going to be implemented in the scope of <a href="https://github.com/eclipse-theia/theia/issues/5059">https://github.com/eclipse-theia/theia/issues/5059</a></p>
 					</div>
 				</div>
@@ -79,7 +78,7 @@
 				<h3>Type parameters</h3>
 				<ul class="tsd-type-parameters">
 					<li>
-						<h4>T<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin._plugin_-1.quickpickitem.html" class="tsd-signature-type">QuickPickItem</a></h4>
+						<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">theia.QuickPickItem</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -87,7 +86,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="plugin_ext.quickinputext.html" class="tsd-signature-type">QuickInputExt</a>
+						<a href="plugin_ext.quickinputext.html" class="tsd-signature-type" data-tsd-kind="Class">QuickInputExt</a>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">QuickPickExt</span>
@@ -99,8 +98,7 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/plugin._plugin_-1.quickinput.html" class="tsd-signature-type">QuickInput</a></li>
-					<li><a href="../interfaces/plugin._plugin_-1.quickpick.html" class="tsd-signature-type">QuickPick</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li><span class="tsd-signature-type">QuickPick</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -110,7 +108,7 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="plugin_ext.quickpickext.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite"><a href="plugin_ext.quickpickext.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -132,9 +130,9 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="plugin_ext.quickpickext.html#expectinghide" class="tsd-kind-icon">expecting<wbr>Hide</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.quickpickext.html#ondidchangeactive" class="tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Active</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.quickpickext.html#ondidchangeselection" class="tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Selection</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="plugin_ext.quickpickext.html#plugin" class="tsd-kind-icon">plugin</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="plugin_ext.quickpickext.html#quickopen" class="tsd-kind-icon">quick<wbr>Open</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="plugin_ext.quickpickext.html#quickopenmain" class="tsd-kind-icon">quick<wbr>Open<wbr>Main</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="plugin_ext.quickpickext.html#plugin" class="tsd-kind-icon">plugin</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="plugin_ext.quickpickext.html#quickopen" class="tsd-kind-icon">quick<wbr>Open</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="plugin_ext.quickpickext.html#quickopenmain" class="tsd-kind-icon">quick<wbr>Open<wbr>Main</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="plugin_ext.quickpickext.html#visible" class="tsd-kind-icon">visible</a></li>
 							</ul>
 						</section>
@@ -184,30 +182,36 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Quick<wbr>Pick<wbr>Ext<span class="tsd-signature-symbol">(</span>quickOpen<span class="tsd-signature-symbol">: </span><a href="plugin_ext.quickopenextimpl.html" class="tsd-signature-type">QuickOpenExtImpl</a>, quickOpenMain<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.quickopenmain-1.html" class="tsd-signature-type">QuickOpenMain</a>, plugin<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.plugin-2.html" class="tsd-signature-type">Plugin</a>, onDispose<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.quickpickext.html" class="tsd-signature-type">QuickPickExt</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Quick<wbr>Pick<wbr>Ext&lt;T&gt;<span class="tsd-signature-symbol">(</span>quickOpen<span class="tsd-signature-symbol">: </span><a href="plugin_ext.quickopenextimpl.html" class="tsd-signature-type" data-tsd-kind="Class">QuickOpenExtImpl</a>, quickOpenMain<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.quickopenmain-1.html" class="tsd-signature-type" data-tsd-kind="Interface">QuickOpenMain</a>, plugin<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.plugin-1.html" class="tsd-signature-type" data-tsd-kind="Interface">Plugin</a>, onDispose<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.quickpickext.html" class="tsd-signature-type" data-tsd-kind="Class">QuickPickExt</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L588">packages/plugin-ext/src/plugin/quick-open.ts:588</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L588">packages/plugin-ext/src/plugin/quick-open.ts:588</a></li>
 								</ul>
 							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">QuickPickItem</span></h4>
+								</li>
+							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>quickOpen: <a href="plugin_ext.quickopenextimpl.html" class="tsd-signature-type">QuickOpenExtImpl</a></h5>
+									<h5>quickOpen: <a href="plugin_ext.quickopenextimpl.html" class="tsd-signature-type" data-tsd-kind="Class">QuickOpenExtImpl</a></h5>
 								</li>
 								<li>
-									<h5>quickOpenMain: <a href="../interfaces/plugin_ext.quickopenmain-1.html" class="tsd-signature-type">QuickOpenMain</a></h5>
+									<h5>quickOpenMain: <a href="../interfaces/plugin_ext.quickopenmain-1.html" class="tsd-signature-type" data-tsd-kind="Interface">QuickOpenMain</a></h5>
 								</li>
 								<li>
-									<h5>plugin: <a href="../interfaces/plugin_ext.plugin-2.html" class="tsd-signature-type">Plugin</a></h5>
+									<h5>plugin: <a href="../interfaces/plugin_ext.plugin-1.html" class="tsd-signature-type" data-tsd-kind="Interface">Plugin</a></h5>
 								</li>
 								<li>
 									<h5>onDispose: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
@@ -225,7 +229,7 @@
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.quickpickext.html" class="tsd-signature-type">QuickPickExt</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.quickpickext.html" class="tsd-signature-type" data-tsd-kind="Class">QuickPickExt</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -238,7 +242,7 @@
 					<div class="tsd-signature tsd-kind-icon">_active<wbr>Items<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L585">packages/plugin-ext/src/plugin/quick-open.ts:585</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L585">packages/plugin-ext/src/plugin/quick-open.ts:585</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -248,28 +252,28 @@
 					<div class="tsd-signature tsd-kind-icon">_can<wbr>Select<wbr>Many<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L581">packages/plugin-ext/src/plugin/quick-open.ts:581</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L581">packages/plugin-ext/src/plugin/quick-open.ts:581</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="_handlestoitems" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _handles<wbr>ToItems</h3>
-					<div class="tsd-signature tsd-kind-icon">_handles<wbr>ToItems<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;number, T&gt;()</span></div>
+					<div class="tsd-signature tsd-kind-icon">_handles<wbr>ToItems<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L579">packages/plugin-ext/src/plugin/quick-open.ts:579</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L579">packages/plugin-ext/src/plugin/quick-open.ts:579</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="_id" class="tsd-anchor"></a>
 					<h3>_id</h3>
-					<div class="tsd-signature tsd-kind-icon">_id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = QuickInputExt._nextId++</span></div>
+					<div class="tsd-signature tsd-kind-icon">_id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#_id">_id</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L236">packages/plugin-ext/src/plugin/quick-open.ts:236</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L236">packages/plugin-ext/src/plugin/quick-open.ts:236</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -279,17 +283,17 @@
 					<div class="tsd-signature tsd-kind-icon">_items<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L578">packages/plugin-ext/src/plugin/quick-open.ts:578</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L578">packages/plugin-ext/src/plugin/quick-open.ts:578</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="_itemstohandles" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _items<wbr>ToHandles</h3>
-					<div class="tsd-signature tsd-kind-icon">_items<wbr>ToHandles<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;T, number&gt;()</span></div>
+					<div class="tsd-signature tsd-kind-icon">_items<wbr>ToHandles<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L580">packages/plugin-ext/src/plugin/quick-open.ts:580</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L580">packages/plugin-ext/src/plugin/quick-open.ts:580</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -299,7 +303,7 @@
 					<div class="tsd-signature tsd-kind-icon">_match<wbr>OnDescription<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L582">packages/plugin-ext/src/plugin/quick-open.ts:582</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L582">packages/plugin-ext/src/plugin/quick-open.ts:582</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -309,27 +313,27 @@
 					<div class="tsd-signature tsd-kind-icon">_match<wbr>OnDetail<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L583">packages/plugin-ext/src/plugin/quick-open.ts:583</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L583">packages/plugin-ext/src/plugin/quick-open.ts:583</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="_ondidchangeactiveemitter" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> _on<wbr>Did<wbr>Change<wbr>Active<wbr>Emitter</h3>
-					<div class="tsd-signature tsd-kind-icon">_on<wbr>Did<wbr>Change<wbr>Active<wbr>Emitter<span class="tsd-signature-symbol">:</span> <a href="core.emitter-1.html" class="tsd-signature-type">Emitter</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Emitter&lt;T[]&gt;()</span></div>
+					<div class="tsd-signature tsd-kind-icon">_on<wbr>Did<wbr>Change<wbr>Active<wbr>Emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Emitter</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L587">packages/plugin-ext/src/plugin/quick-open.ts:587</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L587">packages/plugin-ext/src/plugin/quick-open.ts:587</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="_ondidchangeselectionemitter" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> _on<wbr>Did<wbr>Change<wbr>Selection<wbr>Emitter</h3>
-					<div class="tsd-signature tsd-kind-icon">_on<wbr>Did<wbr>Change<wbr>Selection<wbr>Emitter<span class="tsd-signature-symbol">:</span> <a href="core.emitter-1.html" class="tsd-signature-type">Emitter</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Emitter&lt;T[]&gt;()</span></div>
+					<div class="tsd-signature tsd-kind-icon">_on<wbr>Did<wbr>Change<wbr>Selection<wbr>Emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Emitter</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L588">packages/plugin-ext/src/plugin/quick-open.ts:588</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L588">packages/plugin-ext/src/plugin/quick-open.ts:588</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -339,7 +343,7 @@
 					<div class="tsd-signature tsd-kind-icon">_selected<wbr>Items<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L586">packages/plugin-ext/src/plugin/quick-open.ts:586</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L586">packages/plugin-ext/src/plugin/quick-open.ts:586</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -349,18 +353,18 @@
 					<div class="tsd-signature tsd-kind-icon">_sort<wbr>ByLabel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L584">packages/plugin-ext/src/plugin/quick-open.ts:584</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L584">packages/plugin-ext/src/plugin/quick-open.ts:584</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="disposablecollection" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> disposable<wbr>Collection</h3>
-					<div class="tsd-signature tsd-kind-icon">disposable<wbr>Collection<span class="tsd-signature-symbol">:</span> <a href="core.disposablecollection-1.html" class="tsd-signature-type">DisposableCollection</a></div>
+					<div class="tsd-signature tsd-kind-icon">disposable<wbr>Collection<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DisposableCollection</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#disposablecollection">disposableCollection</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L251">packages/plugin-ext/src/plugin/quick-open.ts:251</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L251">packages/plugin-ext/src/plugin/quick-open.ts:251</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -371,63 +375,54 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#expectinghide">expectingHide</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L248">packages/plugin-ext/src/plugin/quick-open.ts:248</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L248">packages/plugin-ext/src/plugin/quick-open.ts:248</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="ondidchangeactive" class="tsd-anchor"></a>
 					<h3>on<wbr>Did<wbr>Change<wbr>Active</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Active<span class="tsd-signature-symbol">:</span> <a href="../modules/core.event-1.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = this._onDidChangeActiveEmitter.event</span></div>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Active<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/plugin._plugin_-1.quickpick.html">QuickPick</a>.<a href="../interfaces/plugin._plugin_-1.quickpick.html#ondidchangeactive">onDidChangeActive</a></p>
+						<p>Implementation of QuickPick.onDidChangeActive</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L667">packages/plugin-ext/src/plugin/quick-open.ts:667</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L667">packages/plugin-ext/src/plugin/quick-open.ts:667</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="ondidchangeselection" class="tsd-anchor"></a>
 					<h3>on<wbr>Did<wbr>Change<wbr>Selection</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Selection<span class="tsd-signature-symbol">:</span> <a href="../modules/core.event-1.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = this._onDidChangeSelectionEmitter.event</span></div>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Selection<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/plugin._plugin_-1.quickpick.html">QuickPick</a>.<a href="../interfaces/plugin._plugin_-1.quickpick.html#ondidchangeselection">onDidChangeSelection</a></p>
+						<p>Implementation of QuickPick.onDidChangeSelection</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L678">packages/plugin-ext/src/plugin/quick-open.ts:678</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L678">packages/plugin-ext/src/plugin/quick-open.ts:678</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="plugin" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> plugin</h3>
-					<div class="tsd-signature tsd-kind-icon">plugin<span class="tsd-signature-symbol">:</span> <a href="../interfaces/plugin_ext.plugin-2.html" class="tsd-signature-type">Plugin</a></div>
+					<div class="tsd-signature tsd-kind-icon">plugin<span class="tsd-signature-symbol">:</span> <a href="../interfaces/plugin_ext.plugin-1.html" class="tsd-signature-type" data-tsd-kind="Interface">Plugin</a></div>
 					<aside class="tsd-sources">
-						<p>Overrides <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#plugin">plugin</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L592">packages/plugin-ext/src/plugin/quick-open.ts:592</a></li>
-						</ul>
+						<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#plugin">plugin</a></p>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="quickopen" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> quick<wbr>Open</h3>
-					<div class="tsd-signature tsd-kind-icon">quick<wbr>Open<span class="tsd-signature-symbol">:</span> <a href="plugin_ext.quickopenextimpl.html" class="tsd-signature-type">QuickOpenExtImpl</a></div>
+					<div class="tsd-signature tsd-kind-icon">quick<wbr>Open<span class="tsd-signature-symbol">:</span> <a href="plugin_ext.quickopenextimpl.html" class="tsd-signature-type" data-tsd-kind="Class">QuickOpenExtImpl</a></div>
 					<aside class="tsd-sources">
-						<p>Overrides <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#quickopen">quickOpen</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L590">packages/plugin-ext/src/plugin/quick-open.ts:590</a></li>
-						</ul>
+						<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#quickopen">quickOpen</a></p>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="quickopenmain" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> quick<wbr>Open<wbr>Main</h3>
-					<div class="tsd-signature tsd-kind-icon">quick<wbr>Open<wbr>Main<span class="tsd-signature-symbol">:</span> <a href="../interfaces/plugin_ext.quickopenmain-1.html" class="tsd-signature-type">QuickOpenMain</a></div>
+					<div class="tsd-signature tsd-kind-icon">quick<wbr>Open<wbr>Main<span class="tsd-signature-symbol">:</span> <a href="../interfaces/plugin_ext.quickopenmain-1.html" class="tsd-signature-type" data-tsd-kind="Interface">QuickOpenMain</a></div>
 					<aside class="tsd-sources">
-						<p>Overrides <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#quickopenmain">quickOpenMain</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L591">packages/plugin-ext/src/plugin/quick-open.ts:591</a></li>
-						</ul>
+						<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#quickopenmain">quickOpenMain</a></p>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
@@ -437,7 +432,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#visible">visible</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L249">packages/plugin-ext/src/plugin/quick-open.ts:249</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L249">packages/plugin-ext/src/plugin/quick-open.ts:249</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -455,7 +450,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L658">packages/plugin-ext/src/plugin/quick-open.ts:658</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L658">packages/plugin-ext/src/plugin/quick-open.ts:658</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -463,7 +458,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L662">packages/plugin-ext/src/plugin/quick-open.ts:662</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L662">packages/plugin-ext/src/plugin/quick-open.ts:662</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -486,18 +481,16 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#busy">busy</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L318">packages/plugin-ext/src/plugin/quick-open.ts:318</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L318">packages/plugin-ext/src/plugin/quick-open.ts:318</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#busy">busy</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L322">packages/plugin-ext/src/plugin/quick-open.ts:322</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L322">packages/plugin-ext/src/plugin/quick-open.ts:322</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -514,30 +507,28 @@
 					<a name="buttons" class="tsd-anchor"></a>
 					<h3>buttons</h3>
 					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> buttons<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin._plugin_-1.quickinputbutton.html" class="tsd-signature-type">QuickInputButton</a><span class="tsd-signature-symbol">[]</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> buttons<span class="tsd-signature-symbol">(</span>buttons<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin._plugin_-1.quickinputbutton.html" class="tsd-signature-type">QuickInputButton</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> buttons<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">QuickInputButton</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> buttons<span class="tsd-signature-symbol">(</span>buttons<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">QuickInputButton</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#buttons">buttons</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L354">packages/plugin-ext/src/plugin/quick-open.ts:354</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L354">packages/plugin-ext/src/plugin/quick-open.ts:354</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin._plugin_-1.quickinputbutton.html" class="tsd-signature-type">QuickInputButton</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">QuickInputButton</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#buttons">buttons</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L358">packages/plugin-ext/src/plugin/quick-open.ts:358</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L358">packages/plugin-ext/src/plugin/quick-open.ts:358</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>buttons: <a href="../interfaces/plugin._plugin_-1.quickinputbutton.html" class="tsd-signature-type">QuickInputButton</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>buttons: <span class="tsd-signature-type">QuickInputButton</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -555,7 +546,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L622">packages/plugin-ext/src/plugin/quick-open.ts:622</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L622">packages/plugin-ext/src/plugin/quick-open.ts:622</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -563,7 +554,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L626">packages/plugin-ext/src/plugin/quick-open.ts:626</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L626">packages/plugin-ext/src/plugin/quick-open.ts:626</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -586,18 +577,16 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#enabled">enabled</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L309">packages/plugin-ext/src/plugin/quick-open.ts:309</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L309">packages/plugin-ext/src/plugin/quick-open.ts:309</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#enabled">enabled</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L313">packages/plugin-ext/src/plugin/quick-open.ts:313</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L313">packages/plugin-ext/src/plugin/quick-open.ts:313</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -620,18 +609,16 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#ignorefocusout">ignoreFocusOut</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L327">packages/plugin-ext/src/plugin/quick-open.ts:327</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L327">packages/plugin-ext/src/plugin/quick-open.ts:327</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#ignorefocusout">ignoreFocusOut</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L331">packages/plugin-ext/src/plugin/quick-open.ts:331</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L331">packages/plugin-ext/src/plugin/quick-open.ts:331</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -655,7 +642,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L604">packages/plugin-ext/src/plugin/quick-open.ts:604</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L604">packages/plugin-ext/src/plugin/quick-open.ts:604</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -663,7 +650,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L608">packages/plugin-ext/src/plugin/quick-open.ts:608</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L608">packages/plugin-ext/src/plugin/quick-open.ts:608</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -687,7 +674,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L631">packages/plugin-ext/src/plugin/quick-open.ts:631</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L631">packages/plugin-ext/src/plugin/quick-open.ts:631</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -695,7 +682,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L635">packages/plugin-ext/src/plugin/quick-open.ts:635</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L635">packages/plugin-ext/src/plugin/quick-open.ts:635</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -719,7 +706,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L640">packages/plugin-ext/src/plugin/quick-open.ts:640</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L640">packages/plugin-ext/src/plugin/quick-open.ts:640</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -727,7 +714,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L644">packages/plugin-ext/src/plugin/quick-open.ts:644</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L644">packages/plugin-ext/src/plugin/quick-open.ts:644</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -744,17 +731,16 @@
 					<a name="ondidaccept" class="tsd-anchor"></a>
 					<h3>on<wbr>Did<wbr>Accept</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> onDidAccept<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/core.event-1.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> onDidAccept<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#ondidaccept">onDidAccept</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L475">packages/plugin-ext/src/plugin/quick-open.ts:475</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L475">packages/plugin-ext/src/plugin/quick-open.ts:475</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/core.event-1.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -762,17 +748,16 @@
 					<a name="ondidchangevalue" class="tsd-anchor"></a>
 					<h3>on<wbr>Did<wbr>Change<wbr>Value</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> onDidChangeValue<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/core.event-1.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> onDidChangeValue<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#ondidchangevalue">onDidChangeValue</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L479">packages/plugin-ext/src/plugin/quick-open.ts:479</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L479">packages/plugin-ext/src/plugin/quick-open.ts:479</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/core.event-1.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -780,17 +765,16 @@
 					<a name="ondidhide" class="tsd-anchor"></a>
 					<h3>on<wbr>Did<wbr>Hide</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> onDidHide<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/core.event-1.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> onDidHide<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#ondidhide">onDidHide</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L471">packages/plugin-ext/src/plugin/quick-open.ts:471</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L471">packages/plugin-ext/src/plugin/quick-open.ts:471</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/core.event-1.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -798,17 +782,16 @@
 					<a name="ondidtriggerbutton" class="tsd-anchor"></a>
 					<h3>on<wbr>Did<wbr>Trigger<wbr>Button</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> onDidTriggerButton<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/core.event-1.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/plugin._plugin_-1.quickinputbutton.html" class="tsd-signature-type">QuickInputButton</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> onDidTriggerButton<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">QuickInputButton</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#ondidtriggerbutton">onDidTriggerButton</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L483">packages/plugin-ext/src/plugin/quick-open.ts:483</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L483">packages/plugin-ext/src/plugin/quick-open.ts:483</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/core.event-1.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/plugin._plugin_-1.quickinputbutton.html" class="tsd-signature-type">QuickInputButton</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">QuickInputButton</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -816,30 +799,28 @@
 					<a name="placeholder" class="tsd-anchor"></a>
 					<h3>placeholder</h3>
 					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> placeholder<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> placeholder<span class="tsd-signature-symbol">(</span>placeholder<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> placeholder<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> placeholder<span class="tsd-signature-symbol">(</span>placeholder<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#placeholder">placeholder</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L345">packages/plugin-ext/src/plugin/quick-open.ts:345</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L345">packages/plugin-ext/src/plugin/quick-open.ts:345</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#placeholder">placeholder</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L349">packages/plugin-ext/src/plugin/quick-open.ts:349</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L349">packages/plugin-ext/src/plugin/quick-open.ts:349</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>placeholder: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>placeholder: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -857,7 +838,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L669">packages/plugin-ext/src/plugin/quick-open.ts:669</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L669">packages/plugin-ext/src/plugin/quick-open.ts:669</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -865,7 +846,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L673">packages/plugin-ext/src/plugin/quick-open.ts:673</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L673">packages/plugin-ext/src/plugin/quick-open.ts:673</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -889,7 +870,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L649">packages/plugin-ext/src/plugin/quick-open.ts:649</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L649">packages/plugin-ext/src/plugin/quick-open.ts:649</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -897,7 +878,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L653">packages/plugin-ext/src/plugin/quick-open.ts:653</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L653">packages/plugin-ext/src/plugin/quick-open.ts:653</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -914,30 +895,28 @@
 					<a name="step" class="tsd-anchor"></a>
 					<h3>step</h3>
 					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> step<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> step<span class="tsd-signature-symbol">(</span>step<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> step<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> step<span class="tsd-signature-symbol">(</span>step<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#step">step</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L291">packages/plugin-ext/src/plugin/quick-open.ts:291</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L291">packages/plugin-ext/src/plugin/quick-open.ts:291</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#step">step</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L295">packages/plugin-ext/src/plugin/quick-open.ts:295</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L295">packages/plugin-ext/src/plugin/quick-open.ts:295</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>step: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>step: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -948,30 +927,28 @@
 					<a name="title" class="tsd-anchor"></a>
 					<h3>title</h3>
 					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> title<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> title<span class="tsd-signature-symbol">(</span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> title<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> title<span class="tsd-signature-symbol">(</span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#title">title</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L282">packages/plugin-ext/src/plugin/quick-open.ts:282</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L282">packages/plugin-ext/src/plugin/quick-open.ts:282</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#title">title</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L286">packages/plugin-ext/src/plugin/quick-open.ts:286</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L286">packages/plugin-ext/src/plugin/quick-open.ts:286</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>title: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>title: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -982,30 +959,28 @@
 					<a name="totalsteps" class="tsd-anchor"></a>
 					<h3>total<wbr>Steps</h3>
 					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> totalSteps<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> totalSteps<span class="tsd-signature-symbol">(</span>totalSteps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> totalSteps<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> totalSteps<span class="tsd-signature-symbol">(</span>totalSteps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#totalsteps">totalSteps</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L300">packages/plugin-ext/src/plugin/quick-open.ts:300</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L300">packages/plugin-ext/src/plugin/quick-open.ts:300</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#totalsteps">totalSteps</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L304">packages/plugin-ext/src/plugin/quick-open.ts:304</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L304">packages/plugin-ext/src/plugin/quick-open.ts:304</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>totalSteps: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>totalSteps: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1022,18 +997,16 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#value">value</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L336">packages/plugin-ext/src/plugin/quick-open.ts:336</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L336">packages/plugin-ext/src/plugin/quick-open.ts:336</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#value">value</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L340">packages/plugin-ext/src/plugin/quick-open.ts:340</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L340">packages/plugin-ext/src/plugin/quick-open.ts:340</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1060,7 +1033,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#_fireaccept">_fireAccept</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L452">packages/plugin-ext/src/plugin/quick-open.ts:452</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L452">packages/plugin-ext/src/plugin/quick-open.ts:452</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1071,20 +1044,20 @@
 					<a name="_firebuttontrigger" class="tsd-anchor"></a>
 					<h3>_fire<wbr>Button<wbr>Trigger</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">_fire<wbr>Button<wbr>Trigger<span class="tsd-signature-symbol">(</span>btn<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin._plugin_-1.quickinputbutton.html" class="tsd-signature-type">QuickInputButton</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">_fire<wbr>Button<wbr>Trigger<span class="tsd-signature-symbol">(</span>btn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">QuickInputButton</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#_firebuttontrigger">_fireButtonTrigger</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L467">packages/plugin-ext/src/plugin/quick-open.ts:467</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L467">packages/plugin-ext/src/plugin/quick-open.ts:467</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>btn: <a href="../interfaces/plugin._plugin_-1.quickinputbutton.html" class="tsd-signature-type">QuickInputButton</a></h5>
+									<h5>btn: <span class="tsd-signature-type">QuickInputButton</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1102,7 +1075,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#_firechangedvalue">_fireChangedValue</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L456">packages/plugin-ext/src/plugin/quick-open.ts:456</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L456">packages/plugin-ext/src/plugin/quick-open.ts:456</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1125,7 +1098,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L680">packages/plugin-ext/src/plugin/quick-open.ts:680</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L680">packages/plugin-ext/src/plugin/quick-open.ts:680</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1148,7 +1121,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L686">packages/plugin-ext/src/plugin/quick-open.ts:686</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L686">packages/plugin-ext/src/plugin/quick-open.ts:686</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1172,7 +1145,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#_firehide">_fireHide</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L460">packages/plugin-ext/src/plugin/quick-open.ts:460</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L460">packages/plugin-ext/src/plugin/quick-open.ts:460</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1183,23 +1156,23 @@
 					<a name="converturl" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> convertURL</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">convertURL<span class="tsd-signature-symbol">(</span>iconPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uri</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>dark<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uri</span><span class="tsd-signature-symbol">; </span>light<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uri</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ThemeIcon</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">URI</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>dark<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">URI</span><span class="tsd-signature-symbol">; </span>light<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">URI</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.themeicon.html" class="tsd-signature-type">ThemeIcon</a></li>
+						<li class="tsd-signature tsd-kind-icon">convertURL<span class="tsd-signature-symbol">(</span>iconPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ThemeIcon</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uri</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>dark<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uri</span><span class="tsd-signature-symbol">; </span>light<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uri</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">URI</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>dark<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">URI</span><span class="tsd-signature-symbol">; </span>light<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">URI</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.themeicon-1.html" class="tsd-signature-type" data-tsd-kind="Class">ThemeIcon</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#converturl">convertURL</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L426">packages/plugin-ext/src/plugin/quick-open.ts:426</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L426">packages/plugin-ext/src/plugin/quick-open.ts:426</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>iconPath: <span class="tsd-signature-type">Uri</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>dark<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uri</span><span class="tsd-signature-symbol">; </span>light<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uri</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ThemeIcon</span></h5>
+									<h5>iconPath: <span class="tsd-signature-type">ThemeIcon</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uri</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>dark<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uri</span><span class="tsd-signature-symbol">; </span>light<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uri</span><span class="tsd-signature-symbol"> }</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">URI</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>dark<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">URI</span><span class="tsd-signature-symbol">; </span>light<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">URI</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.themeicon.html" class="tsd-signature-type">ThemeIcon</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">URI</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>dark<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">URI</span><span class="tsd-signature-symbol">; </span>light<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">URI</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.themeicon-1.html" class="tsd-signature-type" data-tsd-kind="Class">ThemeIcon</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -1212,10 +1185,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/plugin._plugin_-1.quickpick.html">QuickPick</a>.<a href="../interfaces/plugin._plugin_-1.quickpick.html#dispose">dispose</a></p>
+								<p>Implementation of QuickPick.dispose</p>
 								<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#dispose">dispose</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L380">packages/plugin-ext/src/plugin/quick-open.ts:380</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L380">packages/plugin-ext/src/plugin/quick-open.ts:380</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1231,10 +1204,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/plugin._plugin_-1.quickpick.html">QuickPick</a>.<a href="../interfaces/plugin._plugin_-1.quickpick.html#hide">hide</a></p>
+								<p>Implementation of QuickPick.hide</p>
 								<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#hide">hide</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L421">packages/plugin-ext/src/plugin/quick-open.ts:421</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L421">packages/plugin-ext/src/plugin/quick-open.ts:421</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1250,10 +1223,10 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/plugin._plugin_-1.quickpick.html">QuickPick</a>.<a href="../interfaces/plugin._plugin_-1.quickpick.html#show">show</a></p>
+								<p>Implementation of QuickPick.show</p>
 								<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#show">show</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L374">packages/plugin-ext/src/plugin/quick-open.ts:374</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L374">packages/plugin-ext/src/plugin/quick-open.ts:374</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1271,7 +1244,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="plugin_ext.quickinputext.html">QuickInputExt</a>.<a href="plugin_ext.quickinputext.html#update">update</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/quick-open.ts#L392">packages/plugin-ext/src/plugin/quick-open.ts:392</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/quick-open.ts#L392">packages/plugin-ext/src/plugin/quick-open.ts:392</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1289,8 +1262,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/plugin_ext.html">plugin-<wbr>ext</a>
@@ -1311,13 +1284,13 @@
 								<a href="../modules/plugin_ext.connectionclosederror.html">Connection<wbr>Closed<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.customeditorwidget.html">Custom<wbr>Editor<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrangebehavior.html">Decoration<wbr>Range<wbr>Behavior</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrenderoptions-1.html">Decoration<wbr>Render<wbr>Options</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.delta.html">Delta</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.documentlink.html">Document<wbr>Link</a>
@@ -1338,6 +1311,9 @@
 								<a href="../modules/plugin_ext.parameterinformation.html">Parameter<wbr>Information</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.plugincontributions.html">Plugin<wbr>Contributions</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginiconpath.html">Plugin<wbr>Icon<wbr>Path</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
@@ -1345,6 +1321,12 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginpaths.html">Plugin<wbr>Paths</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewregistry.html">Plugin<wbr>View<wbr>Registry</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewwidget.html">Plugin<wbr>View<wbr>Widget</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.schemes.html">Schemes</a>
@@ -1371,10 +1353,16 @@
 								<a href="../modules/plugin_ext.textdocumentshowoptions.html">Text<wbr>Document<wbr>Show<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.texteditorselectionchangekind.html">Text<wbr>Editor<wbr>Selection<wbr>Change<wbr>Kind</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationattachmentrenderoptions.html">Themable<wbr>Decoration<wbr>Attachment<wbr>Render<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationrenderoptions.html">Themable<wbr>Decoration<wbr>Render<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.themeicon.html">Theme<wbr>Icon</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.timelinecommandarg-1.html">Timeline<wbr>Command<wbr>Arg</a>
@@ -1389,10 +1377,10 @@
 								<a href="../modules/plugin_ext.webviewexternalendpoint.html">Webview<wbr>External<wbr>Endpoint</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
+								<a href="../modules/plugin_ext.webviewwidget.html">Webview<wbr>Widget</a>
 							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.nls.html">nls</a>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
 							</li>
 						</ul>
 					</li>
@@ -1405,7 +1393,7 @@
 					<li class="current tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="plugin_ext.quickpickext.html" class="tsd-kind-icon">Quick<wbr>Pick<wbr>Ext</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite">
 								<a href="plugin_ext.quickpickext.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
@@ -1456,13 +1444,13 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="plugin_ext.quickpickext.html#ondidchangeselection" class="tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Selection</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="plugin_ext.quickpickext.html#plugin" class="tsd-kind-icon">plugin</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="plugin_ext.quickpickext.html#quickopen" class="tsd-kind-icon">quick<wbr>Open</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="plugin_ext.quickpickext.html#quickopenmain" class="tsd-kind-icon">quick<wbr>Open<wbr>Main</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
@@ -1576,7 +1564,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
@@ -1586,7 +1573,6 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
-				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>

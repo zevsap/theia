@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/editor.html">editor</a>
@@ -94,10 +93,10 @@
 						<span class="target">NavigationLocationUpdater</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<a href="editor.mocknavigationlocationupdater.html" class="tsd-signature-type">MockNavigationLocationUpdater</a>
+								<a href="editor.mocknavigationlocationupdater.html" class="tsd-signature-type" data-tsd-kind="Class">MockNavigationLocationUpdater</a>
 							</li>
 							<li>
-								<a href="editor.noopnavigationlocationupdater.html" class="tsd-signature-type">NoopNavigationLocationUpdater</a>
+								<a href="editor.noopnavigationlocationupdater.html" class="tsd-signature-type" data-tsd-kind="Class">NoopNavigationLocationUpdater</a>
 							</li>
 						</ul>
 					</li>
@@ -107,6 +106,12 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="editor.navigationlocationupdater.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
@@ -121,18 +126,35 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Navigation<wbr>Location<wbr>Updater<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="editor.navigationlocationupdater.html" class="tsd-signature-type" data-tsd-kind="Class">NavigationLocationUpdater</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="editor.navigationlocationupdater.html" class="tsd-signature-type" data-tsd-kind="Class">NavigationLocationUpdater</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="affects" class="tsd-anchor"></a>
 					<h3>affects</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">affects<span class="tsd-signature-symbol">(</span>candidateLocation<span class="tsd-signature-symbol">: </span><a href="../modules/editor.navigationlocation.html" class="tsd-signature-type">NavigationLocation</a>, otherLocation<span class="tsd-signature-symbol">: </span><a href="../modules/editor.navigationlocation.html" class="tsd-signature-type">NavigationLocation</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><a href="../modules/editor.navigationlocation.html" class="tsd-signature-type">NavigationLocation</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">affects<span class="tsd-signature-symbol">(</span>candidateLocation<span class="tsd-signature-symbol">: </span><a href="../interfaces/editor.navigationlocation-1.html" class="tsd-signature-type" data-tsd-kind="Interface">NavigationLocation</a>, otherLocation<span class="tsd-signature-symbol">: </span><a href="../interfaces/editor.navigationlocation-1.html" class="tsd-signature-type" data-tsd-kind="Interface">NavigationLocation</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/editor.navigationlocation-1.html" class="tsd-signature-type" data-tsd-kind="Interface">NavigationLocation</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/editor/src/browser/navigation/navigation-location-updater.ts#L46">packages/editor/src/browser/navigation/navigation-location-updater.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/editor/src/browser/navigation/navigation-location-updater.ts#L46">packages/editor/src/browser/navigation/navigation-location-updater.ts:46</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -149,13 +171,13 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>candidateLocation: <a href="../modules/editor.navigationlocation.html" class="tsd-signature-type">NavigationLocation</a></h5>
+									<h5>candidateLocation: <a href="../interfaces/editor.navigationlocation-1.html" class="tsd-signature-type" data-tsd-kind="Interface">NavigationLocation</a></h5>
 								</li>
 								<li>
-									<h5>otherLocation: <a href="../modules/editor.navigationlocation.html" class="tsd-signature-type">NavigationLocation</a></h5>
+									<h5>otherLocation: <a href="../interfaces/editor.navigationlocation-1.html" class="tsd-signature-type" data-tsd-kind="Interface">NavigationLocation</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><a href="../modules/editor.navigationlocation.html" class="tsd-signature-type">NavigationLocation</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/editor.navigationlocation-1.html" class="tsd-signature-type" data-tsd-kind="Interface">NavigationLocation</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -169,7 +191,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/editor/src/browser/navigation/navigation-location-updater.ts#L204">packages/editor/src/browser/navigation/navigation-location-updater.ts:204</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/editor/src/browser/navigation/navigation-location-updater.ts#L204">packages/editor/src/browser/navigation/navigation-location-updater.ts:204</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -194,19 +216,19 @@
 					<a name="handlebefore" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> handle<wbr>Before</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">handle<wbr>Before<span class="tsd-signature-symbol">(</span>candidate<span class="tsd-signature-symbol">: </span><a href="../modules/editor.navigationlocation.html" class="tsd-signature-type">NavigationLocation</a>, modification<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Range</span>, lineDiff<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, startCharacter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, endCharacter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/editor.navigationlocation.context.html" class="tsd-signature-type">Context</a></li>
+						<li class="tsd-signature tsd-kind-icon">handle<wbr>Before<span class="tsd-signature-symbol">(</span>candidate<span class="tsd-signature-symbol">: </span><a href="../interfaces/editor.navigationlocation-1.html" class="tsd-signature-type" data-tsd-kind="Interface">NavigationLocation</a>, modification<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Range</span>, lineDiff<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, startCharacter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, endCharacter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/editor.navigationlocation.context.html" class="tsd-signature-type" data-tsd-kind="Namespace">Context</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/editor/src/browser/navigation/navigation-location-updater.ts#L154">packages/editor/src/browser/navigation/navigation-location-updater.ts:154</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/editor/src/browser/navigation/navigation-location-updater.ts#L154">packages/editor/src/browser/navigation/navigation-location-updater.ts:154</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>candidate: <a href="../modules/editor.navigationlocation.html" class="tsd-signature-type">NavigationLocation</a></h5>
+									<h5>candidate: <a href="../interfaces/editor.navigationlocation-1.html" class="tsd-signature-type" data-tsd-kind="Interface">NavigationLocation</a></h5>
 								</li>
 								<li>
 									<h5>modification: <span class="tsd-signature-type">Range</span></h5>
@@ -221,7 +243,7 @@
 									<h5>endCharacter: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/editor.navigationlocation.context.html" class="tsd-signature-type">Context</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/editor.navigationlocation.context.html" class="tsd-signature-type" data-tsd-kind="Namespace">Context</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -229,19 +251,19 @@
 					<a name="handleinside" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> handle<wbr>Inside</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">handle<wbr>Inside<span class="tsd-signature-symbol">(</span>candidate<span class="tsd-signature-symbol">: </span><a href="../modules/editor.navigationlocation.html" class="tsd-signature-type">NavigationLocation</a>, endLine<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, endCharacter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/editor.navigationlocation.context.html" class="tsd-signature-type">Context</a></li>
+						<li class="tsd-signature tsd-kind-icon">handle<wbr>Inside<span class="tsd-signature-symbol">(</span>candidate<span class="tsd-signature-symbol">: </span><a href="../interfaces/editor.navigationlocation-1.html" class="tsd-signature-type" data-tsd-kind="Interface">NavigationLocation</a>, endLine<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, endCharacter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/editor.navigationlocation.context.html" class="tsd-signature-type" data-tsd-kind="Namespace">Context</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/editor/src/browser/navigation/navigation-location-updater.ts#L128">packages/editor/src/browser/navigation/navigation-location-updater.ts:128</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/editor/src/browser/navigation/navigation-location-updater.ts#L128">packages/editor/src/browser/navigation/navigation-location-updater.ts:128</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>candidate: <a href="../modules/editor.navigationlocation.html" class="tsd-signature-type">NavigationLocation</a></h5>
+									<h5>candidate: <a href="../interfaces/editor.navigationlocation-1.html" class="tsd-signature-type" data-tsd-kind="Interface">NavigationLocation</a></h5>
 								</li>
 								<li>
 									<h5>endLine: <span class="tsd-signature-type">number</span></h5>
@@ -250,7 +272,7 @@
 									<h5>endCharacter: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/editor.navigationlocation.context.html" class="tsd-signature-type">Context</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/editor.navigationlocation.context.html" class="tsd-signature-type" data-tsd-kind="Namespace">Context</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -265,7 +287,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/editor/src/browser/navigation/navigation-location-updater.ts#L184">packages/editor/src/browser/navigation/navigation-location-updater.ts:184</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/editor/src/browser/navigation/navigation-location-updater.ts#L184">packages/editor/src/browser/navigation/navigation-location-updater.ts:184</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -282,7 +304,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/editor/src/browser/navigation/navigation-location-updater.ts#L185">packages/editor/src/browser/navigation/navigation-location-updater.ts:185</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/editor/src/browser/navigation/navigation-location-updater.ts#L185">packages/editor/src/browser/navigation/navigation-location-updater.ts:185</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -303,8 +325,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/editor.html">editor</a>
@@ -319,10 +341,16 @@
 								<a href="../modules/editor.customeditorwidget-1.html">Custom<wbr>Editor<wbr>Widget</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/editor.editoraccess-1.html">Editor<wbr>Access</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/editor.editorcommands-1.html">Editor<wbr>Commands</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/editor.editorcontextmenu-1.html">Editor<wbr>Context<wbr>Menu</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/editor.editordecorationstyle-2.html">Editor<wbr>Decoration<wbr>Style</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/editor.editorkeybindingcontexts-1.html">Editor<wbr>Keybinding<wbr>Contexts</a>
@@ -340,6 +368,9 @@
 								<a href="../modules/editor.selectionlocation.html">Selection<wbr>Location</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/editor.textdocumentcontentchangedelta-1.html">Text<wbr>Document<wbr>Content<wbr>Change<wbr>Delta</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/editor.texteditorselection-1.html">Text<wbr>Editor<wbr>Selection</a>
 							</li>
 						</ul>
@@ -353,6 +384,9 @@
 					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="editor.navigationlocationupdater.html" class="tsd-kind-icon">Navigation<wbr>Location<wbr>Updater</a>
 						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="editor.navigationlocationupdater.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="editor.navigationlocationupdater.html#affects" class="tsd-kind-icon">affects</a>
 							</li>
@@ -383,7 +417,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
@@ -393,6 +426,7 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">

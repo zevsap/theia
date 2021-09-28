@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/plugin_ext.html">plugin-ext</a>
@@ -85,14 +84,20 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/debug.debugservice.html" class="tsd-signature-type">DebugService</a></li>
-					<li><a href="../interfaces/plugin_ext.plugindebugadaptercontributionregistrator.html" class="tsd-signature-type">PluginDebugAdapterContributionRegistrator</a></li>
+					<li><span class="tsd-signature-type">DebugService</span></li>
+					<li><a href="../interfaces/plugin_ext.plugindebugadaptercontributionregistrator.html" class="tsd-signature-type" data-tsd-kind="Interface">PluginDebugAdapterContributionRegistrator</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="plugin_ext.plugindebugservice.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
@@ -116,10 +121,12 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="plugin_ext.plugindebugservice.html#getschemaattributes" class="tsd-kind-icon">get<wbr>Schema<wbr>Attributes</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="plugin_ext.plugindebugservice.html#init" class="tsd-kind-icon">init</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="plugin_ext.plugindebugservice.html#providedebugconfigurations" class="tsd-kind-icon">provide<wbr>Debug<wbr>Configurations</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="plugin_ext.plugindebugservice.html#providedynamicdebugconfigurations" class="tsd-kind-icon">provide<wbr>Dynamic<wbr>Debug<wbr>Configurations</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="plugin_ext.plugindebugservice.html#registerdebugadaptercontribution" class="tsd-kind-icon">register<wbr>Debug<wbr>Adapter<wbr>Contribution</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="plugin_ext.plugindebugservice.html#registerdebugger" class="tsd-kind-icon">register<wbr>Debugger</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="plugin_ext.plugindebugservice.html#resolvedebugconfiguration" class="tsd-kind-icon">resolve<wbr>Debug<wbr>Configuration</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="plugin_ext.plugindebugservice.html#resolvedebugconfigurationwithsubstitutedvariables" class="tsd-kind-icon">resolve<wbr>Debug<wbr>Configuration<wbr>With<wbr>Substituted<wbr>Variables</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="plugin_ext.plugindebugservice.html#resolvedynamicconfigurationsfortype" class="tsd-kind-icon">resolve<wbr>Dynamic<wbr>Configurations<wbr>For<wbr>Type</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="plugin_ext.plugindebugservice.html#terminatedebugsession" class="tsd-kind-icon">terminate<wbr>Debug<wbr>Session</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="plugin_ext.plugindebugservice.html#unregisterdebugadaptercontribution" class="tsd-kind-icon">unregister<wbr>Debug<wbr>Adapter<wbr>Contribution</a></li>
 							</ul>
@@ -127,75 +134,92 @@
 					</div>
 				</section>
 			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Plugin<wbr>Debug<wbr>Service<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugindebugservice.html" class="tsd-signature-type" data-tsd-kind="Class">PluginDebugService</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.plugindebugservice.html" class="tsd-signature-type" data-tsd-kind="Class">PluginDebugService</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-private-protected">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="connectionprovider" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> connection<wbr>Provider</h3>
-					<div class="tsd-signature tsd-kind-icon">connection<wbr>Provider<span class="tsd-signature-symbol">:</span> <a href="core.websocketconnectionprovider-2.html" class="tsd-signature-type">WebSocketConnectionProvider</a></div>
+					<div class="tsd-signature tsd-kind-icon">connection<wbr>Provider<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">WebSocketConnectionProvider</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L60">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:60</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L61">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:61</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="contributors" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> contributors</h3>
-					<div class="tsd-signature tsd-kind-icon">contributors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="plugin_ext.plugindebugadaptercontribution.html" class="tsd-signature-type">PluginDebugAdapterContribution</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;string, PluginDebugAdapterContribution&gt;()</span></div>
+					<div class="tsd-signature tsd-kind-icon">contributors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="plugin_ext.plugindebugadaptercontribution.html" class="tsd-signature-type" data-tsd-kind="Class">PluginDebugAdapterContribution</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L52">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:52</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L53">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:53</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="debuggers" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> debuggers</h3>
-					<div class="tsd-signature tsd-kind-icon">debuggers<span class="tsd-signature-symbol">:</span> <a href="../interfaces/plugin_ext.debuggercontribution-1.html" class="tsd-signature-type">DebuggerContribution</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
+					<div class="tsd-signature tsd-kind-icon">debuggers<span class="tsd-signature-symbol">:</span> <a href="../interfaces/plugin_ext.debuggercontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">DebuggerContribution</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L51">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L52">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:52</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="delegated" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> delegated</h3>
-					<div class="tsd-signature tsd-kind-icon">delegated<span class="tsd-signature-symbol">:</span> <a href="../interfaces/debug.debugservice.html" class="tsd-signature-type">DebugService</a></div>
+					<div class="tsd-signature tsd-kind-icon">delegated<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DebugService</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L57">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L58">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:58</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="sessionid2contrib" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> session<wbr>Id2contrib</h3>
-					<div class="tsd-signature tsd-kind-icon">session<wbr>Id2contrib<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="plugin_ext.plugindebugadaptercontribution.html" class="tsd-signature-type">PluginDebugAdapterContribution</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;string, PluginDebugAdapterContribution&gt;()</span></div>
+					<div class="tsd-signature tsd-kind-icon">session<wbr>Id2contrib<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="plugin_ext.plugindebugadaptercontribution.html" class="tsd-signature-type" data-tsd-kind="Class">PluginDebugAdapterContribution</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L56">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L57">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:57</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="todispose" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> to<wbr>Dispose</h3>
-					<div class="tsd-signature tsd-kind-icon">to<wbr>Dispose<span class="tsd-signature-symbol">:</span> <a href="core.disposablecollection-1.html" class="tsd-signature-type">DisposableCollection</a><span class="tsd-signature-symbol"> = new DisposableCollection()</span></div>
+					<div class="tsd-signature tsd-kind-icon">to<wbr>Dispose<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DisposableCollection</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L53">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L54">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:54</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="workspaceservice" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> workspace<wbr>Service</h3>
-					<div class="tsd-signature tsd-kind-icon">workspace<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="workspace.workspaceservice-1.html" class="tsd-signature-type">WorkspaceService</a></div>
+					<div class="tsd-signature tsd-kind-icon">workspace<wbr>Service<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">WorkspaceService</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L62">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:62</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L63">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:63</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -206,20 +230,20 @@
 					<a name="createdebugsession" class="tsd-anchor"></a>
 					<h3>create<wbr>Debug<wbr>Session</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Debug<wbr>Session<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../modules/debug.debugconfiguration-1.html" class="tsd-signature-type">DebugConfiguration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Debug<wbr>Session<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DebugConfiguration</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/debug.debugservice.html">DebugService</a>.<a href="../interfaces/debug.debugservice.html#createdebugsession">createDebugSession</a></p>
+								<p>Implementation of DebugService.createDebugSession</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L205">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:205</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L228">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:228</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../modules/debug.debugconfiguration-1.html" class="tsd-signature-type">DebugConfiguration</a></h5>
+									<h5>config: <span class="tsd-signature-type">DebugConfiguration</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -235,9 +259,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/debug.debugservice.html">DebugService</a>.<a href="../interfaces/debug.debugservice.html#debugtypes">debugTypes</a></p>
+								<p>Implementation of DebugService.debugTypes</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L94">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L95">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:95</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -253,9 +277,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/debug.debugservice.html">DebugService</a>.<a href="../interfaces/debug.debugservice.html#dispose">dispose</a></p>
+								<p>Implementation of DebugService.dispose</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L226">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:226</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L249">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:249</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -266,17 +290,17 @@
 					<a name="getconfigurationsnippets" class="tsd-anchor"></a>
 					<h3>get<wbr>Configuration<wbr>Snippets</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Configuration<wbr>Snippets<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/core.ijsonschemasnippet.html" class="tsd-signature-type">IJSONSchemaSnippet</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Configuration<wbr>Snippets<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IJSONSchemaSnippet</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/debug.debugservice.html">DebugService</a>.<a href="../interfaces/debug.debugservice.html#getconfigurationsnippets">getConfigurationSnippets</a></p>
+								<p>Implementation of DebugService.getConfigurationSnippets</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L193">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:193</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L216">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:216</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/core.ijsonschemasnippet.html" class="tsd-signature-type">IJSONSchemaSnippet</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IJSONSchemaSnippet</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -284,14 +308,14 @@
 					<a name="getdebuggersforlanguage" class="tsd-anchor"></a>
 					<h3>get<wbr>Debuggers<wbr>For<wbr>Language</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Debuggers<wbr>For<wbr>Language<span class="tsd-signature-symbol">(</span>language<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/debug.debuggerdescription.html" class="tsd-signature-type">DebuggerDescription</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Debuggers<wbr>For<wbr>Language<span class="tsd-signature-symbol">(</span>language<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DebuggerDescription</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/debug.debugservice.html">DebugService</a>.<a href="../interfaces/debug.debugservice.html#getdebuggersforlanguage">getDebuggersForLanguage</a></p>
+								<p>Implementation of DebugService.getDebuggersForLanguage</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L168">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:168</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L191">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:191</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -300,7 +324,7 @@
 									<h5>language: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/debug.debuggerdescription.html" class="tsd-signature-type">DebuggerDescription</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DebuggerDescription</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -308,14 +332,14 @@
 					<a name="getschemaattributes" class="tsd-anchor"></a>
 					<h3>get<wbr>Schema<wbr>Attributes</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Schema<wbr>Attributes<span class="tsd-signature-symbol">(</span>debugType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/core.ijsonschema.html" class="tsd-signature-type">IJSONSchema</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Schema<wbr>Attributes<span class="tsd-signature-symbol">(</span>debugType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IJSONSchema</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/debug.debugservice.html">DebugService</a>.<a href="../interfaces/debug.debugservice.html#getschemaattributes">getSchemaAttributes</a></p>
+								<p>Implementation of DebugService.getSchemaAttributes</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L182">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:182</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L205">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:205</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -324,7 +348,7 @@
 									<h5>debugType: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/core.ijsonschema.html" class="tsd-signature-type">IJSONSchema</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IJSONSchema</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -338,7 +362,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L65">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L66">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:66</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -349,25 +373,44 @@
 					<a name="providedebugconfigurations" class="tsd-anchor"></a>
 					<h3>provide<wbr>Debug<wbr>Configurations</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">provide<wbr>Debug<wbr>Configurations<span class="tsd-signature-symbol">(</span>debugType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><a href="../interfaces/debug.debugrequesttypes.html" class="tsd-signature-type">DebugRequestTypes</a>, workspaceFolderUri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/plugin._plugin_-1.debugconfiguration.html" class="tsd-signature-type">DebugConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">provide<wbr>Debug<wbr>Configurations<span class="tsd-signature-symbol">(</span>debugType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;cancel&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;pause&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;attach&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;breakpointLocations&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;completions&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;configurationDone&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;continue&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;dataBreakpointInfo&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;disassemble&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;disconnect&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;evaluate&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;exceptionInfo&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;goto&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gotoTargets&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;initialize&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;launch&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;loadedSources&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;modules&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;next&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;readMemory&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;restart&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;restartFrame&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;reverseContinue&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;scopes&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;setBreakpoints&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;setDataBreakpoints&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;setExceptionBreakpoints&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;setExpression&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;setFunctionBreakpoints&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;setInstructionBreakpoints&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;setVariable&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;source&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;stackTrace&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;stepBack&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;stepIn&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;stepInTargets&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;stepOut&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;terminate&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;terminateThreads&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;threads&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;variables&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;writeMemory&quot;</span>, workspaceFolderUri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DebugConfiguration</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of DebugService.provideDebugConfigurations</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L105">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:105</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L106">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:106</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>debugType: <span class="tsd-signature-symbol">keyof </span><a href="../interfaces/debug.debugrequesttypes.html" class="tsd-signature-type">DebugRequestTypes</a></h5>
+									<h5>debugType: <span class="tsd-signature-type">&quot;cancel&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;pause&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;attach&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;breakpointLocations&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;completions&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;configurationDone&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;continue&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;dataBreakpointInfo&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;disassemble&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;disconnect&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;evaluate&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;exceptionInfo&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;goto&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gotoTargets&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;initialize&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;launch&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;loadedSources&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;modules&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;next&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;readMemory&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;restart&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;restartFrame&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;reverseContinue&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;scopes&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;setBreakpoints&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;setDataBreakpoints&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;setExceptionBreakpoints&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;setExpression&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;setFunctionBreakpoints&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;setInstructionBreakpoints&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;setVariable&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;source&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;stackTrace&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;stepBack&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;stepIn&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;stepInTargets&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;stepOut&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;terminate&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;terminateThreads&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;threads&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;variables&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;writeMemory&quot;</span></h5>
 								</li>
 								<li>
-									<h5>workspaceFolderUri: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>workspaceFolderUri: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/plugin._plugin_-1.debugconfiguration.html" class="tsd-signature-type">DebugConfiguration</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DebugConfiguration</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="providedynamicdebugconfigurations" class="tsd-anchor"></a>
+					<h3>provide<wbr>Dynamic<wbr>Debug<wbr>Configurations</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">provide<wbr>Dynamic<wbr>Debug<wbr>Configurations<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>configurations<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DebugConfiguration</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of DebugService.provideDynamicDebugConfigurations</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L115">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:115</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>configurations<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DebugConfiguration</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -375,23 +418,28 @@
 					<a name="registerdebugadaptercontribution" class="tsd-anchor"></a>
 					<h3>register<wbr>Debug<wbr>Adapter<wbr>Contribution</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">register<wbr>Debug<wbr>Adapter<wbr>Contribution<span class="tsd-signature-symbol">(</span>contrib<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugindebugadaptercontribution.html" class="tsd-signature-type">PluginDebugAdapterContribution</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/core.disposable-1.html" class="tsd-signature-type">Disposable</a></li>
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Debug<wbr>Adapter<wbr>Contribution<span class="tsd-signature-symbol">(</span>contrib<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugindebugadaptercontribution.html" class="tsd-signature-type" data-tsd-kind="Class">PluginDebugAdapterContribution</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Disposable</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/plugin_ext.plugindebugadaptercontributionregistrator.html">PluginDebugAdapterContributionRegistrator</a>.<a href="../interfaces/plugin_ext.plugindebugadaptercontributionregistrator.html#registerdebugadaptercontribution">registerDebugAdapterContribution</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L78">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:78</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L79">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:79</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Registers <a href="#PluginDebugAdapterContribution">PluginDebugAdapterContribution</a>.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>contrib: <a href="plugin_ext.plugindebugadaptercontribution.html" class="tsd-signature-type">PluginDebugAdapterContribution</a></h5>
+									<h5>contrib: <a href="plugin_ext.plugindebugadaptercontribution.html" class="tsd-signature-type" data-tsd-kind="Class">PluginDebugAdapterContribution</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/core.disposable-1.html" class="tsd-signature-type">Disposable</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Disposable</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -399,22 +447,22 @@
 					<a name="registerdebugger" class="tsd-anchor"></a>
 					<h3>register<wbr>Debugger</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">register<wbr>Debugger<span class="tsd-signature-symbol">(</span>contribution<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.debuggercontribution-1.html" class="tsd-signature-type">DebuggerContribution</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/core.disposable-1.html" class="tsd-signature-type">Disposable</a></li>
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Debugger<span class="tsd-signature-symbol">(</span>contribution<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.debuggercontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">DebuggerContribution</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Disposable</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L158">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:158</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L181">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:181</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>contribution: <a href="../interfaces/plugin_ext.debuggercontribution-1.html" class="tsd-signature-type">DebuggerContribution</a></h5>
+									<h5>contribution: <a href="../interfaces/plugin_ext.debuggercontribution-1.html" class="tsd-signature-type" data-tsd-kind="Interface">DebuggerContribution</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/core.disposable-1.html" class="tsd-signature-type">Disposable</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Disposable</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -422,26 +470,26 @@
 					<a name="resolvedebugconfiguration" class="tsd-anchor"></a>
 					<h3>resolve<wbr>Debug<wbr>Configuration</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">resolve<wbr>Debug<wbr>Configuration<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../modules/debug.debugconfiguration-1.html" class="tsd-signature-type">DebugConfiguration</a>, workspaceFolderUri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/debug.debugconfiguration-1.html" class="tsd-signature-type">DebugConfiguration</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">resolve<wbr>Debug<wbr>Configuration<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DebugConfiguration</span>, workspaceFolderUri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DebugConfiguration</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/debug.debugservice.html">DebugService</a>.<a href="../interfaces/debug.debugservice.html#resolvedebugconfiguration">resolveDebugConfiguration</a></p>
+								<p>Implementation of DebugService.resolveDebugConfiguration</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L114">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:114</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L137">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:137</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../modules/debug.debugconfiguration-1.html" class="tsd-signature-type">DebugConfiguration</a></h5>
+									<h5>config: <span class="tsd-signature-type">DebugConfiguration</span></h5>
 								</li>
 								<li>
-									<h5>workspaceFolderUri: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>workspaceFolderUri: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/debug.debugconfiguration-1.html" class="tsd-signature-type">DebugConfiguration</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DebugConfiguration</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -449,26 +497,52 @@
 					<a name="resolvedebugconfigurationwithsubstitutedvariables" class="tsd-anchor"></a>
 					<h3>resolve<wbr>Debug<wbr>Configuration<wbr>With<wbr>Substituted<wbr>Variables</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">resolve<wbr>Debug<wbr>Configuration<wbr>With<wbr>Substituted<wbr>Variables<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../modules/debug.debugconfiguration-1.html" class="tsd-signature-type">DebugConfiguration</a>, workspaceFolderUri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/debug.debugconfiguration-1.html" class="tsd-signature-type">DebugConfiguration</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">resolve<wbr>Debug<wbr>Configuration<wbr>With<wbr>Substituted<wbr>Variables<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DebugConfiguration</span>, workspaceFolderUri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DebugConfiguration</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/debug.debugservice.html">DebugService</a>.<a href="../interfaces/debug.debugservice.html#resolvedebugconfigurationwithsubstitutedvariables">resolveDebugConfigurationWithSubstitutedVariables</a></p>
+								<p>Implementation of DebugService.resolveDebugConfigurationWithSubstitutedVariables</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L136">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:136</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L159">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:159</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../modules/debug.debugconfiguration-1.html" class="tsd-signature-type">DebugConfiguration</a></h5>
+									<h5>config: <span class="tsd-signature-type">DebugConfiguration</span></h5>
 								</li>
 								<li>
-									<h5>workspaceFolderUri: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>workspaceFolderUri: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/debug.debugconfiguration-1.html" class="tsd-signature-type">DebugConfiguration</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DebugConfiguration</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="resolvedynamicconfigurationsfortype" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> resolve<wbr>Dynamic<wbr>Configurations<wbr>For<wbr>Type</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">resolve<wbr>Dynamic<wbr>Configurations<wbr>For<wbr>Type<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, contributor<span class="tsd-signature-symbol">: </span><a href="plugin_ext.plugindebugadaptercontribution.html" class="tsd-signature-type" data-tsd-kind="Class">PluginDebugAdapterContribution</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>configurations<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DebugConfiguration</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L126">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:126</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>contributor: <a href="plugin_ext.plugindebugadaptercontribution.html" class="tsd-signature-type" data-tsd-kind="Class">PluginDebugAdapterContribution</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>configurations<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DebugConfiguration</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -481,9 +555,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/debug.debugservice.html">DebugService</a>.<a href="../interfaces/debug.debugservice.html#terminatedebugsession">terminateDebugSession</a></p>
+								<p>Implementation of DebugService.terminateDebugSession</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L216">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:216</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L239">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:239</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -507,9 +581,14 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/plugin_ext.plugindebugadaptercontributionregistrator.html">PluginDebugAdapterContributionRegistrator</a>.<a href="../interfaces/plugin_ext.plugindebugadaptercontributionregistrator.html#unregisterdebugadaptercontribution">unregisterDebugAdapterContribution</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L90">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:90</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts#L91">packages/plugin-ext/src/main/browser/debug/plugin-debug-service.ts:91</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Unregisters <a href="#PluginDebugAdapterContribution">PluginDebugAdapterContribution</a>.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -525,8 +604,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/plugin_ext.html">plugin-<wbr>ext</a>
@@ -547,13 +626,13 @@
 								<a href="../modules/plugin_ext.connectionclosederror.html">Connection<wbr>Closed<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.customeditorwidget.html">Custom<wbr>Editor<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrangebehavior.html">Decoration<wbr>Range<wbr>Behavior</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrenderoptions-1.html">Decoration<wbr>Render<wbr>Options</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.delta.html">Delta</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.documentlink.html">Document<wbr>Link</a>
@@ -574,6 +653,9 @@
 								<a href="../modules/plugin_ext.parameterinformation.html">Parameter<wbr>Information</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.plugincontributions.html">Plugin<wbr>Contributions</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginiconpath.html">Plugin<wbr>Icon<wbr>Path</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
@@ -581,6 +663,12 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginpaths.html">Plugin<wbr>Paths</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewregistry.html">Plugin<wbr>View<wbr>Registry</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewwidget.html">Plugin<wbr>View<wbr>Widget</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.schemes.html">Schemes</a>
@@ -607,10 +695,16 @@
 								<a href="../modules/plugin_ext.textdocumentshowoptions.html">Text<wbr>Document<wbr>Show<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.texteditorselectionchangekind.html">Text<wbr>Editor<wbr>Selection<wbr>Change<wbr>Kind</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationattachmentrenderoptions.html">Themable<wbr>Decoration<wbr>Attachment<wbr>Render<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationrenderoptions.html">Themable<wbr>Decoration<wbr>Render<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.themeicon.html">Theme<wbr>Icon</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.timelinecommandarg-1.html">Timeline<wbr>Command<wbr>Arg</a>
@@ -625,10 +719,10 @@
 								<a href="../modules/plugin_ext.webviewexternalendpoint.html">Webview<wbr>External<wbr>Endpoint</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
+								<a href="../modules/plugin_ext.webviewwidget.html">Webview<wbr>Widget</a>
 							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.nls.html">nls</a>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
 							</li>
 						</ul>
 					</li>
@@ -641,6 +735,9 @@
 					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="plugin_ext.plugindebugservice.html" class="tsd-kind-icon">Plugin<wbr>Debug<wbr>Service</a>
 						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="plugin_ext.plugindebugservice.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="plugin_ext.plugindebugservice.html#connectionprovider" class="tsd-kind-icon">connection<wbr>Provider</a>
 							</li>
@@ -687,6 +784,9 @@
 								<a href="plugin_ext.plugindebugservice.html#providedebugconfigurations" class="tsd-kind-icon">provide<wbr>Debug<wbr>Configurations</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="plugin_ext.plugindebugservice.html#providedynamicdebugconfigurations" class="tsd-kind-icon">provide<wbr>Dynamic<wbr>Debug<wbr>Configurations</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="plugin_ext.plugindebugservice.html#registerdebugadaptercontribution" class="tsd-kind-icon">register<wbr>Debug<wbr>Adapter<wbr>Contribution</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -697,6 +797,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="plugin_ext.plugindebugservice.html#resolvedebugconfigurationwithsubstitutedvariables" class="tsd-kind-icon">resolve<wbr>Debug<wbr>Configuration<wbr>With<wbr>Substituted<wbr>Variables</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="plugin_ext.plugindebugservice.html#resolvedynamicconfigurationsfortype" class="tsd-kind-icon">resolve<wbr>Dynamic<wbr>Configurations<wbr>For<wbr>Type</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="plugin_ext.plugindebugservice.html#terminatedebugsession" class="tsd-kind-icon">terminate<wbr>Debug<wbr>Session</a>
@@ -719,7 +822,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
@@ -729,6 +831,7 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">

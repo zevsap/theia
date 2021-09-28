@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="outline_view.html">outline-view</a>
@@ -79,6 +78,7 @@
 						<section class="tsd-index-section ">
 							<h3>Namespaces</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-namespace tsd-parent-kind-module"><a href="outline_view.outlinebreadcrumb.html" class="tsd-kind-icon">Outline<wbr>Breadcrumb</a></li>
 								<li class="tsd-kind-namespace tsd-parent-kind-module"><a href="outline_view.outlinesymbolinformationnode-1.html" class="tsd-kind-icon">Outline<wbr>Symbol<wbr>Information<wbr>Node</a></li>
 								<li class="tsd-kind-namespace tsd-parent-kind-module"><a href="outline_view.outlineviewcommands.html" class="tsd-kind-icon">Outline<wbr>View<wbr>Commands</a></li>
 							</ul>
@@ -87,7 +87,7 @@
 							<h3>Classes</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/outline_view.breadcrumbpopupoutlineview.html" class="tsd-kind-icon">Breadcrumb<wbr>Popup<wbr>Outline<wbr>View</a></li>
-								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/outline_view.outlinebreadcrumb.html" class="tsd-kind-icon">Outline<wbr>Breadcrumb</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/outline_view.outlinebreadcrumb-1.html" class="tsd-kind-icon">Outline<wbr>Breadcrumb</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/outline_view.outlinebreadcrumbscontribution.html" class="tsd-kind-icon">Outline<wbr>Breadcrumbs<wbr>Contribution</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/outline_view.outlinedecoratorservice.html" class="tsd-kind-icon">Outline<wbr>Decorator<wbr>Service</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/outline_view.outlineviewcontribution.html" class="tsd-kind-icon">Outline<wbr>View<wbr>Contribution</a></li>
@@ -100,12 +100,19 @@
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/outline_view.breadcrumbpopupoutlineviewfactory.html" class="tsd-kind-icon">Breadcrumb<wbr>Popup<wbr>Outline<wbr>View<wbr>Factory</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/outline_view.outlinesymbolinformationnode-2.html" class="tsd-kind-icon">Outline<wbr>Symbol<wbr>Information<wbr>Node</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="outline_view.html#outlineviewwidgetfactory-1" class="tsd-kind-icon">Outline<wbr>View<wbr>Widget<wbr>Factory</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-module"><a href="outline_view.html#default" class="tsd-kind-icon">default</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -119,13 +126,6 @@
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="outline_view.html#outlineviewwidgetfactory-2" class="tsd-kind-icon">Outline<wbr>View<wbr>Widget<wbr>Factory</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-not-exported">
-							<h3>Functions</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="outline_view.html#createoutlineviewwidget" class="tsd-kind-icon">create<wbr>Outline<wbr>View<wbr>Widget</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="outline_view.html#createoutlineviewwidgetcontainer" class="tsd-kind-icon">create<wbr>Outline<wbr>View<wbr>Widget<wbr>Container</a></li>
-							</ul>
-						</section>
 					</div>
 				</section>
 			</section>
@@ -134,7 +134,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
 					<a name="outlinesymbolinformationnode" class="tsd-anchor"></a>
 					<h3>Outline<wbr>Symbol<wbr>Information<wbr>Node</h3>
-					Re-exports <a href="outline_view.outlinesymbolinformationnode-1.html">OutlineSymbolInformationNode</a>
+					Re-exports <a href="../interfaces/outline_view.outlinesymbolinformationnode-2.html">OutlineSymbolInformationNode</a>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
 					<a name="outlineviewwidget" class="tsd-anchor"></a>
@@ -144,7 +144,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
 					<a name="outlineviewwidgetfactory" class="tsd-anchor"></a>
 					<h3>Outline<wbr>View<wbr>Widget<wbr>Factory</h3>
-					Re-exports <a href="outline_view.html#outlineviewwidgetfactory-1">OutlineViewWidgetFactory</a>
+					Re-exports <a href="outline_view.html#outlineviewwidgetfactory-2">OutlineViewWidgetFactory</a>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -152,10 +152,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
 					<a name="outlineviewwidgetfactory-1" class="tsd-anchor"></a>
 					<h3>Outline<wbr>View<wbr>Widget<wbr>Factory</h3>
-					<div class="tsd-signature tsd-kind-icon">Outline<wbr>View<wbr>Widget<wbr>Factory<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../classes/outline_view.outlineviewwidget-1.html" class="tsd-signature-type">OutlineViewWidget</a></div>
+					<div class="tsd-signature tsd-kind-icon">Outline<wbr>View<wbr>Widget<wbr>Factory<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../classes/outline_view.outlineviewwidget-1.html" class="tsd-signature-type" data-tsd-kind="Class">OutlineViewWidget</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/outline-view/src/browser/outline-view-widget.tsx#L70">packages/outline-view/src/browser/outline-view-widget.tsx:70</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/outline-view/src/browser/outline-view-widget.tsx#L70">packages/outline-view/src/browser/outline-view-widget.tsx:70</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -163,11 +163,11 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-signature">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/outline_view.outlineviewwidget-1.html" class="tsd-signature-type">OutlineViewWidget</a></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/outline_view.outlineviewwidget-1.html" class="tsd-signature-type" data-tsd-kind="Class">OutlineViewWidget</a></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
-										<h4 class="tsd-returns-title">Returns <a href="../classes/outline_view.outlineviewwidget-1.html" class="tsd-signature-type">OutlineViewWidget</a></h4>
+										<h4 class="tsd-returns-title">Returns <a href="../classes/outline_view.outlineviewwidget-1.html" class="tsd-signature-type" data-tsd-kind="Class">OutlineViewWidget</a></h4>
 									</li>
 								</ul>
 							</li>
@@ -176,54 +176,64 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-module">
+					<a name="default" class="tsd-anchor"></a>
+					<h3>default</h3>
+					<div class="tsd-signature tsd-kind-icon">default<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ContainerModule</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="breadcrumbpopupoutlineviewfactory-1" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> Breadcrumb<wbr>Popup<wbr>Outline<wbr>View<wbr>Factory</h3>
-					<div class="tsd-signature tsd-kind-icon">Breadcrumb<wbr>Popup<wbr>Outline<wbr>View<wbr>Factory<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">unique symbol</span><span class="tsd-signature-symbol"> = Symbol(&#x27;BreadcrumbPopupOutlineViewFactory&#x27;)</span></div>
+					<div class="tsd-signature tsd-kind-icon">Breadcrumb<wbr>Popup<wbr>Outline<wbr>View<wbr>Factory<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><a href="outline_view.html#breadcrumbpopupoutlineviewfactory-1" class="tsd-signature-type" data-tsd-kind="Variable">BreadcrumbPopupOutlineViewFactory</a><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/outline-view/src/browser/outline-breadcrumbs-contribution.tsx#L27">packages/outline-view/src/browser/outline-breadcrumbs-contribution.tsx:27</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/outline-view/src/browser/outline-breadcrumbs-contribution.tsx#L27">packages/outline-view/src/browser/outline-breadcrumbs-contribution.tsx:27</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="outline_breadcrumb_container_class" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> OUTLINE_<wbr>BREADCRUMB_<wbr>CONTAINER_<wbr>CLASS</h3>
-					<div class="tsd-signature tsd-kind-icon">OUTLINE_<wbr>BREADCRUMB_<wbr>CONTAINER_<wbr>CLASS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"outline-element"</span><span class="tsd-signature-symbol"> = &quot;outline-element&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">OUTLINE_<wbr>BREADCRUMB_<wbr>CONTAINER_<wbr>CLASS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;outline-element&quot;</span><span class="tsd-signature-symbol"> = &#x27;outline-element&#x27;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/outline-view/src/browser/outline-breadcrumbs-contribution.tsx#L28">packages/outline-view/src/browser/outline-breadcrumbs-contribution.tsx:28</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/outline-view/src/browser/outline-breadcrumbs-contribution.tsx#L28">packages/outline-view/src/browser/outline-breadcrumbs-contribution.tsx:28</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="outline_widget_factory_id" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> OUTLINE_<wbr>WIDGET_<wbr>FACTORY_<wbr>ID</h3>
-					<div class="tsd-signature tsd-kind-icon">OUTLINE_<wbr>WIDGET_<wbr>FACTORY_<wbr>ID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"outline-view"</span><span class="tsd-signature-symbol"> = &quot;outline-view&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">OUTLINE_<wbr>WIDGET_<wbr>FACTORY_<wbr>ID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;outline-view&quot;</span><span class="tsd-signature-symbol"> = &#x27;outline-view&#x27;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/outline-view/src/browser/outline-view-contribution.ts#L27">packages/outline-view/src/browser/outline-view-contribution.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/outline-view/src/browser/outline-view-contribution.ts#L27">packages/outline-view/src/browser/outline-view-contribution.ts:27</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="outlinebreadcrumbtype" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> Outline<wbr>Breadcrumb<wbr>Type</h3>
-					<div class="tsd-signature tsd-kind-icon">Outline<wbr>Breadcrumb<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">unique symbol</span><span class="tsd-signature-symbol"> = Symbol(&#x27;OutlineBreadcrumb&#x27;)</span></div>
+					<div class="tsd-signature tsd-kind-icon">Outline<wbr>Breadcrumb<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><a href="outline_view.html#outlinebreadcrumbtype" class="tsd-signature-type" data-tsd-kind="Variable">OutlineBreadcrumbType</a><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/outline-view/src/browser/outline-breadcrumbs-contribution.tsx#L26">packages/outline-view/src/browser/outline-breadcrumbs-contribution.tsx:26</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/outline-view/src/browser/outline-breadcrumbs-contribution.tsx#L26">packages/outline-view/src/browser/outline-breadcrumbs-contribution.tsx:26</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="outlinetreedecorator" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> Outline<wbr>Tree<wbr>Decorator</h3>
-					<div class="tsd-signature tsd-kind-icon">Outline<wbr>Tree<wbr>Decorator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">unique symbol</span><span class="tsd-signature-symbol"> = Symbol(&#x27;OutlineTreeDecorator&#x27;)</span></div>
+					<div class="tsd-signature tsd-kind-icon">Outline<wbr>Tree<wbr>Decorator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><a href="outline_view.html#outlinetreedecorator" class="tsd-signature-type" data-tsd-kind="Variable">OutlineTreeDecorator</a><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/outline-view/src/browser/outline-decorator-service.ts#L24">packages/outline-view/src/browser/outline-decorator-service.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/outline-view/src/browser/outline-decorator-service.ts#L24">packages/outline-view/src/browser/outline-decorator-service.ts:24</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -234,90 +244,28 @@
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="outlineviewwidgetfactory-2" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> Outline<wbr>View<wbr>Widget<wbr>Factory</h3>
-					<div class="tsd-signature tsd-kind-icon">Outline<wbr>View<wbr>Widget<wbr>Factory<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">unique symbol</span><span class="tsd-signature-symbol"> = Symbol(&#x27;OutlineViewWidgetFactory&#x27;)</span></div>
+					<h3>Outline<wbr>View<wbr>Widget<wbr>Factory</h3>
+					<div class="tsd-signature tsd-kind-icon">Outline<wbr>View<wbr>Widget<wbr>Factory<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><a href="outline_view.html#outlineviewwidgetfactory-2" class="tsd-signature-type" data-tsd-kind="Variable">OutlineViewWidgetFactory</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/outline-view/src/browser/outline-view-widget.tsx#L71">packages/outline-view/src/browser/outline-view-widget.tsx:71</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/outline-view/src/browser/outline-view-widget.tsx#L71">packages/outline-view/src/browser/outline-view-widget.tsx:71</a></li>
 						</ul>
 					</aside>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
-				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-					<a name="createoutlineviewwidget" class="tsd-anchor"></a>
-					<h3>create<wbr>Outline<wbr>View<wbr>Widget</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Outline<wbr>View<wbr>Widget<span class="tsd-signature-symbol">(</span>parent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Container</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/outline_view.outlineviewwidget-1.html" class="tsd-signature-type">OutlineViewWidget</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/outline-view/src/browser/outline-view-frontend-module.ts#L91">packages/outline-view/src/browser/outline-view-frontend-module.ts:91</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Create an <code>OutlineViewWidget</code>.</p>
-									<ul>
-										<li>The creation of the <code>OutlineViewWidget</code> includes:<ul>
-												<li>The creation of the tree widget itself with it&#39;s own customized props.</li>
-												<li>The binding of necessary components into the container.</li>
-											</ul>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>parent: <span class="tsd-signature-type">Container</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>the Inversify container.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../classes/outline_view.outlineviewwidget-1.html" class="tsd-signature-type">OutlineViewWidget</a></h4>
-							<p>the <code>OutlineViewWidget</code>.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-					<a name="createoutlineviewwidgetcontainer" class="tsd-anchor"></a>
-					<h3>create<wbr>Outline<wbr>View<wbr>Widget<wbr>Container</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Outline<wbr>View<wbr>Widget<wbr>Container<span class="tsd-signature-symbol">(</span>parent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Container</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Container</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/outline-view/src/browser/outline-view-frontend-module.ts#L64">packages/outline-view/src/browser/outline-view-frontend-module.ts:64</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>parent: <span class="tsd-signature-type">Container</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Container</span></h4>
-						</li>
-					</ul>
 				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="outline_view.html">outline-<wbr>view</a>
 						<ul>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="outline_view.outlinebreadcrumb.html">Outline<wbr>Breadcrumb</a>
+							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="outline_view.outlinesymbolinformationnode-1.html">Outline<wbr>Symbol<wbr>Information<wbr>Node</a>
 							</li>
@@ -343,7 +291,7 @@
 						<a href="../classes/outline_view.breadcrumbpopupoutlineview.html" class="tsd-kind-icon">Breadcrumb<wbr>Popup<wbr>Outline<wbr>View</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/outline_view.outlinebreadcrumb.html" class="tsd-kind-icon">Outline<wbr>Breadcrumb</a>
+						<a href="../classes/outline_view.outlinebreadcrumb-1.html" class="tsd-kind-icon">Outline<wbr>Breadcrumb</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/outline_view.outlinebreadcrumbscontribution.html" class="tsd-kind-icon">Outline<wbr>Breadcrumbs<wbr>Contribution</a>
@@ -366,8 +314,14 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/outline_view.breadcrumbpopupoutlineviewfactory.html" class="tsd-kind-icon">Breadcrumb<wbr>Popup<wbr>Outline<wbr>View<wbr>Factory</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/outline_view.outlinesymbolinformationnode-2.html" class="tsd-kind-icon">Outline<wbr>Symbol<wbr>Information<wbr>Node</a>
+					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="outline_view.html#outlineviewwidgetfactory-1" class="tsd-kind-icon">Outline<wbr>View<wbr>Widget<wbr>Factory</a>
+					</li>
+					<li class=" tsd-kind-property tsd-parent-kind-module">
+						<a href="outline_view.html#default" class="tsd-kind-icon">default</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="outline_view.html#breadcrumbpopupoutlineviewfactory-1" class="tsd-kind-icon">Breadcrumb<wbr>Popup<wbr>Outline<wbr>View<wbr>Factory</a>
@@ -387,12 +341,6 @@
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="outline_view.html#outlineviewwidgetfactory-2" class="tsd-kind-icon">Outline<wbr>View<wbr>Widget<wbr>Factory</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="outline_view.html#createoutlineviewwidget" class="tsd-kind-icon">create<wbr>Outline<wbr>View<wbr>Widget</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="outline_view.html#createoutlineviewwidgetcontainer" class="tsd-kind-icon">create<wbr>Outline<wbr>View<wbr>Widget<wbr>Container</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
@@ -404,7 +352,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

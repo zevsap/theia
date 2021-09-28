@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/plugin_ext.html">plugin-ext</a>
@@ -78,7 +77,7 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/plugin._plugin_-1.webview.html" class="tsd-signature-type">Webview</a></li>
+					<li><span class="tsd-signature-type">Webview</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -96,14 +95,10 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.webviewimpl.html#_html" class="tsd-kind-icon">_html</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.webviewimpl.html#_options" class="tsd-kind-icon">_options</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.webviewimpl.html#initdata" class="tsd-kind-icon">init<wbr>Data</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.webviewimpl.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.webviewimpl.html#ondidreceivemessage" class="tsd-kind-icon">on<wbr>Did<wbr>Receive<wbr>Message</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.webviewimpl.html#onmessageemitter" class="tsd-kind-icon">on<wbr>Message<wbr>Emitter</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.webviewimpl.html#plugin" class="tsd-kind-icon">plugin</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.webviewimpl.html#proxy" class="tsd-kind-icon">proxy</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.webviewimpl.html#viewid" class="tsd-kind-icon">view<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.webviewimpl.html#workspace" class="tsd-kind-icon">workspace</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -133,13 +128,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Webview<wbr>Impl<span class="tsd-signature-symbol">(</span>viewId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, proxy<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.webviewsmain-1.html" class="tsd-signature-type">WebviewsMain</a>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin._plugin_-1.webviewoptions.html" class="tsd-signature-type">WebviewOptions</a>, initData<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.webviewinitdata-1.html" class="tsd-signature-type">WebviewInitData</a>, workspace<span class="tsd-signature-symbol">: </span><a href="plugin_ext.workspaceextimpl.html" class="tsd-signature-type">WorkspaceExtImpl</a>, plugin<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.plugin-2.html" class="tsd-signature-type">Plugin</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.webviewimpl.html" class="tsd-signature-type">WebviewImpl</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Webview<wbr>Impl<span class="tsd-signature-symbol">(</span>viewId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, proxy<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.webviewsmain-1.html" class="tsd-signature-type" data-tsd-kind="Interface">WebviewsMain</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WebviewOptions</span>, initData<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.webviewinitdata-1.html" class="tsd-signature-type" data-tsd-kind="Interface">WebviewInitData</a>, workspace<span class="tsd-signature-symbol">: </span><a href="plugin_ext.workspaceextimpl.html" class="tsd-signature-type" data-tsd-kind="Class">WorkspaceExtImpl</a>, plugin<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.plugin-1.html" class="tsd-signature-type" data-tsd-kind="Interface">Plugin</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.webviewimpl.html" class="tsd-signature-type" data-tsd-kind="Class">WebviewImpl</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/webviews.ts#L167">packages/plugin-ext/src/plugin/webviews.ts:167</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/webviews.ts#L167">packages/plugin-ext/src/plugin/webviews.ts:167</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -148,22 +143,22 @@
 									<h5>viewId: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>proxy: <a href="../interfaces/plugin_ext.webviewsmain-1.html" class="tsd-signature-type">WebviewsMain</a></h5>
+									<h5>proxy: <a href="../interfaces/plugin_ext.webviewsmain-1.html" class="tsd-signature-type" data-tsd-kind="Interface">WebviewsMain</a></h5>
 								</li>
 								<li>
-									<h5>options: <a href="../interfaces/plugin._plugin_-1.webviewoptions.html" class="tsd-signature-type">WebviewOptions</a></h5>
+									<h5>options: <span class="tsd-signature-type">WebviewOptions</span></h5>
 								</li>
 								<li>
-									<h5>initData: <a href="../interfaces/plugin_ext.webviewinitdata-1.html" class="tsd-signature-type">WebviewInitData</a></h5>
+									<h5>initData: <a href="../interfaces/plugin_ext.webviewinitdata-1.html" class="tsd-signature-type" data-tsd-kind="Interface">WebviewInitData</a></h5>
 								</li>
 								<li>
-									<h5>workspace: <a href="plugin_ext.workspaceextimpl.html" class="tsd-signature-type">WorkspaceExtImpl</a></h5>
+									<h5>workspace: <a href="plugin_ext.workspaceextimpl.html" class="tsd-signature-type" data-tsd-kind="Class">WorkspaceExtImpl</a></h5>
 								</li>
 								<li>
-									<h5>plugin: <a href="../interfaces/plugin_ext.plugin-2.html" class="tsd-signature-type">Plugin</a></h5>
+									<h5>plugin: <a href="../interfaces/plugin_ext.plugin-1.html" class="tsd-signature-type" data-tsd-kind="Interface">Plugin</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.webviewimpl.html" class="tsd-signature-type">WebviewImpl</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.webviewimpl.html" class="tsd-signature-type" data-tsd-kind="Class">WebviewImpl</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -176,27 +171,17 @@
 					<div class="tsd-signature tsd-kind-icon">_html<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/webviews.ts#L160">packages/plugin-ext/src/plugin/webviews.ts:160</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/webviews.ts#L160">packages/plugin-ext/src/plugin/webviews.ts:160</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="_options" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _options</h3>
-					<div class="tsd-signature tsd-kind-icon">_options<span class="tsd-signature-symbol">:</span> <a href="../interfaces/plugin._plugin_-1.webviewoptions.html" class="tsd-signature-type">WebviewOptions</a></div>
+					<div class="tsd-signature tsd-kind-icon">_options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">WebviewOptions</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/webviews.ts#L161">packages/plugin-ext/src/plugin/webviews.ts:161</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="initdata" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> init<wbr>Data</h3>
-					<div class="tsd-signature tsd-kind-icon">init<wbr>Data<span class="tsd-signature-symbol">:</span> <a href="../interfaces/plugin_ext.webviewinitdata-1.html" class="tsd-signature-type">WebviewInitData</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/webviews.ts#L173">packages/plugin-ext/src/plugin/webviews.ts:173</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/webviews.ts#L161">packages/plugin-ext/src/plugin/webviews.ts:161</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -206,69 +191,36 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/webviews.ts#L159">packages/plugin-ext/src/plugin/webviews.ts:159</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/webviews.ts#L159">packages/plugin-ext/src/plugin/webviews.ts:159</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="ondidreceivemessage" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Did<wbr>Receive<wbr>Message</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Receive<wbr>Message<span class="tsd-signature-symbol">:</span> <a href="../modules/core.event-1.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = this.onMessageEmitter.event</span></div>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Receive<wbr>Message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/plugin._plugin_-1.webview.html">Webview</a>.<a href="../interfaces/plugin._plugin_-1.webview.html#ondidreceivemessage">onDidReceiveMessage</a></p>
+						<p>Implementation of theia.Webview.onDidReceiveMessage</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/webviews.ts#L167">packages/plugin-ext/src/plugin/webviews.ts:167</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/webviews.ts#L167">packages/plugin-ext/src/plugin/webviews.ts:167</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="onmessageemitter" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Message<wbr>Emitter</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Message<wbr>Emitter<span class="tsd-signature-symbol">:</span> <a href="core.emitter-1.html" class="tsd-signature-type">Emitter</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Emitter&lt;any&gt;()</span></div>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Message<wbr>Emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Emitter</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/webviews.ts#L164">packages/plugin-ext/src/plugin/webviews.ts:164</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/webviews.ts#L164">packages/plugin-ext/src/plugin/webviews.ts:164</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="plugin" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> plugin</h3>
-					<div class="tsd-signature tsd-kind-icon">plugin<span class="tsd-signature-symbol">:</span> <a href="../interfaces/plugin_ext.plugin-2.html" class="tsd-signature-type">Plugin</a></div>
+					<div class="tsd-signature tsd-kind-icon">plugin<span class="tsd-signature-symbol">:</span> <a href="../interfaces/plugin_ext.plugin-1.html" class="tsd-signature-type" data-tsd-kind="Interface">Plugin</a></div>
 					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/webviews.ts#L175">packages/plugin-ext/src/plugin/webviews.ts:175</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="proxy" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> proxy</h3>
-					<div class="tsd-signature tsd-kind-icon">proxy<span class="tsd-signature-symbol">:</span> <a href="../interfaces/plugin_ext.webviewsmain-1.html" class="tsd-signature-type">WebviewsMain</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/webviews.ts#L171">packages/plugin-ext/src/plugin/webviews.ts:171</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="viewid" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> view<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">view<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/webviews.ts#L170">packages/plugin-ext/src/plugin/webviews.ts:170</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="workspace" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> workspace</h3>
-					<div class="tsd-signature tsd-kind-icon">workspace<span class="tsd-signature-symbol">:</span> <a href="plugin_ext.workspaceextimpl.html" class="tsd-signature-type">WorkspaceExtImpl</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/webviews.ts#L174">packages/plugin-ext/src/plugin/webviews.ts:174</a></li>
-						</ul>
 					</aside>
 				</section>
 			</section>
@@ -284,7 +236,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/webviews.ts#L197">packages/plugin-ext/src/plugin/webviews.ts:197</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/webviews.ts#L197">packages/plugin-ext/src/plugin/webviews.ts:197</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -302,7 +254,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/webviews.ts#L201">packages/plugin-ext/src/plugin/webviews.ts:201</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/webviews.ts#L201">packages/plugin-ext/src/plugin/webviews.ts:201</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -310,7 +262,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/webviews.ts#L206">packages/plugin-ext/src/plugin/webviews.ts:206</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/webviews.ts#L206">packages/plugin-ext/src/plugin/webviews.ts:206</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -327,28 +279,28 @@
 					<a name="options" class="tsd-anchor"></a>
 					<h3>options</h3>
 					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> options<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin._plugin_-1.webviewoptions.html" class="tsd-signature-type">WebviewOptions</a></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> options<span class="tsd-signature-symbol">(</span>newOptions<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin._plugin_-1.webviewoptions.html" class="tsd-signature-type">WebviewOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> options<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WebviewOptions</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> options<span class="tsd-signature-symbol">(</span>newOptions<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WebviewOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/webviews.ts#L214">packages/plugin-ext/src/plugin/webviews.ts:214</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/webviews.ts#L214">packages/plugin-ext/src/plugin/webviews.ts:214</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin._plugin_-1.webviewoptions.html" class="tsd-signature-type">WebviewOptions</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">WebviewOptions</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/webviews.ts#L219">packages/plugin-ext/src/plugin/webviews.ts:219</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/webviews.ts#L219">packages/plugin-ext/src/plugin/webviews.ts:219</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>newOptions: <a href="../interfaces/plugin._plugin_-1.webviewoptions.html" class="tsd-signature-type">WebviewOptions</a></h5>
+									<h5>newOptions: <span class="tsd-signature-type">WebviewOptions</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -362,23 +314,23 @@
 					<a name="aswebviewuri" class="tsd-anchor"></a>
 					<h3>as<wbr>Webview<wbr>Uri</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">as<wbr>Webview<wbr>Uri<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><a href="plugin._plugin_-1.uri.html" class="tsd-signature-type">Uri</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin._plugin_-1.uri.html" class="tsd-signature-type">Uri</a></li>
+						<li class="tsd-signature tsd-kind-icon">as<wbr>Webview<wbr>Uri<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uri</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uri</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/plugin._plugin_-1.webview.html">Webview</a>.<a href="../interfaces/plugin._plugin_-1.webview.html#aswebviewuri">asWebviewUri</a></p>
+								<p>Implementation of theia.Webview.asWebviewUri</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/webviews.ts#L188">packages/plugin-ext/src/plugin/webviews.ts:188</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/webviews.ts#L188">packages/plugin-ext/src/plugin/webviews.ts:188</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>resource: <a href="plugin._plugin_-1.uri.html" class="tsd-signature-type">Uri</a></h5>
+									<h5>resource: <span class="tsd-signature-type">Uri</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="plugin._plugin_-1.uri.html" class="tsd-signature-type">Uri</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Uri</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -392,7 +344,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/webviews.ts#L231">packages/plugin-ext/src/plugin/webviews.ts:231</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/webviews.ts#L231">packages/plugin-ext/src/plugin/webviews.ts:231</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -409,7 +361,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/webviews.ts#L180">packages/plugin-ext/src/plugin/webviews.ts:180</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/webviews.ts#L180">packages/plugin-ext/src/plugin/webviews.ts:180</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -425,9 +377,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/plugin._plugin_-1.webview.html">Webview</a>.<a href="../interfaces/plugin._plugin_-1.webview.html#postmessage">postMessage</a></p>
+								<p>Implementation of theia.Webview.postMessage</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/webviews.ts#L226">packages/plugin-ext/src/plugin/webviews.ts:226</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/webviews.ts#L226">packages/plugin-ext/src/plugin/webviews.ts:226</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -444,28 +396,28 @@
 					<a name="towebviewoptions" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> to<wbr>Webview<wbr>Options</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Webview<wbr>Options<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin._plugin_-1.webviewoptions.html" class="tsd-signature-type">WebviewOptions</a>, workspace<span class="tsd-signature-symbol">: </span><a href="plugin_ext.workspaceextimpl.html" class="tsd-signature-type">WorkspaceExtImpl</a>, plugin<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.plugin-2.html" class="tsd-signature-type">Plugin</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin._plugin_-1.webviewoptions.html" class="tsd-signature-type">WebviewOptions</a></li>
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Webview<wbr>Options<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WebviewOptions</span>, workspace<span class="tsd-signature-symbol">: </span><a href="plugin_ext.workspaceextimpl.html" class="tsd-signature-type" data-tsd-kind="Class">WorkspaceExtImpl</a>, plugin<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.plugin-1.html" class="tsd-signature-type" data-tsd-kind="Interface">Plugin</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WebviewOptions</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/webviews.ts#L237">packages/plugin-ext/src/plugin/webviews.ts:237</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/webviews.ts#L237">packages/plugin-ext/src/plugin/webviews.ts:237</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>options: <a href="../interfaces/plugin._plugin_-1.webviewoptions.html" class="tsd-signature-type">WebviewOptions</a></h5>
+									<h5>options: <span class="tsd-signature-type">WebviewOptions</span></h5>
 								</li>
 								<li>
-									<h5>workspace: <a href="plugin_ext.workspaceextimpl.html" class="tsd-signature-type">WorkspaceExtImpl</a></h5>
+									<h5>workspace: <a href="plugin_ext.workspaceextimpl.html" class="tsd-signature-type" data-tsd-kind="Class">WorkspaceExtImpl</a></h5>
 								</li>
 								<li>
-									<h5>plugin: <a href="../interfaces/plugin_ext.plugin-2.html" class="tsd-signature-type">Plugin</a></h5>
+									<h5>plugin: <a href="../interfaces/plugin_ext.plugin-1.html" class="tsd-signature-type" data-tsd-kind="Interface">Plugin</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/plugin._plugin_-1.webviewoptions.html" class="tsd-signature-type">WebviewOptions</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">WebviewOptions</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -474,8 +426,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/plugin_ext.html">plugin-<wbr>ext</a>
@@ -496,13 +448,13 @@
 								<a href="../modules/plugin_ext.connectionclosederror.html">Connection<wbr>Closed<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.customeditorwidget.html">Custom<wbr>Editor<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrangebehavior.html">Decoration<wbr>Range<wbr>Behavior</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrenderoptions-1.html">Decoration<wbr>Render<wbr>Options</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.delta.html">Delta</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.documentlink.html">Document<wbr>Link</a>
@@ -523,6 +475,9 @@
 								<a href="../modules/plugin_ext.parameterinformation.html">Parameter<wbr>Information</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.plugincontributions.html">Plugin<wbr>Contributions</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginiconpath.html">Plugin<wbr>Icon<wbr>Path</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
@@ -530,6 +485,12 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginpaths.html">Plugin<wbr>Paths</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewregistry.html">Plugin<wbr>View<wbr>Registry</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewwidget.html">Plugin<wbr>View<wbr>Widget</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.schemes.html">Schemes</a>
@@ -556,10 +517,16 @@
 								<a href="../modules/plugin_ext.textdocumentshowoptions.html">Text<wbr>Document<wbr>Show<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.texteditorselectionchangekind.html">Text<wbr>Editor<wbr>Selection<wbr>Change<wbr>Kind</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationattachmentrenderoptions.html">Themable<wbr>Decoration<wbr>Attachment<wbr>Render<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationrenderoptions.html">Themable<wbr>Decoration<wbr>Render<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.themeicon.html">Theme<wbr>Icon</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.timelinecommandarg-1.html">Timeline<wbr>Command<wbr>Arg</a>
@@ -574,10 +541,10 @@
 								<a href="../modules/plugin_ext.webviewexternalendpoint.html">Webview<wbr>External<wbr>Endpoint</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
+								<a href="../modules/plugin_ext.webviewwidget.html">Webview<wbr>Widget</a>
 							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.nls.html">nls</a>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
 							</li>
 						</ul>
 					</li>
@@ -600,9 +567,6 @@
 								<a href="plugin_ext.webviewimpl.html#_options" class="tsd-kind-icon">_options</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="plugin_ext.webviewimpl.html#initdata" class="tsd-kind-icon">init<wbr>Data</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="plugin_ext.webviewimpl.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -613,15 +577,6 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="plugin_ext.webviewimpl.html#plugin" class="tsd-kind-icon">plugin</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="plugin_ext.webviewimpl.html#proxy" class="tsd-kind-icon">proxy</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="plugin_ext.webviewimpl.html#viewid" class="tsd-kind-icon">view<wbr>Id</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="plugin_ext.webviewimpl.html#workspace" class="tsd-kind-icon">workspace</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="plugin_ext.webviewimpl.html#cspsource" class="tsd-kind-icon">csp<wbr>Source</a>
@@ -662,7 +617,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

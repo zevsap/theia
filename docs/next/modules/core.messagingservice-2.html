@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="core.html">core</a>
@@ -67,21 +66,6 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">MessagingService</span>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implemented by</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../classes/core.electronmessagingcontribution-1.html" class="tsd-signature-type">ElectronMessagingContribution</a></li>
-					<li><a href="../classes/core.messagingcontribution.html" class="tsd-signature-type">MessagingContribution</a></li>
-				</ul>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
@@ -100,15 +84,6 @@
 								<li class="tsd-kind-variable tsd-parent-kind-namespace"><a href="core.messagingservice-2.html#identifier" class="tsd-kind-icon">Identifier</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section ">
-							<h3>Methods</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="core.messagingservice-2.html#forward" class="tsd-kind-icon">forward</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="core.messagingservice-2.html#listen" class="tsd-kind-icon">listen</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="core.messagingservice-2.html#ws" class="tsd-kind-icon">ws</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="core.messagingservice-2.html#wschannel" class="tsd-kind-icon">ws<wbr>Channel</a></li>
-							</ul>
-						</section>
 					</div>
 				</section>
 			</section>
@@ -117,20 +92,20 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-namespace">
 					<a name="contribution-1" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> Contribution</h3>
-					<div class="tsd-signature tsd-kind-icon">Contribution<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">unique symbol</span><span class="tsd-signature-symbol"> = Symbol(&#x27;MessagingService.Contribution&#x27;)</span></div>
+					<div class="tsd-signature tsd-kind-icon">Contribution<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><a href="core.messagingservice-2.html#contribution-1" class="tsd-signature-type" data-tsd-kind="Variable">Contribution</a><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/node/messaging/messaging-service.ts#L54">packages/core/src/node/messaging/messaging-service.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/node/messaging/messaging-service.ts#L54">packages/core/src/node/messaging/messaging-service.ts:54</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-namespace">
 					<a name="identifier" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> Identifier</h3>
-					<div class="tsd-signature tsd-kind-icon">Identifier<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">unique symbol</span><span class="tsd-signature-symbol"> = Symbol(&#x27;MessagingService&#x27;)</span></div>
+					<div class="tsd-signature tsd-kind-icon">Identifier<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><a href="core.messagingservice-2.html#identifier" class="tsd-signature-type" data-tsd-kind="Variable">Identifier</a><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/node/messaging/messaging-service.ts#L50">packages/core/src/node/messaging/messaging-service.ts:50</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/node/messaging/messaging-service.ts#L50">packages/core/src/node/messaging/messaging-service.ts:50</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -140,232 +115,12 @@
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
-					<a name="forward" class="tsd-anchor"></a>
-					<h3>forward</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">forward<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.messagingservice-2.pathparams.html" class="tsd-signature-type">PathParams</a>, connection<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IConnection</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/node/messaging/messaging-service.ts#L32">packages/core/src/node/messaging/messaging-service.ts:32</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Accept a raw JSON-RPC connection on the given path.
-									A path supports the route syntax: <a href="https://github.com/rcs/route-parser#what-can-i-use-in-my-routes">https://github.com/rcs/route-parser#what-can-i-use-in-my-routes</a>.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>path: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>callback: <span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.messagingservice-2.pathparams.html" class="tsd-signature-type">PathParams</a>, connection<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IConnection</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-signature">
-											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.messagingservice-2.pathparams.html" class="tsd-signature-type">PathParams</a>, connection<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IConnection</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>params: <a href="../interfaces/core.messagingservice-2.pathparams.html" class="tsd-signature-type">PathParams</a></h5>
-														</li>
-														<li>
-															<h5>connection: <span class="tsd-signature-type">IConnection</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
-					<a name="listen" class="tsd-anchor"></a>
-					<h3>listen</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">listen<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.messagingservice-2.pathparams.html" class="tsd-signature-type">PathParams</a>, connection<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MessageConnection</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/node/messaging/messaging-service.ts#L27">packages/core/src/node/messaging/messaging-service.ts:27</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Accept a JSON-RPC connection on the given path.
-									A path supports the route syntax: <a href="https://github.com/rcs/route-parser#what-can-i-use-in-my-routes">https://github.com/rcs/route-parser#what-can-i-use-in-my-routes</a>.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>path: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>callback: <span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.messagingservice-2.pathparams.html" class="tsd-signature-type">PathParams</a>, connection<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MessageConnection</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-signature">
-											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.messagingservice-2.pathparams.html" class="tsd-signature-type">PathParams</a>, connection<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MessageConnection</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>params: <a href="../interfaces/core.messagingservice-2.pathparams.html" class="tsd-signature-type">PathParams</a></h5>
-														</li>
-														<li>
-															<h5>connection: <span class="tsd-signature-type">MessageConnection</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
-					<a name="ws" class="tsd-anchor"></a>
-					<h3>ws</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">ws<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.messagingservice-2.pathparams.html" class="tsd-signature-type">PathParams</a>, socket<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">ws</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/node/messaging/messaging-service.ts#L46">packages/core/src/node/messaging/messaging-service.ts:46</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Accept a web socket connection on the given path.
-									A path supports the route syntax: <a href="https://github.com/rcs/route-parser#what-can-i-use-in-my-routes">https://github.com/rcs/route-parser#what-can-i-use-in-my-routes</a>.</p>
-								</div>
-								<a href="#important" id="important" style="color: inherit; text-decoration: none;">
-									<h4>Important</h4>
-								</a>
-								<p>Prefer JSON-RPC connections or web socket channels over web sockets. Clients can handle only limited amount of web sockets
-								and excessive amount can cause performance degradation. All JSON-RPC connections and web socket channels share the single web socket connection.</p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>path: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>callback: <span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.messagingservice-2.pathparams.html" class="tsd-signature-type">PathParams</a>, socket<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">ws</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-signature">
-											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.messagingservice-2.pathparams.html" class="tsd-signature-type">PathParams</a>, socket<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">ws</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>params: <a href="../interfaces/core.messagingservice-2.pathparams.html" class="tsd-signature-type">PathParams</a></h5>
-														</li>
-														<li>
-															<h5>socket: <a href="" class="tsd-signature-type">ws</a></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
-					<a name="wschannel" class="tsd-anchor"></a>
-					<h3>ws<wbr>Channel</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">ws<wbr>Channel<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.messagingservice-2.pathparams.html" class="tsd-signature-type">PathParams</a>, socket<span class="tsd-signature-symbol">: </span><a href="../classes/core.websocketchannel.html" class="tsd-signature-type">WebSocketChannel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/node/messaging/messaging-service.ts#L37">packages/core/src/node/messaging/messaging-service.ts:37</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Accept a web socket channel on the given path.
-									A path supports the route syntax: <a href="https://github.com/rcs/route-parser#what-can-i-use-in-my-routes">https://github.com/rcs/route-parser#what-can-i-use-in-my-routes</a>.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>path: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>callback: <span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.messagingservice-2.pathparams.html" class="tsd-signature-type">PathParams</a>, socket<span class="tsd-signature-symbol">: </span><a href="../classes/core.websocketchannel.html" class="tsd-signature-type">WebSocketChannel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-signature">
-											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.messagingservice-2.pathparams.html" class="tsd-signature-type">PathParams</a>, socket<span class="tsd-signature-symbol">: </span><a href="../classes/core.websocketchannel.html" class="tsd-signature-type">WebSocketChannel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>params: <a href="../interfaces/core.messagingservice-2.pathparams.html" class="tsd-signature-type">PathParams</a></h5>
-														</li>
-														<li>
-															<h5>socket: <a href="../classes/core.websocketchannel.html" class="tsd-signature-type">WebSocketChannel</a></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="core.html">core</a>
@@ -391,18 +146,6 @@
 					<li class=" tsd-kind-variable tsd-parent-kind-namespace">
 						<a href="core.messagingservice-2.html#identifier" class="tsd-kind-icon">Identifier</a>
 					</li>
-					<li class=" tsd-kind-method tsd-parent-kind-namespace">
-						<a href="core.messagingservice-2.html#forward" class="tsd-kind-icon">forward</a>
-					</li>
-					<li class=" tsd-kind-method tsd-parent-kind-namespace">
-						<a href="core.messagingservice-2.html#listen" class="tsd-kind-icon">listen</a>
-					</li>
-					<li class=" tsd-kind-method tsd-parent-kind-namespace">
-						<a href="core.messagingservice-2.html#ws" class="tsd-kind-icon">ws</a>
-					</li>
-					<li class=" tsd-kind-method tsd-parent-kind-namespace">
-						<a href="core.messagingservice-2.html#wschannel" class="tsd-kind-icon">ws<wbr>Channel</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
@@ -414,7 +157,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

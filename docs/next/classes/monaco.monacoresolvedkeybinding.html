@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/monaco.html">monaco</a>
@@ -87,7 +86,7 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="monaco.monacoresolvedkeybinding.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="monaco.monacoresolvedkeybinding.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-private-protected">
@@ -121,29 +120,30 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Monaco<wbr>Resolved<wbr>Keybinding<span class="tsd-signature-symbol">(</span>keySequence<span class="tsd-signature-symbol">: </span><a href="../modules/core.keysequence-2.html" class="tsd-signature-type">KeySequence</a>, keybindingService<span class="tsd-signature-symbol">: </span><a href="core.keybindingregistry-1.html" class="tsd-signature-type">KeybindingRegistry</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="monaco.monacoresolvedkeybinding.html" class="tsd-signature-type">MonacoResolvedKeybinding</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Monaco<wbr>Resolved<wbr>Keybinding<span class="tsd-signature-symbol">(</span>keySequence<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">KeySequence</span>, keybindingService<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">KeybindingRegistry</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="monaco.monacoresolvedkeybinding.html" class="tsd-signature-type" data-tsd-kind="Class">MonacoResolvedKeybinding</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides monaco.keybindings.ResolvedKeybinding.constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L24">packages/monaco/src/browser/monaco-resolved-keybinding.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L24">packages/monaco/src/browser/monaco-resolved-keybinding.ts:24</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>keySequence: <a href="../modules/core.keysequence-2.html" class="tsd-signature-type">KeySequence</a></h5>
+									<h5>keySequence: <span class="tsd-signature-type">KeySequence</span></h5>
 								</li>
 								<li>
-									<h5>keybindingService: <a href="core.keybindingregistry-1.html" class="tsd-signature-type">KeybindingRegistry</a></h5>
+									<h5>keybindingService: <span class="tsd-signature-type">KeybindingRegistry</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="monaco.monacoresolvedkeybinding.html" class="tsd-signature-type">MonacoResolvedKeybinding</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="monaco.monacoresolvedkeybinding.html" class="tsd-signature-type" data-tsd-kind="Class">MonacoResolvedKeybinding</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -153,11 +153,8 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="keysequence" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> key<wbr>Sequence</h3>
-					<div class="tsd-signature tsd-kind-icon">key<wbr>Sequence<span class="tsd-signature-symbol">:</span> <a href="../modules/core.keysequence-2.html" class="tsd-signature-type">KeySequence</a></div>
+					<div class="tsd-signature tsd-kind-icon">key<wbr>Sequence<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">KeySequence</span></div>
 					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L26">packages/monaco/src/browser/monaco-resolved-keybinding.ts:26</a></li>
-						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
@@ -166,7 +163,7 @@
 					<div class="tsd-signature tsd-kind-icon">parts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ResolvedKeybindingPart</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L24">packages/monaco/src/browser/monaco-resolved-keybinding.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L24">packages/monaco/src/browser/monaco-resolved-keybinding.ts:24</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -177,17 +174,17 @@
 					<a name="getarialabel" class="tsd-anchor"></a>
 					<h3>get<wbr>Aria<wbr>Label</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Aria<wbr>Label<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Aria<wbr>Label<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides ResolvedKeybinding.getAriaLabel</p>
+								<p>Overrides monaco.keybindings.ResolvedKeybinding.getAriaLabel</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L47">packages/monaco/src/browser/monaco-resolved-keybinding.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L47">packages/monaco/src/browser/monaco-resolved-keybinding.ts:47</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -200,9 +197,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides ResolvedKeybinding.getDispatchParts</p>
+								<p>Overrides monaco.keybindings.ResolvedKeybinding.getDispatchParts</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L72">packages/monaco/src/browser/monaco-resolved-keybinding.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L72">packages/monaco/src/browser/monaco-resolved-keybinding.ts:72</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -213,17 +210,17 @@
 					<a name="getelectronaccelerator" class="tsd-anchor"></a>
 					<h3>get<wbr>Electron<wbr>Accelerator</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Electron<wbr>Accelerator<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Electron<wbr>Accelerator<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides ResolvedKeybinding.getElectronAccelerator</p>
+								<p>Overrides monaco.keybindings.ResolvedKeybinding.getElectronAccelerator</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L51">packages/monaco/src/browser/monaco-resolved-keybinding.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L51">packages/monaco/src/browser/monaco-resolved-keybinding.ts:51</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -231,17 +228,17 @@
 					<a name="getlabel" class="tsd-anchor"></a>
 					<h3>get<wbr>Label</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Label<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Label<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides ResolvedKeybinding.getLabel</p>
+								<p>Overrides monaco.keybindings.ResolvedKeybinding.getLabel</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L43">packages/monaco/src/browser/monaco-resolved-keybinding.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L43">packages/monaco/src/browser/monaco-resolved-keybinding.ts:43</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -254,9 +251,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides ResolvedKeybinding.getParts</p>
+								<p>Overrides monaco.keybindings.ResolvedKeybinding.getParts</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L90">packages/monaco/src/browser/monaco-resolved-keybinding.ts:90</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L90">packages/monaco/src/browser/monaco-resolved-keybinding.ts:90</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ResolvedKeybindingPart</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -272,9 +269,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides ResolvedKeybinding.getSingleModifierDispatchParts</p>
+								<p>Overrides monaco.keybindings.ResolvedKeybinding.getSingleModifierDispatchParts</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L76">packages/monaco/src/browser/monaco-resolved-keybinding.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L76">packages/monaco/src/browser/monaco-resolved-keybinding.ts:76</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -285,17 +282,17 @@
 					<a name="getusersettingslabel" class="tsd-anchor"></a>
 					<h3>get<wbr>User<wbr>Settings<wbr>Label</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>User<wbr>Settings<wbr>Label<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>User<wbr>Settings<wbr>Label<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides ResolvedKeybinding.getUserSettingsLabel</p>
+								<p>Overrides monaco.keybindings.ResolvedKeybinding.getUserSettingsLabel</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L60">packages/monaco/src/browser/monaco-resolved-keybinding.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L60">packages/monaco/src/browser/monaco-resolved-keybinding.ts:60</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -308,9 +305,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides ResolvedKeybinding.isChord</p>
+								<p>Overrides monaco.keybindings.ResolvedKeybinding.isChord</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L68">packages/monaco/src/browser/monaco-resolved-keybinding.ts:68</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L68">packages/monaco/src/browser/monaco-resolved-keybinding.ts:68</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -326,9 +323,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides ResolvedKeybinding.isWYSIWYG</p>
+								<p>Overrides monaco.keybindings.ResolvedKeybinding.isWYSIWYG</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L64">packages/monaco/src/browser/monaco-resolved-keybinding.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L64">packages/monaco/src/browser/monaco-resolved-keybinding.ts:64</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -339,19 +336,19 @@
 					<a name="tokeybinding" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> to<wbr>Keybinding</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Keybinding<span class="tsd-signature-symbol">(</span>keyCode<span class="tsd-signature-symbol">: </span><a href="core.keycode-2.html" class="tsd-signature-type">KeyCode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SimpleKeybinding</span></li>
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Keybinding<span class="tsd-signature-symbol">(</span>keyCode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">KeyCode</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SimpleKeybinding</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L80">packages/monaco/src/browser/monaco-resolved-keybinding.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L80">packages/monaco/src/browser/monaco-resolved-keybinding.ts:80</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>keyCode: <a href="core.keycode-2.html" class="tsd-signature-type">KeyCode</a></h5>
+									<h5>keyCode: <span class="tsd-signature-type">KeyCode</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">SimpleKeybinding</span></h4>
@@ -362,13 +359,13 @@
 					<a name="keycode" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> key<wbr>Code</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">key<wbr>Code<span class="tsd-signature-symbol">(</span>keybinding<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SimpleKeybinding</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.keycode-2.html" class="tsd-signature-type">KeyCode</a></li>
+						<li class="tsd-signature tsd-kind-icon">key<wbr>Code<span class="tsd-signature-symbol">(</span>keybinding<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SimpleKeybinding</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">KeyCode</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L100">packages/monaco/src/browser/monaco-resolved-keybinding.ts:100</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L100">packages/monaco/src/browser/monaco-resolved-keybinding.ts:100</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -377,7 +374,7 @@
 									<h5>keybinding: <span class="tsd-signature-type">SimpleKeybinding</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="core.keycode-2.html" class="tsd-signature-type">KeyCode</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">KeyCode</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -385,13 +382,13 @@
 					<a name="keysequence-1" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> key<wbr>Sequence</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">key<wbr>Sequence<span class="tsd-signature-symbol">(</span>keybinding<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ChordKeybinding</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/core.keysequence-2.html" class="tsd-signature-type">KeySequence</a></li>
+						<li class="tsd-signature tsd-kind-icon">key<wbr>Sequence<span class="tsd-signature-symbol">(</span>keybinding<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ChordKeybinding</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">KeySequence</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L125">packages/monaco/src/browser/monaco-resolved-keybinding.ts:125</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L125">packages/monaco/src/browser/monaco-resolved-keybinding.ts:125</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -400,7 +397,7 @@
 									<h5>keybinding: <span class="tsd-signature-type">ChordKeybinding</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/core.keysequence-2.html" class="tsd-signature-type">KeySequence</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">KeySequence</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -414,7 +411,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L129">packages/monaco/src/browser/monaco-resolved-keybinding.ts:129</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L129">packages/monaco/src/browser/monaco-resolved-keybinding.ts:129</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -431,19 +428,19 @@
 					<a name="tokeybinding-1" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> to<wbr>Keybinding</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Keybinding<span class="tsd-signature-symbol">(</span>keybinding<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">monaco.keybindings.Keybinding</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Keybinding<span class="tsd-signature-symbol">(</span>keybinding<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ChordKeybinding</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L94">packages/monaco/src/browser/monaco-resolved-keybinding.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/monaco/src/browser/monaco-resolved-keybinding.ts#L94">packages/monaco/src/browser/monaco-resolved-keybinding.ts:94</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>keybinding: <span class="tsd-signature-type">monaco.keybindings.Keybinding</span></h5>
+									<h5>keybinding: <span class="tsd-signature-type">ChordKeybinding</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -455,8 +452,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/monaco.html">monaco</a>
@@ -468,13 +465,31 @@
 								<a href="../modules/monaco.monacocommands.html">Monaco<wbr>Commands</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.monacodiffeditor.html">Monaco<wbr>Diff<wbr>Editor</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.monacoeditor.html">Monaco<wbr>Editor</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.monacoeditormodel.html">Monaco<wbr>Editor<wbr>Model</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.monacoeditorzonewidget.html">Monaco<wbr>Editor<wbr>Zone<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/monaco.monacomenus.html">Monaco<wbr>Menus</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.monacooutlinecontribution.html">Monaco<wbr>Outline<wbr>Contribution</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/monaco.monacooutlinesymbolinformationnode.html">Monaco<wbr>Outline<wbr>Symbol<wbr>Information<wbr>Node</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/monaco.monacorangereplace.html">Monaco<wbr>Range<wbr>Replace</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/monaco.monacothemeregistry.html">Monaco<wbr>Theme<wbr>Registry</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/monaco.monacothemestate.html">Monaco<wbr>Theme<wbr>State</a>
@@ -505,7 +520,7 @@
 					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="monaco.monacoresolvedkeybinding.html" class="tsd-kind-icon">Monaco<wbr>Resolved<wbr>Keybinding</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 								<a href="monaco.monacoresolvedkeybinding.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
@@ -571,7 +586,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

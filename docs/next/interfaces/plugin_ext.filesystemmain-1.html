@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/plugin_ext.html">plugin-ext</a>
@@ -78,7 +77,7 @@
 			<section class="tsd-panel">
 				<h3>Implemented by</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../classes/plugin_ext.filesystemmainimpl.html" class="tsd-signature-type">FileSystemMainImpl</a></li>
+					<li><a href="../classes/plugin_ext.filesystemmainimpl.html" class="tsd-signature-type" data-tsd-kind="Class">FileSystemMainImpl</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -110,25 +109,25 @@
 					<a name="_copy" class="tsd-anchor"></a>
 					<h3>$copy</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$copy<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><a href="plugin_ext.uricomponents.html" class="tsd-signature-type">UriComponents</a>, target<span class="tsd-signature-symbol">: </span><a href="plugin_ext.uricomponents.html" class="tsd-signature-type">UriComponents</a>, opts<span class="tsd-signature-symbol">: </span><a href="filesystem.fileoverwriteoptions.html" class="tsd-signature-type">FileOverwriteOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">$copy<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><a href="plugin_ext.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a>, target<span class="tsd-signature-symbol">: </span><a href="plugin_ext.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a>, opts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FileOverwriteOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1656">packages/plugin-ext/src/common/plugin-api-rpc.ts:1656</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1676">packages/plugin-ext/src/common/plugin-api-rpc.ts:1676</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>resource: <a href="plugin_ext.uricomponents.html" class="tsd-signature-type">UriComponents</a></h5>
+									<h5>resource: <a href="plugin_ext.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a></h5>
 								</li>
 								<li>
-									<h5>target: <a href="plugin_ext.uricomponents.html" class="tsd-signature-type">UriComponents</a></h5>
+									<h5>target: <a href="plugin_ext.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a></h5>
 								</li>
 								<li>
-									<h5>opts: <a href="filesystem.fileoverwriteoptions.html" class="tsd-signature-type">FileOverwriteOptions</a></h5>
+									<h5>opts: <span class="tsd-signature-type">FileOverwriteOptions</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -139,22 +138,22 @@
 					<a name="_delete" class="tsd-anchor"></a>
 					<h3>$delete</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$delete<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><a href="plugin_ext.uricomponents.html" class="tsd-signature-type">UriComponents</a>, opts<span class="tsd-signature-symbol">: </span><a href="filesystem.filedeleteoptions-1.html" class="tsd-signature-type">FileDeleteOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">$delete<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><a href="plugin_ext.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a>, opts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FileDeleteOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1658">packages/plugin-ext/src/common/plugin-api-rpc.ts:1658</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1678">packages/plugin-ext/src/common/plugin-api-rpc.ts:1678</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>resource: <a href="plugin_ext.uricomponents.html" class="tsd-signature-type">UriComponents</a></h5>
+									<h5>resource: <a href="plugin_ext.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a></h5>
 								</li>
 								<li>
-									<h5>opts: <a href="filesystem.filedeleteoptions-1.html" class="tsd-signature-type">FileDeleteOptions</a></h5>
+									<h5>opts: <span class="tsd-signature-type">FileDeleteOptions</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -165,19 +164,19 @@
 					<a name="_mkdir" class="tsd-anchor"></a>
 					<h3>$mkdir</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$mkdir<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><a href="plugin_ext.uricomponents.html" class="tsd-signature-type">UriComponents</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">$mkdir<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><a href="plugin_ext.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1657">packages/plugin-ext/src/common/plugin-api-rpc.ts:1657</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1677">packages/plugin-ext/src/common/plugin-api-rpc.ts:1677</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>resource: <a href="plugin_ext.uricomponents.html" class="tsd-signature-type">UriComponents</a></h5>
+									<h5>resource: <a href="plugin_ext.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -188,13 +187,13 @@
 					<a name="_onfilesystemchange" class="tsd-anchor"></a>
 					<h3>$on<wbr>File<wbr>System<wbr>Change</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$on<wbr>File<wbr>System<wbr>Change<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, resource<span class="tsd-signature-symbol">: </span><a href="plugin_ext.ifilechangedto-1.html" class="tsd-signature-type">IFileChangeDto</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">$on<wbr>File<wbr>System<wbr>Change<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, resource<span class="tsd-signature-symbol">: </span><a href="plugin_ext.ifilechangedto-1.html" class="tsd-signature-type" data-tsd-kind="Interface">IFileChangeDto</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1649">packages/plugin-ext/src/common/plugin-api-rpc.ts:1649</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1669">packages/plugin-ext/src/common/plugin-api-rpc.ts:1669</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -203,7 +202,7 @@
 									<h5>handle: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>resource: <a href="plugin_ext.ifilechangedto-1.html" class="tsd-signature-type">IFileChangeDto</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>resource: <a href="plugin_ext.ifilechangedto-1.html" class="tsd-signature-type" data-tsd-kind="Interface">IFileChangeDto</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -214,22 +213,22 @@
 					<a name="_readfile" class="tsd-anchor"></a>
 					<h3>$read<wbr>File</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$read<wbr>File<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><a href="plugin_ext.uricomponents.html" class="tsd-signature-type">UriComponents</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/core.binarybuffer.html" class="tsd-signature-type">BinaryBuffer</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">$read<wbr>File<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><a href="plugin_ext.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BinaryBuffer</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1653">packages/plugin-ext/src/common/plugin-api-rpc.ts:1653</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1673">packages/plugin-ext/src/common/plugin-api-rpc.ts:1673</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>resource: <a href="plugin_ext.uricomponents.html" class="tsd-signature-type">UriComponents</a></h5>
+									<h5>resource: <a href="plugin_ext.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/core.binarybuffer.html" class="tsd-signature-type">BinaryBuffer</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BinaryBuffer</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -237,22 +236,22 @@
 					<a name="_readdir" class="tsd-anchor"></a>
 					<h3>$readdir</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$readdir<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><a href="plugin_ext.uricomponents.html" class="tsd-signature-type">UriComponents</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../enums/filesystem.filetype.html" class="tsd-signature-type">FileType</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">$readdir<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><a href="plugin_ext.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">FileType</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1652">packages/plugin-ext/src/common/plugin-api-rpc.ts:1652</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1672">packages/plugin-ext/src/common/plugin-api-rpc.ts:1672</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>resource: <a href="plugin_ext.uricomponents.html" class="tsd-signature-type">UriComponents</a></h5>
+									<h5>resource: <a href="plugin_ext.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../enums/filesystem.filetype.html" class="tsd-signature-type">FileType</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">FileType</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -260,13 +259,13 @@
 					<a name="_registerfilesystemprovider" class="tsd-anchor"></a>
 					<h3>$register<wbr>File<wbr>System<wbr>Provider</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$register<wbr>File<wbr>System<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, scheme<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, capabilities<span class="tsd-signature-symbol">: </span><a href="../enums/filesystem.filesystemprovidercapabilities.html" class="tsd-signature-type">FileSystemProviderCapabilities</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">$register<wbr>File<wbr>System<wbr>Provider<span class="tsd-signature-symbol">(</span>handle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, scheme<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, capabilities<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FileSystemProviderCapabilities</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1647">packages/plugin-ext/src/common/plugin-api-rpc.ts:1647</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1667">packages/plugin-ext/src/common/plugin-api-rpc.ts:1667</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -278,7 +277,7 @@
 									<h5>scheme: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>capabilities: <a href="../enums/filesystem.filesystemprovidercapabilities.html" class="tsd-signature-type">FileSystemProviderCapabilities</a></h5>
+									<h5>capabilities: <span class="tsd-signature-type">FileSystemProviderCapabilities</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -289,25 +288,25 @@
 					<a name="_rename" class="tsd-anchor"></a>
 					<h3>$rename</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$rename<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><a href="plugin_ext.uricomponents.html" class="tsd-signature-type">UriComponents</a>, target<span class="tsd-signature-symbol">: </span><a href="plugin_ext.uricomponents.html" class="tsd-signature-type">UriComponents</a>, opts<span class="tsd-signature-symbol">: </span><a href="filesystem.fileoverwriteoptions.html" class="tsd-signature-type">FileOverwriteOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">$rename<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><a href="plugin_ext.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a>, target<span class="tsd-signature-symbol">: </span><a href="plugin_ext.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a>, opts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FileOverwriteOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1655">packages/plugin-ext/src/common/plugin-api-rpc.ts:1655</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1675">packages/plugin-ext/src/common/plugin-api-rpc.ts:1675</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>resource: <a href="plugin_ext.uricomponents.html" class="tsd-signature-type">UriComponents</a></h5>
+									<h5>resource: <a href="plugin_ext.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a></h5>
 								</li>
 								<li>
-									<h5>target: <a href="plugin_ext.uricomponents.html" class="tsd-signature-type">UriComponents</a></h5>
+									<h5>target: <a href="plugin_ext.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a></h5>
 								</li>
 								<li>
-									<h5>opts: <a href="filesystem.fileoverwriteoptions.html" class="tsd-signature-type">FileOverwriteOptions</a></h5>
+									<h5>opts: <span class="tsd-signature-type">FileOverwriteOptions</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -318,22 +317,22 @@
 					<a name="_stat" class="tsd-anchor"></a>
 					<h3>$stat</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$stat<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><a href="plugin_ext.uricomponents.html" class="tsd-signature-type">UriComponents</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="filesystem.stat.html" class="tsd-signature-type">Stat</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">$stat<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><a href="plugin_ext.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Stat</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1651">packages/plugin-ext/src/common/plugin-api-rpc.ts:1651</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1671">packages/plugin-ext/src/common/plugin-api-rpc.ts:1671</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>uri: <a href="plugin_ext.uricomponents.html" class="tsd-signature-type">UriComponents</a></h5>
+									<h5>uri: <a href="plugin_ext.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="filesystem.stat.html" class="tsd-signature-type">Stat</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Stat</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -347,7 +346,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1648">packages/plugin-ext/src/common/plugin-api-rpc.ts:1648</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1668">packages/plugin-ext/src/common/plugin-api-rpc.ts:1668</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -364,22 +363,22 @@
 					<a name="_writefile" class="tsd-anchor"></a>
 					<h3>$write<wbr>File</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">$write<wbr>File<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><a href="plugin_ext.uricomponents.html" class="tsd-signature-type">UriComponents</a>, content<span class="tsd-signature-symbol">: </span><a href="../classes/core.binarybuffer.html" class="tsd-signature-type">BinaryBuffer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">$write<wbr>File<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><a href="plugin_ext.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BinaryBuffer</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1654">packages/plugin-ext/src/common/plugin-api-rpc.ts:1654</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/common/plugin-api-rpc.ts#L1674">packages/plugin-ext/src/common/plugin-api-rpc.ts:1674</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>resource: <a href="plugin_ext.uricomponents.html" class="tsd-signature-type">UriComponents</a></h5>
+									<h5>resource: <a href="plugin_ext.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a></h5>
 								</li>
 								<li>
-									<h5>content: <a href="../classes/core.binarybuffer.html" class="tsd-signature-type">BinaryBuffer</a></h5>
+									<h5>content: <span class="tsd-signature-type">BinaryBuffer</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -391,8 +390,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/plugin_ext.html">plugin-<wbr>ext</a>
@@ -413,13 +412,13 @@
 								<a href="../modules/plugin_ext.connectionclosederror.html">Connection<wbr>Closed<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.customeditorwidget.html">Custom<wbr>Editor<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrangebehavior.html">Decoration<wbr>Range<wbr>Behavior</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrenderoptions-1.html">Decoration<wbr>Render<wbr>Options</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.delta.html">Delta</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.documentlink.html">Document<wbr>Link</a>
@@ -440,6 +439,9 @@
 								<a href="../modules/plugin_ext.parameterinformation.html">Parameter<wbr>Information</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.plugincontributions.html">Plugin<wbr>Contributions</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginiconpath.html">Plugin<wbr>Icon<wbr>Path</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
@@ -447,6 +449,12 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginpaths.html">Plugin<wbr>Paths</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewregistry.html">Plugin<wbr>View<wbr>Registry</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewwidget.html">Plugin<wbr>View<wbr>Widget</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.schemes.html">Schemes</a>
@@ -473,10 +481,16 @@
 								<a href="../modules/plugin_ext.textdocumentshowoptions.html">Text<wbr>Document<wbr>Show<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.texteditorselectionchangekind.html">Text<wbr>Editor<wbr>Selection<wbr>Change<wbr>Kind</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationattachmentrenderoptions.html">Themable<wbr>Decoration<wbr>Attachment<wbr>Render<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationrenderoptions.html">Themable<wbr>Decoration<wbr>Render<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.themeicon.html">Theme<wbr>Icon</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.timelinecommandarg-1.html">Timeline<wbr>Command<wbr>Arg</a>
@@ -491,10 +505,10 @@
 								<a href="../modules/plugin_ext.webviewexternalendpoint.html">Webview<wbr>External<wbr>Endpoint</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
+								<a href="../modules/plugin_ext.webviewwidget.html">Webview<wbr>Widget</a>
 							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.nls.html">nls</a>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
 							</li>
 						</ul>
 					</li>
@@ -555,7 +569,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/plugin_ext.html">plugin-ext</a>
@@ -97,10 +96,8 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.codelensadapter.html#cache" class="tsd-kind-icon">cache</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.codelensadapter.html#cacheid" class="tsd-kind-icon">cache<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.codelensadapter.html#commands" class="tsd-kind-icon">commands</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.codelensadapter.html#disposables" class="tsd-kind-icon">disposables</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.codelensadapter.html#documents" class="tsd-kind-icon">documents</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.codelensadapter.html#provider" class="tsd-kind-icon">provider</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="plugin_ext.codelensadapter.html#bad_cmd" class="tsd-kind-icon">BAD_<wbr>CMD</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -109,12 +106,6 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="plugin_ext.codelensadapter.html#providecodelenses" class="tsd-kind-icon">provide<wbr>Code<wbr>Lenses</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="plugin_ext.codelensadapter.html#releasecodelenses" class="tsd-kind-icon">release<wbr>Code<wbr>Lenses</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="plugin_ext.codelensadapter.html#resolvecodelens" class="tsd-kind-icon">resolve<wbr>Code<wbr>Lens</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
-							<h3>Object literals</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-object-literal tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="plugin_ext.codelensadapter.html#bad_cmd" class="tsd-kind-icon">BAD_<wbr>CMD</a></li>
 							</ul>
 						</section>
 					</div>
@@ -126,28 +117,28 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Code<wbr>Lens<wbr>Adapter<span class="tsd-signature-symbol">(</span>provider<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin._plugin_-1.codelensprovider.html" class="tsd-signature-type">CodeLensProvider</a>, documents<span class="tsd-signature-symbol">: </span><a href="plugin_ext.documentsextimpl.html" class="tsd-signature-type">DocumentsExtImpl</a>, commands<span class="tsd-signature-symbol">: </span><a href="plugin_ext.commandregistryimpl.html" class="tsd-signature-type">CommandRegistryImpl</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.codelensadapter.html" class="tsd-signature-type">CodeLensAdapter</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Code<wbr>Lens<wbr>Adapter<span class="tsd-signature-symbol">(</span>provider<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CodeLensProvider</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">CodeLens</span><span class="tsd-signature-symbol">&gt;</span>, documents<span class="tsd-signature-symbol">: </span><a href="plugin_ext.documentsextimpl.html" class="tsd-signature-type" data-tsd-kind="Class">DocumentsExtImpl</a>, commands<span class="tsd-signature-symbol">: </span><a href="plugin_ext.commandregistryimpl.html" class="tsd-signature-type" data-tsd-kind="Class">CommandRegistryImpl</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.codelensadapter.html" class="tsd-signature-type" data-tsd-kind="Class">CodeLensAdapter</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/languages/lens.ts#L33">packages/plugin-ext/src/plugin/languages/lens.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/languages/lens.ts#L33">packages/plugin-ext/src/plugin/languages/lens.ts:33</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>provider: <a href="../interfaces/plugin._plugin_-1.codelensprovider.html" class="tsd-signature-type">CodeLensProvider</a></h5>
+									<h5>provider: <span class="tsd-signature-type">CodeLensProvider</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">CodeLens</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
-									<h5>documents: <a href="plugin_ext.documentsextimpl.html" class="tsd-signature-type">DocumentsExtImpl</a></h5>
+									<h5>documents: <a href="plugin_ext.documentsextimpl.html" class="tsd-signature-type" data-tsd-kind="Class">DocumentsExtImpl</a></h5>
 								</li>
 								<li>
-									<h5>commands: <a href="plugin_ext.commandregistryimpl.html" class="tsd-signature-type">CommandRegistryImpl</a></h5>
+									<h5>commands: <a href="plugin_ext.commandregistryimpl.html" class="tsd-signature-type" data-tsd-kind="Class">CommandRegistryImpl</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.codelensadapter.html" class="tsd-signature-type">CodeLensAdapter</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.codelensadapter.html" class="tsd-signature-type" data-tsd-kind="Class">CodeLensAdapter</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -157,10 +148,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="cache" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> cache</h3>
-					<div class="tsd-signature tsd-kind-icon">cache<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><a href="plugin._plugin_-1.codelens.html" class="tsd-signature-type">CodeLens</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;number, theia.CodeLens&gt;()</span></div>
+					<div class="tsd-signature tsd-kind-icon">cache<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">CodeLens</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/languages/lens.ts#L32">packages/plugin-ext/src/plugin/languages/lens.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/languages/lens.ts#L32">packages/plugin-ext/src/plugin/languages/lens.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -170,47 +161,27 @@
 					<div class="tsd-signature tsd-kind-icon">cache<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/languages/lens.ts#L31">packages/plugin-ext/src/plugin/languages/lens.ts:31</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="commands" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> commands</h3>
-					<div class="tsd-signature tsd-kind-icon">commands<span class="tsd-signature-symbol">:</span> <a href="plugin_ext.commandregistryimpl.html" class="tsd-signature-type">CommandRegistryImpl</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/languages/lens.ts#L38">packages/plugin-ext/src/plugin/languages/lens.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/languages/lens.ts#L31">packages/plugin-ext/src/plugin/languages/lens.ts:31</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="disposables" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> disposables</h3>
-					<div class="tsd-signature tsd-kind-icon">disposables<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><a href="core.disposablecollection-1.html" class="tsd-signature-type">DisposableCollection</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;number, DisposableCollection&gt;()</span></div>
+					<div class="tsd-signature tsd-kind-icon">disposables<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">DisposableCollection</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/languages/lens.ts#L33">packages/plugin-ext/src/plugin/languages/lens.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/languages/lens.ts#L33">packages/plugin-ext/src/plugin/languages/lens.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="documents" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> documents</h3>
-					<div class="tsd-signature tsd-kind-icon">documents<span class="tsd-signature-symbol">:</span> <a href="plugin_ext.documentsextimpl.html" class="tsd-signature-type">DocumentsExtImpl</a></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="bad_cmd" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> BAD_<wbr>CMD</h3>
+					<div class="tsd-signature tsd-kind-icon">BAD_<wbr>CMD<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Command</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/languages/lens.ts#L37">packages/plugin-ext/src/plugin/languages/lens.ts:37</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="provider" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> provider</h3>
-					<div class="tsd-signature tsd-kind-icon">provider<span class="tsd-signature-symbol">:</span> <a href="../interfaces/plugin._plugin_-1.codelensprovider.html" class="tsd-signature-type">CodeLensProvider</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/languages/lens.ts#L36">packages/plugin-ext/src/plugin/languages/lens.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/languages/lens.ts#L29">packages/plugin-ext/src/plugin/languages/lens.ts:29</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -221,13 +192,13 @@
 					<a name="providecodelenses" class="tsd-anchor"></a>
 					<h3>provide<wbr>Code<wbr>Lenses</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">provide<wbr>Code<wbr>Lenses<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">URI</span>, token<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin._plugin_-1.cancellationtoken.html" class="tsd-signature-type">CancellationToken</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/plugin_ext.codelenssymbol.html" class="tsd-signature-type">CodeLensSymbol</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">provide<wbr>Code<wbr>Lenses<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">URI</span>, token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CancellationToken</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/plugin_ext.codelenssymbol.html" class="tsd-signature-type" data-tsd-kind="Interface">CodeLensSymbol</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/languages/lens.ts#L41">packages/plugin-ext/src/plugin/languages/lens.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/languages/lens.ts#L41">packages/plugin-ext/src/plugin/languages/lens.ts:41</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -236,10 +207,10 @@
 									<h5>resource: <span class="tsd-signature-type">URI</span></h5>
 								</li>
 								<li>
-									<h5>token: <a href="../interfaces/plugin._plugin_-1.cancellationtoken.html" class="tsd-signature-type">CancellationToken</a></h5>
+									<h5>token: <span class="tsd-signature-type">CancellationToken</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/plugin_ext.codelenssymbol.html" class="tsd-signature-type">CodeLensSymbol</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/plugin_ext.codelenssymbol.html" class="tsd-signature-type" data-tsd-kind="Interface">CodeLensSymbol</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -253,7 +224,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/languages/lens.ts#L92">packages/plugin-ext/src/plugin/languages/lens.ts:92</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/languages/lens.ts#L92">packages/plugin-ext/src/plugin/languages/lens.ts:92</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -270,13 +241,13 @@
 					<a name="resolvecodelens" class="tsd-anchor"></a>
 					<h3>resolve<wbr>Code<wbr>Lens</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">resolve<wbr>Code<wbr>Lens<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">URI</span>, symbol<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.codelenssymbol.html" class="tsd-signature-type">CodeLensSymbol</a>, token<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin._plugin_-1.cancellationtoken.html" class="tsd-signature-type">CancellationToken</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/plugin_ext.codelenssymbol.html" class="tsd-signature-type">CodeLensSymbol</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">resolve<wbr>Code<wbr>Lens<span class="tsd-signature-symbol">(</span>resource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">URI</span>, symbol<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.codelenssymbol.html" class="tsd-signature-type" data-tsd-kind="Interface">CodeLensSymbol</a>, token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CancellationToken</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/plugin_ext.codelenssymbol.html" class="tsd-signature-type" data-tsd-kind="Interface">CodeLensSymbol</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/languages/lens.ts#L67">packages/plugin-ext/src/plugin/languages/lens.ts:67</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/languages/lens.ts#L67">packages/plugin-ext/src/plugin/languages/lens.ts:67</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -285,56 +256,23 @@
 									<h5>resource: <span class="tsd-signature-type">URI</span></h5>
 								</li>
 								<li>
-									<h5>symbol: <a href="../interfaces/plugin_ext.codelenssymbol.html" class="tsd-signature-type">CodeLensSymbol</a></h5>
+									<h5>symbol: <a href="../interfaces/plugin_ext.codelenssymbol.html" class="tsd-signature-type" data-tsd-kind="Interface">CodeLensSymbol</a></h5>
 								</li>
 								<li>
-									<h5>token: <a href="../interfaces/plugin._plugin_-1.cancellationtoken.html" class="tsd-signature-type">CancellationToken</a></h5>
+									<h5>token: <span class="tsd-signature-type">CancellationToken</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/plugin_ext.codelenssymbol.html" class="tsd-signature-type">CodeLensSymbol</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/plugin_ext.codelenssymbol.html" class="tsd-signature-type" data-tsd-kind="Interface">CodeLensSymbol</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
-				<h2>Object literals</h2>
-				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-class tsd-is-private tsd-is-static">
-					<a name="bad_cmd" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> BAD_<wbr>CMD</h3>
-					<div class="tsd-signature tsd-kind-icon">BAD_<wbr>CMD<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/languages/lens.ts#L29">packages/plugin-ext/src/plugin/languages/lens.ts:29</a></li>
-						</ul>
-					</aside>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-						<a name="bad_cmd.command" class="tsd-anchor"></a>
-						<h3>command</h3>
-						<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;missing&quot;</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/languages/lens.ts#L29">packages/plugin-ext/src/plugin/languages/lens.ts:29</a></li>
-							</ul>
-						</aside>
-					</section>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-						<a name="bad_cmd.title" class="tsd-anchor"></a>
-						<h3>title</h3>
-						<div class="tsd-signature tsd-kind-icon">title<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;&lt;&lt;MISSING COMMAND&gt;&gt;&quot;</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/languages/lens.ts#L29">packages/plugin-ext/src/plugin/languages/lens.ts:29</a></li>
-							</ul>
-						</aside>
-					</section>
 				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/plugin_ext.html">plugin-<wbr>ext</a>
@@ -355,13 +293,13 @@
 								<a href="../modules/plugin_ext.connectionclosederror.html">Connection<wbr>Closed<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.customeditorwidget.html">Custom<wbr>Editor<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrangebehavior.html">Decoration<wbr>Range<wbr>Behavior</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrenderoptions-1.html">Decoration<wbr>Render<wbr>Options</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.delta.html">Delta</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.documentlink.html">Document<wbr>Link</a>
@@ -382,6 +320,9 @@
 								<a href="../modules/plugin_ext.parameterinformation.html">Parameter<wbr>Information</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.plugincontributions.html">Plugin<wbr>Contributions</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginiconpath.html">Plugin<wbr>Icon<wbr>Path</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
@@ -389,6 +330,12 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginpaths.html">Plugin<wbr>Paths</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewregistry.html">Plugin<wbr>View<wbr>Registry</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewwidget.html">Plugin<wbr>View<wbr>Widget</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.schemes.html">Schemes</a>
@@ -415,10 +362,16 @@
 								<a href="../modules/plugin_ext.textdocumentshowoptions.html">Text<wbr>Document<wbr>Show<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.texteditorselectionchangekind.html">Text<wbr>Editor<wbr>Selection<wbr>Change<wbr>Kind</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationattachmentrenderoptions.html">Themable<wbr>Decoration<wbr>Attachment<wbr>Render<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationrenderoptions.html">Themable<wbr>Decoration<wbr>Render<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.themeicon.html">Theme<wbr>Icon</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.timelinecommandarg-1.html">Timeline<wbr>Command<wbr>Arg</a>
@@ -433,10 +386,10 @@
 								<a href="../modules/plugin_ext.webviewexternalendpoint.html">Webview<wbr>External<wbr>Endpoint</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
+								<a href="../modules/plugin_ext.webviewwidget.html">Webview<wbr>Widget</a>
 							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.nls.html">nls</a>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
 							</li>
 						</ul>
 					</li>
@@ -459,16 +412,10 @@
 								<a href="plugin_ext.codelensadapter.html#cacheid" class="tsd-kind-icon">cache<wbr>Id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="plugin_ext.codelensadapter.html#commands" class="tsd-kind-icon">commands</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="plugin_ext.codelensadapter.html#disposables" class="tsd-kind-icon">disposables</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="plugin_ext.codelensadapter.html#documents" class="tsd-kind-icon">documents</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="plugin_ext.codelensadapter.html#provider" class="tsd-kind-icon">provider</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="plugin_ext.codelensadapter.html#bad_cmd" class="tsd-kind-icon">BAD_<wbr>CMD</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="plugin_ext.codelensadapter.html#providecodelenses" class="tsd-kind-icon">provide<wbr>Code<wbr>Lenses</a>
@@ -478,9 +425,6 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="plugin_ext.codelensadapter.html#resolvecodelens" class="tsd-kind-icon">resolve<wbr>Code<wbr>Lens</a>
-							</li>
-							<li class=" tsd-kind-object-literal tsd-parent-kind-class tsd-is-private tsd-is-static">
-								<a href="plugin_ext.codelensadapter.html#bad_cmd" class="tsd-kind-icon">BAD_<wbr>CMD</a>
 							</li>
 						</ul>
 					</li>
@@ -497,7 +441,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

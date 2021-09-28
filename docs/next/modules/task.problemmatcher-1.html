@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="task.html">task</a>
@@ -67,38 +66,10 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">ProblemMatcher</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<a href="../interfaces/task.namedproblemmatcher-1.html" class="tsd-signature-type">NamedProblemMatcher</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="task.problemmatcher-1.html#applyto" class="tsd-kind-icon">apply<wbr>To</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="task.problemmatcher-1.html#deprecated" class="tsd-kind-icon">deprecated</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="task.problemmatcher-1.html#filelocation" class="tsd-kind-icon">file<wbr>Location</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="task.problemmatcher-1.html#fileprefix" class="tsd-kind-icon">file<wbr>Prefix</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="task.problemmatcher-1.html#owner" class="tsd-kind-icon">owner</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="task.problemmatcher-1.html#pattern" class="tsd-kind-icon">pattern</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="task.problemmatcher-1.html#severity" class="tsd-kind-icon">severity</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="task.problemmatcher-1.html#source" class="tsd-kind-icon">source</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="task.problemmatcher-1.html#uriprovider" class="tsd-kind-icon">uri<wbr>Provider</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-namespace"><a href="task.problemmatcher-1.html#watching" class="tsd-kind-icon">watching</a></li>
-							</ul>
-						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
@@ -109,127 +80,24 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-					<a name="applyto" class="tsd-anchor"></a>
-					<h3>apply<wbr>To</h3>
-					<div class="tsd-signature tsd-kind-icon">apply<wbr>To<span class="tsd-signature-symbol">:</span> <a href="../enums/task.applytokind-1.html" class="tsd-signature-type">ApplyToKind</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/common/problem-matcher-protocol.ts#L119">packages/task/src/common/problem-matcher-protocol.ts:119</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-					<a name="deprecated" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> deprecated</h3>
-					<div class="tsd-signature tsd-kind-icon">deprecated<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/common/problem-matcher-protocol.ts#L115">packages/task/src/common/problem-matcher-protocol.ts:115</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-					<a name="filelocation" class="tsd-anchor"></a>
-					<h3>file<wbr>Location</h3>
-					<div class="tsd-signature tsd-kind-icon">file<wbr>Location<span class="tsd-signature-symbol">:</span> <a href="../enums/task.filelocationkind-1.html" class="tsd-signature-type">FileLocationKind</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/common/problem-matcher-protocol.ts#L120">packages/task/src/common/problem-matcher-protocol.ts:120</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-					<a name="fileprefix" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> file<wbr>Prefix</h3>
-					<div class="tsd-signature tsd-kind-icon">file<wbr>Prefix<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/common/problem-matcher-protocol.ts#L121">packages/task/src/common/problem-matcher-protocol.ts:121</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-					<a name="owner" class="tsd-anchor"></a>
-					<h3>owner</h3>
-					<div class="tsd-signature tsd-kind-icon">owner<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/common/problem-matcher-protocol.ts#L117">packages/task/src/common/problem-matcher-protocol.ts:117</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-					<a name="pattern" class="tsd-anchor"></a>
-					<h3>pattern</h3>
-					<div class="tsd-signature tsd-kind-icon">pattern<span class="tsd-signature-symbol">:</span> <a href="task.problempattern-1.html" class="tsd-signature-type">ProblemPattern</a><span class="tsd-signature-symbol"> | </span><a href="task.problempattern-1.html" class="tsd-signature-type">ProblemPattern</a><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/common/problem-matcher-protocol.ts#L122">packages/task/src/common/problem-matcher-protocol.ts:122</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-					<a name="severity" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> severity</h3>
-					<div class="tsd-signature tsd-kind-icon">severity<span class="tsd-signature-symbol">:</span> <a href="../enums/core.severity.html" class="tsd-signature-type">Severity</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/common/problem-matcher-protocol.ts#L123">packages/task/src/common/problem-matcher-protocol.ts:123</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-					<a name="source" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> source</h3>
-					<div class="tsd-signature tsd-kind-icon">source<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/common/problem-matcher-protocol.ts#L118">packages/task/src/common/problem-matcher-protocol.ts:118</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-					<a name="uriprovider" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> uri<wbr>Provider</h3>
-					<div class="tsd-signature tsd-kind-icon">uri<wbr>Provider<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">URI</span><span class="tsd-signature-symbol">)</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/common/problem-matcher-protocol.ts#L125">packages/task/src/common/problem-matcher-protocol.ts:125</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-namespace">
-					<a name="watching" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> watching</h3>
-					<div class="tsd-signature tsd-kind-icon">watching<span class="tsd-signature-symbol">:</span> <a href="task.html#watchingmatcher" class="tsd-signature-type">WatchingMatcher</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/common/problem-matcher-protocol.ts#L124">packages/task/src/common/problem-matcher-protocol.ts:124</a></li>
-						</ul>
-					</aside>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
 					<a name="iswatchmodewatcher" class="tsd-anchor"></a>
 					<h3>is<wbr>Watch<wbr>Mode<wbr>Watcher</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Watch<wbr>Mode<wbr>Watcher<span class="tsd-signature-symbol">(</span>matcher<span class="tsd-signature-symbol">: </span><a href="task.problemmatcher-1.html" class="tsd-signature-type">ProblemMatcher</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Watch<wbr>Mode<wbr>Watcher<span class="tsd-signature-symbol">(</span>matcher<span class="tsd-signature-symbol">: </span><a href="../interfaces/task.problemmatcher-2.html" class="tsd-signature-type" data-tsd-kind="Interface">ProblemMatcher</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/task/src/common/problem-matcher-protocol.ts#L134">packages/task/src/common/problem-matcher-protocol.ts:134</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/task/src/common/problem-matcher-protocol.ts#L134">packages/task/src/common/problem-matcher-protocol.ts:134</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>matcher: <a href="task.problemmatcher-1.html" class="tsd-signature-type">ProblemMatcher</a></h5>
+									<h5>matcher: <a href="../interfaces/task.problemmatcher-2.html" class="tsd-signature-type" data-tsd-kind="Interface">ProblemMatcher</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -241,14 +109,23 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="task.html">task</a>
 						<ul>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="task.applytokind-1.html">Apply<wbr>ToKind</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="task.configuretaskaction.html">Configure<wbr>Task<wbr>Action</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="task.filelocationkind-1.html">File<wbr>Location<wbr>Kind</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="task.problemlocationkind-1.html">Problem<wbr>Location<wbr>Kind</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="task.problemmatchdata-1.html">Problem<wbr>Match<wbr>Data</a>
@@ -267,6 +144,12 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="task.taskcommands.html">Task<wbr>Commands</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="task.taskconfigurationmanager.html">Task<wbr>Configuration<wbr>Manager</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="task.taskconfigurationmodel.html">Task<wbr>Configuration<wbr>Model</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="task.taskcustomization-1.html">Task<wbr>Customization</a>
@@ -289,36 +172,6 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-property tsd-parent-kind-namespace">
-						<a href="task.problemmatcher-1.html#applyto" class="tsd-kind-icon">apply<wbr>To</a>
-					</li>
-					<li class=" tsd-kind-property tsd-parent-kind-namespace">
-						<a href="task.problemmatcher-1.html#deprecated" class="tsd-kind-icon">deprecated</a>
-					</li>
-					<li class=" tsd-kind-property tsd-parent-kind-namespace">
-						<a href="task.problemmatcher-1.html#filelocation" class="tsd-kind-icon">file<wbr>Location</a>
-					</li>
-					<li class=" tsd-kind-property tsd-parent-kind-namespace">
-						<a href="task.problemmatcher-1.html#fileprefix" class="tsd-kind-icon">file<wbr>Prefix</a>
-					</li>
-					<li class=" tsd-kind-property tsd-parent-kind-namespace">
-						<a href="task.problemmatcher-1.html#owner" class="tsd-kind-icon">owner</a>
-					</li>
-					<li class=" tsd-kind-property tsd-parent-kind-namespace">
-						<a href="task.problemmatcher-1.html#pattern" class="tsd-kind-icon">pattern</a>
-					</li>
-					<li class=" tsd-kind-property tsd-parent-kind-namespace">
-						<a href="task.problemmatcher-1.html#severity" class="tsd-kind-icon">severity</a>
-					</li>
-					<li class=" tsd-kind-property tsd-parent-kind-namespace">
-						<a href="task.problemmatcher-1.html#source" class="tsd-kind-icon">source</a>
-					</li>
-					<li class=" tsd-kind-property tsd-parent-kind-namespace">
-						<a href="task.problemmatcher-1.html#uriprovider" class="tsd-kind-icon">uri<wbr>Provider</a>
-					</li>
-					<li class=" tsd-kind-property tsd-parent-kind-namespace">
-						<a href="task.problemmatcher-1.html#watching" class="tsd-kind-icon">watching</a>
-					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-namespace">
 						<a href="task.problemmatcher-1.html#iswatchmodewatcher" class="tsd-kind-icon">is<wbr>Watch<wbr>Mode<wbr>Watcher</a>
 					</li>
@@ -333,7 +186,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/plugin_ext.html">plugin-ext</a>
@@ -71,7 +70,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="../modules/core.applicationerror-1.html#error" class="tsd-signature-type">Error</a>
+						<span class="tsd-signature-type">Error</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">FileSystemError</span>
@@ -87,17 +86,13 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="plugin_ext.filesystemerror.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="plugin_ext.filesystemerror.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.filesystemerror.html#code" class="tsd-kind-icon">code</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="plugin_ext.filesystemerror.html#message" class="tsd-kind-icon">message</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="plugin_ext.filesystemerror.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="plugin_ext.filesystemerror.html#stack" class="tsd-kind-icon">stack</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="plugin_ext.filesystemerror.html#error" class="tsd-kind-icon">Error</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -116,32 +111,33 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>File<wbr>System<wbr>Error<span class="tsd-signature-symbol">(</span>uriOrMessage<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.uri.html" class="tsd-signature-type">URI</a>, code<span class="tsd-signature-symbol">?: </span><a href="../enums/filesystem.filesystemprovidererrorcode.html" class="tsd-signature-type">FileSystemProviderErrorCode</a>, terminator<span class="tsd-signature-symbol">?: </span><a href="../enums/monaco.symbolkind.html#function" class="tsd-signature-type">Function</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.filesystemerror.html" class="tsd-signature-type">FileSystemError</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>File<wbr>System<wbr>Error<span class="tsd-signature-symbol">(</span>uriOrMessage<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.uri.html" class="tsd-signature-type" data-tsd-kind="Class">URI</a>, code<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">FileSystemProviderErrorCode</span>, terminator<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.filesystemerror.html" class="tsd-signature-type" data-tsd-kind="Class">FileSystemError</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides Error.constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L1570">packages/plugin-ext/src/plugin/types-impl.ts:1570</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L1570">packages/plugin-ext/src/plugin/types-impl.ts:1570</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> uriOrMessage: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.uri.html" class="tsd-signature-type">URI</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> uriOrMessage: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.uri.html" class="tsd-signature-type" data-tsd-kind="Class">URI</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> code: <a href="../enums/filesystem.filesystemprovidererrorcode.html" class="tsd-signature-type">FileSystemProviderErrorCode</a><span class="tsd-signature-symbol"> = FileSystemProviderErrorCode.Unknown</span></h5>
+									<h5>code: <span class="tsd-signature-type">FileSystemProviderErrorCode</span><span class="tsd-signature-symbol"> = ...</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> terminator: <a href="../enums/monaco.symbolkind.html#function" class="tsd-signature-type">Function</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> terminator: <span class="tsd-signature-type">Function</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.filesystemerror.html" class="tsd-signature-type">FileSystemError</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.filesystemerror.html" class="tsd-signature-type" data-tsd-kind="Class">FileSystemError</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -154,51 +150,7 @@
 					<div class="tsd-signature tsd-kind-icon">code<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L1570">packages/plugin-ext/src/plugin/types-impl.ts:1570</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-					<a name="message" class="tsd-anchor"></a>
-					<h3>message</h3>
-					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="../modules/core.applicationerror-1.html">ApplicationError</a>.<a href="../modules/core.applicationerror-1.html#message">message</a></p>
-						<ul>
-							<li>Defined in node_modules/typescript/lib/lib.es5.d.ts:974</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-					<a name="name" class="tsd-anchor"></a>
-					<h3>name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="../modules/core.applicationerror-1.html">ApplicationError</a>.<a href="../modules/core.applicationerror-1.html#name">name</a></p>
-						<ul>
-							<li>Defined in node_modules/typescript/lib/lib.es5.d.ts:973</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-					<a name="stack" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> stack</h3>
-					<div class="tsd-signature tsd-kind-icon">stack<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="../modules/core.applicationerror-1.html">ApplicationError</a>.<a href="../modules/core.applicationerror-1.html#stack">stack</a></p>
-						<p>Overrides <a href="../modules/core.applicationerror-1.html">ApplicationError</a>.<a href="../modules/core.applicationerror-1.html#stack">stack</a></p>
-						<ul>
-							<li>Defined in node_modules/typescript/lib/lib.es5.d.ts:975</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a name="error" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> Error</h3>
-					<div class="tsd-signature tsd-kind-icon">Error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ErrorConstructor</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in node_modules/typescript/lib/lib.es5.d.ts:984</li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L1570">packages/plugin-ext/src/plugin/types-impl.ts:1570</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -209,22 +161,22 @@
 					<a name="fileexists" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> File<wbr>Exists</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">File<wbr>Exists<span class="tsd-signature-symbol">(</span>messageOrUri<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.filesystemerror.html" class="tsd-signature-type">FileSystemError</a></li>
+						<li class="tsd-signature tsd-kind-icon">File<wbr>Exists<span class="tsd-signature-symbol">(</span>messageOrUri<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.uri.html" class="tsd-signature-type" data-tsd-kind="Class">URI</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.filesystemerror.html" class="tsd-signature-type" data-tsd-kind="Class">FileSystemError</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L1551">packages/plugin-ext/src/plugin/types-impl.ts:1551</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L1551">packages/plugin-ext/src/plugin/types-impl.ts:1551</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> messageOrUri: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.uri.html" class="tsd-signature-type">URI</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> messageOrUri: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.uri.html" class="tsd-signature-type" data-tsd-kind="Class">URI</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.filesystemerror.html" class="tsd-signature-type">FileSystemError</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.filesystemerror.html" class="tsd-signature-type" data-tsd-kind="Class">FileSystemError</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -232,22 +184,22 @@
 					<a name="fileisadirectory" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> File<wbr>IsADirectory</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">File<wbr>IsADirectory<span class="tsd-signature-symbol">(</span>messageOrUri<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.filesystemerror.html" class="tsd-signature-type">FileSystemError</a></li>
+						<li class="tsd-signature tsd-kind-icon">File<wbr>IsADirectory<span class="tsd-signature-symbol">(</span>messageOrUri<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.uri.html" class="tsd-signature-type" data-tsd-kind="Class">URI</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.filesystemerror.html" class="tsd-signature-type" data-tsd-kind="Class">FileSystemError</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L1560">packages/plugin-ext/src/plugin/types-impl.ts:1560</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L1560">packages/plugin-ext/src/plugin/types-impl.ts:1560</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> messageOrUri: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.uri.html" class="tsd-signature-type">URI</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> messageOrUri: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.uri.html" class="tsd-signature-type" data-tsd-kind="Class">URI</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.filesystemerror.html" class="tsd-signature-type">FileSystemError</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.filesystemerror.html" class="tsd-signature-type" data-tsd-kind="Class">FileSystemError</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -255,22 +207,22 @@
 					<a name="filenotadirectory" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> File<wbr>NotADirectory</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">File<wbr>NotADirectory<span class="tsd-signature-symbol">(</span>messageOrUri<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.filesystemerror.html" class="tsd-signature-type">FileSystemError</a></li>
+						<li class="tsd-signature tsd-kind-icon">File<wbr>NotADirectory<span class="tsd-signature-symbol">(</span>messageOrUri<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.uri.html" class="tsd-signature-type" data-tsd-kind="Class">URI</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.filesystemerror.html" class="tsd-signature-type" data-tsd-kind="Class">FileSystemError</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L1557">packages/plugin-ext/src/plugin/types-impl.ts:1557</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L1557">packages/plugin-ext/src/plugin/types-impl.ts:1557</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> messageOrUri: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.uri.html" class="tsd-signature-type">URI</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> messageOrUri: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.uri.html" class="tsd-signature-type" data-tsd-kind="Class">URI</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.filesystemerror.html" class="tsd-signature-type">FileSystemError</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.filesystemerror.html" class="tsd-signature-type" data-tsd-kind="Class">FileSystemError</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -278,22 +230,22 @@
 					<a name="filenotfound" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> File<wbr>Not<wbr>Found</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">File<wbr>Not<wbr>Found<span class="tsd-signature-symbol">(</span>messageOrUri<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.filesystemerror.html" class="tsd-signature-type">FileSystemError</a></li>
+						<li class="tsd-signature tsd-kind-icon">File<wbr>Not<wbr>Found<span class="tsd-signature-symbol">(</span>messageOrUri<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.uri.html" class="tsd-signature-type" data-tsd-kind="Class">URI</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.filesystemerror.html" class="tsd-signature-type" data-tsd-kind="Class">FileSystemError</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L1554">packages/plugin-ext/src/plugin/types-impl.ts:1554</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L1554">packages/plugin-ext/src/plugin/types-impl.ts:1554</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> messageOrUri: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.uri.html" class="tsd-signature-type">URI</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> messageOrUri: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.uri.html" class="tsd-signature-type" data-tsd-kind="Class">URI</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.filesystemerror.html" class="tsd-signature-type">FileSystemError</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.filesystemerror.html" class="tsd-signature-type" data-tsd-kind="Class">FileSystemError</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -301,22 +253,22 @@
 					<a name="nopermissions" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> No<wbr>Permissions</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">No<wbr>Permissions<span class="tsd-signature-symbol">(</span>messageOrUri<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.filesystemerror.html" class="tsd-signature-type">FileSystemError</a></li>
+						<li class="tsd-signature tsd-kind-icon">No<wbr>Permissions<span class="tsd-signature-symbol">(</span>messageOrUri<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.uri.html" class="tsd-signature-type" data-tsd-kind="Class">URI</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.filesystemerror.html" class="tsd-signature-type" data-tsd-kind="Class">FileSystemError</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L1563">packages/plugin-ext/src/plugin/types-impl.ts:1563</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L1563">packages/plugin-ext/src/plugin/types-impl.ts:1563</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> messageOrUri: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.uri.html" class="tsd-signature-type">URI</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> messageOrUri: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.uri.html" class="tsd-signature-type" data-tsd-kind="Class">URI</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.filesystemerror.html" class="tsd-signature-type">FileSystemError</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.filesystemerror.html" class="tsd-signature-type" data-tsd-kind="Class">FileSystemError</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -324,22 +276,22 @@
 					<a name="unavailable" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Unavailable</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">Unavailable<span class="tsd-signature-symbol">(</span>messageOrUri<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.filesystemerror.html" class="tsd-signature-type">FileSystemError</a></li>
+						<li class="tsd-signature tsd-kind-icon">Unavailable<span class="tsd-signature-symbol">(</span>messageOrUri<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.uri.html" class="tsd-signature-type" data-tsd-kind="Class">URI</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.filesystemerror.html" class="tsd-signature-type" data-tsd-kind="Class">FileSystemError</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/plugin-ext/src/plugin/types-impl.ts#L1566">packages/plugin-ext/src/plugin/types-impl.ts:1566</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/plugin-ext/src/plugin/types-impl.ts#L1566">packages/plugin-ext/src/plugin/types-impl.ts:1566</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> messageOrUri: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.uri.html" class="tsd-signature-type">URI</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> messageOrUri: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="plugin_ext.uri.html" class="tsd-signature-type" data-tsd-kind="Class">URI</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.filesystemerror.html" class="tsd-signature-type">FileSystemError</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.filesystemerror.html" class="tsd-signature-type" data-tsd-kind="Class">FileSystemError</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -348,8 +300,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/plugin_ext.html">plugin-<wbr>ext</a>
@@ -370,13 +322,13 @@
 								<a href="../modules/plugin_ext.connectionclosederror.html">Connection<wbr>Closed<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.customeditorwidget.html">Custom<wbr>Editor<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrangebehavior.html">Decoration<wbr>Range<wbr>Behavior</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrenderoptions-1.html">Decoration<wbr>Render<wbr>Options</a>
-							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.delta.html">Delta</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.documentlink.html">Document<wbr>Link</a>
@@ -397,6 +349,9 @@
 								<a href="../modules/plugin_ext.parameterinformation.html">Parameter<wbr>Information</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.plugincontributions.html">Plugin<wbr>Contributions</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginiconpath.html">Plugin<wbr>Icon<wbr>Path</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
@@ -404,6 +359,12 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.pluginpaths.html">Plugin<wbr>Paths</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewregistry.html">Plugin<wbr>View<wbr>Registry</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.pluginviewwidget.html">Plugin<wbr>View<wbr>Widget</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.schemes.html">Schemes</a>
@@ -430,10 +391,16 @@
 								<a href="../modules/plugin_ext.textdocumentshowoptions.html">Text<wbr>Document<wbr>Show<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.texteditorselectionchangekind.html">Text<wbr>Editor<wbr>Selection<wbr>Change<wbr>Kind</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationattachmentrenderoptions.html">Themable<wbr>Decoration<wbr>Attachment<wbr>Render<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.themabledecorationrenderoptions.html">Themable<wbr>Decoration<wbr>Render<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.themeicon.html">Theme<wbr>Icon</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.timelinecommandarg-1.html">Timeline<wbr>Command<wbr>Arg</a>
@@ -448,10 +415,10 @@
 								<a href="../modules/plugin_ext.webviewexternalendpoint.html">Webview<wbr>External<wbr>Endpoint</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
-								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
+								<a href="../modules/plugin_ext.webviewwidget.html">Webview<wbr>Widget</a>
 							</li>
-							<li class=" tsd-kind-namespace tsd-parent-kind-module tsd-is-not-exported">
-								<a href="../modules/plugin_ext.nls.html">nls</a>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.workspacetexteditdto-1.html">Workspace<wbr>Text<wbr>Edit<wbr>Dto</a>
 							</li>
 						</ul>
 					</li>
@@ -464,23 +431,11 @@
 					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="plugin_ext.filesystemerror.html" class="tsd-kind-icon">File<wbr>System<wbr>Error</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 								<a href="plugin_ext.filesystemerror.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="plugin_ext.filesystemerror.html#code" class="tsd-kind-icon">code</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="plugin_ext.filesystemerror.html#message" class="tsd-kind-icon">message</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="plugin_ext.filesystemerror.html#name" class="tsd-kind-icon">name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="plugin_ext.filesystemerror.html#stack" class="tsd-kind-icon">stack</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-								<a href="plugin_ext.filesystemerror.html#error" class="tsd-kind-icon">Error</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="plugin_ext.filesystemerror.html#fileexists" class="tsd-kind-icon">File<wbr>Exists</a>
@@ -515,7 +470,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
@@ -533,14 +487,10 @@
 				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
-			</ul>
-			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 			</ul>
 		</div>
 	</div>

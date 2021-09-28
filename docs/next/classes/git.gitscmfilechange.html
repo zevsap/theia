@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/git.html">git</a>
@@ -78,7 +77,7 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/scm_extra.scmfilechange.html" class="tsd-signature-type">ScmFileChange</a></li>
+					<li><span class="tsd-signature-type">ScmFileChange</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -125,28 +124,28 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Git<wbr>Scm<wbr>File<wbr>Change<span class="tsd-signature-symbol">(</span>fileChange<span class="tsd-signature-symbol">: </span><a href="../interfaces/git.gitfilechange-1.html" class="tsd-signature-type">GitFileChange</a>, scmProvider<span class="tsd-signature-symbol">: </span><a href="git.gitscmprovider.html" class="tsd-signature-type">GitScmProvider</a>, range<span class="tsd-signature-symbol">?: </span><a href="../interfaces/git.git-2.options.range.html" class="tsd-signature-type">Range</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="git.gitscmfilechange.html" class="tsd-signature-type">GitScmFileChange</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Git<wbr>Scm<wbr>File<wbr>Change<span class="tsd-signature-symbol">(</span>fileChange<span class="tsd-signature-symbol">: </span><a href="../interfaces/git.gitfilechange-1.html" class="tsd-signature-type" data-tsd-kind="Interface">GitFileChange</a>, scmProvider<span class="tsd-signature-symbol">: </span><a href="git.gitscmprovider-1.html" class="tsd-signature-type" data-tsd-kind="Class">GitScmProvider</a>, range<span class="tsd-signature-symbol">?: </span><a href="../interfaces/git.git-2.options.range.html" class="tsd-signature-type" data-tsd-kind="Interface">Range</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="git.gitscmfilechange.html" class="tsd-signature-type" data-tsd-kind="Class">GitScmFileChange</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-scm-provider.ts#L544">packages/git/src/browser/git-scm-provider.ts:544</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-scm-provider.ts#L544">packages/git/src/browser/git-scm-provider.ts:544</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>fileChange: <a href="../interfaces/git.gitfilechange-1.html" class="tsd-signature-type">GitFileChange</a></h5>
+									<h5>fileChange: <a href="../interfaces/git.gitfilechange-1.html" class="tsd-signature-type" data-tsd-kind="Interface">GitFileChange</a></h5>
 								</li>
 								<li>
-									<h5>scmProvider: <a href="git.gitscmprovider.html" class="tsd-signature-type">GitScmProvider</a></h5>
+									<h5>scmProvider: <a href="git.gitscmprovider-1.html" class="tsd-signature-type" data-tsd-kind="Class">GitScmProvider</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> range: <a href="../interfaces/git.git-2.options.range.html" class="tsd-signature-type">Range</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> range: <a href="../interfaces/git.git-2.options.range.html" class="tsd-signature-type" data-tsd-kind="Interface">Range</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="git.gitscmfilechange.html" class="tsd-signature-type">GitScmFileChange</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="git.gitscmfilechange.html" class="tsd-signature-type" data-tsd-kind="Class">GitScmFileChange</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -156,31 +155,22 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="filechange" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> file<wbr>Change</h3>
-					<div class="tsd-signature tsd-kind-icon">file<wbr>Change<span class="tsd-signature-symbol">:</span> <a href="../interfaces/git.gitfilechange-1.html" class="tsd-signature-type">GitFileChange</a></div>
+					<div class="tsd-signature tsd-kind-icon">file<wbr>Change<span class="tsd-signature-symbol">:</span> <a href="../interfaces/git.gitfilechange-1.html" class="tsd-signature-type" data-tsd-kind="Interface">GitFileChange</a></div>
 					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-scm-provider.ts#L547">packages/git/src/browser/git-scm-provider.ts:547</a></li>
-						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="range" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> range</h3>
-					<div class="tsd-signature tsd-kind-icon">range<span class="tsd-signature-symbol">:</span> <a href="../interfaces/git.git-2.options.range.html" class="tsd-signature-type">Range</a></div>
+					<div class="tsd-signature tsd-kind-icon">range<span class="tsd-signature-symbol">:</span> <a href="../interfaces/git.git-2.options.range.html" class="tsd-signature-type" data-tsd-kind="Interface">Range</a></div>
 					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-scm-provider.ts#L549">packages/git/src/browser/git-scm-provider.ts:549</a></li>
-						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="scmprovider" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> scm<wbr>Provider</h3>
-					<div class="tsd-signature tsd-kind-icon">scm<wbr>Provider<span class="tsd-signature-symbol">:</span> <a href="git.gitscmprovider.html" class="tsd-signature-type">GitScmProvider</a></div>
+					<div class="tsd-signature tsd-kind-icon">scm<wbr>Provider<span class="tsd-signature-symbol">:</span> <a href="git.gitscmprovider-1.html" class="tsd-signature-type" data-tsd-kind="Class">GitScmProvider</a></div>
 					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-scm-provider.ts#L548">packages/git/src/browser/git-scm-provider.ts:548</a></li>
-						</ul>
 					</aside>
 				</section>
 			</section>
@@ -190,16 +180,16 @@
 					<a name="gitfilechange" class="tsd-anchor"></a>
 					<h3>git<wbr>File<wbr>Change</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> gitFileChange<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/git.gitfilechange-1.html" class="tsd-signature-type">GitFileChange</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> gitFileChange<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/git.gitfilechange-1.html" class="tsd-signature-type" data-tsd-kind="Interface">GitFileChange</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-scm-provider.ts#L552">packages/git/src/browser/git-scm-provider.ts:552</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-scm-provider.ts#L552">packages/git/src/browser/git-scm-provider.ts:552</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/git.gitfilechange-1.html" class="tsd-signature-type">GitFileChange</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/git.gitfilechange-1.html" class="tsd-signature-type" data-tsd-kind="Interface">GitFileChange</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -213,7 +203,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-scm-provider.ts#L556">packages/git/src/browser/git-scm-provider.ts:556</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-scm-provider.ts#L556">packages/git/src/browser/git-scm-provider.ts:556</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -232,9 +222,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/scm_extra.scmfilechange.html">ScmFileChange</a>.<a href="../interfaces/scm_extra.scmfilechange.html#getcaption">getCaption</a></p>
+								<p>Implementation of ScmFileChange.getCaption</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-scm-provider.ts#L560">packages/git/src/browser/git-scm-provider.ts:560</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-scm-provider.ts#L560">packages/git/src/browser/git-scm-provider.ts:560</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -250,9 +240,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/scm_extra.scmfilechange.html">ScmFileChange</a>.<a href="../interfaces/scm_extra.scmfilechange.html#getclassnameforstatus">getClassNameForStatus</a></p>
+								<p>Implementation of ScmFileChange.getClassNameForStatus</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-scm-provider.ts#L577">packages/git/src/browser/git-scm-provider.ts:577</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-scm-provider.ts#L577">packages/git/src/browser/git-scm-provider.ts:577</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -268,9 +258,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/scm_extra.scmfilechange.html">ScmFileChange</a>.<a href="../interfaces/scm_extra.scmfilechange.html#getstatusabbreviation">getStatusAbbreviation</a></p>
+								<p>Implementation of ScmFileChange.getStatusAbbreviation</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-scm-provider.ts#L573">packages/git/src/browser/git-scm-provider.ts:573</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-scm-provider.ts#L573">packages/git/src/browser/git-scm-provider.ts:573</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -286,9 +276,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/scm_extra.scmfilechange.html">ScmFileChange</a>.<a href="../interfaces/scm_extra.scmfilechange.html#getstatuscaption">getStatusCaption</a></p>
+								<p>Implementation of ScmFileChange.getStatusCaption</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-scm-provider.ts#L569">packages/git/src/browser/git-scm-provider.ts:569</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-scm-provider.ts#L569">packages/git/src/browser/git-scm-provider.ts:569</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -299,17 +289,17 @@
 					<a name="geturitoopen" class="tsd-anchor"></a>
 					<h3>get<wbr>Uri<wbr>ToOpen</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Uri<wbr>ToOpen<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.uri.html" class="tsd-signature-type">URI</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Uri<wbr>ToOpen<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/scm_extra.scmfilechange.html">ScmFileChange</a>.<a href="../interfaces/scm_extra.scmfilechange.html#geturitoopen">getUriToOpen</a></p>
+								<p>Implementation of ScmFileChange.getUriToOpen</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/git/src/browser/git-scm-provider.ts#L581">packages/git/src/browser/git-scm-provider.ts:581</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/git/src/browser/git-scm-provider.ts#L581">packages/git/src/browser/git-scm-provider.ts:581</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="core.uri.html" class="tsd-signature-type">URI</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">default</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -318,14 +308,23 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/git.html">git</a>
 						<ul>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.blameannotationskeybindingcontext.html">Blame<wbr>Annotations<wbr>Keybinding<wbr>Context</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.blamecommands.html">Blame<wbr>Commands</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.blamedecorator.html">Blame<wbr>Decorator</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.dirtydiffmodel.html">Dirty<wbr>Diff<wbr>Model</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.git_commands.html">GIT_<wbr>COMMANDS</a>
@@ -340,16 +339,37 @@
 								<a href="../modules/git.gitbindingoptions.html">Git<wbr>Binding<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitblameparser.html">Git<wbr>Blame<wbr>Parser</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.gitcommitdetailuri.html">Git<wbr>Commit<wbr>Detail<wbr>Uri</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitcommitmessagevalidator.html">Git<wbr>Commit<wbr>Message<wbr>Validator</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.gitdiffcommands.html">Git<wbr>Diff<wbr>Commands</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitdifftreemodel.html">Git<wbr>Diff<wbr>Tree<wbr>Model</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitfilestatus-1.html">Git<wbr>File<wbr>Status</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitprompt.html">Git<wbr>Prompt</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitscmprovider.html">Git<wbr>Scm<wbr>Provider</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.gitscmrepository.html">Git<wbr>Scm<wbr>Repository</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.gitstatuschangeevent-1.html">Git<wbr>Status<wbr>Change<wbr>Event</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/git.gitsyncservice.html">Git<wbr>Sync<wbr>Service</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/git.gitutils-1.html">Git<wbr>Utils</a>
@@ -422,7 +442,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

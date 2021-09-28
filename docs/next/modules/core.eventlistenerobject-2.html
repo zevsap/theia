@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="core.html">core</a>
@@ -60,21 +59,13 @@
 					<a href="core.eventlistenerobject-2.html">EventListenerObject</a>
 				</li>
 			</ul>
-			<h1>Namespace EventListenerObject&lt;K&gt;</h1>
+			<h1>Namespace EventListenerObject</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-type-parameters">
-				<h3>Type parameters</h3>
-				<ul class="tsd-type-parameters">
-					<li>
-						<h4>K<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">HTMLElementEventMap</span></h4>
-					</li>
-				</ul>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
@@ -83,12 +74,6 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter"><a href="core.eventlistenerobject-2.html#is" class="tsd-kind-icon">is</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Methods</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-namespace"><a href="core.eventlistenerobject-2.html#handleevent" class="tsd-kind-icon">handle<wbr>Event</a></li>
 							</ul>
 						</section>
 					</div>
@@ -100,19 +85,19 @@
 					<a name="is" class="tsd-anchor"></a>
 					<h3>is</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">is&lt;K&gt;<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">listener</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">EventListenerObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">is&lt;K&gt;<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">listener</span><span class="tsd-signature-symbol"> is </span><a href="../interfaces/core.eventlistenerobject-3.html" class="tsd-signature-type" data-tsd-kind="Interface">EventListenerObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/widgets/widget.ts#L249">packages/core/src/browser/widgets/widget.ts:249</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/core/src/browser/widgets/widget.ts#L249">packages/core/src/browser/widgets/widget.ts:249</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>K<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">HTMLElementEventMap</span></h4>
+									<h4>K<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;fullscreenchange&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;fullscreenerror&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;abort&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;animationcancel&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;animationend&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;animationiteration&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;animationstart&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;auxclick&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;blur&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;cancel&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;canplay&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;canplaythrough&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;change&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;click&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;close&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;contextmenu&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;cuechange&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;dblclick&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;drag&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;dragend&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;dragenter&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;dragexit&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;dragleave&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;dragover&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;dragstart&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;drop&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;durationchange&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;emptied&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;ended&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;error&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;focus&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;focusin&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;focusout&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gotpointercapture&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;input&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;invalid&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;keydown&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;keypress&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;keyup&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;load&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;loadeddata&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;loadedmetadata&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;loadstart&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;lostpointercapture&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;mousedown&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;mouseenter&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;mouseleave&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;mousemove&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;mouseout&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;mouseover&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;mouseup&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;pause&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;play&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;playing&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;pointercancel&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;pointerdown&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;pointerenter&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;pointerleave&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;pointermove&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;pointerout&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;pointerover&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;pointerup&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;progress&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;ratechange&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;reset&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;resize&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;scroll&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;securitypolicyviolation&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;seeked&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;seeking&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;select&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;selectionchange&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;selectstart&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;stalled&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;submit&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;suspend&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;timeupdate&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;toggle&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;touchcancel&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;touchend&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;touchmove&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;touchstart&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;transitioncancel&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;transitionend&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;transitionrun&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;transitionstart&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;volumechange&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;waiting&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;wheel&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;copy&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;cut&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;paste&quot;</span></h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -121,33 +106,7 @@
 									<h5>listener: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">listener</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">EventListenerObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-namespace">
-					<a name="handleevent" class="tsd-anchor"></a>
-					<h3>handle<wbr>Event</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">handle<wbr>Event<span class="tsd-signature-symbol">(</span>evt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElementEventMap</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/core/src/browser/widgets/widget.ts#L245">packages/core/src/browser/widgets/widget.ts:245</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>evt: <span class="tsd-signature-type">HTMLElementEventMap</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">]</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">listener</span><span class="tsd-signature-symbol"> is </span><a href="../interfaces/core.eventlistenerobject-3.html" class="tsd-signature-type" data-tsd-kind="Interface">EventListenerObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -156,13 +115,13 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="core.html">core</a>
 						<ul>
-							<li class="current tsd-kind-namespace tsd-parent-kind-module tsd-has-type-parameter">
+							<li class="current tsd-kind-namespace tsd-parent-kind-module">
 								<a href="core.eventlistenerobject-2.html">Event<wbr>Listener<wbr>Object</a>
 							</li>
 						</ul>
@@ -173,9 +132,6 @@
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter">
 						<a href="core.eventlistenerobject-2.html#is" class="tsd-kind-icon">is</a>
-					</li>
-					<li class=" tsd-kind-method tsd-parent-kind-namespace">
-						<a href="core.eventlistenerobject-2.html#handleevent" class="tsd-kind-icon">handle<wbr>Event</a>
 					</li>
 				</ul>
 			</nav>
@@ -188,7 +144,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>

@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/filesystem.html">filesystem</a>
@@ -71,7 +70,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="filesystem.defaultfiledialogservice-2.html" class="tsd-signature-type">DefaultFileDialogService</a>
+						<a href="filesystem.defaultfiledialogservice-2.html" class="tsd-signature-type" data-tsd-kind="Class">DefaultFileDialogService</a>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">ElectronFileDialogService</span>
@@ -80,16 +79,16 @@
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel">
-				<h3>Implements</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/filesystem.filedialogservice-2.html" class="tsd-signature-type">FileDialogService</a></li>
-				</ul>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-inherited">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><a href="filesystem.electronfiledialogservice.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
@@ -117,70 +116,88 @@
 					</div>
 				</section>
 			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Electron<wbr>File<wbr>Dialog<wbr>Service<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="filesystem.electronfiledialogservice.html" class="tsd-signature-type" data-tsd-kind="Class">ElectronFileDialogService</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="filesystem.defaultfiledialogservice-2.html">DefaultFileDialogService</a>.<a href="filesystem.defaultfiledialogservice-2.html#constructor">constructor</a></p>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="filesystem.electronfiledialogservice.html" class="tsd-signature-type" data-tsd-kind="Class">ElectronFileDialogService</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-private-protected">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="environments" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> environments</h3>
-					<div class="tsd-signature tsd-kind-icon">environments<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.envvariablesserver-1.html" class="tsd-signature-type">EnvVariablesServer</a></div>
+					<div class="tsd-signature tsd-kind-icon">environments<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EnvVariablesServer</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="filesystem.defaultfiledialogservice-2.html">DefaultFileDialogService</a>.<a href="filesystem.defaultfiledialogservice-2.html#environments">environments</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/browser/file-dialog/file-dialog-service.ts#L42">packages/filesystem/src/browser/file-dialog/file-dialog-service.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/browser/file-dialog/file-dialog-service.ts#L42">packages/filesystem/src/browser/file-dialog/file-dialog-service.ts:42</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="fileservice" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> file<wbr>Service</h3>
-					<div class="tsd-signature tsd-kind-icon">file<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="filesystem.fileservice.html" class="tsd-signature-type">FileService</a></div>
+					<div class="tsd-signature tsd-kind-icon">file<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="filesystem.fileservice.html" class="tsd-signature-type" data-tsd-kind="Class">FileService</a></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="filesystem.defaultfiledialogservice-2.html">DefaultFileDialogService</a>.<a href="filesystem.defaultfiledialogservice-2.html#fileservice">fileService</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/browser/file-dialog/file-dialog-service.ts#L45">packages/filesystem/src/browser/file-dialog/file-dialog-service.ts:45</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/browser/file-dialog/file-dialog-service.ts#L45">packages/filesystem/src/browser/file-dialog/file-dialog-service.ts:45</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="labelprovider" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> label<wbr>Provider</h3>
-					<div class="tsd-signature tsd-kind-icon">label<wbr>Provider<span class="tsd-signature-symbol">:</span> <a href="core.labelprovider-1.html" class="tsd-signature-type">LabelProvider</a></div>
+					<div class="tsd-signature tsd-kind-icon">label<wbr>Provider<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">LabelProvider</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="filesystem.defaultfiledialogservice-2.html">DefaultFileDialogService</a>.<a href="filesystem.defaultfiledialogservice-2.html#labelprovider">labelProvider</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/browser/file-dialog/file-dialog-service.ts#L48">packages/filesystem/src/browser/file-dialog/file-dialog-service.ts:48</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/browser/file-dialog/file-dialog-service.ts#L48">packages/filesystem/src/browser/file-dialog/file-dialog-service.ts:48</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="messageservice" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> message<wbr>Service</h3>
-					<div class="tsd-signature tsd-kind-icon">message<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="core.messageservice-1.html" class="tsd-signature-type">MessageService</a></div>
+					<div class="tsd-signature tsd-kind-icon">message<wbr>Service<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">MessageService</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts#L44">packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts#L44">packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts:44</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="openfiledialogfactory" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> open<wbr>File<wbr>Dialog<wbr>Factory</h3>
-					<div class="tsd-signature tsd-kind-icon">open<wbr>File<wbr>Dialog<wbr>Factory<span class="tsd-signature-symbol">:</span> <a href="../interfaces/filesystem.openfiledialogfactory-2.html" class="tsd-signature-type">OpenFileDialogFactory</a></div>
+					<div class="tsd-signature tsd-kind-icon">open<wbr>File<wbr>Dialog<wbr>Factory<span class="tsd-signature-symbol">:</span> <a href="../modules/filesystem.html#openfiledialogfactory-3" class="tsd-signature-type" data-tsd-kind="Variable">OpenFileDialogFactory</a></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="filesystem.defaultfiledialogservice-2.html">DefaultFileDialogService</a>.<a href="filesystem.defaultfiledialogservice-2.html#openfiledialogfactory">openFileDialogFactory</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/browser/file-dialog/file-dialog-service.ts#L47">packages/filesystem/src/browser/file-dialog/file-dialog-service.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/browser/file-dialog/file-dialog-service.ts#L47">packages/filesystem/src/browser/file-dialog/file-dialog-service.ts:47</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="savefiledialogfactory" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> save<wbr>File<wbr>Dialog<wbr>Factory</h3>
-					<div class="tsd-signature tsd-kind-icon">save<wbr>File<wbr>Dialog<wbr>Factory<span class="tsd-signature-symbol">:</span> <a href="../interfaces/filesystem.savefiledialogfactory-2.html" class="tsd-signature-type">SaveFileDialogFactory</a></div>
+					<div class="tsd-signature tsd-kind-icon">save<wbr>File<wbr>Dialog<wbr>Factory<span class="tsd-signature-symbol">:</span> <a href="../modules/filesystem.html#savefiledialogfactory-3" class="tsd-signature-type" data-tsd-kind="Variable">SaveFileDialogFactory</a></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="filesystem.defaultfiledialogservice-2.html">DefaultFileDialogService</a>.<a href="filesystem.defaultfiledialogservice-2.html#savefiledialogfactory">saveFileDialogFactory</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/browser/file-dialog/file-dialog-service.ts#L49">packages/filesystem/src/browser/file-dialog/file-dialog-service.ts:49</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/browser/file-dialog/file-dialog-service.ts#L49">packages/filesystem/src/browser/file-dialog/file-dialog-service.ts:49</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -191,19 +208,19 @@
 					<a name="canread" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> can<wbr>Read</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">can<wbr>Read<span class="tsd-signature-symbol">(</span>uris<span class="tsd-signature-symbol">: </span><a href="../modules/core.html#maybearray-1" class="tsd-signature-type">MaybeArray</a><span class="tsd-signature-symbol">&lt;</span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">can<wbr>Read<span class="tsd-signature-symbol">(</span>uris<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MaybeArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts#L94">packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts#L94">packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts:94</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>uris: <a href="../modules/core.html#maybearray-1" class="tsd-signature-type">MaybeArray</a><span class="tsd-signature-symbol">&lt;</span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>uris: <span class="tsd-signature-type">MaybeArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -214,19 +231,19 @@
 					<a name="canreadwrite" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> can<wbr>Read<wbr>Write</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">can<wbr>Read<wbr>Write<span class="tsd-signature-symbol">(</span>uris<span class="tsd-signature-symbol">: </span><a href="../modules/core.html#maybearray-1" class="tsd-signature-type">MaybeArray</a><span class="tsd-signature-symbol">&lt;</span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">can<wbr>Read<wbr>Write<span class="tsd-signature-symbol">(</span>uris<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MaybeArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts#L84">packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts#L84">packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts:84</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>uris: <a href="../modules/core.html#maybearray-1" class="tsd-signature-type">MaybeArray</a><span class="tsd-signature-symbol">&lt;</span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>uris: <span class="tsd-signature-type">MaybeArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -237,23 +254,23 @@
 					<a name="getrootnode" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Root<wbr>Node</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Root<wbr>Node<span class="tsd-signature-symbol">(</span>folderToOpen<span class="tsd-signature-symbol">?: </span><a href="../modules/filesystem.html#filestat" class="tsd-signature-type">FileStat</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/filesystem.html#dirnode" class="tsd-signature-type">DirNode</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Root<wbr>Node<span class="tsd-signature-symbol">(</span>folderToOpen<span class="tsd-signature-symbol">?: </span><a href="../interfaces/filesystem.filestat-3.html" class="tsd-signature-type" data-tsd-kind="Interface">FileStat</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../modules/filesystem.dirnode-2.html" class="tsd-signature-type" data-tsd-kind="Namespace">DirNode</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="filesystem.defaultfiledialogservice-2.html">DefaultFileDialogService</a>.<a href="filesystem.defaultfiledialogservice-2.html#getrootnode">getRootNode</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/browser/file-dialog/file-dialog-service.ts#L81">packages/filesystem/src/browser/file-dialog/file-dialog-service.ts:81</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/browser/file-dialog/file-dialog-service.ts#L81">packages/filesystem/src/browser/file-dialog/file-dialog-service.ts:81</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> folderToOpen: <a href="../modules/filesystem.html#filestat" class="tsd-signature-type">FileStat</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> folderToOpen: <a href="../interfaces/filesystem.filestat-3.html" class="tsd-signature-type" data-tsd-kind="Interface">FileStat</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/filesystem.html#dirnode" class="tsd-signature-type">DirNode</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../modules/filesystem.dirnode-2.html" class="tsd-signature-type" data-tsd-kind="Namespace">DirNode</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -261,46 +278,45 @@
 					<a name="showopendialog" class="tsd-anchor"></a>
 					<h3>show<wbr>Open<wbr>Dialog</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">show<wbr>Open<wbr>Dialog<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="filesystem.openfiledialogprops-2.html" class="tsd-signature-type">OpenFileDialogProps</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>canSelectMany<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> }</span>, folder<span class="tsd-signature-symbol">?: </span><a href="../modules/filesystem.html#filestat" class="tsd-signature-type">FileStat</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/core.html#maybearray-1" class="tsd-signature-type">MaybeArray</a><span class="tsd-signature-symbol">&lt;</span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">show<wbr>Open<wbr>Dialog<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="filesystem.openfiledialogprops-2.html" class="tsd-signature-type">OpenFileDialogProps</a>, folder<span class="tsd-signature-symbol">?: </span><a href="../modules/filesystem.html#filestat" class="tsd-signature-type">FileStat</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">show<wbr>Open<wbr>Dialog<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="filesystem.openfiledialogprops-2.html" class="tsd-signature-type" data-tsd-kind="Class">OpenFileDialogProps</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>canSelectMany<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> }</span>, folder<span class="tsd-signature-symbol">?: </span><a href="../interfaces/filesystem.filestat-3.html" class="tsd-signature-type" data-tsd-kind="Interface">FileStat</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">show<wbr>Open<wbr>Dialog<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="filesystem.openfiledialogprops-2.html" class="tsd-signature-type" data-tsd-kind="Class">OpenFileDialogProps</a>, folder<span class="tsd-signature-symbol">?: </span><a href="../interfaces/filesystem.filestat-3.html" class="tsd-signature-type" data-tsd-kind="Interface">FileStat</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides <a href="filesystem.defaultfiledialogservice-2.html">DefaultFileDialogService</a>.<a href="filesystem.defaultfiledialogservice-2.html#showopendialog">showOpenDialog</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts#L46">packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts#L46">packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts:46</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>props: <a href="filesystem.openfiledialogprops-2.html" class="tsd-signature-type">OpenFileDialogProps</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>canSelectMany<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> }</span></h5>
+									<h5>props: <a href="filesystem.openfiledialogprops-2.html" class="tsd-signature-type" data-tsd-kind="Class">OpenFileDialogProps</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>canSelectMany<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> }</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> folder: <a href="../modules/filesystem.html#filestat" class="tsd-signature-type">FileStat</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> folder: <a href="../interfaces/filesystem.filestat-3.html" class="tsd-signature-type" data-tsd-kind="Interface">FileStat</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/core.html#maybearray-1" class="tsd-signature-type">MaybeArray</a><span class="tsd-signature-symbol">&lt;</span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/filesystem.filedialogservice-2.html">FileDialogService</a>.<a href="../interfaces/filesystem.filedialogservice-2.html#showopendialog">showOpenDialog</a></p>
 								<p>Overrides <a href="filesystem.defaultfiledialogservice-2.html">DefaultFileDialogService</a>.<a href="filesystem.defaultfiledialogservice-2.html#showopendialog">showOpenDialog</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts#L47">packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts#L47">packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts:47</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>props: <a href="filesystem.openfiledialogprops-2.html" class="tsd-signature-type">OpenFileDialogProps</a></h5>
+									<h5>props: <a href="filesystem.openfiledialogprops-2.html" class="tsd-signature-type" data-tsd-kind="Class">OpenFileDialogProps</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> folder: <a href="../modules/filesystem.html#filestat" class="tsd-signature-type">FileStat</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> folder: <a href="../interfaces/filesystem.filestat-3.html" class="tsd-signature-type" data-tsd-kind="Interface">FileStat</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -308,27 +324,26 @@
 					<a name="showsavedialog" class="tsd-anchor"></a>
 					<h3>show<wbr>Save<wbr>Dialog</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">show<wbr>Save<wbr>Dialog<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="filesystem.savefiledialogprops-2.html" class="tsd-signature-type">SaveFileDialogProps</a>, folder<span class="tsd-signature-symbol">?: </span><a href="../modules/filesystem.html#filestat" class="tsd-signature-type">FileStat</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">show<wbr>Save<wbr>Dialog<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="filesystem.savefiledialogprops-2.html" class="tsd-signature-type" data-tsd-kind="Class">SaveFileDialogProps</a>, folder<span class="tsd-signature-symbol">?: </span><a href="../interfaces/filesystem.filestat-3.html" class="tsd-signature-type" data-tsd-kind="Interface">FileStat</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/filesystem.filedialogservice-2.html">FileDialogService</a>.<a href="../interfaces/filesystem.filedialogservice-2.html#showsavedialog">showSaveDialog</a></p>
 								<p>Overrides <a href="filesystem.defaultfiledialogservice-2.html">DefaultFileDialogService</a>.<a href="filesystem.defaultfiledialogservice-2.html#showsavedialog">showSaveDialog</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts#L64">packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts#L64">packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts:64</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>props: <a href="filesystem.savefiledialogprops-2.html" class="tsd-signature-type">SaveFileDialogProps</a></h5>
+									<h5>props: <a href="filesystem.savefiledialogprops-2.html" class="tsd-signature-type" data-tsd-kind="Class">SaveFileDialogProps</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> folder: <a href="../modules/filesystem.html#filestat" class="tsd-signature-type">FileStat</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> folder: <a href="../interfaces/filesystem.filestat-3.html" class="tsd-signature-type" data-tsd-kind="Interface">FileStat</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core.uri.html" class="tsd-signature-type">URI</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -336,28 +351,28 @@
 					<a name="todialogoptions" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> to<wbr>Dialog<wbr>Options</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Dialog<wbr>Options<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><a href="core.uri.html" class="tsd-signature-type">URI</a>, props<span class="tsd-signature-symbol">: </span><a href="filesystem.savefiledialogprops-2.html" class="tsd-signature-type">SaveFileDialogProps</a><span class="tsd-signature-symbol"> | </span><a href="filesystem.openfiledialogprops-2.html" class="tsd-signature-type">OpenFileDialogProps</a>, dialogTitle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/filesystem.electron.filedialogprops.html" class="tsd-signature-type">FileDialogProps</a></li>
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Dialog<wbr>Options<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default</span>, props<span class="tsd-signature-symbol">: </span><a href="filesystem.openfiledialogprops-2.html" class="tsd-signature-type" data-tsd-kind="Class">OpenFileDialogProps</a><span class="tsd-signature-symbol"> | </span><a href="filesystem.savefiledialogprops-2.html" class="tsd-signature-type" data-tsd-kind="Class">SaveFileDialogProps</a>, dialogTitle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/filesystem.electron.filedialogprops.html" class="tsd-signature-type" data-tsd-kind="Interface">FileDialogProps</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts#L104">packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts#L104">packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts:104</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>uri: <a href="core.uri.html" class="tsd-signature-type">URI</a></h5>
+									<h5>uri: <span class="tsd-signature-type">default</span></h5>
 								</li>
 								<li>
-									<h5>props: <a href="filesystem.savefiledialogprops-2.html" class="tsd-signature-type">SaveFileDialogProps</a><span class="tsd-signature-symbol"> | </span><a href="filesystem.openfiledialogprops-2.html" class="tsd-signature-type">OpenFileDialogProps</a></h5>
+									<h5>props: <a href="filesystem.openfiledialogprops-2.html" class="tsd-signature-type" data-tsd-kind="Class">OpenFileDialogProps</a><span class="tsd-signature-symbol"> | </span><a href="filesystem.savefiledialogprops-2.html" class="tsd-signature-type" data-tsd-kind="Class">SaveFileDialogProps</a></h5>
 								</li>
 								<li>
 									<h5>dialogTitle: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/filesystem.electron.filedialogprops.html" class="tsd-signature-type">FileDialogProps</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/filesystem.electron.filedialogprops.html" class="tsd-signature-type" data-tsd-kind="Interface">FileDialogProps</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -365,22 +380,22 @@
 					<a name="toopendialogoptions" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> to<wbr>Open<wbr>Dialog<wbr>Options</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Open<wbr>Dialog<wbr>Options<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><a href="core.uri.html" class="tsd-signature-type">URI</a>, props<span class="tsd-signature-symbol">: </span><a href="filesystem.openfiledialogprops-2.html" class="tsd-signature-type">OpenFileDialogProps</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OpenDialogOptions</span></li>
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Open<wbr>Dialog<wbr>Options<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default</span>, props<span class="tsd-signature-symbol">: </span><a href="filesystem.openfiledialogprops-2.html" class="tsd-signature-type" data-tsd-kind="Class">OpenFileDialogProps</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OpenDialogOptions</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts#L114">packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts:114</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts#L114">packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts:114</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>uri: <a href="core.uri.html" class="tsd-signature-type">URI</a></h5>
+									<h5>uri: <span class="tsd-signature-type">default</span></h5>
 								</li>
 								<li>
-									<h5>props: <a href="filesystem.openfiledialogprops-2.html" class="tsd-signature-type">OpenFileDialogProps</a></h5>
+									<h5>props: <a href="filesystem.openfiledialogprops-2.html" class="tsd-signature-type" data-tsd-kind="Class">OpenFileDialogProps</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">OpenDialogOptions</span></h4>
@@ -391,22 +406,22 @@
 					<a name="tosavedialogoptions" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> to<wbr>Save<wbr>Dialog<wbr>Options</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Save<wbr>Dialog<wbr>Options<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><a href="core.uri.html" class="tsd-signature-type">URI</a>, props<span class="tsd-signature-symbol">: </span><a href="filesystem.savefiledialogprops-2.html" class="tsd-signature-type">SaveFileDialogProps</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SaveDialogOptions</span></li>
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Save<wbr>Dialog<wbr>Options<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default</span>, props<span class="tsd-signature-symbol">: </span><a href="filesystem.savefiledialogprops-2.html" class="tsd-signature-type" data-tsd-kind="Class">SaveFileDialogProps</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SaveDialogOptions</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts#L120">packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts:120</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts#L120">packages/filesystem/src/electron-browser/file-dialog/electron-file-dialog-service.ts:120</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>uri: <a href="core.uri.html" class="tsd-signature-type">URI</a></h5>
+									<h5>uri: <span class="tsd-signature-type">default</span></h5>
 								</li>
 								<li>
-									<h5>props: <a href="filesystem.savefiledialogprops-2.html" class="tsd-signature-type">SaveFileDialogProps</a></h5>
+									<h5>props: <a href="filesystem.savefiledialogprops-2.html" class="tsd-signature-type" data-tsd-kind="Class">SaveFileDialogProps</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">SaveDialogOptions</span></h4>
@@ -418,8 +433,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/filesystem.html">filesystem</a>
@@ -428,7 +443,13 @@
 								<a href="../modules/filesystem.basestat.html">Base<wbr>Stat</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.delegatingfilesystemprovider.html">Delegating<wbr>File<wbr>System<wbr>Provider</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/filesystem.dirnode-2.html">Dir<wbr>Node</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.diskfilesystemprovider.html">Disk<wbr>File<wbr>System<wbr>Provider</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/filesystem.fileaccess-1.html">File<wbr>Access</a>
@@ -444,6 +465,12 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/filesystem.filedownloaddata.html">File<wbr>Download<wbr>Data</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.filedownloadhandler.html">File<wbr>Download<wbr>Handler</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.filedownloadservice.html">File<wbr>Download<wbr>Service</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/filesystem.filemoveevent-1.html">File<wbr>Move<wbr>Event</a>
@@ -479,7 +506,22 @@
 								<a href="../modules/filesystem.filesystemutils-1.html">File<wbr>System<wbr>Utils</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.fileuploadservice.html">File<wbr>Upload<wbr>Service</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.filepathbreadcrumb.html">Filepath<wbr>Breadcrumb</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.locationlistrenderer-2.html">Location<wbr>List<wbr>Renderer</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/filesystem.electron.html">electron</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.export_.html">export&#61;</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.export_-1.html">export&#61;</a>
 							</li>
 						</ul>
 					</li>
@@ -492,6 +534,9 @@
 					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="filesystem.electronfiledialogservice.html" class="tsd-kind-icon">Electron<wbr>File<wbr>Dialog<wbr>Service</a>
 						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+								<a href="filesystem.electronfiledialogservice.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="filesystem.electronfiledialogservice.html#environments" class="tsd-kind-icon">environments</a>
 							</li>
@@ -549,7 +594,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
@@ -571,6 +615,9 @@
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
 			</ul>
 		</div>
 	</div>

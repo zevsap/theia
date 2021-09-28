@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -38,8 +39,6 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">Theia TypeDoc</a>
 				</li>
 				<li>
 					<a href="../modules/filesystem.html">filesystem</a>
@@ -71,13 +70,13 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="../modules/core.applicationerror-1.html#error" class="tsd-signature-type">Error</a>
+						<span class="tsd-signature-type">Error</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">FileOperationError</span>
 								<ul class="tsd-hierarchy">
 									<li>
-										<a href="filesystem.textfileoperationerror.html" class="tsd-signature-type">TextFileOperationError</a>
+										<a href="filesystem.textfileoperationerror.html" class="tsd-signature-type" data-tsd-kind="Class">TextFileOperationError</a>
 									</li>
 								</ul>
 							</li>
@@ -92,18 +91,14 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="filesystem.fileoperationerror.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="filesystem.fileoperationerror.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="filesystem.fileoperationerror.html#fileoperationresult" class="tsd-kind-icon">file<wbr>Operation<wbr>Result</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="filesystem.fileoperationerror.html#message" class="tsd-kind-icon">message</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="filesystem.fileoperationerror.html#name" class="tsd-kind-icon">name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="filesystem.fileoperationerror.html#options" class="tsd-kind-icon">options</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="filesystem.fileoperationerror.html#stack" class="tsd-kind-icon">stack</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="filesystem.fileoperationerror.html#error" class="tsd-kind-icon">Error</a></li>
 							</ul>
 						</section>
 					</div>
@@ -111,17 +106,18 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>File<wbr>Operation<wbr>Error<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, fileOperationResult<span class="tsd-signature-symbol">: </span><a href="../enums/filesystem.fileoperationresult.html" class="tsd-signature-type">FileOperationResult</a>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/filesystem.readfileoptions.html" class="tsd-signature-type">ReadFileOptions</a><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/filesystem.writefileoptions.html" class="tsd-signature-type">WriteFileOptions</a><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/filesystem.createfileoptions.html" class="tsd-signature-type">CreateFileOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="filesystem.fileoperationerror.html" class="tsd-signature-type">FileOperationError</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>File<wbr>Operation<wbr>Error<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, fileOperationResult<span class="tsd-signature-symbol">: </span><a href="../enums/filesystem.fileoperationresult.html" class="tsd-signature-type" data-tsd-kind="Enumeration">FileOperationResult</a>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/filesystem.readfileoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ReadFileOptions</a><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/filesystem.writefileoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">WriteFileOptions</a><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/filesystem.createfileoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">CreateFileOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="filesystem.fileoperationerror.html" class="tsd-signature-type" data-tsd-kind="Class">FileOperationError</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides Error.constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/common/files.ts#L405">packages/filesystem/src/common/files.ts:405</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/24d98b8ec6e/packages/filesystem/src/common/files.ts#L405">packages/filesystem/src/common/files.ts:405</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -130,13 +126,13 @@
 									<h5>message: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>fileOperationResult: <a href="../enums/filesystem.fileoperationresult.html" class="tsd-signature-type">FileOperationResult</a></h5>
+									<h5>fileOperationResult: <a href="../enums/filesystem.fileoperationresult.html" class="tsd-signature-type" data-tsd-kind="Enumeration">FileOperationResult</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/filesystem.readfileoptions.html" class="tsd-signature-type">ReadFileOptions</a><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/filesystem.writefileoptions.html" class="tsd-signature-type">WriteFileOptions</a><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/filesystem.createfileoptions.html" class="tsd-signature-type">CreateFileOptions</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/filesystem.readfileoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ReadFileOptions</a><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/filesystem.writefileoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">WriteFileOptions</a><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/filesystem.createfileoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">CreateFileOptions</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="filesystem.fileoperationerror.html" class="tsd-signature-type">FileOperationError</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="filesystem.fileoperationerror.html" class="tsd-signature-type" data-tsd-kind="Class">FileOperationError</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -146,65 +142,15 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="fileoperationresult" class="tsd-anchor"></a>
 					<h3>file<wbr>Operation<wbr>Result</h3>
-					<div class="tsd-signature tsd-kind-icon">file<wbr>Operation<wbr>Result<span class="tsd-signature-symbol">:</span> <a href="../enums/filesystem.fileoperationresult.html" class="tsd-signature-type">FileOperationResult</a></div>
+					<div class="tsd-signature tsd-kind-icon">file<wbr>Operation<wbr>Result<span class="tsd-signature-symbol">:</span> <a href="../enums/filesystem.fileoperationresult.html" class="tsd-signature-type" data-tsd-kind="Enumeration">FileOperationResult</a></div>
 					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/common/files.ts#L406">packages/filesystem/src/common/files.ts:406</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-					<a name="message" class="tsd-anchor"></a>
-					<h3>message</h3>
-					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="../modules/core.applicationerror-1.html">ApplicationError</a>.<a href="../modules/core.applicationerror-1.html#message">message</a></p>
-						<ul>
-							<li>Defined in node_modules/typescript/lib/lib.es5.d.ts:974</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-					<a name="name" class="tsd-anchor"></a>
-					<h3>name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="../modules/core.applicationerror-1.html">ApplicationError</a>.<a href="../modules/core.applicationerror-1.html#name">name</a></p>
-						<ul>
-							<li>Defined in node_modules/typescript/lib/lib.es5.d.ts:973</li>
-						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="options" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> options</h3>
-					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <a href="../interfaces/filesystem.readfileoptions.html" class="tsd-signature-type">ReadFileOptions</a><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/filesystem.writefileoptions.html" class="tsd-signature-type">WriteFileOptions</a><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/filesystem.createfileoptions.html" class="tsd-signature-type">CreateFileOptions</a></div>
+					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <a href="../interfaces/filesystem.readfileoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ReadFileOptions</a><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/filesystem.writefileoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">WriteFileOptions</a><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/filesystem.createfileoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">CreateFileOptions</a></div>
 					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/a73a746bfde/packages/filesystem/src/common/files.ts#L406">packages/filesystem/src/common/files.ts:406</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-					<a name="stack" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> stack</h3>
-					<div class="tsd-signature tsd-kind-icon">stack<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="../modules/core.applicationerror-1.html">ApplicationError</a>.<a href="../modules/core.applicationerror-1.html#stack">stack</a></p>
-						<p>Overrides <a href="../modules/core.applicationerror-1.html">ApplicationError</a>.<a href="../modules/core.applicationerror-1.html#stack">stack</a></p>
-						<ul>
-							<li>Defined in node_modules/typescript/lib/lib.es5.d.ts:975</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a name="error" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> Error</h3>
-					<div class="tsd-signature tsd-kind-icon">Error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ErrorConstructor</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in node_modules/typescript/lib/lib.es5.d.ts:984</li>
-						</ul>
 					</aside>
 				</section>
 			</section>
@@ -212,8 +158,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/filesystem.html">filesystem</a>
@@ -222,7 +168,13 @@
 								<a href="../modules/filesystem.basestat.html">Base<wbr>Stat</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.delegatingfilesystemprovider.html">Delegating<wbr>File<wbr>System<wbr>Provider</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/filesystem.dirnode-2.html">Dir<wbr>Node</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.diskfilesystemprovider.html">Disk<wbr>File<wbr>System<wbr>Provider</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/filesystem.fileaccess-1.html">File<wbr>Access</a>
@@ -238,6 +190,12 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/filesystem.filedownloaddata.html">File<wbr>Download<wbr>Data</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.filedownloadhandler.html">File<wbr>Download<wbr>Handler</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.filedownloadservice.html">File<wbr>Download<wbr>Service</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/filesystem.filemoveevent-1.html">File<wbr>Move<wbr>Event</a>
@@ -273,7 +231,22 @@
 								<a href="../modules/filesystem.filesystemutils-1.html">File<wbr>System<wbr>Utils</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.fileuploadservice.html">File<wbr>Upload<wbr>Service</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.filepathbreadcrumb.html">Filepath<wbr>Breadcrumb</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.locationlistrenderer-2.html">Location<wbr>List<wbr>Renderer</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/filesystem.electron.html">electron</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.export_.html">export&#61;</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/filesystem.export_-1.html">export&#61;</a>
 							</li>
 						</ul>
 					</li>
@@ -286,26 +259,14 @@
 					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="filesystem.fileoperationerror.html" class="tsd-kind-icon">File<wbr>Operation<wbr>Error</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 								<a href="filesystem.fileoperationerror.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="filesystem.fileoperationerror.html#fileoperationresult" class="tsd-kind-icon">file<wbr>Operation<wbr>Result</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="filesystem.fileoperationerror.html#message" class="tsd-kind-icon">message</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="filesystem.fileoperationerror.html#name" class="tsd-kind-icon">name</a>
-							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="filesystem.fileoperationerror.html#options" class="tsd-kind-icon">options</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="filesystem.fileoperationerror.html#stack" class="tsd-kind-icon">stack</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-								<a href="filesystem.fileoperationerror.html#error" class="tsd-kind-icon">Error</a>
 							</li>
 						</ul>
 					</li>
@@ -322,7 +283,6 @@
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
 				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
@@ -341,12 +301,6 @@
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
 			</ul>
 		</div>
 	</div>
