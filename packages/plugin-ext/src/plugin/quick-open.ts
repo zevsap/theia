@@ -414,7 +414,7 @@ export class QuickInputExt implements QuickInput {
     }
 
     private dispatchUpdate(): void {
-        this.quickOpenMain.$createOrUpdate(this._pendingUpdate);
+        this.quickOpenMain.$createOrUpdate({ id: 3 });
         this._pendingUpdate = { id: this._id };
     }
 
