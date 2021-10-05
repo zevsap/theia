@@ -395,6 +395,8 @@ export class QuickInputExt implements QuickInput {
         }
         for (const key of Object.keys(properties)) {
             const value = properties[key];
+            console.log('>>>>>>>>key:' + key);
+            console.log('>>>>>>>>value:' + value);
             this._pendingUpdate[key] = value === undefined ? null : value;
         }
 
@@ -414,7 +416,7 @@ export class QuickInputExt implements QuickInput {
     }
 
     private dispatchUpdate(): void {
-        this.quickOpenMain.$createOrUpdate({ id: 3 });
+        this.quickOpenMain.$createOrUpdate(this._pendingUpdate);
         this._pendingUpdate = { id: this._id };
     }
 
