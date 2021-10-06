@@ -14,7 +14,7 @@
  * SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
  ********************************************************************************/
 
-import { DataCallback, Emitter, Event, PartialMessageInfo } from '@theia/core/shared/vscode-ws-jsonrpc';
+import { DataCallback, Disposable, Emitter, Event, PartialMessageInfo } from '@theia/core/shared/@codingame/monaco-jsonrpc';
 
 export abstract class AbstractMessageReader {
     protected errorEmitter = new Emitter<Error>();
@@ -65,7 +65,7 @@ export class PluginMessageReader extends AbstractMessageReader {
         super();
     }
 
-    listen(callback: DataCallback): void {
+    listen(callback: DataCallback): Disposable {
         if (this.state === 'initial') {
             this.state = 'listening';
             this.callback = callback;
@@ -79,7 +79,9 @@ export class PluginMessageReader extends AbstractMessageReader {
                     this.fireClose();
                 }
             }
+            return { dispose: () => this.callback = undefined };
         }
+        return { dispose: () => { } };
     }
 
     readMessage(message: string): void {

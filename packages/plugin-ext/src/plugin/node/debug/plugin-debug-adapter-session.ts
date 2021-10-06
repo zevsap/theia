@@ -16,7 +16,7 @@
 
 import { DebugAdapterSessionImpl } from '@theia/debug/lib/node/debug-adapter-session';
 import * as theia from '@theia/plugin';
-import { IWebSocket } from '@theia/core/shared/vscode-ws-jsonrpc';
+import { IWebSocket } from '@theia/core/shared/@codingame/monaco-jsonrpc';
 import { CommunicationProvider, DebugAdapterSession } from '@theia/debug/lib/node/debug-model';
 
 /* eslint-disable @typescript-eslint/no-explicit-any */

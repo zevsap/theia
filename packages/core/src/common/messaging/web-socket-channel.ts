@@ -16,7 +16,7 @@
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import { IWebSocket } from 'vscode-ws-jsonrpc/lib/socket/socket';
+import { IWebSocket } from '@codingame/monaco-jsonrpc/lib/socket/socket';
 import { Disposable, DisposableCollection } from '../disposable';
 import { Emitter } from '../event';
 

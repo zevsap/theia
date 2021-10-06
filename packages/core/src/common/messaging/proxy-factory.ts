@@ -16,7 +16,7 @@
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import { MessageConnection, ResponseError } from 'vscode-ws-jsonrpc';
+import { MessageConnection, ResponseError } from '@codingame/monaco-jsonrpc';
 import { ApplicationError } from '../application-error';
 import { Event, Emitter } from '../event';
 import { Disposable } from '../disposable';
@@ -132,8 +132,14 @@ export class JsonRpcProxyFactory<T extends object> implements ProxyHandler<T> {
      * response.
      */
     listen(connection: MessageConnection): void {
-        connection.onRequest((prop, ...args) => this.onRequest(prop, ...args));
-        connection.onNotification((prop, ...args) => this.onNotification(prop, ...args));
+        connection.onRequest((prop, args, token) => {
+            const argsArray = Array.isArray(args) ? [...args, token] : [args, token];
+            return this.onRequest(prop, ...argsArray);
+        });
+        connection.onNotification((prop, args) => {
+            const argsArray = Array.isArray(args) ? args : [args];
+            return this.onNotification(prop, ...argsArray);
+        });
         connection.onDispose(() => this.waitForConnection());
         connection.listen();
         this.connectionPromiseResolve(connection);
@@ -236,7 +242,7 @@ export class JsonRpcProxyFactory<T extends object> implements ProxyHandler<T> {
             const method = p.toString();
             const capturedError = new Error(`Request '${method}' failed`);
             return this.connectionPromise.then(connection =>
-                new Promise((resolve, reject) => {
+                new Promise<void>((resolve, reject) => {
                     try {
                         if (isNotify) {
                             connection.sendNotification(method, ...args);

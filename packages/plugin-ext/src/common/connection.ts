@@ -16,7 +16,7 @@
 import { Disposable } from './disposable-util';
 import { PluginMessageReader } from './plugin-message-reader';
 import { PluginMessageWriter } from './plugin-message-writer';
-import { IWebSocket, MessageReader, MessageWriter, Message } from '@theia/core/shared/vscode-ws-jsonrpc';
+import { MessageReader, MessageWriter, Message, IWebSocket } from '@theia/core/shared/@codingame/monaco-jsonrpc';
 
 /**
  * The interface for describing the connection between plugins and main side.
@@ -58,7 +58,7 @@ export class PluginWebSocketChannel implements IWebSocket {
     constructor(protected readonly connection: PluginConnection) { }
 
     send(content: string): void {
-        this.connection.writer.write(content);
+        this.connection.writer.write({ jsonrpc: content });
     }
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any

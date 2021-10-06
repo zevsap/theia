@@ -16,8 +16,8 @@
 
 import 'reflect-metadata';
 import { dynamicRequire } from '../dynamic-require';
-import { ConsoleLogger } from 'vscode-ws-jsonrpc/lib/logger';
-import { createMessageConnection, IPCMessageReader, IPCMessageWriter, Trace } from 'vscode-ws-jsonrpc';
+import { ConsoleLogger, createMessageConnection, Trace } from '@codingame/monaco-jsonrpc';
+import { IPCMessageReader, IPCMessageWriter } from 'vscode-jsonrpc/node';
 import { checkParentAlive, IPCEntryPoint } from './ipc-protocol';
 
 checkParentAlive();

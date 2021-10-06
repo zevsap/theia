@@ -26,7 +26,7 @@ import { DebugSessionOptions } from './debug-session-options';
 import { OutputChannelManager, OutputChannel } from '@theia/output/lib/browser/output-channel';
 import { DebugPreferences } from './debug-preferences';
 import { DebugSessionConnection } from './debug-session-connection';
-import { IWebSocket } from '@theia/core/shared/vscode-ws-jsonrpc';
+import { IWebSocket } from '@theia/core/shared/@codingame/monaco-jsonrpc';
 import { DebugAdapterPath } from '../common/debug-service';
 import { ContributionProvider } from '@theia/core/lib/common/contribution-provider';
 import { FileService } from '@theia/filesystem/lib/browser/file-service';

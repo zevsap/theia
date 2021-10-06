@@ -14,7 +14,7 @@
  * SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
  ********************************************************************************/
 
-import { Message, MessageWriter, Emitter, Event } from '@theia/core/shared/vscode-ws-jsonrpc';
+import { Message, MessageWriter, Emitter, Event } from '@theia/core/shared/@codingame/monaco-jsonrpc';
 import { ConnectionMain, ConnectionExt } from './plugin-api-rpc';
 
 export abstract class AbstractMessageWriter {
@@ -56,10 +56,15 @@ export class PluginMessageWriter extends AbstractMessageWriter implements Messag
         super();
     }
 
-    write(message: string): void;
-    write(message: Message): void;
-    write(arg: string | Message): void {
-        const content = JSON.stringify(arg);
-        this.proxy.$sendMessage(this.id, content);
+    write(message: Message): Promise<void> {
+        const content = JSON.stringify(message);
+        try {
+            this.proxy.$sendMessage(this.id, content);
+            return Promise.resolve();
+        } catch (e) {
+            return Promise.reject(e);
+        }
     }
+
+    end(): void { }
 }

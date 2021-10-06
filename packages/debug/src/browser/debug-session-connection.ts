@@ -20,7 +20,7 @@ import { DebugProtocol } from 'vscode-debugprotocol';
 import { Deferred } from '@theia/core/lib/common/promise-util';
 import { Event, Emitter, DisposableCollection, Disposable, MaybePromise } from '@theia/core';
 import { OutputChannel } from '@theia/output/lib/browser/output-channel';
-import { IWebSocket } from '@theia/core/shared/vscode-ws-jsonrpc';
+import { IWebSocket } from '@theia/core/shared/@codingame/monaco-jsonrpc';
 
 export interface DebugExitEvent {
     code?: number

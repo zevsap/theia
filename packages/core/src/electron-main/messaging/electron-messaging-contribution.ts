@@ -16,8 +16,7 @@
 
 import { IpcMainEvent, ipcMain, WebContents } from '../../../shared/electron';
 import { inject, injectable, named, postConstruct } from 'inversify';
-import { MessageConnection } from 'vscode-ws-jsonrpc';
-import { createWebSocketConnection } from 'vscode-ws-jsonrpc/lib/socket/connection';
+import { createWebSocketConnection, MessageConnection } from '@codingame/monaco-jsonrpc';
 import { ContributionProvider } from '../../common/contribution-provider';
 import { WebSocketChannel } from '../../common/messaging/web-socket-channel';
 import { MessagingContribution } from '../../node/messaging/messaging-contribution';
