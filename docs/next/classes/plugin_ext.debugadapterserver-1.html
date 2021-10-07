@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DebugAdapterExecutable | Theia TypeDoc</title>
+	<title>DebugAdapterServer | Theia TypeDoc</title>
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,21 +56,28 @@
 					<a href="../modules/plugin_ext.html">plugin-ext</a>
 				</li>
 				<li>
-					<a href="plugin_ext.debugadapterexecutable.html">DebugAdapterExecutable</a>
+					<a href="plugin_ext.debugadapterserver-1.html">DebugAdapterServer</a>
 				</li>
 			</ul>
-			<h1>Class DebugAdapterExecutable</h1>
+			<h1>Class DebugAdapterServer</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Represents a debug adapter running as a socket based server.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">DebugAdapterExecutable</span>
+						<span class="target">DebugAdapterServer</span>
 					</li>
 				</ul>
 			</section>
@@ -81,15 +88,14 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="plugin_ext.debugadapterexecutable.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="plugin_ext.debugadapterserver-1.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.debugadapterexecutable.html#args" class="tsd-kind-icon">args</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.debugadapterexecutable.html#command" class="tsd-kind-icon">command</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.debugadapterexecutable.html#options" class="tsd-kind-icon">options</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.debugadapterserver-1.html#host" class="tsd-kind-icon">host</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="plugin_ext.debugadapterserver-1.html#port" class="tsd-kind-icon">port</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,42 +107,30 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Debug<wbr>Adapter<wbr>Executable<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, args<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">DebugAdapterExecutableOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.debugadapterexecutable.html" class="tsd-signature-type" data-tsd-kind="Class">DebugAdapterExecutable</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Debug<wbr>Adapter<wbr>Server<span class="tsd-signature-symbol">(</span>port<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, host<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.debugadapterserver-1.html" class="tsd-signature-type" data-tsd-kind="Class">DebugAdapterServer</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/616c34e1c44/packages/plugin-ext/src/plugin/types-impl.ts#L2107">packages/plugin-ext/src/plugin/types-impl.ts:2107</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8c6875851fc/packages/plugin-ext/src/plugin/types-impl.ts#L2143">packages/plugin-ext/src/plugin/types-impl.ts:2143</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Creates a description for a debug adapter based on an executable program.</p>
+									<p>Create a description for a debug adapter running as a socket based server.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>command: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The command or executable path that implements the debug adapter.</p>
-									</div>
+									<h5>port: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> args: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Optional arguments to be passed to the command or executable.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">DebugAdapterExecutableOptions</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Optional options to be used when starting the command or executable.</p>
-									</div>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> host: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.debugadapterexecutable.html" class="tsd-signature-type" data-tsd-kind="Class">DebugAdapterExecutable</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.debugadapterserver-1.html" class="tsd-signature-type" data-tsd-kind="Class">DebugAdapterServer</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -144,50 +138,32 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="args" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> args</h3>
-					<div class="tsd-signature tsd-kind-icon">args<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<a name="host" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> host</h3>
+					<div class="tsd-signature tsd-kind-icon">host<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/616c34e1c44/packages/plugin-ext/src/plugin/types-impl.ts#L2101">packages/plugin-ext/src/plugin/types-impl.ts:2101</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8c6875851fc/packages/plugin-ext/src/plugin/types-impl.ts#L2143">packages/plugin-ext/src/plugin/types-impl.ts:2143</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The arguments passed to the debug adapter executable. Defaults to an empty array.</p>
+							<p>The host.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="command" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> command</h3>
-					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="port" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> port</h3>
+					<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/616c34e1c44/packages/plugin-ext/src/plugin/types-impl.ts#L2096">packages/plugin-ext/src/plugin/types-impl.ts:2096</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/8c6875851fc/packages/plugin-ext/src/plugin/types-impl.ts#L2138">packages/plugin-ext/src/plugin/types-impl.ts:2138</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The command or path of the debug adapter executable.
-								A command must be either an absolute path of an executable or the name of an command to be looked up via the PATH environment variable.
-							The special value &#39;node&#39; will be mapped to VS Code&#39;s built-in Node.js runtime.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="options" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> options</h3>
-					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DebugAdapterExecutableOptions</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/616c34e1c44/packages/plugin-ext/src/plugin/types-impl.ts#L2107">packages/plugin-ext/src/plugin/types-impl.ts:2107</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Optional options to be used when the debug adapter is started.
-							Defaults to undefined.</p>
+							<p>The port.</p>
 						</div>
 					</div>
 				</section>
@@ -219,6 +195,18 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.customeditorwidget.html">Custom<wbr>Editor<wbr>Widget</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.debugadapterexecutable.html">Debug<wbr>Adapter<wbr>Executable</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.debugadapterinlineimplementation.html">Debug<wbr>Adapter<wbr>Inline<wbr>Implementation</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.debugadapternamedpipeserver.html">Debug<wbr>Adapter<wbr>Named<wbr>Pipe<wbr>Server</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/plugin_ext.debugadapterserver.html">Debug<wbr>Adapter<wbr>Server</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/plugin_ext.decorationrangebehavior.html">Decoration<wbr>Range<wbr>Behavior</a>
@@ -325,19 +313,16 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-module">
-						<a href="plugin_ext.debugadapterexecutable.html" class="tsd-kind-icon">Debug<wbr>Adapter<wbr>Executable</a>
+						<a href="plugin_ext.debugadapterserver-1.html" class="tsd-kind-icon">Debug<wbr>Adapter<wbr>Server</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="plugin_ext.debugadapterexecutable.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="plugin_ext.debugadapterserver-1.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="plugin_ext.debugadapterexecutable.html#args" class="tsd-kind-icon">args</a>
+								<a href="plugin_ext.debugadapterserver-1.html#host" class="tsd-kind-icon">host</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="plugin_ext.debugadapterexecutable.html#command" class="tsd-kind-icon">command</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="plugin_ext.debugadapterexecutable.html#options" class="tsd-kind-icon">options</a>
+								<a href="plugin_ext.debugadapterserver-1.html#port" class="tsd-kind-icon">port</a>
 							</li>
 						</ul>
 					</li>
