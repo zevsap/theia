@@ -70,7 +70,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="core.contextmenurenderer-1.html" class="tsd-signature-type" data-tsd-kind="Class">ContextMenuRenderer</a>
+						<a href="core.browsercontextmenurenderer.html" class="tsd-signature-type" data-tsd-kind="Class">BrowserContextMenuRenderer</a>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">ElectronContextMenuRenderer</span>
@@ -94,7 +94,9 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="core.electroncontextmenurenderer.html#_current" class="tsd-kind-icon">_current</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="core.electroncontextmenurenderer.html#context" class="tsd-kind-icon">context</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="core.electroncontextmenurenderer.html#preferenceservice" class="tsd-kind-icon">preference<wbr>Service</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="core.electroncontextmenurenderer.html#todisposeonsetcurrent" class="tsd-kind-icon">to<wbr>Dispose<wbr>OnSet<wbr>Current</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="core.electroncontextmenurenderer.html#usenativestyle" class="tsd-kind-icon">use<wbr>Native<wbr>Style</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -107,6 +109,7 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="core.electroncontextmenurenderer.html#dorender" class="tsd-kind-icon">do<wbr>Render</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="core.electroncontextmenurenderer.html#init" class="tsd-kind-icon">init</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="core.electroncontextmenurenderer.html#render" class="tsd-kind-icon">render</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="core.electroncontextmenurenderer.html#setcurrent" class="tsd-kind-icon">set<wbr>Current</a></li>
 							</ul>
@@ -120,20 +123,20 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Electron<wbr>Context<wbr>Menu<wbr>Renderer<span class="tsd-signature-symbol">(</span>menuFactory<span class="tsd-signature-symbol">: </span><a href="core.electronmainmenufactory.html" class="tsd-signature-type" data-tsd-kind="Class">ElectronMainMenuFactory</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.electroncontextmenurenderer.html" class="tsd-signature-type" data-tsd-kind="Class">ElectronContextMenuRenderer</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Electron<wbr>Context<wbr>Menu<wbr>Renderer<span class="tsd-signature-symbol">(</span>electronMenuFactory<span class="tsd-signature-symbol">: </span><a href="core.electronmainmenufactory.html" class="tsd-signature-type" data-tsd-kind="Class">ElectronMainMenuFactory</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.electroncontextmenurenderer.html" class="tsd-signature-type" data-tsd-kind="Class">ElectronContextMenuRenderer</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="core.contextmenurenderer-1.html">ContextMenuRenderer</a>.<a href="core.contextmenurenderer-1.html#constructor">constructor</a></p>
+								<p>Overrides <a href="core.browsercontextmenurenderer.html">BrowserContextMenuRenderer</a>.<a href="core.browsercontextmenurenderer.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/72399573b0e/packages/core/src/electron-browser/menu/electron-context-menu-renderer.ts#L79">packages/core/src/electron-browser/menu/electron-context-menu-renderer.ts:79</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/1bcdf4b0664/packages/core/src/electron-browser/menu/electron-context-menu-renderer.ts#L88">packages/core/src/electron-browser/menu/electron-context-menu-renderer.ts:88</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>menuFactory: <a href="core.electronmainmenufactory.html" class="tsd-signature-type" data-tsd-kind="Class">ElectronMainMenuFactory</a></h5>
+									<h5>electronMenuFactory: <a href="core.electronmainmenufactory.html" class="tsd-signature-type" data-tsd-kind="Class">ElectronMainMenuFactory</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="core.electroncontextmenurenderer.html" class="tsd-signature-type" data-tsd-kind="Class">ElectronContextMenuRenderer</a></h4>
@@ -148,9 +151,9 @@
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _current</h3>
 					<div class="tsd-signature tsd-kind-icon">_current<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="core.contextmenuaccess-1.html" class="tsd-signature-type" data-tsd-kind="Class">ContextMenuAccess</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.contextmenurenderer-1.html">ContextMenuRenderer</a>.<a href="core.contextmenurenderer-1.html#_current">_current</a></p>
+						<p>Inherited from <a href="core.browsercontextmenurenderer.html">BrowserContextMenuRenderer</a>.<a href="core.browsercontextmenurenderer.html#_current">_current</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/72399573b0e/packages/core/src/browser/context-menu-renderer.ts#L59">packages/core/src/browser/context-menu-renderer.ts:59</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/1bcdf4b0664/packages/core/src/browser/context-menu-renderer.ts#L59">packages/core/src/browser/context-menu-renderer.ts:59</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -160,7 +163,17 @@
 					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <a href="core.contextmenucontext.html" class="tsd-signature-type" data-tsd-kind="Class">ContextMenuContext</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/72399573b0e/packages/core/src/electron-browser/menu/electron-context-menu-renderer.ts#L79">packages/core/src/electron-browser/menu/electron-context-menu-renderer.ts:79</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/1bcdf4b0664/packages/core/src/electron-browser/menu/electron-context-menu-renderer.ts#L83">packages/core/src/electron-browser/menu/electron-context-menu-renderer.ts:83</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="preferenceservice" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> preference<wbr>Service</h3>
+					<div class="tsd-signature tsd-kind-icon">preference<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="../modules/core.html#preferenceservice-3" class="tsd-signature-type" data-tsd-kind="Variable">PreferenceService</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/1bcdf4b0664/packages/core/src/electron-browser/menu/electron-context-menu-renderer.ts#L86">packages/core/src/electron-browser/menu/electron-context-menu-renderer.ts:86</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -169,9 +182,19 @@
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> to<wbr>Dispose<wbr>OnSet<wbr>Current</h3>
 					<div class="tsd-signature tsd-kind-icon">to<wbr>Dispose<wbr>OnSet<wbr>Current<span class="tsd-signature-symbol">:</span> <a href="core.disposablecollection-1.html" class="tsd-signature-type" data-tsd-kind="Class">DisposableCollection</a><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="core.contextmenurenderer-1.html">ContextMenuRenderer</a>.<a href="core.contextmenurenderer-1.html#todisposeonsetcurrent">toDisposeOnSetCurrent</a></p>
+						<p>Inherited from <a href="core.browsercontextmenurenderer.html">BrowserContextMenuRenderer</a>.<a href="core.browsercontextmenurenderer.html#todisposeonsetcurrent">toDisposeOnSetCurrent</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/72399573b0e/packages/core/src/browser/context-menu-renderer.ts#L60">packages/core/src/browser/context-menu-renderer.ts:60</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/1bcdf4b0664/packages/core/src/browser/context-menu-renderer.ts#L60">packages/core/src/browser/context-menu-renderer.ts:60</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="usenativestyle" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> use<wbr>Native<wbr>Style</h3>
+					<div class="tsd-signature tsd-kind-icon">use<wbr>Native<wbr>Style<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/1bcdf4b0664/packages/core/src/electron-browser/menu/electron-context-menu-renderer.ts#L88">packages/core/src/electron-browser/menu/electron-context-menu-renderer.ts:88</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -188,7 +211,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/72399573b0e/packages/core/src/browser/context-menu-renderer.ts#L65">packages/core/src/browser/context-menu-renderer.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/1bcdf4b0664/packages/core/src/browser/context-menu-renderer.ts#L65">packages/core/src/browser/context-menu-renderer.ts:65</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -208,23 +231,40 @@
 					<a name="dorender" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> do<wbr>Render</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">do<wbr>Render<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.rendercontextmenuoptions-2.html" class="tsd-signature-type" data-tsd-kind="Interface">RenderContextMenuOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.electroncontextmenuaccess.html" class="tsd-signature-type" data-tsd-kind="Class">ElectronContextMenuAccess</a></li>
+						<li class="tsd-signature tsd-kind-icon">do<wbr>Render<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.rendercontextmenuoptions-2.html" class="tsd-signature-type" data-tsd-kind="Interface">RenderContextMenuOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.contextmenuaccess-1.html" class="tsd-signature-type" data-tsd-kind="Class">ContextMenuAccess</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="core.contextmenurenderer-1.html">ContextMenuRenderer</a>.<a href="core.contextmenurenderer-1.html#dorender">doRender</a></p>
+								<p>Overrides <a href="core.browsercontextmenurenderer.html">BrowserContextMenuRenderer</a>.<a href="core.browsercontextmenurenderer.html#dorender">doRender</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/72399573b0e/packages/core/src/electron-browser/menu/electron-context-menu-renderer.ts#L85">packages/core/src/electron-browser/menu/electron-context-menu-renderer.ts:85</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/1bcdf4b0664/packages/core/src/electron-browser/menu/electron-context-menu-renderer.ts#L102">packages/core/src/electron-browser/menu/electron-context-menu-renderer.ts:102</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>__namedParameters: <a href="../interfaces/core.rendercontextmenuoptions-2.html" class="tsd-signature-type" data-tsd-kind="Interface">RenderContextMenuOptions</a></h5>
+									<h5>options: <a href="../interfaces/core.rendercontextmenuoptions-2.html" class="tsd-signature-type" data-tsd-kind="Interface">RenderContextMenuOptions</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="core.electroncontextmenuaccess.html" class="tsd-signature-type" data-tsd-kind="Class">ElectronContextMenuAccess</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="core.contextmenuaccess-1.html" class="tsd-signature-type" data-tsd-kind="Class">ContextMenuAccess</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="init" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> init</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">init<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/1bcdf4b0664/packages/core/src/electron-browser/menu/electron-context-menu-renderer.ts#L95">packages/core/src/electron-browser/menu/electron-context-menu-renderer.ts:95</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -238,9 +278,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="core.contextmenurenderer-1.html">ContextMenuRenderer</a>.<a href="core.contextmenurenderer-1.html#render">render</a></p>
+								<p>Inherited from <a href="core.browsercontextmenurenderer.html">BrowserContextMenuRenderer</a>.<a href="core.browsercontextmenurenderer.html#render">render</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/72399573b0e/packages/core/src/browser/context-menu-renderer.ts#L82">packages/core/src/browser/context-menu-renderer.ts:82</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/1bcdf4b0664/packages/core/src/browser/context-menu-renderer.ts#L82">packages/core/src/browser/context-menu-renderer.ts:82</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -253,9 +293,9 @@
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="core.contextmenurenderer-1.html">ContextMenuRenderer</a>.<a href="core.contextmenurenderer-1.html#render">render</a></p>
+								<p>Inherited from <a href="core.browsercontextmenurenderer.html">BrowserContextMenuRenderer</a>.<a href="core.browsercontextmenurenderer.html#render">render</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/72399573b0e/packages/core/src/browser/context-menu-renderer.ts#L84">packages/core/src/browser/context-menu-renderer.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/1bcdf4b0664/packages/core/src/browser/context-menu-renderer.ts#L84">packages/core/src/browser/context-menu-renderer.ts:84</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -302,9 +342,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="core.contextmenurenderer-1.html">ContextMenuRenderer</a>.<a href="core.contextmenurenderer-1.html#setcurrent">setCurrent</a></p>
+								<p>Inherited from <a href="core.browsercontextmenurenderer.html">BrowserContextMenuRenderer</a>.<a href="core.browsercontextmenurenderer.html#setcurrent">setCurrent</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/72399573b0e/packages/core/src/browser/context-menu-renderer.ts#L68">packages/core/src/browser/context-menu-renderer.ts:68</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/1bcdf4b0664/packages/core/src/browser/context-menu-renderer.ts#L68">packages/core/src/browser/context-menu-renderer.ts:68</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -717,14 +757,23 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="core.electroncontextmenurenderer.html#context" class="tsd-kind-icon">context</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="core.electroncontextmenurenderer.html#preferenceservice" class="tsd-kind-icon">preference<wbr>Service</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="core.electroncontextmenurenderer.html#todisposeonsetcurrent" class="tsd-kind-icon">to<wbr>Dispose<wbr>OnSet<wbr>Current</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="core.electroncontextmenurenderer.html#usenativestyle" class="tsd-kind-icon">use<wbr>Native<wbr>Style</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
 								<a href="core.electroncontextmenurenderer.html#current" class="tsd-kind-icon">current</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
 								<a href="core.electroncontextmenurenderer.html#dorender" class="tsd-kind-icon">do<wbr>Render</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="core.electroncontextmenurenderer.html#init" class="tsd-kind-icon">init</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="core.electroncontextmenurenderer.html#render" class="tsd-kind-icon">render</a>
