@@ -72,7 +72,7 @@ export class ProblemTabBarDecorator implements TabBarDecorator {
                     }
                 }
                 // Decorate the tabbar with the highest marker severity if available.
-                return maxSeverity ? [this.toDecorator(maxSeverity)] : [];
+                return maxSeverity ? [this.toDecorator(maxSeverity, markers.length)] : [];
             }
         }
         return [];
@@ -102,11 +102,18 @@ export class ProblemTabBarDecorator implements TabBarDecorator {
      * @param {Marker<Diagnostic>} marker A diagnostic marker.
      * @returns {WidgetDecoration.Data} The decoration data.
      */
-    protected toDecorator(marker: Marker<Diagnostic>): WidgetDecoration.Data {
+    protected toDecorator(marker: Marker<Diagnostic>, count: number): WidgetDecoration.Data {
         const position = WidgetDecoration.IconOverlayPosition.BOTTOM_RIGHT;
         const icon = this.getOverlayIcon(marker);
         const color = this.getOverlayIconColor(marker);
         return {
+            priority: 1000,
+            fontData: {
+                color
+            },
+            tailDecorations: [{
+                data: count >= 10 ? '9+' : count.toFixed(0)
+            }],
             iconOverlay: {
                 position,
                 icon,
