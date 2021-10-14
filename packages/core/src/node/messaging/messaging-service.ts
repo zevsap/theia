@@ -15,8 +15,8 @@
  ********************************************************************************/
 
 import * as ws from 'ws';
-import { MessageConnection } from '@codingame/monaco-jsonrpc';
-import { IConnection } from '@codingame/monaco-jsonrpc/lib/server/connection';
+import { MessageConnection } from 'vscode-languageserver-protocol';
+import { IConnection } from '../../common/messaging/connection';
 import { WebSocketChannel } from '../../common/messaging/web-socket-channel';
 
 export interface MessagingService {

@@ -1,5 +1,5 @@
 /********************************************************************************
- * Copyright (C) 2017 TypeFox and others.
+ * Copyright (C) 2021 Ericsson and others.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
@@ -14,11 +14,13 @@
  * SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
  ********************************************************************************/
 
-import { MessageConnection } from 'vscode-languageserver-protocol';
+import { createConnection } from '../../common/messaging/connection';
+import { WebSocketMessageReader, WebSocketMessageWriter } from 'src/common/messaging/socket-message-handlers';
+import { IWebSocket, IWebSocketConnection } from '../../common/messaging/web-socket-channel';
 
-export const ConnectionHandler = Symbol('ConnectionHandler');
-
-export interface ConnectionHandler {
-    readonly path: string;
-    onConnection(connection: MessageConnection): void;
+// Copied from https://github.com/CodinGame/monaco-jsonrpc/blob/e3eea9123da2cc11845c409bcfae8e44b7d3a0e6/src/server/launch.ts
+export function createWebSocketConnection(socket: IWebSocket): IWebSocketConnection {
+    const reader = new WebSocketMessageReader(socket);
+    const writer = new WebSocketMessageWriter(socket);
+    return createConnection(reader, writer, () => socket.dispose(), { socket });
 }

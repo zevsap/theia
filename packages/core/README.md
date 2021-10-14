@@ -68,7 +68,6 @@ export class SomeClass {
 
 ### List of re-exported packages
 
- - [`@codingame/monaco-jsonrpc@^0.3.1`](https://www.npmjs.com/package/@codingame/monaco-jsonrpc)
  - [`@phosphor/algorithm@1`](https://www.npmjs.com/package/@phosphor/algorithm)
  - [`@phosphor/commands@1`](https://www.npmjs.com/package/@phosphor/commands)
  - [`@phosphor/coreutils@1`](https://www.npmjs.com/package/@phosphor/coreutils)

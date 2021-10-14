@@ -17,7 +17,7 @@
 import * as chai from 'chai';
 import { ConsoleLogger } from '../../node/messaging/logger';
 import { JsonRpcProxyFactory, JsonRpcProxy } from './proxy-factory';
-import { createMessageConnection, MessageReader, MessageWriter } from '@codingame/monaco-jsonrpc';
+import { createMessageConnection, MessageReader, MessageWriter } from 'vscode-languageserver-protocol';
 import * as stream from 'stream';
 
 const expect = chai.expect;

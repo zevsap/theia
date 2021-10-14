@@ -1,5 +1,5 @@
 /********************************************************************************
- * Copyright (C) 2018 Red Hat, Inc. and others.
+ * Copyright (C) 2021 Ericsson and others.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
@@ -14,55 +14,34 @@
  * SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
  ********************************************************************************/
 
-import { DataCallback, Disposable, Emitter, Event, PartialMessageInfo } from '@theia/core/shared/vscode-languageserver-protocol';
+import { AbstractMessageReader, MessageReader, DataCallback, AbstractMessageWriter, MessageWriter, Message, Disposable } from 'vscode-languageserver-protocol';
+import { IWebSocket } from './web-socket-channel';
 
-export abstract class AbstractMessageReader {
-    protected errorEmitter = new Emitter<Error>();
-    protected closeEmitter = new Emitter<void>();
-    protected partialMessageEmitter = new Emitter<PartialMessageInfo>();
-    dispose(): void {
-        this.errorEmitter.dispose();
-        this.closeEmitter.dispose();
-    }
-    get onError(): Event<Error> {
-        return this.errorEmitter.event;
-    }
-    fireError(error: Error): void {
-        this.errorEmitter.fire(this.asError(error));
-    }
-    get onClose(): Event<void> {
-        return this.closeEmitter.event;
-    }
-    fireClose(): void {
-        this.closeEmitter.fire(undefined);
-    }
-    get onPartialMessage(): Event<PartialMessageInfo> {
-        return this.partialMessageEmitter.event;
-    }
-    firePartialMessage(info: PartialMessageInfo): void {
-        this.partialMessageEmitter.fire(info);
-    }
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    asError(error: any): Error {
-        if (error instanceof Error) {
-            return error;
-        } else {
-            return new Error(`Reader received error. Reason: ${typeof error.message === 'string' ? error.message : 'unknown'}`);
-        }
-    }
-}
+// Copied from https://github.com/CodinGame/monaco-jsonrpc/blob/e3eea9123da2cc11845c409bcfae8e44b7d3a0e6/src/socket/reader.ts
+export class WebSocketMessageReader extends AbstractMessageReader implements MessageReader {
 
-/**
- * Support for reading string message through RPC protocol.
- */
-export class PluginMessageReader extends AbstractMessageReader {
     protected state: 'initial' | 'listening' | 'closed' = 'initial';
     protected callback: DataCallback | undefined;
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    protected readonly events: { message?: any, error?: any }[] = [];
+    protected readonly events: { message?: string, error?: unknown }[] = [];
 
-    constructor() {
+    constructor(protected readonly socket: IWebSocket) {
         super();
+        this.socket.onMessage(message =>
+            this.readMessage(message)
+        );
+        this.socket.onError(error =>
+            this.fireError(error)
+        );
+        this.socket.onClose((code, reason) => {
+            if (code !== 1000) {
+                const error: Error = {
+                    name: '' + code,
+                    message: `Error during socket reconnect: code = ${code}, reason = ${reason}`
+                };
+                this.fireError(error);
+            }
+            this.fireClose();
+        });
     }
 
     listen(callback: DataCallback): Disposable {
@@ -79,12 +58,17 @@ export class PluginMessageReader extends AbstractMessageReader {
                     this.fireClose();
                 }
             }
-            return { dispose: () => this.callback = undefined };
         }
-        return { dispose: () => { } };
+        return {
+            dispose: () => {
+                if (this.callback === callback) {
+                    this.callback = undefined;
+                }
+            }
+        };
     }
 
-    readMessage(message: string): void {
+    protected readMessage(message: string): void {
         if (this.state === 'initial') {
             this.events.splice(0, 0, { message });
         } else if (this.state === 'listening') {
@@ -93,8 +77,7 @@ export class PluginMessageReader extends AbstractMessageReader {
         }
     }
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    fireError(error: any): void {
+    protected fireError(error: unknown): void {
         if (this.state === 'initial') {
             this.events.splice(0, 0, { error });
         } else if (this.state === 'listening') {
@@ -102,7 +85,7 @@ export class PluginMessageReader extends AbstractMessageReader {
         }
     }
 
-    fireClose(): void {
+    protected fireClose(): void {
         if (this.state === 'initial') {
             this.events.splice(0, 0, {});
         } else if (this.state === 'listening') {
@@ -110,4 +93,29 @@ export class PluginMessageReader extends AbstractMessageReader {
         }
         this.state = 'closed';
     }
+
+}
+
+// Copied from https://github.com/CodinGame/monaco-jsonrpc/blob/e3eea9123da2cc11845c409bcfae8e44b7d3a0e6/src/socket/writer.ts
+export class WebSocketMessageWriter extends AbstractMessageWriter implements MessageWriter {
+
+    protected errorCount = 0;
+
+    constructor(protected readonly socket: IWebSocket) {
+        super();
+    }
+
+    end(): void {
+    }
+
+    async write(msg: Message): Promise<void> {
+        try {
+            const content = JSON.stringify(msg);
+            this.socket.send(content);
+        } catch (e) {
+            this.errorCount++;
+            this.fireError(e, msg, this.errorCount);
+        }
+    }
+
 }

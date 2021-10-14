@@ -17,10 +17,10 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 import { DebugProtocol } from 'vscode-debugprotocol';
+import { IWebSocket } from '@theia/core/lib/common/messaging/web-socket-channel';
 import { Deferred } from '@theia/core/lib/common/promise-util';
 import { Event, Emitter, DisposableCollection, Disposable, MaybePromise } from '@theia/core';
 import { OutputChannel } from '@theia/output/lib/browser/output-channel';
-import { IWebSocket } from '@theia/core/shared/@codingame/monaco-jsonrpc';
 
 export interface DebugExitEvent {
     code?: number

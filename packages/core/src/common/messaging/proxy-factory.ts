@@ -16,7 +16,7 @@
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import { MessageConnection, ResponseError } from '@codingame/monaco-jsonrpc';
+import { MessageConnection, ResponseError } from 'vscode-languageserver-protocol';
 import { ApplicationError } from '../application-error';
 import { Event, Emitter } from '../event';
 import { Disposable } from '../disposable';

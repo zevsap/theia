@@ -26,7 +26,7 @@ import {
     DebugAdapterSession
 } from './debug-model';
 import { DebugProtocol } from 'vscode-debugprotocol';
-import { IWebSocket } from '@theia/core/shared/@codingame/monaco-jsonrpc';
+import { IWebSocket } from '@theia/core/lib/common/messaging/web-socket-channel';
 import { DisposableCollection, Disposable } from '@theia/core/lib/common/disposable';
 
 /**

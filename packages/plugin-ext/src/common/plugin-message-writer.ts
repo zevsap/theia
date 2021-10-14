@@ -14,7 +14,7 @@
  * SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
  ********************************************************************************/
 
-import { Message, MessageWriter, Emitter, Event } from '@theia/core/shared/@codingame/monaco-jsonrpc';
+import { Message, MessageWriter, Emitter, Event } from '@theia/core/shared/vscode-languageserver-protocol';
 import { ConnectionMain, ConnectionExt } from './plugin-api-rpc';
 
 export abstract class AbstractMessageWriter {

@@ -15,8 +15,10 @@
  ********************************************************************************/
 
 import { injectable, interfaces } from 'inversify';
-import { ConsoleLogger, createWebSocketConnection, Logger } from '@codingame/monaco-jsonrpc';
+import { Logger } from 'vscode-languageserver-protocol';
 import { Emitter, Event } from '../event';
+import { ConsoleLogger } from '../logger-protocol';
+import { createWebSocketConnection } from './connection';
 import { ConnectionHandler } from './handler';
 import { JsonRpcProxy, JsonRpcProxyFactory } from './proxy-factory';
 import { WebSocketChannel } from './web-socket-channel';

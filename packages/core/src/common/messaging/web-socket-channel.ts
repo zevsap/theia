@@ -16,9 +16,22 @@
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import { IWebSocket } from '@codingame/monaco-jsonrpc/lib/socket/socket';
 import { Disposable, DisposableCollection } from '../disposable';
 import { Emitter } from '../event';
+import { IConnection } from './connection';
+
+// Copied from https://github.com/CodinGame/monaco-jsonrpc/blob/e3eea9123da2cc11845c409bcfae8e44b7d3a0e6/src/socket/socket.ts
+export interface IWebSocket extends Disposable {
+    send(content: string): void;
+    onMessage(cb: (data: any) => void): void;
+    onError(cb: (reason: any) => void): void;
+    onClose(cb: (code: number, reason: string) => void): void;
+}
+
+// Copied from https://github.com/CodinGame/monaco-jsonrpc/blob/e3eea9123da2cc11845c409bcfae8e44b7d3a0e6/src/socket/socket.ts
+export interface IWebSocketConnection extends IConnection {
+    readonly socket: IWebSocket;
+}
 
 export class WebSocketChannel implements IWebSocket {
 
