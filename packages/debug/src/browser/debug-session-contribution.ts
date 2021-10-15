@@ -16,7 +16,7 @@
 
 import { injectable, inject, named, postConstruct } from '@theia/core/shared/inversify';
 import { MessageClient } from '@theia/core/lib/common';
-import { IWebSocket } from '@theia/core/lib/common/messaging/web-socket-channel';
+import { Channel } from '@theia/core/lib/common/messaging';
 import { LabelProvider } from '@theia/core/lib/browser';
 import { EditorManager } from '@theia/editor/lib/browser';
 import { TerminalService } from '@theia/terminal/lib/browser/base/terminal-service';
@@ -119,7 +119,7 @@ export class DefaultDebugSessionFactory implements DebugSessionFactory {
     get(sessionId: string, options: DebugSessionOptions, parentSession?: DebugSession): DebugSession {
         const connection = new DebugSessionConnection(
             sessionId,
-            () => new Promise<IWebSocket>(resolve =>
+            () => new Promise<Channel>(resolve =>
                 this.connectionProvider.openChannel(`${DebugAdapterPath}/${sessionId}`, channel => {
                     resolve(channel);
                 }, { reconnecting: false })

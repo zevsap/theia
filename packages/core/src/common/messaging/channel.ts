@@ -20,6 +20,9 @@ import * as rpc from 'vscode-languageserver-protocol';
 import { BareMessageConnection } from './bare-message-connection';
 import { Disposable } from '../disposable';
 
+/**
+ * A `Channel` represents a logical connection to a remote service.
+ */
 export interface Channel extends Disposable {
     send(content: string): void;
     onMessage(cb: (data: any) => void): void;
@@ -29,7 +32,7 @@ export interface Channel extends Disposable {
 
 export namespace Channel {
 
-    export class Reader extends rpc.AbstractMessageReader implements rpc.MessageReader {
+    export class MessageReader extends rpc.AbstractMessageReader implements rpc.MessageReader {
         constructor(protected channel: Channel) {
             super();
             channel.onError(error => this.fireError(error));
@@ -43,7 +46,7 @@ export namespace Channel {
         }
     }
 
-    export class Writer extends rpc.AbstractMessageWriter implements rpc.MessageWriter {
+    export class MessageWriter extends rpc.AbstractMessageWriter implements rpc.MessageWriter {
         constructor(protected channel: Channel) {
             super();
             channel.onError(error => this.fireError(error));
@@ -58,14 +61,14 @@ export namespace Channel {
     }
 
     export function createMessageConnection(channel: Channel, logger?: rpc.Logger, options?: rpc.ConnectionOptions): rpc.MessageConnection {
-        const reader = new Reader(channel);
-        const writer = new Writer(channel);
+        const reader = new MessageReader(channel);
+        const writer = new MessageWriter(channel);
         return rpc.createMessageConnection(reader, writer, logger, options);
     }
 
     export function createBareMessageConnection(channel: Channel, onDispose: () => void = () => { }): BareMessageConnection {
-        const reader = new Reader(channel);
-        const writer = new Writer(channel);
+        const reader = new MessageReader(channel);
+        const writer = new MessageWriter(channel);
         return BareMessageConnection.create(reader, writer, onDispose);
     }
 }

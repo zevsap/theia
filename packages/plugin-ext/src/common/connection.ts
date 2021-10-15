@@ -13,11 +13,12 @@
  *
  * SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
  ********************************************************************************/
+
+import type { Channel } from '@theia/core/lib/common/messaging';
+import type { Message, MessageReader, MessageWriter } from '@theia/core/shared/vscode-languageserver-protocol';
 import { Disposable } from './disposable-util';
 import { PluginMessageReader } from './plugin-message-reader';
 import { PluginMessageWriter } from './plugin-message-writer';
-import { MessageReader, MessageWriter, Message } from '@theia/core/shared/vscode-languageserver-protocol';
-import { IWebSocket } from '@theia/core/lib/common/messaging/web-socket-channel';
 
 /**
  * The interface for describing the connection between plugins and main side.
@@ -55,7 +56,7 @@ export class PluginConnection implements Connection {
 /**
  * [IWebSocket](#IWebSocket) implementation over RPC.
  */
-export class PluginWebSocketChannel implements IWebSocket {
+export class PluginWebSocketChannel implements Channel {
     constructor(protected readonly connection: PluginConnection) { }
 
     send(content: string): void {

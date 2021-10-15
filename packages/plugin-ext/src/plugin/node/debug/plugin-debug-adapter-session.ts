@@ -17,7 +17,7 @@
 import { DebugAdapterSessionImpl } from '@theia/debug/lib/node/debug-adapter-session';
 import * as theia from '@theia/plugin';
 import { CommunicationProvider, DebugAdapterSession } from '@theia/debug/lib/node/debug-model';
-import { IWebSocket } from '@theia/core/lib/common/messaging/web-socket-channel';
+import { Channel } from '@theia/core/lib/common/messaging';
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
@@ -41,7 +41,7 @@ export class PluginDebugAdapterSession extends DebugAdapterSessionImpl implement
         this.configuration = theiaSession.configuration;
     }
 
-    async start(channel: IWebSocket): Promise<void> {
+    async start(channel: Channel): Promise<void> {
         if (this.tracker.onWillStartSession) {
             this.tracker.onWillStartSession();
         }
