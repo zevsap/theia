@@ -94,7 +94,7 @@ export class SomeClass {
  - [`react-dom@^16.8.0`](https://www.npmjs.com/package/react-dom)
  - [`react-virtualized@^9.20.0`](https://www.npmjs.com/package/react-virtualized)
  - [`vscode-languageserver-protocol@^3.16.0`](https://www.npmjs.com/package/vscode-languageserver-protocol)
- - [`vscode-languageserver-types@^3.16.0`](https://www.npmjs.com/package/vscode-languageserver-types)
+ - [`vscode-languageserver-types@undefined`](https://www.npmjs.com/package/vscode-languageserver-types)
  - [`vscode-uri@^2.1.1`](https://www.npmjs.com/package/vscode-uri)
  - [`ws@^7.1.2`](https://www.npmjs.com/package/ws)
  - [`yargs@^15.3.1`](https://www.npmjs.com/package/yargs)

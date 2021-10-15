@@ -17,7 +17,6 @@
 import { Range, SerializedDocumentFilter, WorkspaceSymbolParams } from '@theia/plugin-ext/lib/common/plugin-api-rpc-model';
 import { PluginMetricsResolver } from './plugin-metrics-resolver';
 import { LanguagesMainImpl } from '@theia/plugin-ext/lib/main/browser/languages-main';
-import { SymbolInformation } from '@theia/core/shared/vscode-languageserver-types';
 import { injectable, inject } from '@theia/core/shared/inversify';
 import * as vst from '@theia/core/shared/vscode-languageserver-protocol';
 import { PluginInfo } from '@theia/plugin-ext/lib/common/plugin-api-rpc';
