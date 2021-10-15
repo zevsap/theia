@@ -18,10 +18,10 @@ import { injectable, interfaces } from 'inversify';
 import { Logger } from 'vscode-languageserver-protocol';
 import { Emitter, Event } from '../event';
 import { ConsoleLogger } from '../logger-protocol';
-import { createWebSocketConnection } from './connection';
 import { ConnectionHandler } from './handler';
 import { JsonRpcProxy, JsonRpcProxyFactory } from './proxy-factory';
 import { WebSocketChannel } from './web-socket-channel';
+import { Channel } from './channel';
 
 /**
  * Factor common logic according to `ElectronIpcConnectionProvider` and
@@ -82,7 +82,7 @@ export abstract class AbstractConnectionProvider<AbstractOptions extends object>
      */
     listen(handler: ConnectionHandler, options?: AbstractOptions): void {
         this.openChannel(handler.path, channel => {
-            const connection = createWebSocketConnection(channel, this.createLogger());
+            const connection = Channel.createMessageConnection(channel, this.createLogger());
             connection.onDispose(() => channel.close());
             handler.onConnection(connection);
         }, options);

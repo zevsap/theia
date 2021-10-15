@@ -18,27 +18,25 @@
 
 import { Disposable, DisposableCollection } from '../disposable';
 import { Emitter } from '../event';
-import { IConnection } from './connection';
+import { Channel } from './channel';
 
-// Copied from https://github.com/CodinGame/monaco-jsonrpc/blob/e3eea9123da2cc11845c409bcfae8e44b7d3a0e6/src/socket/socket.ts
-export interface IWebSocket extends Disposable {
-    send(content: string): void;
-    onMessage(cb: (data: any) => void): void;
-    onError(cb: (reason: any) => void): void;
-    onClose(cb: (code: number, reason: string) => void): void;
-}
+/**
+ * Use `Channel` from `@theia/core/lib/common/messaging` instead.
+ * @deprecated since 1.19.0
+ */
+export type IWebSocket = Channel;
 
-// Copied from https://github.com/CodinGame/monaco-jsonrpc/blob/e3eea9123da2cc11845c409bcfae8e44b7d3a0e6/src/socket/socket.ts
-export interface IWebSocketConnection extends IConnection {
-    readonly socket: IWebSocket;
-}
-
-export class WebSocketChannel implements IWebSocket {
+export class WebSocketChannel implements Channel {
 
     static wsPath = '/services';
 
+    fireError: (reason: any) => void = () => { };
+
     protected readonly closeEmitter = new Emitter<[number, string]>();
     protected readonly toDispose = new DisposableCollection(this.closeEmitter);
+    protected fireOpen: () => void = () => { };
+    protected fireMessage: (data: any) => void = () => { };
+    protected closing = false;
 
     constructor(
         readonly id: number,
@@ -47,12 +45,6 @@ export class WebSocketChannel implements IWebSocket {
 
     dispose(): void {
         this.toDispose.dispose();
-    }
-
-    protected checkNotDisposed(): void {
-        if (this.toDispose.disposed) {
-            throw new Error('The channel has been disposed.');
-        }
     }
 
     handleMessage(message: WebSocketChannel.Message): void {
@@ -120,28 +112,29 @@ export class WebSocketChannel implements IWebSocket {
         this.fireClose(code, reason);
     }
 
-    protected fireOpen: () => void = () => { };
     onOpen(cb: () => void): void {
         this.checkNotDisposed();
         this.fireOpen = cb;
         this.toDispose.push(Disposable.create(() => this.fireOpen = () => { }));
     }
 
-    protected fireMessage: (data: any) => void = () => { };
     onMessage(cb: (data: any) => void): void {
         this.checkNotDisposed();
         this.fireMessage = cb;
         this.toDispose.push(Disposable.create(() => this.fireMessage = () => { }));
     }
 
-    fireError: (reason: any) => void = () => { };
     onError(cb: (reason: any) => void): void {
         this.checkNotDisposed();
         this.fireError = cb;
         this.toDispose.push(Disposable.create(() => this.fireError = () => { }));
     }
 
-    protected closing = false;
+    onClose(cb: (code: number, reason: string) => void): Disposable {
+        this.checkNotDisposed();
+        return this.closeEmitter.event(([code, reason]) => cb(code, reason));
+    }
+
     protected fireClose(code: number, reason: string): void {
         if (this.closing) {
             return;
@@ -154,9 +147,11 @@ export class WebSocketChannel implements IWebSocket {
         }
         this.dispose();
     }
-    onClose(cb: (code: number, reason: string) => void): Disposable {
-        this.checkNotDisposed();
-        return this.closeEmitter.event(([code, reason]) => cb(code, reason));
+
+    protected checkNotDisposed(): void {
+        if (this.toDispose.disposed) {
+            throw new Error('The channel has been disposed.');
+        }
     }
 
 }

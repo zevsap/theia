@@ -21,8 +21,8 @@ import * as http from 'http';
 import * as https from 'https';
 import { injectable, inject, named, postConstruct, interfaces, Container } from 'inversify';
 import { MessageConnection } from 'vscode-languageserver-protocol';
-import { createWebSocketConnection, IConnection } from '../../common/messaging/connection';
-import * as launch from './launch';
+import { BareMessageConnection } from '../../common/messaging';
+import { Channel } from '../../common/messaging/channel';
 import { ContributionProvider, ConnectionHandler, bindContributionProvider } from '../../common';
 import { WebSocketChannel } from '../../common/messaging/web-socket-channel';
 import { BackendApplicationContribution } from '../backend-application';
@@ -74,15 +74,16 @@ export class MessagingContribution implements BackendApplicationContribution, Me
 
     listen(spec: string, callback: (params: MessagingService.PathParams, connection: MessageConnection) => void): void {
         this.wsChannel(spec, (params, channel) => {
-            const connection = createWebSocketConnection(channel, new ConsoleLogger());
+            const connection = Channel.createMessageConnection(channel, new ConsoleLogger());
             callback(params, connection);
         });
     }
 
-    forward(spec: string, callback: (params: MessagingService.PathParams, connection: IConnection) => void): void {
+    forward(spec: string, callback: (params: MessagingService.PathParams, connection: BareMessageConnection) => void): void {
         this.wsChannel(spec, (params, channel) => {
-            const connection = launch.createWebSocketConnection(channel);
-            callback(params, WebSocketChannelConnection.create(connection, channel));
+            const jsonRpcConnection = Channel.createBareMessageConnection(channel, () => channel.close());
+            const webSocketChannelConnection = WebSocketChannelConnection.create(jsonRpcConnection, channel);
+            callback(params, webSocketChannelConnection);
         });
     }
 
@@ -251,7 +252,7 @@ export class MessagingContribution implements BackendApplicationContribution, Me
         const connectionHandlers = connectionContainer.getNamed<ContributionProvider<ConnectionHandler>>(ContributionProvider, ConnectionHandler);
         for (const connectionHandler of connectionHandlers.getContributions(true)) {
             connectionChannelHandlers.push(connectionHandler.path, (_, channel) => {
-                const connection = createWebSocketConnection(channel, new ConsoleLogger());
+                const connection = Channel.createMessageConnection(channel, new ConsoleLogger());
                 connectionHandler.onConnection(connection);
             });
         }

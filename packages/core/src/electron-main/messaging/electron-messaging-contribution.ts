@@ -24,7 +24,7 @@ import { ConsoleLogger } from '../../node/messaging/logger';
 import { ElectronConnectionHandler, THEIA_ELECTRON_IPC_CHANNEL_NAME } from '../../electron-common/messaging/electron-connection-handler';
 import { ElectronMainApplicationContribution } from '../electron-main-application';
 import { ElectronMessagingService } from './electron-messaging-service';
-import { createWebSocketConnection } from '../../common/messaging/connection';
+import { Channel } from '../../common/messaging';
 
 /**
  * This component replicates the role filled by `MessagingContribution` but for Electron.
@@ -59,7 +59,7 @@ export class ElectronMessagingContribution implements ElectronMainApplicationCon
         }
         for (const connectionHandler of this.connectionHandlers.getContributions()) {
             this.channelHandlers.push(connectionHandler.path, (params, channel) => {
-                const connection = createWebSocketConnection(channel, new ConsoleLogger());
+                const connection = Channel.createMessageConnection(channel, new ConsoleLogger());
                 connectionHandler.onConnection(connection);
             });
         }
@@ -67,7 +67,7 @@ export class ElectronMessagingContribution implements ElectronMainApplicationCon
 
     listen(spec: string, callback: (params: ElectronMessagingService.PathParams, connection: MessageConnection) => void): void {
         this.ipcChannel(spec, (params, channel) => {
-            const connection = createWebSocketConnection(channel, new ConsoleLogger());
+            const connection = Channel.createMessageConnection(channel, new ConsoleLogger());
             callback(params, connection);
         });
     }
