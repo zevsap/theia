@@ -38,16 +38,20 @@ export namespace BareMessageConnection {
         return {
             reader,
             writer,
-            forward(to: BareMessageConnection, map: (message: Message) => Message = message => message): void {
-                reader.listen(input => {
-                    const output = map(input);
-                    to.writer.write(output);
+            forward(to: BareMessageConnection, map?: (message: Message) => Message): void {
+                reader.listen(data => {
+                    if (map) {
+                        data = map(data);
+                    }
+                    to.writer.write(data);
                 });
             },
             onClose(callback: () => void): Disposable {
                 return disposeOnClose.push(Disposable.create(callback));
             },
-            dispose: () => onDispose()
+            dispose(): void {
+                onDispose();
+            }
         };
     }
 }

@@ -56,7 +56,7 @@ export namespace Channel {
             this.channel.send(JSON.stringify(message));
         }
         end(): void {
-            throw new Error('not supported');
+            this.channel.dispose();
         }
     }
 
