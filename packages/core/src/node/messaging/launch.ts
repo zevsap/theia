@@ -15,7 +15,7 @@
  ********************************************************************************/
 
 import { createConnection } from '../../common/messaging/connection';
-import { WebSocketMessageReader, WebSocketMessageWriter } from 'src/common/messaging/socket-message-handlers';
+import { WebSocketMessageReader, WebSocketMessageWriter } from '../../common/messaging/socket-message-handlers';
 import { IWebSocket, IWebSocketConnection } from '../../common/messaging/web-socket-channel';
 
 // Copied from https://github.com/CodinGame/monaco-jsonrpc/blob/e3eea9123da2cc11845c409bcfae8e44b7d3a0e6/src/server/launch.ts
