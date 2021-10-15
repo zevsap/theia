@@ -114,14 +114,8 @@ export class JsonRpcProxyFactory<T extends object> implements ProxyHandler<T> {
     }
 
     protected waitForConnection(): void {
-        this.connectionPromise = new Promise(resolve =>
-            this.connectionPromiseResolve = resolve
-        );
-        this.connectionPromise.then(connection => {
-            connection.onClose(() =>
-                this.onDidCloseConnectionEmitter.fire(undefined)
-            );
-            this.onDidOpenConnectionEmitter.fire(undefined);
+        this.connectionPromise = new Promise(resolve => {
+            this.connectionPromiseResolve = resolve;
         });
     }
 
@@ -140,8 +134,15 @@ export class JsonRpcProxyFactory<T extends object> implements ProxyHandler<T> {
             const argsArray = Array.isArray(args) ? args : [args];
             return this.onNotification(prop, ...argsArray);
         });
-        connection.onDispose(() => this.waitForConnection());
+        connection.onDispose(() => {
+            this.waitForConnection();
+        });
+        connection.onClose(() => {
+            this.waitForConnection();
+            this.onDidCloseConnectionEmitter.fire();
+        });
         connection.listen();
+        this.onDidOpenConnectionEmitter.fire();
         this.connectionPromiseResolve(connection);
     }
 
@@ -218,46 +219,39 @@ export class JsonRpcProxyFactory<T extends object> implements ProxyHandler<T> {
      * `fooProxy.bar()` will call the `bar` method on the remote Foo object.
      *
      * @param target - unused.
-     * @param p - The property accessed on the Proxy object.
+     * @param property - The property accessed on the Proxy object.
      * @param receiver - unused.
      * @returns A callable that executes the JSON-RPC call.
      */
-    get(target: T, p: PropertyKey, receiver: any): any {
-        if (p === 'setClient') {
+    get(target: T, property: PropertyKey, receiver: any): any {
+        if (property === 'setClient') {
             return (client: any) => {
                 this.target = client;
             };
         }
-        if (p === 'getClient') {
+        if (property === 'getClient') {
             return () => this.target;
         }
-        if (p === 'onDidOpenConnection') {
+        if (property === 'onDidOpenConnection') {
             return this.onDidOpenConnectionEmitter.event;
         }
-        if (p === 'onDidCloseConnection') {
+        if (property === 'onDidCloseConnection') {
             return this.onDidCloseConnectionEmitter.event;
         }
-        const isNotify = this.isNotification(p);
-        return (...args: any[]) => {
-            const method = p.toString();
+        const isNotify = this.isNotification(property);
+        return async (...args: any[]) => {
+            const method = property.toString();
             const capturedError = new Error(`Request '${method}' failed`);
-            return this.connectionPromise.then(connection =>
-                new Promise<void>((resolve, reject) => {
-                    try {
-                        if (isNotify) {
-                            connection.sendNotification(method, ...args);
-                            resolve(undefined);
-                        } else {
-                            const resultPromise = connection.sendRequest(method, ...args) as Promise<any>;
-                            resultPromise
-                                .catch((err: any) => reject(this.deserializeError(capturedError, err)))
-                                .then((result: any) => resolve(result));
-                        }
-                    } catch (err) {
-                        reject(err);
-                    }
-                })
-            );
+            const connection = await this.connectionPromise;
+            if (isNotify) {
+                connection.sendNotification(method, ...args);
+            } else {
+                try {
+                    return await connection.sendRequest(method, ...args);
+                } catch (error) {
+                    throw this.deserializeError(capturedError, error);
+                }
+            }
         };
     }
 
