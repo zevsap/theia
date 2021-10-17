@@ -16,7 +16,7 @@
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import { MessageConnection, ResponseError } from 'vscode-languageserver-protocol';
+import { MessageConnection, ResponseError, ParameterStructures, CancellationToken } from 'vscode-languageserver-protocol';
 import { ApplicationError } from '../application-error';
 import { Event, Emitter } from '../event';
 import { Disposable } from '../disposable';
@@ -31,6 +31,14 @@ export type JsonRpcServer<Client> = Disposable & {
     setClient(client: Client | undefined): void;
     getClient?(): Client | undefined;
 };
+
+/**
+ * Since nor JSON nor JSON-RPC handle undefined values in method argument arrays, we'll transform those
+ * into a structure of [argument_index, argument][] so that we can omit certain values and properly reconstruct
+ * the original array with undefined values. See `createJsonRpcParameters` and `parseJsonRpcParameters`.
+ * Note that any nested array will see its `undefined` values replaced by `null` because of the JSON serialization.
+ */
+export type JsonRpcParameters = [number, any][];
 
 export interface JsonRpcConnectionEventEmitter {
     readonly onDidOpenConnection: Event<void>;
@@ -126,17 +134,27 @@ export class JsonRpcProxyFactory<T extends object> implements ProxyHandler<T> {
      * response.
      */
     listen(connection: MessageConnection): void {
-        connection.onRequest((prop, args, token) => {
-            const argsArray = Array.isArray(args) ? [...args, token] : [args, token];
-            return this.onRequest(prop, ...argsArray);
+        // When a method is called without arguments then `params` is `undefined`.
+        // Token seem to always be set by `vscode-jsonrpc` on the receiving side.
+        connection.onRequest((method: string, params: JsonRpcParameters | undefined, token: CancellationToken) => {
+            if (params === undefined) {
+                return this.onRequest(method, token);
+            }
+            if (!Array.isArray(params)) {
+                throw new Error('Unexpected JSON-RPC params format');
+            }
+            return this.onRequest(method, ...this.parseJsonRpcParameters(params), token);
         });
-        connection.onNotification((prop, args) => {
-            const argsArray = Array.isArray(args) ? args : [args];
-            return this.onNotification(prop, ...argsArray);
+        connection.onNotification((method: string, params: JsonRpcParameters | undefined) => {
+            if (params === undefined) {
+                return this.onNotification(method);
+            }
+            if (!Array.isArray(params)) {
+                throw new Error('Unexpected JSON-RPC params format');
+            }
+            return this.onNotification(method, ...this.parseJsonRpcParameters(params));
         });
-        connection.onDispose(() => {
-            this.waitForConnection();
-        });
+        connection.onDispose(() => this.waitForConnection());
         connection.onClose(() => {
             this.waitForConnection();
             this.onDidCloseConnectionEmitter.fire();
@@ -158,10 +176,10 @@ export class JsonRpcProxyFactory<T extends object> implements ProxyHandler<T> {
      *
      * @returns A promise of the method call completion.
      */
-    protected async onRequest(method: string, ...args: any[]): Promise<any> {
+    protected async onRequest(method: string, ...params: any[]): Promise<any> {
         try {
             if (this.target) {
-                return await this.target[method](...args);
+                return await this.target[method](...params);
             } else {
                 throw new Error(`no target was set to handle ${method}`);
             }
@@ -183,9 +201,9 @@ export class JsonRpcProxyFactory<T extends object> implements ProxyHandler<T> {
      * Same as [[onRequest]], but called on incoming notifications rather than
      * methods calls.
      */
-    protected onNotification(method: string, ...args: any[]): void {
+    protected onNotification(method: string, ...params: any[]): void {
         if (this.target) {
-            this.target[method](...args);
+            this.target[method](...params);
         }
     }
 
@@ -243,11 +261,23 @@ export class JsonRpcProxyFactory<T extends object> implements ProxyHandler<T> {
             const method = property.toString();
             const capturedError = new Error(`Request '${method}' failed`);
             const connection = await this.connectionPromise;
+            // Extract the cancellation token if it is the last argument passed to the method to call over JSON-RPC.
+            let token: CancellationToken | undefined;
+            if (CancellationToken.is(args[args.length - 1])) {
+                token = args.pop();
+            }
+            // Convert the list of arguments into a structure that allows us to conserve undefined values.
+            const params: any[] = this.createJsonRpcParameters(args);
+            // Push back the token if there was one.
+            // `vscode-jsonrpc` will remove the `CancellationToken` out of `params` when is is the last element.
+            if (token) {
+                params.push(token);
+            }
             if (isNotify) {
-                connection.sendNotification(method, ...args);
+                connection.sendNotification(method, ParameterStructures.byPosition, ...params);
             } else {
                 try {
-                    return await connection.sendRequest(method, ...args);
+                    return await connection.sendRequest(method, ParameterStructures.byPosition, ...params);
                 } catch (error) {
                     throw this.deserializeError(capturedError, error);
                 }
@@ -276,6 +306,7 @@ export class JsonRpcProxyFactory<T extends object> implements ProxyHandler<T> {
         }
         return e;
     }
+
     protected deserializeError(capturedError: Error, e: any): any {
         if (e instanceof ResponseError) {
             const capturedStack = capturedError.stack || '';
@@ -292,4 +323,23 @@ export class JsonRpcProxyFactory<T extends object> implements ProxyHandler<T> {
         return e;
     }
 
+    protected createJsonRpcParameters(args: any[]): JsonRpcParameters {
+        const params: JsonRpcParameters = [];
+        for (const [i, arg] of args.entries()) {
+            if (arg !== undefined) {
+                params.push([i, arg]);
+            }
+        }
+        return params;
+    }
+
+    protected parseJsonRpcParameters(params: JsonRpcParameters): any[] {
+        const args = [];
+        for (const [i, arg] of params) {
+            if (arg !== undefined) {
+                args[i] = arg;
+            }
+        }
+        return args;
+    }
 }
