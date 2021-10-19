@@ -54,7 +54,7 @@ export class PluginConnection implements Connection {
 }
 
 /**
- * [IWebSocket](#IWebSocket) implementation over RPC.
+ * [Channel](#Channel) implementation over RPC.
  */
 export class PluginWebSocketChannel implements Channel {
     constructor(protected readonly connection: PluginConnection) { }

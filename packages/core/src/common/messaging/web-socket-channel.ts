@@ -20,12 +20,6 @@ import { Disposable, DisposableCollection } from '../disposable';
 import { Emitter } from '../event';
 import { Channel } from './channel';
 
-/**
- * Use `Channel` from `@theia/core/lib/common/messaging` instead.
- * @deprecated since 1.19.0
- */
-export type IWebSocket = Channel;
-
 export class WebSocketChannel implements Channel {
 
     static wsPath = '/services';
