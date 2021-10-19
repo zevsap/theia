@@ -52,7 +52,8 @@ export abstract class AbstractMessageWriter {
 export class PluginMessageWriter extends AbstractMessageWriter implements MessageWriter {
     constructor(
         protected readonly id: string,
-        protected readonly proxy: ConnectionMain | ConnectionExt) {
+        protected readonly proxy: ConnectionMain | ConnectionExt
+    ) {
         super();
     }
 

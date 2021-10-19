@@ -60,7 +60,10 @@ export class PluginWebSocketChannel implements Channel {
     constructor(protected readonly connection: PluginConnection) { }
 
     send(content: string): void {
-        this.connection.writer.write({ jsonrpc: content });
+        // vscode-jsonrpc's MessageReader/Writer expect to send JSON-RPC messages.
+        // Use a bogus jsonrpc version and pass along the content to send.
+        const payload = { jsonrpc: '0.0', content };
+        this.connection.writer.write(payload);
     }
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any

@@ -86,9 +86,9 @@ export class PluginMessageReader extends AbstractMessageReader {
 
     readMessage(message: string): void {
         if (this.state === 'initial') {
-            this.events.splice(0, 0, { message });
+            this.events.unshift({ message });
         } else if (this.state === 'listening') {
-            const data = JSON.parse(message);
+            const data = JSON.parse(message).content;
             this.callback!(data);
         }
     }
@@ -96,7 +96,7 @@ export class PluginMessageReader extends AbstractMessageReader {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     fireError(error: any): void {
         if (this.state === 'initial') {
-            this.events.splice(0, 0, { error });
+            this.events.unshift({ error });
         } else if (this.state === 'listening') {
             super.fireError(error);
         }
@@ -104,7 +104,7 @@ export class PluginMessageReader extends AbstractMessageReader {
 
     fireClose(): void {
         if (this.state === 'initial') {
-            this.events.splice(0, 0, {});
+            this.events.unshift({});
         } else if (this.state === 'listening') {
             super.fireClose();
         }

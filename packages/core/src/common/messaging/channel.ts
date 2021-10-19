@@ -21,10 +21,10 @@ import { BareMessageConnection } from './bare-message-connection';
 import { Disposable } from '../disposable';
 
 /**
- * A `Channel` represents a logical connection to a remote service.
+ * A `Channel` represents a bidirectional logical connection to a remote.
  */
 export interface Channel extends Disposable {
-    send(content: string): void;
+    send(content: any): void;
     onMessage(cb: (data: any) => void): void;
     onError(cb: (reason: any) => void): void;
     onClose(cb: (code: number, reason: string) => void): void;
@@ -39,7 +39,7 @@ export namespace Channel {
             channel.onClose(() => this.fireClose());
         }
         listen(callback: rpc.DataCallback): rpc.Disposable {
-            this.channel.onMessage(data => callback(JSON.parse(data)));
+            this.channel.onMessage((data: string) => callback(JSON.parse(data)));
             return rpc.Disposable.create(() => {
                 throw new Error('not supported');
             });
@@ -55,9 +55,7 @@ export namespace Channel {
         async write(message: rpc.Message): Promise<void> {
             this.channel.send(JSON.stringify(message));
         }
-        end(): void {
-            this.channel.dispose();
-        }
+        end(): void { }
     }
 
     export function createMessageConnection(channel: Channel, logger?: rpc.Logger, options?: rpc.ConnectionOptions): rpc.MessageConnection {
