@@ -33,7 +33,7 @@ export type JsonRpcServer<Client> = Disposable & {
 };
 
 /**
- * Since nor JSON nor JSON-RPC handle undefined values in method argument arrays, we'll transform those
+ * Since neither JSON nor JSON-RPC handle undefined values in method argument arrays, we'll transform those
  * into a structure of [argument_index, argument][] so that we can omit certain values and properly reconstruct
  * the original array with undefined values. See `createJsonRpcParameters` and `parseJsonRpcParameters`.
  * Note that any nested array will see its `undefined` values replaced by `null` because of the JSON serialization.
@@ -135,7 +135,7 @@ export class JsonRpcProxyFactory<T extends object> implements ProxyHandler<T> {
      */
     listen(connection: MessageConnection): void {
         // When a method is called without arguments then `params` is `undefined`.
-        // Token seem to always be set by `vscode-jsonrpc` on the receiving side.
+        // `token` seems to always be set by `vscode-jsonrpc` on the receiving side.
         connection.onRequest((method: string, params: JsonRpcParameters | undefined, token: CancellationToken) => {
             if (params === undefined) {
                 return this.onRequest(method, token);
@@ -336,9 +336,7 @@ export class JsonRpcProxyFactory<T extends object> implements ProxyHandler<T> {
     protected parseJsonRpcParameters(params: JsonRpcParameters): any[] {
         const args = [];
         for (const [i, arg] of params) {
-            if (arg !== undefined) {
-                args[i] = arg;
-            }
+            args[i] = arg;
         }
         return args;
     }
