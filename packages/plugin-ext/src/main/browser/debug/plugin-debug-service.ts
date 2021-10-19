@@ -14,7 +14,9 @@
  * SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
  ********************************************************************************/
 
+import debounce = require('@theia/core/shared/lodash.debounce');
 import { DebugService, DebuggerDescription, DebugPath } from '@theia/debug/lib/common/debug-service';
+import { Emitter, Event } from '@theia/core';
 import { Disposable, DisposableCollection } from '@theia/core/lib/common/disposable';
 import { DebugConfiguration } from '@theia/debug/lib/common/debug-configuration';
 import { IJSONSchema, IJSONSchemaSnippet } from '@theia/core/lib/common/json-schema';
@@ -52,6 +54,11 @@ export class PluginDebugService implements DebugService, PluginDebugAdapterContr
     protected readonly debuggers: DebuggerContribution[] = [];
     protected readonly contributors = new Map<string, PluginDebugAdapterContribution>();
     protected readonly toDispose = new DisposableCollection();
+
+    protected readonly onDidConfigurationProvidersChangedEmitter = new Emitter<void>();
+    get onDidChangeDebugConfigurationProviders(): Event<void> {
+        return this.onDidConfigurationProvidersChangedEmitter.event;
+    }
 
     // maps session and contribution
     protected readonly sessionId2contrib = new Map<string, PluginDebugAdapterContribution>();
@@ -92,6 +99,11 @@ export class PluginDebugService implements DebugService, PluginDebugAdapterContr
         this.contributors.delete(debugType);
     }
 
+    // debouncing to send a single notification for multiple registrations at initialization time
+    fireOnDidConfigurationProvidersChanged = debounce(() => {
+        this.onDidConfigurationProvidersChangedEmitter.fire();
+    }, 100);
+
     async debugTypes(): Promise<string[]> {
         const debugTypes = new Set(await this.delegated.debugTypes());
         for (const contribution of this.debuggers) {
@@ -128,9 +140,6 @@ export class PluginDebugService implements DebugService, PluginDebugAdapterContr
         contributor: PluginDebugAdapterContribution): Promise<{ type: string, configurations: DebugConfiguration[] }> {
 
         const configurations = await contributor.provideDebugConfigurations(undefined, true);
-        for (const configuration of configurations) {
-            configuration.dynamic = true;
-        }
         return { type, configurations };
     }
 

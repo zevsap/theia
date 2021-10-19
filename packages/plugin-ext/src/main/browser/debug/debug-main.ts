@@ -43,7 +43,7 @@ import { PluginDebugAdapterContribution } from './plugin-debug-adapter-contribut
 import { PluginDebugSessionContributionRegistrator, PluginDebugSessionContributionRegistry } from './plugin-debug-session-contribution-registry';
 import { Disposable, DisposableCollection } from '@theia/core/lib/common/disposable';
 import { PluginDebugSessionFactory } from './plugin-debug-session-factory';
-import { PluginDebugAdapterContributionRegistrator, PluginDebugService } from './plugin-debug-service';
+import { PluginDebugService } from './plugin-debug-service';
 import { HostedPluginSupport } from '../../../hosted/browser/hosted-plugin';
 import { DebugFunctionBreakpoint } from '@theia/debug/lib/browser/model/debug-function-breakpoint';
 import { FileService } from '@theia/filesystem/lib/browser/file-service';
@@ -67,7 +67,7 @@ export class DebugMainImpl implements DebugMain, Disposable {
     private readonly outputChannelManager: OutputChannelManager;
     private readonly debugPreferences: DebugPreferences;
     private readonly sessionContributionRegistrator: PluginDebugSessionContributionRegistrator;
-    private readonly adapterContributionRegistrator: PluginDebugAdapterContributionRegistrator;
+    private readonly pluginDebugService: PluginDebugService;
     private readonly fileService: FileService;
     private readonly pluginService: HostedPluginSupport;
     private readonly debugContributionProvider: ContributionProvider<DebugContribution>;
@@ -87,7 +87,7 @@ export class DebugMainImpl implements DebugMain, Disposable {
         this.messages = container.get(MessageClient);
         this.outputChannelManager = container.get(OutputChannelManager);
         this.debugPreferences = container.get(DebugPreferences);
-        this.adapterContributionRegistrator = container.get(PluginDebugService);
+        this.pluginDebugService = container.get(PluginDebugService);
         this.sessionContributionRegistrator = container.get(PluginDebugSessionContributionRegistry);
         this.debugContributionProvider = container.getNamed(ContributionProvider, DebugContribution);
         this.fileService = container.get(FileService);
@@ -160,7 +160,7 @@ export class DebugMainImpl implements DebugMain, Disposable {
         );
         this.debuggerContributions.set(debugType, toDispose);
         toDispose.pushAll([
-            this.adapterContributionRegistrator.registerDebugAdapterContribution(
+            this.pluginDebugService.registerDebugAdapterContribution(
                 new PluginDebugAdapterContribution(description, this.debugExt, this.pluginService)
             ),
             this.sessionContributionRegistrator.registerDebugSessionContribution({
@@ -176,6 +176,10 @@ export class DebugMainImpl implements DebugMain, Disposable {
         if (disposable) {
             disposable.dispose();
         }
+    }
+
+    async $onDidChangeDebugConfigurationProviders(): Promise<void> {
+        this.pluginDebugService.fireOnDidConfigurationProvidersChanged();
     }
 
     async $addBreakpoints(breakpoints: Breakpoint[]): Promise<void> {

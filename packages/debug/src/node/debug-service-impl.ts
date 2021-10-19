@@ -21,6 +21,7 @@ import { DebugService, DebuggerDescription } from '../common/debug-service';
 import { IJSONSchema, IJSONSchemaSnippet } from '@theia/core/lib/common/json-schema';
 import { DebugAdapterSessionManager } from './debug-adapter-session-manager';
 import { DebugAdapterContributionRegistry } from './debug-adapter-contribution-registry';
+import { Event } from '@theia/core';
 
 /**
  * DebugService implementation.
@@ -33,6 +34,10 @@ export class DebugServiceImpl implements DebugService {
 
     @inject(DebugAdapterContributionRegistry)
     protected readonly registry: DebugAdapterContributionRegistry;
+
+    get onDidChangeDebugConfigurationProviders(): Event<void> {
+        return Event.None;
+    }
 
     dispose(): void {
         this.terminateDebugSession();
@@ -56,6 +61,10 @@ export class DebugServiceImpl implements DebugService {
 
     async provideDebugConfigurations(debugType: string, workspaceFolderUri?: string): Promise<DebugConfiguration[]> {
         return this.registry.provideDebugConfigurations(debugType, workspaceFolderUri);
+    }
+    async provideDynamicDebugConfigurations(): Promise<{ type: string, configurations: DebugConfiguration[] }[]> {
+        // TODO: Support dynamic debug configurations through Theia extensions?
+        return [];
     }
     async resolveDebugConfiguration(config: DebugConfiguration, workspaceFolderUri?: string): Promise<DebugConfiguration> {
         return this.registry.resolveDebugConfiguration(config, workspaceFolderUri);
@@ -98,5 +107,4 @@ export class DebugServiceImpl implements DebugService {
             await debugSession.stop();
         }
     }
-
 }

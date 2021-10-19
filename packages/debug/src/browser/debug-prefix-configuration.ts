@@ -125,9 +125,10 @@ export class DebugPrefixConfiguration implements CommandContribution, CommandHan
         const configurationsByType = await this.debugConfigurationManager.provideDynamicDebugConfigurations();
         for (const typeConfigurations of configurationsByType) {
             const dynamicConfigurations = typeConfigurations.configurations;
+            const providerType = typeConfigurations.type;
             if (dynamicConfigurations.length > 0) {
                 items.push({
-                    label: typeConfigurations.type,
+                    label: providerType,
                     type: 'separator'
                 });
             }
@@ -135,7 +136,7 @@ export class DebugPrefixConfiguration implements CommandContribution, CommandHan
             for (const configuration of dynamicConfigurations) {
                 items.push({
                     label: configuration.name,
-                    execute: () => this.runConfiguration({ configuration })
+                    execute: () => this.runConfiguration({ configuration, providerType })
                 });
             }
         }
@@ -149,7 +150,7 @@ export class DebugPrefixConfiguration implements CommandContribution, CommandHan
      * @param configuration the `DebugSessionOptions`.
      */
     protected runConfiguration(configuration: DebugSessionOptions): void {
-        this.debugConfigurationManager.current = { ...configuration };
+        this.debugConfigurationManager.selectionChanged({ ...configuration });
         this.commandRegistry.executeCommand(DebugCommands.START.id);
     }
 
