@@ -23,22 +23,22 @@ import { Disposable, DisposableCollection } from '../../common';
  * This is close to `vscode_jsonrpc.MessageConnection` but without all the JSON-RPC
  * specific methods such as `sendRequest`, `sendNotification`, etc.
  */
-export interface BareMessageConnection extends Disposable {
+export interface TheiaMessageConnection extends Disposable {
     readonly reader: MessageReader;
     readonly writer: MessageWriter;
-    forward(to: BareMessageConnection, map?: (message: Message) => Message): void;
+    forward(to: TheiaMessageConnection, map?: (message: Message) => Message): void;
     onClose(callback: () => void): Disposable;
 }
 
-export namespace BareMessageConnection {
-    export function create(reader: MessageReader, writer: MessageWriter, onDispose: () => void): BareMessageConnection {
+export namespace TheiaMessageConnection {
+    export function create(reader: MessageReader, writer: MessageWriter, onDispose: () => void): TheiaMessageConnection {
         const disposeOnClose = new DisposableCollection();
         reader.onClose(() => disposeOnClose.dispose());
         writer.onClose(() => disposeOnClose.dispose());
         return {
             reader,
             writer,
-            forward(to: BareMessageConnection, map?: (message: Message) => Message): void {
+            forward(to: TheiaMessageConnection, map?: (message: Message) => Message): void {
                 reader.listen(data => {
                     if (map) {
                         data = map(data);

@@ -17,7 +17,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 import * as rpc from 'vscode-languageserver-protocol';
-import { BareMessageConnection } from './bare-message-connection';
+import { TheiaMessageConnection } from './theia-message-connection';
 import { Disposable } from '../disposable';
 
 /**
@@ -64,9 +64,9 @@ export namespace Channel {
         return rpc.createMessageConnection(reader, writer, logger, options);
     }
 
-    export function createBareMessageConnection(channel: Channel, onDispose: () => void = () => { }): BareMessageConnection {
+    export function createTheiaMessageConnection(channel: Channel, onDispose: () => void = () => { }): TheiaMessageConnection {
         const reader = new MessageReader(channel);
         const writer = new MessageWriter(channel);
-        return BareMessageConnection.create(reader, writer, onDispose);
+        return TheiaMessageConnection.create(reader, writer, onDispose);
     }
 }

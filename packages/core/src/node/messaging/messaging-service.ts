@@ -16,7 +16,7 @@
 
 import * as ws from 'ws';
 import { MessageConnection } from 'vscode-languageserver-protocol';
-import { BareMessageConnection } from '../../common/messaging';
+import { TheiaMessageConnection } from '../../common/messaging';
 import { WebSocketChannel } from '../../common/messaging/web-socket-channel';
 
 export interface MessagingService {
@@ -29,7 +29,7 @@ export interface MessagingService {
      * Accept a raw JSON-RPC connection on the given path.
      * A path supports the route syntax: https://github.com/rcs/route-parser#what-can-i-use-in-my-routes.
      */
-    forward(path: string, callback: (params: MessagingService.PathParams, connection: BareMessageConnection) => void): void;
+    forward(path: string, callback: (params: MessagingService.PathParams, connection: TheiaMessageConnection) => void): void;
     /**
      * Accept a web socket channel on the given path.
      * A path supports the route syntax: https://github.com/rcs/route-parser#what-can-i-use-in-my-routes.
@@ -57,17 +57,17 @@ export namespace MessagingService {
     }
 }
 
-export interface WebSocketChannelConnection extends BareMessageConnection {
+export interface WebSocketChannelConnection extends TheiaMessageConnection {
     channel: WebSocketChannel;
 }
 export namespace WebSocketChannelConnection {
-    export function is(connection: BareMessageConnection): connection is WebSocketChannelConnection {
+    export function is(connection: TheiaMessageConnection): connection is WebSocketChannelConnection {
         return (connection as WebSocketChannelConnection).channel instanceof WebSocketChannel;
     }
     /**
      * Mutate `connection` to become a `WebSocketChannelConnection`.
      */
-    export function create(connection: BareMessageConnection, channel: WebSocketChannel): WebSocketChannelConnection {
+    export function create(connection: TheiaMessageConnection, channel: WebSocketChannel): WebSocketChannelConnection {
         const result = connection as WebSocketChannelConnection;
         result.channel = channel;
         return result;
