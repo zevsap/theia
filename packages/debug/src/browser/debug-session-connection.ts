@@ -116,7 +116,7 @@ export class DebugSessionConnection implements Disposable {
     private sequence = 1;
 
     protected readonly pendingRequests = new Map<number, (response: DebugProtocol.Response) => void>();
-    protected readonly connection: Promise<Channel>;
+    protected readonly connection: Promise<Channel<string>>;
 
     protected readonly requestHandlers = new Map<string, DebugRequestHandler>();
 
@@ -131,7 +131,7 @@ export class DebugSessionConnection implements Disposable {
 
     constructor(
         readonly sessionId: string,
-        protected readonly connectionFactory: (sessionId: string) => Promise<Channel>,
+        protected readonly connectionFactory: (sessionId: string) => Promise<Channel<string>>,
         protected readonly traceOutputChannel: OutputChannel | undefined
     ) {
         this.connection = this.createConnection();
@@ -150,7 +150,7 @@ export class DebugSessionConnection implements Disposable {
         this.toDispose.dispose();
     }
 
-    protected async createConnection(): Promise<Channel> {
+    protected async createConnection(): Promise<Channel<string>> {
         if (this.disposed) {
             throw new Error('Connection has been already disposed.');
         } else {

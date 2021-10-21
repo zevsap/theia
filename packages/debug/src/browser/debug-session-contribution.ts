@@ -119,12 +119,11 @@ export class DefaultDebugSessionFactory implements DebugSessionFactory {
     get(sessionId: string, options: DebugSessionOptions, parentSession?: DebugSession): DebugSession {
         const connection = new DebugSessionConnection(
             sessionId,
-            () => new Promise<Channel>(resolve =>
-                this.connectionProvider.openChannel(`${DebugAdapterPath}/${sessionId}`, channel => {
-                    resolve(channel);
-                }, { reconnecting: false })
+            () => new Promise<Channel<string>>(
+                resolve => this.connectionProvider.openChannel(`${DebugAdapterPath}/${sessionId}`, resolve, { reconnecting: false })
             ),
-            this.getTraceOutputChannel());
+            this.getTraceOutputChannel()
+        );
         return new DebugSession(
             sessionId,
             options,
@@ -136,7 +135,8 @@ export class DefaultDebugSessionFactory implements DebugSessionFactory {
             this.labelProvider,
             this.messages,
             this.fileService,
-            this.debugContributionProvider);
+            this.debugContributionProvider
+        );
     }
 
     protected getTraceOutputChannel(): OutputChannel | undefined {

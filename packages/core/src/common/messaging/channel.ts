@@ -23,9 +23,9 @@ import { Disposable } from '../disposable';
 /**
  * A `Channel` represents a bidirectional logical connection to a remote.
  */
-export interface Channel extends Disposable {
-    send(content: any): void;
-    onMessage(cb: (data: any) => void): void;
+export interface Channel<T = unknown> extends Disposable {
+    send(content: T): void;
+    onMessage(cb: (data: T) => void): void;
     onError(cb: (reason: any) => void): void;
     onClose(cb: (code: number, reason: string) => void): void;
 }
@@ -33,13 +33,13 @@ export interface Channel extends Disposable {
 export namespace Channel {
 
     export class MessageReader extends rpc.AbstractMessageReader implements rpc.MessageReader {
-        constructor(protected channel: Channel) {
+        constructor(protected channel: Channel<string>) {
             super();
             channel.onError(error => this.fireError(error));
             channel.onClose(() => this.fireClose());
         }
         listen(callback: rpc.DataCallback): rpc.Disposable {
-            this.channel.onMessage((data: string) => callback(JSON.parse(data)));
+            this.channel.onMessage(data => callback(JSON.parse(data)));
             return rpc.Disposable.create(() => {
                 throw new Error('not supported');
             });
@@ -47,7 +47,7 @@ export namespace Channel {
     }
 
     export class MessageWriter extends rpc.AbstractMessageWriter implements rpc.MessageWriter {
-        constructor(protected channel: Channel) {
+        constructor(protected channel: Channel<string>) {
             super();
             channel.onError(error => this.fireError(error));
             channel.onClose(() => this.fireClose());
@@ -58,13 +58,13 @@ export namespace Channel {
         end(): void { }
     }
 
-    export function createMessageConnection(channel: Channel, logger?: rpc.Logger, options?: rpc.ConnectionOptions): rpc.MessageConnection {
+    export function createMessageConnection(channel: Channel<string>, logger?: rpc.Logger, options?: rpc.ConnectionOptions): rpc.MessageConnection {
         const reader = new MessageReader(channel);
         const writer = new MessageWriter(channel);
         return rpc.createMessageConnection(reader, writer, logger, options);
     }
 
-    export function createTheiaMessageConnection(channel: Channel, onDispose: () => void = () => { }): TheiaMessageConnection {
+    export function createTheiaMessageConnection(channel: Channel<string>, onDispose: () => void = () => { }): TheiaMessageConnection {
         const reader = new MessageReader(channel);
         const writer = new MessageWriter(channel);
         return TheiaMessageConnection.create(reader, writer, onDispose);

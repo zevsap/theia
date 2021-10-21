@@ -88,7 +88,7 @@ export class PluginMessageReader extends AbstractMessageReader {
         if (this.state === 'initial') {
             this.events.unshift({ message });
         } else if (this.state === 'listening') {
-            const data = JSON.parse(message).content;
+            const data = JSON.parse(message);
             this.callback!(data);
         }
     }

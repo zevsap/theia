@@ -53,27 +53,34 @@ export class PluginConnection implements Connection {
     }
 }
 
+export interface PluginMessage extends Message {
+    jsonrpc: '0.0'
+    content: string
+}
+
 /**
  * [Channel](#Channel) implementation over RPC.
  */
-export class PluginWebSocketChannel implements Channel {
-    constructor(protected readonly connection: PluginConnection) { }
+export class PluginWebSocketChannel implements Channel<string> {
+
+    constructor(
+        protected readonly connection: PluginConnection
+    ) { }
 
     send(content: string): void {
         // vscode-jsonrpc's MessageReader/Writer expect to send JSON-RPC messages.
         // Use a bogus jsonrpc version and pass along the content to send.
-        const payload = { jsonrpc: '0.0', content };
-        this.connection.writer.write(payload);
+        const message: PluginMessage = { jsonrpc: '0.0', content };
+        this.connection.writer.write(message);
     }
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    onMessage(cb: (data: any) => void): void {
-        this.connection.reader.listen(cb);
+    onMessage(cb: (data: string) => void): void {
+        this.connection.reader.listen((message: PluginMessage) => cb(message.content));
     }
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     onError(cb: (reason: any) => void): void {
-        this.connection.reader.onError(e => cb(e));
+        this.connection.reader.onError(cb);
     }
 
     onClose(cb: (code: number, reason: string) => void): void {

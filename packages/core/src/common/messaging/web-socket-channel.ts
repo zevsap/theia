@@ -20,7 +20,7 @@ import { Disposable, DisposableCollection } from '../disposable';
 import { Emitter } from '../event';
 import { Channel } from './channel';
 
-export class WebSocketChannel implements Channel {
+export class WebSocketChannel implements Channel<string> {
 
     static wsPath = '/services';
 
