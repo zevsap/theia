@@ -77,6 +77,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="markers.problemutils.html#linenumbercompare" class="tsd-kind-icon">line<wbr>Number<wbr>Compare</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="markers.problemutils.html#ownercompare" class="tsd-kind-icon">owner<wbr>Compare</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="markers.problemutils.html#severitycompare" class="tsd-kind-icon">severity<wbr>Compare</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="markers.problemutils.html#severitycomparemarker" class="tsd-kind-icon">severity<wbr>Compare<wbr>Marker</a></li>
 							</ul>
 						</section>
 					</div>
@@ -94,7 +95,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/f65e1010540/packages/markers/src/browser/problem/problem-utils.ts#L46">packages/markers/src/browser/problem/problem-utils.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/52619839822/packages/markers/src/browser/problem/problem-utils.ts#L56">packages/markers/src/browser/problem/problem-utils.ts:56</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -134,7 +135,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/f65e1010540/packages/markers/src/browser/problem/problem-utils.ts#L38">packages/markers/src/browser/problem/problem-utils.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/52619839822/packages/markers/src/browser/problem/problem-utils.ts#L48">packages/markers/src/browser/problem/problem-utils.ts:48</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -174,7 +175,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/f65e1010540/packages/markers/src/browser/problem/problem-utils.ts#L54">packages/markers/src/browser/problem/problem-utils.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/52619839822/packages/markers/src/browser/problem/problem-utils.ts#L64">packages/markers/src/browser/problem/problem-utils.ts:64</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -208,13 +209,54 @@
 					<a name="severitycompare" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> severity<wbr>Compare</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">severity<wbr>Compare<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><a href="../interfaces/markers.marker.html" class="tsd-signature-type" data-tsd-kind="Interface">Marker</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Diagnostic</span><span class="tsd-signature-symbol">&gt;</span>, b<span class="tsd-signature-symbol">: </span><a href="../interfaces/markers.marker.html" class="tsd-signature-type" data-tsd-kind="Interface">Marker</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Diagnostic</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">severity<wbr>Compare<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">3</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">4</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">3</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">4</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/f65e1010540/packages/markers/src/browser/problem/problem-utils.ts#L29">packages/markers/src/browser/problem/problem-utils.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/52619839822/packages/markers/src/browser/problem/problem-utils.ts#L39">packages/markers/src/browser/problem/problem-utils.ts:39</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Comparator for severity.</p>
+									<ul>
+										<li>The highest severity (<code>error</code>) come first followed by others.</li>
+										<li><code>undefined</code> severities are treated as the last ones.</li>
+									</ul>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>a: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">3</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">4</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the first severity for comparison.</p>
+									</div>
+								</li>
+								<li>
+									<h5>b: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">3</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">4</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the second severity for comparison.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="severitycomparemarker" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> severity<wbr>Compare<wbr>Marker</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">severity<wbr>Compare<wbr>Marker<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><a href="../interfaces/markers.marker.html" class="tsd-signature-type" data-tsd-kind="Interface">Marker</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Diagnostic</span><span class="tsd-signature-symbol">&gt;</span>, b<span class="tsd-signature-symbol">: </span><a href="../interfaces/markers.marker.html" class="tsd-signature-type" data-tsd-kind="Interface">Marker</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Diagnostic</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/52619839822/packages/markers/src/browser/problem/problem-utils.ts#L29">packages/markers/src/browser/problem/problem-utils.ts:29</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -266,6 +308,9 @@
 								<a href="markers.markerrootnode.html">Marker<wbr>Root<wbr>Node</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="markers.problemcompositetreenode.html">Problem<wbr>Composite<wbr>Tree<wbr>Node</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="markers.problemdecorator.html">Problem<wbr>Decorator</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
@@ -300,6 +345,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-namespace">
 						<a href="markers.problemutils.html#severitycompare" class="tsd-kind-icon">severity<wbr>Compare</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="markers.problemutils.html#severitycomparemarker" class="tsd-kind-icon">severity<wbr>Compare<wbr>Marker</a>
 					</li>
 				</ul>
 			</nav>
