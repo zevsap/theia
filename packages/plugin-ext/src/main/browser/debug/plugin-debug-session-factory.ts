@@ -68,7 +68,7 @@ export class PluginDebugSessionFactory extends DefaultDebugSessionFactory {
         protected readonly messages: MessageClient,
         protected readonly outputChannelManager: OutputChannelManager,
         protected readonly debugPreferences: DebugPreferences,
-        protected readonly connectionFactory: (sessionId: string) => Promise<Channel>,
+        protected readonly connectionFactory: (sessionId: string) => Promise<Channel<string>>,
         protected readonly fileService: FileService,
         protected readonly terminalOptionsExt: TerminalOptionsExt | undefined,
         protected readonly debugContributionProvider: ContributionProvider<DebugContribution>
@@ -80,8 +80,8 @@ export class PluginDebugSessionFactory extends DefaultDebugSessionFactory {
         const connection = new DebugSessionConnection(
             sessionId,
             this.connectionFactory,
-            this.getTraceOutputChannel());
-
+            this.getTraceOutputChannel()
+        );
         return new PluginDebugSession(
             sessionId,
             options,

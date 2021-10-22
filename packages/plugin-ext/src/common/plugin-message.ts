@@ -1,5 +1,5 @@
 /********************************************************************************
- * Copyright (C) 2018 Red Hat, Inc. and others.
+ * Copyright (C) 2021 Ericsson and others.
  *
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License v. 2.0 which is available at
@@ -14,25 +14,15 @@
  * SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
  ********************************************************************************/
 
-import { AbstractMessageWriter, Message, MessageWriter } from '@theia/core/shared/vscode-languageserver-protocol';
-import { ConnectionMain, ConnectionExt } from './plugin-api-rpc';
+import { Message } from '@theia/core/shared/vscode-languageserver-protocol';
 
-/**
- * Support for writing string message through RPC protocol.
- */
-export class PluginMessageWriter extends AbstractMessageWriter implements MessageWriter {
-
-    constructor(
-        protected readonly id: string,
-        protected readonly proxy: ConnectionMain | ConnectionExt
-    ) {
-        super();
-    }
-
-    async write(message: Message): Promise<void> {
-        const content = JSON.stringify(message);
-        this.proxy.$sendMessage(this.id, content);
-    }
-
-    end(): void { }
+export interface PluginMessage extends Message {
+    /**
+     * Bogus JSON-RPC version because we don't actually implement JSON-RPC here.
+     */
+    jsonrpc: '0.0'
+    /**
+     * Actual string payload being transmitted.
+     */
+    content: string
 }

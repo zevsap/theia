@@ -35,7 +35,7 @@ import { DisposableCollection, Disposable } from '@theia/core/lib/common/disposa
 export class DebugAdapterSessionImpl implements DebugAdapterSession {
 
     private readonly toDispose = new DisposableCollection();
-    private channel?: Channel;
+    private channel?: Channel<string>;
 
     constructor(
         readonly id: string,
@@ -53,12 +53,12 @@ export class DebugAdapterSessionImpl implements DebugAdapterSession {
 
     }
 
-    async start(channel: Channel): Promise<void> {
+    async start(channel: Channel<string>): Promise<void> {
         if (this.channel) {
             throw new Error('The session has already been started, id: ' + this.id);
         }
         this.channel = channel;
-        this.channel.onMessage((message: string) => this.write(message));
+        this.channel.onMessage(message => this.write(message));
         this.channel.onClose(() => this.channel = undefined);
 
     }

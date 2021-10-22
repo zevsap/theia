@@ -41,7 +41,7 @@ export class PluginDebugAdapterSession extends DebugAdapterSessionImpl implement
         this.configuration = theiaSession.configuration;
     }
 
-    async start(channel: Channel): Promise<void> {
+    async start(channel: Channel<string>): Promise<void> {
         if (this.tracker.onWillStartSession) {
             this.tracker.onWillStartSession();
         }

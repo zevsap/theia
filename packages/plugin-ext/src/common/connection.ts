@@ -19,6 +19,7 @@ import type { Message, MessageReader, MessageWriter } from '@theia/core/shared/v
 import { Disposable } from './disposable-util';
 import { PluginMessageReader } from './plugin-message-reader';
 import { PluginMessageWriter } from './plugin-message-writer';
+import { PluginMessage } from './plugin-message';
 
 /**
  * The interface for describing the connection between plugins and main side.
@@ -53,15 +54,10 @@ export class PluginConnection implements Connection {
     }
 }
 
-export interface PluginMessage extends Message {
-    jsonrpc: '0.0'
-    content: string
-}
-
 /**
- * [Channel](#Channel) implementation over RPC.
+ * Wrapper around a [PluginConnection](#PluginConnection) to match the [Channel](#Channel) interface.
  */
-export class PluginWebSocketChannel implements Channel<string> {
+export class PluginChannel implements Channel<string> {
 
     constructor(
         protected readonly connection: PluginConnection
@@ -69,7 +65,8 @@ export class PluginWebSocketChannel implements Channel<string> {
 
     send(content: string): void {
         // vscode-jsonrpc's MessageReader/Writer expect to send JSON-RPC messages.
-        // Use a bogus jsonrpc version and pass along the content to send.
+        // Use a bogus jsonrpc version and pass along the `content` to send.
+        // `content` here is opaque: it could be any string.
         const message: PluginMessage = { jsonrpc: '0.0', content };
         this.connection.writer.write(message);
     }
@@ -78,8 +75,7 @@ export class PluginWebSocketChannel implements Channel<string> {
         this.connection.reader.listen((message: PluginMessage) => cb(message.content));
     }
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    onError(cb: (reason: any) => void): void {
+    onError(cb: (reason: unknown) => void): void {
         this.connection.reader.onError(cb);
     }
 
@@ -91,3 +87,10 @@ export class PluginWebSocketChannel implements Channel<string> {
         this.connection.dispose();
     }
 }
+
+/**
+ * Use `PluginChannel` instead.
+ *
+ * @deprecated since 1.19.0
+ */
+export const PluginWebSocketChannel = PluginChannel;
