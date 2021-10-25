@@ -40,7 +40,7 @@ export class PluginMessageReader extends AbstractMessageReader {
             for (const { message, error } of this.bufferedEvents!) {
                 if (!this.callback) {
                     break; // We got disposed.
-                } if (message) {
+                } else if (message) {
                     this.emitMessage(message);
                 } else if (error) {
                     this.fireError(error);
