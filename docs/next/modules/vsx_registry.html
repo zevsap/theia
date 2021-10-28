@@ -95,9 +95,8 @@
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/vsx_registry.abstractvsxextensioncomponent-1.html" class="tsd-kind-icon">AbstractVSXExtension<wbr>Component</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/vsx_registry.extensionschemacontribution.html" class="tsd-kind-icon">Extension<wbr>Schema<wbr>Contribution</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/vsx_registry.folderpreferenceproviderwithextensions.html" class="tsd-kind-icon">Folder<wbr>Preference<wbr>Provider<wbr>With<wbr>Extensions</a></li>
-								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/vsx_registry.ovsxasyncclient.html" class="tsd-kind-icon">OVSXAsync<wbr>Client</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/vsx_registry.userpreferenceproviderwithextensions.html" class="tsd-kind-icon">User<wbr>Preference<wbr>Provider<wbr>With<wbr>Extensions</a></li>
-								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/vsx_registry.vsxenvironment.html" class="tsd-kind-icon">VSXEnvironment</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/vsx_registry.vsxenvironmentimpl.html" class="tsd-kind-icon">VSXEnvironment<wbr>Impl</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/vsx_registry.vsxextension.html" class="tsd-kind-icon">VSXExtension</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/vsx_registry.vsxextensioncomponent.html" class="tsd-kind-icon">VSXExtension<wbr>Component</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/vsx_registry.vsxextensiondata.html" class="tsd-kind-icon">VSXExtension<wbr>Data</a></li>
@@ -122,11 +121,13 @@
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/vsx_registry.recommendedextensions.html" class="tsd-kind-icon">Recommended<wbr>Extensions</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/vsx_registry.vsxenvironment.html" class="tsd-kind-icon">VSXEnvironment</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="vsx_registry.html#ovsxclientprovider" class="tsd-kind-icon">OVSXClient<wbr>Provider</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="vsx_registry.html#vsxextensionfactory" class="tsd-kind-icon">VSXExtension<wbr>Factory</a></li>
 							</ul>
 						</section>
@@ -145,8 +146,11 @@
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="vsx_registry.html#extensionnotificationpreferences" class="tsd-kind-icon">Extension<wbr>Notification<wbr>Preferences</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="vsx_registry.html#ignore_recommendations_id" class="tsd-kind-icon">IGNORE_<wbr>RECOMMENDATIONS_<wbr>ID</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="vsx_registry.html#installed_query" class="tsd-kind-icon">INSTALLED_<wbr>QUERY</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="vsx_registry.html#ovsxclientprovider-1" class="tsd-kind-icon">OVSXClient<wbr>Provider</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="vsx_registry.html#recommended_query" class="tsd-kind-icon">RECOMMENDED_<wbr>QUERY</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="vsx_registry.html#vsxenvironment-1" class="tsd-kind-icon">VSXEnvironment</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="vsx_registry.html#vsxextensionfactory-1" class="tsd-kind-icon">VSXExtension<wbr>Factory</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="vsx_registry.html#vsx_environment_path" class="tsd-kind-icon">VSX_<wbr>ENVIRONMENT_<wbr>PATH</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="vsx_registry.html#extensionsconfigurationschema" class="tsd-kind-icon">extensions<wbr>Configuration<wbr>Schema</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="vsx_registry.html#extensionsschemaid" class="tsd-kind-icon">extensions<wbr>SchemaID</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="vsx_registry.html#recommendedextensionnotificationpreferencesschema" class="tsd-kind-icon">recommended<wbr>Extension<wbr>Notification<wbr>Preferences<wbr>Schema</a></li>
@@ -158,6 +162,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="vsx_registry.html#bindextensionpreferences" class="tsd-kind-icon">bind<wbr>Extension<wbr>Preferences</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="vsx_registry.html#bindpreferenceprovideroverrides" class="tsd-kind-icon">bind<wbr>Preference<wbr>Provider<wbr>Overrides</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="vsx_registry.html#createovsxclient" class="tsd-kind-icon">createOVSXClient</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="vsx_registry.html#generateextensionwidgetid" class="tsd-kind-icon">generate<wbr>Extension<wbr>Widget<wbr>Id</a></li>
 							</ul>
 						</section>
@@ -175,12 +180,37 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="ovsxclientprovider" class="tsd-anchor"></a>
+					<h3>OVSXClient<wbr>Provider</h3>
+					<div class="tsd-signature tsd-kind-icon">OVSXClient<wbr>Provider<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">OVSXClient</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/bf00fd0fcf5/packages/vsx-registry/src/common/ovsx-client-provider.ts#L21">packages/vsx-registry/src/common/ovsx-client-provider.ts:21</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">OVSXClient</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">OVSXClient</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
 					<a name="vsxextensionfactory" class="tsd-anchor"></a>
 					<h3>VSXExtension<wbr>Factory</h3>
 					<div class="tsd-signature tsd-kind-icon">VSXExtension<wbr>Factory<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../classes/vsx_registry.vsxextensionoptions.html" class="tsd-signature-type" data-tsd-kind="Class">VSXExtensionOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../classes/vsx_registry.vsxextension.html" class="tsd-signature-type" data-tsd-kind="Class">VSXExtension</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5049437eeba/packages/vsx-registry/src/browser/vsx-extension.tsx#L87">packages/vsx-registry/src/browser/vsx-extension.tsx:87</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/bf00fd0fcf5/packages/vsx-registry/src/browser/vsx-extension.tsx#L87">packages/vsx-registry/src/browser/vsx-extension.tsx:87</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -231,7 +261,7 @@
 					<div class="tsd-signature tsd-kind-icon">BUILTIN_<wbr>QUERY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;@builtin&quot;</span><span class="tsd-signature-symbol"> = &#x27;@builtin&#x27;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5049437eeba/packages/vsx-registry/src/browser/vsx-extensions-search-model.ts#L29">packages/vsx-registry/src/browser/vsx-extensions-search-model.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/bf00fd0fcf5/packages/vsx-registry/src/browser/vsx-extensions-search-model.ts#L29">packages/vsx-registry/src/browser/vsx-extensions-search-model.ts:29</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -241,7 +271,7 @@
 					<div class="tsd-signature tsd-kind-icon">EXTENSIONS_<wbr>CONTEXT_<wbr>MENU<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">MenuPath</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5049437eeba/packages/vsx-registry/src/browser/vsx-extension.tsx#L35">packages/vsx-registry/src/browser/vsx-extension.tsx:35</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/bf00fd0fcf5/packages/vsx-registry/src/browser/vsx-extension.tsx#L35">packages/vsx-registry/src/browser/vsx-extension.tsx:35</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -251,7 +281,7 @@
 					<div class="tsd-signature tsd-kind-icon">Extension<wbr>Notification<wbr>Preferences<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><a href="vsx_registry.html#extensionnotificationpreferences" class="tsd-signature-type" data-tsd-kind="Variable">ExtensionNotificationPreferences</a><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5049437eeba/packages/vsx-registry/src/browser/recommended-extensions/recommended-extensions-preference-contribution.ts#L55">packages/vsx-registry/src/browser/recommended-extensions/recommended-extensions-preference-contribution.ts:55</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/bf00fd0fcf5/packages/vsx-registry/src/browser/recommended-extensions/recommended-extensions-preference-contribution.ts#L55">packages/vsx-registry/src/browser/recommended-extensions/recommended-extensions-preference-contribution.ts:55</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -261,7 +291,7 @@
 					<div class="tsd-signature tsd-kind-icon">IGNORE_<wbr>RECOMMENDATIONS_<wbr>ID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;extensions.ignoreRecommendations&quot;</span><span class="tsd-signature-symbol"> = &#x27;extensions.ignoreRecommendations&#x27;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5049437eeba/packages/vsx-registry/src/browser/recommended-extensions/recommended-extensions-preference-contribution.ts#L41">packages/vsx-registry/src/browser/recommended-extensions/recommended-extensions-preference-contribution.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/bf00fd0fcf5/packages/vsx-registry/src/browser/recommended-extensions/recommended-extensions-preference-contribution.ts#L41">packages/vsx-registry/src/browser/recommended-extensions/recommended-extensions-preference-contribution.ts:41</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -271,7 +301,17 @@
 					<div class="tsd-signature tsd-kind-icon">INSTALLED_<wbr>QUERY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;@installed&quot;</span><span class="tsd-signature-symbol"> = &#x27;@installed&#x27;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5049437eeba/packages/vsx-registry/src/browser/vsx-extensions-search-model.ts#L30">packages/vsx-registry/src/browser/vsx-extensions-search-model.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/bf00fd0fcf5/packages/vsx-registry/src/browser/vsx-extensions-search-model.ts#L30">packages/vsx-registry/src/browser/vsx-extensions-search-model.ts:30</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="ovsxclientprovider-1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> OVSXClient<wbr>Provider</h3>
+					<div class="tsd-signature tsd-kind-icon">OVSXClient<wbr>Provider<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><a href="vsx_registry.html#ovsxclientprovider-1" class="tsd-signature-type" data-tsd-kind="Variable">OVSXClientProvider</a><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/bf00fd0fcf5/packages/vsx-registry/src/common/ovsx-client-provider.ts#L20">packages/vsx-registry/src/common/ovsx-client-provider.ts:20</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -281,7 +321,17 @@
 					<div class="tsd-signature tsd-kind-icon">RECOMMENDED_<wbr>QUERY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;@recommended&quot;</span><span class="tsd-signature-symbol"> = &#x27;@recommended&#x27;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5049437eeba/packages/vsx-registry/src/browser/vsx-extensions-search-model.ts#L31">packages/vsx-registry/src/browser/vsx-extensions-search-model.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/bf00fd0fcf5/packages/vsx-registry/src/browser/vsx-extensions-search-model.ts#L31">packages/vsx-registry/src/browser/vsx-extensions-search-model.ts:31</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="vsxenvironment-1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> VSXEnvironment</h3>
+					<div class="tsd-signature tsd-kind-icon">VSXEnvironment<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><a href="vsx_registry.html#vsxenvironment-1" class="tsd-signature-type" data-tsd-kind="Variable">VSXEnvironment</a><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/bf00fd0fcf5/packages/vsx-registry/src/common/vsx-environment.ts#L19">packages/vsx-registry/src/common/vsx-environment.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -291,9 +341,33 @@
 					<div class="tsd-signature tsd-kind-icon">VSXExtension<wbr>Factory<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><a href="vsx_registry.html#vsxextensionfactory-1" class="tsd-signature-type" data-tsd-kind="Variable">VSXExtensionFactory</a><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5049437eeba/packages/vsx-registry/src/browser/vsx-extension.tsx#L86">packages/vsx-registry/src/browser/vsx-extension.tsx:86</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/bf00fd0fcf5/packages/vsx-registry/src/browser/vsx-extension.tsx#L86">packages/vsx-registry/src/browser/vsx-extension.tsx:86</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="vsx_environment_path" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> VSX_<wbr>ENVIRONMENT_<wbr>PATH</h3>
+					<div class="tsd-signature tsd-kind-icon">VSX_<wbr>ENVIRONMENT_<wbr>PATH<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;/services/vsx-environment&quot;</span><span class="tsd-signature-symbol"> = &#x27;/services/vsx-environment&#x27;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/bf00fd0fcf5/packages/vsx-registry/src/common/vsx-environment.ts#L17">packages/vsx-registry/src/common/vsx-environment.ts:17</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Copyright (C) 2021 Ericsson and others.</p>
+						</div>
+						<p>This program and the accompanying materials are made available under the
+							terms of the Eclipse Public License v. 2.0 which is available at
+						<a href="http://www.eclipse.org/legal/epl-2.0">http://www.eclipse.org/legal/epl-2.0</a>.</p>
+						<p>This Source Code may also be made available under the following Secondary
+							Licenses when the conditions for such availability set forth in the Eclipse
+							Public License v. 2.0 are satisfied: GNU General Public License, version 2
+							with the GNU Classpath Exception which is available at
+						<a href="https://www.gnu.org/software/classpath/license.html">https://www.gnu.org/software/classpath/license.html</a>.</p>
+						<p>SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0</p>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="extensionsconfigurationschema" class="tsd-anchor"></a>
@@ -301,7 +375,7 @@
 					<div class="tsd-signature tsd-kind-icon">extensions<wbr>Configuration<wbr>Schema<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IJSONSchema</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5049437eeba/packages/vsx-registry/src/browser/recommended-extensions/recommended-extensions-json-schema.ts#L25">packages/vsx-registry/src/browser/recommended-extensions/recommended-extensions-json-schema.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/bf00fd0fcf5/packages/vsx-registry/src/browser/recommended-extensions/recommended-extensions-json-schema.ts#L25">packages/vsx-registry/src/browser/recommended-extensions/recommended-extensions-json-schema.ts:25</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -311,7 +385,7 @@
 					<div class="tsd-signature tsd-kind-icon">extensions<wbr>SchemaID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;vscode://schemas/extensions&quot;</span><span class="tsd-signature-symbol"> = &#x27;vscode://schemas/extensions&#x27;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5049437eeba/packages/vsx-registry/src/browser/recommended-extensions/recommended-extensions-json-schema.ts#L24">packages/vsx-registry/src/browser/recommended-extensions/recommended-extensions-json-schema.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/bf00fd0fcf5/packages/vsx-registry/src/browser/recommended-extensions/recommended-extensions-json-schema.ts#L24">packages/vsx-registry/src/browser/recommended-extensions/recommended-extensions-json-schema.ts:24</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -321,7 +395,7 @@
 					<div class="tsd-signature tsd-kind-icon">recommended<wbr>Extension<wbr>Notification<wbr>Preferences<wbr>Schema<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">PreferenceSchema</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5049437eeba/packages/vsx-registry/src/browser/recommended-extensions/recommended-extensions-preference-contribution.ts#L43">packages/vsx-registry/src/browser/recommended-extensions/recommended-extensions-preference-contribution.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/bf00fd0fcf5/packages/vsx-registry/src/browser/recommended-extensions/recommended-extensions-preference-contribution.ts#L43">packages/vsx-registry/src/browser/recommended-extensions/recommended-extensions-preference-contribution.ts:43</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -331,7 +405,7 @@
 					<div class="tsd-signature tsd-kind-icon">recommended<wbr>Extensions<wbr>Preferences<wbr>Schema<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">PreferenceSchema</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5049437eeba/packages/vsx-registry/src/browser/recommended-extensions/recommended-extensions-preference-contribution.ts#L29">packages/vsx-registry/src/browser/recommended-extensions/recommended-extensions-preference-contribution.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/bf00fd0fcf5/packages/vsx-registry/src/browser/recommended-extensions/recommended-extensions-preference-contribution.ts#L29">packages/vsx-registry/src/browser/recommended-extensions/recommended-extensions-preference-contribution.ts:29</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -348,7 +422,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5049437eeba/packages/vsx-registry/src/browser/recommended-extensions/recommended-extensions-preference-contribution.ts#L57">packages/vsx-registry/src/browser/recommended-extensions/recommended-extensions-preference-contribution.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/bf00fd0fcf5/packages/vsx-registry/src/browser/recommended-extensions/recommended-extensions-preference-contribution.ts#L57">packages/vsx-registry/src/browser/recommended-extensions/recommended-extensions-preference-contribution.ts:57</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -371,7 +445,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5049437eeba/packages/vsx-registry/src/browser/recommended-extensions/preference-provider-overrides.ts#L79">packages/vsx-registry/src/browser/recommended-extensions/preference-provider-overrides.ts:79</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/bf00fd0fcf5/packages/vsx-registry/src/browser/recommended-extensions/preference-provider-overrides.ts#L79">packages/vsx-registry/src/browser/recommended-extensions/preference-provider-overrides.ts:79</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -388,6 +462,29 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="createovsxclient" class="tsd-anchor"></a>
+					<h3>createOVSXClient</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">createOVSXClient<span class="tsd-signature-symbol">(</span>vsxEnvironment<span class="tsd-signature-symbol">: </span><a href="vsx_registry.html#vsxenvironment-1" class="tsd-signature-type" data-tsd-kind="Variable">VSXEnvironment</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">OVSXClient</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/bf00fd0fcf5/packages/vsx-registry/src/common/ovsx-client-provider.ts#L23">packages/vsx-registry/src/common/ovsx-client-provider.ts:23</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>vsxEnvironment: <a href="vsx_registry.html#vsxenvironment-1" class="tsd-signature-type" data-tsd-kind="Variable">VSXEnvironment</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">OVSXClient</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="generateextensionwidgetid" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> generate<wbr>Extension<wbr>Widget<wbr>Id</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -397,7 +494,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/5049437eeba/packages/vsx-registry/src/browser/vsx-extensions-widget.ts#L27">packages/vsx-registry/src/browser/vsx-extensions-widget.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/bf00fd0fcf5/packages/vsx-registry/src/browser/vsx-extensions-widget.ts#L27">packages/vsx-registry/src/browser/vsx-extensions-widget.ts:27</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -458,13 +555,10 @@
 						<a href="../classes/vsx_registry.folderpreferenceproviderwithextensions.html" class="tsd-kind-icon">Folder<wbr>Preference<wbr>Provider<wbr>With<wbr>Extensions</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/vsx_registry.ovsxasyncclient.html" class="tsd-kind-icon">OVSXAsync<wbr>Client</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/vsx_registry.userpreferenceproviderwithextensions.html" class="tsd-kind-icon">User<wbr>Preference<wbr>Provider<wbr>With<wbr>Extensions</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/vsx_registry.vsxenvironment.html" class="tsd-kind-icon">VSXEnvironment</a>
+						<a href="../classes/vsx_registry.vsxenvironmentimpl.html" class="tsd-kind-icon">VSXEnvironment<wbr>Impl</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/vsx_registry.vsxextension.html" class="tsd-kind-icon">VSXExtension</a>
@@ -523,6 +617,12 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/vsx_registry.recommendedextensions.html" class="tsd-kind-icon">Recommended<wbr>Extensions</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/vsx_registry.vsxenvironment.html" class="tsd-kind-icon">VSXEnvironment</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="vsx_registry.html#ovsxclientprovider" class="tsd-kind-icon">OVSXClient<wbr>Provider</a>
+					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="vsx_registry.html#vsxextensionfactory" class="tsd-kind-icon">VSXExtension<wbr>Factory</a>
 					</li>
@@ -548,10 +648,19 @@
 						<a href="vsx_registry.html#installed_query" class="tsd-kind-icon">INSTALLED_<wbr>QUERY</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="vsx_registry.html#ovsxclientprovider-1" class="tsd-kind-icon">OVSXClient<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="vsx_registry.html#recommended_query" class="tsd-kind-icon">RECOMMENDED_<wbr>QUERY</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="vsx_registry.html#vsxenvironment-1" class="tsd-kind-icon">VSXEnvironment</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="vsx_registry.html#vsxextensionfactory-1" class="tsd-kind-icon">VSXExtension<wbr>Factory</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="vsx_registry.html#vsx_environment_path" class="tsd-kind-icon">VSX_<wbr>ENVIRONMENT_<wbr>PATH</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="vsx_registry.html#extensionsconfigurationschema" class="tsd-kind-icon">extensions<wbr>Configuration<wbr>Schema</a>
@@ -570,6 +679,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="vsx_registry.html#bindpreferenceprovideroverrides" class="tsd-kind-icon">bind<wbr>Preference<wbr>Provider<wbr>Overrides</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="vsx_registry.html#createovsxclient" class="tsd-kind-icon">createOVSXClient</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="vsx_registry.html#generateextensionwidgetid" class="tsd-kind-icon">generate<wbr>Extension<wbr>Widget<wbr>Id</a>
