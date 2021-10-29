@@ -349,12 +349,11 @@ export class WorkspaceService implements FrontendApplicationContribution {
         this.doOpen(uri, options);
     }
 
-    protected async doOpen(uri: URI, options?: WorkspaceInput): Promise<void> {
-        const rootUri = uri.toString();
-        const stat = await this.toFileStat(rootUri);
+    protected async doOpen(uri: URI, options?: WorkspaceInput): Promise<URI | undefined> {
+        const stat = await this.toFileStat(uri);
         if (stat) {
             if (!stat.isDirectory && !this.isWorkspaceFile(stat)) {
-                const message = `Not a valid workspace file: ${uri}`;
+                const message = `Not a valid workspace: ${uri.path.toString()}`;
                 this.messageService.error(message);
                 throw new Error(message);
             }
@@ -365,14 +364,14 @@ export class WorkspaceService implements FrontendApplicationContribution {
                 preserveWindow: this.preferences['workspace.preserveWindow'] || !this.opened,
                 ...options
             };
-            await this.server.setMostRecentlyUsedWorkspace(rootUri);
+            await this.server.setMostRecentlyUsedWorkspace(uri.toString());
             if (preserveWindow) {
                 this._workspace = stat;
             }
             this.openWindow(stat, { preserveWindow });
             return;
         }
-        throw new Error('Invalid workspace root URI. Expected an existing directory location.');
+        throw new Error('Invalid workspace root URI. Expected an existing directory or workspace file.');
     }
 
     /**
@@ -405,7 +404,7 @@ export class WorkspaceService implements FrontendApplicationContribution {
 
     async spliceRoots(start: number, deleteCount?: number, ...rootsToAdd: URI[]): Promise<URI[]> {
         if (!this._workspace) {
-            throw new Error('There is not active workspace');
+            throw new Error('There is no active workspace');
         }
         const dedup = new Set<string>();
         const roots = this._roots.map(root => (dedup.add(root.resource.toString()), root.resource.toString()));
@@ -433,6 +432,7 @@ export class WorkspaceService implements FrontendApplicationContribution {
     }
 
     async getUntitledWorkspace(): Promise<URI> {
+        /* eslint-disable-next-line deprecation/deprecation */
         return getTemporaryWorkspaceFileUri(this.envVariableServer);
     }
 
@@ -737,7 +737,10 @@ export namespace WorkspaceData {
                 if (path.startsWith('file:///')) {
                     folders.push(path);
                 } else {
-                    folders.push(workspaceFile.resource.withScheme('file').parent.resolve(path).toString());
+                    const absolutePath = workspaceFile.resource.withScheme('file').parent.resolveToAbsolute(path)?.toString();
+                    if (absolutePath) {
+                        folders.push(absolutePath.toString());
+                    }
                 }
 
             }

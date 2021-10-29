@@ -335,16 +335,7 @@ export class WorkspaceCommandContribution implements CommandContribution {
                     const workspaceSavedBeforeAdding = this.workspaceService.saved;
                     await this.addFolderToWorkspace(...uris);
                     if (!workspaceSavedBeforeAdding) {
-                        const saveCommand = registry.getCommand(WorkspaceCommands.SAVE_WORKSPACE_AS.id);
-                        if (saveCommand && await new ConfirmDialog({
-                            title: nls.localize('theia/workspace/workspaceFolderAddedTitle', 'Folder added to Workspace'),
-                            msg: nls.localize('theia/workspace/workspaceFolderAdded',
-                                'A workspace with multiple roots was created. Do you want to save your workspace configuration as a file?'),
-                            ok: Dialog.YES,
-                            cancel: Dialog.NO
-                        }).open()) {
-                            registry.executeCommand(saveCommand.id);
-                        }
+                        this.saveWorkspaceWithPrompt(registry);
                     }
                 }
             });
@@ -520,6 +511,19 @@ export class WorkspaceCommandContribution implements CommandContribution {
             if (await dialog.open()) {
                 await this.workspaceService.removeRoots(toRemove);
             }
+        }
+    }
+
+    async saveWorkspaceWithPrompt(registry: CommandRegistry): Promise<void> {
+        const saveCommand = registry.getCommand(WorkspaceCommands.SAVE_WORKSPACE_AS.id);
+        if (saveCommand && await new ConfirmDialog({
+            title: nls.localize('theia/workspace/workspaceFolderAddedTitle', 'Folder added to Workspace'),
+            msg: nls.localize('theia/workspace/workspaceFolderAdded',
+                'A workspace with multiple roots was created. Do you want to save your workspace configuration as a file?'),
+            ok: Dialog.YES,
+            cancel: Dialog.NO
+        }).open()) {
+            return registry.executeCommand(saveCommand.id);
         }
     }
 
