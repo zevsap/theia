@@ -17,7 +17,7 @@
 import * as chai from 'chai';
 import { ConsoleLogger } from '../../node/messaging/logger';
 import { JsonRpcProxyFactory, JsonRpcProxy } from './proxy-factory';
-import { createMessageConnection, MessageReader, MessageWriter } from 'vscode-languageserver-protocol';
+import { createMessageConnection } from 'vscode-languageserver-protocol/node';
 import * as stream from 'stream';
 
 const expect = chai.expect;
@@ -96,10 +96,8 @@ function getSetup(): {
     const server = new TestServer();
 
     const serverProxyFactory = new JsonRpcProxyFactory<TestServer>(client);
-    // @ts-ignore
-    const client2server: MessageReader & MessageWriter = new NoTransform();
-    // @ts-ignore
-    const server2client: MessageReader & MessageWriter = new NoTransform();
+    const client2server = new NoTransform();
+    const server2client = new NoTransform();
     const serverConnection = createMessageConnection(server2client, client2server, new ConsoleLogger());
     serverProxyFactory.listen(serverConnection);
     const serverProxy = serverProxyFactory.createProxy();
