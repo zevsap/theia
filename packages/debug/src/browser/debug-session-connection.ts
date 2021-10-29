@@ -290,6 +290,8 @@ export class DebugSessionConnection implements Disposable {
                 this.onDidCustomEventEmitter.fire(event);
             }
         } else {
+            // TODO: Does this branch even make sense?
+            // @ts-expect-error TS2559
             this.fire('exited', event);
         }
     }

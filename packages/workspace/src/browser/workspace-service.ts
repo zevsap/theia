@@ -511,7 +511,7 @@ export class WorkspaceService implements FrontendApplicationContribution {
             this.setURLFragment('');
         }
 
-        window.location.reload(true);
+        window.location.reload();
     }
 
     protected openNewWindow(workspacePath: string): void {
