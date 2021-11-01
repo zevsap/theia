@@ -511,11 +511,6 @@ export interface RenameLocation {
     text: string;
 }
 
-export interface RenameProvider {
-    provideRenameEdits(model: monaco.editor.ITextModel, position: theia.Position, newName: string): PromiseLike<WorkspaceEdit & Rejection>;
-    resolveRenameLocation?(model: monaco.editor.ITextModel, position: theia.Position): PromiseLike<RenameLocation & Rejection>;
-}
-
 export interface CallHierarchyDefinition {
     name: string;
     kind: SymbolKind;
