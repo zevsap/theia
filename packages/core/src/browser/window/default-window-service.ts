@@ -18,9 +18,10 @@ import { inject, injectable, named } from 'inversify';
 import { Event, Emitter } from '../../common';
 import { CorePreferences } from '../core-preferences';
 import { ContributionProvider } from '../../common/contribution-provider';
-import { FrontendApplicationContribution, FrontendApplication } from '../frontend-application';
+import { FrontendApplicationContribution, FrontendApplication, OnWillStopAction } from '../frontend-application';
 import { WindowService } from './window-service';
 import { DEFAULT_WINDOW_HASH } from '../../common/window';
+import { confirmExit } from '../dialogs';
 
 @injectable()
 export class DefaultWindowService implements WindowService, FrontendApplicationContribution {
@@ -53,31 +54,67 @@ export class DefaultWindowService implements WindowService, FrontendApplicationC
         this.openNewWindow(`#${DEFAULT_WINDOW_HASH}`);
     }
 
-    canUnload(): boolean {
-        const confirmExit = this.corePreferences['application.confirmExit'];
-        let preventUnload = confirmExit === 'always';
+    protected collectContributionUnloadVetoes(): OnWillStopAction[] {
+        const vetoes = [];
+        const shouldConfirmExit = this.corePreferences['application.confirmExit'];
         for (const contribution of this.contributions.getContributions()) {
-            if (contribution.onWillStop?.(this.frontendApplication)) {
-                preventUnload = true;
+            const veto = contribution.onWillStop?.(this.frontendApplication);
+            if (veto && shouldConfirmExit !== 'never') { // Ignore vetoes if we should not prompt for exit.
+                if (OnWillStopAction.is(veto)) {
+                    vetoes.push(veto);
+                } else {
+                    vetoes.push({ reason: 'No reason given', action: () => false });
+                }
             }
         }
-        return confirmExit === 'never' || !preventUnload;
+        if (vetoes.length === 0 && shouldConfirmExit === 'always') {
+            vetoes.push({ reason: 'application.confirmExit preference', action: () => confirmExit() });
+        }
+        return vetoes;
     }
 
     /**
      * Implement the mechanism to detect unloading of the page.
      */
     protected registerUnloadListeners(): void {
-        window.addEventListener('beforeunload', event => {
-            if (!this.canUnload()) {
-                return this.preventUnload(event);
-            }
-        });
+        window.addEventListener('beforeunload', event => this.handleBeforeUnloadEvent(event));
         // In a browser, `unload` is correctly fired when the page unloads, unlike Electron.
         // If `beforeunload` is cancelled, the user will be prompted to leave or stay.
         // If the user stays, the page won't be unloaded, so `unload` is not fired.
         // If the user leaves, the page will be unloaded, so `unload` is fired.
         window.addEventListener('unload', () => this.onUnloadEmitter.fire());
+    }
+
+    async safeToShutDown(): Promise<boolean> {
+        const vetoes = this.collectContributionUnloadVetoes();
+        if (vetoes.length === 0) {
+            return true;
+        }
+        console.debug('Shutdown prevented by', vetoes.map(({ reason }) => reason).join(', '));
+        const resolvedVetoes = await Promise.allSettled(vetoes.map(({ action }) => action()));
+        if (resolvedVetoes.every(resolution => resolution.status === 'rejected' || resolution.value === true)) {
+            console.debug('OnWillStop actions resolved; allowing shutdown');
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /**
+     * Called when the `window` is about to `unload` its resources.
+     * At this point, the `document` is still visible and the [`BeforeUnloadEvent`](https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event)
+     * event will be canceled if the return value of this method is `false`.
+     *
+     * In Electron, handleCloseRequestEvent is is run instead.
+     */
+    protected handleBeforeUnloadEvent(event: BeforeUnloadEvent): string | void {
+        const vetoes = this.collectContributionUnloadVetoes();
+        if (vetoes.length) {
+            // In the browser, we don't call the functions because this has to finish in a single tick, so we treat any desired action as a veto.
+            console.debug('Shutdown prevented by', vetoes.map(({ reason }) => reason).join(', '));
+            return this.preventUnload(event);
+        }
+        console.debug('Shutdown will proceed.');
     }
 
     /**
@@ -95,4 +132,7 @@ export class DefaultWindowService implements WindowService, FrontendApplicationC
         return '';
     }
 
+    reload(): void {
+        window.location.reload();
+    }
 }

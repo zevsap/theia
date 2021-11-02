@@ -21,6 +21,7 @@ import { WindowService } from '../window-service';
 export class MockWindowService implements WindowService {
     openNewWindow(): undefined { return undefined; }
     openNewDefaultWindow(): void { }
-    canUnload(): boolean { return true; }
+    reload(): void { }
+    safeToShutDown(): Promise<boolean> { return Promise.resolve(true); }
     get onUnload(): Event<void> { return Event.None; }
 }

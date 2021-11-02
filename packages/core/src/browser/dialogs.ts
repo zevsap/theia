@@ -385,7 +385,16 @@ export class ConfirmDialog extends AbstractDialog<boolean> {
         }
         return msg;
     }
+}
 
+export async function confirmExit(): Promise<boolean> {
+    const safeToExit = await new ConfirmDialog({
+        title: 'Are you sure you want to quit?',
+        msg: 'Any unsaved changes will not be saved.',
+        ok: 'Yes',
+        cancel: 'No',
+    }).open();
+    return safeToExit === true;
 }
 
 @injectable()

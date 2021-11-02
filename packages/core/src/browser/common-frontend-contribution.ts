@@ -21,7 +21,7 @@ import { injectable, inject, optional } from 'inversify';
 import { TabBar, Widget } from '@phosphor/widgets';
 import { MAIN_MENU_BAR, SETTINGS_MENU, MenuContribution, MenuModelRegistry, ACCOUNTS_MENU } from '../common/menu';
 import { KeybindingContribution, KeybindingRegistry } from './keybinding';
-import { FrontendApplication, FrontendApplicationContribution } from './frontend-application';
+import { FrontendApplication, FrontendApplicationContribution, OnWillStopAction } from './frontend-application';
 import { CommandContribution, CommandRegistry, Command } from '../common/command';
 import { UriAwareCommandHandler } from '../common/uri-command-handler';
 import { SelectionService } from '../common/selection-service';
@@ -55,6 +55,7 @@ import { FormatType } from './saveable';
 import { QuickInputService, QuickPick, QuickPickItem } from './quick-input';
 import { AsyncLocalizationProvider } from '../common/i18n/localization';
 import { nls } from '../common/nls';
+import { confirmExit } from './dialogs';
 
 export namespace CommonMenus {
 
@@ -1024,10 +1025,10 @@ export class CommonFrontendContribution implements FrontendApplicationContributi
         });
     }
 
-    onWillStop(): true | undefined {
+    onWillStop(): OnWillStopAction | undefined {
         try {
             if (this.shouldPreventClose || this.shell.canSaveAll()) {
-                return true;
+                return { reason: 'Dirty editors present', action: () => confirmExit() };
             }
         } finally {
             this.shouldPreventClose = false;
