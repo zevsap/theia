@@ -1277,7 +1277,7 @@ export class ViewContainerLayout extends SplitLayout {
         return map(this.items, item => item.widget);
     }
 
-    // @ts-expect-error TS2611 because Phosphor.js implements a getter for `SplitLayout.widgets` but typed it as `readonly widgets`.
+    // @ts-expect-error TS2611 Phosphor.js implements a getter for `SplitLayout.widgets` but it is typed as `readonly widgets`.
     get widgets(): ViewContainerPart[] {
         return toArray(this.iter());
     }
