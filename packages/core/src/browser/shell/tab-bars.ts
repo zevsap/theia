@@ -615,7 +615,7 @@ export class ToolbarAwareTabBar extends ScrollableTabBar {
     /**
      * Overrides the `contentNode` property getter in PhosphorJS' TabBar.
      */
-    // @ts-expect-error TS2611 Phosphor.js implements a getter for `TabBar<T>.contentNode` but it is typed as `readonly contentNode`.
+    // @ts-expect-error TS2611 `TabBar<T>.contentNode` is declared as `readonly contentNode` but is implemented as a getter.
     get contentNode(): HTMLUListElement {
         return this.tabBarContainer.getElementsByClassName(ToolbarAwareTabBar.Styles.TAB_BAR_CONTENT)[0] as HTMLUListElement;
     }
