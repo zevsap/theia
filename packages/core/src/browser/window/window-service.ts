@@ -45,8 +45,20 @@ export interface WindowService {
     /**
      * Checks `FrontendApplicationContribution#willStop` for impediments to shutdown and runs any actions returned.
      * Can be used safely in browser and Electron when triggering reload or shutdown programmatically.
+     * Should _only_ be called before a shutdown - if this returns `true`, `FrontendApplicationContribution#willStop`
+     * will not be called again in the current session. I.e. if this return `true`, the shutdown should proceed without
+     * further condition.
      */
-    safeToShutDown(): Promise<boolean>;
+    isSafeToShutDown(): Promise<boolean>;
+
+    /**
+     * Will prevent subsequent checks of `FrontendApplicationContribution#willStop`. Should only be used after requesting
+     * user confirmation.
+     *
+     * This is primarily intended programmatic restarts due to e.g. change of display language. It allows for a single confirmation
+     * of intent, rather than one warning and then several warnings from other contributions.
+     */
+    setSafeToShutDown(): void;
 
     /**
      * Reloads the window according to platform.

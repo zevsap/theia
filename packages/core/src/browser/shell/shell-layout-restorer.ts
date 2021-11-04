@@ -141,7 +141,7 @@ export class ShellLayoutRestorer implements CommandContribution {
     }
 
     protected async resetLayout(): Promise<void> {
-        if (await this.windowService.safeToShutDown()) {
+        if (await this.windowService.isSafeToShutDown()) {
             this.logger.info('>>> Resetting layout...');
             this.shouldStoreLayout = false;
             this.storageService.setData(this.storageKey, undefined);

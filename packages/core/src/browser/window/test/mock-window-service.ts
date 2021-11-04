@@ -22,6 +22,7 @@ export class MockWindowService implements WindowService {
     openNewWindow(): undefined { return undefined; }
     openNewDefaultWindow(): void { }
     reload(): void { }
-    safeToShutDown(): Promise<boolean> { return Promise.resolve(true); }
+    isSafeToShutDown(): Promise<boolean> { return Promise.resolve(true); }
+    setSafeToShutDown(): void { }
     get onUnload(): Event<void> { return Event.None; }
 }

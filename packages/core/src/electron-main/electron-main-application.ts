@@ -457,12 +457,13 @@ export class ElectronMainApplication {
             }
 
             event.preventDefault();
-            const doExit = () => {
-                this.closeIsConfirmed.add(electronWindow.id);
-                electronWindow.close();
-            };
-            this.handleStopRequest(electronWindow, doExit, StopReason.Close);
+            this.handleStopRequest(electronWindow, () => this.doCloseWindow(electronWindow), StopReason.Close);
         });
+    }
+
+    protected doCloseWindow(electronWindow: BrowserWindow): void {
+        this.closeIsConfirmed.add(electronWindow.id);
+        electronWindow.close();
     }
 
     protected async handleStopRequest(electronWindow: BrowserWindow, onSafeCallback: () => unknown, reason: StopReason): Promise<void> {
@@ -607,7 +608,7 @@ export class ElectronMainApplication {
             });
             this.restarting = false;
         });
-        window.close();
+        this.handleStopRequest(window, () => this.doCloseWindow(window), StopReason.Restart);
     }
 
     protected async handleReload(event: Electron.IpcMainEvent): Promise<void> {

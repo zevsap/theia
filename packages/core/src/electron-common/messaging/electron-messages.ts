@@ -28,8 +28,18 @@ export const CLOSE_REQUESTED_SIGNAL = 'close-requested';
 export const RELOAD_REQUESTED_SIGNAL = 'reload-requested';
 
 export enum StopReason {
+    /**
+     * Closing the window with no prospect of restart.
+     */
     Close,
+    /**
+     * Reload without closing the window.
+     */
     Reload,
+    /**
+     * Reload that includes closing the window.
+     */
+    Restart, // eslint-disable-line @typescript-eslint/no-shadow
 }
 
 export interface CloseRequestArguments {

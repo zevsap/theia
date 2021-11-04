@@ -56,6 +56,9 @@ import { QuickInputService, QuickPick, QuickPickItem } from './quick-input';
 import { AsyncLocalizationProvider } from '../common/i18n/localization';
 import { nls } from '../common/nls';
 import { confirmExit } from './dialogs';
+import { WindowService } from './window/window-service';
+import { ConfirmDialog, Dialog } from '.';
+import { FrontendApplicationConfigProvider } from './frontend-application-config-provider';
 
 export namespace CommonMenus {
 
@@ -348,6 +351,9 @@ export class CommonFrontendContribution implements FrontendApplicationContributi
 
     @inject(AuthenticationService)
     protected readonly authenticationService: AuthenticationService;
+
+    @inject(WindowService)
+    protected readonly windowService: WindowService;
 
     async configure(app: FrontendApplication): Promise<void> {
         const configDirUri = await this.environments.getConfigDirUri();
@@ -1041,10 +1047,11 @@ export class CommonFrontendContribution implements FrontendApplicationContributi
         for (const additionalLanguage of ['en', ...availableLanguages]) {
             items.push({
                 label: additionalLanguage,
-                execute: () => {
-                    if (additionalLanguage !== nls.locale) {
+                execute: async () => {
+                    if (additionalLanguage !== nls.locale && await this.confirmRestart()) {
+                        this.windowService.setSafeToShutDown();
                         window.localStorage.setItem(nls.localeId, additionalLanguage);
-                        window.location.reload();
+                        this.windowService.reload();
                     }
                 }
             });
@@ -1054,6 +1061,18 @@ export class CommonFrontendContribution implements FrontendApplicationContributi
                 placeholder: CommonCommands.CONFIGURE_DISPLAY_LANGUAGE.label,
                 activeItem: items.find(item => item.label === (nls.locale || 'en'))
             });
+    }
+
+    protected async confirmRestart(): Promise<boolean> {
+        const shouldRestart = await new ConfirmDialog({
+            title: nls.localize('vscode/localizationsActions/relaunchDisplayLanguageMessage', 'A restart is required for the change in display language to take effect.'),
+            msg: nls.localize(
+                'vscode/localizationsActions/relaunchDisplayLanguageDetail', 'Press the restart button to restart {0} and change the display language.', FrontendApplicationConfigProvider.get().applicationName
+            ),
+            ok: nls.localize('vscode/localizationsActions/restart', 'Restart'),
+            cancel: Dialog.CANCEL,
+        }).open();
+        return shouldRestart === true;
     }
 
     protected selectIconTheme(): void {
