@@ -82,6 +82,7 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="search_in_workspace.searchinworkspaceoptions.html#exclude" class="tsd-kind-icon">exclude</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="search_in_workspace.searchinworkspaceoptions.html#followsymlinks" class="tsd-kind-icon">follow<wbr>Symlinks</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="search_in_workspace.searchinworkspaceoptions.html#include" class="tsd-kind-icon">include</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="search_in_workspace.searchinworkspaceoptions.html#includeignored" class="tsd-kind-icon">include<wbr>Ignored</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="search_in_workspace.searchinworkspaceoptions.html#matchcase" class="tsd-kind-icon">match<wbr>Case</a></li>
@@ -102,7 +103,7 @@
 					<div class="tsd-signature tsd-kind-icon">exclude<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/3bea909eb99/packages/search-in-workspace/src/common/search-in-workspace-interface.ts#L55">packages/search-in-workspace/src/common/search-in-workspace-interface.ts:55</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/52f9b09e933/packages/search-in-workspace/src/common/search-in-workspace-interface.ts#L55">packages/search-in-workspace/src/common/search-in-workspace-interface.ts:55</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -112,12 +113,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="followsymlinks" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> follow<wbr>Symlinks</h3>
+					<div class="tsd-signature tsd-kind-icon">follow<wbr>Symlinks<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/52f9b09e933/packages/search-in-workspace/src/common/search-in-workspace-interface.ts#L59">packages/search-in-workspace/src/common/search-in-workspace-interface.ts:59</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Whether symlinks should be followed while searching.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="include" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> include</h3>
 					<div class="tsd-signature tsd-kind-icon">include<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/3bea909eb99/packages/search-in-workspace/src/common/search-in-workspace-interface.ts#L51">packages/search-in-workspace/src/common/search-in-workspace-interface.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/52f9b09e933/packages/search-in-workspace/src/common/search-in-workspace-interface.ts#L51">packages/search-in-workspace/src/common/search-in-workspace-interface.ts:51</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -132,7 +148,7 @@
 					<div class="tsd-signature tsd-kind-icon">include<wbr>Ignored<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/3bea909eb99/packages/search-in-workspace/src/common/search-in-workspace-interface.ts#L47">packages/search-in-workspace/src/common/search-in-workspace-interface.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/52f9b09e933/packages/search-in-workspace/src/common/search-in-workspace-interface.ts#L47">packages/search-in-workspace/src/common/search-in-workspace-interface.ts:47</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -147,7 +163,7 @@
 					<div class="tsd-signature tsd-kind-icon">match<wbr>Case<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/3bea909eb99/packages/search-in-workspace/src/common/search-in-workspace-interface.ts#L35">packages/search-in-workspace/src/common/search-in-workspace-interface.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/52f9b09e933/packages/search-in-workspace/src/common/search-in-workspace-interface.ts#L35">packages/search-in-workspace/src/common/search-in-workspace-interface.ts:35</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -162,7 +178,7 @@
 					<div class="tsd-signature tsd-kind-icon">match<wbr>Whole<wbr>Word<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/3bea909eb99/packages/search-in-workspace/src/common/search-in-workspace-interface.ts#L39">packages/search-in-workspace/src/common/search-in-workspace-interface.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/52f9b09e933/packages/search-in-workspace/src/common/search-in-workspace-interface.ts#L39">packages/search-in-workspace/src/common/search-in-workspace-interface.ts:39</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -177,7 +193,7 @@
 					<div class="tsd-signature tsd-kind-icon">max<wbr>File<wbr>Size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/3bea909eb99/packages/search-in-workspace/src/common/search-in-workspace-interface.ts#L31">packages/search-in-workspace/src/common/search-in-workspace-interface.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/52f9b09e933/packages/search-in-workspace/src/common/search-in-workspace-interface.ts#L31">packages/search-in-workspace/src/common/search-in-workspace-interface.ts:31</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -195,7 +211,7 @@
 					<div class="tsd-signature tsd-kind-icon">max<wbr>Results<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/3bea909eb99/packages/search-in-workspace/src/common/search-in-workspace-interface.ts#L23">packages/search-in-workspace/src/common/search-in-workspace-interface.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/52f9b09e933/packages/search-in-workspace/src/common/search-in-workspace-interface.ts#L23">packages/search-in-workspace/src/common/search-in-workspace-interface.ts:23</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -210,7 +226,7 @@
 					<div class="tsd-signature tsd-kind-icon">use<wbr>Reg<wbr>Exp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/3bea909eb99/packages/search-in-workspace/src/common/search-in-workspace-interface.ts#L43">packages/search-in-workspace/src/common/search-in-workspace-interface.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/52f9b09e933/packages/search-in-workspace/src/common/search-in-workspace-interface.ts#L43">packages/search-in-workspace/src/common/search-in-workspace-interface.ts:43</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -261,6 +277,9 @@
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="search_in_workspace.searchinworkspaceoptions.html#exclude" class="tsd-kind-icon">exclude</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="search_in_workspace.searchinworkspaceoptions.html#followsymlinks" class="tsd-kind-icon">follow<wbr>Symlinks</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="search_in_workspace.searchinworkspaceoptions.html#include" class="tsd-kind-icon">include</a>
