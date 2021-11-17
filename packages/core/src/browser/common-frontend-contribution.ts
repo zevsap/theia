@@ -1065,11 +1065,9 @@ export class CommonFrontendContribution implements FrontendApplicationContributi
 
     protected async confirmRestart(): Promise<boolean> {
         const shouldRestart = await new ConfirmDialog({
-            title: nls.localize('vscode/localizationsActions/relaunchDisplayLanguageMessage', 'A restart is required for the change in display language to take effect.'),
-            msg: nls.localize(
-                'vscode/localizationsActions/relaunchDisplayLanguageDetail', 'Press the restart button to restart {0} and change the display language.', FrontendApplicationConfigProvider.get().applicationName
-            ),
-            ok: nls.localize('vscode/localizationsActions/restart', 'Restart'),
+            title: nls.localizeByDefault('A restart is required for the change in display language to take effect.'),
+            msg: nls.localizeByDefault('Press the restart button to restart {0} and change the display language.', FrontendApplicationConfigProvider.get().applicationName),
+            ok: nls.localizeByDefault('Restart'),
             cancel: Dialog.CANCEL,
         }).open();
         return shouldRestart === true;

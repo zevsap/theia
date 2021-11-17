@@ -52,7 +52,7 @@ export interface FrontendApplicationContribution {
 
     /**
      * Called on `beforeunload` event, right before the window closes.
-     * Return `true` in order to prevent exit.
+     * Return `true` or an OnWillStopAction in order to prevent exit.
      * Note: No async code allowed, this function has to run on one tick.
      */
     onWillStop?(app: FrontendApplication): boolean | undefined | OnWillStopAction;

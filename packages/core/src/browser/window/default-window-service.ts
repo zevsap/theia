@@ -66,7 +66,7 @@ export class DefaultWindowService implements WindowService, FrontendApplicationC
             const shouldConfirmExit = this.corePreferences['application.confirmExit'];
             for (const contribution of this.contributions.getContributions()) {
                 const veto = contribution.onWillStop?.(this.frontendApplication);
-                if (veto && shouldConfirmExit !== 'never') { // Ignore vetoes if we should not prompt for exit or if we have already run vetoes.
+                if (veto && shouldConfirmExit !== 'never') { // Ignore vetoes if we should not prompt the user on exit.
                     if (OnWillStopAction.is(veto)) {
                         vetoes.push(veto);
                     } else {

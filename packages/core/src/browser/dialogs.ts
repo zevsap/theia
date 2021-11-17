@@ -389,10 +389,10 @@ export class ConfirmDialog extends AbstractDialog<boolean> {
 
 export async function confirmExit(): Promise<boolean> {
     const safeToExit = await new ConfirmDialog({
-        title: 'Are you sure you want to quit?',
-        msg: 'Any unsaved changes will not be saved.',
-        ok: 'Yes',
-        cancel: 'No',
+        title: nls.localize('theia/core/quitTitle', 'Are you sure you want to quit?'),
+        msg: nls.localize('theia/core/quitMessage', 'Any unsaved changes will not be saved.'),
+        ok: Dialog.YES,
+        cancel: Dialog.NO,
     }).open();
     return safeToExit === true;
 }

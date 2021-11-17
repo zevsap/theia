@@ -29,7 +29,7 @@ import {
 } from '@theia/core/lib/common';
 import {
     ApplicationShell, KeybindingContribution, KeyCode, Key, WidgetManager,
-    KeybindingRegistry, Widget, LabelProvider, WidgetOpenerOptions, StorageService, QuickInputService, codicon, CommonCommands, FrontendApplicationContribution
+    KeybindingRegistry, Widget, LabelProvider, WidgetOpenerOptions, StorageService, QuickInputService, codicon, CommonCommands, FrontendApplicationContribution, OnWillStopAction
 } from '@theia/core/lib/browser';
 import { TabBarToolbarContribution, TabBarToolbarRegistry } from '@theia/core/lib/browser/shell/tab-bar-toolbar';
 import { TERMINAL_WIDGET_FACTORY_ID, TerminalWidgetFactoryOptions, TerminalWidgetImpl } from './terminal-widget-impl';
@@ -205,11 +205,16 @@ export class TerminalFrontendContribution implements FrontendApplicationContribu
         });
     }
 
-    onWillStop(): boolean {
-        return (
-            this.terminalPreferences['terminal.integrated.confirmOnExit'] !== 'never' &&
-            this.widgetManager.getWidgets(TERMINAL_WIDGET_FACTORY_ID).length > 0
-        );
+    onWillStop(): OnWillStopAction | undefined {
+        if (this.terminalPreferences['terminal.integrated.confirmOnExit'] !== 'never') {
+            const allTerminals = this.widgetManager.getWidgets(TERMINAL_WIDGET_FACTORY_ID) as TerminalWidget[];
+            if (allTerminals.length) {
+                return {
+                    action: () => Promise.all(allTerminals.map(widget => widget.hasChildProcesses())).then(hasChildProcesses => hasChildProcesses.some(hasChild => hasChild)),
+                    reason: 'Active integrated terminal',
+                };
+            }
+        }
     }
 
     protected _currentTerminal: TerminalWidget | undefined;
