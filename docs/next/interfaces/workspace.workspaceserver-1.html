@@ -83,6 +83,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="workspace.workspaceserver-1.html#getmostrecentlyusedworkspace" class="tsd-kind-icon">get<wbr>Most<wbr>Recently<wbr>Used<wbr>Workspace</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="workspace.workspaceserver-1.html#getrecentworkspaces" class="tsd-kind-icon">get<wbr>Recent<wbr>Workspaces</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="workspace.workspaceserver-1.html#removerecentworkspace" class="tsd-kind-icon">remove<wbr>Recent<wbr>Workspace</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="workspace.workspaceserver-1.html#setmostrecentlyusedworkspace" class="tsd-kind-icon">set<wbr>Most<wbr>Recently<wbr>Used<wbr>Workspace</a></li>
 							</ul>
 						</section>
@@ -101,7 +102,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7889beb9b7e/packages/workspace/src/common/workspace-protocol.ts#L29">packages/workspace/src/common/workspace-protocol.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/29ebe4c1cc1/packages/workspace/src/common/workspace-protocol.ts#L29">packages/workspace/src/common/workspace-protocol.ts:29</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -124,7 +125,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7889beb9b7e/packages/workspace/src/common/workspace-protocol.ts#L39">packages/workspace/src/common/workspace-protocol.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/29ebe4c1cc1/packages/workspace/src/common/workspace-protocol.ts#L46">packages/workspace/src/common/workspace-protocol.ts:46</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -133,6 +134,37 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="removerecentworkspace" class="tsd-anchor"></a>
+					<h3>remove<wbr>Recent<wbr>Workspace</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Recent<wbr>Workspace<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/29ebe4c1cc1/packages/workspace/src/common/workspace-protocol.ts#L41">packages/workspace/src/common/workspace-protocol.ts:41</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Removes a workspace from the list of recently opened workspaces.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>uri: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the workspace uri.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -146,7 +178,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/7889beb9b7e/packages/workspace/src/common/workspace-protocol.ts#L34">packages/workspace/src/common/workspace-protocol.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/29ebe4c1cc1/packages/workspace/src/common/workspace-protocol.ts#L34">packages/workspace/src/common/workspace-protocol.ts:34</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -206,6 +238,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="workspace.workspaceserver-1.html#getrecentworkspaces" class="tsd-kind-icon">get<wbr>Recent<wbr>Workspaces</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="workspace.workspaceserver-1.html#removerecentworkspace" class="tsd-kind-icon">remove<wbr>Recent<wbr>Workspace</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="workspace.workspaceserver-1.html#setmostrecentlyusedworkspace" class="tsd-kind-icon">set<wbr>Most<wbr>Recently<wbr>Used<wbr>Workspace</a>
