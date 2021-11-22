@@ -229,12 +229,12 @@ export class TerminalFrontendContribution implements FrontendApplicationContribu
 
     protected async confirmExitWithActiveTerminals(activeTerminalCount: number): Promise<boolean> {
         const msg = activeTerminalCount === 1
-            ? nls.localizeByDefault('Do you want to terminate the active terminal session?')
-            : nls.localizeByDefault('Do you want to terminate the {0} active terminal sessions?', activeTerminalCount);
+            ? nls.localize('theia/terminal/terminateActive', 'Do you want to terminate the active terminal session?')
+            : nls.localize('theia/terminal/terminateActiveMultiple', 'Do you want to terminate the {0} active terminal sessions?', activeTerminalCount);
         const safeToExit = await new ConfirmDialog({
             title: '',
             msg,
-            ok: nls.localizeByDefault('Terminate'),
+            ok: nls.localize('theia/terminal/terminate', 'Terminate'),
             cancel: Dialog.CANCEL,
         }).open();
         return safeToExit === true;
