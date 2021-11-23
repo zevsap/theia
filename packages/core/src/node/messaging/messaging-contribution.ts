@@ -21,7 +21,7 @@ import * as http from 'http';
 import * as https from 'https';
 import { injectable, inject, named, postConstruct, interfaces, Container } from 'inversify';
 import { MessageConnection } from 'vscode-languageserver-protocol';
-import { RPCMessageRelay } from '../../common/messaging';
+import { RpcMessageRelay } from '../../common/messaging';
 import { Channel } from '../../common/messaging/channel';
 import { ContributionProvider, ConnectionHandler, bindContributionProvider } from '../../common';
 import { WebSocketChannel } from '../../common/messaging/web-socket-channel';
@@ -79,10 +79,10 @@ export class MessagingContribution implements BackendApplicationContribution, Me
         });
     }
 
-    forward(spec: string, callback: (params: MessagingService.PathParams, connection: RPCMessageRelay) => void): void {
+    forward(spec: string, callback: (params: MessagingService.PathParams, connection: RpcMessageRelay) => void): void {
         this.wsChannel(spec, (params, channel) => {
-            const jsonRpcConnection = Channel.createTheiaMessageConnection(channel, () => channel.close());
-            const webSocketChannelConnection = WebSocketChannelConnection.create(jsonRpcConnection, channel);
+            const rpcMessageRelay = Channel.createRpcMessageRelay(channel, () => channel.close());
+            const webSocketChannelConnection = WebSocketChannelConnection.create(rpcMessageRelay, channel);
             callback(params, webSocketChannelConnection);
         });
     }

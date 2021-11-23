@@ -17,7 +17,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 import * as rpc from 'vscode-languageserver-protocol';
-import { RPCMessageRelay } from './theia-message-connection';
+import { RpcMessageRelay } from './theia-message-connection';
 import { Disposable } from '../disposable';
 
 /**
@@ -64,9 +64,9 @@ export namespace Channel {
         return rpc.createMessageConnection(reader, writer, logger, options);
     }
 
-    export function createTheiaMessageConnection(channel: Channel<string>, onDispose: () => void = () => { }): RPCMessageRelay {
+    export function createRpcMessageRelay(channel: Channel<string>, onDispose: () => void = () => { }): RpcMessageRelay {
         const reader = new MessageReader(channel);
         const writer = new MessageWriter(channel);
-        return RPCMessageRelay.create(reader, writer, onDispose);
+        return RpcMessageRelay.create(reader, writer, onDispose);
     }
 }

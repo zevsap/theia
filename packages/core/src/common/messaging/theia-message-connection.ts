@@ -23,22 +23,22 @@ import { Disposable, DisposableCollection } from '../../common';
  * This is close to `vscode_jsonrpc.MessageConnection` but without all the JSON-RPC
  * specific methods such as `sendRequest`, `sendNotification`, etc.
  */
-export interface RPCMessageRelay extends Disposable {
+export interface RpcMessageRelay extends Disposable {
     readonly reader: MessageReader;
     readonly writer: MessageWriter;
-    forward(to: RPCMessageRelay, map?: (message: Message) => Message): void;
+    forward(to: RpcMessageRelay, map?: (message: Message) => Message): void;
     onClose(callback: () => void): Disposable;
 }
 
-export namespace RPCMessageRelay {
-    export function create(reader: MessageReader, writer: MessageWriter, onDispose: () => void): RPCMessageRelay {
+export namespace RpcMessageRelay {
+    export function create(reader: MessageReader, writer: MessageWriter, onDispose: () => void): RpcMessageRelay {
         const disposeOnClose = new DisposableCollection();
         reader.onClose(() => disposeOnClose.dispose());
         writer.onClose(() => disposeOnClose.dispose());
         return {
             reader,
             writer,
-            forward(to: RPCMessageRelay, map?: (message: Message) => Message): void {
+            forward(to: RpcMessageRelay, map?: (message: Message) => Message): void {
                 reader.listen(data => {
                     if (map) {
                         data = map(data);
