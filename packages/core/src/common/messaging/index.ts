@@ -17,5 +17,5 @@
 export * from './handler';
 export * from './proxy-factory';
 export * from './connection-error-handler';
-export * from './theia-message-connection';
+export * from './rpc-message-relay';
 export * from './channel';

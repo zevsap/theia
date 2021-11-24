@@ -17,7 +17,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 import * as rpc from 'vscode-languageserver-protocol';
-import { RpcMessageRelay } from './theia-message-connection';
+import { RpcMessageRelay } from './rpc-message-relay';
 import { Disposable } from '../disposable';
 
 /**
