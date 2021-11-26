@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ConnectionExtImpl | Theia TypeDoc</title>
+	<title>ConnectionImpl | Theia TypeDoc</title>
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,35 +56,28 @@
 					<a href="../modules/plugin_ext.html">plugin-ext</a>
 				</li>
 				<li>
-					<a href="plugin_ext.connectionextimpl.html">ConnectionExtImpl</a>
+					<a href="plugin_ext.connectionimpl.html">ConnectionImpl</a>
 				</li>
 			</ul>
-			<h1>Class ConnectionExtImpl</h1>
+			<h1>Class ConnectionImpl</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Implementation of connection system of the plugin API.
-						It allows to communicate with main side to send and read messages.</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ConnectionExtImpl</span>
+						<span class="target">ConnectionImpl</span>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
+					<li><a href="../interfaces/plugin_ext.connectionmain-1.html" class="tsd-signature-type" data-tsd-kind="Interface">ConnectionMain</a></li>
 					<li><a href="../interfaces/plugin_ext.connectionext-1.html" class="tsd-signature-type" data-tsd-kind="Interface">ConnectionExt</a></li>
 				</ul>
 			</section>
@@ -95,25 +88,25 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="plugin_ext.connectionextimpl.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="plugin_ext.connectionimpl.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.connectionextimpl.html#connections" class="tsd-kind-icon">connections</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.connectionextimpl.html#proxy" class="tsd-kind-icon">proxy</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.connectionimpl.html#connections" class="tsd-kind-icon">connections</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="plugin_ext.connectionimpl.html#proxy" class="tsd-kind-icon">proxy</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="plugin_ext.connectionextimpl.html#_createconnection" class="tsd-kind-icon">$create<wbr>Connection</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="plugin_ext.connectionextimpl.html#_deleteconnection" class="tsd-kind-icon">$delete<wbr>Connection</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="plugin_ext.connectionextimpl.html#_sendmessage" class="tsd-kind-icon">$send<wbr>Message</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="plugin_ext.connectionextimpl.html#docreateconnection" class="tsd-kind-icon">do<wbr>Create<wbr>Connection</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="plugin_ext.connectionextimpl.html#doensureconnection" class="tsd-kind-icon">do<wbr>Ensure<wbr>Connection</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="plugin_ext.connectionextimpl.html#ensureconnection" class="tsd-kind-icon">ensure<wbr>Connection</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="plugin_ext.connectionimpl.html#_createconnection" class="tsd-kind-icon">$create<wbr>Connection</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="plugin_ext.connectionimpl.html#_deleteconnection" class="tsd-kind-icon">$delete<wbr>Connection</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="plugin_ext.connectionimpl.html#_sendmessage" class="tsd-kind-icon">$send<wbr>Message</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="plugin_ext.connectionimpl.html#docreateconnection" class="tsd-kind-icon">do<wbr>Create<wbr>Connection</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="plugin_ext.connectionimpl.html#doensureconnection" class="tsd-kind-icon">do<wbr>Ensure<wbr>Connection</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="plugin_ext.connectionimpl.html#ensureconnection" class="tsd-kind-icon">ensure<wbr>Connection</a></li>
 							</ul>
 						</section>
 					</div>
@@ -125,22 +118,22 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Connection<wbr>Ext<wbr>Impl<span class="tsd-signature-symbol">(</span>rpc<span class="tsd-signature-symbol">: </span><a href="../modules/plugin_ext.html#rpcprotocol-1" class="tsd-signature-type" data-tsd-kind="Variable">RPCProtocol</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.connectionextimpl.html" class="tsd-signature-type" data-tsd-kind="Class">ConnectionExtImpl</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Connection<wbr>Impl<span class="tsd-signature-symbol">(</span>proxy<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin_ext.connectionext-1.html" class="tsd-signature-type" data-tsd-kind="Interface">ConnectionExt</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/plugin_ext.connectionmain-1.html" class="tsd-signature-type" data-tsd-kind="Interface">ConnectionMain</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="plugin_ext.connectionimpl.html" class="tsd-signature-type" data-tsd-kind="Class">ConnectionImpl</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/plugin-ext/src/plugin/connection-ext.ts#L29">packages/plugin-ext/src/plugin/connection-ext.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/plugin-ext/src/common/connection.ts#L69">packages/plugin-ext/src/common/connection.ts:69</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>rpc: <a href="../modules/plugin_ext.html#rpcprotocol-1" class="tsd-signature-type" data-tsd-kind="Variable">RPCProtocol</a></h5>
+									<h5>proxy: <a href="../interfaces/plugin_ext.connectionext-1.html" class="tsd-signature-type" data-tsd-kind="Interface">ConnectionExt</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/plugin_ext.connectionmain-1.html" class="tsd-signature-type" data-tsd-kind="Interface">ConnectionMain</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.connectionextimpl.html" class="tsd-signature-type" data-tsd-kind="Class">ConnectionExtImpl</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="plugin_ext.connectionimpl.html" class="tsd-signature-type" data-tsd-kind="Class">ConnectionImpl</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -149,21 +142,21 @@
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="connections" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> connections</h3>
-					<div class="tsd-signature tsd-kind-icon">connections<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="plugin_ext.pluginconnection.html" class="tsd-signature-type" data-tsd-kind="Class">PluginConnection</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> connections</h3>
+					<div class="tsd-signature tsd-kind-icon">connections<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="plugin_ext.pluginchannel.html" class="tsd-signature-type" data-tsd-kind="Class">PluginChannel</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/plugin-ext/src/plugin/connection-ext.ts#L29">packages/plugin-ext/src/plugin/connection-ext.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/plugin-ext/src/common/connection.ts#L69">packages/plugin-ext/src/common/connection.ts:69</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="proxy" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> proxy</h3>
-					<div class="tsd-signature tsd-kind-icon">proxy<span class="tsd-signature-symbol">:</span> <a href="../interfaces/plugin_ext.connectionmain-1.html" class="tsd-signature-type" data-tsd-kind="Interface">ConnectionMain</a></div>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> proxy</h3>
+					<div class="tsd-signature tsd-kind-icon">proxy<span class="tsd-signature-symbol">:</span> <a href="../interfaces/plugin_ext.connectionext-1.html" class="tsd-signature-type" data-tsd-kind="Interface">ConnectionExt</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/plugin-ext/src/plugin/connection-ext.ts#L28">packages/plugin-ext/src/plugin/connection-ext.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/plugin-ext/src/common/connection.ts#L68">packages/plugin-ext/src/common/connection.ts:68</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -181,7 +174,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/plugin_ext.connectionext-1.html">ConnectionExt</a>.<a href="../interfaces/plugin_ext.connectionext-1.html#_createconnection">$createConnection</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/plugin-ext/src/plugin/connection-ext.ts#L52">packages/plugin-ext/src/plugin/connection-ext.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/plugin-ext/src/common/connection.ts#L93">packages/plugin-ext/src/common/connection.ts:93</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -213,7 +206,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/plugin_ext.connectionext-1.html">ConnectionExt</a>.<a href="../interfaces/plugin_ext.connectionext-1.html#_deleteconnection">$deleteConnection</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/plugin-ext/src/plugin/connection-ext.ts#L60">packages/plugin-ext/src/plugin/connection-ext.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/plugin-ext/src/common/connection.ts#L103">packages/plugin-ext/src/common/connection.ts:103</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -245,7 +238,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/plugin_ext.connectionext-1.html">ConnectionExt</a>.<a href="../interfaces/plugin_ext.connectionext-1.html#_sendmessage">$sendMessage</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/plugin-ext/src/plugin/connection-ext.ts#L40">packages/plugin-ext/src/plugin/connection-ext.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/plugin-ext/src/common/connection.ts#L81">packages/plugin-ext/src/common/connection.ts:81</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -276,13 +269,13 @@
 					<a name="docreateconnection" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> do<wbr>Create<wbr>Connection</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">do<wbr>Create<wbr>Connection<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="plugin_ext.pluginconnection.html" class="tsd-signature-type" data-tsd-kind="Class">PluginConnection</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">do<wbr>Create<wbr>Connection<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="plugin_ext.pluginchannel.html" class="tsd-signature-type" data-tsd-kind="Class">PluginChannel</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/plugin-ext/src/plugin/connection-ext.ts#L84">packages/plugin-ext/src/plugin/connection-ext.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/plugin-ext/src/common/connection.ts#L133">packages/plugin-ext/src/common/connection.ts:133</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -291,7 +284,7 @@
 									<h5>id: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="plugin_ext.pluginconnection.html" class="tsd-signature-type" data-tsd-kind="Class">PluginConnection</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="plugin_ext.pluginchannel.html" class="tsd-signature-type" data-tsd-kind="Class">PluginChannel</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -299,13 +292,13 @@
 					<a name="doensureconnection" class="tsd-anchor"></a>
 					<h3>do<wbr>Ensure<wbr>Connection</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">do<wbr>Ensure<wbr>Connection<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="plugin_ext.pluginconnection.html" class="tsd-signature-type" data-tsd-kind="Class">PluginConnection</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">do<wbr>Ensure<wbr>Connection<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="plugin_ext.pluginchannel.html" class="tsd-signature-type" data-tsd-kind="Class">PluginChannel</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/plugin-ext/src/plugin/connection-ext.ts#L78">packages/plugin-ext/src/plugin/connection-ext.ts:78</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/plugin-ext/src/common/connection.ts#L127">packages/plugin-ext/src/common/connection.ts:127</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -322,7 +315,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="plugin_ext.pluginconnection.html" class="tsd-signature-type" data-tsd-kind="Class">PluginConnection</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="plugin_ext.pluginchannel.html" class="tsd-signature-type" data-tsd-kind="Class">PluginChannel</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -330,13 +323,13 @@
 					<a name="ensureconnection" class="tsd-anchor"></a>
 					<h3>ensure<wbr>Connection</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">ensure<wbr>Connection<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="plugin_ext.pluginconnection.html" class="tsd-signature-type" data-tsd-kind="Class">PluginConnection</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">ensure<wbr>Connection<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="plugin_ext.pluginchannel.html" class="tsd-signature-type" data-tsd-kind="Class">PluginChannel</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/plugin-ext/src/plugin/connection-ext.ts#L68">packages/plugin-ext/src/plugin/connection-ext.ts:68</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/plugin-ext/src/common/connection.ts#L116">packages/plugin-ext/src/common/connection.ts:116</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -353,7 +346,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="plugin_ext.pluginconnection.html" class="tsd-signature-type" data-tsd-kind="Class">PluginConnection</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="plugin_ext.pluginchannel.html" class="tsd-signature-type" data-tsd-kind="Class">PluginChannel</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -503,34 +496,34 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-module">
-						<a href="plugin_ext.connectionextimpl.html" class="tsd-kind-icon">Connection<wbr>Ext<wbr>Impl</a>
+						<a href="plugin_ext.connectionimpl.html" class="tsd-kind-icon">Connection<wbr>Impl</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="plugin_ext.connectionextimpl.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="plugin_ext.connectionimpl.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="plugin_ext.connectionextimpl.html#connections" class="tsd-kind-icon">connections</a>
+								<a href="plugin_ext.connectionimpl.html#connections" class="tsd-kind-icon">connections</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="plugin_ext.connectionextimpl.html#proxy" class="tsd-kind-icon">proxy</a>
+								<a href="plugin_ext.connectionimpl.html#proxy" class="tsd-kind-icon">proxy</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="plugin_ext.connectionextimpl.html#_createconnection" class="tsd-kind-icon">$create<wbr>Connection</a>
+								<a href="plugin_ext.connectionimpl.html#_createconnection" class="tsd-kind-icon">$create<wbr>Connection</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="plugin_ext.connectionextimpl.html#_deleteconnection" class="tsd-kind-icon">$delete<wbr>Connection</a>
+								<a href="plugin_ext.connectionimpl.html#_deleteconnection" class="tsd-kind-icon">$delete<wbr>Connection</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="plugin_ext.connectionextimpl.html#_sendmessage" class="tsd-kind-icon">$send<wbr>Message</a>
+								<a href="plugin_ext.connectionimpl.html#_sendmessage" class="tsd-kind-icon">$send<wbr>Message</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="plugin_ext.connectionextimpl.html#docreateconnection" class="tsd-kind-icon">do<wbr>Create<wbr>Connection</a>
+								<a href="plugin_ext.connectionimpl.html#docreateconnection" class="tsd-kind-icon">do<wbr>Create<wbr>Connection</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="plugin_ext.connectionextimpl.html#doensureconnection" class="tsd-kind-icon">do<wbr>Ensure<wbr>Connection</a>
+								<a href="plugin_ext.connectionimpl.html#doensureconnection" class="tsd-kind-icon">do<wbr>Ensure<wbr>Connection</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="plugin_ext.connectionextimpl.html#ensureconnection" class="tsd-kind-icon">ensure<wbr>Connection</a>
+								<a href="plugin_ext.connectionimpl.html#ensureconnection" class="tsd-kind-icon">ensure<wbr>Connection</a>
 							</li>
 						</ul>
 					</li>

@@ -105,6 +105,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="debug.debugsession.html#fileservice" class="tsd-kind-icon">file<wbr>Service</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="debug.debugsession.html#id" class="tsd-kind-icon">id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="debug.debugsession.html#initialized" class="tsd-kind-icon">initialized</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="debug.debugsession.html#isstopping" class="tsd-kind-icon">is<wbr>Stopping</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="debug.debugsession.html#labelprovider" class="tsd-kind-icon">label<wbr>Provider</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="debug.debugsession.html#messages" class="tsd-kind-icon">messages</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="debug.debugsession.html#ondidchange" class="tsd-kind-icon">on<wbr>Did<wbr>Change</a></li>
@@ -117,7 +118,6 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="debug.debugsession.html#scheduleupdatethreads" class="tsd-kind-icon">schedule<wbr>Update<wbr>Threads</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="debug.debugsession.html#sources" class="tsd-kind-icon">sources</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="debug.debugsession.html#terminalserver" class="tsd-kind-icon">terminal<wbr>Server</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="debug.debugsession.html#terminated" class="tsd-kind-icon">terminated</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="debug.debugsession.html#todispose" class="tsd-kind-icon">to<wbr>Dispose</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="debug.debugsession.html#todisposeoncurrentthread" class="tsd-kind-icon">to<wbr>Dispose<wbr>OnCurrent<wbr>Thread</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="debug.debugsession.html#updatingbreakpoints" class="tsd-kind-icon">updating<wbr>Breakpoints</a></li>
@@ -133,6 +133,7 @@
 								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="debug.debugsession.html#currentthread" class="tsd-kind-icon">current<wbr>Thread</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="debug.debugsession.html#label" class="tsd-kind-icon">label</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="debug.debugsession.html#ondidcustomevent" class="tsd-kind-icon">on<wbr>Did<wbr>Custom<wbr>Event</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="debug.debugsession.html#ondispose" class="tsd-kind-icon">on<wbr>Dispose</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="debug.debugsession.html#runningthreads" class="tsd-kind-icon">running<wbr>Threads</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="debug.debugsession.html#state" class="tsd-kind-icon">state</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="debug.debugsession.html#stoppedthreads" class="tsd-kind-icon">stopped<wbr>Threads</a></li>
@@ -145,6 +146,8 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="debug.debugsession.html#asdebugbreakpointoptions" class="tsd-kind-icon">as<wbr>Debug<wbr>Breakpoint<wbr>Options</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="debug.debugsession.html#canrestart" class="tsd-kind-icon">can<wbr>Restart</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="debug.debugsession.html#canterminate" class="tsd-kind-icon">can<wbr>Terminate</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="debug.debugsession.html#clearbreakpoints" class="tsd-kind-icon">clear<wbr>Breakpoints</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="debug.debugsession.html#clearthread" class="tsd-kind-icon">clear<wbr>Thread</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="debug.debugsession.html#clearthreads" class="tsd-kind-icon">clear<wbr>Threads</a></li>
@@ -152,16 +155,13 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="debug.debugsession.html#configure" class="tsd-kind-icon">configure</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="debug.debugsession.html#continueall" class="tsd-kind-icon">continue<wbr>All</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="debug.debugsession.html#dedupsourcebreakpoints" class="tsd-kind-icon">dedup<wbr>Source<wbr>Breakpoints</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="debug.debugsession.html#disconnect" class="tsd-kind-icon">disconnect</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="debug.debugsession.html#dispose" class="tsd-kind-icon">dispose</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="debug.debugsession.html#disconnect" class="tsd-kind-icon">disconnect</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="debug.debugsession.html#docreateterminal" class="tsd-kind-icon">do<wbr>Create<wbr>Terminal</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="debug.debugsession.html#doupdatethreads" class="tsd-kind-icon">do<wbr>Update<wbr>Threads</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="debug.debugsession.html#evaluate" class="tsd-kind-icon">evaluate</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="debug.debugsession.html#exited" class="tsd-kind-icon">exited</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="debug.debugsession.html#findbreakpoint" class="tsd-kind-icon">find<wbr>Breakpoint</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="debug.debugsession.html#firedidchange" class="tsd-kind-icon">fire<wbr>Did<wbr>Change</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="debug.debugsession.html#firedidchangebreakpoints" class="tsd-kind-icon">fire<wbr>Did<wbr>Change<wbr>Breakpoints</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="debug.debugsession.html#fireexited" class="tsd-kind-icon">fire<wbr>Exited</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="debug.debugsession.html#getaffecteduris" class="tsd-kind-icon">get<wbr>Affected<wbr>Uris</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="debug.debugsession.html#getbreakpoints" class="tsd-kind-icon">get<wbr>Breakpoints</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="debug.debugsession.html#getelements" class="tsd-kind-icon">get<wbr>Elements</a></li>
@@ -191,7 +191,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="debug.debugsession.html#setbreakpoints" class="tsd-kind-icon">set<wbr>Breakpoints</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="debug.debugsession.html#setsourcebreakpoints" class="tsd-kind-icon">set<wbr>Source<wbr>Breakpoints</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="debug.debugsession.html#start" class="tsd-kind-icon">start</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="debug.debugsession.html#terminate" class="tsd-kind-icon">terminate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="debug.debugsession.html#stop" class="tsd-kind-icon">stop</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="debug.debugsession.html#todebugsource" class="tsd-kind-icon">to<wbr>Debug<wbr>Source</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="debug.debugsession.html#tosource" class="tsd-kind-icon">to<wbr>Source</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="debug.debugsession.html#updatebreakpoint" class="tsd-kind-icon">update<wbr>Breakpoint</a></li>
@@ -200,6 +200,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="debug.debugsession.html#updatecurrentthread" class="tsd-kind-icon">update<wbr>Current<wbr>Thread</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="debug.debugsession.html#updateframes" class="tsd-kind-icon">update<wbr>Frames</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="debug.debugsession.html#updatethreads" class="tsd-kind-icon">update<wbr>Threads</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="debug.debugsession.html#waitfor" class="tsd-kind-icon">wait<wbr>For</a></li>
 							</ul>
 						</section>
 					</div>
@@ -217,7 +218,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L67">packages/debug/src/browser/debug-session.tsx:67</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L69">packages/debug/src/browser/debug-session.tsx:69</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -269,7 +270,7 @@
 					<div class="tsd-signature tsd-kind-icon">_breakpoints<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="debug.debugbreakpoint.html" class="tsd-signature-type" data-tsd-kind="Class">DebugBreakpoint</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/debug.basebreakpoint.html" class="tsd-signature-type" data-tsd-kind="Interface">BaseBreakpoint</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L501">packages/debug/src/browser/debug-session.tsx:501</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L498">packages/debug/src/browser/debug-session.tsx:498</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -279,7 +280,7 @@
 					<div class="tsd-signature tsd-kind-icon">_capabilities<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Capabilities</span><span class="tsd-signature-symbol"> = {}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L118">packages/debug/src/browser/debug-session.tsx:118</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L123">packages/debug/src/browser/debug-session.tsx:123</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -289,7 +290,7 @@
 					<div class="tsd-signature tsd-kind-icon">_current<wbr>Thread<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="debug.debugthread.html" class="tsd-signature-type" data-tsd-kind="Class">DebugThread</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L220">packages/debug/src/browser/debug-session.tsx:220</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L225">packages/debug/src/browser/debug-session.tsx:225</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -299,7 +300,7 @@
 					<div class="tsd-signature tsd-kind-icon">_threads<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><a href="debug.debugthread.html" class="tsd-signature-type" data-tsd-kind="Class">DebugThread</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L163">packages/debug/src/browser/debug-session.tsx:163</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L168">packages/debug/src/browser/debug-session.tsx:168</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -316,7 +317,7 @@
 					<div class="tsd-signature tsd-kind-icon">child<wbr>Sessions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="debug.debugsession.html" class="tsd-signature-type" data-tsd-kind="Class">DebugSession</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L65">packages/debug/src/browser/debug-session.tsx:65</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L66">packages/debug/src/browser/debug-session.tsx:66</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -362,7 +363,17 @@
 					<div class="tsd-signature tsd-kind-icon">initialized<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L293">packages/debug/src/browser/debug-session.tsx:293</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L297">packages/debug/src/browser/debug-session.tsx:297</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="isstopping" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> is<wbr>Stopping</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Stopping<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L69">packages/debug/src/browser/debug-session.tsx:69</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -386,7 +397,7 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L54">packages/debug/src/browser/debug-session.tsx:54</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L55">packages/debug/src/browser/debug-session.tsx:55</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -396,7 +407,7 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Breakpoints<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L60">packages/debug/src/browser/debug-session.tsx:60</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L61">packages/debug/src/browser/debug-session.tsx:61</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -406,7 +417,7 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Breakpoints<wbr>Emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Emitter</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">default</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L59">packages/debug/src/browser/debug-session.tsx:59</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L60">packages/debug/src/browser/debug-session.tsx:60</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -416,7 +427,7 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Emitter</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L53">packages/debug/src/browser/debug-session.tsx:53</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L54">packages/debug/src/browser/debug-session.tsx:54</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -440,7 +451,7 @@
 					<div class="tsd-signature tsd-kind-icon">pending<wbr>Threads<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L434">packages/debug/src/browser/debug-session.tsx:434</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L431">packages/debug/src/browser/debug-session.tsx:431</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -450,7 +461,7 @@
 					<div class="tsd-signature tsd-kind-icon">schedule<wbr>Update<wbr>Threads<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>arguments<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L433">packages/debug/src/browser/debug-session.tsx:433</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L430">packages/debug/src/browser/debug-session.tsx:430</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -481,7 +492,7 @@
 					<div class="tsd-signature tsd-kind-icon">sources<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="debug.debugsource.html" class="tsd-signature-type" data-tsd-kind="Class">DebugSource</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L123">packages/debug/src/browser/debug-session.tsx:123</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L128">packages/debug/src/browser/debug-session.tsx:128</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -493,22 +504,12 @@
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-					<a name="terminated" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> terminated</h3>
-					<div class="tsd-signature tsd-kind-icon">terminated<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L311">packages/debug/src/browser/debug-session.tsx:311</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="todispose" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> to<wbr>Dispose</h3>
 					<div class="tsd-signature tsd-kind-icon">to<wbr>Dispose<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DisposableCollection</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L67">packages/debug/src/browser/debug-session.tsx:67</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L67">packages/debug/src/browser/debug-session.tsx:67</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -518,7 +519,7 @@
 					<div class="tsd-signature tsd-kind-icon">to<wbr>Dispose<wbr>OnCurrent<wbr>Thread<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DisposableCollection</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L221">packages/debug/src/browser/debug-session.tsx:221</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L226">packages/debug/src/browser/debug-session.tsx:226</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -528,7 +529,7 @@
 					<div class="tsd-signature tsd-kind-icon">updating<wbr>Breakpoints<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L545">packages/debug/src/browser/debug-session.tsx:545</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L542">packages/debug/src/browser/debug-session.tsx:542</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -545,7 +546,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L502">packages/debug/src/browser/debug-session.tsx:502</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L499">packages/debug/src/browser/debug-session.tsx:499</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IterableIterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -562,7 +563,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L119">packages/debug/src/browser/debug-session.tsx:119</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L124">packages/debug/src/browser/debug-session.tsx:124</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Capabilities</span></h4>
@@ -579,7 +580,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L114">packages/debug/src/browser/debug-session.tsx:114</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L119">packages/debug/src/browser/debug-session.tsx:119</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/debug.debugconfiguration-3.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugConfiguration</a></h4>
@@ -596,7 +597,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L216">packages/debug/src/browser/debug-session.tsx:216</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L221">packages/debug/src/browser/debug-session.tsx:221</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="debug.debugstackframe.html" class="tsd-signature-type" data-tsd-kind="Class">DebugStackFrame</a></h4>
@@ -614,7 +615,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L222">packages/debug/src/browser/debug-session.tsx:222</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L227">packages/debug/src/browser/debug-session.tsx:227</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="debug.debugthread.html" class="tsd-signature-type" data-tsd-kind="Class">DebugThread</a></h4>
@@ -622,7 +623,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L225">packages/debug/src/browser/debug-session.tsx:225</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L230">packages/debug/src/browser/debug-session.tsx:230</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -645,7 +646,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L752">packages/debug/src/browser/debug-session.tsx:752</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L749">packages/debug/src/browser/debug-session.tsx:749</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -662,10 +663,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L390">packages/debug/src/browser/debug-session.tsx:390</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L387">packages/debug/src/browser/debug-session.tsx:387</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="ondispose" class="tsd-anchor"></a>
+					<h3>on<wbr>Dispose</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> onDispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L115">packages/debug/src/browser/debug-session.tsx:115</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -679,7 +697,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L180">packages/debug/src/browser/debug-session.tsx:180</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L185">packages/debug/src/browser/debug-session.tsx:185</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IterableIterator</span><span class="tsd-signature-symbol">&lt;</span><a href="debug.debugthread.html" class="tsd-signature-type" data-tsd-kind="Class">DebugThread</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -696,7 +714,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L237">packages/debug/src/browser/debug-session.tsx:237</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L242">packages/debug/src/browser/debug-session.tsx:242</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../enums/debug.debugstate.html" class="tsd-signature-type" data-tsd-kind="Enumeration">DebugState</a></h4>
@@ -713,7 +731,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L184">packages/debug/src/browser/debug-session.tsx:184</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L189">packages/debug/src/browser/debug-session.tsx:189</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IterableIterator</span><span class="tsd-signature-symbol">&lt;</span><a href="debug.debugthread.html" class="tsd-signature-type" data-tsd-kind="Class">DebugThread</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -730,7 +748,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L168">packages/debug/src/browser/debug-session.tsx:168</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L173">packages/debug/src/browser/debug-session.tsx:173</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -747,7 +765,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L164">packages/debug/src/browser/debug-session.tsx:164</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L169">packages/debug/src/browser/debug-session.tsx:169</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IterableIterator</span><span class="tsd-signature-symbol">&lt;</span><a href="debug.debugthread.html" class="tsd-signature-type" data-tsd-kind="Class">DebugThread</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -764,7 +782,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L759">packages/debug/src/browser/debug-session.tsx:759</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L756">packages/debug/src/browser/debug-session.tsx:756</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -784,10 +802,44 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L747">packages/debug/src/browser/debug-session.tsx:747</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L744">packages/debug/src/browser/debug-session.tsx:744</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="debug.debugbreakpointoptions.html" class="tsd-signature-type" data-tsd-kind="Class">DebugBreakpointOptions</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="canrestart" class="tsd-anchor"></a>
+					<h3>can<wbr>Restart</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">can<wbr>Restart<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L319">packages/debug/src/browser/debug-session.tsx:319</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="canterminate" class="tsd-anchor"></a>
+					<h3>can<wbr>Terminate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">can<wbr>Terminate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L315">packages/debug/src/browser/debug-session.tsx:315</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -801,7 +853,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L537">packages/debug/src/browser/debug-session.tsx:537</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L534">packages/debug/src/browser/debug-session.tsx:534</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -818,7 +870,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L425">packages/debug/src/browser/debug-session.tsx:425</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L422">packages/debug/src/browser/debug-session.tsx:422</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -841,7 +893,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L418">packages/debug/src/browser/debug-session.tsx:418</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L415">packages/debug/src/browser/debug-session.tsx:415</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -858,7 +910,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L366">packages/debug/src/browser/debug-session.tsx:366</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L359">packages/debug/src/browser/debug-session.tsx:359</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -887,7 +939,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L294">packages/debug/src/browser/debug-session.tsx:294</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L298">packages/debug/src/browser/debug-session.tsx:298</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -904,7 +956,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L202">packages/debug/src/browser/debug-session.tsx:202</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L207">packages/debug/src/browser/debug-session.tsx:207</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -921,7 +973,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L719">packages/debug/src/browser/debug-session.tsx:719</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L716">packages/debug/src/browser/debug-session.tsx:716</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -934,43 +986,41 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="disconnect" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> disconnect</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">disconnect<span class="tsd-signature-symbol">(</span>restart<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<h3>disconnect</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">disconnect<span class="tsd-signature-symbol">(</span>isRestart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L324">packages/debug/src/browser/debug-session.tsx:324</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L351">packages/debug/src/browser/debug-session.tsx:351</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> restart: <span class="tsd-signature-type">boolean</span></h5>
+									<h5>isRestart: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5>callback: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="dispose" class="tsd-anchor"></a>
-					<h3>dispose</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L110">packages/debug/src/browser/debug-session.tsx:110</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -984,7 +1034,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L401">packages/debug/src/browser/debug-session.tsx:401</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L398">packages/debug/src/browser/debug-session.tsx:398</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1007,7 +1057,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L449">packages/debug/src/browser/debug-session.tsx:449</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L446">packages/debug/src/browser/debug-session.tsx:446</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1033,7 +1083,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L372">packages/debug/src/browser/debug-session.tsx:372</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L365">packages/debug/src/browser/debug-session.tsx:365</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1050,29 +1100,6 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-					<a name="exited" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> exited</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">exited<span class="tsd-signature-symbol">(</span>timeout<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L344">packages/debug/src/browser/debug-session.tsx:344</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>timeout: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 					<a name="findbreakpoint" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> find<wbr>Breakpoint</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
@@ -1082,7 +1109,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L594">packages/debug/src/browser/debug-session.tsx:594</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L591">packages/debug/src/browser/debug-session.tsx:591</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1123,7 +1150,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L55">packages/debug/src/browser/debug-session.tsx:55</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L56">packages/debug/src/browser/debug-session.tsx:56</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1140,36 +1167,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L61">packages/debug/src/browser/debug-session.tsx:61</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L62">packages/debug/src/browser/debug-session.tsx:62</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>uri: <span class="tsd-signature-type">default</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-					<a name="fireexited" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> fire<wbr>Exited</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">fire<wbr>Exited<span class="tsd-signature-symbol">(</span>reason<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L336">packages/debug/src/browser/debug-session.tsx:336</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> reason: <span class="tsd-signature-type">Error</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1186,7 +1190,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L735">packages/debug/src/browser/debug-session.tsx:735</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L732">packages/debug/src/browser/debug-session.tsx:732</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1209,7 +1213,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L526">packages/debug/src/browser/debug-session.tsx:526</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L523">packages/debug/src/browser/debug-session.tsx:523</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1233,7 +1237,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of CompositeTreeElement.getElements</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L776">packages/debug/src/browser/debug-session.tsx:776</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L773">packages/debug/src/browser/debug-session.tsx:773</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IterableIterator</span><span class="tsd-signature-symbol">&lt;</span><a href="debug.debugsession.html" class="tsd-signature-type" data-tsd-kind="Class">DebugSession</a><span class="tsd-signature-symbol"> | </span><a href="debug.debugthread.html" class="tsd-signature-type" data-tsd-kind="Class">DebugThread</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1250,7 +1254,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L516">packages/debug/src/browser/debug-session.tsx:516</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L513">packages/debug/src/browser/debug-session.tsx:513</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="debug.debugfunctionbreakpoint.html" class="tsd-signature-type" data-tsd-kind="Class">DebugFunctionBreakpoint</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -1267,7 +1271,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L251">packages/debug/src/browser/debug-session.tsx:251</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L256">packages/debug/src/browser/debug-session.tsx:256</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="debug.debugscope.html" class="tsd-signature-type" data-tsd-kind="Class">DebugScope</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1284,7 +1288,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L786">packages/debug/src/browser/debug-session.tsx:786</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L783">packages/debug/src/browser/debug-session.tsx:783</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="debug.debugsession.html" class="tsd-signature-type" data-tsd-kind="Class">DebugSession</a></h4>
@@ -1301,7 +1305,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L124">packages/debug/src/browser/debug-session.tsx:124</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L129">packages/debug/src/browser/debug-session.tsx:129</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1324,7 +1328,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L506">packages/debug/src/browser/debug-session.tsx:506</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L503">packages/debug/src/browser/debug-session.tsx:503</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1347,7 +1351,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L132">packages/debug/src/browser/debug-session.tsx:132</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L137">packages/debug/src/browser/debug-session.tsx:137</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1370,7 +1374,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L172">packages/debug/src/browser/debug-session.tsx:172</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L177">packages/debug/src/browser/debug-session.tsx:177</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1411,7 +1415,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L794">packages/debug/src/browser/debug-session.tsx:794</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L791">packages/debug/src/browser/debug-session.tsx:791</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1434,7 +1438,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L802">packages/debug/src/browser/debug-session.tsx:802</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L799">packages/debug/src/browser/debug-session.tsx:799</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1457,7 +1461,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L810">packages/debug/src/browser/debug-session.tsx:810</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L807">packages/debug/src/browser/debug-session.tsx:807</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1480,7 +1484,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L261">packages/debug/src/browser/debug-session.tsx:261</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L266">packages/debug/src/browser/debug-session.tsx:266</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1497,7 +1501,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L277">packages/debug/src/browser/debug-session.tsx:277</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L282">packages/debug/src/browser/debug-session.tsx:282</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1508,13 +1512,13 @@
 					<a name="on" class="tsd-anchor"></a>
 					<h3>on</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">on&lt;K&gt;<span class="tsd-signature-symbol">(</span>kind<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">K</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><a href="../interfaces/debug.debugeventtypes.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugEventTypes</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Disposable</span></li>
+						<li class="tsd-signature tsd-kind-icon">on&lt;K&gt;<span class="tsd-signature-symbol">(</span>kind<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">K</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><a href="../interfaces/debug.debugeventtypes-1.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugEventTypes</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Disposable</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L386">packages/debug/src/browser/debug-session.tsx:386</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L379">packages/debug/src/browser/debug-session.tsx:379</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1529,18 +1533,18 @@
 									<h5>kind: <span class="tsd-signature-type">K</span></h5>
 								</li>
 								<li>
-									<h5>listener: <span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><a href="../interfaces/debug.debugeventtypes.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugEventTypes</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
+									<h5>listener: <span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><a href="../interfaces/debug.debugeventtypes-1.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugEventTypes</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><a href="../interfaces/debug.debugeventtypes.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugEventTypes</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><a href="../interfaces/debug.debugeventtypes-1.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugEventTypes</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
 													<h4 class="tsd-parameters-title">Parameters</h4>
 													<ul class="tsd-parameters">
 														<li>
-															<h5>e: <a href="../interfaces/debug.debugeventtypes.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugEventTypes</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">]</span></h5>
+															<h5>e: <a href="../interfaces/debug.debugeventtypes-1.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugEventTypes</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">]</span></h5>
 														</li>
 													</ul>
 													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -1564,7 +1568,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L188">packages/debug/src/browser/debug-session.tsx:188</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L193">packages/debug/src/browser/debug-session.tsx:193</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1581,7 +1585,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L818">packages/debug/src/browser/debug-session.tsx:818</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L815">packages/debug/src/browser/debug-session.tsx:815</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1608,7 +1612,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of CompositeTreeElement.render</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L763">packages/debug/src/browser/debug-session.tsx:763</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L760">packages/debug/src/browser/debug-session.tsx:760</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ReactNode</span></h4>
@@ -1619,16 +1623,16 @@
 					<a name="restart" class="tsd-anchor"></a>
 					<h3>restart</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">restart<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">restart<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L357">packages/debug/src/browser/debug-session.tsx:357</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L323">packages/debug/src/browser/debug-session.tsx:323</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1642,7 +1646,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L394">packages/debug/src/browser/debug-session.tsx:394</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L391">packages/debug/src/browser/debug-session.tsx:391</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1665,7 +1669,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L382">packages/debug/src/browser/debug-session.tsx:382</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L375">packages/debug/src/browser/debug-session.tsx:375</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1697,7 +1701,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L624">packages/debug/src/browser/debug-session.tsx:624</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L621">packages/debug/src/browser/debug-session.tsx:621</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1714,7 +1718,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L634">packages/debug/src/browser/debug-session.tsx:634</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L631">packages/debug/src/browser/debug-session.tsx:631</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1731,13 +1735,13 @@
 					<a name="sendrequest" class="tsd-anchor"></a>
 					<h3>send<wbr>Request</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">send<wbr>Request&lt;K&gt;<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">K</span>, args<span class="tsd-signature-symbol">: </span><a href="../interfaces/debug.debugrequesttypes.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugRequestTypes</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">0</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/debug.debugrequesttypes.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugRequestTypes</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">send<wbr>Request&lt;K&gt;<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">K</span>, args<span class="tsd-signature-symbol">: </span><a href="../interfaces/debug.debugrequesttypes.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugRequestTypes</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">0</span><span class="tsd-signature-symbol">]</span>, timeout<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/debug.debugrequesttypes.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugRequestTypes</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L378">packages/debug/src/browser/debug-session.tsx:378</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L371">packages/debug/src/browser/debug-session.tsx:371</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1754,6 +1758,9 @@
 								<li>
 									<h5>args: <a href="../interfaces/debug.debugrequesttypes.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugRequestTypes</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">0</span><span class="tsd-signature-symbol">]</span></h5>
 								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> timeout: <span class="tsd-signature-type">number</span></h5>
+								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/debug.debugrequesttypes.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugRequestTypes</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
@@ -1769,7 +1776,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L671">packages/debug/src/browser/debug-session.tsx:671</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L668">packages/debug/src/browser/debug-session.tsx:668</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1795,7 +1802,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L709">packages/debug/src/browser/debug-session.tsx:709</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L706">packages/debug/src/browser/debug-session.tsx:706</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1821,7 +1828,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L714">packages/debug/src/browser/debug-session.tsx:714</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L711">packages/debug/src/browser/debug-session.tsx:711</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1847,7 +1854,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L256">packages/debug/src/browser/debug-session.tsx:256</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L261">packages/debug/src/browser/debug-session.tsx:261</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1855,22 +1862,37 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="terminate" class="tsd-anchor"></a>
-					<h3>terminate</h3>
+					<a name="stop" class="tsd-anchor"></a>
+					<h3>stop</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">terminate<span class="tsd-signature-symbol">(</span>restart<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">stop<span class="tsd-signature-symbol">(</span>isRestart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L312">packages/debug/src/browser/debug-session.tsx:312</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L329">packages/debug/src/browser/debug-session.tsx:329</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> restart: <span class="tsd-signature-type">boolean</span></h5>
+									<h5>isRestart: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5>callback: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1887,7 +1909,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L145">packages/debug/src/browser/debug-session.tsx:145</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L150">packages/debug/src/browser/debug-session.tsx:150</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1910,7 +1932,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L136">packages/debug/src/browser/debug-session.tsx:136</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L141">packages/debug/src/browser/debug-session.tsx:141</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1933,7 +1955,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L547">packages/debug/src/browser/debug-session.tsx:547</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L544">packages/debug/src/browser/debug-session.tsx:544</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1958,7 +1980,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L605">packages/debug/src/browser/debug-session.tsx:605</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L602">packages/debug/src/browser/debug-session.tsx:602</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1989,7 +2011,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L497">packages/debug/src/browser/debug-session.tsx:497</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L494">packages/debug/src/browser/debug-session.tsx:494</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2012,7 +2034,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L474">packages/debug/src/browser/debug-session.tsx:474</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L471">packages/debug/src/browser/debug-session.tsx:471</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2035,7 +2057,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L484">packages/debug/src/browser/debug-session.tsx:484</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L481">packages/debug/src/browser/debug-session.tsx:481</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -2052,13 +2074,45 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/browser/debug-session.tsx#L436">packages/debug/src/browser/debug-session.tsx:436</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L433">packages/debug/src/browser/debug-session.tsx:433</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>stoppedDetails: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../modules/debug.html#stoppeddetails" class="tsd-signature-type" data-tsd-kind="Type alias">StoppedDetails</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+					<a name="waitfor" class="tsd-anchor"></a>
+					<h3>wait<wbr>For</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">wait<wbr>For&lt;K&gt;<span class="tsd-signature-symbol">(</span>kind<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">K</span>, ms<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/browser/debug-session.tsx#L383">packages/debug/src/browser/debug-session.tsx:383</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>K<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;breakpoint&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;module&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;capabilities&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;continued&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;exited&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;initialized&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;invalidated&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;loadedSource&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;output&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;process&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;progressEnd&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;progressStart&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;progressUpdate&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;stopped&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;terminated&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;thread&quot;</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>kind: <span class="tsd-signature-type">K</span></h5>
+								</li>
+								<li>
+									<h5>ms: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -2111,6 +2165,9 @@
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/debug.debugerror.html">Debug<wbr>Error</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/debug.debugeventtypes.html">Debug<wbr>Event<wbr>Types</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/debug.debugkeybindingcontexts.html">Debug<wbr>Keybinding<wbr>Contexts</a>
@@ -2195,6 +2252,9 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="debug.debugsession.html#initialized" class="tsd-kind-icon">initialized</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="debug.debugsession.html#isstopping" class="tsd-kind-icon">is<wbr>Stopping</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="debug.debugsession.html#labelprovider" class="tsd-kind-icon">label<wbr>Provider</a>
 							</li>
@@ -2232,9 +2292,6 @@
 								<a href="debug.debugsession.html#terminalserver" class="tsd-kind-icon">terminal<wbr>Server</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-								<a href="debug.debugsession.html#terminated" class="tsd-kind-icon">terminated</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="debug.debugsession.html#todispose" class="tsd-kind-icon">to<wbr>Dispose</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
@@ -2265,6 +2322,9 @@
 								<a href="debug.debugsession.html#ondidcustomevent" class="tsd-kind-icon">on<wbr>Did<wbr>Custom<wbr>Event</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="debug.debugsession.html#ondispose" class="tsd-kind-icon">on<wbr>Dispose</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="debug.debugsession.html#runningthreads" class="tsd-kind-icon">running<wbr>Threads</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
@@ -2284,6 +2344,12 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="debug.debugsession.html#asdebugbreakpointoptions" class="tsd-kind-icon">as<wbr>Debug<wbr>Breakpoint<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="debug.debugsession.html#canrestart" class="tsd-kind-icon">can<wbr>Restart</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="debug.debugsession.html#canterminate" class="tsd-kind-icon">can<wbr>Terminate</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="debug.debugsession.html#clearbreakpoints" class="tsd-kind-icon">clear<wbr>Breakpoints</a>
@@ -2306,11 +2372,8 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="debug.debugsession.html#dedupsourcebreakpoints" class="tsd-kind-icon">dedup<wbr>Source<wbr>Breakpoints</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="debug.debugsession.html#disconnect" class="tsd-kind-icon">disconnect</a>
-							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="debug.debugsession.html#dispose" class="tsd-kind-icon">dispose</a>
+								<a href="debug.debugsession.html#disconnect" class="tsd-kind-icon">disconnect</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="debug.debugsession.html#docreateterminal" class="tsd-kind-icon">do<wbr>Create<wbr>Terminal</a>
@@ -2322,9 +2385,6 @@
 								<a href="debug.debugsession.html#evaluate" class="tsd-kind-icon">evaluate</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="debug.debugsession.html#exited" class="tsd-kind-icon">exited</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="debug.debugsession.html#findbreakpoint" class="tsd-kind-icon">find<wbr>Breakpoint</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
@@ -2332,9 +2392,6 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="debug.debugsession.html#firedidchangebreakpoints" class="tsd-kind-icon">fire<wbr>Did<wbr>Change<wbr>Breakpoints</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="debug.debugsession.html#fireexited" class="tsd-kind-icon">fire<wbr>Exited</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="debug.debugsession.html#getaffecteduris" class="tsd-kind-icon">get<wbr>Affected<wbr>Uris</a>
@@ -2424,7 +2481,7 @@
 								<a href="debug.debugsession.html#start" class="tsd-kind-icon">start</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="debug.debugsession.html#terminate" class="tsd-kind-icon">terminate</a>
+								<a href="debug.debugsession.html#stop" class="tsd-kind-icon">stop</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="debug.debugsession.html#todebugsource" class="tsd-kind-icon">to<wbr>Debug<wbr>Source</a>
@@ -2449,6 +2506,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="debug.debugsession.html#updatethreads" class="tsd-kind-icon">update<wbr>Threads</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+								<a href="debug.debugsession.html#waitfor" class="tsd-kind-icon">wait<wbr>For</a>
 							</li>
 						</ul>
 					</li>
@@ -2489,6 +2549,9 @@
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
 			</ul>
 		</div>
 	</div>

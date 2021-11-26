@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>InlineCommunicationProvider | Theia TypeDoc</title>
+	<title>InlineDebugAdapter | Theia TypeDoc</title>
 	<meta name="description" content="Documentation for Theia TypeDoc">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../modules/debug.html">debug</a>
 				</li>
 				<li>
-					<a href="debug.inlinecommunicationprovider.html">InlineCommunicationProvider</a>
+					<a href="debug.inlinedebugadapter.html">InlineDebugAdapter</a>
 				</li>
 			</ul>
-			<h1>Class InlineCommunicationProvider</h1>
+			<h1>Class InlineDebugAdapter</h1>
 		</div>
 	</div>
 </header>
@@ -69,7 +69,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A communication provider for using the inline implementation of a debug adapter.</p>
+						<p>A debug adapter for using the inline implementation from a plugin.</p>
 					</div>
 				</div>
 			</section>
@@ -77,14 +77,14 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">InlineCommunicationProvider</span>
+						<span class="target">InlineDebugAdapter</span>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/debug.communicationprovider.html" class="tsd-signature-type" data-tsd-kind="Interface">CommunicationProvider</a></li>
+					<li><a href="../interfaces/debug.debugadapter.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugAdapter</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -94,24 +94,25 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="debug.inlinecommunicationprovider.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="debug.inlinedebugadapter.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="debug.inlinecommunicationprovider.html#closeemitter" class="tsd-kind-icon">close<wbr>Emitter</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="debug.inlinecommunicationprovider.html#messagereceivedemitter" class="tsd-kind-icon">message<wbr>Received<wbr>Emitter</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="debug.inlinecommunicationprovider.html#onclose" class="tsd-kind-icon">on<wbr>Close</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="debug.inlinecommunicationprovider.html#onerror" class="tsd-kind-icon">on<wbr>Error</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="debug.inlinecommunicationprovider.html#onmessagereceived" class="tsd-kind-icon">on<wbr>Message<wbr>Received</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="debug.inlinedebugadapter.html#closeemitter" class="tsd-kind-icon">close<wbr>Emitter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="debug.inlinedebugadapter.html#messagereceivedemitter" class="tsd-kind-icon">message<wbr>Received<wbr>Emitter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="debug.inlinedebugadapter.html#onclose" class="tsd-kind-icon">on<wbr>Close</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="debug.inlinedebugadapter.html#onerror" class="tsd-kind-icon">on<wbr>Error</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="debug.inlinedebugadapter.html#onmessagereceived" class="tsd-kind-icon">on<wbr>Message<wbr>Received</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="debug.inlinecommunicationprovider.html#dispose" class="tsd-kind-icon">dispose</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="debug.inlinecommunicationprovider.html#send" class="tsd-kind-icon">send</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="debug.inlinedebugadapter.html#send" class="tsd-kind-icon">send</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="debug.inlinedebugadapter.html#start" class="tsd-kind-icon">start</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="debug.inlinedebugadapter.html#stop" class="tsd-kind-icon">stop</a></li>
 							</ul>
 						</section>
 					</div>
@@ -123,13 +124,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Inline<wbr>Communication<wbr>Provider<span class="tsd-signature-symbol">(</span>debugAdapter<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin.debugadapter.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugAdapter</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="debug.inlinecommunicationprovider.html" class="tsd-signature-type" data-tsd-kind="Class">InlineCommunicationProvider</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Inline<wbr>Debug<wbr>Adapter<span class="tsd-signature-symbol">(</span>debugAdapter<span class="tsd-signature-symbol">: </span><a href="../interfaces/plugin.debugadapter.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugAdapter</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="debug.inlinedebugadapter.html" class="tsd-signature-type" data-tsd-kind="Class">InlineDebugAdapter</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/node/inline-communication-provider.ts#L29">packages/debug/src/node/inline-communication-provider.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/node/inline-debug-adapter.ts#L29">packages/debug/src/node/inline-debug-adapter.ts:29</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -138,7 +139,7 @@
 									<h5>debugAdapter: <a href="../interfaces/plugin.debugadapter.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugAdapter</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="debug.inlinecommunicationprovider.html" class="tsd-signature-type" data-tsd-kind="Class">InlineCommunicationProvider</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="debug.inlinedebugadapter.html" class="tsd-signature-type" data-tsd-kind="Class">InlineDebugAdapter</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -151,7 +152,7 @@
 					<div class="tsd-signature tsd-kind-icon">close<wbr>Emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Emitter</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/node/inline-communication-provider.ts#L28">packages/debug/src/node/inline-communication-provider.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/node/inline-debug-adapter.ts#L28">packages/debug/src/node/inline-debug-adapter.ts:28</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -161,7 +162,7 @@
 					<div class="tsd-signature tsd-kind-icon">message<wbr>Received<wbr>Emitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Emitter</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/node/inline-communication-provider.ts#L25">packages/debug/src/node/inline-communication-provider.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/node/inline-debug-adapter.ts#L25">packages/debug/src/node/inline-debug-adapter.ts:25</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -170,60 +171,54 @@
 					<h3>on<wbr>Close</h3>
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Close<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/debug.communicationprovider.html">CommunicationProvider</a>.<a href="../interfaces/debug.communicationprovider.html#onclose">onClose</a></p>
+						<p>Implementation of <a href="../interfaces/debug.debugadapter.html">DebugAdapter</a>.<a href="../interfaces/debug.debugadapter.html#onclose">onClose</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/node/inline-communication-provider.ts#L29">packages/debug/src/node/inline-communication-provider.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/node/inline-debug-adapter.ts#L29">packages/debug/src/node/inline-debug-adapter.ts:29</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The connection to the debug adapter has been lost. This signals the end of life for this
+							debug adapter instance.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="onerror" class="tsd-anchor"></a>
 					<h3>on<wbr>Error</h3>
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/debug.communicationprovider.html">CommunicationProvider</a>.<a href="../interfaces/debug.communicationprovider.html#onerror">onError</a></p>
+						<p>Implementation of <a href="../interfaces/debug.debugadapter.html">DebugAdapter</a>.<a href="../interfaces/debug.debugadapter.html#onerror">onError</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/node/inline-communication-provider.ts#L27">packages/debug/src/node/inline-communication-provider.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/node/inline-debug-adapter.ts#L27">packages/debug/src/node/inline-debug-adapter.ts:27</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An error has occured communicating with the debug adapter. This does not meant the debug adapter
+							has terminated.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="onmessagereceived" class="tsd-anchor"></a>
 					<h3>on<wbr>Message<wbr>Received</h3>
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Message<wbr>Received<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/debug.communicationprovider.html">CommunicationProvider</a>.<a href="../interfaces/debug.communicationprovider.html#onmessagereceived">onMessageReceived</a></p>
+						<p>Implementation of <a href="../interfaces/debug.debugadapter.html">DebugAdapter</a>.<a href="../interfaces/debug.debugadapter.html#onmessagereceived">onMessageReceived</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/node/inline-communication-provider.ts#L26">packages/debug/src/node/inline-communication-provider.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/node/inline-debug-adapter.ts#L26">packages/debug/src/node/inline-debug-adapter.ts:26</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A DAP protocol message has been received from the debug adapter</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="dispose" class="tsd-anchor"></a>
-					<h3>dispose</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/debug.communicationprovider.html">CommunicationProvider</a>.<a href="../interfaces/debug.communicationprovider.html#dispose">dispose</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/node/inline-communication-provider.ts#L41">packages/debug/src/node/inline-communication-provider.ts:41</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Dispose this object.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="send" class="tsd-anchor"></a>
 					<h3>send</h3>
@@ -233,11 +228,16 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/debug.communicationprovider.html">CommunicationProvider</a>.<a href="../interfaces/debug.communicationprovider.html#send">send</a></p>
+								<p>Implementation of <a href="../interfaces/debug.debugadapter.html">DebugAdapter</a>.<a href="../interfaces/debug.debugadapter.html#send">send</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/4cedd3f4ecb/packages/debug/src/node/inline-communication-provider.ts#L37">packages/debug/src/node/inline-communication-provider.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/node/inline-debug-adapter.ts#L40">packages/debug/src/node/inline-debug-adapter.ts:40</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Send a DAP message to the debug adapter</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -245,6 +245,46 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="start" class="tsd-anchor"></a>
+					<h3>start</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">start<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/node/inline-debug-adapter.ts#L37">packages/debug/src/node/inline-debug-adapter.ts:37</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="stop" class="tsd-anchor"></a>
+					<h3>stop</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">stop<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/debug.debugadapter.html">DebugAdapter</a>.<a href="../interfaces/debug.debugadapter.html#stop">stop</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/eclipse-theia/theia/blob/99a56a31bc4/packages/debug/src/node/inline-debug-adapter.ts#L44">packages/debug/src/node/inline-debug-adapter.ts:44</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Terminate the connection to the debug adapter.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -296,6 +336,9 @@
 								<a href="../modules/debug.debugerror.html">Debug<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/debug.debugeventtypes.html">Debug<wbr>Event<wbr>Types</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/debug.debugkeybindingcontexts.html">Debug<wbr>Keybinding<wbr>Contexts</a>
 							</li>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
@@ -337,31 +380,34 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-module">
-						<a href="debug.inlinecommunicationprovider.html" class="tsd-kind-icon">Inline<wbr>Communication<wbr>Provider</a>
+						<a href="debug.inlinedebugadapter.html" class="tsd-kind-icon">Inline<wbr>Debug<wbr>Adapter</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="debug.inlinecommunicationprovider.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="debug.inlinedebugadapter.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="debug.inlinecommunicationprovider.html#closeemitter" class="tsd-kind-icon">close<wbr>Emitter</a>
+								<a href="debug.inlinedebugadapter.html#closeemitter" class="tsd-kind-icon">close<wbr>Emitter</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="debug.inlinecommunicationprovider.html#messagereceivedemitter" class="tsd-kind-icon">message<wbr>Received<wbr>Emitter</a>
+								<a href="debug.inlinedebugadapter.html#messagereceivedemitter" class="tsd-kind-icon">message<wbr>Received<wbr>Emitter</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="debug.inlinecommunicationprovider.html#onclose" class="tsd-kind-icon">on<wbr>Close</a>
+								<a href="debug.inlinedebugadapter.html#onclose" class="tsd-kind-icon">on<wbr>Close</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="debug.inlinecommunicationprovider.html#onerror" class="tsd-kind-icon">on<wbr>Error</a>
+								<a href="debug.inlinedebugadapter.html#onerror" class="tsd-kind-icon">on<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="debug.inlinecommunicationprovider.html#onmessagereceived" class="tsd-kind-icon">on<wbr>Message<wbr>Received</a>
+								<a href="debug.inlinedebugadapter.html#onmessagereceived" class="tsd-kind-icon">on<wbr>Message<wbr>Received</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="debug.inlinecommunicationprovider.html#dispose" class="tsd-kind-icon">dispose</a>
+								<a href="debug.inlinedebugadapter.html#send" class="tsd-kind-icon">send</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="debug.inlinecommunicationprovider.html#send" class="tsd-kind-icon">send</a>
+								<a href="debug.inlinedebugadapter.html#start" class="tsd-kind-icon">start</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="debug.inlinedebugadapter.html#stop" class="tsd-kind-icon">stop</a>
 							</li>
 						</ul>
 					</li>
