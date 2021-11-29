@@ -16,7 +16,6 @@
 
 import URI from '@theia/core/lib/common/uri';
 import * as React from '@theia/core/shared/react';
-import { DebugConfiguration } from '../../common/debug-common';
 import { DebugConfigurationManager } from '../debug-configuration-manager';
 import { DebugSessionOptions, InternalDebugSessionOptions } from '../debug-session-options';
 import { QuickInputService } from '@theia/core/lib/browser';
@@ -30,11 +29,11 @@ export interface DebugConfigurationSelectProps {
     isMultiRoot: boolean
 }
 
-export interface DebugConfigurationSelectState {
-    configsPerType: { type: string, configurations: DebugConfiguration[] }[]
+export interface DebugProviderSelectState {
+    providerTypes: string[]
 }
 
-export class DebugConfigurationSelect extends React.Component<DebugConfigurationSelectProps, DebugConfigurationSelectState> {
+export class DebugConfigurationSelect extends React.Component<DebugConfigurationSelectProps, DebugProviderSelectState> {
 
     protected static readonly SEPARATOR = '──────────';
     protected static readonly PICK = '__PICK__';
@@ -46,7 +45,7 @@ export class DebugConfigurationSelect extends React.Component<DebugConfiguration
         this.manager = props.manager;
         this.quickInputService = props.quickInputService;
         this.state = {
-            configsPerType: [],
+            providerTypes: [],
         };
         this.manager.onDidConfigurationProvidersChanged(() => {
             this.refreshDebugConfigurations();
@@ -83,7 +82,7 @@ export class DebugConfigurationSelect extends React.Component<DebugConfiguration
             this.selectDynamicConfigFromQuickPick(providerType);
         } else {
             const [name, workspaceFolderUri, providerType] = InternalDebugSessionOptions.parseValue(value);
-            this.manager.selectionChanged(this.manager.find(name, workspaceFolderUri, providerType));
+            this.manager.current = this.manager.find(name, workspaceFolderUri, providerType);
         }
     };
 
@@ -96,7 +95,7 @@ export class DebugConfigurationSelect extends React.Component<DebugConfiguration
     }
 
     protected async selectDynamicConfigFromQuickPick(providerType: string): Promise<void> {
-        const configurationsOfProviderType = this.state.configsPerType.find(entry => entry.type === providerType);
+        const configurationsOfProviderType = (await this.manager.provideDynamicDebugConfigurations()).find(entry => entry.type === providerType);
         if (!configurationsOfProviderType) {
             return;
         }
@@ -133,12 +132,18 @@ export class DebugConfigurationSelect extends React.Component<DebugConfiguration
             return;
         }
 
-        this.manager.selectionChanged(this.manager.find(selected.label, undefined, selected.providerType));
+        this.manager.current = this.manager.find(selected.label, undefined, selected.providerType);
     }
 
     protected refreshDebugConfigurations = async () => {
         const configsPerType = await this.manager.provideDynamicDebugConfigurations();
-        this.setState({ configsPerType });
+        const providerTypes = [];
+        for (const { type, configurations } of configsPerType) {
+            if (configurations.length > 0) {
+                providerTypes.push(type);
+            }
+        }
+        this.setState({ providerTypes });
     };
 
     protected renderOptions(): React.ReactNode {
@@ -162,12 +167,7 @@ export class DebugConfigurationSelect extends React.Component<DebugConfiguration
         }
 
         // Add dynamic configuration types for quick pick selection
-        const types: string[] = [];
-        for (const { type, configurations } of this.state.configsPerType) {
-            if (configurations.length > 0) {
-                types.push(type);
-            }
-        }
+        const types = this.state.providerTypes;
         if (types.length > 0) {
             options.push(<option key={index++} disabled>{DebugConfigurationSelect.SEPARATOR}</option>);
             for (const type of types) {

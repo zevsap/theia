@@ -150,7 +150,7 @@ export class DebugPrefixConfiguration implements CommandContribution, CommandHan
      * @param configuration the `DebugSessionOptions`.
      */
     protected runConfiguration(configuration: DebugSessionOptions): void {
-        this.debugConfigurationManager.selectionChanged({ ...configuration });
+        this.debugConfigurationManager.current = { ...configuration };
         this.commandRegistry.executeCommand(DebugCommands.START.id);
     }
 

@@ -135,6 +135,20 @@ export class PluginDebugService implements DebugService, PluginDebugAdapterContr
         return Promise.all(result);
     }
 
+    async fetchDynamicDebugConfiguration(name: string, providerType: string): Promise<DebugConfiguration | undefined> {
+        for (const [type, contributor] of this.contributors.entries()) {
+            if (type === providerType) {
+                const configurations = (await this.resolveDynamicConfigurationsForType(providerType, contributor)).configurations;
+                for (const configuration of configurations) {
+                    if (configuration.name === name) {
+                        return configuration;
+                    }
+                }
+            }
+        }
+        return undefined;
+    }
+
     protected async resolveDynamicConfigurationsForType(
         type: string,
         contributor: PluginDebugAdapterContribution): Promise<{ type: string, configurations: DebugConfiguration[] }> {

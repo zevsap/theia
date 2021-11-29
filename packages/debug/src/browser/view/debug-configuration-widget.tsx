@@ -15,7 +15,7 @@
  ********************************************************************************/
 
 import { ReactWidget, QuickInputService } from '@theia/core/lib/browser';
-import { CommandRegistry, Disposable } from '@theia/core/lib/common';
+import { CommandRegistry, Disposable, MessageService } from '@theia/core/lib/common';
 import { inject, injectable, postConstruct } from '@theia/core/shared/inversify';
 import * as React from '@theia/core/shared/react';
 import { WorkspaceService } from '@theia/workspace/lib/browser';
@@ -51,6 +51,9 @@ export class DebugConfigurationWidget extends ReactWidget {
 
     @inject(WorkspaceService)
     protected readonly workspaceService: WorkspaceService;
+
+    @inject(MessageService)
+    protected readonly messageService: MessageService;
 
     @postConstruct()
     protected init(): void {
@@ -93,8 +96,15 @@ export class DebugConfigurationWidget extends ReactWidget {
         </React.Fragment>;
     }
 
-    protected readonly start = () => {
-        const configuration = this.manager.current;
+    protected readonly start = async () => {
+        let configuration;
+        try {
+            configuration = await this.manager.getSelectedConfiguration();
+        } catch (e) {
+            this.messageService.error(e.message);
+            return;
+        }
+
         this.commandRegistry.executeCommand(DebugCommands.START.id, configuration);
     };
 

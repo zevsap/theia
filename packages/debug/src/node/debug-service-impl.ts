@@ -66,6 +66,10 @@ export class DebugServiceImpl implements DebugService {
         // TODO: Support dynamic debug configurations through Theia extensions?
         return [];
     }
+    fetchDynamicDebugConfiguration(name: string, type: string): Promise<DebugConfiguration | undefined> {
+        // TODO: Support dynamic debug configurations through Theia extensions?
+        return Promise.resolve(undefined);
+    }
     async resolveDebugConfiguration(config: DebugConfiguration, workspaceFolderUri?: string): Promise<DebugConfiguration> {
         return this.registry.resolveDebugConfiguration(config, workspaceFolderUri);
     }
